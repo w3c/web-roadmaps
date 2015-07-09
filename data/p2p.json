@@ -1,0 +1,25 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/tree/master/webrtc",
+      "url" : "http://w3c-test.org/webrtc/",
+      "label" : "Very early start"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/concepts/internet_and_web/webrtc",
+      "label" : "WebRTC Introduction"
+   },
+   "impl" : {
+      "level" : "medium",
+      "label" : "Growing",
+      "id" : "p2p"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/webrtc-pc/"
+   },
+   "TR" : "http://www.w3.org/TR/webrtc/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

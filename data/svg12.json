@@ -1,0 +1,27 @@
+{
+   "coremob" : "fulfills",
+   "tests" : {
+      "level" : "high",
+      "repo" : "",
+      "url" : "http://www.w3.org/Graphics/SVG/Test/",
+      "label" : "High coverage"
+   },
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/svg/tutorials",
+      "label" : "SVG Tutorials"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Widely deployed",
+      "id" : "svg12"
+   },
+   "editors" : {
+      "url" : "",
+      "label" : "New version of SVG (SVG 2.0) in preparation"
+   },
+   "TR" : "http://www.w3.org/TR/SVG11/",
+   "stability" : {
+      "level" : "high",
+      "label" : "Finished"
+   }
+}

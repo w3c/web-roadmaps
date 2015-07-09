@@ -1,0 +1,12 @@
+{
+   "impl" : {
+      "level" : "high",
+      "label" : "Good deployment"
+   },
+   "TR" : "http://www.w3.org/TR/DOM-Level-3-Events-key/#keys-multimedia",
+   "stability" : {
+      "level" : "medium",
+      "label" : "stabilizing"
+   },
+   "feature" : "Media keys"
+}

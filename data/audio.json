@@ -1,0 +1,31 @@
+{
+   "coremob" : "fulfills",
+   "wpd" : {
+      "url" : "http://docs.webplatform.org/wiki/tutorials/audio_tag",
+      "label" : "Audio tag tutorial"
+   },
+   "tests" : {
+      "level" : "low",
+      "repo" : "https://github.com/w3c/web-platform-tests/",
+      "url" : "http://w3c-test.org/html/semantics/embedded-content/the-audio-element",
+      "label" : "Started"
+   },
+   "impl" : {
+      "level" : "high",
+      "label" : "Good deployment",
+      "id" : "audio"
+   },
+   "TR" : "http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element",
+   "editors" : {
+      "url" : "http://www.w3.org/html/wg/drafts/html/CR/embedded-content-0.html#the-video-element"
+   },
+   "wdc" : {
+      "url" : "http://www.w3devcampus.com/html5-w3c-training/",
+      "label" : "HTML5 on-line course"
+   },
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable"
+   },
+   "feature" : "audio element"
+}

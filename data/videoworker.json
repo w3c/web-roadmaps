@@ -1,0 +1,20 @@
+{
+   "wgs" : [
+      {
+         "url" : "",
+         "label" : "N/A"
+      }
+   ],
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "videoworker"
+   },
+   "title" : "Media Capture Stream with Worker",
+   "editors" : {
+      "url" : "http://chiahungtai.github.io/mediacapture-worker/"
+   }
+}
+
+
+

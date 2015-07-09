@@ -1,0 +1,14 @@
+{
+   "impl" : {
+      "level" : "low",
+      "label" : "limited"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/mediacapture-fromelement/"
+   },
+   "TR" : "http://www.w3.org/TR/mediacapture-fromelement/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

@@ -1,0 +1,29 @@
+{
+   "wgs" : [
+      {
+         "url" : "https://whatwg.org/",
+         "label" : "WHATWG"
+      }
+   ],
+   "maturity" : "N/A",
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "N/A"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "mediasession"
+   },
+   "title" : "Media Session",
+   "TR" : "",
+   "editors" : {
+      "url" : "https://mediasession.spec.whatwg.org/"
+   },
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "impl" : {
+      "level" : "low",
+      "label" : "limited"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/mediacapture-screen-share/"
+   },
+   "TR" : "http://www.w3.org/TR/screen-capture/",
+   "stability" : {
+      "level" : "low",
+      "label" : "Early draft"
+   }
+}

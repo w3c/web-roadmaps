@@ -1,0 +1,22 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "getusermedia-cap"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/mediacapture-main/#the-model-sources-sinks-constraints-and-settings"
+   },
+   "TR" : "http://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
+   "feature": "Source capabilities",
+   "stability" : {
+      "level" : "medium",
+      "label" : "Stabilizing"
+   }
+}

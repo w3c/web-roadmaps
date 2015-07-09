@@ -1,0 +1,21 @@
+{
+   "tests" : {
+      "level" : "low",
+      "repo" : "",
+      "url" : "",
+      "label" : "None"
+   },
+   "impl" : {
+      "level" : "low",
+      "label" : "None",
+      "id" : "audio-output"
+   },
+   "editors" : {
+      "url" : "http://w3c.github.io/mediacapture-output/"
+   },
+   "TR" : "http://www.w3.org/TR/audio-output/",
+   "stability" : {
+      "level" : "low",
+      "label" : "early draft"
+   }
+}

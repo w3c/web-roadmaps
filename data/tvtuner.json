@@ -1,0 +1,16 @@
+{
+   "wgs" : [
+      {
+         "url" : "http://www.w3.org/community/tvapi/",
+         "label" : "TV Control API Community Group "
+      }
+   ],
+   "impl" : {
+      "level" : "low",
+      "label" : "None"
+   },
+   "title" : "TV Control API",
+   "editors" : {
+      "url" : "http://w3c.github.io/tvapi/spec/"
+   }
+}
