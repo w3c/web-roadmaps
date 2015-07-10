@@ -1,0 +1,298 @@
+{
+  "3dcamera": {
+    "maturity": "WD", 
+    "title": "Media Capture Depth Stream Extensions", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "audio": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "audio-output": {
+    "maturity": "WD", 
+    "title": "Audio Output Devices API", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "canvas": {
+    "maturity": "CR", 
+    "title": "HTML Canvas 2D Context", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "css-animation": {
+    "maturity": "WD", 
+    "title": "CSS Animations", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "discovery": {
+    "maturity": "WD", 
+    "title": "Network Service Discovery", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "domcapture": {
+    "maturity": "WD", 
+    "title": "Media Capture from DOM Elements", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "eme": {
+    "maturity": "WD", 
+    "title": "Encrypted Media Extensions", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "getusermedia": {
+    "maturity": "LastCall", 
+    "title": "Media Capture and Streams", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "getusermedia-cap": {
+    "maturity": "LastCall", 
+    "title": "Media Capture and Streams", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "htmlmediaelement": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "imagecapture": {
+    "maturity": "WD", 
+    "title": "Mediastream Image Capture", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "mediakeys": {
+    "maturity": "WD", 
+    "title": "DOM Level 3 KeyboardEvent key Values", 
+    "wgs": [
+      {
+        "label": "Web Applications Working Group", 
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "mse": {
+    "maturity": "CR", 
+    "title": "Media Source Extensions", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "p2p": {
+    "maturity": "WD", 
+    "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
+    "wgs": [
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "recording": {
+    "maturity": "WD", 
+    "title": "MediaStream Recording", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "screencapture": {
+    "maturity": "WD", 
+    "title": "Screen Capture", 
+    "wgs": [
+      {
+        "label": "Device APIs Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }, 
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "secondscreen": {
+    "maturity": "WD", 
+    "title": "Presentation API", 
+    "wgs": [
+      {
+        "label": "Second Screen Presentation Working Group", 
+        "url": "http://www.w3.org/2014/secondscreen/"
+      }
+    ]
+  }, 
+  "svg12": {
+    "maturity": "REC", 
+    "title": "Scalable Vector Graphics (SVG) 1.1 Specification", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }
+    ]
+  }, 
+  "svg2": {
+    "maturity": "WD", 
+    "title": "Scalable Vector Graphics (SVG) 2", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }
+    ]
+  }, 
+  "timeupdate": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "ttml": {
+    "maturity": "WD", 
+    "title": "Timed Text Markup Language 2 (TTML2)", 
+    "wgs": [
+      {
+        "label": "Timed Text Working Group", 
+        "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "video": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "webanimations": {
+    "maturity": "WD", 
+    "title": "Web Animations", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "webaudio": {
+    "maturity": "WD", 
+    "title": "Web Audio API", 
+    "wgs": [
+      {
+        "label": "Audio Working Group", 
+        "url": "http://www.w3.org/2011/audio/"
+      }
+    ]
+  }, 
+  "webvtt": {
+    "maturity": "WD", 
+    "title": "WebVTT: The Web Video Text Tracks Format", 
+    "wgs": [
+      {
+        "label": "Timed Text Working Group", 
+        "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }
+}
