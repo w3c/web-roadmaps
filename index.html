@@ -101,23 +101,32 @@
         <h2>Media Rendering</h2>
         <section class="featureset deployed">
           <h3>Well-deployed technologies</h3>
-          <p data-feature="Audio rendering"><a data-featureid="audio"><code>&lt;audio&gt;</code> element</a></p>
-          <p data-feature="Video rendering"><a data-featureid="video"><code>&lt;video&gt;</code> element</a></p>
+          <p>Few media-based services can usefully function without rendering audio or video content; the HTML5 specification provides widely deployed support for this essential feature:</p>
+          <ul>
+            <li data-feature="Audio rendering">audio content can be rendered in any Web page via the <a data-featureid="audio"><code>&lt;audio&gt;</code> element</a></li>
+            <li data-feature="Video rendering">likewise, video content can be rendered with <a data-featureid="video"><code>&lt;video&gt;</code> element</a></li>
         </section>
         <section class="featureset deployed">
           <h3>Specifications in progress</h3>
-          <p data-feature="Audio rendering"><a data-featureid="webaudio">Web Audio API</a></p>
-          <p data-feature="Distributed rendering"><a data-featureid="secondscreen">Second Screen Presentation API</a> <a data-featureid="audio-output">Audio Output Devices API</a></p>
+          <p data-feature="Audio rendering">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-featured audio processing API, which includes support for low-latency plack of audio content.</p>
+          <div data-feature="Distributed rendering">
+            <p>As users increasingly own more and more connected devices, the need to get these devices to work together increases as well.</p>
+            <p>The <a data-featureid="secondscreen">Second Screen Presentation API</a> offers the possibility for a Web page to open and control a page located on another screen, opening the road for multi-screen Web applications.</p>
+            <p>The <a data-featureid="audio-output">Audio Output Devices API</a> offer a similar functionality for audio streams, enabling a Web application to pick on which audio output devices a given sound should be played.</p>
+          </div>
         </section>
         <section class="featureset explore">
           <h3>Exploratory work</h3>
-          <p data-feature="Distributed rendering"><a data-featureid="discovery">Network Service Discovery</a> <a data-featureid="timing">Timing Object</a>
+          <div data-feature="Distributed rendering">
+            <p>The <a data-featureid="discovery">Network Service Discovery API</a> offers a lower-level approach to the establishement of multi-device operations, by providing integration with local network-based media renderers, such as those enabled by DLNA, UPnP, etc. At this time, the future of this specification is uncertain, given the difficulty of finding the right balance between the requirements of the Web security model and the desire to be compatible with existing devices.</p>
+            <p>The Multi-Device Timing Community Group is exploring another aspect of multi-device media rendering: its <a data-featureid="timing">Timing Object</a> specification enables to keep video, audio and other data streams in close synchrony, across devices and independently of the network topology.</p>
+            </div>
         </section>
         <section>
           <h3>Featured not covered by ongoing work</h3>
           <dl>
             <dt>Color Management</dt>
-            <dd>… use cases …</dd>
+            <dd>To ensure the proper rendering of videos with high-dynamic range and wide-gamut colors, content providers would need to determine whether the underlying device and browser have proper support for this.</dd>
           </dl>
         </section>
       </section>
