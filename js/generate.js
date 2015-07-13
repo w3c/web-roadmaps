@@ -70,7 +70,7 @@ function maturityData(spec) {
 	maturity = {label: spec.maturity, level:level};
     } else {
 	maturity = {label:spec.maturity, level: maturityLevels[spec.maturity]};
-	maturityIcon = {src:"http://www.w3.org/2013/09/wpd-rectrack-icons/" + spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:spec.maturity, width:50, height:50};
+	maturityIcon = {src:"https://www.w3.org/2013/09/wpd-rectrack-icons/" + spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') + '.svg', alt:spec.maturity, width:50, height:50};
 	if (spec.maturity == "REC" || spec.maturity == "LastCall") {
 	    maturityIcon.height = 53;
 	}
