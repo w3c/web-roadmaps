@@ -132,32 +132,35 @@
       </section>
       <section>
         <h2>Media Processing</h2>
+        <p>Whether before rendering or after capture, media content often require some processing to make it fit its expected usage.</p>
         <section class="featureset deployed">
           <h3>Well-deployed technologies</h3>
-          <p data-feature="Image and Video Processing"><a data-featureid="canvas">Canvas API</a></p>
-          <p data-feature="Video inserts"><a data-featureid="mse">Media Stream Extensions</a></p>
+          <p data-feature="Image and Video Processing">The <a data-featureid="canvas">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames. One of its limitations is that it operates using the CPU instead of the more optimized operations enabled by modern GPUs.</p>
+          <p data-feature="Video inserts">The <a data-featureid="mse">Media Stream Extensions API</a> enable to insert easily chunks of media (e.g. a video clip) into an existing media stream.</p>
         </section>
         <section class="featureset deployed">
           <h3>Specifications in progress</h3>
-          <p data-feature="Audio Processing"><a data-featureid="webaudio">Web Audio API</a></p>
+          <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
 
-          <p data-feature="Protected Media"><a data-featureid="eme">Encrypted Media Extensions</a></p>
+          <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from copy, the <a data-featureid="eme">Encrypted Media Extensions</a> enables the rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         </section>
         <section class="featureset explore">
           <h3>Exploratory work</h3>
-          <p data-feature="Video processing"><a data-featureid="videoworker">Worker for harwarde-accelerated video processing</a>
+          <p data-feature="Video processing">Video processing using the Canvas API is very CPU-intensive, and as such, can benefit from executing separately from the rest of a Web application. The early proposal for a <a data-featureid="videoworker">Worker for parallel video processing</a> suggests an approach on how this could be done using a dedicated Worker.</p>
         </section>
         <section>
           <h3>Featured not covered by ongoing work</h3>
           <dl>
             <dt>JavaScript-based Codecs</dt>
-            <dd></dd>
+            <dd>The algorithms used to compress and decompress the bandwidth-intensive media content are required to be provided by the browsers at this time; a system enabling to write and distribute these algorithms in JavaScript and get them integrated in the overall media flow of user agents would provide much greater freedom to specialize and innovate in this space.</dd>
             <dt>Content Decryption Module API</dt>
-            <dd></dd>
+            <dd>The capabilities offered by the Encrypted Media Extensions rely on the integration with undefined interfaces for the Content Decryption Modules. Providing a uniform interface for that integration would simplify the addition of new CDMs in the market.</dd>
             <dt>Conditional Access System</dt>
-            <dd></dd>
-            <dt>Hardware-accelerated video analysis</dt>
-            <dd>Face and object recognition [WebCL]</dd>
+            <dd>Broadcasters use a diferrent approach to protect the content they distribute, known as Conditional Access System. As broadcast streams are coming to Web browsers, providing integration with these systems will be needed.</dd>
+            <dt>Hardware-accelerated video processing</dt>
+            <dd>The Canvas API provide capabilities to do image and video processing, but these capabilities are limited by their reliance on the CPU for execution; modern GPUs provide hardware-acceleration for a wide range of operations, but the browsers don't provide hooks to these. The Khronos Group has worked on a <a href="https://www.khronos.org/webcl/">WebCL</a> specification that aims at addressing this need.</dd>
+            <dt>Hardware-accelerated vision processing</dt>
+            <dd>Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications.</dd>
           </dl>
         </section>
       </section>
