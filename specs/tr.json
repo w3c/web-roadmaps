@@ -143,6 +143,16 @@
       }
     ]
   }, 
+  "mediacontroller": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
   "mediakeys": {
     "maturity": "WD", 
     "title": "DOM Level 3 KeyboardEvent key Values", 
