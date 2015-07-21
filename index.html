@@ -109,7 +109,7 @@
         </section>
         <section class="featureset deployed">
           <h3>Specifications in progress</h3>
-          <p data-feature="Audio rendering">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-featured audio processing API, which includes support for low-latency plack of audio content.</p>
+          <p data-feature="Audio rendering">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing API, which includes support for low-latency playback of audio content.</p>
           <div data-feature="Distributed rendering">
             <p>As users increasingly own more and more connected devices, the need to get these devices to work together increases as well.</p>
             <p>The <a data-featureid="secondscreen">Second Screen Presentation API</a> offers the possibility for a Web page to open and control a page located on another screen, opening the road for multi-screen Web applications.</p>
@@ -170,11 +170,13 @@
         <section class="featureset deployed">
           <h3>Well-deployed technologies</h3>
           <p data-feature="Timeline management"><a data-featureid="timeupdate"><code>timeupdate</code> event</a></p>
+          <p data-feature="Local media elements synchronization"><a data-featureid="mediacontroller"><code>MediaController</code> interface</a></p>
         </section>
         <section class="featureset deployed">
           <h3>Specifications in progress</h3>
           <p data-feature="Close Captioning"><a data-featureid="webvtt">Web VTT</a> <a data-featureid="ttml">TTML 2</a></p>
           <p data-feature="Timeline management"><a data-featureid="webanimations">Web Animations</a></p>
+          <p data-feature="Audio synchronization">The <a data-featureid="webaudio">Web Audio API</a> defines a full-fledged audio processing API that exposes the precise time at which audio will be played. This allows for very tight synchronization between different audio processing events happening in the local audio context.</p>
         </section>
         <section class="featureset explore">
           <h3>Exploratory work</h3>
@@ -187,17 +189,21 @@
         <h2>Media Control</h2>
         <section class="featureset deployed">
         <h3>Well-deployed technologies</h3>
-        <p data-feature="Local media control"><a data-featureid="htmlmediaelement"><code>HTMLMediaElement</code> interface</a></p>
+        <p data-feature="Control of one local media element"><a data-featureid="htmlmediaelement"><code>HTMLMediaElement</code> interface</a></p>
+        <p data-feature="Control of multiple local media elements"><a data-featureid="mediacontroller"><code>MediaController</code> interface</a></p>
         </section>
         <section class="featureset deployed">
           <h3>Specifications in progress</h3>
           <p data-feature="Key-based control"><a data-featureid="mediakeys">Media Keys in DOM Level 3 events</a></p>
+          <p data-feature="Audio control">The <a data-featureid="webaudio">Web Audio API</a> defines a full-fledged audio processing API that gives precise control over the playback of audio content.</p>
         </section>
         <section class="featureset explore">
           <h3>Exploratory work</h3>
           <p data-feature="OS-wide media control"><a data-featureid="mediasession">Media session</a></p>
           <p data-feature="Tuner control"><a data-featureid="tvtuner">Tuner interface in TV Control API</a></p>
           <p data-feature="Virtual reality control"><a data-featureid="webvr">WebVR</a></p>
+          <p data-feature="Multi-device media control">The Multi-Device Timing Community Group is exploring media control across devices: its <a data-featureid="timing">Timing Object</a> specification enables to coordinate the playback of multiple video, audio and other data streams in close synchrony, across devices and independently of the network topology.</p>
+          <p data-feature="Local network media control">The <a data-featureid="discovery">Network Service Discovery API</a> provides integration with local network-based media renderers, such as those enabled by DLNA, UPnP, etc., allowing to send control commands to them. At this time, the future of this specification is uncertain, given the difficulty of finding the right balance between the requirements of the Web security model and the desire to be compatible with existing devices.</p>
         </section>
         <section>
           <h3>Featured not covered by ongoing work</h3>

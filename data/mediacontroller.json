@@ -1,0 +1,12 @@
+{
+   "impl" : {
+      "level" : "high",
+      "label" : "Good deployment"
+   },
+   "TR" : "http://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
+   "stability" : {
+      "level" : "high",
+      "label" : "Stable although some uncertainty about future"
+   },
+   "feature" : "MediaController interface"
+}
