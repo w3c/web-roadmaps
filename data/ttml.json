@@ -1,8 +1,8 @@
 {
-   "impl" : {
-      "level" : "low",
-      "label" : "Limited",
-      "id" : "ttml2"
-   },
-    "TR": "http://www.w3.org/TR/ttml2/"
+  "impl": {
+    "level": "low",
+    "label": "Limited",
+    "id": "ttml2"
+  },
+  "TR": "http://www.w3.org/TR/ttml2/"
 }

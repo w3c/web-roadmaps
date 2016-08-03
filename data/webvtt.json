@@ -1,11 +1,11 @@
 {
-   "impl" : {
-      "level" : "low",
-      "label" : "Limited",
-      "id" : "webvtt"
-   },
-   "editors" : {
-      "url" : "http://dev.w3.org/html5/webvtt/"
-   },
-    "TR": "http://www.w3.org/TR/webvtt1/"
+  "impl": {
+    "level": "low",
+    "label": "Limited",
+    "id": "webvtt"
+  },
+  "editors": {
+    "url": "http://dev.w3.org/html5/webvtt/"
+  },
+  "TR": "http://www.w3.org/TR/webvtt1/"
 }

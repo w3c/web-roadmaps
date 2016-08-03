@@ -1,12 +1,8 @@
 {
-   "impl" : {
-      "level" : "high",
-      "label" : "Good deployment"
-   },
-   "TR" : "http://www.w3.org/TR/uievents-key/#keys-multimedia",
-   "stability" : {
-      "level" : "medium",
-      "label" : "stabilizing"
-   },
-   "feature" : "Media keys"
+  "impl": {
+    "level": "high",
+    "label": "Good deployment"
+  },
+  "TR": "http://www.w3.org/TR/uievents-key/#keys-multimedia",
+  "feature": "Media keys"
 }

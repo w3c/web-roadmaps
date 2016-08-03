@@ -1,6 +1,6 @@
 var sections = document.querySelectorAll("section.featureset");
 var templates = {
-    "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Stability</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
+    "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
     "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
 };
 
@@ -128,13 +128,12 @@ function fillTables() {
 		var specTd = document.createElement("td");
 		var wgTd = document.createElement("td");
 		var maturityTd = document.createElement("td");
-		var stabilityTd = document.createElement("td");
 		var implTd = document.createElement("td");
 		var xhr = new XMLHttpRequest();
                 xhr.tableType = tableType;
 		xhr.open("GET", "data/" + spec + ".json");
                 counterReq++;
-		xhr.onload = function(x, s, el1, el2, el3, el4, el6) {
+		xhr.onload = function(x, s, el1, el2, el3, el6) {
 		    return function() {
                         counterRes++;
 			var obj, level, editorsactivity, maturityInfo;
@@ -175,18 +174,16 @@ function fillTables() {
 			}
                         maturityInfo = maturityData(specData[s]);
 			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
-			fillCell(el4, data.stability);
 			fillCell(el6, data.impl);
 			el6.appendChild(document.createElement("br"));
 			importSVG("images/" + s + ".svg", el6);
 		    };
-		}(xhr, spec, specTd, wgTd, maturityTd, stabilityTd, implTd);
+		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
 		xhr.send();
 		tr.appendChild(specTd);
 		tr.appendChild(wgTd);
                 if (tableType === "well-deployed") {
 		    tr.appendChild(maturityTd);
-		    tr.appendChild(stabilityTd);
                 }
 		tr.appendChild(implTd);
 	    }

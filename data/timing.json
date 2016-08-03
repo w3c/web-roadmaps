@@ -1,20 +1,17 @@
 {
-   "wgs" : [
-      {
-         "url" : "http://www.w3.org/community/webtiming/",
-         "label" : "Multi-Device Timing Community Group "
-      }
-   ],
-   "impl" : {
-      "level" : "low",
-      "label" : "None",
-      "id" : "timing"
-   },
-   "title" : "Timing Object",
-   "editors" : {
-      "url" : "http://webtiming.github.io/timingobject/"
-   }
+  "wgs": [
+    {
+      "url": "http://www.w3.org/community/webtiming/",
+      "label": "Multi-Device Timing Community Group "
+    }
+  ],
+  "impl": {
+    "level": "low",
+    "label": "None",
+    "id": "timing"
+  },
+  "title": "Timing Object",
+  "editors": {
+    "url": "http://webtiming.github.io/timingobject/"
+  }
 }
-
-
-

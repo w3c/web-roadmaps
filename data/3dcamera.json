@@ -1,14 +1,10 @@
 {
-   "impl" : {
-      "level" : "low",
-      "label" : "None"
-   },
-   "editors" : {
-      "url" : "http://w3c.github.io/mediacapture-depth/"
-   },
-   "TR" : "http://www.w3.org/TR/mediacapture-depth/",
-   "stability" : {
-      "level" : "low",
-      "label" : "Early draft"
-   }
+  "impl": {
+    "level": "low",
+    "label": "None"
+  },
+  "editors": {
+    "url": "http://w3c.github.io/mediacapture-depth/"
+  },
+  "TR": "http://www.w3.org/TR/mediacapture-depth/"
 }

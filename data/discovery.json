@@ -1,21 +1,17 @@
 {
-   "tests" : {
-      "level" : "low",
-      "repo" : "",
-      "url" : "",
-      "label" : "None"
-   },
-   "impl" : {
-      "level" : "low",
-      "label" : "None",
-      "id" : "discovery"
-   },
-   "editors" : {
-      "url" : "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html"
-   },
-   "TR" : "http://www.w3.org/TR/discovery-api/",
-   "stability" : {
-      "level" : "low",
-      "label" : "Early draft, unsure future"
-   }
+  "tests": {
+    "level": "low",
+    "repo": "",
+    "url": "",
+    "label": "None"
+  },
+  "impl": {
+    "level": "low",
+    "label": "None",
+    "id": "discovery"
+  },
+  "editors": {
+    "url": "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html"
+  },
+  "TR": "http://www.w3.org/TR/discovery-api/"
 }

@@ -1,12 +1,8 @@
 {
-   "impl" : {
-      "level" : "high",
-      "label" : "Good deployment"
-   },
-   "TR" : "http://www.w3.org/TR/html5/embedded-content-0.html#event-media-timeupdate",
-   "stability" : {
-      "level" : "high",
-      "label" : "Stable"
-   },
-   "feature" : "timeupdate event"
+  "impl": {
+    "level": "high",
+    "label": "Good deployment"
+  },
+  "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#event-media-timeupdate",
+  "feature": "timeupdate event"
 }

@@ -1,12 +1,8 @@
 {
-   "impl" : {
-      "level" : "high",
-      "label" : "Good deployment"
-   },
-   "TR" : "http://www.w3.org/TR/html5/embedded-content-0.html#htmlmediaelement",
-   "stability" : {
-      "level" : "high",
-      "label" : "Stable"
-   },
-   "feature" : "HTMLMediaElement interface"
+  "impl": {
+    "level": "high",
+    "label": "Good deployment"
+  },
+  "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#htmlmediaelement",
+  "feature": "HTMLMediaElement interface"
 }
