@@ -1,0 +1,429 @@
+{
+  "3dcamera": {
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
+  "audio": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "audio-output": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "canvas": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "css-animation": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "discovery": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "domcapture": {
+    "consideration": [], 
+    "experimental": [
+      "chrome"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox"
+    ]
+  }, 
+  "eme": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "firefox"
+    ]
+  }, 
+  "getusermedia": {
+    "consideration": [], 
+    "experimental": [
+      "chrome"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "firefox", 
+      "and_ff", 
+      "edge"
+    ]
+  }, 
+  "getusermedia-cap": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "htmlmediaelement": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "imagecapture": {
+    "consideration": [
+      "chrome"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": []
+  }, 
+  "inband": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "mediacontroller": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "mediakeys": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "mediasession": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "chrome", 
+      "firefox"
+    ], 
+    "shipped": []
+  }, 
+  "mse": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie_mob"
+    ]
+  }, 
+  "p2p": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "webkit", 
+      "edge"
+    ], 
+    "shipped": [
+      "chrome", 
+      "firefox", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
+  "recording": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome", 
+      "firefox", 
+      "chrome", 
+      "opera", 
+      "and_chr"
+    ]
+  }, 
+  "screencapture": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "secondscreen": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "svg12": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "op_mini", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "svg2": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "timeupdate": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "timing": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "transcript": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "ttml": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "tvtuner": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "video": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "videoworker": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "webanimations": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "webaudio": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "firefox", 
+      "edge", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
+  "webvr": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": [
+      "firefox"
+    ]
+  }, 
+  "webvtt": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }
+}
