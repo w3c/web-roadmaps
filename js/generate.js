@@ -214,7 +214,7 @@ function formatImplData(data) {
                     var icon = document.createElement("img");
                     icon.src = "icons/" + ua + ".png";
                     icon.height = 30;
-                    icon.alt = sections[section] + " in " + ua;
+                    icon.alt = section + " in " + ua;
                     div.appendChild(icon);
                 }
             });
