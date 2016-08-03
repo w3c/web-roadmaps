@@ -1,13 +1,16 @@
 {
   "wgs": [
     {
-      "url": "http://www.w3.org/community/tvapi/",
-      "label": "TV Control API Community Group "
+      "url": "https://www.w3.org/2016/tvcontrol/",
+      "label": "TV Control Working Group "
     }
   ],
   "impl": {
-    "level": "low",
-    "label": "None"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "title": "TV Control API"
 }

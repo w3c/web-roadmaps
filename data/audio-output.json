@@ -1,8 +1,10 @@
 {
   "impl": {
-    "level": "low",
-    "label": "None",
-    "id": "audio-output"
+    "caniuse": null,
+    "chromestatus": 4621603249848320,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/audio-output/"
 }

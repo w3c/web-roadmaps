@@ -1,8 +1,10 @@
 {
   "impl": {
-    "level": "low",
-    "label": "Limited",
-    "id": "ttml2"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/ttml2/"
 }

@@ -1,7 +1,10 @@
 {
   "impl": {
-    "level": "high",
-    "label": "Good deployment"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
   "feature": "MediaController interface"

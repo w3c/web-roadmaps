@@ -4,9 +4,7 @@
     "label": "Audio tag tutorial"
   },
   "impl": {
-    "level": "high",
-    "label": "Good deployment",
-    "id": "audio"
+    "caniuse": "audio"
   },
   "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element",
   "wdc": {

@@ -1,8 +1,3 @@
 {
-  "impl": {
-    "level": "low",
-    "label": "None",
-    "id": "discovery"
-  },
   "TR": "http://www.w3.org/TR/discovery-api/"
 }

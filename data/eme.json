@@ -1,8 +1,10 @@
 {
   "impl": {
-    "level": "medium",
-    "label": "Growing deployment",
-    "id": "drm"
+    "caniuse": null,
+    "chromestatus": 6578378068983808,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/encrypted-media/"
 }

@@ -6,9 +6,11 @@
     }
   ],
   "impl": {
-    "level": "low",
-    "label": "None",
-    "id": "timing"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "title": "Timing Object"
 }

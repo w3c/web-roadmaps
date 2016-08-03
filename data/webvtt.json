@@ -1,8 +1,6 @@
 {
   "impl": {
-    "level": "low",
-    "label": "Limited",
-    "id": "webvtt"
+    "caniuse": "webvtt"
   },
   "TR": "http://www.w3.org/TR/webvtt1/"
 }

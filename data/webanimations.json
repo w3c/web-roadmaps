@@ -1,8 +1,10 @@
 {
   "impl": {
-    "level": "low",
-    "label": "Limited",
-    "id": "webanimations"
+    "caniuse": "web-animation",
+    "chromestatus": 5650817352728576,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/web-animations-1/"
 }

@@ -1,7 +1,10 @@
 {
   "impl": {
-    "level": "low",
-    "label": "limited"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": "Screen Capture",
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/screen-capture/"
 }

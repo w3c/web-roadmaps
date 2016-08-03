@@ -4,9 +4,7 @@
     "label": "SVG Tutorials"
   },
   "impl": {
-    "level": "high",
-    "label": "Widely deployed",
-    "id": "svg12"
+    "caniuse": "svg"
   },
   "TR": "http://www.w3.org/TR/SVG11/"
 }

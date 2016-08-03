@@ -1,14 +1,21 @@
 {
   "wgs": [
     {
-      "url": "",
-      "label": "N/A"
+      "url": "https://www.w3.org/2009/dap/",
+      "label": "Device and Sensors Working Group"
+    },
+    {
+      "url": "https://www.w3.org/2011/04/webrtc/",
+      "label": "Web Real-Time Communications Working Group"
     }
+
   ],
   "impl": {
-    "level": "low",
-    "label": "None",
-    "id": "videoworker"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "title": "Media Capture Stream with Worker"
 }

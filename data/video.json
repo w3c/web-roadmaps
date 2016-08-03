@@ -4,9 +4,7 @@
     "label": "Video Basics"
   },
   "impl": {
-    "level": "high",
-    "label": "Good deployment",
-    "id": "video"
+    "caniuse": "video"
   },
   "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element",
   "wdc": {

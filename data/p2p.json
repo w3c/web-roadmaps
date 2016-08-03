@@ -4,9 +4,11 @@
     "label": "WebRTC Introduction"
   },
   "impl": {
-    "level": "medium",
-    "label": "Growing",
-    "id": "p2p"
+    "caniuse": "rtcpeerconnection",
+    "chromestatus": 6612462929444864,
+    "mozstatus": null,
+    "edgestatus": 6612462929444864,
+    "webkitstatus": "specification-webrtc"
   },
   "TR": "http://www.w3.org/TR/webrtc/"
 }

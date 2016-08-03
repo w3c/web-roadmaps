@@ -1,7 +1,6 @@
 {
   "impl": {
-    "level": "high",
-    "label": "Good deployment"
+    "caniuse": "video"
   },
   "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#event-media-timeupdate",
   "feature": "timeupdate event"

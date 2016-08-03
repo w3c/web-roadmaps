@@ -7,9 +7,11 @@
   ],
   "maturity": "N/A",
   "impl": {
-    "level": "low",
-    "label": "None",
-    "id": "mediasession"
+    "caniuse": null,
+    "chromestatus": 5639924124483584,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "title": "Media Session",
   "TR": ""

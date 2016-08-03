@@ -4,9 +4,7 @@
     "label": "CSS Animations tutorial"
   },
   "impl": {
-    "level": "high",
-    "label": "Well deployed",
-    "id": "css-animation"
+    "caniuse": "css-animation"
   },
   "TR": "http://www.w3.org/TR/css3-animations"
 }

@@ -1,12 +1,16 @@
 {
   "wgs": [
     {
-      "label": "N/A"
+      "label": "WebVR Community Group",
+      "url": "https://www.w3.org/community/webvr/"
     }
   ],
   "impl": {
-    "level": "low",
-    "label": "None"
+    "caniuse": null,
+    "chromestatus": 4532810371039232,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "title": "WebVR"
 }

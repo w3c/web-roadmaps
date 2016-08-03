@@ -6,7 +6,10 @@
     }
   ],
   "impl": {
-    "level": "low",
-    "label": "None"
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   }
 }

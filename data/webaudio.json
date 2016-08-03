@@ -4,9 +4,11 @@
     "label": "An introduction to the Web Audio API"
   },
   "impl": {
-    "level": "high",
-    "label": "Good deployment",
-    "id": "webaudio"
+    "caniuse": "audio-api",
+    "chromestatus": 6261718720184320,
+    "mozstatus": null,
+    "edgestatus": 6261718720184320,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/webaudio/"
 }

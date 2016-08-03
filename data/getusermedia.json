@@ -1,8 +1,10 @@
 {
   "impl": {
-    "level": "medium",
-    "label": "Growing",
-    "id": "getusermedia"
+    "caniuse": "stream",
+    "chromestatus": 5755699816562688,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
   },
   "TR": "http://www.w3.org/TR/mediacapture-streams/"
 }
