@@ -1,10 +1,12 @@
 var sections = document.querySelectorAll("section.featureset");
 var templates = {
-    "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
-    "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
+    "well-deployed": "<table border=1><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
+    "exploratory-work":  "<table border=1><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
 };
 
 var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
+
+var browsers = ["firefox", "chrome", "edge", "safari", "webkit"];
 
 function fillCell(el, data, image) {
     if (!data) return;
@@ -78,12 +80,18 @@ function maturityData(spec) {
     return {maturity: maturity, maturityIcon: maturityIcon};
 }
 
-var specData;
+var specData, implData;
 var specXhr = new XMLHttpRequest();
+var implXhr = new XMLHttpRequest();
 specXhr.open("GET", "specs/tr.json");
 specXhr.onload = function() {
     specData = JSON.parse(this.responseText);
-    fillTables();
+    implXhr.open("GET", "specs/impl.json");
+    implXhr.onload = function() {
+        implData = JSON.parse(this.responseText);
+        fillTables();
+    }
+    implXhr.send();
 };
 specXhr.send();
 
@@ -174,9 +182,7 @@ function fillTables() {
 			}
                         maturityInfo = maturityData(specData[s]);
 			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
-			fillCell(el6, data.impl);
-			el6.appendChild(document.createElement("br"));
-			importSVG("images/" + s + ".svg", el6);
+			el6.appendChild(formatImplData(implData[s]));
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
 		xhr.send();
@@ -190,6 +196,32 @@ function fillTables() {
 	}
 	section.appendChild(dataTable);
     }
+}
+
+function formatImplData(data) {
+    // unique
+    var div = document.createElement("div");
+    var sections = {"Shipping": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
+    for (var section in sections) {
+        var uadata = data[sections[section]].filter(function(x, i, a) { return a.indexOf(x) === i});
+        if (uadata.length) {
+            var heading = document.createElement("p");
+            heading.appendChild(document.createTextNode(section));
+            div.appendChild(heading);
+
+            uadata.forEach(function(ua) {
+                if (browsers.indexOf(ua) !== -1) {
+                    var icon = document.createElement("img");
+                    icon.src = "icons/" + ua + ".png";
+                    icon.height = 30;
+                    icon.alt = sections[section] + " in " + ua;
+                    div.appendChild(icon);
+                }
+            });
+        }
+    }
+
+    return div;
 }
 
 // When two rows in a row (!) have the same content in the WG column,
