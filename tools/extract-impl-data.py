@@ -8,11 +8,12 @@ def normalize_ua(source, ua):
     return ua
 
 
-def feature_status(origdata, source, key):
+def feature_status(origdata, source, key, silentfail = False):
     shipped = origdata["shipped"]
     exp = origdata["experimental"]
     indev = origdata["indevelopment"]
     consider = origdata["consideration"]
+    chromeid = origdata.get("chromeid", None)
     if source=="caniuse":
         for ua, uadata in sources[source]["data"][key]["stats"].iteritems():
             latest_version = sources[source]["agents"][ua]["versions"][-4]
@@ -30,6 +31,7 @@ def feature_status(origdata, source, key):
                             exp.append(ua)
     elif source=="chromestatus":
         feature_data = filter(lambda a: a["id"]==key, sources[source])[0]
+        chromeid = feature_data["id"]
         chromestatus = feature_data["impl_status_chrome"]
         if chromestatus == "Enabled by default":
             shipped.append("chrome")
@@ -54,7 +56,8 @@ def feature_status(origdata, source, key):
             feature_data = filter(lambda a: a.get(key_filter, None)==key, sources[source])[0]
             edgestatus = feature_data["ieStatus"]["text"]
         except IndexError:
-            sys.stderr.write("Unknown %s for edgestatus %s" % (key_filter, key))
+            if not silentfail:
+                sys.stderr.write("Unknown %s for edgestatus %s" % (key_filter, key))
             edgestatus = ""
         if edgestatus in ["Shipped", "Prefixed"]:
             shipped.append("edge")
@@ -77,7 +80,7 @@ def feature_status(origdata, source, key):
             indev.append("webkit")
         elif webkitstatus == "Under Consideration":
             consider.append("webkit")
-    return {"shipped":shipped, "experimental":exp, "indevelopment": indev, "consideration": consider}
+    return {"shipped":shipped, "experimental":exp, "indevelopment": indev, "consideration": consider, "chromeid": chromeid}
 
 
 def processData():
@@ -99,6 +102,8 @@ def processData():
             for key, url in sources.iteritems():
                 if feature_data["impl"].get(key, None):
                     data[id] = feature_status(data[id], key, feature_data["impl"][key])
+                if data[id].has_key("chromeid") and key == "edgestatus":
+                    data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
 
 
     print json.dumps(data, sort_keys=True, indent=2)
