@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll("section.featureset");
 var templates = {
-    deployed: document.getElementById("template-deployed").textContent,
-    explore:  document.getElementById("template-explore").textContent
+    "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Stability</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
+    "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
 };
 
 var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
@@ -92,7 +92,8 @@ function fillTables() {
     for (var i = 0; i < sections.length; i++) {
 	var section = sections[i];
 	var dataTable = document.createElement("div");
-        var tableType = section.className.split(" ")[1]
+        var tableType = section.className.split(" ")[1];
+        tableType = tableType == "in-progress" ? "well-deployed" : tableType;
 	dataTable.innerHTML = templates[tableType];
 	var tbody = dataTable.querySelector("tbody");
 	var features = section.querySelectorAll("[data-feature]");
@@ -158,7 +159,7 @@ function fillTables() {
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
-                            if (x.tableType === "deployed") {
+                            if (x.tableType === "well-deployed") {
 			        wg.label = wg.label.replace(/ Working Group/,'');
                             }
                             wg.label = wg.label.replace(/Cascading Style Sheets \(CSS\)/,'CSS').replace(/Technical Architecture Group/,'TAG').replace(/Web Real-Time Communications/, 'WebRTC');
@@ -183,7 +184,7 @@ function fillTables() {
 		xhr.send();
 		tr.appendChild(specTd);
 		tr.appendChild(wgTd);
-                if (tableType === "deployed") {
+                if (tableType === "well-deployed") {
 		    tr.appendChild(maturityTd);
 		    tr.appendChild(stabilityTd);
                 }
