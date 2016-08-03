@@ -1,5 +1,6 @@
 {
   "3dcamera": {
+    "chromeid": 5713419084759040, 
     "consideration": [
       "firefox"
     ], 
@@ -10,6 +11,7 @@
     "shipped": []
   }, 
   "audio": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -32,6 +34,7 @@
     ]
   }, 
   "audio-output": {
+    "chromeid": 4621603249848320, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -40,6 +43,7 @@
     ]
   }, 
   "canvas": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -62,6 +66,7 @@
     ]
   }, 
   "css-animation": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -90,6 +95,7 @@
     "shipped": []
   }, 
   "domcapture": {
+    "chromeid": 5522768674160640, 
     "consideration": [], 
     "experimental": [
       "chrome"
@@ -100,15 +106,18 @@
     ]
   }, 
   "eme": {
+    "chromeid": 6578378068983808, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
-      "firefox"
+      "firefox", 
+      "edge"
     ]
   }, 
   "getusermedia": {
+    "chromeid": 5755699816562688, 
     "consideration": [], 
     "experimental": [
       "chrome"
@@ -128,6 +137,7 @@
     "shipped": []
   }, 
   "htmlmediaelement": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -150,6 +160,7 @@
     ]
   }, 
   "imagecapture": {
+    "chromeid": 4843864737185792, 
     "consideration": [
       "chrome"
     ], 
@@ -178,6 +189,7 @@
     "shipped": []
   }, 
   "mediasession": {
+    "chromeid": 5639924124483584, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
@@ -187,6 +199,7 @@
     "shipped": []
   }, 
   "mse": {
+    "chromeid": 4563797888991232, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
@@ -194,6 +207,7 @@
     ], 
     "shipped": [
       "chrome", 
+      "edge", 
       "firefox", 
       "samsung", 
       "chrome", 
@@ -208,10 +222,12 @@
     ]
   }, 
   "p2p": {
+    "chromeid": 6612462929444864, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
       "webkit", 
+      "edge", 
       "edge"
     ], 
     "shipped": [
@@ -228,7 +244,9 @@
     ]
   }, 
   "recording": {
+    "chromeid": 5929649028726784, 
     "consideration": [
+      "edge", 
       "edge"
     ], 
     "experimental": [], 
@@ -244,7 +262,9 @@
     ]
   }, 
   "screencapture": {
+    "chromeid": null, 
     "consideration": [
+      "edge", 
       "edge"
     ], 
     "experimental": [], 
@@ -252,6 +272,7 @@
     "shipped": []
   }, 
   "secondscreen": {
+    "chromeid": 6676265876586496, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
@@ -262,6 +283,7 @@
     ]
   }, 
   "svg12": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -291,6 +313,7 @@
     "shipped": []
   }, 
   "timeupdate": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -337,6 +360,7 @@
     "shipped": []
   }, 
   "video": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -365,6 +389,7 @@
     "shipped": []
   }, 
   "webanimations": {
+    "chromeid": 5650817352728576, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
@@ -375,12 +400,14 @@
     ]
   }, 
   "webaudio": {
+    "chromeid": 6261718720184320, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
       "firefox", 
+      "edge", 
       "edge", 
       "firefox", 
       "samsung", 
@@ -396,6 +423,7 @@
     ]
   }, 
   "webvr": {
+    "chromeid": 4532810371039232, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [
@@ -406,6 +434,7 @@
     ]
   }, 
   "webvtt": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
