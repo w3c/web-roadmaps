@@ -1,17 +1,8 @@
 {
-  "tests": {
-    "level": "medium",
-    "repo": "https://github.com/w3c/web-platform-tests/tree/master/web-animations/animation-node",
-    "url": "http://w3c-test.org/web-animations/",
-    "label": "Well started"
-  },
   "impl": {
     "level": "low",
     "label": "Limited",
     "id": "webanimations"
-  },
-  "editors": {
-    "url": "http://w3c.github.io/web-animations/"
   },
   "TR": "http://www.w3.org/TR/web-animations-1/"
 }

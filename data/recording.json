@@ -3,8 +3,5 @@
     "level": "low",
     "label": "Very limited"
   },
-  "editors": {
-    "url": "http://w3c.github.io/mediacapture-record/MediaRecorder.html"
-  },
   "TR": "http://www.w3.org/TR/mediastream-recording/"
 }

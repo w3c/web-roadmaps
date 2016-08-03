@@ -10,8 +10,5 @@
     "label": "None",
     "id": "timing"
   },
-  "title": "Timing Object",
-  "editors": {
-    "url": "http://webtiming.github.io/timingobject/"
-  }
+  "title": "Timing Object"
 }

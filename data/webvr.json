@@ -8,8 +8,5 @@
     "level": "low",
     "label": "None"
   },
-  "title": "WebVR",
-  "editors": {
-    "url": "https://github.com/MozVR/webvr-spec/blob/master/webvr.html"
-  }
+  "title": "WebVR"
 }

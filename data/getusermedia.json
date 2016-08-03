@@ -1,17 +1,8 @@
 {
-  "tests": {
-    "level": "medium",
-    "repo": "https://github.com/w3c/web-platform-tests/",
-    "url": "http://w3c-test.org/mediacapture-streams/",
-    "label": "started"
-  },
   "impl": {
     "level": "medium",
     "label": "Growing",
     "id": "getusermedia"
-  },
-  "editors": {
-    "url": "http://w3c.github.io/mediacapture-main/"
   },
   "TR": "http://www.w3.org/TR/mediacapture-streams/"
 }

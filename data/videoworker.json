@@ -10,8 +10,5 @@
     "label": "None",
     "id": "videoworker"
   },
-  "title": "Media Capture Stream with Worker",
-  "editors": {
-    "url": "http://chiahungtai.github.io/mediacapture-worker/"
-  }
+  "title": "Media Capture Stream with Worker"
 }

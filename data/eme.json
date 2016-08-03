@@ -1,17 +1,8 @@
 {
-  "tests": {
-    "level": "low",
-    "repo": "",
-    "url": "",
-    "label": "None"
-  },
   "impl": {
     "level": "medium",
     "label": "Growing deployment",
     "id": "drm"
-  },
-  "editors": {
-    "url": "http://w3c.github.io/encrypted-media/"
   },
   "TR": "http://www.w3.org/TR/encrypted-media/"
 }

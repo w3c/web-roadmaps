@@ -1,10 +1,4 @@
 {
-  "tests": {
-    "level": "low",
-    "repo": "https://github.com/w3c/web-platform-tests/",
-    "url": "http://w3c-test.org/webaudio/",
-    "label": "Started"
-  },
   "wpd": {
     "url": "http://docs.webplatform.org/wiki/tutorials/audio/an_introduction_to_the_web_audio_api",
     "label": "An introduction to the Web Audio API"
@@ -13,9 +7,6 @@
     "level": "high",
     "label": "Good deployment",
     "id": "webaudio"
-  },
-  "editors": {
-    "url": "http://webaudio.github.io/web-audio-api/"
   },
   "TR": "http://www.w3.org/TR/webaudio/"
 }

@@ -3,8 +3,5 @@
     "level": "low",
     "label": "None"
   },
-  "editors": {
-    "url": "http://w3c.github.io/mediacapture-image/"
-  },
   "TR": "http://www.w3.org/TR/image-capture/"
 }

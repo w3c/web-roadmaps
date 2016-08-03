@@ -1,17 +1,8 @@
 {
-  "tests": {
-    "level": "low",
-    "repo": "",
-    "url": "",
-    "label": "N/A"
-  },
   "impl": {
     "level": "low",
     "label": "N/A",
     "id": "svg2"
-  },
-  "editors": {
-    "url": "https://svgwg.org/svg2-draft/"
   },
   "TR": "http://www.w3.org/TR/SVG2/"
 }

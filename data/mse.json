@@ -4,8 +4,5 @@
     "label": "Well deployed",
     "id": "mse"
   },
-  "editors": {
-    "url": "http://w3c.github.io/media-source/"
-  },
   "TR": "http://www.w3.org/TR/media-source/"
 }

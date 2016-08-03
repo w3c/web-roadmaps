@@ -6,20 +6,11 @@
     }
   ],
   "maturity": "N/A",
-  "tests": {
-    "level": "low",
-    "repo": "",
-    "url": "",
-    "label": "N/A"
-  },
   "impl": {
     "level": "low",
     "label": "None",
     "id": "mediasession"
   },
   "title": "Media Session",
-  "TR": "",
-  "editors": {
-    "url": "https://mediasession.spec.whatwg.org/"
-  }
+  "TR": ""
 }

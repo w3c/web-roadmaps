@@ -1,17 +1,8 @@
 {
-  "tests": {
-    "level": "low",
-    "repo": "",
-    "url": "",
-    "label": "N/A"
-  },
   "impl": {
     "level": "low",
     "label": "None",
     "id": "presentation"
   },
-  "TR": "http://www.w3.org/TR/presentation-api/",
-  "editors": {
-    "url": "http://w3c.github.io/presentation-api/"
-  }
+  "TR": "http://www.w3.org/TR/presentation-api/"
 }

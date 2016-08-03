@@ -9,8 +9,5 @@
     "level": "low",
     "label": "None"
   },
-  "title": "TV Control API",
-  "editors": {
-    "url": "http://w3c.github.io/tvapi/spec/"
-  }
+  "title": "TV Control API"
 }

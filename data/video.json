@@ -1,14 +1,7 @@
 {
-  "coremob": "fulfills",
   "wpd": {
     "url": "http://docs.webplatform.org/wiki/tutorials/video_basics",
     "label": "Video Basics"
-  },
-  "tests": {
-    "level": "medium",
-    "repo": "https://github.com/w3c/web-platform-tests/",
-    "url": "http://w3c-test.org/html/semantics/embedded-content/the-video-element/",
-    "label": "Well started"
   },
   "impl": {
     "level": "high",
@@ -16,9 +9,6 @@
     "id": "video"
   },
   "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element",
-  "editors": {
-    "url": "http://www.w3.org/html/wg/drafts/html/CR/embedded-content-0.html#the-video-element"
-  },
   "wdc": {
     "url": "http://www.w3devcampus.com/html5-w3c-training/",
     "label": "HTML5 on-line course"

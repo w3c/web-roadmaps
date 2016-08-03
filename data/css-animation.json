@@ -1,11 +1,4 @@
 {
-  "coremob": "fulfills",
-  "tests": {
-    "level": "medium",
-    "repo": "https://github.com/w3c/csswg-test/tree/master/css-animations-1",
-    "url": "https://github.com/w3c/csswg-test/tree/master/css-animations-1",
-    "label": "well started"
-  },
   "wpd": {
     "url": "http://docs.webplatform.org/wiki/tutorials/css_animations",
     "label": "CSS Animations tutorial"
@@ -14,9 +7,6 @@
     "level": "high",
     "label": "Well deployed",
     "id": "css-animation"
-  },
-  "editors": {
-    "url": "http://dev.w3.org/csswg/css3-animations/"
   },
   "TR": "http://www.w3.org/TR/css3-animations"
 }
