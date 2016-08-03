@@ -4,12 +4,12 @@
     "title": "Media Capture Depth Stream Extensions", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -18,7 +18,7 @@
     "title": "HTML5", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
@@ -28,21 +28,21 @@
     "title": "Audio Output Devices API", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
   "canvas": {
-    "maturity": "CR", 
+    "maturity": "REC", 
     "title": "HTML Canvas 2D Context", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
@@ -62,7 +62,7 @@
     "title": "Network Service Discovery", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
+        "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
       }
     ]
@@ -72,50 +72,50 @@
     "title": "Media Capture from DOM Elements", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
   "eme": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Encrypted Media Extensions", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
   }, 
   "getusermedia": {
-    "maturity": "LastCall", 
+    "maturity": "CR", 
     "title": "Media Capture and Streams", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
   "getusermedia-cap": {
-    "maturity": "LastCall", 
+    "maturity": "CR", 
     "title": "Media Capture and Streams", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -124,22 +124,22 @@
     "title": "HTML5", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
   }, 
   "imagecapture": {
     "maturity": "WD", 
-    "title": "Mediastream Image Capture", 
+    "title": "MediaStream Image Capture", 
     "wgs": [
-      {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -148,18 +148,18 @@
     "title": "HTML5", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
   }, 
   "mediakeys": {
     "maturity": "WD", 
-    "title": "DOM Level 3 KeyboardEvent key Values", 
+    "title": "UI Events KeyboardEvent key Values", 
     "wgs": [
       {
-        "label": "Web Applications Working Group", 
-        "url": "http://www.w3.org/2008/webapps/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -168,7 +168,7 @@
     "title": "Media Source Extensions", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
@@ -188,12 +188,12 @@
     "title": "MediaStream Recording", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -202,17 +202,17 @@
     "title": "Screen Capture", 
     "wgs": [
       {
-        "label": "Device APIs Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
-      }, 
-      {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
   "secondscreen": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Presentation API", 
     "wgs": [
       {
@@ -246,7 +246,7 @@
     "title": "HTML5", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
@@ -266,7 +266,7 @@
     "title": "HTML5", 
     "wgs": [
       {
-        "label": "HTML Working Group", 
+        "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
       }
     ]
