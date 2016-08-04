@@ -242,17 +242,18 @@ function formatImplData(data) {
         if (uadata.length) {
             var heading = document.createElement("p");
             heading.appendChild(document.createTextNode(section));
-            div.appendChild(heading);
-
+            heading.appendChild(document.createElement("br"));
             uadata.forEach(function(ua) {
                 if (browsers.indexOf(ua) !== -1) {
                     var icon = document.createElement("img");
                     icon.src = "icons/" + ua + ".png";
                     icon.height = 30;
                     icon.alt = section + " in " + ua;
-                    div.appendChild(icon);
+                    heading.appendChild(icon);
                 }
             });
+            div.appendChild(heading);
+
         }
     }
 
