@@ -105,6 +105,17 @@ def processData():
                 if data[id].has_key("chromeid") and key == "edgestatus":
                     data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
 
+        # in case of overlapping / conflicting data, we keep the most optimistic
+
+        statuses = ["consideration", "indevelopment", "experimental", "shipped"]
+        for status in ["consideration", "indevelopment", "experimental"]:
+            higherstatuses = statuses[statuses.index(status)+1:]
+            for ua in data[id][status]:
+                for st in higherstatuses:
+                    if ua in data[id][st]:
+                        data[id][status].remove(ua)
+                        break
+
 
     print json.dumps(data, sort_keys=True, indent=2)
 
