@@ -47,6 +47,16 @@
       }
     ]
   }, 
+  "color-gamut": {
+    "maturity": "WD", 
+    "title": "Media Queries Level 4", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-animation": {
     "maturity": "WD", 
     "title": "CSS Animations", 
