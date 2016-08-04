@@ -234,11 +234,10 @@ function fillTables() {
 }
 
 function formatImplData(data) {
-    // unique
     var div = document.createElement("div");
     var sections = {"Shipping": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
     for (var section in sections) {
-        var uadata = data[sections[section]].filter(function(x, i, a) { return a.indexOf(x) === i});
+        var uadata = data[sections[section]];
         if (uadata.length) {
             var heading = document.createElement("p");
             heading.appendChild(document.createTextNode(section));

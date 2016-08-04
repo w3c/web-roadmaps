@@ -21,33 +21,33 @@ def feature_status(origdata, source, key, silentfail = False):
 
             ua = normalize_ua(source, ua)
             if uadata[latest_version].startswith("y"):
-                shipped.append(ua)
+                shipped.add(ua)
             elif uadata[latest_version].startswith("n d"):
-                exp.append(ua)
+                exp.add(ua)
             else:
                 for version in experimental_versions:
                     if version:
                         if uadata[version].startswith("y") or uadata[version].startswith("n d"):
-                            exp.append(ua)
+                            exp.add(ua)
     elif source=="chromestatus":
         feature_data = filter(lambda a: a["id"]==key, sources[source])[0]
         chromeid = feature_data["id"]
         chromestatus = feature_data["impl_status_chrome"]
         if chromestatus == "Enabled by default":
-            shipped.append("chrome")
+            shipped.add("chrome")
         elif chromestatus == "Behind a flag":
-            exp.append("chrome")
+            exp.add("chrome")
         elif chromestatus == "In development":
-            indev.append("chrome")
+            indev.add("chrome")
         elif chromestatus == "Proposed":
-            consider.append("chrome")
+            consider.add("chrome")
         firefoxstatus = feature_data["ff_views"]["text"]
         if firefoxstatus == "Shipped":
-            shipped.append("firefox")
+            shipped.add("firefox")
         elif firefoxstatus == "In development":
-            indev.append("firefox")
+            indev.add("firefox")
         elif firefoxstatus == "Public support":
-            consider.append("firefox")
+            consider.add("firefox")
     elif source=="edgestatus":
         key_filter = "id"
         if type(key) is unicode:
@@ -60,13 +60,13 @@ def feature_status(origdata, source, key, silentfail = False):
                 sys.stderr.write("Unknown %s for edgestatus %s" % (key_filter, key))
             edgestatus = ""
         if edgestatus in ["Shipped", "Prefixed"]:
-            shipped.append("edge")
+            shipped.add("edge")
         elif edgestatus.lower() == "preview release":
-            exp.append("edge")
+            exp.add("edge")
         elif edgestatus == "In Development":
-            indev.append("edge")
+            indev.add("edge")
         elif edgestatus == "Under Consideration":
-            consider.append("edge")
+            consider.add("edge")
     elif source=="webkitstatus":
         keytype = key.split("-")[0]
         if keytype == "feature":
@@ -75,11 +75,11 @@ def feature_status(origdata, source, key, silentfail = False):
         feature_data = filter(lambda a: a["name"].lower() == keyname, sources[source][keytype])[0]
         webkitstatus = feature_data["status"].get("status", "")
         if webkitstatus == "Done" or webkitstatus == "Partial Support":
-            shipped.append("webkit")
+            shipped.add("webkit")
         elif webkitstatus == "In Development":
-            indev.append("webkit")
+            indev.add("webkit")
         elif webkitstatus == "Under Consideration":
-            consider.append("webkit")
+            consider.add("webkit")
     return {"shipped":shipped, "experimental":exp, "indevelopment": indev, "consideration": consider, "chromeid": chromeid}
 
 
@@ -97,7 +97,7 @@ def processData():
         except:
             sys.stderr.write("Could not parse %s as JSON" % id)
             feature_data = {}
-        data[id]={"shipped":[], "experimental": [], "indevelopment": [], "consideration": []}
+        data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
         if feature_data.has_key("impl"):
             for key, url in sources.iteritems():
                 if feature_data["impl"].get(key, None):
@@ -110,12 +110,14 @@ def processData():
         statuses = ["consideration", "indevelopment", "experimental", "shipped"]
         for status in ["consideration", "indevelopment", "experimental"]:
             higherstatuses = statuses[statuses.index(status)+1:]
-            for ua in data[id][status]:
+            for ua in data[id][status].copy():
                 for st in higherstatuses:
                     if ua in data[id][st]:
                         data[id][status].remove(ua)
                         break
-
+        # turning the sets into lists for JSON serialization
+        for status in statuses:
+            data[id][status] = list(data[id][status])
 
     print json.dumps(data, sort_keys=True, indent=2)
 
