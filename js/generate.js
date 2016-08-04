@@ -219,9 +219,11 @@ function fillTables() {
 		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
 		xhr.send();
 		tr.appendChild(specTd);
-//		tr.appendChild(wgTd);
                 if (tableType === "well-deployed") {
 		    tr.appendChild(maturityTd);
+                }
+                if (tableType !== "well-deployed") {
+		    tr.appendChild(wgTd);
                 }
 		tr.appendChild(implTd);
 	    }
