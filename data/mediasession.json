@@ -1,8 +1,8 @@
 {
   "wgs": [
     {
-      "url": "https://whatwg.org/",
-      "label": "WHATWG"
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
     }
   ],
   "maturity": "N/A",
@@ -14,5 +14,5 @@
     "webkitstatus": null
   },
   "title": "Media Session",
-  "TR": ""
+    "editors": {"url":"https://wicg.github.io/mediasession/"}
 }
