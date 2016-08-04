@@ -3,24 +3,28 @@
     <meta charset="utf-8">
     <header>
       <h1>Synchronized Content</h1>
+      <p>In media content, time is of the essence, and when playing simultaneously media content either in a single or on multiple devices, ensuring that audio, video and other time-based content are properly synchronized is critical in delivering the right user experience.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
           <h2>Well-deployed technologies</h3>
-          <p data-feature="Timeline management"><a data-featureid="timeupdate"><code>timeupdate</code> event</a></p>
-          <p data-feature="Local media elements synchronization"><a data-featureid="mediacontroller"><code>MediaController</code> interface</a></p>
+          <p data-feature="Timeline management">The basic metronome to use to react to playing media over time is provided by the <a data-featureid="timeupdate"><code>timeupdate</code> event</a> of HTML’s <code>&lt;audio&gt; and <code>&lt;video&gt;</code> elements.</p>
         </section>
         <section class="featureset in-progress">
           <h2>Specifications in progress</h3>
-          <p data-feature="Close Captioning"><a data-featureid="webvtt">Web VTT</a> <a data-featureid="ttml">TTML 2</a></p>
-          <p data-feature="Timeline management"><a data-featureid="webanimations">Web Animations</a></p>
           <p data-feature="Audio synchronization">The <a data-featureid="webaudio">Web Audio API</a> defines a full-fledged audio processing API that exposes the precise time at which audio will be played. This allows for very tight synchronization between different audio processing events happening in the local audio context.</p>
+<div data-feature="Close Captioning">
+  <p>To associate external text track (e.g. close captions) to to a video, the <a data-featureid="webvtt">Web VTT</a> format can be plugged into a <code>&lt;video&gt;</code> element.</p>
+  <p>While WebVTT is the main format used to render captions in browsers, <a data-featureid="ttml">TTML 2</a> provides a richer language for describing timed text that can be used as an interchange format among authoring systems.</p>
+  </div>
+          <p data-feature="Timeline management">Beyond text tracks, Web pages may contain many other time-based animations with which synchronization can be useful; the <a data-featureid="webanimations">Web Animations API</a> offers the tools needed to set up these synchronization points.</p>
         </section>
         <section class="featureset exploratory-work">
           <h2>Exploratory work</h3>
-          <p data-feature="Close Captioning"><a data-featureid="inband">In-band track sourcing</a> </p>
-          <p data-feature="Transcripts"><a data-featureid="transcript">Transcript extension</a></p>
-          <p data-feature="Multi-device synchronization"><a data-featureid="timing">Timing Object</a></p>
+          <p data-feature="Close Captioning">When media resources enclose their own text tracks, having these in-band information exposed to the Web application enables creating richer interactions; the <a data-featureid="inband">Sourcing In-band Media Resource Tracks from Media Containers into HTML</a> document offers guidance as to how that in-band information should be exposed in browsers.</p>
+          <p data-feature="Transcripts">Since not all users can (or want to) listen to an audio resource or view a video, proving an alternative transcript of the said content is a well-known best practice; a <a data-featureid="transcript">transcript extension</a> to HTML offers to make the links between media content and their transcript explicit, to facilitate discovery and usage.</p>
+          <p data-feature="Local media elements synchronization">There are a number of cases that need synchronization of several tracks in the same page, for instance to synchronize the sign-language transcript of an audio track with its associated video. The <a data-featureid="mediacontroller"><code>MediaController</code> interface</a> defined in the HTML specification provides that feature, but has received so far <a href="https://github.com/whatwg/html/issues/192">limited implementation support</a>.</p>
+          <p data-feature="Multi-device synchronization">When looking at the broader use case of synchronizing media rendering across multiple pages or devices, it becomes critical that browsers follow closely a shared clock when playing media; the <a data-featureid="timing">Timing Object</a> specification proposes a mechanism to bring shared on-line locks to browsers.</p>
         </section>
 </main>
         <script src="js/generate.js"></script>
