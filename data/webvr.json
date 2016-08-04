@@ -12,5 +12,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "title": "WebVR"
+    "title": "WebVR",
+    "editors": {"url": "https://w3c.github.io/webvr/"}
 }
