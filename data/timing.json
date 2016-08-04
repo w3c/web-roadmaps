@@ -5,12 +5,6 @@
       "label": "Multi-Device Timing Community Group "
     }
   ],
-  "impl": {
-    "caniuse": null,
-    "chromestatus": null,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
+    "editors": {"url": "http://webtiming.github.io/timingobject/"},
   "title": "Timing Object"
 }
