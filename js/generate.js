@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll("section.featureset");
 var templates = {
-    "well-deployed": "<table border=1><thead><tr><th>Feature</th><th>Specification</th><th>Working Group</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
-    "exploratory-work":  "<table border=1><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
+    "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
+    "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
 };
 
 var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
@@ -189,7 +189,7 @@ function fillTables() {
 		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
 		xhr.send();
 		tr.appendChild(specTd);
-		tr.appendChild(wgTd);
+//		tr.appendChild(wgTd);
                 if (tableType === "well-deployed") {
 		    tr.appendChild(maturityTd);
                 }

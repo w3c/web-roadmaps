@@ -1,7 +1,7 @@
 table { border-collapse: collapse; width: 100%}
 tbody th { text-align:left;}
-thead th { background-color: #0070cc;}
-th, td { border: 1px thin solid;}
+thead th { background-color: #0070cc; color: #eee; padding: 0 0.3em;}
+th, td { border-bottom:  thin solid; border-top:  thin solid;}
 tbody th, tbody td { padding-left: 0.5em;}
 td.maturity { text-align: center; padding: 0;}
 
