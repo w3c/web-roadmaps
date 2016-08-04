@@ -129,6 +129,7 @@ function fillTables() {
     var counterReq = 0 ,counterRes = 0;
     for (var i = 0; i < sections.length; i++) {
 	var section = sections[i];
+        if (!section.classList.contains("featureset")) continue;
 	var dataTable = document.createElement("div");
         var tableType = section.className.split(" ")[1];
         tableType = tableType == "in-progress" ? "well-deployed" : tableType;
