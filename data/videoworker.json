@@ -17,5 +17,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
+    "editors": {"url": "https://w3c.github.io/mediacapture-worker/"},
   "title": "Media Capture Stream with Worker"
 }
