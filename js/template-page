@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Standards for Media and Real Time Communications on the Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://w3c.github.io/mediartc-roadmap-ui/assets/css/theme.css">
+    <link rel="stylesheet" href="https://w3c.github.io/mediartc-roadmap-ui/assets/css/roadmap.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/icon-humberger.svg" height="15" alt=""></button>
+
+
+                <div class="brand">
+                  <img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/w3cdevelopers-logo.svg" height="30" alt="">
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      </section>
+        <section class="contribute">
+            <div class="container">
+                <p>
+                    Readers are strongly encouraged to submit their use cases that cannot be achieved today with Web technologies, either by starting a new topic in the <a href="https://discourse.wicg.io/c/mediartc">Media and Real-Time Communications category of W3C’s discourse forum</a> or by raising an <a href="https://github.com/dontcallmedom/mediartc-roadmap/issues/new">issue on the Github repository</a> where this document is maintained.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/dontcallmedom/mediartc-roadmap/">Github</a>
+                  <a class="btn reverse" href="https://discourse.wicg.io/c/mediartc">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+              <li>
+                <a href="rendering.html">
+                  <div class="description">
+                    <p>
+                      Media rendering
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="processing.html">
+                  <div class="description">
+                    <p>
+                      Media processing
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="synchronized.html">
+                  <div class="description">
+                    <p>
+                      Synchronized content
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="control.html">
+                  <div class="description">
+                    <p>
+                      Media control
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="transmission.html">
+                  <div class="description">
+                    <p>
+                      Media transmission
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="capture.html">
+                  <div class="description">
+                    <p>
+                      Media capture
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,4 +1,15 @@
-var sections = document.querySelectorAll("section.featureset");
+var sections = [];
+var hero = [];
+var sectionsOrig = document.querySelectorAll("section.featureset");
+for (var i = 0; i < sectionsOrig.length; i++) {
+    sections.push(sectionsOrig[i].cloneNode(true));
+}
+var heroOrig = document.querySelectorAll("header *");
+for (var i = 0; i < heroOrig.length; i++) {
+    hero.push(heroOrig[i].cloneNode(true));
+}
+var scripts = ['https://w3c.github.io/mediartc-roadmap-ui/assets/js/sidenav.js', 'https://w3c.github.io/mediartc-roadmap-ui/assets/js/app.js'];
+
 var templates = {
     "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
     "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
@@ -64,19 +75,39 @@ function maturityData(spec) {
 }
 
 var specData, implData;
+var templateXhr = new XMLHttpRequest();
 var specXhr = new XMLHttpRequest();
 var implXhr = new XMLHttpRequest();
-specXhr.open("GET", "specs/tr.json");
-specXhr.onload = function() {
-    specData = JSON.parse(this.responseText);
-    implXhr.open("GET", "specs/impl.json");
-    implXhr.onload = function() {
-        implData = JSON.parse(this.responseText);
-        fillTables();
+templateXhr.responseType = 'text';
+templateXhr.open("GET", "js/template-page");
+templateXhr.onload = function() {
+    document.documentElement.innerHTML = this.responseText;
+    for (var i = 0 ; i < sections.length ; i++) {
+        document.querySelector('.main-content .container').appendChild(sections[i]);
     }
-    implXhr.send();
-};
-specXhr.send();
+    for (var i = 0 ; i < hero.length ; i++) {
+        document.querySelector('.hero .container').appendChild(hero[i]);
+    }
+
+    for (var i = 0 ; i < scripts.length ; i++) {
+        var s = document.createElement("script");
+        s.src = scripts[i];
+        document.querySelector('body').appendChild(s);
+    }
+
+    specXhr.open("GET", "specs/tr.json");
+    specXhr.onload = function() {
+        specData = JSON.parse(this.responseText);
+        implXhr.open("GET", "specs/impl.json");
+        implXhr.onload = function() {
+            implData = JSON.parse(this.responseText);
+            fillTables();
+        }
+        implXhr.send();
+    };
+    specXhr.send();
+}
+templateXhr.send();
 
 function fillTables() {
     var counterReq = 0 ,counterRes = 0;
