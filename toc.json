@@ -1,0 +1,35 @@
+[
+    {"url":"rendering.html",
+     "title":"Media rendering",
+     "icon":"https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-rendering-icon.svg",
+     "description":"Features needed to render media content on one or more devices."},
+    {"url":"processing.html",
+     "title":"Media processing",
+     "icon":"https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-control-icon.svg",
+     "description":"Features needed to analyze or modify media content."
+    },
+    {
+        "url": "synchronized.html",
+        "title": "Synchronized content",
+        "icon": "https://w3c.github.io/mediartc-roadmap-ui/assets/img/synchronized-content-icon.svg",
+        "description": "Features needed to synchronize multiple media or non-media content together, on one or several devices."
+    },
+    {
+        "url": "control.html",
+        "title": "Media control",
+        "icon": "https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-control-icon.svg",
+        "description": "Features needed to let the user interact with the playback of media content, both via local and remote interactions."
+    },
+    {
+        "url":"transmission.html",
+        "title":"Media transmission",
+        "icon":"https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-transmission-icon.svg",
+        "description":"Features that help with transmitting media content from its source to its rendering target."
+    },
+    {
+        "url":"capture.html",
+        "title":"Media capture",
+        "icon":"https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-capture-icon.svg",
+        "description":"Features needed to capture media content from a variety of available sources."
+    }
+]

@@ -28,15 +28,20 @@
     </header>
 
 
+
     <main>
+
       <div class="content-wrapper">
         <section class="hero">
             <div class="container">
             </div>
         </section>
-        <section class="main-content">
+        <section class="features">
             <div class="container">
-      </section>
+                <ul class="roadmap-list">
+                </ul>
+            </div>
+        </section>
         <section class="contribute">
             <div class="container">
             <h2>See anything missing?</h2>

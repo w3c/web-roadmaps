@@ -14,6 +14,7 @@ var templates = {
     "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
     "exploratory-work":  "<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>"
 };
+var templateTocItem = "<a href=''><div class='description'></div></a>";
 
 var maturityLevels = {"ed":"low","LastCall":"medium","WD":"low","CR":"high","PR":"high","REC":"high"};
 
@@ -78,6 +79,7 @@ var specData, implData;
 var templateXhr = new XMLHttpRequest();
 var specXhr = new XMLHttpRequest();
 var implXhr = new XMLHttpRequest();
+var tocXhr = new XMLHttpRequest();
 templateXhr.responseType = 'text';
 templateXhr.open("GET", "js/template-page");
 templateXhr.onload = function() {
@@ -94,6 +96,20 @@ templateXhr.onload = function() {
         s.src = scripts[i];
         document.querySelector('body').appendChild(s);
     }
+
+    tocXhr.open("GET", "toc.json");
+    tocXhr.onload = function() {
+        var toc = JSON.parse(this.responseText);
+        var nav = document.querySelector("aside nav ul");
+        for (var i = 0 ; i < toc.length; i++) {
+            var navLi = document.createElement("li");
+            navLi.innerHTML = templateTocItem;
+            navLi.querySelector("a").href = toc[i].url;
+            navLi.querySelector("div.description").textContent = toc[i].title;
+            nav.appendChild(navLi);
+        }
+    }
+    tocXhr.send();
 
     specXhr.open("GET", "specs/tr.json");
     specXhr.onload = function() {
