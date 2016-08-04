@@ -20,10 +20,14 @@ for filename in sys.argv[1:]:
     id = filename.split("/")[-1].split(".")[0]
     f = open(filename)
     feature_data = json.loads(f.read())
-    tr_latest = "/".join(feature_data.get("TR", "").split("/")[:5])
-    if tr_latest == "":
+    url_comp = feature_data.get("TR", "").split("/")
+    if len(url_comp) == 1:
         continue
-    tr = trs.xpath("/rdf:RDF/*[d:versionOf/@rdf:resource='%s' or d:versionOf/@rdf:resource='%s/']" % (tr_latest, tr_latest),namespaces=ns)
+    url_comp[0]="http:"
+    tr_latest = "/".join(url_comp[:5])
+    url_comp[0]="https:"
+    tr_latest_https = "/".join(url_comp[:5])
+    tr = trs.xpath("/rdf:RDF/*[d:versionOf/@rdf:resource='%s' or d:versionOf/@rdf:resource='%s/' or d:versionOf/@rdf:resource='%s' or d:versionOf/@rdf:resource='%s/']" % (tr_latest, tr_latest, tr_latest_https, tr_latest_https),namespaces=ns)
     if len(tr) == 0:
         sys.stderr.write("%s: %s not found in tr.rdf\n" % (id, tr_latest))
         continue
