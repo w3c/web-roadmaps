@@ -81,7 +81,7 @@ var specXhr = new XMLHttpRequest();
 var implXhr = new XMLHttpRequest();
 var tocXhr = new XMLHttpRequest();
 templateXhr.responseType = 'text';
-templateXhr.open("GET", "js/template-page");
+templateXhr.open("GET", "../js/template-page");
 templateXhr.onload = function() {
     document.documentElement.innerHTML = this.responseText;
     for (var i = 0 ; i < sections.length ; i++) {
@@ -90,7 +90,6 @@ templateXhr.onload = function() {
     for (var i = 0 ; i < hero.length ; i++) {
         document.querySelector('.hero .container').appendChild(hero[i]);
     }
-    document.querySelector('title').textContent = hero[0].textContent + ' - ' + document.querySelector('title').textContent;
     for (var i = 0 ; i < scripts.length ; i++) {
         var s = document.createElement("script");
         s.src = scripts[i];
@@ -100,21 +99,29 @@ templateXhr.onload = function() {
     tocXhr.open("GET", "toc.json");
     tocXhr.onload = function() {
         var toc = JSON.parse(this.responseText);
+        document.querySelector('title').textContent = hero[0].textContent + ' - ' + toc.title;
+        var discourseLinks = document.querySelectorAll('section.contribute .discourse');
+        for (var i = 0 ; i < discourseLinks.length; i++) {
+            discourseLinks[i].href = toc.discourse.url;
+            if (discourseLinks[i].classList.contains('discoursecat')) {
+                discourseLinks[i].textContent = toc.discourse.category;
+            }
+        }
         var nav = document.querySelector("aside nav ul");
-        for (var i = 0 ; i < toc.length; i++) {
+        for (var i = 0 ; i < toc.pages.length; i++) {
             var navLi = document.createElement("li");
             navLi.innerHTML = templateTocItem;
-            navLi.querySelector("a").href = toc[i].url;
-            navLi.querySelector("div.description").textContent = toc[i].title;
+            navLi.querySelector("a").href = toc.pages[i].url;
+            navLi.querySelector("div.description").textContent = toc.pages[i].title;
             nav.appendChild(navLi);
         }
     }
     tocXhr.send();
 
-    specXhr.open("GET", "specs/tr.json");
+    specXhr.open("GET", "../specs/tr.json");
     specXhr.onload = function() {
         specData = JSON.parse(this.responseText);
-        implXhr.open("GET", "specs/impl.json");
+        implXhr.open("GET", "../specs/impl.json");
         implXhr.onload = function() {
             implData = JSON.parse(this.responseText);
             fillTables();
@@ -170,7 +177,7 @@ function fillTables() {
 		var implTd = document.createElement("td");
 		var xhr = new XMLHttpRequest();
                 xhr.tableType = tableType;
-		xhr.open("GET", "data/" + spec + ".json");
+		xhr.open("GET", "../data/" + spec + ".json");
                 counterReq++;
 		xhr.onload = function(x, s, el1, el2, el3, el6) {
 		    return function() {
@@ -245,7 +252,7 @@ function formatImplData(data) {
             uadata.forEach(function(ua) {
                 if (browsers.indexOf(ua) !== -1) {
                     var icon = document.createElement("img");
-                    icon.src = "icons/" + ua + ".png";
+                    icon.src = "../icons/" + ua + ".png";
                     icon.height = 30;
                     icon.alt = section + " in " + ua;
                     heading.appendChild(icon);

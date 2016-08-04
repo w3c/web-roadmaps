@@ -1,4 +1,7 @@
-[
+{
+    "title": "Roadmap of Media Technologies for the Web",
+    "discourse": {"category": "Media and Real-Time Communications category of W3C’s discourse forum", "url": "https://discourse.wicg.io/c/mediartc"},
+    "pages": [
     {"url":"rendering.html",
      "title":"Media rendering",
      "icon":"https://w3c.github.io/mediartc-roadmap-ui/assets/img/media-rendering-icon.svg",
@@ -33,3 +36,4 @@
         "description":"Features needed to capture media content from a variety of available sources."
     }
 ]
+}

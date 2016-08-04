@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roadmap of Media Technologies for the Web</title>
+    <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0072ff">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://w3c.github.io/mediartc-roadmap-ui/assets/css/roadmap.css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json"><link rel="stylesheet" href="../style.css">
   </head>
   <body>
 
@@ -41,11 +41,11 @@
             <div class="container">
             <h2>See anything missing?</h2>
                 <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
-                 <p>To that end, you can start a new topic in the <a href="https://discourse.wicg.io/c/mediartc">Media and Real-Time Communications category of W3C’s discourse forum</a> or raise an <a href="https://github.com/dontcallmedom/mediartc-roadmap/issues/new">issue on the Github repository of this document</a>.
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href=""></a> or raise an <a href="https://github.com/w3c/media-web-roadmap/issues/new">issue on the Github repository of this document</a>.
                 </p>
                 <p class="call-to-action">
-                  <a class="btn" href="https://github.com/dontcallmedom/mediartc-roadmap/">Github</a>
-                  <a class="btn reverse" href="https://discourse.wicg.io/c/mediartc">Discourse</a>
+                  <a class="btn" href="https://github.com/w3c/media-web-roadmap/">Github</a>
+                  <a class="btn reverse discourse" href="">Discourse</a>
                 </p>
             </div>
         </section>
