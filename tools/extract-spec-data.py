@@ -19,7 +19,11 @@ maturities = ["LastCall", "WD", "CR", "PR", "REC", "Retired", "NOTE"]
 for filename in sys.argv[1:]:
     id = filename.split("/")[-1].split(".")[0]
     f = open(filename)
-    feature_data = json.loads(f.read())
+    try:
+        feature_data = json.loads(f.read())
+    except:
+        sys.stderr.write("Could not load %s as JSON\n" % filename)
+        feature_data = {}
     url_comp = feature_data.get("TR", "").split("/")
     if len(url_comp) == 1:
         continue
