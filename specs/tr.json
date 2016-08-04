@@ -197,6 +197,16 @@
       }
     ]
   }, 
+  "remote-playback": {
+    "maturity": "WD", 
+    "title": "Remote Playback API", 
+    "wgs": [
+      {
+        "label": "Second Screen Presentation Working Group", 
+        "url": "http://www.w3.org/2014/secondscreen/"
+      }
+    ]
+  }, 
   "screencapture": {
     "maturity": "WD", 
     "title": "Screen Capture", 

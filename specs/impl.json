@@ -261,6 +261,15 @@
       "and_chr"
     ]
   }, 
+  "remote-playback": {
+    "chromeid": 5778318691401728, 
+    "consideration": [
+      "chrome"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "screencapture": {
     "chromeid": null, 
     "consideration": [
