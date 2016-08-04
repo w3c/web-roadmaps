@@ -182,6 +182,8 @@ function fillTables() {
 			}
                         maturityInfo = maturityData(specData[s]);
 			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
+                        el3.classList.add("maturity");
+
 			el6.appendChild(formatImplData(implData[s]));
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
