@@ -90,7 +90,7 @@ templateXhr.onload = function() {
     for (var i = 0 ; i < hero.length ; i++) {
         document.querySelector('.hero .container').appendChild(hero[i]);
     }
-
+    document.querySelector('title').textContent = hero[0].textContent + ' - ' + document.querySelector('title').textContent;
     for (var i = 0 ; i < scripts.length ; i++) {
         var s = document.createElement("script");
         s.src = scripts[i];
