@@ -43,23 +43,6 @@ function fillCell(el, data, image) {
     }
 }
 
-function importSVG(svgurl, el, postHook) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET",svgurl);
-    xhr.responseType = "document";
-    xhr.onload = function (e) {
-	if (e.target.status == "200" || e.target.status == "304") {
-	    var svg = e.target.response.documentElement;
-	    svg.querySelector("style").remove();
-	    el.appendChild(svg);
-	    if (postHook) {
-		postHook(el);
-	    }
-	}
-    };
-    xhr.send();
-}
-
 function maturityData(spec) {
     var maturity ;
     var maturityIcon ;
@@ -226,35 +209,3 @@ function formatImplData(data) {
     return div;
 }
 
-// When two rows in a row (!) have the same content in the WG column,
-// merge the two cells
-function mergeWGCells() {
-    var rows = document.querySelectorAll("tbody tr");
-    var wgCells = [];
-    for (var i = 0 ; i < rows.length; i++) {
-	if (rows[i].getElementsByTagName("td")) {
-	    wgCells.push(rows[i].getElementsByTagName("td")[1]);
-	}
-    }
-    for (var i = wgCells.length - 1 ; i >= 0; i--) {
-	var wgCell = wgCells[i];
-	var prevTr = wgCell.parentNode.previousElementSibling;
-	if (prevTr && prevTr.getElementsByTagName("td")[1] && prevTr.getElementsByTagName("td")[1].textContent == wgCell.textContent) {
-	    var rowspan;
-	    if (wgCell.getAttribute("rowspan")) {
-		rowspan = parseInt(wgCell.getAttribute("rowspan"), 10);
-	    } else {
-		rowspan = 1;
-	    }
-	    prevCell = prevTr.getElementsByTagName("td")[1];
-	    prevCell.setAttribute("rowspan", rowspan + 1);
-	    wgCell.remove();
-	}
-    }
-}
-
-// clean up
-var scripts = document.querySelectorAll("script");
-for (var i = 0; i < scripts.length; i++) {
-    scripts[i].remove();
-}
