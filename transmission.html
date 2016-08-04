@@ -3,19 +3,20 @@
     <meta charset="utf-8">
     <header>
       <h1>Media Transmission</h1>
+      <p>Streamed media content, in particular video, is particularly demanding for the underlying transport as it requires both enough bandwidth and low latency.</p>
     </header>
     <main>
         <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h3>
-        <p data-feature="Adaptive Video Streaming"><a data-featureid="mse">Media Stream Extensions</a></p>
+        <p data-feature="Adaptive Video Streaming">To ensure the user experience of streamed media remains resilient in face of changing network conditions, media providers make user of adaptive streaming which selects sources of different quality levels based on the networking environment. While several technologies are available to satisfy this approach (such as MPEG DASH), the <a data-featureid="mse">Media Stream Extensions</a> specification enables Web application developers to create libraries that will consume these different adaptive streaming formats and protocols.</p>
         </section>
         <section class="featureset in-progress">
           <h2>Specifications in progress</h3>
-          <p data-feature="P2P transmission"><a data-featureid="p2p">peer-to-peer transmission via the WebRTC API</a></p>
+          <p data-feature="P2P transmission">When broadcasting popular live events on an IP network, it can be beneficial to the broadcaster to spread the load of video distribution by relying on peer-to-peer transmission among watchers. The <a data-featureid="p2p">WebRTC API</a> enables the establishement and utilization of such a peer-to-peer connection, optimized for audio &amp; video transport.</p>
         </section>
         <section class="featureset exploratory-work">
           <h2>Exploratory work</h3>
-          <p data-feature="Broadcast"><a data-featureid="tvtuner">Tuner API in TV Control specification</a></p>
+          <p data-feature="Broadcast">Some devices (e.g. TV sets) provide access to non-IP broadcast media; the <a data-featureid="tvtuner">Tuner API in the TV Control specification</a> brings these non-IP media streams to Web browsers.</p>
         </section>
         <section>
           <h2>Features not covered by ongoing work</h3>
