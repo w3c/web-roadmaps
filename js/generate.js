@@ -1,6 +1,6 @@
 var sections = [];
 var hero = [];
-var sectionsOrig = document.querySelectorAll("section.featureset");
+var sectionsOrig = document.querySelectorAll("section");
 for (var i = 0; i < sectionsOrig.length; i++) {
     sections.push(sectionsOrig[i].cloneNode(true));
 }
@@ -191,7 +191,7 @@ function fillTables() {
 			if (data.TR) {
 			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + specData[s].title, url: data.TR});
 			} else {
-			    fillCell(el1, {label: data.title, url: x.dataType=="deployed" ? undefined : data.editors.url});
+			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + data.title, url: x.dataType=="deployed" ? undefined : data.editors.url});
 			    specData[s] = {  wgs:data.wgs};
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
