@@ -130,8 +130,8 @@
     "indevelopment": [], 
     "shipped": [
       "chrome", 
-      "firefox", 
-      "edge"
+      "edge", 
+      "firefox"
     ]
   }, 
   "getusermedia": {
@@ -142,10 +142,9 @@
     ], 
     "indevelopment": [], 
     "shipped": [
-      "firefox", 
-      "firefox", 
       "and_ff", 
-      "edge"
+      "edge", 
+      "firefox"
     ]
   }, 
   "getusermedia-cap": {
@@ -220,12 +219,8 @@
     "chromeid": 4563797888991232, 
     "consideration": [], 
     "experimental": [], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
-      "chrome", 
-      "edge", 
       "firefox", 
       "samsung", 
       "chrome", 
@@ -245,12 +240,9 @@
     "experimental": [], 
     "indevelopment": [
       "webkit", 
-      "edge", 
       "edge"
     ], 
     "shipped": [
-      "chrome", 
-      "firefox", 
       "firefox", 
       "samsung", 
       "chrome", 
@@ -264,19 +256,15 @@
   "recording": {
     "chromeid": 5929649028726784, 
     "consideration": [
-      "edge", 
       "edge"
     ], 
     "experimental": [], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "chrome", 
-      "firefox", 
-      "chrome", 
       "opera", 
-      "and_chr"
+      "and_chr", 
+      "firefox"
     ]
   }, 
   "remote-playback": {
@@ -291,7 +279,6 @@
   "screencapture": {
     "chromeid": null, 
     "consideration": [
-      "edge", 
       "edge"
     ], 
     "experimental": [], 
@@ -432,10 +419,6 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
-      "chrome", 
-      "firefox", 
-      "edge", 
-      "edge", 
       "firefox", 
       "samsung", 
       "chrome", 
