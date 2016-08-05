@@ -53,6 +53,7 @@
       "bb", 
       "samsung", 
       "chrome", 
+      "op_mini", 
       "ios_saf", 
       "and_ff", 
       "opera", 
@@ -76,6 +77,56 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "credential-management": {
+    "chromeid": 5026422640869376, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "crypto": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "csp": {
+    "chromeid": 4957003285790720, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [
+      "safari"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
   }, 
   "css-animation": {
     "chromeid": null, 
@@ -106,12 +157,6 @@
     "indevelopment": [], 
     "shipped": []
   }, 
-  "discovery": {
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [], 
-    "shipped": []
-  }, 
   "domcapture": {
     "chromeid": 5522768674160640, 
     "consideration": [], 
@@ -137,14 +182,19 @@
   "getusermedia": {
     "chromeid": 5755699816562688, 
     "consideration": [], 
-    "experimental": [
-      "chrome"
-    ], 
+    "experimental": [], 
     "indevelopment": [], 
     "shipped": [
+      "and_uc", 
+      "firefox", 
+      "bb", 
+      "chrome", 
       "and_ff", 
+      "opera", 
       "edge", 
-      "firefox"
+      "op_mob", 
+      "and_chr", 
+      "android"
     ]
   }, 
   "getusermedia-cap": {
@@ -215,6 +265,16 @@
     ], 
     "shipped": []
   }, 
+  "mixedcontent": {
+    "chromeid": 6263395770695680, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "firefox"
+    ]
+  }, 
   "mse": {
     "chromeid": 4563797888991232, 
     "consideration": [], 
@@ -231,6 +291,7 @@
       "safari", 
       "and_chr", 
       "android", 
+      "ie", 
       "ie_mob"
     ]
   }, 
@@ -296,6 +357,23 @@
       "chrome"
     ]
   }, 
+  "sri": {
+    "chromeid": 6183089948590080, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "and_chr", 
+      "op_mob", 
+      "android"
+    ]
+  }, 
   "svg12": {
     "chromeid": null, 
     "consideration": [], 
@@ -320,12 +398,6 @@
       "ie_mob"
     ]
   }, 
-  "svg2": {
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [], 
-    "shipped": []
-  }, 
   "timeupdate": {
     "chromeid": null, 
     "consideration": [], 
@@ -349,18 +421,6 @@
       "ie_mob"
     ]
   }, 
-  "timing": {
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [], 
-    "shipped": []
-  }, 
-  "transcript": {
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [], 
-    "shipped": []
-  }, 
   "ttml": {
     "consideration": [], 
     "experimental": [], 
@@ -368,6 +428,25 @@
     "shipped": []
   }, 
   "tvtuner": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "uir": {
+    "chromeid": 6534575509471232, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "uisecurity": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -406,11 +485,16 @@
     "chromeid": 5650817352728576, 
     "consideration": [], 
     "experimental": [], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
-      "chrome"
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "op_mob", 
+      "and_chr", 
+      "android"
     ]
   }, 
   "webaudio": {
@@ -430,6 +514,16 @@
       "safari", 
       "and_chr", 
       "android"
+    ]
+  }, 
+  "webauthn": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "edge"
     ]
   }, 
   "webvr": {

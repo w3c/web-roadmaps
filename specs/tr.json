@@ -57,6 +57,36 @@
       }
     ]
   }, 
+  "credential-management": {
+    "maturity": "WD", 
+    "title": "Credential Management Level 1", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "crypto": {
+    "maturity": "CR", 
+    "title": "Web Cryptography API", 
+    "wgs": [
+      {
+        "label": "Web Cryptography Working Group", 
+        "url": "http://www.w3.org/2012/webcrypto/"
+      }
+    ]
+  }, 
+  "csp": {
+    "maturity": "CR", 
+    "title": "Content Security Policy Level 2", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "css-animation": {
     "maturity": "WD", 
     "title": "CSS Animations", 
@@ -173,6 +203,16 @@
       }
     ]
   }, 
+  "mixedcontent": {
+    "maturity": "CR", 
+    "title": "Mixed Content", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "mse": {
     "maturity": "CR", 
     "title": "Media Source Extensions", 
@@ -241,6 +281,26 @@
       }
     ]
   }, 
+  "securecontexts": {
+    "maturity": "WD", 
+    "title": "Secure Contexts", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "sri": {
+    "maturity": "REC", 
+    "title": "Subresource Integrity", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "svg12": {
     "maturity": "REC", 
     "title": "Scalable Vector Graphics (SVG) 1.1 Specification", 
@@ -281,6 +341,26 @@
       }
     ]
   }, 
+  "uir": {
+    "maturity": "CR", 
+    "title": "Upgrade Insecure Requests", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "uisecurity": {
+    "maturity": "WD", 
+    "title": "User Interface Security and the Visibility API", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "video": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -312,6 +392,16 @@
       {
         "label": "Audio Working Group", 
         "url": "http://www.w3.org/2011/audio/"
+      }
+    ]
+  }, 
+  "webauthn": {
+    "maturity": "WD", 
+    "title": "Web Authentication: A Web API for accessing scoped credentials", 
+    "wgs": [
+      {
+        "label": "Web Authentication Working Group", 
+        "url": "https://www.w3.org/webauthn/"
       }
     ]
   }, 
