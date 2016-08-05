@@ -222,7 +222,7 @@ function fillTables() {
 			fillCell(el3, maturityInfo.maturity, maturityInfo.maturityIcon);
                         el3.classList.add("maturity");
 
-			el6.appendChild(formatImplData(implData[s]));
+			el6.appendChild(formatImplData(implData[s], x.tableType));
 		    };
 		}(xhr, spec, specTd, wgTd, maturityTd, implTd);
 		xhr.send();
@@ -240,8 +240,14 @@ function fillTables() {
     }
 }
 
-function formatImplData(data) {
+function formatImplData(data, implType) {
     var div = document.createElement("div");
+    if (!data) {
+        if (implType === "well-deployed") {
+            div.appendChild(document.createTextNode("N/A"));
+        }
+        return div;
+    }
     var sections = {"Shipping": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
     for (var section in sections) {
         var uadata = data[sections[section]];

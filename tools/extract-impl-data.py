@@ -97,27 +97,27 @@ def processData():
         except:
             sys.stderr.write("Could not parse %s as JSON" % id)
             feature_data = {}
-        data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
         if feature_data.has_key("impl"):
+            data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
             for key, url in sources.iteritems():
                 if feature_data["impl"].get(key, None):
                     data[id] = feature_status(data[id], key, feature_data["impl"][key])
                 if data[id].has_key("chromeid") and key == "edgestatus":
                     data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
 
-        # in case of overlapping / conflicting data, we keep the most optimistic
+            # in case of overlapping / conflicting data, we keep the most optimistic
 
-        statuses = ["consideration", "indevelopment", "experimental", "shipped"]
-        for status in ["consideration", "indevelopment", "experimental"]:
-            higherstatuses = statuses[statuses.index(status)+1:]
-            for ua in data[id][status].copy():
-                for st in higherstatuses:
-                    if ua in data[id][st]:
-                        data[id][status].remove(ua)
-                        break
-        # turning the sets into lists for JSON serialization
-        for status in statuses:
-            data[id][status] = list(data[id][status])
+            statuses = ["consideration", "indevelopment", "experimental", "shipped"]
+            for status in ["consideration", "indevelopment", "experimental"]:
+                higherstatuses = statuses[statuses.index(status)+1:]
+                for ua in data[id][status].copy():
+                    for st in higherstatuses:
+                        if ua in data[id][st]:
+                            data[id][status].remove(ua)
+                            break
+            # turning the sets into lists for JSON serialization
+            for status in statuses:
+                data[id][status] = list(data[id][status])
 
     print json.dumps(data, sort_keys=True, indent=2)
 
