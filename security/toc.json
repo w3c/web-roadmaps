@@ -1,0 +1,15 @@
+{
+    "title": "Roadmap of Security Technologies for the Web",
+    "discourse": {"category": "W3C’s discourse forum", "url": "https://discourse.wicg.io/"},
+    "pages": [
+    {"url":"user.html",
+     "title":"User security",
+     "icon":"",
+     "description":"Features to secure the user-facing aspects such as login and authentication experience and secure communication channels."},
+    {"url":"app.html",
+     "title":"Application security",
+     "icon":"",
+     "description":"Features that enable applications authors to ensure that their applications are delivered as intended, free from spoofing, injection, and eavesdropping."
+    }
+]
+}

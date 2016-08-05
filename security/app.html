@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <header>
+      <h1>Strengthening Web applications</h1>
+      <p>
+        Users' security also depends on Web application authors' ability to ensure that their applications are delivered as intended, free from spoofing, injection, and eavesdropping.
+      </p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <div data-feature="Protecting against code injection">
+          <p><a data-featureid="csp">Content Security Policy</a>  provides a policy language by which application developers can declare a security policy for a web resource. The goal of this specification is to reduce attack surface by specifying overall rules for what content may or may not do, thus preventing violation of security assumptions by attackers who are able to partially manipulate that content, for example by script injection or cross-site request forgery. An application delivered over a secure channel with CSP enabled can assure that users receive it as it was intended to be executed.</p>
+          <p><a data-featureid="sri">Subresource Integrity</a> enables the secure incorporation of additional elements into the application.</p>
+        </div>
+        <p data-feature="HTTPs adoption">The <a data-featureid="mixedcontent">Mixed Content specification</a> helps to migrate the Web toward being secure by default, by setting clear rules as to when content that is not served over HTTPs can or cannot be loaded from an HTTPs page.</p>
+      </section>
+      <section class="featureset well-deployed">
+        <h2>Specifications in progress</h2>
+        <p data-feature="HTTPs adoption">Web sites with a lot of existing content set up to use resources loaded over HTTP can find the task of migrating that content to HTTPs daunting. The <a data-featureid="uir">Upgrade Insecure Requests specification</a> helps that migration by letting the browser know to load these resources over HTTPs.</p>
+        <p data-feature="Sandboxing">The <a data-featureid="uisecurity">User Interface Security and the Visibility API</a> document proposes to eliminate clickjacking by assuring element visibility at the graphics rendering level. For instance, a developer deploying it can assure that users clicking their site's "pay" button aren't being tricked into transferring their bank balances to an imposter instead.</p>
+        </section>
+      <section class="featureset exploratory-work">
+          <h2>Exploratory work</h2>
+        </section>
+
+      <section>
+          <h2>Features not covered by ongoing work</h2>
+          <dl>
+          </dl>
+        </section>
+</section>
+</main>
+<script src="../js/generate.js"></script>
+</body>
+</html>
