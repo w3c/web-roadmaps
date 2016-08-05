@@ -20,7 +20,7 @@ def feature_status(origdata, source, key, silentfail = False):
             experimental_versions = sources[source]["agents"][ua]["versions"][-3:]
 
             ua = normalize_ua(source, ua)
-            if uadata[latest_version].startswith("y"):
+            if uadata[latest_version].startswith("y") or uadata[latest_version].startswith("a"):
                 shipped.add(ua)
             elif uadata[latest_version].startswith("n d"):
                 exp.add(ua)
