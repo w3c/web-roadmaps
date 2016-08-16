@@ -21,7 +21,7 @@
 
 
                 <div class="brand">
-                  <img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/w3cdevelopers-logo.svg" height="30" alt="">
+                  <a href="https://www.w3.org/"><img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/w3c.svg" height="30" alt="W3C"></a>
                 </div>
       </div>
 
