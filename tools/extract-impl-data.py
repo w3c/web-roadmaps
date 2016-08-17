@@ -1,6 +1,7 @@
 import sys
 import json
 from urllib import urlopen
+errors = []
 
 sources = {"caniuse": "http://caniuse.com/data.json", "chromestatus": "https://www.chromestatus.com/features.json", "edgestatus": "https://raw.githubusercontent.com/MicrosoftEdge/Status/production/status.json", "webkitstatus": "https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json"}
 
@@ -57,7 +58,9 @@ def feature_status(origdata, source, key, silentfail = False):
             edgestatus = feature_data["ieStatus"]["text"]
         except IndexError:
             if not silentfail:
-                sys.stderr.write("Unknown %s for edgestatus %s" % (key_filter, key))
+                err = "Unknown %s for edgestatus %s" % (key_filter, key)
+                sys.stderr.write(err)
+                errors.append(err)
             edgestatus = ""
         if edgestatus in ["Shipped", "Prefixed"]:
             shipped.add("edge")
@@ -95,7 +98,9 @@ def processData():
         try:
             feature_data = json.loads(f.read())
         except:
-            sys.stderr.write("Could not parse %s as JSON" % id)
+            err = "Could not parse %s as JSON" % id
+            sys.stderr.write(err)
+            errors.append(err)
             feature_data = {}
         if feature_data.has_key("impl"):
             data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
@@ -120,6 +125,8 @@ def processData():
                 data[id][status] = list(data[id][status])
 
     print json.dumps(data, sort_keys=True, indent=2)
+    if len(errors):
+        sys.exit(2)
 
 if __name__ == '__main__':
     processData()

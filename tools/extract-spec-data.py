@@ -13,7 +13,7 @@ closed_wgs = etree.parse(closed_wgs_rdf)
 ns = {"c":"http://www.w3.org/2000/10/swap/pim/contact#", "o":"http://www.w3.org/2001/04/roadmap/org#", "d":"http://www.w3.org/2000/10/swap/pim/doc#", "rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rec":"http://www.w3.org/2001/02pd/rec54#", "dc":"http://purl.org/dc/elements/1.1/"}
 
 data = {}
-
+errors = []
 maturities = ["LastCall", "WD", "CR", "PR", "REC", "Retired", "NOTE"]
 
 for filename in sys.argv[1:]:
@@ -22,7 +22,9 @@ for filename in sys.argv[1:]:
     try:
         feature_data = json.loads(f.read())
     except:
-        sys.stderr.write("Could not load %s as JSON\n" % filename)
+        err = "Could not load %s as JSON\n" % filename
+        sys.stderr.write(err)
+        errors.append(err)
         feature_data = {}
     url_comp = feature_data.get("TR", "").split("/")
     if len(url_comp) == 1:
@@ -33,7 +35,9 @@ for filename in sys.argv[1:]:
     tr_latest_https = "/".join(url_comp[:5])
     tr = trs.xpath("/rdf:RDF/*[d:versionOf/@rdf:resource='%s' or d:versionOf/@rdf:resource='%s/' or d:versionOf/@rdf:resource='%s' or d:versionOf/@rdf:resource='%s/']" % (tr_latest, tr_latest, tr_latest_https, tr_latest_https),namespaces=ns)
     if len(tr) == 0:
-        sys.stderr.write("%s: %s not found in tr.rdf\n" % (id, tr_latest))
+        err = "%s: %s not found in tr.rdf\n" % (id, tr_latest)
+        sys.stderr.write(err)
+        errors.append(err)
         continue
     tr = tr[0]
     title = tr.xpath("dc:title/text()", namespaces=ns)[0]
@@ -59,7 +63,12 @@ for filename in sys.argv[1:]:
             if len(labels) > 0:
                 wg["label"] = labels[0]
             else:
-                sys.stderr.write("No group with home page %s found in public-groups.rdf nor closed-groups.rdf\n" % (url))
+                err = "No group with home page %s found in public-groups.rdf nor closed-groups.rdf\n" % (url)
+                sys.stderr.write(err)
+                errors.append(err)
         data[id]["wgs"].append(wg)
 
 print json.dumps(data, sort_keys=True, indent=2)
+
+if len(errors):
+    sys.exit(2)
