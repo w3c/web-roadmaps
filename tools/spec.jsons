@@ -1,0 +1,30 @@
+{
+    "type":"object",
+    "additionalProperties": false,
+    "properties": {
+        "TR": { "type": "string", "format": "uri", "pattern": "https://www.w3.org/TR/.*"},
+        "editors": { "type": "string", "format": "uri"},
+        "impl": {"type": "object",
+                 "additionalProperties": false,
+                 "properties": {
+                     "caniuse": { "type": ["string", "null"]},
+                     "chromestatus": { "type": ["number", "null"]},
+                     "mozstatus": { "type": ["string", "null"]},
+                     "edgestatus": { "type": ["string", "null"]},
+                     "webkitstatus": { "type": ["string", "null"]}
+                 }
+                },
+        "wgs": {"type": "array",
+                "items": { "type": "object",
+                           "additionalProperties": false,
+                           "required": ["url", "label"],
+                           "properties": {
+                               "url": { "type": "string", "format": "uri"},
+                               "label": { "type": "string", "minLength": 1}
+                           }
+                         }
+               },
+        "title": {"type": "string"},
+        "feature": {"type": "string"}
+    }
+}
