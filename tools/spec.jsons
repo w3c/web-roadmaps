@@ -8,13 +8,14 @@
                  "additionalProperties": false,
                  "properties": {
                      "caniuse": { "type": ["string", "null"]},
-                     "chromestatus": { "type": ["number", "null"]},
+                     "chromestatus": { "type": ["integer", "null"]},
                      "mozstatus": { "type": ["string", "null"]},
                      "edgestatus": { "type": ["string", "null"]},
                      "webkitstatus": { "type": ["string", "null"]}
                  }
                 },
         "wgs": {"type": "array",
+                "additionalItems": false,
                 "items": { "type": "object",
                            "additionalProperties": false,
                            "required": ["url", "label"],
@@ -26,5 +27,9 @@
                },
         "title": {"type": "string"},
         "feature": {"type": "string"}
-    }
+    },
+    "oneOf": [
+        { "required": ["TR"] , "not": {"required": ["wgs"]}},
+        { "required": ["editors", "wgs", "title"], "not": {"required": ["TR"]}}
+    ]
 }
