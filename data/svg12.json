@@ -2,5 +2,5 @@
   "impl": {
     "caniuse": "svg"
   },
-  "TR": "http://www.w3.org/TR/SVG11/"
+  "TR": "https://www.w3.org/TR/SVG11/"
 }

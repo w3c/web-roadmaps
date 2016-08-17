@@ -3,8 +3,8 @@
     "caniuse": "mediarecorder",
     "chromestatus": 5929649028726784,
     "mozstatus": null,
-    "edgestatus": 5929649028726784,
+    "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/mediastream-recording/"
+  "TR": "https://www.w3.org/TR/mediastream-recording/"
 }

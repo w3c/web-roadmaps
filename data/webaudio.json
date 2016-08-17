@@ -3,8 +3,8 @@
     "caniuse": "audio-api",
     "chromestatus": 6261718720184320,
     "mozstatus": null,
-    "edgestatus": 6261718720184320,
+    "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/webaudio/"
+  "TR": "https://www.w3.org/TR/webaudio/"
 }

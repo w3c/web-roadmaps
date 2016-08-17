@@ -2,6 +2,6 @@
   "impl": {
     "caniuse": "audio"
   },
-  "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element",
+  "TR": "https://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element",
   "feature": "audio element"
 }

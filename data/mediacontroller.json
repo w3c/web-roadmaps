@@ -6,6 +6,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
+  "TR": "https://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
   "feature": "MediaController interface"
 }

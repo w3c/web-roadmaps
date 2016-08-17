@@ -6,6 +6,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
+  "TR": "https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
   "feature": "Source capabilities"
 }

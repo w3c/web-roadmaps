@@ -6,6 +6,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/uievents-key/#keys-multimedia",
+  "TR": "https://www.w3.org/TR/uievents-key/#keys-multimedia",
   "feature": "Media keys"
 }

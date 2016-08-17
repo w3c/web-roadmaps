@@ -2,6 +2,6 @@
   "impl": {
     "caniuse": "video"
   },
-  "TR": "http://www.w3.org/TR/html5/embedded-content-0.html#htmlmediaelement",
+  "TR": "https://www.w3.org/TR/html5/embedded-content-0.html#htmlmediaelement",
   "feature": "HTMLMediaElement interface"
 }

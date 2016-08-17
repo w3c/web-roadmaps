@@ -1,5 +1,5 @@
 {
-  "TR": "http://www.w3.org/TR/WebCryptoAPI/",
+  "TR": "https://www.w3.org/TR/WebCryptoAPI/",
   "impl": {
     "caniuse": "cryptography"
   }
