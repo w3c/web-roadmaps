@@ -1,8 +1,4 @@
 {
-  "wpd": {
-    "url": "http://docs.webplatform.org/wiki/concepts/internet_and_web/webrtc",
-    "label": "WebRTC Introduction"
-  },
   "impl": {
     "caniuse": "rtcpeerconnection",
     "chromestatus": 6612462929444864,

@@ -1,8 +1,4 @@
 {
-  "wpd": {
-    "url": "http://docs.webplatform.org/wiki/tutorials/audio/an_introduction_to_the_web_audio_api",
-    "label": "An introduction to the Web Audio API"
-  },
   "impl": {
     "caniuse": "audio-api",
     "chromestatus": 6261718720184320,

@@ -1,8 +1,4 @@
 {
-  "wpd": {
-    "url": "http://docs.webplatform.org/wiki/tutorials/css_animations",
-    "label": "CSS Animations tutorial"
-  },
   "impl": {
     "caniuse": "css-animation"
   },

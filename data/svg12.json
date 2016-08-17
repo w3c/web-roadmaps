@@ -1,8 +1,4 @@
 {
-  "wpd": {
-    "url": "http://docs.webplatform.org/wiki/svg/tutorials",
-    "label": "SVG Tutorials"
-  },
   "impl": {
     "caniuse": "svg"
   },

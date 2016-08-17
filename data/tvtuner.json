@@ -12,6 +12,6 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-    "title": "TV Control API",
-    "editors": {"url": "https://w3c.github.io/tvcontrol-api/"}
+  "title": "TV Control API",
+  "editors": "https://w3c.github.io/tvcontrol-api/"
 }

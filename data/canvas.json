@@ -1,8 +1,4 @@
 {
-  "wpd": {
-    "url": "http://docs.webplatform.org/wiki/tutorials/canvas/canvas_tutorial",
-    "label": "Canvas tutorial"
-  },
   "impl": {
     "caniuse": "canvas",
     "chromestatus": null,
@@ -10,9 +6,5 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "TR": "http://www.w3.org/TR/2dcontext/",
-  "wdc": {
-    "url": "http://www.w3devcampus.com/html5-w3c-training/",
-    "label": "HTML5 on-line course"
-  }
+  "TR": "http://www.w3.org/TR/2dcontext/"
 }

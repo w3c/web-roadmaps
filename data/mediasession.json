@@ -5,7 +5,6 @@
       "label": "Web Platform Incubator Community Group"
     }
   ],
-  "maturity": "N/A",
   "impl": {
     "caniuse": null,
     "chromestatus": 5639924124483584,
@@ -14,5 +13,5 @@
     "webkitstatus": null
   },
   "title": "Media Session",
-    "editors": {"url":"https://wicg.github.io/mediasession/"}
+  "editors": "https://wicg.github.io/mediasession/"
 }

@@ -5,6 +5,6 @@
       "label": "Multi-Device Timing Community Group "
     }
   ],
-    "editors": {"url": "http://webtiming.github.io/timingobject/"},
+  "editors": "http://webtiming.github.io/timingobject/",
   "title": "Timing Object"
 }

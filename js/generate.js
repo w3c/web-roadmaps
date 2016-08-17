@@ -190,7 +190,7 @@ function fillTables() {
                         }
 			var links = document.querySelectorAll("a[data-featureid='" + s + "']");
 			for (var l = 0 ; l < links.length; l++) {
-			    var url = data.editors ? data.editors.url : undefined;
+			    var url = data.editors;
 			    if (!url) {
 				url = data.TR;
 			    }
@@ -199,7 +199,7 @@ function fillTables() {
 			if (data.TR) {
 			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + specData[s].title, url: data.TR});
 			} else {
-			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + data.title, url: x.dataType=="deployed" ? undefined : data.editors.url});
+			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + data.title, url: x.dataType=="deployed" ? undefined : data.editors});
 			    specData[s] = {  wgs:data.wgs};
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {

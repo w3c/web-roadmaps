@@ -5,9 +5,6 @@
       "url": "http://www.w3.org/WAI/PF/html-accessibility-tf"
     }
   ],
-    "editors": {
-        "url":"http://w3c.github.io/html-transcript/html-transcript-src.html"
-    },
-
+  "editors": "http://w3c.github.io/html-transcript/html-transcript-src.html",
   "title": "A transcript extension for HTML"
 }
