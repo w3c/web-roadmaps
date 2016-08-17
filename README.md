@@ -4,6 +4,10 @@ This repository hosts a framework to present roadmaps of ongoing and future Web 
 
 It aims at simplifying the creation and maintenance of such roadmaps by collecting automatically information about standardization and implementation status of features described in W3C specifications and others.
 
+## Existing roadmaps
+* [Roadmap of Media Technologies for the Web](https://w3c.github.io/media-web-roadmap/media/)
+* [Roadmap for Security technologies](https://w3c.github.io/media-web-roadmap/security/)
+
 ## Overview of the framework
 
 A roadmap is a collection of features that makes up a consistent set of technologies used to build a particular type of applications (e.g. media applications, games) or to promote a particular aspect of application development (e.g. security). Each feature is described in prose to explain its relevant to the theme of the roadmap. From that prose, the framework generates a table summarizing the standardization and implementation status of the specification(s) that define(s) the said feature.
@@ -13,6 +17,8 @@ A given roadmap is structured in 4 sections describing the high-level status of 
 * ''Specifications in progress'' list features that have already started their standardization track progress;
 * ''Exploratory work'' groups features described in specifications prior to their proper standardization work
 * '' Features not covered by ongoing work' identify functionalities that are known to be needed for some use cases, but that no existing specification adequately covers
+
+While the pages are generated dynamically in the browser, it is likely preferable to publish exported versions of the roadmaps since the framework has not been optimized for performance.
 
 ## Adding a feature to a roadmap
 
