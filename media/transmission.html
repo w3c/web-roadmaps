@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Media Transmission</title>
     <header>
       <h1>Media Transmission</h1>
       <p>Streamed media content, in particular video, is particularly demanding for the underlying transport as it requires both enough bandwidth and low latency.</p>
     </header>
     <main>
         <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h3>
+        <h2>Well-deployed technologies</h2>
         <p data-feature="Adaptive Video Streaming">To ensure the user experience of streamed media remains resilient in face of changing network conditions, media providers make user of adaptive streaming which selects sources of different quality levels based on the networking environment. While several technologies are available to satisfy this approach (such as MPEG DASH), the <a data-featureid="mse">Media Stream Extensions</a> specification enables Web application developers to create libraries that will consume these different adaptive streaming formats and protocols.</p>
         </section>
         <section class="featureset in-progress">
-          <h2>Specifications in progress</h3>
+          <h2>Specifications in progress</h2>
           <p data-feature="P2P transmission">When broadcasting popular live events on an IP network, it can be beneficial to the broadcaster to spread the load of video distribution by relying on peer-to-peer transmission among watchers. The <a data-featureid="p2p">WebRTC API</a> enables the establishement and utilization of such a peer-to-peer connection, optimized for audio &amp; video transport.</p>
         </section>
         <section class="featureset exploratory-work">
-          <h2>Exploratory work</h3>
+          <h2>Exploratory work</h2>
           <p data-feature="Broadcast">Some devices (e.g. TV sets) provide access to non-IP broadcast media; the <a data-featureid="tvtuner">Tuner API in the TV Control specification</a> brings these non-IP media streams to Web browsers.</p>
         </section>
         <section>
-          <h2>Features not covered by ongoing work</h3>
+          <h2>Features not covered by ongoing work</h2>
           <dl>
             <dt>Streaming HTTP media on HTTPs pages</dt>
             <dd>While it is possible to read video/audio content served on HTTP in <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements served on HTTPs pages (despite the usual mixed content restrictions), this does not extend to the usage of streaming enabled by Media Stream Extensions. There are some <a href="https://lists.w3.org/Archives/Public/public-webappsec/2015Feb/0371.html">early discussions on how this could be solved</a>, with <a href="https://lists.w3.org/Archives/Public/public-webappsec/2015Jul/0155.html">documented use cases</a> for enabling this.</dd>

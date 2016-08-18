@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Media control</title>
     <header>
       <h1>Media control</h1>
       <p>Media content provides many opportunities for rich interactions with users, either on- or off-device.</p>
     </header>
     <main>
         <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h3>
+        <h2>Well-deployed technologies</h2>
         <p data-feature="Control of one local media element">All the basic interactions one expects from a media player (play, pause, playrate, etc.) are available in JavaScript via the <a data-featureid="htmlmediaelement"><code>HTMLMediaElement</code> interface</a> defined in HTML.</p>
         </section>
         <section class="featureset in-progress">
-          <h2>Specifications in progress</h3>
+          <h2>Specifications in progress</h2>
           <p data-feature="Audio control">The <a data-featureid="webaudio">Web Audio API</a> defines a full-fledged audio processing API that gives precise control over the playback of audio content.</p>
           <p data-feature="Key-based control">A number of media-capable devices expose specific hardware keys and buttons to facilitate control of playing media; the <a data-featureid="mediakeys">Media Keys in DOM Level 3 events</a> propose exposing these interactions to Web-based players.</p>
         </section>
         <section class="featureset exploratory-work">
-          <h2>Exploratory work</h3>
+          <h2>Exploratory work</h2>
           <p data-feature="Control of multiple local media elements">The <a data-featureid="mediacontroller"><code>MediaController</code> interface</a> proposes to control several media resources from within a single control point but has found <a href="https://github.com/whatwg/html/issues/192">limited implementation support</a> so far.</p>
 
           <p data-feature="OS-wide media control">In any given Web application, media playback can be in competition with media playback from other applications, and the underlying operating system is in charge of determining which of these applications should have the media focus. The <a data-featureid="mediasession">Media session</a> specification expose these changes of focus to Web applications.</p>
@@ -27,10 +28,11 @@
 
         </section>
         <section>
-          <h2>Features not covered by ongoing work</h3>
+          <h2>Features not covered by ongoing work</h2>
           <dl>
             <dt>Radio Tuner Control</dt>
             <dd>Devices that expose radio tuners should be controlable via browsers the same way the <a href="https://w3c.github.io/tvcontrol-api/">TV Control API</a> offers to control TV tuners.</dd>
+          </dl>
         </section>
 </main>
 <script src="../js/generate.js"></script>

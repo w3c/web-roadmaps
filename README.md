@@ -53,24 +53,25 @@ Depending on the advancement of the underlying specification, the JSON object ca
 Start from the following template
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <meta charset="utf-8">
+    <title>Title of the roadmap</title>
     <header>
       <h1>Title of the roadmap</h1>
       <p>Description of the scope of the roadmap and to whom it matters</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-          <h2>Well-deployed technologies</h3>
+          <h2>Well-deployed technologies</h2>
         </section>
         <section class="featureset in-progress">
-          <h2>Specifications in progress</h3>
+          <h2>Specifications in progress</h2>
         </section>
         <section class="featureset exploratory-work">
-          <h2>Exploratory work</h3>
+          <h2>Exploratory work</h2>
         </section>
         <section>
-          <h2>Features not covered by ongoing work</h3>
+          <h2>Features not covered by ongoing work</h2>
           <dl>
             <dt></dt>
             <dd></dd>
@@ -91,9 +92,10 @@ If you want to divide your roadmap as a multipage document, you also need to cre
 
 The template for the index page is as follows:
 ```html
-<!doctye html>
-<html>
+<!doctype html>
+<html lang="en">
   <meta charset=utf-8>
+  <title>Title of the roadmap</title>
   <header>
     <h1>Title of roadmap</h1>
                 <p>

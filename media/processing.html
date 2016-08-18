@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
+<html lang=en>
+  <meta charset="utf-8">
+  <title>Media Processing</title>
     <header>
       <h1>Media Processing</h1>
       <p>Whether before rendering or after capture, media content often require some processing to make it fit its expected usage.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-          <h2>Well-deployed technologies</h3>
+          <h2>Well-deployed technologies</h2>
           <p data-feature="Image and Video Processing">The <a data-featureid="canvas">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames. One of its limitations is that it operates using the CPU instead of the more optimized operations enabled by modern GPUs.</p>
           <p data-feature="Video inserts">The <a data-featureid="mse">Media Stream Extensions API</a> enable to insert easily chunks of media (e.g. a video clip) into an existing media stream.</p>
         </section>
         <section class="featureset in-progress">
-          <h2>Specifications in progress</h3>
+          <h2>Specifications in progress</h2>
           <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
 
           <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from copy, the <a data-featureid="eme">Encrypted Media Extensions</a> enables the rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         </section>
         <section class="featureset exploratory-work">
-          <h2>Exploratory work</h3>
+          <h2>Exploratory work</h2>
 <div data-feature="Video processing">
   <p>Video processing using the Canvas API is very CPU-intensive, and as such, can benefit from executing separately from the rest of a Web application. The early proposal for a <a data-featureid="videoworker">Worker for parallel video processing</a> suggests an approach on how this could be done using a dedicated Worker.</p>
   <p>Another approach to this would be to provide specialized APIs for specific processing functions; the <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
 </div>
         </section>
         <section>
-          <h2>Features not covered by ongoing work</h3>
+          <h2>Features not covered by ongoing work</h2>
           <dl>
             <dt>JavaScript-based Codecs</dt>
             <dd>The algorithms used to compress and decompress the bandwidth-intensive media content are required to be provided by the browsers at this time; a system enabling to write and distribute these algorithms in JavaScript and get them integrated in the overall media flow of user agents would provide much greater freedom to specialize and innovate in this space (see <a href="https://discourse.wicg.io/t/custom-image-audio-video-codec-apis/1270">related discussion on W3C’s discourse forum</a>)</dd>

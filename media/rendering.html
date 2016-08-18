@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <meta charset="utf-8">
+    <title>Media Rendering</title>
     <header>
       <h1>Media Rendering</h1>
       <p>Web browsers are available on billion of devices of different shapes and functions, providing as many targets for delivering media to users.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-          <h2>Well-deployed technologies</h3>
+          <h2>Well-deployed technologies</h2>
           <p>Few media-based services can usefully function without rendering audio or video content; the HTML5 specification provides widely deployed support for this essential feature:</p>
           <ul>
             <li data-feature="Audio rendering">audio content can be rendered in any Web page via the <a data-featureid="audio"><code>&lt;audio&gt;</code> element</a></li>
             <li data-feature="Video rendering">likewise, video content can be rendered with <a data-featureid="video"><code>&lt;video&gt;</code> element</a></li>
+          </ul>
         </section>
         <section class="featureset in-progress">
-          <h2>Specifications in progress</h3>
+          <h2>Specifications in progress</h2>
           <p data-feature="Audio rendering">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing API, which includes support for low-latency playback of audio content.</p>
           <div data-feature="Distributed rendering">
             <p>As users increasingly own more and more connected devices, the need to get these devices to work together increases as well.</p>
@@ -28,7 +30,7 @@
 
         </section>
         <section class="featureset exploratory-work">
-          <h2>Exploratory work</h3>
+          <h2>Exploratory work</h2>
           <div data-feature="Distributed rendering">
             <p>The <a data-featureid="discovery">Network Service Discovery API</a> offers a lower-level approach to the establishement of multi-device operations, by providing integration with local network-based media renderers, such as those enabled by DLNA, UPnP, etc. At this time, the future of this specification is uncertain, given the difficulty of finding the right balance between the requirements of the Web security model and the desire to be compatible with existing devices.</p>
             <p>The Multi-Device Timing Community Group is exploring another aspect of multi-device media rendering: its <a data-featureid="timing">Timing Object</a> specification enables to keep video, audio and other data streams in close synchrony, across devices and independently of the network topology.</p>
@@ -40,7 +42,7 @@
           </div>
         </section>
         <section>
-          <h2>Features not covered by ongoing work</h3>
+          <h2>Features not covered by ongoing work</h2>
           <dl>
             <dt>Color Management</dt>
             <dd>To ensure the proper rendering of videos with high-dynamic range and wide-gamut colors, content providers would need to determine whether the underlying device and browser have proper support for this.</dd>
