@@ -248,7 +248,7 @@ function formatImplData(data, implType) {
         }
         return div;
     }
-    var sections = {"Shipping": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
+    var sections = {"Shipped": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
     for (var section in sections) {
         var uadata = data[sections[section]];
         if (uadata.length) {
