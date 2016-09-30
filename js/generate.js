@@ -251,18 +251,19 @@ function formatImplData(data, implType) {
     var sections = {"Shipped": "shipped", "Experimental": "experimental", "In development": "indevelopment", "Under consideration": "consideration"};
     for (var section in sections) {
         var uadata = data[sections[section]];
+        uadata = uadata.filter(function (ua) {
+          return browsers.indexOf(ua) !== -1;
+        });
         if (uadata.length) {
             var heading = document.createElement("p");
             heading.appendChild(document.createTextNode(section));
             heading.appendChild(document.createElement("br"));
             uadata.forEach(function(ua) {
-                if (browsers.indexOf(ua) !== -1) {
-                    var icon = document.createElement("img");
-                    icon.src = "../icons/" + ua + ".png";
-                    icon.height = 30;
-                    icon.alt = section + " in " + ua;
-                    heading.appendChild(icon);
-                }
+                var icon = document.createElement("img");
+                icon.src = "../icons/" + ua + ".png";
+                icon.height = 30;
+                icon.alt = section + " in " + ua;
+                heading.appendChild(icon);
             });
             div.appendChild(heading);
 
