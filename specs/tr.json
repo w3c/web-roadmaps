@@ -68,7 +68,7 @@
     ]
   }, 
   "crypto": {
-    "maturity": "CR", 
+    "maturity": "REC", 
     "title": "Web Cryptography API", 
     "wgs": [
       {
@@ -78,7 +78,7 @@
     ]
   }, 
   "csp": {
-    "maturity": "CR", 
+    "maturity": "REC", 
     "title": "Content Security Policy Level 2", 
     "wgs": [
       {
@@ -98,7 +98,7 @@
     ]
   }, 
   "discovery": {
-    "maturity": "WD", 
+    "maturity": "Retired", 
     "title": "Network Service Discovery", 
     "wgs": [
       {
@@ -214,8 +214,8 @@
     ]
   }, 
   "mse": {
-    "maturity": "CR", 
-    "title": "Media Source Extensions", 
+    "maturity": "REC", 
+    "title": "Media Source Extensions\u2122", 
     "wgs": [
       {
         "label": "HTML Media Extensions Working Group", 
@@ -252,7 +252,7 @@
     "title": "Remote Playback API", 
     "wgs": [
       {
-        "label": "Second Screen Presentation Working Group", 
+        "label": "Second Screen Working Group", 
         "url": "http://www.w3.org/2014/secondscreen/"
       }
     ]
@@ -276,13 +276,13 @@
     "title": "Presentation API", 
     "wgs": [
       {
-        "label": "Second Screen Presentation Working Group", 
+        "label": "Second Screen Working Group", 
         "url": "http://www.w3.org/2014/secondscreen/"
       }
     ]
   }, 
   "securecontexts": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Secure Contexts", 
     "wgs": [
       {
@@ -312,7 +312,7 @@
     ]
   }, 
   "svg2": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Scalable Vector Graphics (SVG) 2", 
     "wgs": [
       {
@@ -376,12 +376,12 @@
     "title": "Web Animations", 
     "wgs": [
       {
-        "label": "SVG Working Group", 
-        "url": "http://www.w3.org/Graphics/SVG/WG/"
-      }, 
-      {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
+      }, 
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
       }
     ]
   }, 
@@ -397,7 +397,7 @@
   }, 
   "webauthn": {
     "maturity": "WD", 
-    "title": "Web Authentication: A Web API for accessing scoped credentials", 
+    "title": "Web Authentication: An API for accessing Scoped Credentials", 
     "wgs": [
       {
         "label": "Web Authentication Working Group", 
