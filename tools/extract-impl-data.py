@@ -74,7 +74,7 @@ def feature_status(origdata, source, key, silentfail = False):
         keytype = key.split("-")[0]
         if keytype == "feature":
             keytype = "features"
-        keyname = key.split("-")[1]
+        keyname = " ".join(key.split("-")[1:])
         feature_data = filter(lambda a: a["name"].lower() == keyname, sources[source][keytype])[0]
         webkitstatus = feature_data["status"].get("status", "")
         if webkitstatus == "Done" or webkitstatus == "Partial Support":
@@ -107,7 +107,7 @@ def processData():
             for key, url in sources.iteritems():
                 if feature_data["impl"].get(key, None):
                     data[id] = feature_status(data[id], key, feature_data["impl"][key])
-                if data[id].has_key("chromeid") and key == "edgestatus":
+                if data[id].has_key("chromeid") and data[id].get(key, None) and key == "edgestatus":
                     data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
 
             # in case of overlapping / conflicting data, we keep the most optimistic

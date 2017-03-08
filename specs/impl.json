@@ -23,6 +23,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -56,6 +57,7 @@
       "op_mini", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -97,6 +99,7 @@
       "samsung", 
       "chrome", 
       "ios_saf", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -109,11 +112,9 @@
   }, 
   "csp": {
     "chromeid": 4957003285790720, 
-    "consideration": [
-      "edge"
-    ], 
+    "consideration": [], 
     "experimental": [
-      "safari"
+      "edge"
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -122,8 +123,10 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "op_mob", 
+      "safari", 
       "and_chr", 
       "android"
     ]
@@ -141,6 +144,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -175,7 +179,6 @@
     "indevelopment": [], 
     "shipped": [
       "chrome", 
-      "edge", 
       "firefox"
     ]
   }, 
@@ -190,6 +193,7 @@
       "bb", 
       "chrome", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -216,6 +220,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -228,9 +233,7 @@
   }, 
   "imagecapture": {
     "chromeid": 4843864737185792, 
-    "consideration": [
-      "chrome"
-    ], 
+    "consideration": [], 
     "experimental": [], 
     "indevelopment": [
       "firefox"
@@ -257,13 +260,14 @@
   }, 
   "mediasession": {
     "chromeid": 5639924124483584, 
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [
-      "chrome", 
+    "consideration": [
       "firefox"
     ], 
-    "shipped": []
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
   }, 
   "mixedcontent": {
     "chromeid": 6263395770695680, 
@@ -298,16 +302,18 @@
   "p2p": {
     "chromeid": 6612462929444864, 
     "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [
-      "webkit", 
+    "experimental": [
       "edge"
+    ], 
+    "indevelopment": [
+      "webkit"
     ], 
     "shipped": [
       "firefox", 
       "samsung", 
       "chrome", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "op_mob", 
       "and_chr", 
@@ -316,9 +322,7 @@
   }, 
   "recording": {
     "chromeid": 5929649028726784, 
-    "consideration": [
-      "edge"
-    ], 
+    "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
@@ -331,11 +335,13 @@
   "remote-playback": {
     "chromeid": 5778318691401728, 
     "consideration": [
-      "chrome"
+      "firefox"
     ], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "chrome"
+    ]
   }, 
   "screencapture": {
     "chromeid": null, 
@@ -357,20 +363,25 @@
       "chrome"
     ]
   }, 
+  "shape-detection": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "sri": {
     "chromeid": 6183089948590080, 
-    "consideration": [
-      "edge"
-    ], 
+    "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
       "chrome", 
       "and_ff", 
+      "and_qq", 
       "opera", 
-      "and_chr", 
       "op_mob", 
+      "and_chr", 
       "android"
     ]
   }, 
@@ -388,6 +399,7 @@
       "op_mini", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -411,6 +423,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -435,15 +448,12 @@
   }, 
   "uir": {
     "chromeid": 6534575509471232, 
-    "consideration": [
-      "edge"
-    ], 
+    "consideration": [], 
     "experimental": [], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
-      "chrome"
+      "chrome", 
+      "firefox"
     ]
   }, 
   "uisecurity": {
@@ -465,6 +475,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -491,6 +502,7 @@
       "samsung", 
       "chrome", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "op_mob", 
       "and_chr", 
@@ -501,13 +513,16 @@
     "chromeid": 6261718720184320, 
     "consideration": [], 
     "experimental": [], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "webkit"
+    ], 
     "shipped": [
       "firefox", 
       "samsung", 
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
@@ -523,6 +538,7 @@
     "indevelopment": [], 
     "shipped": [
       "chrome", 
+      "opera", 
       "edge"
     ]
   }, 
@@ -549,6 +565,7 @@
       "chrome", 
       "ios_saf", 
       "and_ff", 
+      "and_qq", 
       "opera", 
       "edge", 
       "op_mob", 
