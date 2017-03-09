@@ -10,13 +10,17 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 
 ## Overview of the framework
 
-A roadmap is a collection of features that makes up a consistent set of technologies used to build a particular type of applications (e.g. media applications, games) or to promote a particular aspect of application development (e.g. security). Each feature is described in prose to explain its relevant to the theme of the roadmap. From that prose, the framework generates a table summarizing the standardization and implementation status of the specification(s) that define(s) the said feature.
+A **roadmap** is a collection of features that make up a consistent set of technologies used to build a particular type of applications (e.g. media applications, games) or to promote a particular aspect of application development (e.g. security). Each feature is described in prose to explain its relevance to the theme of the roadmap. From that prose, the framework generates tables (one per section) summarizing the standardization and implementation status of the specification(s) that define(s) the said feature.
 
-A given roadmap is structured in 4 sections describing the high-level status of the described features:
-* ''Well-deployed technologies'' are technologies that are finished or nearly finished (e.g. CR and beyond in the W3C Rec track) and that have already found significant adoption among implementations;
-* ''Specifications in progress'' list features that have already started their standardization track progress;
-* ''Exploratory work'' groups features described in specifications prior to their proper standardization work
-* '' Features not covered by ongoing work' identify functionalities that are known to be needed for some use cases, but that no existing specification adequately covers
+A given roadmap is expected to contain one or more of the following sections describing the high-level status of the features described in the section:
+* *Well-deployed technologies* are technologies that are finished or nearly finished (e.g. CR and beyond in the W3C Rec track) and that have already found significant adoption among implementations;
+* *Specifications in progress* list features that have already started their standardization track progress;
+* *Exploratory work* groups features described in specifications prior to their proper standardization work;
+* *Features not covered by ongoing work* identify functionalities that are known to be needed for some use cases, but that no existing specification adequately covers
+
+Multiple roadmaps can be associated in a single **multi-page roadmap** with a front index page that links to individual roadmap pages. The framework generates a navigation menu in each individual roadmap page to navigate between them.
+
+In short, the goal of the framework is to allow roadmap authors to focus on the prose that describes features that compose the roadmap, the framework taking care of adding implementation data for each feature that composes the roadmap and of formatting the result, including providing means for users to navigate between pages.
 
 While the pages are generated dynamically in the browser, it is likely preferable to publish exported versions of the roadmaps since the framework has not been optimized for performance.
 
