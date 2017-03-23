@@ -1,0 +1,63 @@
+{
+    "title": "Roadmap of Web Applications on Mobile",
+    "discourse": {"category": "W3C’s discourse forum", "url": "https://discourse.wicg.io/"},
+    "pages": [
+    {"url":"graphics.html",
+     "title":"Graphics and Layout",
+     "description":""},
+    {"url":"adaptation.html",
+     "title":"Device Adaptation",
+     "description":""
+    },
+    {
+        "url": "forms.html",
+        "title": "Forms",
+        "description": ""
+    },
+    {
+        "url": "storage.html",
+        "title": "Data Storage",
+        "description": ""
+    },
+    {
+        "url":"mediartc.html",
+        "title":"Media and Real-Time communications",
+        "description":""
+    },
+    {
+        "url":"userinput.html",
+        "title":"User Input",
+        "description": ""
+    },
+    {
+        "url":"sensors.html",
+        "title":"Sensors and local interactions",
+        "description":""
+    },
+    {
+        "url":"network.html",
+        "title":"Network Integration",
+        "description":""
+    },
+    {
+        "url":"lifecycle.html",
+        "title":"Application Lifecycle",
+        "description":""
+    },
+    {
+        "url":"payment.html",
+        "title":"Payment and Services",
+        "description":""
+    },
+    {
+        "url":"performance.html",
+        "title":"Performance and Tuning",
+        "description":""
+    },
+    {
+        "url":"security.html",
+        "title":"Security and Privacy",
+        "description":""
+    }
+]
+}
