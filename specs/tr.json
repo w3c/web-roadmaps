@@ -122,7 +122,7 @@
     ]
   }, 
   "eme": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Encrypted Media Extensions", 
     "wgs": [
       {
