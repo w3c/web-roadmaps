@@ -362,6 +362,12 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "inputaccept": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "mediacontroller": {
     "consideration": [], 
     "experimental": [], 
@@ -449,6 +455,12 @@
     ]
   }, 
   "picture": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "pointer-events": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -591,6 +603,12 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "touchevent": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "ttml": {
     "consideration": [], 

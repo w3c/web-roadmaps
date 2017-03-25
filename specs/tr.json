@@ -291,6 +291,16 @@
       }
     ]
   }, 
+  "inputaccept": {
+    "maturity": "CR", 
+    "title": "HTML Media Capture", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "mediacontroller": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -368,6 +378,16 @@
       {
         "label": "Web Platform Working Group", 
         "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "pointer-events": {
+    "maturity": "WD", 
+    "title": "Pointer Events - Level 2", 
+    "wgs": [
+      {
+        "label": "Pointer Events Working Group", 
+        "url": "http://www.w3.org/2012/pointerevents/"
       }
     ]
   }, 
@@ -486,6 +506,16 @@
       {
         "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "touchevent": {
+    "maturity": "REC", 
+    "title": "Touch Events", 
+    "wgs": [
+      {
+        "label": "Web Events Working Group", 
+        "url": "http://www.w3.org/2010/webevents/"
       }
     ]
   }, 
