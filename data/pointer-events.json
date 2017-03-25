@@ -1,4 +1,7 @@
 {
-  "impl": {},
+  "impl": {
+    "caniuse": "pointer",
+    "chromestatus": 4504699138998272
+  },
   "TR": "https://www.w3.org/TR/pointerevents2/"
 }
