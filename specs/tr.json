@@ -13,6 +13,16 @@
       }
     ]
   }, 
+  "animation-frames": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "audio": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -87,9 +97,77 @@
       }
     ]
   }, 
+  "css-2d": {
+    "maturity": "WD", 
+    "title": "CSS Transforms Module Level 1", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-3d": {
+    "maturity": "WD", 
+    "title": "CSS Transforms Module Level 1", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-animation": {
     "maturity": "WD", 
     "title": "CSS Animations", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-border": {
+    "maturity": "CR", 
+    "title": "CSS Backgrounds and Borders Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-font-loading": {
+    "maturity": "LastCall", 
+    "title": "CSS Font Loading Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-transitions": {
+    "maturity": "WD", 
+    "title": "CSS Transitions", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-will-change": {
+    "maturity": "CR", 
+    "title": "CSS Will Change Module Level 1", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -128,6 +206,16 @@
       {
         "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "flexbox": {
+    "maturity": "CR", 
+    "title": "CSS Flexible Box Layout Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -268,6 +356,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "screenlock": {
+    "maturity": "WD", 
+    "title": "The Screen Orientation API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -412,6 +510,26 @@
       {
         "label": "Timed Text Working Group", 
         "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "woff": {
+    "maturity": "REC", 
+    "title": "WOFF File Format 1.0", 
+    "wgs": [
+      {
+        "label": "WebFonts Working Group", 
+        "url": "http://www.w3.org/Fonts/WG/"
+      }
+    ]
+  }, 
+  "woff2": {
+    "maturity": "CR", 
+    "title": "WOFF File Format 2.0", 
+    "wgs": [
+      {
+        "label": "WebFonts Working Group", 
+        "url": "http://www.w3.org/Fonts/WG/"
       }
     ]
   }
