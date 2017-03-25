@@ -185,6 +185,12 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "css-device-adapt": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "css-font-loading": {
     "chromeid": null, 
     "consideration": [], 
@@ -203,6 +209,12 @@
       "and_chr", 
       "android"
     ]
+  }, 
+  "css-size-adjust": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "css-transitions": {
     "chromeid": null, 
@@ -229,6 +241,12 @@
     ]
   }, 
   "css-will-change": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "ddr": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -356,6 +374,18 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "mediaqueries": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "mediaqueries4": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "mediasession": {
     "chromeid": 5639924124483584, 
     "consideration": [
@@ -417,6 +447,12 @@
       "and_chr", 
       "android"
     ]
+  }, 
+  "picture": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "recording": {
     "chromeid": 5929649028726784, 
@@ -480,6 +516,12 @@
     ]
   }, 
   "shape-detection": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "srcset": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -603,6 +645,12 @@
     ]
   }, 
   "videoworker": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "viewport-units": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
