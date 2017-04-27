@@ -6,7 +6,44 @@
       <h1>Media and Real-Time Communications</h1>
     </header>
     <main>
-    </main>
+      <section class="featureset well-deployed">
+          <h2>Well-deployed technologies</h2>
+      <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong data-feature="Video playback" ><a data-featureid="video">&lt;video&gt;</a></strong></code> and <code><strong data-feature="Audio playback"><a data-featureid="audio">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
+      <p data-feature="Generation of media content">The playback content can be streamed, augmented and completed via <a data-featureid="mse">Media Source Extensions</a> that lets developers buffer and generate media content in JavaScript.</p>
+      <p data-feature="Protected content playback">To cater for the needs of some content providers, a proposal to enable <strong>playback of protected content</strong>, <cite><a data-featureid="eme">Encrypted Media Extensions</a></cite> is an API that is under consideration in the <a href="http://www.w3.org/html/wg/">HTML Working Group</a>.</p>
+      <p data-feature="Media focus">Mobile devices often expose shortcuts to handle the audio output of a main application (e.g. a music player) from a lock screen or the notification areas. The WHATWG <a data-featureid="mediasession">Media Session</a> specification proposes deeper integration with these features in Web applications.</p>
+      <p data-feature="Audio output selection">Because mobile devices often come with a variety of configurable audio output (phone speaker, loudspeaker, headset, bluetooth speakers), the <a data-featureid="audio-output">Audio Output Devices API</a> let developers set on which ouput devices a given audio resource should play.</p>
+      <p data-feature="Capturing audio/video">While the new HTML5 tags allow to play multimedia content, the <cite><a data-featureid="inputaccept">HTML Media Capture</a></cite> defines a <strong>markup-based mechanism to access captured multimedia content</strong> using attached camera and microphones, a very common feature on mobile devices. The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> and the <a href="https://www.w3.org/2009/dap/">Device APIs Working Group</a> are building together an <a data-featureid="getusermedia">API (<code>getUserMedia</code>)</a> to directly manipulate <strong>streams from camera and microphones</strong>, as well as an <a data-featureid="recording">API to record these streams</a> into files, and another API to use access to cameras to <a data-featureid="imagecapture">take photos programatically</a>.</p>
+      <p data-feature="Image &amp; Video analysis, modification">Beyond capturing and recording, two additional APIs add multimedia manipulation capabilities to the Web platform. We have already mentioned the <cite><a data-featureid="canvas">Canvas 2D Context</a></cite> API: it enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>.</p>
+      <p data-feature="Audio analysis, modification">In a similar vein, the <a href="https://www.w3.org/2011/audio/">Audio Working Group</a> is working on an API that  that makes it possible to modify audio content, as well as <strong>analyze, modify and synthesize sounds</strong>, the <a data-featureid="webaudio">Web Audio API</a>.</p>
+      <div data-feature="Local network services">
+        <p>The <a data-featureid="discovery">Network Service Discovery</a> API offers to discover services on the local network (such as the ones offered via DLNA), enabling mobile Web applications to integrate seamlessly with these services.</p>
+        <p>An alternative proposal to the Network Service Discovery API has emerged: <a data-featureid="namedwebsockets">Named Web Sockets</a> offers to provide well-known sockets to existing and approved local network services.</p>
+        <p>The <a href="https://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a> is building an <a data-featureid="secondscreen">an API to request display of content on an external screen</a>, including through network-based protocols, forming the basis for second-screen scenarios.</p>
+      </div>
+      <p>The <strong><a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></strong> is the host of specifications for a wider set of communication opportunities:</p>
+      <ul>
+<li data-feature="P2P connections and audio/video streams"><strong><a data-featureid="p2p">Peer-to-peer connection</a></strong> across devices,</li>
+<li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
+</ul>
+
+      <p>The combination of all these features marks the starting point of the Web as a comprehensive platform for multimedia, both for consuming and producing. The rising interest around bridging the Web and TV worlds (manifested through the <a href="https://www.w3.org/2011/webtv/">W3C Web and TV Interest Group</a>) should strengthen that trend in the coming months. Mobile devices are expected to take a growing role in many users TV experience, providing a “second screen” experience, where users can find more information on or interact with a TV program they're watching via their mobile devices.</p>
+
+      <p>Likewise, the opportunity offered to deploy real-time communication services on the Web is another step towards the unification of the telecommunication and Web ecosystems.</p>
+
+        </section>
+        <section class="featureset in-progress">
+          <h2>Specifications in progress</h2>
+
+        </section>
+        <section class="featureset exploratory-work">
+          <h2>Exploratory work</h2>
+                 </section>
+        <section>
+          <h2>Features not covered by ongoing work</h2>
+          
+</section>
+</main>
         <script src="../js/generate.js"></script>
     </body>
 </html>

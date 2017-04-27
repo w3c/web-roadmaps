@@ -4,9 +4,40 @@
     <title>Data Storage</title>
     <header>
       <h1>Data Storage</h1>
+      <p>A critical component of many applications is the ability to save state, export content, as well as integrate data from other files and services on the system.</p>
     </header>
     <main>
-    </main>
+      <section class="featureset well-deployed">
+          <h2>Well-deployed technologies</h2>
+      <p data-feature="Simple data storage">For simple data storage, the <cite><strong><a data-featureid="webstorage">Web Storage</a></strong></cite> specification offers two basic mechanisms, <code>localStorage</code> and <code>sessionStorage</code>, that can preserve data respectively indefinitely, or on a browser-session basis.</p>
+      <div data-feature="File operations">
+        <p>For richer interactions, the Web platform provides the <cite><strong><a data-featureid="filereader">File Reader API</a></strong></cite> makes it possible to load the content of a file.</p>
+        <p>Discussions have started on a new proposal for a <a data-featureid="fs2">sandboxed filesystem API</a>.</p>
+        <p>Meanwhile, the <a data-featureid="html5-download">HTML5 <code>download</code> attribute</a> provides a simply mechanism to trigger a file download (rather than a page navigation), with the possibility of setting a user-friendly filename.</p>
+      </div>
+      <p data-feature="Database query/update">On top of this file-based access, the <cite><strong><a data-featureid="indexeddb">Indexed Database API</a></strong></cite> (IndexedDB) defines a database of values and hierarchical objects that integrates naturally with JavaScript, and can be queried and updated very efficiently - a <a href="http://w3c.github.io/IndexedDB/">new second edition of the specification</a> is under development. Note that the work around a <a data-featureid="websql">client-side SQL-based database</a>, which had been started in 2009, has been abandoned in favor of this new system.</p>
+      <p data-feature="Quota for storage">As more and more data need to be stored by the browser (e.g. for offline usage), it becomes critical for developers to get reliable storage space, which the proposed <strong><a data-featureid="quota">Quota Management API</a></strong> will offer to Web applications.</p>
+      <div data-feature="Addressbook data">
+        <p>Communication applications can benefit from integrating with their users’ existing data records; on mobile devices, the address book is a  particularly useful source of information.</p>
+	<p>For Web apps outside of the browser, a purely programmatic approach was part of the <a href="http://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a>; since this group has now closed, no further work on the <a data-featureid="contacts-sys">Contacts Manager API</a> is expected for the time being.</p>
+        <p>In the browser, HTML 5.1 provides <a data-featureid="autocomplete">autocompleted fields for contacts information</a> that would let browsers re-use data from addressbooks.</p>
+      </div>
+
+      <p data-feature="Encrypted storage">Some of this data need to be encrypted, the <a data-featureid="crypto">Web Cryptography API</a> from the <a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a> exposes strong cryptography primitives to Web applications, and can be bound to pre-provisioned keys via the <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API.</p>
+
+        </section>
+        <section class="featureset in-progress">
+          <h2>Specifications in progress</h2>
+
+        </section>
+        <section class="featureset exploratory-work">
+          <h2>Exploratory work</h2>
+                 </section>
+        <section>
+          <h2>Features not covered by ongoing work</h2>
+          
+</section>
+</main>
         <script src="../js/generate.js"></script>
     </body>
 </html>
