@@ -31,9 +31,16 @@ def feature_status(origdata, source, key, silentfail = False):
                         if uadata[version].startswith("y") or uadata[version].startswith("n d"):
                             exp.add(ua)
     elif source=="chromestatus":
-        feature_data = filter(lambda a: a["id"]==key, sources[source])[0]
-        chromeid = feature_data["id"]
-        chromestatus = feature_data["impl_status_chrome"]
+        matching_data = filter(lambda a: a["id"]==key, sources[source])
+        chromestatus = None
+        firefoxstatus = None
+        if not(len(matching_data)):
+            sys.stderr.write("Unknown Chrome feature %s, skipping" % key)
+        else:
+            feature_data = matching_data[0]
+            chromeid = feature_data["id"]
+            chromestatus = feature_data["impl_status_chrome"]
+            firefoxstatus = feature_data["ff_views"]["text"]
         if chromestatus == "Enabled by default":
             shipped.add("chrome")
         elif chromestatus == "Behind a flag":
@@ -42,7 +49,6 @@ def feature_status(origdata, source, key, silentfail = False):
             indev.add("chrome")
         elif chromestatus == "Proposed":
             consider.add("chrome")
-        firefoxstatus = feature_data["ff_views"]["text"]
         if firefoxstatus == "Shipped":
             shipped.add("firefox")
         elif firefoxstatus == "In development":
