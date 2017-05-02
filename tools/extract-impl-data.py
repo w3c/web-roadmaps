@@ -76,7 +76,7 @@ def feature_status(origdata, source, key, silentfail = False):
             keytype = "features"
         keyname = " ".join(key.split("-")[1:])
         feature_data = filter(lambda a: a["name"].lower() == keyname, sources[source][keytype])[0]
-        webkitstatus = feature_data["status"].get("status", "")
+        webkitstatus = feature_data.get("status",{}).get("status", "")
         if webkitstatus == "Done" or webkitstatus == "Partial Support":
             shipped.add("webkit")
         elif webkitstatus == "In Development":
