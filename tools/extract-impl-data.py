@@ -35,7 +35,10 @@ def feature_status(origdata, source, key, silentfail = False):
         chromestatus = None
         firefoxstatus = None
         if not(len(matching_data)):
-            sys.stderr.write("Unknown Chrome feature %s, skipping" % key)
+            err = "Unknown Chrome feature %s" % key
+            sys.stderr.write(err)
+            if not silentfail:
+                errors.append(err)
         else:
             feature_data = matching_data[0]
             chromeid = feature_data["id"]
