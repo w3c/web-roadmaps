@@ -13,6 +13,16 @@
       }
     ]
   }, 
+  "animation-frames": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "audio": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -87,6 +97,34 @@
       }
     ]
   }, 
+  "css-2d": {
+    "maturity": "WD", 
+    "title": "CSS Transforms Module Level 1", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-3d": {
+    "maturity": "WD", 
+    "title": "CSS Transforms Module Level 1", 
+    "wgs": [
+      {
+        "label": "SVG Working Group", 
+        "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }, 
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-animation": {
     "maturity": "WD", 
     "title": "CSS Animations", 
@@ -94,6 +132,66 @@
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-border": {
+    "maturity": "CR", 
+    "title": "CSS Backgrounds and Borders Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-device-adapt": {
+    "maturity": "WD", 
+    "title": "CSS Device Adaptation Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-font-loading": {
+    "maturity": "LastCall", 
+    "title": "CSS Font Loading Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-transitions": {
+    "maturity": "WD", 
+    "title": "CSS Transitions", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-will-change": {
+    "maturity": "CR", 
+    "title": "CSS Will Change Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "ddr": {
+    "maturity": "REC", 
+    "title": "Device Description Repository Simple API", 
+    "wgs": [
+      {
+        "label": "Device Description Working Group", 
+        "url": "http://www.w3.org/2005/MWI/DDWG/"
       }
     ]
   }, 
@@ -128,6 +226,16 @@
       {
         "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "flexbox": {
+    "maturity": "CR", 
+    "title": "CSS Flexible Box Layout Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -183,6 +291,16 @@
       }
     ]
   }, 
+  "inputaccept": {
+    "maturity": "CR", 
+    "title": "HTML Media Capture", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "mediacontroller": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -200,6 +318,26 @@
       {
         "label": "Web Platform Working Group", 
         "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "mediaqueries": {
+    "maturity": "REC", 
+    "title": "Media Queries", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "mediaqueries4": {
+    "maturity": "WD", 
+    "title": "Media Queries Level 4", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -230,6 +368,26 @@
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "picture": {
+    "maturity": "WD", 
+    "title": "HTML 5.2", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "pointer-events": {
+    "maturity": "WD", 
+    "title": "Pointer Events - Level 2", 
+    "wgs": [
+      {
+        "label": "Pointer Events Working Group", 
+        "url": "http://www.w3.org/2012/pointerevents/"
       }
     ]
   }, 
@@ -271,6 +429,16 @@
       }
     ]
   }, 
+  "screenlock": {
+    "maturity": "WD", 
+    "title": "The Screen Orientation API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "secondscreen": {
     "maturity": "CR", 
     "title": "Presentation API", 
@@ -288,6 +456,16 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "srcset": {
+    "maturity": "WD", 
+    "title": "HTML 5.2", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -331,6 +509,16 @@
       }
     ]
   }, 
+  "touchevent": {
+    "maturity": "REC", 
+    "title": "Touch Events", 
+    "wgs": [
+      {
+        "label": "Web Events Working Group", 
+        "url": "http://www.w3.org/2010/webevents/"
+      }
+    ]
+  }, 
   "ttml": {
     "maturity": "WD", 
     "title": "Timed Text Markup Language 2 (TTML2)", 
@@ -368,6 +556,16 @@
       {
         "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "viewport-units": {
+    "maturity": "CR", 
+    "title": "CSS Values and Units Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -412,6 +610,26 @@
       {
         "label": "Timed Text Working Group", 
         "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "woff": {
+    "maturity": "REC", 
+    "title": "WOFF File Format 1.0", 
+    "wgs": [
+      {
+        "label": "WebFonts Working Group", 
+        "url": "http://www.w3.org/Fonts/WG/"
+      }
+    ]
+  }, 
+  "woff2": {
+    "maturity": "CR", 
+    "title": "WOFF File Format 2.0", 
+    "wgs": [
+      {
+        "label": "WebFonts Working Group", 
+        "url": "http://www.w3.org/Fonts/WG/"
       }
     ]
   }
