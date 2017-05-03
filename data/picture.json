@@ -1,7 +1,7 @@
 {
   "impl": {
     "caniuse": "picture",
-    "chromestatus": "5910974510923776",
+    "chromestatus": 5910974510923776,
     "webkitstatus": "feature-picture-element"
   },
   "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-picture-element",
