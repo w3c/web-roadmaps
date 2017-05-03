@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "input-pattern"
+  },
+  "TR": "http://www.w3.org/TR/html5/forms.html#the-pattern-attribute",
+  "feature": "Pattern attribute for input fields"
+}

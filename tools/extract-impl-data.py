@@ -64,7 +64,7 @@ def feature_status(origdata, source, key, silentfail = False):
             edgestatus = feature_data["ieStatus"]["text"]
         except IndexError:
             if not silentfail:
-                err = "Unknown %s for edgestatus %s" % (key_filter, key)
+                err = "Unknown %s for edgestatus %s\n" % (key_filter, key)
                 sys.stderr.write(err)
                 errors.append(err)
             edgestatus = ""

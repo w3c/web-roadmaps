@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "input-placeholder"
+  },
+  "TR": "http://www.w3.org/TR/html5/forms.html#the-placeholder-attribute",
+  "feature": "input placeholder attribute"
+}

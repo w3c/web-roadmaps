@@ -1,0 +1,9 @@
+{
+  "impl": {
+    "caniuse": "datalist",
+    "chromestatus": 6090950820495360,
+    "edgestatus": "datalistelement"
+  },
+  "TR": "http://www.w3.org/TR/html5/forms.html#the-datalist-element",
+  "feature": "Datalist element"
+}
