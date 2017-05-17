@@ -48,6 +48,8 @@ def feature_status(origdata, source, key, silentfail = False):
             shipped.add("chrome")
         elif chromestatus == "Behind a flag":
             exp.add("chrome")
+        elif chromestatus == "Origin trial":
+            exp.add("chrome")
         elif chromestatus == "In development":
             indev.add("chrome")
         elif chromestatus == "Proposed":
