@@ -116,10 +116,10 @@ def processData():
         if feature_data.has_key("impl"):
             data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
             for key, url in sources.iteritems():
+                if data[id].has_key("chromeid") and key == "edgestatus":
+                    data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
                 if feature_data["impl"].get(key, None):
                     data[id] = feature_status(data[id], key, feature_data["impl"][key])
-                if data[id].has_key("chromeid") and data[id].get(key, None) and key == "edgestatus":
-                    data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
 
             # in case of overlapping / conflicting data, we keep the most optimistic
 
