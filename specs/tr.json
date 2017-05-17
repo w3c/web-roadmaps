@@ -13,6 +13,16 @@
       }
     ]
   }, 
+  "accelerometer": {
+    "maturity": "WD", 
+    "title": "Accelerometer", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "animation-frames": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -44,6 +54,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "autocomplete": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -205,6 +225,16 @@
       }
     ]
   }, 
+  "deviceorientation": {
+    "maturity": "CR", 
+    "title": "DeviceOrientation Event Specification", 
+    "wgs": [
+      {
+        "label": "Geolocation Working Group", 
+        "url": "http://www.w3.org/2008/geolocation/"
+      }
+    ]
+  }, 
   "discovery": {
     "maturity": "Retired", 
     "title": "Network Service Discovery", 
@@ -249,6 +279,26 @@
       }
     ]
   }, 
+  "generic-sensor": {
+    "maturity": "WD", 
+    "title": "Generic Sensor API", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "geolocation": {
+    "maturity": "REC", 
+    "title": "Geolocation API Specification", 
+    "wgs": [
+      {
+        "label": "Geolocation Working Group", 
+        "url": "http://www.w3.org/2008/geolocation/"
+      }
+    ]
+  }, 
   "getusermedia": {
     "maturity": "CR", 
     "title": "Media Capture and Streams", 
@@ -271,6 +321,16 @@
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
       }, 
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "gyroscope": {
+    "maturity": "WD", 
+    "title": "Gyroscope", 
+    "wgs": [
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
@@ -304,6 +364,66 @@
   "inputaccept": {
     "maturity": "CR", 
     "title": "HTML Media Capture", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "inputdate": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Media Extensions Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "inputhint": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Media Extensions Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "inputmode": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "inputpattern": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Media Extensions Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "inputtext": {
+    "maturity": "REC", 
+    "title": "HTML5", 
+    "wgs": [
+      {
+        "label": "HTML Media Extensions Working Group", 
+        "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "magnetometer": {
+    "maturity": "WD", 
+    "title": "Magnetometer", 
     "wgs": [
       {
         "label": "Device and Sensors Working Group", 
@@ -371,6 +491,16 @@
       }
     ]
   }, 
+  "orientation": {
+    "maturity": "WD", 
+    "title": "Orientation Sensor", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "p2p": {
     "maturity": "WD", 
     "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
@@ -401,6 +531,16 @@
       }
     ]
   }, 
+  "push": {
+    "maturity": "WD", 
+    "title": "Push API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "recording": {
     "maturity": "WD", 
     "title": "MediaStream Recording", 
@@ -422,6 +562,26 @@
       {
         "label": "Second Screen Working Group", 
         "url": "http://www.w3.org/2014/secondscreen/"
+      }
+    ]
+  }, 
+  "resource-hints": {
+    "maturity": "WD", 
+    "title": "Resource Hints", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
+  "resource-timing": {
+    "maturity": "CR", 
+    "title": "Resource Timing Level 1", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -466,6 +626,16 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "serviceworkers": {
+    "maturity": "WD", 
+    "title": "Service Workers 1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -559,6 +729,16 @@
       }
     ]
   }, 
+  "vehicle-info": {
+    "maturity": "WD", 
+    "title": "Vehicle Information Access API", 
+    "wgs": [
+      {
+        "label": "Automotive Working Group", 
+        "url": "https://www.w3.org/auto/wg/"
+      }
+    ]
+  }, 
   "video": {
     "maturity": "REC", 
     "title": "HTML5", 
@@ -610,6 +790,35 @@
       {
         "label": "Web Authentication Working Group", 
         "url": "https://www.w3.org/webauthn/"
+      }
+    ]
+  }, 
+  "webrtc-qos": {
+    "maturity": "WD", 
+    "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
+    "wgs": [
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "webrtc-relay": {
+    "maturity": "WD", 
+    "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
+    "wgs": [
+      {
+        "label": "Web Real-Time Communications Working Group", 
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "websockets": {
+    "maturity": "CR", 
+    "title": "The WebSocket API", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
       }
     ]
   }, 

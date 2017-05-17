@@ -1,0 +1,6 @@
+{
+    "TR": "https://www.w3.org/TR/webrtc//#dom-rtcpeerconnection-getdefaulticeservers",
+    "impl": {
+    },
+    "feature": "Browser default ICE servers"
+}

@@ -1,0 +1,7 @@
+{
+    "TR": "https://www.w3.org/TR/orientation-event/",
+    "impl": {
+        "caniuse": "deviceorientation",
+        "webkitstatus": "specification-deviceorientation-events"
+    }
+}
