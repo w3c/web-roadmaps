@@ -197,6 +197,7 @@ function fillTables() {
 			    links[l].setAttribute("href",url);
 			}
 			if (data.TR) {
+                            if (!specData[s]) console.error("No spec data on " + s);
 			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + specData[s].title, url: data.TR});
 			} else {
 			    fillCell(el1, {label: (data.feature ? data.feature + " in " : "") + data.title, url: x.dataType=="deployed" ? undefined : data.editors});
@@ -204,6 +205,7 @@ function fillTables() {
 			}
 			for (var w = 0 ; w < specData[s].wgs.length; w++) {
 			    wg = specData[s].wgs[w];
+                            wg.label = wg.label || "";
                             if (x.tableType === "well-deployed") {
 			        wg.label = wg.label.replace(/ Working Group/,'');
                             }
