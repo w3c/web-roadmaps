@@ -8,7 +8,7 @@ var heroOrig = document.querySelectorAll("header *");
 for (var i = 0; i < heroOrig.length; i++) {
     hero.push(heroOrig[i].cloneNode(true));
 }
-var scripts = ['https://w3c.github.io/mediartc-roadmap-ui/assets/js/sidenav.js', 'https://w3c.github.io/mediartc-roadmap-ui/assets/js/app.js'];
+var scripts = ['../js/sidenav.js'];
 
 var templates = {
     "well-deployed": "<table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>",
@@ -262,7 +262,7 @@ function formatImplData(data, implType) {
             heading.appendChild(document.createElement("br"));
             uadata.forEach(function(ua) {
                 var icon = document.createElement("img");
-                icon.src = "../icons/" + ua + ".png";
+                icon.src = "../assets/impl/" + ua + ".png";
                 icon.height = 30;
                 icon.alt = section + " in " + ua;
                 heading.appendChild(icon);

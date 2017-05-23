@@ -3,7 +3,7 @@ var heroOrig = document.querySelectorAll("header *");
 for (var i = 0; i < heroOrig.length; i++) {
     hero.push(heroOrig[i].cloneNode(true));
 }
-var scripts = ['https://w3c.github.io/mediartc-roadmap-ui/assets/js/sidenav.js', 'https://w3c.github.io/mediartc-roadmap-ui/assets/js/app.js'];
+var scripts = ['../js/sidenav.js'];
 
 var templateItem = "<a href=''><div class='icon'><img src='' width='45' alt=''></div><div class='description'><h2></h2><p></p></div></a>";
 var templateTocItem = "<a href=''><div class='description'></div></a>";

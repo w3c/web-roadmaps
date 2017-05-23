@@ -7,21 +7,21 @@
     <meta name="theme-color" content="#0072ff">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://w3c.github.io/mediartc-roadmap-ui/assets/css/theme.css">
-    <link rel="stylesheet" href="https://w3c.github.io/mediartc-roadmap-ui/assets/css/roadmap.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
   </head>
   <body>
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/icon-humberger.svg" height="15" alt=""></button>
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" height="15" alt=""></button>
 
 
                 <div class="brand">
-                  <a href="https://www.w3.org/"><img src="https://w3c.github.io/mediartc-roadmap-ui/assets/img/w3c.svg" height="30" alt="W3C"></a>
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
                 </div>
       </div>
 
