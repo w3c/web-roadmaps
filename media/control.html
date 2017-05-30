@@ -30,7 +30,7 @@
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt>360° video controls</dt>
-          <dd>To render 360° videos, applications must either rely on native support for 360° video codecs from web browsers with integrated controls, or they must provide directional controls and handle the underlying projection logic and adaptive streaming on their own. The <code>HTMLMediaElement</code> interface could expose controls for 360° videos so that applications can customize the user experience and still take advantage of native 360° video playback support.</dd>
+          <dd>To render 360° videos, applications can either rely on native support for 360° video codecs from web browsers and stick to integrated controls, or they can provide their own controls but then need to handle the underlying projection logic and adaptive streaming programmatically. Exposing controls for 360° videos on the <code>HTMLMediaElement</code> interface would allow applications to customize the user experience and still take advantage of native 360° video playback support when available.</dd>
         </dl>
       </section>
     </main>
