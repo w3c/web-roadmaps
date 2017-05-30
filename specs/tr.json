@@ -226,11 +226,10 @@
     ]
   }, 
   "deviceorientation": {
-    "maturity": "CR", 
+    "maturity": "Retired", 
     "title": "DeviceOrientation Event Specification", 
     "wgs": [
       {
-        "label": "Geolocation Working Group", 
         "url": "http://www.w3.org/2008/geolocation/"
       }
     ]
@@ -294,7 +293,6 @@
     "title": "Geolocation API Specification", 
     "wgs": [
       {
-        "label": "Geolocation Working Group", 
         "url": "http://www.w3.org/2008/geolocation/"
       }
     ]
@@ -702,6 +700,26 @@
   "ttml": {
     "maturity": "WD", 
     "title": "Timed Text Markup Language 2 (TTML2)", 
+    "wgs": [
+      {
+        "label": "Timed Text Working Group", 
+        "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "ttml-imsc1": {
+    "maturity": "REC", 
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)", 
+    "wgs": [
+      {
+        "label": "Timed Text Working Group", 
+        "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "ttml1": {
+    "maturity": "REC", 
+    "title": "Timed Text Markup Language (TTML) 1.0", 
     "wgs": [
       {
         "label": "Timed Text Working Group", 
