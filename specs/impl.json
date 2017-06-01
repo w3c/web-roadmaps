@@ -443,6 +443,7 @@
       "baidu", 
       "firefox", 
       "bb", 
+      "samsung", 
       "chrome", 
       "and_ff", 
       "and_qq", 
@@ -594,6 +595,18 @@
     ], 
     "shipped": []
   }, 
+  "media-capabilities": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "media-playback-quality": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "mediacontroller": {
     "consideration": [], 
     "experimental": [], 
@@ -672,6 +685,7 @@
       "and_uc", 
       "baidu", 
       "firefox", 
+      "samsung", 
       "chrome", 
       "and_ff", 
       "opera", 
@@ -800,7 +814,8 @@
       "chrome", 
       "opera", 
       "and_chr", 
-      "firefox"
+      "firefox", 
+      "samsung"
     ]
   }, 
   "remote-playback": {
@@ -824,6 +839,7 @@
     "shipped": [
       "baidu", 
       "firefox", 
+      "samsung", 
       "chrome", 
       "and_qq", 
       "opera", 
@@ -874,9 +890,10 @@
       "and_uc", 
       "baidu", 
       "firefox", 
-      "opera", 
-      "and_ff", 
+      "samsung", 
       "chrome", 
+      "and_ff", 
+      "opera", 
       "edge", 
       "op_mob", 
       "and_chr", 
@@ -938,11 +955,14 @@
     "consideration": [
       "edge"
     ], 
-    "experimental": [], 
+    "experimental": [
+      "safari"
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
       "firefox", 
+      "samsung", 
       "chrome", 
       "and_ff", 
       "and_qq", 
@@ -1027,6 +1047,18 @@
     ]
   }, 
   "ttml": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "ttml-imsc1": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
+  "ttml1": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
