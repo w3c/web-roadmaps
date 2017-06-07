@@ -1,0 +1,10 @@
+{
+  "title": "Cloud Browser Architecture",
+  "wgs": [
+    {
+      "label": "Web and TV Interest Group",
+      "url": "https://www.w3.org/2011/webtv/"
+    }
+  ],
+  "editors": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/"
+}
