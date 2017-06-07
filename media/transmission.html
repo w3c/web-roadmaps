@@ -26,12 +26,13 @@
         </div>
         <p data-feature="Broadcast">Some devices (e.g. TV sets) provide access to non-IP broadcast media; the <a data-featureid="tvtuner">Tuner API in the TV Control specification</a> brings these non-IP media streams to Web browsers. The API also explores ways to expose and launch broadcast-related applications that get transmitted within the transport stream sometimes. The scope of the API may change in the future though. The work on the API itself has been discontinued while scope, use cases and requirements get refined in the <a href="https://www.w3.org/2011/webtv">Web and TV Interest Group</a>.</p>
         <p data-feature="Mappings">Different media containers, used to transport media over the network, embed different kinds of in-band tracks, which must be mapped onto video, audio and text tracks in HTML5 so that Web applications can access them interoperably across Web browsers. The <a data-featureid="inband">Sourcing In-band Media Resource Tracks from Media Containers into HTML</a> specification provides such mapping guidelines.</p>
+        <p data-feature="Cloud browsing">Device such as HDMI dongles and lightweight set-top boxes may not have the power needed to run a Web browser locally. Updating the firmware of these devices may also be difficult. One possible solution is to bring the processing and rendering of the browser to the cloud and to stream the result to the device. The <a data-featureid="cloud-browser-arch">Cloud Browser Architecture</a> specification describes the concepts and architecture for such a Cloud Browser to provide building blocks for potential further standardization needs.</p>
       </section>
       <section>
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt>Streaming HTTP media on HTTPs pages</dt>
-          <dd>While it is possible to read video/audio content served on HTTP in <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements served on HTTPs pages (despite the usual mixed content restrictions), this does not extend to the usage of streaming enabled by Media Stream Extensions. There have been <a href="https://github.com/w3c/media-source/issues/22">early discussions on how this could be solved</a> but the consensus was not to include possible solutions in the current version of the specification.</dd>
+          <dd>While it is possible to read video/audio content served on HTTP in <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements served on HTTPs pages (despite the usual mixed content restrictions), this does not extend to the usage of streaming enabled by Media Stream Extensions. There have been <a href="https://github.com/w3c/media-source/issues/22">early discussions on how this could be solved</a>. The consensus was not to include possible solutions in the current version of the specification.</dd>
         </dl>
       </section>
     </main>

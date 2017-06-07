@@ -23,8 +23,7 @@
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <div data-feature="Video processing">
-          <p>Video processing using the Canvas API is very CPU-intensive, and as such, can benefit from executing separately from the rest of a Web application. The early proposal for a <a data-featureid="videoworker">Worker for parallel video processing</a> suggests an approach on how this could be done using a dedicated Worker.</p>
-          <p>Another approach to this would be to provide specialized APIs for specific processing functions; the <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
+          <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
         </div>
       </section>
       <section>
@@ -40,8 +39,6 @@
           <dd>Broadcasters use a different approach to protect the content they distribute, known as Conditional Access System (CAS). As broadcast streams are coming to Web browsers, providing integration with these systems may be needed.</dd>
           <dt>Hardware-accelerated video processing</dt>
           <dd>The Canvas API provide capabilities to do image and video processing, but these capabilities are limited by their reliance on the CPU for execution; modern GPUs provide hardware-acceleration for a wide range of operations, but the browsers don't provide hooks to these. The <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> is discussing solutions to expose GPU computation functionality to Web applications, which could eventually allow web applications to process video streams efficiently, taking advantage of the GPU power.</dd>
-          <dt>Hardware-accelerated vision processing</dt>
-          <dd>Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications.</dd>
         </dl>
       </section>
       <section>
