@@ -5,8 +5,79 @@
     <header>
       <h1>Application Lifecycle</h1>
     </header>
-    <main>
-    </main>
+    <body>
+        <main>
+            <section class="featureset well-deployed">
+                <h2>Well-deployed technologies</h2>
+                
+                <p> An important aspect of the user experience of applications is linked to how the user perceives the said 
+                    application is available permanently (even when off-line, which is particularly important on mobile devices), 
+                    as well as its ability to get started based on external notifications.</p>
+
+                <p> These notions are part of the overall <em>application lifecycle</em>: how applications get installed, shown to the 
+                    user in applications list, started, stopped, woken up from remote notifications, synced up when the device 
+                    goes on-line. </p>
+
+                <p> These various capabilities are brought the Web platform through different mechanisms.</p>
+
+                <p> Although the notion of installed Web applications is still not well-defined, there are several components 
+                    to the notion of installation that are under development.</p>
+                
+                <div data-feature="Packing">
+                    <p><strong><a data-featureid="packaging">Packaging on the Web</a></strong> describes a Web-adapted format to make 
+                        Web content available in a singe file for ease of download, sharing or archiving.</p>
+                    
+                    <p>Whether packaged or not, users rely on a variety of metadata (name, icons) to identify the apps they want to use
+                        among their list of regularly used applications. The <strong><a data-featureid="manifestjson">JSON-based manifest format
+                        </a></strong> lets developers group all these metadata in a single JSON file.</p>
+                </div>
+                
+                <div data-feature="Offline Web Apps">
+                    <p>HTML5’s <code><strong><a data-featureid="manifest">ApplicationCache</a></strong><code> enables access to Web applications 
+                        off-line through the definition of a manifest of files that the browser is expected to keep in its cache.</p>
+                    
+                    <p>While relatively well deployed, the current approach has shown some strong limitations in terms of how much developers can
+                        control what gets cached when. The Web Applications Working Group has thus been developing a more powerful approach, 
+                        <strong><a data-featureid="serviceworkers">ServiceWorker</a></strong>.</p>
+                        
+                </div>
+
+                <div data-feature="Scheduled Tasks">
+                    <p>Not only does Service Worker enables Web applications to work seamlessly off-line or in poor network conditions, 
+                        it also creates a model for Web applications to operate when they have not been opened in a browser window, 
+                        or even if the browser itself is not running.</p>
+                        
+                    <p>That ability opens the door for Web applications that run in the background and can react to remotely 
+                        triggered events.</p>
+
+                    <p>The <strong><a data-featureid="task-scheduler">Task Scheduler API</a></strong> makes it possible to trigger a task
+                        at a specified time via the Web app service worker. While the System Applications Working Group in which this API
+                        was developed has closed, the ServiceWorker-based approach taken in the specifications may make it an interesting
+                        starting point for further work in this space.</p>
+                </div>
+
+                <div data-feature="Geofencing">
+                    <p>Similarly, the new <strong><a data-featureid="geofencing">geofencing API</a></strong> enables to wake up a Web app when a
+                        device enters a specified geographical area.</p>
+                </div>
+
+                <div data-feature="Remote Notifications">
+                    <p>The <strong><a data-featureid="push">Push API</a></strong> enables Web applications to subscribe to remote 
+                        notifications that, upon reception, wake them up. Native applications have long enjoyed the benefits of 
+                        greater user engagement that these notifications bring, and soon Web applications will share that ability.</p>
+                </div>
+
+                <div data-feature="Background Sync">
+                    <p>Likewise, the <strong><a data-featureid="background-sync">Web Background Synchronization</a></strong> specification will enable Web applications to keep their user data 
+                        up to date seamlessly, by running network operations in the background.</p>
+                </div>
+
+                <div data-feature="Foreground Detection">
+                    <p>The <strong><a data-featureid="visibilitychange">Page Visibility</a></strong> specification lets developers detect when their application is in the foreground, and thus adapt their operations and resource consumption accordingly.</p>
+                </div>
+                    
+            </section>
+        </main>
         <script src="../js/generate.js"></script>
     </body>
 </html>
