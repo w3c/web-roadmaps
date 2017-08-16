@@ -18,10 +18,10 @@
       "description": "Features needed to let the user interact with the playback of media content, both via local and remote interactions."
     },
     {
-      "url": "transmission.html",
-      "title": "Media transmission",
-      "icon": "../assets/img/media-transmission.svg",
-      "description": "Features that help with transmitting media content from its source to its rendering target."
+      "url": "distribution.html",
+      "title": "Media distribution",
+      "icon": "../assets/img/media-distribution.svg",
+      "description": "Features that help with sending media content from its source to its rendering target."
     },
     {
       "url": "processing.html",
