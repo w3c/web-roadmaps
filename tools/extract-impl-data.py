@@ -40,10 +40,12 @@ def feature_status(origdata, source, key, silentfail = False):
             if not silentfail:
                 errors.append(err)
         else:
-            feature_data = matching_data[0]
-            chromeid = feature_data["id"]
-            chromestatus = feature_data["impl_status_chrome"]
-            firefoxstatus = feature_data["ff_views"]["text"]
+            chromeid = key
+            feature_data = matching_data[0]["browsers"]
+            chromestatus = feature_data["chrome"]["status"]["text"]
+            firefoxstatus = feature_data["ff"]["view"]["text"]
+            edgestatus = feature_data["edge"]["view"]["text"]
+            safaristatus = feature_data["safari"]["view"]["text"]
         if chromestatus == "Enabled by default":
             shipped.add("chrome")
         elif chromestatus == "Behind a flag":
@@ -60,6 +62,18 @@ def feature_status(origdata, source, key, silentfail = False):
             indev.add("firefox")
         elif firefoxstatus == "Public support":
             consider.add("firefox")
+        if edgestatus == "Shipped":
+            shipped.add("edge")
+        elif edgestatus == "In development":
+            indev.add("edge")
+        elif edgestatus == "Public support":
+            consider.add("edge")
+        if safaristatus == "Shipped":
+            shipped.add("safari")
+        elif safaristatus == "In development":
+            indev.add("safari")
+        elif safaristatus == "Public support":
+            consider.add("safari")
     elif source=="edgestatus":
         key_filter = "id"
         if type(key) is unicode:
