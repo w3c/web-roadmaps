@@ -52,7 +52,9 @@
   }, 
   "audio-output": {
     "chromeid": 4621603249848320, 
-    "consideration": [], 
+    "consideration": [
+      "edge"
+    ], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
@@ -121,7 +123,9 @@
       "edge"
     ], 
     "experimental": [], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "safari"
+    ], 
     "shipped": [
       "chrome"
     ]
@@ -362,12 +366,13 @@
   }, 
   "domcapture": {
     "chromeid": 5522768674160640, 
-    "consideration": [], 
-    "experimental": [
-      "chrome"
+    "consideration": [
+      "edge"
     ], 
+    "experimental": [], 
     "indevelopment": [], 
     "shipped": [
+      "chrome", 
       "firefox"
     ]
   }, 
@@ -379,7 +384,8 @@
     "shipped": [
       "chrome", 
       "edge", 
-      "firefox"
+      "firefox", 
+      "safari"
     ]
   }, 
   "flexbox": {
@@ -436,7 +442,10 @@
   "getusermedia": {
     "chromeid": 5755699816562688, 
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "ios_saf", 
+      "safari"
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -661,7 +670,9 @@
       "firefox"
     ], 
     "experimental": [], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "safari"
+    ], 
     "shipped": [
       "chrome"
     ]
@@ -673,6 +684,7 @@
     "indevelopment": [], 
     "shipped": [
       "chrome", 
+      "edge", 
       "firefox"
     ]
   }, 
@@ -702,11 +714,10 @@
     "chromeid": 6338383617982464, 
     "consideration": [], 
     "experimental": [], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "baidu", 
+      "firefox", 
       "samsung", 
       "chrome", 
       "and_ff", 
@@ -727,10 +738,11 @@
   "p2p": {
     "chromeid": 6612462929444864, 
     "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [
-      "webkit"
+    "experimental": [
+      "ios_saf", 
+      "safari"
     ], 
+    "indevelopment": [], 
     "shipped": [
       "baidu", 
       "firefox", 
@@ -824,7 +836,9 @@
       "firefox"
     ], 
     "experimental": [], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "safari"
+    ], 
     "shipped": [
       "chrome"
     ]
@@ -852,6 +866,7 @@
     "chromeid": 5796350423728128, 
     "consideration": [], 
     "experimental": [
+      "ios_saf", 
       "safari"
     ], 
     "indevelopment": [], 
@@ -874,11 +889,11 @@
   }, 
   "screencapture": {
     "chromeid": null, 
-    "consideration": [
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
       "edge"
     ], 
-    "experimental": [], 
-    "indevelopment": [], 
     "shipped": []
   }, 
   "screenlock": {
@@ -947,15 +962,15 @@
     "shipped": [
       "chrome", 
       "edge", 
-      "firefox"
+      "firefox", 
+      "safari"
     ]
   }, 
   "sri": {
     "chromeid": 6183089948590080, 
-    "consideration": [
-      "edge"
-    ], 
+    "consideration": [], 
     "experimental": [
+      "edge", 
       "safari"
     ], 
     "indevelopment": [], 
@@ -1041,6 +1056,7 @@
       "opera", 
       "edge", 
       "op_mob", 
+      "safari", 
       "and_chr", 
       "android", 
       "ie_mob"
@@ -1079,7 +1095,8 @@
     "indevelopment": [], 
     "shipped": [
       "chrome", 
-      "firefox"
+      "firefox", 
+      "safari"
     ]
   }, 
   "uisecurity": {
@@ -1156,7 +1173,9 @@
       "webkit"
     ], 
     "experimental": [], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "safari"
+    ], 
     "shipped": [
       "and_uc", 
       "baidu", 
@@ -1282,10 +1301,10 @@
   "webvr": {
     "chromeid": 4532810371039232, 
     "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [
+    "experimental": [
       "chrome"
     ], 
+    "indevelopment": [], 
     "shipped": [
       "edge", 
       "firefox"

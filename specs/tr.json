@@ -347,7 +347,7 @@
   }, 
   "imagecapture": {
     "maturity": "WD", 
-    "title": "MediaStream Image Capture", 
+    "title": "\"MediaStream Image Capture\"", 
     "wgs": [
       {
         "label": "Web Real-Time Communications Working Group", 
@@ -440,7 +440,7 @@
     ]
   }, 
   "mediakeys": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "UI Events KeyboardEvent key Values", 
     "wgs": [
       {
@@ -510,7 +510,7 @@
     ]
   }, 
   "picture": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -638,7 +638,7 @@
     ]
   }, 
   "srcset": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -749,7 +749,7 @@
   }, 
   "vehicle-info": {
     "maturity": "WD", 
-    "title": "Vehicle Information Access API", 
+    "title": "Vehicle Information API Specification", 
     "wgs": [
       {
         "label": "Automotive Working Group", 
@@ -803,7 +803,7 @@
   }, 
   "webauthn": {
     "maturity": "WD", 
-    "title": "Web Authentication: An API for accessing Public Key Credentials", 
+    "title": "Web Authentication: An API for accessing Public Key Credentials Level 1", 
     "wgs": [
       {
         "label": "Web Authentication Working Group", 
@@ -855,7 +855,7 @@
     "title": "WOFF File Format 1.0", 
     "wgs": [
       {
-        "label": "WebFonts Working Group", 
+        "label": "Web Fonts Working Group", 
         "url": "http://www.w3.org/Fonts/WG/"
       }
     ]
@@ -865,7 +865,7 @@
     "title": "WOFF File Format 2.0", 
     "wgs": [
       {
-        "label": "WebFonts Working Group", 
+        "label": "Web Fonts Working Group", 
         "url": "http://www.w3.org/Fonts/WG/"
       }
     ]
