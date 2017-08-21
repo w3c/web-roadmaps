@@ -11,34 +11,34 @@
       <section class="featureset well-deployed">
           <h2>Well-deployed technologies</h2>
       <p data-feature="Device information">The <a data-featureid="ddr">Device Description Repository API</a> is a unified server-side API that allows Web developers to retrieve data on the devices that are accessing their pages on a variety of device information database.</p>
-      <p data-feature="Media Capture Capabilities">The <a data-featureid="getusermedia-cap">Media Capture and Streams</a> API exposes some specific information on capabilities of camera and microphones to make it possible to take advantage of the large variety of media capturing devices provided on mobile phones.</p>
       <div data-feature="CSS-based adaptation">
-        <p><a data-featureid="mediaqueries">CSS Media Queries</a> offer a mechanism that allows adapting the layout and behavior of a Web page based on some of the characteristics of the device, including the screen resolution — to which <a  data-featureid="mediaqueries4">Media Queries Level 4</a> proposes to add the availability and type of a pointing device, the ability to hover over elements, and the ambient luminosity. It also lets developers the ability to define media queries that <a href="http://dev.w3.org/csswg/mediaqueries-4/#script-custom-mq">react to script-defined variables</a>, making it easier to integrate these adaptation rules in the overall logic of the app.</p>
-        <p><a data-featureid="css-device-adapt">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
-        <p><a data-featureid="viewport-units">The viewport-relative CSS units <code>vw</code> and <code>vh</code></a> let design layouts that adapt to the dimensions of the viewport.</p>
+        <p><a data-featureid="mediaqueries">CSS Media Queries</a> offer a mechanism that allows adapting the layout and behavior of a Web page based on some of the characteristics of the device, including the screen resolution — to which <a  data-featureid="mediaqueries4">Media Queries Level 4</a> proposes to add the availability and type of a pointing device, the ability to hover over elements, and the ambient luminosity. Moreover, <data-featureid="mediaqueries5">Media Queries Level 5</a> lets developers the ability to define media queries that <a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">react to script-defined variables</a>, making it easier to integrate these adaptation rules in the overall logic of the app.</p>
       </div>
       <div data-feature="Responsive images">
       <p>The <a href="https://www.w3.org/community/respimg/">Responsive Images Community Group (RICG)</a> developed an extension to HTML, known as the <a data-featureid="picture"><code>picture</code> element</a>, that allows authors define what image to load depending on device capabilities and/or other media features.</p>
-      <p>As a complementary approach, the <a data-featureid="srcset"><code>srcset</code> attribute</a>, specified by the <a href="https://www.w3.org/community/whatwg/">WHATWG</a> and also published as an extension to HTML, let Web developers define the various device pixel ratios of an image, letting the browser pick the best choice for the pixel density of the screen.
-      As of January 2014, there is general agreement amongst browser vendors to implement both <code>picture</code> and <code>srcset</code>.</p>
+      <p>As a complementary approach, the <a data-featureid="srcset"><code>srcset</code> attribute</a>, specified by the <a href="https://www.w3.org/community/whatwg/">WHATWG</a> and also published as an extension to HTML, let Web developers define the various device pixel ratios of an image, letting the browser pick the best choice for the pixel density of the screen.</p>
       <p><a data-featureid="svg12">SVG</a>, which lets define images that can be scaled up and down without any loss of quality, is another critical tool to the development of Web applications that adapt to the resolution of the underlying device.</p>
       </div>
         </section>
 
         <section class="featureset in-progress">
           <h2>Specifications in progress</h2>
+          <p data-feature="Media Capture Capabilities">The <a data-featureid="getusermedia-cap">Media Capture and Streams</a> API exposes some specific information on capabilities of camera and microphones to make it possible to take advantage of the large variety of media capturing devices provided on mobile phones.</p>
 
+          <div data-feature="CSS-based adaptation">
+          <p><a data-featureid="css-device-adapt">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
+          
+          <p><a data-featureid="viewport-units">The viewport-relative CSS units <code>vw</code> and <code>vh</code></a> let design layouts that adapt to the dimensions of the viewport.</p>
+          </div>
         </section>
 
 <section class="featureset exploratory-work">
   <h2>Exploratory work</h2>
+
   <div data-feature="CSS-based adaptation">
     <p><a data-featureid="css-size-adjust">CSS Mobile Text Size Adjustment</a> lets text adapt to zoomed parts of a page.</p>
   </div>
-</section>
 
-        <section>
-          <h2>Features not covered by ongoing work</h2>
 </section>
 
 </main>
