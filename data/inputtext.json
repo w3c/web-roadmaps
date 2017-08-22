@@ -1,4 +1,6 @@
 {
-  "impl": {},
-  "TR": "http://www.w3.org/TR/html5/forms.html#telephone-state-(type=tel)"
+  "impl": {
+    "caniuse": "input-email-tel-url"
+  },
+  "TR": "https://www.w3.org/TR/html/sec-forms.html#email-state-typeemail"
 }

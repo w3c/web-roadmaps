@@ -1,5 +1,5 @@
 {
   "impl": {},
-  "TR": "http://www.w3.org/TR/html51/semantics.html#autofilling-form-controls:-the-autocomplete-attribute",
+  "TR": "https://www.w3.org/TR/html/sec-forms.html#element-attrdef-autocompleteelements-autocomplete",
   "feature": "autocomplete attribute"
 }
