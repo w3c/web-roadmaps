@@ -4,6 +4,6 @@
     "chromestatus": 6090950820495360,
     "edgestatus": "<datalist> Element"
   },
-  "TR": "http://www.w3.org/TR/html5/forms.html#the-datalist-element",
+  "TR": "https://www.w3.org/TR/html/sec-forms.html#the-datalist-element",
   "feature": "Datalist element"
 }

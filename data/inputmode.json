@@ -1,4 +1,6 @@
 {
-  "impl": {},
-  "TR": "http://www.w3.org/TR/html51/semantics.html#input-modalities:-the-inputmode-attribute"
+  "impl": {
+    "caniuse": "input-inputmode"    
+  },
+  "TR": "https://www.w3.org/TR/html/sec-forms.html#input-modalities-the-inputmode-attribute"
 }
