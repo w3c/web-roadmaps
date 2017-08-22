@@ -5,8 +5,8 @@ This repository hosts a framework to present roadmaps of ongoing and future Web 
 It aims at simplifying the creation and maintenance of such roadmaps by collecting automatically information about standardization and implementation status of features described in W3C specifications and others.
 
 ## Existing roadmaps
-* [Roadmap of Media Technologies for the Web](https://w3c.github.io/media-web-roadmap/media/)
-* [Roadmap for Security technologies](https://w3c.github.io/media-web-roadmap/security/)
+* [Overview of Media Technologies for the Web](https://w3c.github.io/web-roadmaps/media/)
+* [Roadmap for Security technologies](https://w3c.github.io/web-roadmaps/security/)
 
 ## Overview of the framework
 
