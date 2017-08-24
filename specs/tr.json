@@ -23,6 +23,16 @@
       }
     ]
   }, 
+  "ambientlight": {
+    "maturity": "WD", 
+    "title": "Ambient Light Sensor", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "animation-frames": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -64,6 +74,16 @@
       {
         "label": "Web Platform Working Group", 
         "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "battery": {
+    "maturity": "CR", 
+    "title": "Battery Status API", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -645,6 +665,16 @@
       {
         "label": "Pointer Events Working Group", 
         "url": "http://www.w3.org/2012/pointerevents/"
+      }
+    ]
+  }, 
+  "proximity": {
+    "maturity": "WD", 
+    "title": "Proximity Sensor", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 

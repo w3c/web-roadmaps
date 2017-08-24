@@ -19,6 +19,19 @@
     ], 
     "shipped": []
   }, 
+  "ambientlight": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [
+      "chrome"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_ff", 
+      "edge", 
+      "firefox"
+    ]
+  }, 
   "animation-frames": {
     "consideration": [], 
     "experimental": [], 
@@ -77,6 +90,23 @@
     ], 
     "shipped": [
       "chrome"
+    ]
+  }, 
+  "battery": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "samsung", 
+      "opera", 
+      "and_ff", 
+      "chrome", 
+      "op_mob", 
+      "and_chr", 
+      "android"
     ]
   }, 
   "canvas": {
@@ -983,6 +1013,16 @@
       "android", 
       "ie", 
       "ie_mob"
+    ]
+  }, 
+  "proximity": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_ff", 
+      "firefox"
     ]
   }, 
   "push": {

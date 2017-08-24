@@ -1,0 +1,6 @@
+{
+  "TR": "https://www.w3.org/TR/ambient-light/",
+  "impl": {
+    "caniuse": "ambient-light"
+  }
+}
