@@ -1,0 +1,6 @@
+{
+  "TR": "https://www.w3.org/TR/battery-status",
+  "impl": {
+    "caniuse": "battery-status"
+  }
+}

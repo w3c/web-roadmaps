@@ -1,0 +1,10 @@
+{
+  "title": "Ambient Humidity Events",
+  "editors": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
+  "wgs": [
+    {
+      "label": "Device and Sensors Working Group",
+      "url": "http://www.w3.org/2009/dap/"
+    }
+  ]
+}
