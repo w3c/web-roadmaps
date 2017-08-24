@@ -2,5 +2,5 @@
   "impl": {
     "caniuse": "input-datetime"
   },
-  "TR": "https://www.w3.org/TR/html/sec-forms.html#date-state-typedate"
+  "TR": "https://www.w3.org/TR/html51/sec-forms.html#date-state-typedate"
 }

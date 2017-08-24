@@ -2,6 +2,6 @@
   "impl": {
     "caniuse": "video"
   },
-  "TR": "https://www.w3.org/TR/html5/embedded-content-0.html#the-video-element",
+  "TR": "https://www.w3.org/TR/html51/semantics-embedded-content.html#the-video-element",
   "feature": "video element"
 }
