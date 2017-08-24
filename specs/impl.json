@@ -117,6 +117,12 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "contacts-sys": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "credential-management": {
     "chromeid": 5026422640869376, 
     "consideration": [
@@ -152,6 +158,12 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "cryptokey": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "csp": {
     "chromeid": 4957003285790720, 
@@ -260,11 +272,48 @@
       "android"
     ]
   }, 
+  "css-scroll-snap": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "ios_saf", 
+      "and_ff", 
+      "edge", 
+      "safari", 
+      "ie"
+    ]
+  }, 
   "css-size-adjust": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "css-touch-action": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "css-transitions": {
     "chromeid": null, 
@@ -478,6 +527,28 @@
     ], 
     "shipped": []
   }, 
+  "html5-download": {
+    "chromeid": 6473924464345088, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "htmlmediaelement": {
     "chromeid": null, 
     "consideration": [], 
@@ -514,11 +585,47 @@
       "chrome"
     ]
   }, 
+  "ime-api": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "edge", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "inband": {
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "indexeddb": {
+    "chromeid": 6507459568992256, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "inputaccept": {
     "consideration": [], 
@@ -527,10 +634,27 @@
     "shipped": []
   }, 
   "inputdate": {
+    "chromeid": null, 
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "firefox"
+    ], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
   }, 
   "inputhint": {
     "chromeid": null, 
@@ -559,8 +683,12 @@
     ]
   }, 
   "inputmode": {
+    "chromeid": null, 
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "and_ff", 
+      "firefox"
+    ], 
     "indevelopment": [], 
     "shipped": []
   }, 
@@ -590,10 +718,29 @@
     ]
   }, 
   "inputtext": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "magnetometer": {
     "chromeid": 5698781827825664, 
@@ -726,6 +873,23 @@
       "android"
     ]
   }, 
+  "notifications": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "bb", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "android"
+    ]
+  }, 
   "orientation": {
     "chromeid": 5698781827825664, 
     "consideration": [], 
@@ -814,6 +978,12 @@
       "op_mob", 
       "and_chr"
     ]
+  }, 
+  "quota": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "recording": {
     "chromeid": 5929649028726784, 
@@ -953,6 +1123,22 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "speech-api": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [
+      "firefox"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "baidu", 
+      "samsung", 
+      "chrome", 
+      "and_qq", 
+      "opera", 
+      "and_chr"
+    ]
   }, 
   "srcset": {
     "chromeid": 4644337115725824, 
@@ -1111,6 +1297,26 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "vibration": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "video": {
     "chromeid": null, 
     "consideration": [], 
@@ -1154,6 +1360,30 @@
       "bb", 
       "samsung", 
       "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "wai-aria": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "op_mini", 
       "ios_saf", 
       "and_ff", 
       "and_qq", 
@@ -1288,6 +1518,32 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "websql": {
+    "chromeid": 6330987952734208, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_qq", 
+      "opera", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
+  "webstorage": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "webusb": {
     "chromeid": 5651917954875392, 

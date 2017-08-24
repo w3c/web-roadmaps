@@ -2,5 +2,5 @@
   "impl": {
     "caniuse": "input-inputmode"    
   },
-  "TR": "https://www.w3.org/TR/html/sec-forms.html#input-modalities-the-inputmode-attribute"
+  "TR": "https://www.w3.org/TR/html51/sec-forms.html#input-modalities-the-inputmode-attribute"
 }

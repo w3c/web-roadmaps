@@ -35,11 +35,11 @@
   }, 
   "audio": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -87,6 +87,15 @@
       }
     ]
   }, 
+  "contacts-sys": {
+    "maturity": "Retired", 
+    "title": "Contacts Manager API", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2012/sysapps/"
+      }
+    ]
+  }, 
   "credential-management": {
     "maturity": "WD", 
     "title": "Credential Management Level 1", 
@@ -100,6 +109,16 @@
   "crypto": {
     "maturity": "REC", 
     "title": "Web Cryptography API", 
+    "wgs": [
+      {
+        "label": "Web Cryptography Working Group", 
+        "url": "http://www.w3.org/2012/webcrypto/"
+      }
+    ]
+  }, 
+  "cryptokey": {
+    "maturity": "NOTE", 
+    "title": "WebCrypto Key Discovery", 
     "wgs": [
       {
         "label": "Web Cryptography Working Group", 
@@ -185,6 +204,26 @@
       }
     ]
   }, 
+  "css-scroll-snap": {
+    "maturity": "CR", 
+    "title": "CSS Scroll Snap Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-touch-action": {
+    "maturity": "WD", 
+    "title": "Pointer Events - Level 2", 
+    "wgs": [
+      {
+        "label": "Pointer Events Working Group", 
+        "url": "http://www.w3.org/2012/pointerevents/"
+      }
+    ]
+  }, 
   "css-transitions": {
     "maturity": "WD", 
     "title": "CSS Transitions", 
@@ -205,13 +244,23 @@
       }
     ]
   }, 
-  "datalist": {
-    "maturity": "REC", 
-    "title": "HTML5", 
+  "cssom-view": {
+    "maturity": "WD", 
+    "title": "CSSOM View Module", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "datalist": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -335,13 +384,23 @@
       }
     ]
   }, 
-  "htmlmediaelement": {
+  "html5-download": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "htmlmediaelement": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -359,6 +418,34 @@
       }
     ]
   }, 
+  "ime-api": {
+    "maturity": "Retired", 
+    "title": "Input Method Editor API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "indexeddb": {
+    "maturity": "REC", 
+    "title": "Indexed Database API", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "indie-ui-events": {
+    "maturity": "WD", 
+    "title": "IndieUI: Events 1.0", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/WAI/IndieUI/"
+      }
+    ]
+  }, 
   "inputaccept": {
     "maturity": "CR", 
     "title": "HTML Media Capture", 
@@ -371,21 +458,21 @@
   }, 
   "inputdate": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
   "inputhint": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -401,21 +488,21 @@
   }, 
   "inputpattern": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
   "inputtext": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -489,6 +576,29 @@
       }
     ]
   }, 
+  "mwbp-wcag": {
+    "maturity": "NOTE", 
+    "title": "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)", 
+    "wgs": [
+      {
+        "label": "Mobile Web Best Practices Working Group", 
+        "url": "http://www.w3.org/2005/MWI/BPWG/"
+      }, 
+      {
+        "label": "Education and Outreach Working Group", 
+        "url": "http://www.w3.org/WAI/EO/"
+      }
+    ]
+  }, 
+  "notifications": {
+    "maturity": "REC", 
+    "title": "Web Notifications", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2010/web-notifications/"
+      }
+    ]
+  }, 
   "orientation": {
     "maturity": "WD", 
     "title": "Orientation Sensor", 
@@ -510,8 +620,8 @@
     ]
   }, 
   "picture": {
-    "maturity": "CR", 
-    "title": "HTML 5.2", 
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -532,6 +642,16 @@
   "push": {
     "maturity": "WD", 
     "title": "Push API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "quota": {
+    "maturity": "Retired", 
+    "title": "Quota Management API", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -638,8 +758,8 @@
     ]
   }, 
   "srcset": {
-    "maturity": "CR", 
-    "title": "HTML 5.2", 
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -679,11 +799,11 @@
   }, 
   "timeupdate": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "HTML 5.1", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -757,13 +877,23 @@
       }
     ]
   }, 
-  "video": {
+  "vibration": {
     "maturity": "REC", 
-    "title": "HTML5", 
+    "title": "Vibration API", 
     "wgs": [
       {
-        "label": "HTML Media Extensions Working Group", 
-        "url": "http://www.w3.org/html/wg/"
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "video": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -774,6 +904,25 @@
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "wai-aria": {
+    "maturity": "REC", 
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.0", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/WAI/PF/"
+      }
+    ]
+  }, 
+  "wake-lock": {
+    "maturity": "WD", 
+    "title": "Wake Lock API", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -834,6 +983,24 @@
   "websockets": {
     "maturity": "CR", 
     "title": "The WebSocket API", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "websql": {
+    "maturity": "Retired", 
+    "title": "Web SQL Database", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "webstorage": {
+    "maturity": "REC", 
+    "title": "Web Storage", 
     "wgs": [
       {
         "url": "http://www.w3.org/2008/webapps/"
