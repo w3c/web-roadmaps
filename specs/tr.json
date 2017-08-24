@@ -317,6 +317,15 @@
       }
     ]
   }, 
+  "fileapi": {
+    "maturity": "WD", 
+    "title": "File API", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
   "flexbox": {
     "maturity": "CR", 
     "title": "CSS Flexible Box Layout Module Level 1", 

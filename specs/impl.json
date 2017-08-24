@@ -437,6 +437,31 @@
       "safari"
     ]
   }, 
+  "fileapi": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "flexbox": {
     "chromeid": 4837301406400512, 
     "consideration": [], 
@@ -1540,10 +1565,29 @@
     ]
   }, 
   "webstorage": {
+    "chromeid": 5345825534246912, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "webusb": {
     "chromeid": 5651917954875392, 
