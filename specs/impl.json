@@ -109,6 +109,30 @@
       "android"
     ]
   }, 
+  "beacon": {
+    "chromeid": 5517433905348608, 
+    "consideration": [], 
+    "experimental": [
+      "safari"
+    ], 
+    "indevelopment": [
+      "webkit"
+    ], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "canvas": {
     "chromeid": null, 
     "consideration": [], 
@@ -152,6 +176,31 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "cors": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "credential-management": {
     "chromeid": 5026422640869376, 
@@ -465,6 +514,49 @@
       "edge", 
       "firefox", 
       "safari"
+    ]
+  }, 
+  "eventsource": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
+  "fetch": {
+    "chromeid": 6730533392351232, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android"
     ]
   }, 
   "fileapi": {
@@ -943,6 +1035,31 @@
       "op_mob", 
       "safari", 
       "android"
+    ]
+  }, 
+  "online": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
     ]
   }, 
   "orientation": {
@@ -1560,7 +1677,7 @@
     "shipped": []
   }, 
   "websockets": {
-    "chromeid": null, 
+    "chromeid": 6555138000945152, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
@@ -1718,6 +1835,31 @@
       "safari", 
       "and_chr", 
       "android"
+    ]
+  }, 
+  "xhr": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
     ]
   }
 }
