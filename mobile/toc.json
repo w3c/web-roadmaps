@@ -20,8 +20,8 @@
         "description": ""
     },
     {
-        "url":"mediartc.html",
-        "title":"Media and Real-Time communications",
+        "url":"media.html",
+        "title":"Media",
         "description":""
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "url":"network.html",
-        "title":"Network Integration",
+        "title":"Network and Communications",
         "description":""
     },
     {

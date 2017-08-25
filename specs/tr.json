@@ -87,6 +87,16 @@
       }
     ]
   }, 
+  "beacon": {
+    "maturity": "CR", 
+    "title": "Beacon", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "canvas": {
     "maturity": "REC", 
     "title": "HTML Canvas 2D Context", 
@@ -113,6 +123,19 @@
     "wgs": [
       {
         "url": "http://www.w3.org/2012/sysapps/"
+      }
+    ]
+  }, 
+  "cors": {
+    "maturity": "REC", 
+    "title": "Cross-Origin Resource Sharing", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }, 
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
       }
     ]
   }, 
@@ -334,6 +357,15 @@
       {
         "label": "HTML Media Extensions Working Group", 
         "url": "http://www.w3.org/html/wg/"
+      }
+    ]
+  }, 
+  "eventsource": {
+    "maturity": "REC", 
+    "title": "Server-Sent Events", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/webapps/"
       }
     ]
   }, 
@@ -625,6 +657,16 @@
     "wgs": [
       {
         "url": "http://www.w3.org/2010/web-notifications/"
+      }
+    ]
+  }, 
+  "online": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 

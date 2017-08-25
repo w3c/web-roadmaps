@@ -13,13 +13,14 @@ const templates = {
 const templateTocItem = '<a href=""><div class="description"></div></a>';
 
 const maturityLevels = {
-  'ed': 'low',
+  'ED': 'low',
   'LastCall': 'medium',
   'WD': 'low',
   'CR': 'high',
   'PR': 'high',
   'REC': 'high',
-  'NOTE': 'high'
+  'NOTE': 'high',
+  'LS': 'high'
 };
 
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
@@ -202,7 +203,7 @@ function fillTables() {
               console.error('Failed to parse ' + spec + '.json: ' + x.responseText + '(' + e + ')');
             }
             $(document, 'a[data-featureid="' + s + '"]').forEach(link =>
-              link.setAttribute('href', data.editors || data.TR)
+              link.setAttribute('href', data.editors || data.ls || data.TR)
             );
             if (data.TR) {
               if (!specData[s]) {
@@ -216,10 +217,11 @@ function fillTables() {
             else {
               fillCell(el1, {
                 label: (data.feature ? data.feature + ' in ' : '') + data.title,
-                url: (x.dataType === 'deployed') ? undefined : data.editors
+                url: (x.dataType === 'deployed') ? undefined : (data.editors || data.ls)
               });
               specData[s] = {
-                wgs: data.wgs
+                wgs: data.wgs,
+                maturity: (data.editors ? "ED" : (data.ls ? "LS" : "Unknown"))
               };
             }
             specData[s].wgs = specData[s].wgs || [];
