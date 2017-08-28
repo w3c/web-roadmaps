@@ -1,0 +1,8 @@
+{
+  "TR": "https://www.w3.org/TR/html51/obsolete.html#application-caches",
+  "feature": "ApplicationCache",
+  "impl": {
+    "caniuse": "offline-apps",
+    "chromestatus": 6192449487634432
+  }
+}
