@@ -38,6 +38,51 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "appcache": {
+    "chromeid": 6192449487634432, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "appmanifest": {
+    "chromeid": 6488656873259008, 
+    "consideration": [
+      "webkit"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "edge"
+    ], 
+    "shipped": [
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_qq", 
+      "opera", 
+      "op_mob", 
+      "and_chr"
+    ]
+  }, 
   "audio": {
     "chromeid": null, 
     "consideration": [], 
@@ -1093,6 +1138,31 @@
       "android"
     ]
   }, 
+  "page-visibility": {
+    "chromeid": 5689697795833856, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "picture": {
     "chromeid": 5910974510923776, 
     "consideration": [], 
@@ -1285,7 +1355,9 @@
     "experimental": [
       "edge"
     ], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "webkit"
+    ], 
     "shipped": [
       "and_uc", 
       "baidu", 

@@ -43,6 +43,26 @@
       }
     ]
   }, 
+  "appcache": {
+    "maturity": "REC", 
+    "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "appmanifest": {
+    "maturity": "WD", 
+    "title": "Web App Manifest", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "audio": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -687,6 +707,29 @@
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  }, 
+  "packaging": {
+    "maturity": "WD", 
+    "title": "Packaging on the Web", 
+    "wgs": [
+      {
+        "label": "Technical Architecture Group", 
+        "url": "http://www.w3.org/2001/tag/"
+      }, 
+      {
+        "url": "http://www.w3.org/2008/webapps/"
+      }
+    ]
+  }, 
+  "page-visibility": {
+    "maturity": "REC", 
+    "title": "Page Visibility", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
