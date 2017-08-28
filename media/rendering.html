@@ -12,17 +12,17 @@
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
-        <p>Few media-based services can usefully function without rendering audio or video content; the HTML5 specification provides widely deployed support for this essential feature:</p>
-        <ul>
-          <li data-feature="Video rendering">video content can be rendered in any Web page via the <a data-featureid="video"><code>&lt;video&gt;</code> element</a></li>
-          <li data-feature="Audio rendering">likewise, audio content can be rendered in any Web page via the <a data-featureid="audio"><code>&lt;audio&gt;</code> element</a></li>
-        </ul>
+        <p>Few media-based services can usefully function without rendering audio or video content; the HTML5 specification provides widely deployed support for this essential feature. Video content can be rendered in any Web page via the <a data-feature="Video rendering" data-featureid="video"><code>&lt;video&gt;</code> element</a>.</p>
+        <div data-feature="Audio rendering">
+          <p>Likewise, audio content can be rendered in any Web page via the <a data-featureid="audio"><code>&lt;audio&gt;</code> element</a>.</p>
+          <p>Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing API, which includes support for low-latency playback of audio content.</p>
+        </div>
+
         <p data-feature="Rendering of captions"><a data-featureid="webvtt">WebVTT</a> is a file format for captions and subtitles. The specification is still a Working Draft, but the format is already widely supported among browsers, allowing to render text tracks through a <code>&lt;video&gt;</code> element. The <a data-featureid="ttml1">Timed Text Markup Language</a> (TTML) specification provides a richer language for describing timed text. It is used as an interchange format among authoring systems, in particular through profiles such as the <a data-featureid="ttml-imsc1">IMSC1 profile</a>.</p>
         <p data-feature="Rendering of protected media">For the distribution of media whose content needs specific protection from copy, <a data-featureid="eme">Encrypted Media Extensions</a> (EME) enables Web applications to render encrypted media streams based on Content Decryption Modules (CDM).</p>
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
-        <p data-feature="Audio rendering">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing API, which includes support for low-latency playback of audio content.</p>
         <div data-feature="Distributed rendering">
           <p>As users increasingly own more and more connected devices, the need to get these devices to work together increases as well:</p>
           <ul>
