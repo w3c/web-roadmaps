@@ -1,0 +1,7 @@
+{
+  "TR": "https://www.w3.org/TR/HTML51/semantics-embedded-content.html#element-attrdef-iframe-sandbox",
+  "feature": "sandbox iframe attribute",
+  "impl": {
+    "caniuse": "iframe-sandbox"
+  }
+}
