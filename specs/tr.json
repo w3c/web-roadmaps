@@ -408,6 +408,16 @@
       }
     ]
   }, 
+  "frame-timing": {
+    "maturity": "NOTE", 
+    "title": "Frame Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "generic-sensor": {
     "maturity": "WD", 
     "title": "Generic Sensor API", 
@@ -462,6 +472,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "hr-time": {
+    "maturity": "REC", 
+    "title": "High Resolution Time", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -657,6 +677,16 @@
       }
     ]
   }, 
+  "mwabp": {
+    "maturity": "REC", 
+    "title": "Mobile Web Application Best Practices", 
+    "wgs": [
+      {
+        "label": "Mobile Web Best Practices Working Group", 
+        "url": "http://www.w3.org/2005/MWI/BPWG/"
+      }
+    ]
+  }, 
   "mwbp-wcag": {
     "maturity": "NOTE", 
     "title": "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)", 
@@ -668,6 +698,16 @@
       {
         "label": "Education and Outreach Working Group", 
         "url": "http://www.w3.org/WAI/EO/"
+      }
+    ]
+  }, 
+  "navigation-timing": {
+    "maturity": "REC", 
+    "title": "Navigation Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -733,6 +773,16 @@
       }
     ]
   }, 
+  "performance-timeline": {
+    "maturity": "REC", 
+    "title": "Performance Timeline", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "picture": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -750,6 +800,16 @@
       {
         "label": "Pointer Events Working Group", 
         "url": "http://www.w3.org/2012/pointerevents/"
+      }
+    ]
+  }, 
+  "preload": {
+    "maturity": "WD", 
+    "title": "Preload", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -804,6 +864,16 @@
       {
         "label": "Second Screen Working Group", 
         "url": "http://www.w3.org/2014/secondscreen/"
+      }
+    ]
+  }, 
+  "requestidlecallback": {
+    "maturity": "CR", 
+    "title": "Cooperative Scheduling of Background Tasks", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -868,6 +938,16 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "server-timing": {
+    "maturity": "WD", 
+    "title": "Server Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
@@ -988,6 +1068,16 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "user-timing": {
+    "maturity": "REC", 
+    "title": "User Timing", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
       }
     ]
   }, 
