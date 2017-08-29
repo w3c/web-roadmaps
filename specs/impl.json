@@ -33,10 +33,29 @@
     ]
   }, 
   "animation-frames": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "appcache": {
     "chromeid": 6192449487634432, 
@@ -719,6 +738,31 @@
     ], 
     "shipped": []
   }, 
+  "hr-time": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "html5-download": {
     "chromeid": 6473924464345088, 
     "consideration": [], 
@@ -1049,6 +1093,31 @@
       "ie_mob"
     ]
   }, 
+  "navigation-timing": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "netinfo": {
     "chromeid": 6338383617982464, 
     "consideration": [], 
@@ -1202,6 +1271,22 @@
       "ie_mob"
     ]
   }, 
+  "preload": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [
+      "safari"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "samsung", 
+      "chrome", 
+      "opera", 
+      "and_chr", 
+      "op_mob", 
+      "android"
+    ]
+  }, 
   "proximity": {
     "chromeid": null, 
     "consideration": [], 
@@ -1263,6 +1348,25 @@
     ], 
     "shipped": [
       "chrome"
+    ]
+  }, 
+  "requestidlecallback": {
+    "chromeid": 5572795866021888, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "op_mob", 
+      "and_chr", 
+      "android"
     ]
   }, 
   "resource-hints": {
@@ -1544,6 +1648,30 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": []
+  }, 
+  "user-timing": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [
+      "safari"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "vehicle-info": {
     "consideration": [], 
@@ -1845,6 +1973,31 @@
     "experimental": [], 
     "indevelopment": [], 
     "shipped": [
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
+  "webworkers": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
       "baidu", 
       "firefox", 
       "bb", 
