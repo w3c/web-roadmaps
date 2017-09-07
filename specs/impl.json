@@ -179,9 +179,7 @@
     "experimental": [
       "safari"
     ], 
-    "indevelopment": [
-      "webkit"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "and_uc", 
       "baidu", 
@@ -276,7 +274,11 @@
       "safari"
     ], 
     "shipped": [
-      "chrome"
+      "chrome", 
+      "opera", 
+      "android", 
+      "and_chr", 
+      "samsung"
     ]
   }, 
   "crypto": {
@@ -785,6 +787,31 @@
       "android"
     ]
   }, 
+  "html5-sandbox": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "htmlmediaelement": {
     "chromeid": null, 
     "consideration": [], 
@@ -1230,6 +1257,60 @@
       "android", 
       "ie", 
       "ie_mob"
+    ]
+  }, 
+  "payment-handler": {
+    "chromeid": 5160285237149696, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
+  "payment-method-basic-card": {
+    "chromeid": 5408502604365824, 
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "indevelopment": [
+      "edge"
+    ], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
+  "payment-request": {
+    "chromeid": 5639348045217792, 
+    "consideration": [
+      "safari"
+    ], 
+    "experimental": [
+      "opera", 
+      "firefox", 
+      "and_qq"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "edge", 
+      "and_chr", 
+      "samsung"
+    ]
+  }, 
+  "permissions": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "and_chr"
     ]
   }, 
   "picture": {

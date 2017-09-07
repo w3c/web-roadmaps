@@ -128,7 +128,7 @@
     ]
   }, 
   "color-gamut": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Media Queries Level 4", 
     "wgs": [
       {
@@ -353,6 +353,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "dnt": {
+    "maturity": "CR", 
+    "title": "Tracking Preference Expression (DNT)", 
+    "wgs": [
+      {
+        "label": "Tracking Protection Working Group", 
+        "url": "http://www.w3.org/2011/tracking-protection/"
       }
     ]
   }, 
@@ -648,7 +658,7 @@
     ]
   }, 
   "mediaqueries4": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Media Queries Level 4", 
     "wgs": [
       {
@@ -773,6 +783,36 @@
       }
     ]
   }, 
+  "payment-handler": {
+    "maturity": "WD", 
+    "title": "Payment Handler API", 
+    "wgs": [
+      {
+        "label": "Web Payments Working Group", 
+        "url": "https://www.w3.org/Payments/WG/"
+      }
+    ]
+  }, 
+  "payment-method-basic-card": {
+    "maturity": "WD", 
+    "title": "Basic Card Payment", 
+    "wgs": [
+      {
+        "label": "Web Payments Working Group", 
+        "url": "https://www.w3.org/Payments/WG/"
+      }
+    ]
+  }, 
+  "payment-request": {
+    "maturity": "WD", 
+    "title": "Payment Request API", 
+    "wgs": [
+      {
+        "label": "Web Payments Working Group", 
+        "url": "https://www.w3.org/Payments/WG/"
+      }
+    ]
+  }, 
   "performance-timeline": {
     "maturity": "REC", 
     "title": "Performance Timeline", 
@@ -780,6 +820,16 @@
       {
         "label": "Web Performance Working Group", 
         "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
+  "permissions": {
+    "maturity": "WD", 
+    "title": "The Permissions API", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
       }
     ]
   }, 
