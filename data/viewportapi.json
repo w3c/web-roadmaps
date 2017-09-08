@@ -1,0 +1,11 @@
+{
+  "editors": "https://wicg.github.io/ViewportAPI/spec.html",
+  "wgs": [{
+    "url": "https://www.w3.org/community/wicg/",
+    "label": "Web Platform Incubator Community Group"
+  }],
+  "impl": {
+    "chromestatus": 5737866978131968
+  },
+  "title": "Visual Viewport API"
+}
