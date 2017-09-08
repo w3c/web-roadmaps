@@ -6,5 +6,10 @@
       "label": "WebAssembly Working Group",
       "url": "http://webassembly.org/"
     }
-  ]
+  ],
+  "impl": {
+    "caniuse": "wasm",
+    "chromestatus": 5453022515691520,
+    "webkitstatus": "specification-webassembly"
+  }
 }
