@@ -43,7 +43,7 @@
     },
     {
       "url": "sensors.html",
-      "title": "Sensors and local interactions",
+      "title": "Sensors and Local Interactions",
       "icon": "../assets/img/mobile-sensors.svg",
       "description": "Hooks to interact with sensors that compose mobile devices, from accelerometers and geolocation sensors to proximity-based communication mechanisms."
     },
