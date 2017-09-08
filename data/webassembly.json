@@ -4,7 +4,7 @@
   "wgs": [
     {
       "label": "WebAssembly Working Group",
-      "url": "http://webassembly.org/"
+      "url": "https://www.w3.org/wasm/"
     }
   ],
   "impl": {
