@@ -7,6 +7,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 ## Existing roadmaps
 * [Overview of Media Technologies for the Web](https://w3c.github.io/web-roadmaps/media/)
 * [Roadmap for Security technologies](https://w3c.github.io/web-roadmaps/security/)
+* [Roadmap of Web Applications on Mobile](https://w3c.github.io/web-roadmaps/mobile/)
 
 ## Overview of the framework
 
