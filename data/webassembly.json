@@ -9,7 +9,6 @@
   ],
   "impl": {
     "caniuse": "wasm",
-    "chromestatus": 5453022515691520,
-    "webkitstatus": "specification-webassembly"
+    "chromestatus": 5453022515691520
   }
 }

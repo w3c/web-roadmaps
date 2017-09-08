@@ -760,19 +760,6 @@
       }
     ]
   }, 
-  "packaging": {
-    "maturity": "WD", 
-    "title": "Packaging on the Web", 
-    "wgs": [
-      {
-        "label": "Technical Architecture Group", 
-        "url": "http://www.w3.org/2001/tag/"
-      }, 
-      {
-        "url": "http://www.w3.org/2008/webapps/"
-      }
-    ]
-  }, 
   "page-visibility": {
     "maturity": "REC", 
     "title": "Page Visibility", 

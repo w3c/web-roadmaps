@@ -1283,15 +1283,15 @@
   }, 
   "payment-request": {
     "chromeid": 5639348045217792, 
-    "consideration": [
-      "safari"
-    ], 
+    "consideration": [], 
     "experimental": [
       "opera", 
       "firefox", 
       "and_qq"
     ], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "safari"
+    ], 
     "shipped": [
       "chrome", 
       "edge", 
@@ -1612,6 +1612,17 @@
       "android"
     ]
   }, 
+  "storage": {
+    "chromeid": 5630353511284736, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "firefox"
+    ], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "svg12": {
     "chromeid": null, 
     "consideration": [], 
@@ -1836,6 +1847,19 @@
       "ie_mob"
     ]
   }, 
+  "viewportapi": {
+    "chromeid": 5737866978131968, 
+    "consideration": [
+      "edge", 
+      "firefox", 
+      "safari"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "wai-aria": {
     "chromeid": null, 
     "consideration": [], 
@@ -1879,6 +1903,25 @@
       "and_qq", 
       "opera", 
       "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
+  "webassembly": {
+    "chromeid": 5453022515691520, 
+    "consideration": [], 
+    "experimental": [
+      "ios_saf", 
+      "edge", 
+      "safari", 
+      "and_qq"
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
       "and_chr", 
       "android"
     ]
