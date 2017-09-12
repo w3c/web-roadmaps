@@ -1563,13 +1563,15 @@
     "indevelopment": [], 
     "shipped": []
   }, 
-  "speech-api": {
-    "chromeid": null, 
+  "speech-api-recognition": {
+    "chromeid": 5908775487668224, 
     "consideration": [], 
     "experimental": [
       "firefox"
     ], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "edge"
+    ], 
     "shipped": [
       "baidu", 
       "samsung", 
@@ -1577,6 +1579,23 @@
       "and_qq", 
       "opera", 
       "and_chr"
+    ]
+  }, 
+  "speech-api-synthesis": {
+    "chromeid": 4782875580825600, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "and_chr", 
+      "safari"
     ]
   }, 
   "srcset": {
