@@ -1005,6 +1005,26 @@
       "ie_mob"
     ]
   }, 
+  "intersectionobserver": {
+    "chromeid": 5695342691483648, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "webkit", 
+      "safari"
+    ], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "magnetometer": {
     "chromeid": 5698781827825664, 
     "consideration": [], 
