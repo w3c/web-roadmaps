@@ -237,7 +237,27 @@
       }
     ]
   }, 
-  "css-border": {
+  "css-border-background": {
+    "maturity": "CR", 
+    "title": "CSS Backgrounds and Borders Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-border-radius": {
+    "maturity": "CR", 
+    "title": "CSS Backgrounds and Borders Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-border-shadow": {
     "maturity": "CR", 
     "title": "CSS Backgrounds and Borders Module Level 3", 
     "wgs": [
