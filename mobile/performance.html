@@ -69,6 +69,10 @@
         <div data-feature="Low-level Bytecode Format">
             <p><a data-featureid="webassembly">WebAssembly</a> is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages. It also defines an execution environment that attempts to maximize performance and interoperate gracefully with JavaScript and the Web, while ensuring security and consistent behavior across a variety of implementations.</p>
         </div>
+
+        <div data-feature="Infinite scrolling">
+          <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersectionobserver">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
