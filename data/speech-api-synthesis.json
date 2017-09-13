@@ -1,5 +1,6 @@
 {
   "title": "Web Speech API",
+  "feature": "Speech synthesis",
   "editors": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
   "wgs": [
     {
@@ -8,6 +9,8 @@
     }
   ],
   "impl": {
-    "caniuse": "speech-recognition"
+    "caniuse": "speech-synthesis",
+    "chromestatus": 4782875580825600,
+    "edgestatus": "Web Speech API (synthesis)"
   }
 }
