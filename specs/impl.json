@@ -1005,6 +1005,26 @@
       "ie_mob"
     ]
   }, 
+  "intersectionobserver": {
+    "chromeid": 5695342691483648, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [
+      "webkit", 
+      "safari"
+    ], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "magnetometer": {
     "chromeid": 5698781827825664, 
     "consideration": [], 
@@ -1563,13 +1583,15 @@
     "indevelopment": [], 
     "shipped": []
   }, 
-  "speech-api": {
-    "chromeid": null, 
+  "speech-api-recognition": {
+    "chromeid": 5908775487668224, 
     "consideration": [], 
     "experimental": [
       "firefox"
     ], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "edge"
+    ], 
     "shipped": [
       "baidu", 
       "samsung", 
@@ -1577,6 +1599,23 @@
       "and_qq", 
       "opera", 
       "and_chr"
+    ]
+  }, 
+  "speech-api-synthesis": {
+    "chromeid": 4782875580825600, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "samsung", 
+      "chrome", 
+      "ios_saf", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "and_chr", 
+      "safari"
     ]
   }, 
   "srcset": {
