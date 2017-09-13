@@ -21,7 +21,14 @@
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
         <p data-feature="Customized text entries"><a data-featureid="inputdate">Date and time entries</a> can take advantage of a number of dedicated form controls (e.g. <code>&lt;input type="date"&gt;</code>) to trigger the use of a native calendar control, avoiding the need to create custom JS-based controls that cannot be easily tailored to cope for the variety of mobile devices available on the market.</p>
-        <p data-feature="Input modality">the <code><a data-featureid="inputmode">inputmode</a></code> attribute defines the type of textual input expected in a text entry. Mobile browsers may use that hint to render the right type of on-screen keyboard, for instance a keypad when the user is expected to enter a number. This attribute may be removed from future versions of HTML due to lack of implementations though.</p>
+      </section>
+
+      <section>
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt>Input modality</dt>
+          <dd>The <code><a data-featureid="inputmode">inputmode</a></code> attribute defined the type of textual input expected in a text entry. Mobile browsers could use that hint to render the right type of on-screen keyboard, for instance to display a keypad when the user was expected to enter a credit card number. This attribute is no longer supported in recent browsers and has been removed from HTML. Developers are encouraged to use more specific input types (such as <code>tel</code>, <code>email</code> and <code>url</code>).</dd>
+        </dl>
       </section>
     </main>
     <script src="../js/generate.js"></script>
