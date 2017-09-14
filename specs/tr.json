@@ -790,6 +790,16 @@
       }
     ]
   }, 
+  "paint-timing": {
+    "maturity": "WD", 
+    "title": "Paint Timing 1", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "payment-handler": {
     "maturity": "WD", 
     "title": "Payment Handler API", 

@@ -1,10 +1,6 @@
 {
-  "editors": "https://w3c.github.io/paint-timing/",
-  "title": "Paint Timing",
-  "wgs": [
-    {
-      "label": "Web Platform Incubator Community Group",
-      "url": "https://www.w3.org/community/wicg/"
-    }
-  ]
+  "TR": "https://www.w3.org/TR/paint-timing/",
+  "impl": {
+    "chromestatus": 5688621814251520
+  }
 }
