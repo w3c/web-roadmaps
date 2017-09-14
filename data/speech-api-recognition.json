@@ -11,6 +11,6 @@
   "impl": {
     "caniuse": "speech-recognition",
     "chromestatus": 5908775487668224,
-    "edgestatus": "Web Speech API (synthesis)"
+    "edgestatus": "Web Speech API (input)"
   }
 }
