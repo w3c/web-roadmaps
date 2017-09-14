@@ -637,6 +637,16 @@
       }
     ]
   }, 
+  "longtasks": {
+    "maturity": "WD", 
+    "title": "Long Tasks API 1", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "magnetometer": {
     "maturity": "WD", 
     "title": "Magnetometer", 
