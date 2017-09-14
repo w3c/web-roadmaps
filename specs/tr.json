@@ -637,6 +637,16 @@
       }
     ]
   }, 
+  "intersectionobserver": {
+    "maturity": "WD", 
+    "title": "Intersection Observer", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "longtasks": {
     "maturity": "WD", 
     "title": "Long Tasks API 1", 
