@@ -637,6 +637,26 @@
       }
     ]
   }, 
+  "intersectionobserver": {
+    "maturity": "WD", 
+    "title": "Intersection Observer", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "longtasks": {
+    "maturity": "WD", 
+    "title": "Long Tasks API 1", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
   "magnetometer": {
     "maturity": "WD", 
     "title": "Magnetometer", 
@@ -783,6 +803,16 @@
   "page-visibility": {
     "maturity": "REC", 
     "title": "Page Visibility", 
+    "wgs": [
+      {
+        "label": "Web Performance Working Group", 
+        "url": "https://www.w3.org/webperf/"
+      }
+    ]
+  }, 
+  "paint-timing": {
+    "maturity": "WD", 
+    "title": "Paint Timing 1", 
     "wgs": [
       {
         "label": "Web Performance Working Group", 

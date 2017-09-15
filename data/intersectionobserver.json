@@ -1,12 +1,5 @@
 {
-  "title": "Intersection Observer",
-  "editors": "https://w3c.github.io/IntersectionObserver/",
-  "wgs": [
-    {
-      "label": "Web Platform Working Group",
-      "url": "http://www.w3.org/WebPlatform/WG/"
-    }
-  ],
+  "TR": "https://www.w3.org/TR/intersection-observer/",
   "impl": {
     "caniuse": "intersectionobserver",
     "chromestatus": 5695342691483648,

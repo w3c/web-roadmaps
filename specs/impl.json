@@ -1397,6 +1397,18 @@
       "ie_mob"
     ]
   }, 
+  "paint-timing": {
+    "chromeid": 5688621814251520, 
+    "consideration": [
+      "edge", 
+      "safari"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "payment-handler": {
     "chromeid": 5160285237149696, 
     "consideration": [], 
