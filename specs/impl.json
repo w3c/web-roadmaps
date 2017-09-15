@@ -641,6 +641,17 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "device-memory": {
+    "chromeid": 5119701235531776, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "deviceorientation": {
     "chromeid": null, 
     "consideration": [], 
