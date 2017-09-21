@@ -43,6 +43,15 @@
       }
     ]
   }, 
+  "annotation-model": {
+    "maturity": "REC", 
+    "title": "Web Annotation Data Model", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/annotation/"
+      }
+    ]
+  }, 
   "appcache": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -267,6 +276,26 @@
       }
     ]
   }, 
+  "css-break-3": {
+    "maturity": "CR", 
+    "title": "CSS Fragmentation Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-content-3": {
+    "maturity": "WD", 
+    "title": "CSS Generated Content Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-device-adapt": {
     "maturity": "WD", 
     "title": "CSS Device Adaptation Module Level 1", 
@@ -280,6 +309,36 @@
   "css-font-loading": {
     "maturity": "LastCall", 
     "title": "CSS Font Loading Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-gcpm-3": {
+    "maturity": "WD", 
+    "title": "CSS Generated Content for Paged Media Module", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-grid-1": {
+    "maturity": "CR", 
+    "title": "CSS Grid Layout Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-page-floats-3": {
+    "maturity": "WD", 
+    "title": "CSS Page Floats", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -320,6 +379,26 @@
   "css-will-change": {
     "maturity": "CR", 
     "title": "CSS Will Change Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css2": {
+    "maturity": "REC", 
+    "title": "Cascading Style Sheets, level 2 (CSS2) Specification", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css3-page": {
+    "maturity": "WD", 
+    "title": "CSS Paged Media Module Level 3", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -401,7 +480,7 @@
     ]
   }, 
   "eme": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Encrypted Media Extensions", 
     "wgs": [
       {
@@ -841,7 +920,7 @@
     ]
   }, 
   "payment-request": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Payment Request API", 
     "wgs": [
       {
@@ -907,6 +986,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "publishing-linking": {
+    "maturity": "NOTE", 
+    "title": "Publishing and Linking on the Web", 
+    "wgs": [
+      {
+        "label": "Technical Architecture Group", 
+        "url": "http://www.w3.org/2001/tag/"
       }
     ]
   }, 
@@ -1025,6 +1114,15 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "selectors-states": {
+    "maturity": "NOTE", 
+    "title": "Selectors and States", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/annotation/"
       }
     ]
   }, 

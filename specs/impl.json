@@ -57,6 +57,12 @@
       "ie_mob"
     ]
   }, 
+  "annotation-model": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "appcache": {
     "chromeid": 6192449487634432, 
     "consideration": [], 
@@ -481,6 +487,32 @@
       "ie_mob"
     ]
   }, 
+  "css-break-3": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "firefox", 
+      "bb", 
+      "samsung", 
+      "chrome", 
+      "op_mini", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "opera", 
+      "edge", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
+  }, 
   "css-color-space": {
     "consideration": [], 
     "experimental": [], 
@@ -522,6 +554,25 @@
       "safari", 
       "and_chr", 
       "android"
+    ]
+  }, 
+  "css-grid-1": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "edge", 
+      "and_chr", 
+      "safari", 
+      "android", 
+      "ie", 
+      "ie_mob"
     ]
   }, 
   "css-scroll-snap": {
@@ -1506,6 +1557,7 @@
     "chromeid": null, 
     "consideration": [], 
     "experimental": [
+      "ios_saf", 
       "safari"
     ], 
     "indevelopment": [], 
@@ -1527,6 +1579,12 @@
       "and_ff", 
       "firefox"
     ]
+  }, 
+  "publishing-linking": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
   }, 
   "push": {
     "chromeid": 5416033485586432, 
@@ -1684,11 +1742,18 @@
       "chrome"
     ]
   }, 
+  "selectors-states": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "serviceworkers": {
     "chromeid": 6561526227927040, 
     "consideration": [], 
     "experimental": [
-      "edge"
+      "edge", 
+      "safari"
     ], 
     "indevelopment": [
       "webkit"
@@ -1764,6 +1829,7 @@
     "chromeid": 6183089948590080, 
     "consideration": [], 
     "experimental": [
+      "ios_saf", 
       "edge", 
       "safari"
     ], 
@@ -1783,7 +1849,9 @@
   }, 
   "storage": {
     "chromeid": 5630353511284736, 
-    "consideration": [], 
+    "consideration": [
+      "edge"
+    ], 
     "experimental": [], 
     "indevelopment": [
       "firefox"
@@ -2058,10 +2126,11 @@
     "consideration": [
       "webkit"
     ], 
-    "experimental": [], 
-    "indevelopment": [
+    "experimental": [
+      "ios_saf", 
       "safari"
     ], 
+    "indevelopment": [], 
     "shipped": [
       "and_uc", 
       "baidu", 
