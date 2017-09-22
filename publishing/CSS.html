@@ -7,27 +7,47 @@
 <body>
     <header>
         <h1>CSS modules of particular interest for Publishing</h1>
+        <p>CSS plays a crucial role in producing high quality publications. Publishing has, however, some special needs, and this may also mean a closer work with the CSS WG in, possibly, adjusting the specifications.</p>
     </header>
     <main>
         <section class="featureset well-deployed">
             <p>Pagination, like any other aspect of layout, is governed by the various CSS specifications, and is an integrated part of supporting CSS, rather than an isolated standalone feature. Nonetheless, a few specification are especially relevant for User Agents that wish to provide high quality support for paginated media:</p>
             <ul>
-                <li>Section in 13 in <span data-feature="CSS2"><a data-featureid="css2">CSS2</a></span>:
-                    This defines the fundamentals of pagination in CSS. </li>
-                <li><span data-feature="CSS Page 3"><a data-featureid="css3-page">CSS Page 3</a></span>:
-                    This CSS module specifies how pages are generated and laid out to hold fragmented content in a paged presentation. It adds functionality for controlling page margins, page size and orientation, and headers and footers, bleed and printer marks, and extends generated content to enable page numbering and running headers / footers. </li>
-                <li><span data-feature="CSS Fragmentation"><a data-featureid="css-break-3">CSS Fragmentation</a></span>:
-                    This module describes the fragmentation model that partitions a flow into pages, columns, or regions. It builds on the Page model module and introduces and defines the fragmentation model. It adds functionality for pagination, breaking variable fragment size and orientation, and controling (forcing or forbidding) where breaks happen, including widows and orphans. </li>
-                <li><span data-feature="Media Queries"><a data-featureid="mediaqueries">Media Queries</a></span>, <span data-feature="Media Queries 4"><a data-featureid="mediaqueries4">Media Queries 4</a></span>, <span data-feature="Media Queries 5"><a data-featureid="mediaqueries5">Media Queries 5</a></span>:
-                    These modules provides authors with features to detect various aspect of the media the document is being rendered in, including whether (and how) it is paginated, or more nuanced questions to tell apart environments like a ebook reader from a print rendition. </li>
-                <li><span data-feature="CSS Generated Content for Paged Media Module"><a data-featureid="css-gcpm-3">CSS Generated Content for Paged Media Module</a></span>:
-                    This module defines a few features that are useful in paged media, such as footnotes, running headers and footers, and page selectors. </li>
-                <li><span data-feature="CSS Generated Content Module Level 3"><a data-featureid="css-content-3">CSS Generated Content Module Level 3</a></span>:
-                    This module, while overall unstable at the time of writing, contains a few features that while not exclusive to paged media, are particularly useful in paged media, such as leaders or cross references. </li>
-                <li><span data-feature="CSS Page Floats"><a data-featureid="css-page-floats-3">CSS Page Floats</a></span>:
-                    This module extends the ability of floats to not only go to the beginning or end of the line, but also to float to the top or bottom of pages, columns. </li>
-                <li><span data-feature="CSS Grid 1"><a data-featureid="css-grid-1">CSS Grid 1</a></span>:
-                    This module is not specific to paginated media, but is nonetheless noteworthy as it enables advanced layouts often found in print publications. </li>
+                <li>
+                    Section in 13 in <span data-feature="CSS2"><a data-featureid="css2">CSS2</a></span> defines the fundamentals of pagination in CSS.
+                </li>
+
+                <li>
+                    The <span data-feature="CSS Page 3"><a data-featureid="css3-page">CSS Page 3</a></span> modules specifies how pages are generated and laid out to hold fragmented content in a paged presentation. It adds functionality for controlling page margins, page size and orientation, and headers and footers, bleed and printer marks, and extends generated content to enable page numbering and running headers/footers. It may become necessary, however, to extend the <code>@page</code> feature to express initial preference over scrolling vs. pagination. 
+                </li>
+
+                <li data-feature="CSS Device Adaptation">
+                    The <a data-featureid="css-device-adapt-1">CSS Device Adaptation</a> module provides a way for an author to specify, in CSS, the size, zoom factor, and orientation of the viewport that is used as the base for the initial containing block. It may be necessary to extend the <code>@viewport</code> or of the <a href="https://drafts.csswg.org/css-device-adapt/#viewport-meta">viewport meta tag</a> to express initial preference over scrolling vs. pagination.
+                </li>
+
+                <li>
+                    The <span data-feature="CSS Fragmentation"><a data-featureid="css-break-3">CSS Fragmentation</a></span> module describes the fragmentation model that partitions a flow into pages, columns, or regions. It builds on the Page model module and introduces and defines the fragmentation model. It adds functionality for pagination, breaking variable fragment size and orientation, and controling (forcing or forbidding) where breaks happen, including widows and orphans. 
+                </li>
+
+                <li>
+                    <span data-feature="Media Queries"><a data-featureid="mediaqueries">Media Queries</a></span>, <span data-feature="Media Queries 4"><a data-featureid="mediaqueries4">Media Queries 4</a></span>, <span data-feature="Media Queries 5"><a data-featureid="mediaqueries5">Media Queries 5</a></span> provide authors with features to detect various aspect of the media the document is being rendered in, including whether (and how) it is paginated, or more nuanced questions to tell apart environments like a ebook reader from a print rendition. 
+                </li>
+
+                <li>
+                    The <span data-feature="CSS Generated Content for Paged Media Module"><a data-featureid="css-gcpm-3">CSS Generated Content for Paged Media</a></span> module defines a few features that are useful in paged media, such as footnotes, running headers and footers, and page selectors. 
+                </li>
+
+                <li>
+                    The <span data-feature="CSS Generated Content Module Level 3"><a data-featureid="css-content-3">CSS Generated Content Module Level 3</a></span> module contains a few features that while not exclusive to paged media, are particularly useful in paged media, such as leaders or cross references. 
+                </li>
+
+                <li>
+                    <span data-feature="CSS Page Floats"><a data-featureid="css-page-floats-3">CSS Page Floats 3</a></span> extend the ability of floats to not only go to the beginning or end of the line, but also to float to the top or bottom of pages, columns. 
+                </li>
+
+                <li>
+                    The <span data-feature="CSS Grid 1"><a data-featureid="css-grid-1">CSS Grid 1</a></span> module is not specific to paginated media, but is nonetheless noteworthy as it enables advanced layouts often found in print publications. 
+                </li>
             </ul>
         </section>
     </main>
