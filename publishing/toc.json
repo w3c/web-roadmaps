@@ -8,13 +8,13 @@
     {
       "url": "WP.html",
       "title": "Web Publications",
-      "icon": "../assets/img/mobile-graphics.svg",
+      "icon": "../assets/img/mobile-network.svg",
       "description": "Core Techonologies for Web Publications."
     },
     {
       "url": "PWP.html",
       "title": "Packaged Web Publications",
-      "icon": "../assets/img/mobile-graphics.svg",
+      "icon": "../assets/img/mobile-storage.svg",
       "description": "Technologies specific to Packaged Web Publications"
     },
     {
@@ -26,8 +26,14 @@
     {
       "url": "CSS.html",
       "title": "CSS Modules",
-      "icon": "../assets/img/mobile-graphics.svg",
+      "icon": "../assets/img/media-rendering.svg",
       "description": "Relevant CSS Modules"
+    },
+    {
+      "url": "a11y.html",
+      "title": "Accessibility Modules",
+      "icon": "../assets/img/media-rendering.svg",
+      "description": "Accessibility Technologies"
     }
   ]
 }

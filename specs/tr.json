@@ -155,6 +155,16 @@
       }
     ]
   }, 
+  "core-aam-1": {
+    "maturity": "CR", 
+    "title": "Core Accessibility API Mappings 1.1", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
+      }
+    ]
+  }, 
   "cors": {
     "maturity": "REC", 
     "title": "Cross-Origin Resource Sharing", 
@@ -476,6 +486,26 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "dpub-aam-1": {
+    "maturity": "CR", 
+    "title": "Digital Publishing Accessibility API Mappings", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
+      }
+    ]
+  }, 
+  "dpub-aria": {
+    "maturity": "CR", 
+    "title": "Digital Publishing WAI-ARIA Module 1.0", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
       }
     ]
   }, 
@@ -1315,6 +1345,16 @@
       }
     ]
   }, 
+  "wai-aria1": {
+    "maturity": "CR", 
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
+      }
+    ]
+  }, 
   "wake-lock": {
     "maturity": "WD", 
     "title": "Wake Lock API", 
@@ -1322,6 +1362,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "wcag21": {
+    "maturity": "WD", 
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.1", 
+    "wgs": [
+      {
+        "label": "Accessibility Guidelines Working Group", 
+        "url": "http://www.w3.org/WAI/GL/"
       }
     ]
   }, 
