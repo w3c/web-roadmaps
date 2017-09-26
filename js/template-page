@@ -41,10 +41,10 @@
             <div class="container">
             <h2>See anything missing?</h2>
                 <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
-                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href=""></a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the Github repository of this document</a>.
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href=""></a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
                 </p>
                 <p class="call-to-action">
-                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">Github</a>
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
                   <a class="btn reverse discourse" href="">Discourse</a>
                 </p>
             </div>
