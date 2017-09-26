@@ -155,7 +155,7 @@
       }
     ]
   }, 
-  "core-aam-1": {
+  "core-aam11": {
     "maturity": "CR", 
     "title": "Core Accessibility API Mappings 1.1", 
     "wgs": [
@@ -489,7 +489,7 @@
       }
     ]
   }, 
-  "dpub-aam-1": {
+  "dpub-aam10": {
     "maturity": "CR", 
     "title": "Digital Publishing Accessibility API Mappings", 
     "wgs": [
@@ -499,7 +499,7 @@
       }
     ]
   }, 
-  "dpub-aria": {
+  "dpub-aria10": {
     "maturity": "CR", 
     "title": "Digital Publishing WAI-ARIA Module 1.0", 
     "wgs": [
@@ -971,7 +971,7 @@
   }, 
   "permissions": {
     "maturity": "WD", 
-    "title": "The Permissions API", 
+    "title": "Permissions", 
     "wgs": [
       {
         "label": "Web Application Security Working Group", 
@@ -1345,7 +1345,7 @@
       }
     ]
   }, 
-  "wai-aria1": {
+  "wai-aria11": {
     "maturity": "CR", 
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
     "wgs": [
