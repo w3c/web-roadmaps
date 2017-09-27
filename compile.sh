@@ -14,6 +14,7 @@ if [ -d out ]; then
   cp -R js out/js/
   cp -R media out/media/
   cp -R mobile out/mobile/
+  cp -R publishing out/publishing/
   cp -R security out/security/
   cp -R web5g out/web5g/
   cp specs/tr.json out/specs/tr.json
