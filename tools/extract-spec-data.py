@@ -70,5 +70,5 @@ for filename in sys.argv[1:]:
 
 print json.dumps(data, sort_keys=True, indent=2)
 
-if len(errors):
-    sys.exit(2)
+# if len(errors):
+#     sys.exit(2)
