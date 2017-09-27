@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "css-deviceadaptation",
-    "chromestatus": 4737164243894272
-  },
-  "TR": "https://www.w3.org/TR/css-device-adapt-1/"
-}

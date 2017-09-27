@@ -1,7 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/webauthn/",
-  "impl": {
-    "caniuse": "u2f",
-    "edgestatus": "Web Authentication API"
-  }
-}

@@ -1,7 +1,0 @@
-{
-    "TR": "https://www.w3.org/TR/resource-hints/",
-    "impl": {
-        "caniuse": "link-rel-preconnect",
-        "chromestatus": 5560623895150592
-    }
-}
