@@ -1,7 +1,0 @@
-{
-    "TR": "https://www.w3.org/TR/resource-timing-1/",
-    "impl": {
-        "caniuse": "resource-timing",
-        "chromestatus": 5796350423728128
-    }
-}

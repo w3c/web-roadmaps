@@ -1,9 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/intersection-observer/",
-  "impl": {
-    "caniuse": "intersectionobserver",
-    "chromestatus": 5695342691483648,
-    "webkitstatus": "specification-intersection-observer",
-    "edgestatus": "Intersection Observer"
-  }
-}

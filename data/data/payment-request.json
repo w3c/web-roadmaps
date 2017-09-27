@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "payment-request",
-    "chromestatus": 5639348045217792
-  },
-  "TR": "https://www.w3.org/TR/payment-request/"
-}

@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "sql-storage",
-    "chromestatus": 6330987952734208
-  },
-  "TR": "https://www.w3.org/TR/webdatabase/"
-}

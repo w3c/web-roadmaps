@@ -1,9 +1,0 @@
-{
-  "impl": {
-    "caniuse": "download",
-    "chromestatus": 6473924464345088,
-    "webkitstatus": "feature-download-attribute"
-  },
-  "TR": "https://www.w3.org/TR/html51/links.html#downloading-resources",
-  "feature" : "download attribute"
-}

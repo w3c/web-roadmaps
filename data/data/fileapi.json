@@ -1,7 +1,0 @@
-{
-  "title" : "File API",
-  "TR" : "https://www.w3.org/TR/FileAPI/",
-  "impl": {
-    "caniuse": "fileapi"
-  }
-}

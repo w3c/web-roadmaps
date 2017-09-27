@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "input-pattern"
-  },
-  "TR": "https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute",
-  "feature": "Pattern attribute for input fields"
-}

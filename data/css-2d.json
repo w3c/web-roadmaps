@@ -1,7 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/css-transforms-1/",
-  "feature": "2D effects",
-  "impl": {
-    "caniuse": "transforms2d"
-  }
-}

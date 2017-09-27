@@ -1,8 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/appmanifest/",
-  "impl": {
-    "caniuse": "web-app-manifest",
-    "chromestatus": 6488656873259008,
-    "webkitstatus": "specification-web-app-manifest"
-  }
-}

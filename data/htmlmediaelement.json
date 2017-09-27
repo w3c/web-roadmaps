@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "video"
-  },
-  "TR": "https://www.w3.org/TR/html51/semantics-embedded-content.html#the-media-elements",
-  "feature": "HTMLMediaElement interface"
-}
