@@ -35,8 +35,6 @@ For the 3 first categories of features described above, a feature comes with one
 * each spec that provides the hook for the said feature needs to be listed in that container element with a `<a>` tag containing a `data-featureid` attribute, whose value is a shortname for the specification that refers to the JSON file described below. For instance, adding `<a data-featureid='getusermedia'>the Media Capture and Streams API</a>` to the paragraph above indicates that the specification described by the `getusermedia.json` file provides a way to implement the "video capture" feature
 * the [data](data/) directory contains a JSON file that describes the various specifications that provides the hooks relevant to the various features; that JSON file follows a [format described below](#json-format-for-describing-specifications).
 
-Once the feature has been added, you should run the [Makefile](Makefile) to fetch the associated standardization and implementation status data for the said specification.
-
 ## JSON format for describing specifications
 
 Each specification is described by a JSON object that will allow retrieving information about the standardization status of the spec and its level of implementation in browsers.
@@ -134,6 +132,17 @@ The template for the JSON file listing sub-pages is as follows:
   ]
 }
 ```
+
+## Repository branches
+
+The source of the roadmaps is in the `master` branch. This is the default branch of the repository, and the branch against which you should be sending pull requests. Whenever content is pushed onto the `master` branch, a Travis script will run, fetch information and implementation data for all features listed in `data`, and eventually update the `gh-pages` branch accordingly.
+
+The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roadmaps/`](https://w3c.github.io/web-roadmaps/).
+
+If you would like to visualize the contents of a roadmap locally as it would appear on the published version, you will need to:
+
+1. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Python 2.7 (and a few other libraries) for that to work.
+2. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
 
 ## Translating a roadmap
 
