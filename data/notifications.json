@@ -1,0 +1,6 @@
+{
+  "TR": "https://www.w3.org/TR/notifications/",
+  "impl": {
+    "caniuse": "notifications"
+  }
+}

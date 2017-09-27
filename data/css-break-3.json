@@ -1,0 +1,6 @@
+{
+  "TR": "https://www.w3.org/TR/css-break-3/",
+  "impl": {
+    "caniuse": "css-page-break"
+  }
+}

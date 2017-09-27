@@ -1,0 +1,17 @@
+{
+  "wgs": [
+    {
+      "label": "WebVR Community Group",
+      "url": "https://www.w3.org/community/webvr/"
+    }
+  ],
+  "impl": {
+    "caniuse": null,
+    "chromestatus": 4532810371039232,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "title": "WebVR",
+  "editors": "https://w3c.github.io/webvr/"
+}

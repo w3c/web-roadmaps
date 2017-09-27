@@ -1,0 +1,7 @@
+{
+  "TR": "https://www.w3.org/TR/page-visibility/",
+  "impl": {
+    "caniuse": "pagevisibility",
+    "chromestatus": 5689697795833856
+  }
+}

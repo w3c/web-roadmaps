@@ -1,0 +1,13 @@
+{
+    "title": "Web Background Synchronization",
+    "wgs": [
+        {
+            "url": "https://www.w3.org/community/wicg/",
+            "label": "Web Platform Incubator Community Group"
+        }
+    ],
+    "editors": "https://wicg.github.io/BackgroundSync/spec/",
+    "impl": {
+        "chromestatus": 6170807885627392
+    }
+}

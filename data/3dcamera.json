@@ -1,0 +1,10 @@
+{
+  "impl": {
+    "caniuse": null,
+    "chromestatus": 5713419084759040,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "TR": "https://www.w3.org/TR/mediacapture-depth/"
+}

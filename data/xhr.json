@@ -1,0 +1,13 @@
+{
+  "title": "XMLHttpRequest",
+  "ls": "https://xhr.spec.whatwg.org/",
+  "wgs": [
+    {
+      "label": "WHATWG",
+      "url": "https://whatwg.org/"
+    }
+  ],
+  "impl": {
+    "caniuse": "xhr2"
+  }
+}

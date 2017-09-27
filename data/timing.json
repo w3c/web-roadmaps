@@ -1,0 +1,10 @@
+{
+  "wgs": [
+    {
+      "url": "http://www.w3.org/community/webtiming/",
+      "label": "Multi-Device Timing Community Group "
+    }
+  ],
+  "editors": "http://webtiming.github.io/timingobject/",
+  "title": "Timing Object"
+}
