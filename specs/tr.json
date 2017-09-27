@@ -624,9 +624,29 @@
       }
     ]
   }, 
+  "html5-browsing-context": {
+    "maturity": "CR", 
+    "title": "HTML 5.2", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "html5-download": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "html5-sandbox": {
+    "maturity": "CR", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
