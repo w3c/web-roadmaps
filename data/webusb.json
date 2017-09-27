@@ -6,7 +6,7 @@
             "label": "Web Platform Incubator Community Group"
         }
     ],
-    "editors": "http://wicg.github.io/webusb/",
+    "editors": "https://wicg.github.io/webusb/",
     "impl": {
         "chromestatus": 5651917954875392
     }
