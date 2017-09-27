@@ -1,0 +1,10 @@
+{
+    "TR": "https://www.w3.org/TR/annotation-model/",
+    "wgs": [
+        {
+          "label": "Web Annotation Working Group",
+          "url": "https://www.w3.org/annotation/"
+        }
+    ],
+    "impl" : {}
+}

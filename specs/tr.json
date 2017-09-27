@@ -43,6 +43,15 @@
       }
     ]
   }, 
+  "annotation-model": {
+    "maturity": "REC", 
+    "title": "Web Annotation Data Model", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/annotation/"
+      }
+    ]
+  }, 
   "appcache": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
@@ -143,6 +152,16 @@
     "wgs": [
       {
         "url": "http://www.w3.org/2012/sysapps/"
+      }
+    ]
+  }, 
+  "core-aam11": {
+    "maturity": "CR", 
+    "title": "Core Accessibility API Mappings 1.1", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
       }
     ]
   }, 
@@ -267,6 +286,26 @@
       }
     ]
   }, 
+  "css-break-3": {
+    "maturity": "CR", 
+    "title": "CSS Fragmentation Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-content-3": {
+    "maturity": "WD", 
+    "title": "CSS Generated Content Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-device-adapt": {
     "maturity": "WD", 
     "title": "CSS Device Adaptation Module Level 1", 
@@ -280,6 +319,36 @@
   "css-font-loading": {
     "maturity": "LastCall", 
     "title": "CSS Font Loading Module Level 3", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-gcpm-3": {
+    "maturity": "WD", 
+    "title": "CSS Generated Content for Paged Media Module", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-grid-1": {
+    "maturity": "CR", 
+    "title": "CSS Grid Layout Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-page-floats-3": {
+    "maturity": "WD", 
+    "title": "CSS Page Floats", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -320,6 +389,26 @@
   "css-will-change": {
     "maturity": "CR", 
     "title": "CSS Will Change Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css2": {
+    "maturity": "REC", 
+    "title": "Cascading Style Sheets, level 2 (CSS2) Specification", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css3-page": {
+    "maturity": "WD", 
+    "title": "CSS Paged Media Module Level 3", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -397,6 +486,26 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "dpub-aam10": {
+    "maturity": "CR", 
+    "title": "Digital Publishing Accessibility API Mappings", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
+      }
+    ]
+  }, 
+  "dpub-aria10": {
+    "maturity": "CR", 
+    "title": "Digital Publishing WAI-ARIA Module 1.0", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
       }
     ]
   }, 
@@ -515,9 +624,29 @@
       }
     ]
   }, 
+  "html5-browsing-context": {
+    "maturity": "CR", 
+    "title": "HTML 5.2", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "html5-download": {
     "maturity": "REC", 
     "title": "HTML 5.1", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
+  "html5-sandbox": {
+    "maturity": "CR", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -910,6 +1039,16 @@
       }
     ]
   }, 
+  "publishing-linking": {
+    "maturity": "NOTE", 
+    "title": "Publishing and Linking on the Web", 
+    "wgs": [
+      {
+        "label": "Technical Architecture Group", 
+        "url": "http://www.w3.org/2001/tag/"
+      }
+    ]
+  }, 
   "push": {
     "maturity": "WD", 
     "title": "Push API", 
@@ -1025,6 +1164,15 @@
       {
         "label": "Web Application Security Working Group", 
         "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
+  "selectors-states": {
+    "maturity": "NOTE", 
+    "title": "Selectors and States", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/annotation/"
       }
     ]
   }, 
@@ -1217,6 +1365,16 @@
       }
     ]
   }, 
+  "wai-aria11": {
+    "maturity": "CR", 
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
+    "wgs": [
+      {
+        "label": "Accessible Rich Internet Applications Working Group", 
+        "url": "http://www.w3.org/WAI/ARIA/"
+      }
+    ]
+  }, 
   "wake-lock": {
     "maturity": "WD", 
     "title": "Wake Lock API", 
@@ -1224,6 +1382,16 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
+  "wcag21": {
+    "maturity": "WD", 
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.1", 
+    "wgs": [
+      {
+        "label": "Accessibility Guidelines Working Group", 
+        "url": "http://www.w3.org/WAI/GL/"
       }
     ]
   }, 
