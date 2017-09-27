@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "input-email-tel-url"
+  },
+  "TR": "https://www.w3.org/TR/html51/sec-forms.html#email-state-typeemail",
+  "feature": "tel, email, url input types"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sensors and Local Interactions</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sensors and Local Interactions</h1>
+      <p>Mobile devices are packed with sensors, making them a great bridge between the real and virtual worlds: GPS, accelerometer, ambient light detector, microphone, camera, thermometer, etc. To take full advantage of these sensors in mobile Web applications, Web developers need to be provided with hooks to interact with them.</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+
+        <div data-feature="Geolocation">
+          <p>The <a data-featureid="geolocation">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
+        </div>
+
+        <div data-feature="Motion sensors">
+          <p>The <a data-featureid="deviceorientation">DeviceOrientation Event Specification</a> defines several DOM events that provide information about the physical orientation and motion of a hosting device. Most browsers support this specification, although various interoperability issues have arised. The work on the specification itself has been discontinued when the Geolocation Working Group was closed. It may fall in scope of the <a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a> when the group recharters, with a view to reducing inconsistencies across implementations and finalizing the specification accordingly, while the group develops the more powerful <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> specification in parallel.</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>Technologies in progress</h2>
+
+        <p>The <a data-feature="Generic Sensors" data-featureid="generic-sensor">Generic Sensor API</a> defines a framework for exposing sensor data to the Web platform in a consistent way. In particular, the specification defines a blueprint for writing specifications of concrete sensors along with an abstract Sensor interface that can be extended to accommodate different sensor types.</p>
+
+        <p>A number of sensor APIs are being built on top of the Generic Sensor API. The <a data-feature="Proximity sensors" data-featureid="proximity">Proximity Sensor</a> specification defines an API to monitor the presence of nearby objects without physical contact. The <a data-feature="Ambient Light sensor" data-featureid="ambientlight">Ambient Light Sensor</a> specification defines an API to monitor the ambient light level or illuminance of the device's environment. The <a data-feature="Battery Status" data-featureid="battery">Battery Status API</a> exposes information about the battery status of the hosting service (however, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API).</p>
+
+        <p>The detection of motion is made possible by a combination of low-level and high-level motion sensor specifications, also built on top of the Generic Sensor API:</p>
+
+        <ul data-feature="Motion sensors">
+          <li>the <a  data-featureid="accelerometer">Accelerometer</a> to obtain information about acceleration applied to the device's local three primary axes;</li>
+          <li>the <a data-featureid="gyroscope">Gyroscope</a> to monitor the rate of rotation around the device's local three primary axes;</li>
+          <li>the <a data-featureid="magnetometer">Magnetometer</a> to measure magnetic field around the device's local three primary axes;</li>
+          <li>the <a data-featureid="orientation">Orientation Sensor</a> to monitor the device's physical orientation in relation to a stationary 3D Cartesian coordinate system.</li>
+        </ul>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+
+        <p data-feature="Camera &amp; Microphone streams">As detailed in the <a href="media.html">Media</a> part of this document, there is ongoing work on <a data-featureid="getusermedia">APIs to open up access to camera and microphone</a> streams.</p>
+
+        <p data-feature="NFC">Work on a <a href="http://w3c.github.io/web-nfc/" data-featureid="webnfc">Web Near-Field Communications (NFC) API</a> to enable wireless communication between two devices at close proximity has started in the <a href="https://www.w3.org/community/web-nfc/">Web NFC Community Group</a>.</p>
+
+        <p data-feature="Bluetooth">Similarly, the <a data-featureid="webbluetooth">Web Bluetooth</a> specification, developed by the <a href="https://www.w3.org/community/web-bluetooth">Web Bluetooth Community Group</a>, describes an API to discover and communicate with devices over the Bluetooth Low Energy (BLE) mode.</p>
+
+        <p>The Web NFC API and the Web Bluetooth API are being considered for inclusion within the next charter of the <a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a>. This inclusion remains uncertain at this stage, given the existing support from would-be implementers.</p>
+
+        <p>The proposed <a data-feature="Humidity sensor" data-featureid="humidity">Ambient Humidity Events</a> would allow mobile Web applications to receive events that correspond to changes in ambient humidity.</p>
+      </section>
+
+      <section>
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt>Geofencing API</dt>
+          <dd>The ability to detect when a device enters a given geographical area would enable interactions and notifications based on the user's physical presence in a given place. The Geolocation Working Group started to work on a <a href="https://w3c.github.io/geofencing-api/" data-featureid="geofencing">geofencing API</a> to that effect. This work has been discontinued, partly out of struggles to find a good approach to permission needs that such an API triggers to protect users against privacy issues, and because the API depended on the <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>, which was not yet stable at the time. Work on this specification could resume in the future depending on interest from would-be implementers.</dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "impl": {
+    "caniuse": "rtcpeerconnection",
+    "chromestatus": 6612462929444864,
+    "mozstatus": null,
+      "edgestatus": null,
+    "webkitstatus": "specification-webrtc"
+  },
+  "TR": "https://www.w3.org/TR/webrtc/"
+}

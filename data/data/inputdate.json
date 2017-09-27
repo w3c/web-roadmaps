@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "input-datetime"
+  },
+  "TR": "https://www.w3.org/TR/html51/sec-forms.html#date-state-typedate",
+  "feature": "Date and time input types"
+}

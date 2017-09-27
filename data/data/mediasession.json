@@ -1,0 +1,17 @@
+{
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "caniuse": null,
+    "chromestatus": 5639924124483584,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "title": "Media Session",
+  "editors": "https://wicg.github.io/mediasession/"
+}

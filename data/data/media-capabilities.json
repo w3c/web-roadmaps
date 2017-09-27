@@ -1,0 +1,17 @@
+{
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "title": "Media Capabilities",
+  "editors": "https://wicg.github.io/media-capabilities/"
+}

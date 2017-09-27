@@ -1,0 +1,7 @@
+{
+    "TR": "https://www.w3.org/TR/push-api/",
+    "impl": {
+        "caniuse": "push-api",
+        "chromestatus": 5416033485586432
+    }
+}

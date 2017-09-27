@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "video"
+  },
+  "TR": "https://www.w3.org/TR/html51/semantics-embedded-content.html#eventdef-media-timeupdate",
+  "feature": "timeupdate event"
+}

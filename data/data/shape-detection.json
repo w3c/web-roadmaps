@@ -1,0 +1,11 @@
+{
+  "editors": "https://wicg.github.io/shape-detection-api",
+  "impl": {},
+  "wgs": [
+    {
+      "label": "Web Platform Incubator Community Group",
+      "url": "https://www.w3.org/community/wicg/"
+    }
+  ],
+  "title": "Shape Detection API"
+}

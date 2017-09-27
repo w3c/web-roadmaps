@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Media</title>
+  </head>
+  <body>
+    <header>
+      <h1>Media</h1>
+
+      <p>The combination of all the features listed here marks the starting point of the Web as a comprehensive platform for multimedia, both for consuming and producing. The rising interest around bridging the Web and media worlds (manifested through the <a href="https://www.w3.org/2011/webtv/">W3C Media and Entertainment Interest Group</a>) strengthens that trend. Mobile devices take a growing role in many users TV experience, providing a “second screen” experience, where users can find more information on or interact with a TV program they're watching via their mobile devices.</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong data-feature="Video playback" ><a data-featureid="video">&lt;video&gt;</a></strong></code> and <code><strong data-feature="Audio playback"><a data-featureid="audio">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
+
+        <p data-feature="Generation of media content">The playback content can be streamed, augmented and completed via <a data-featureid="mse">Media Source Extensions</a> that lets developers buffer and generate media content in JavaScript, thus allowing Web application developers to create libraries that can handle adaptive streaming formats and protocols.</p>
+
+        <p data-feature="Protected content playback">For the distribution of media whose content needs specific protection from copy, <a data-featureid="eme">Encrypted Media Extensions</a> (EME) enables Web applications to render encrypted media streams based on Content Decryption Modules (CDM).</p>
+
+        <p data-feature="Capturing audio/video">While the new HTML5 tags allow to play multimedia content, the <cite><a data-featureid="inputaccept">HTML Media Capture</a></cite> defines a <strong>markup-based mechanism to access captured multimedia content</strong> using attached camera and microphones, a very common feature on mobile devices. Direct manipulation of <strong>streams from camera and microphones</strong> is possible through the <a data-featureid="getusermedia">Media Capture and Streams API</a>.</p>
+
+        <p data-feature="Image &amp; Video analysis, modification">The <cite><a data-featureid="canvas">Canvas 2D Context</a></cite> API enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>, thus bringing multimedia manipulation capabilities to the Web platform.</p>
+      </section>
+      <section class="featureset in-progress">
+        <h2>Technologies in progress</h2>
+
+        <p data-feature="Audio playback">Beyond the declarative approach enabled by the <code>&lt;audio&gt;</code> element, the <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing API, which includes support for low-latency playback of audio content.</p>
+
+        <div data-feature="Distributed rendering">
+          <p>As users increasingly own more and more connected devices, the need to get these devices to work together increases as well:</p>
+          <ul>
+            <li>The <a data-featureid="secondscreen">Presentation API</a> offers the possibility for a Web page to open and control a page located on another screen from a mobile device, opening the road for multi-screen Web applications.</li>
+            <li>The <a data-featureid="remote-playback">Remote Playback API</a> focuses more specifically on controling the rendering of media on a separate device.</li>
+            <li>The <a data-featureid="audio-output">Audio Output Devices API</a> offers similar functionality for audio streams, enabling a Web application to pick on which audio output devices a given sound should be played on.</li>
+          </ul>
+        </div>
+
+        <p data-feature="Capturing audio/video">The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> and the <a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a> are building together an <a data-featureid="recording">API to record streams from camera and microphones</a> into files, and another API to use access to cameras to <a data-featureid="imagecapture">take photos programatically</a>.</p>
+
+        <p>The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> is the host of specifications for a wider set of communication opportunities:</p>
+        <ul>
+          <li data-feature="P2P connections and audio/video streams"><strong><a data-featureid="p2p">Peer-to-peer connection</a></strong> across devices,</li>
+          <li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
+        </ul>
+      </section>
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+
+        <p data-feature="Media focus">Mobile devices often expose shortcuts to handle the audio output of a main application (e.g. a music player) from a lock screen or the notification areas. The underlying operating system is in charge of determining which of these applications should have the media focus. The <a data-featureid="mediasession">Media session</a> specification would expose these changes of focus to Web applications.</p>
+
+        <div data-feature="Distributed rendering">
+          <p>The Multi-Device Timing Community Group is exploring another aspect of multi-device media rendering: its <a data-featureid="timing">Timing Object</a> specification enables to keep video, audio and other data streams in close synchrony, across devices and independently of the network topology. This effort needs support from interested parties to progress.</p>
+          <p>The <a data-featureid="picture-in-picture">Picture in Picture</a> proposal would allow applications to initiate and control the rendering of a video in a separate miniature window that is viewable above all other activities.</p>
+          <p>To improve the interoperability of implementations of the Presentation API and Remote Playback API, in particular between the first and second screen, the Second Screen Community Group is discussing requirements for an <a data-featureid="secondscreen-openscreen">Open Screen Protocol</a>.</p>
+        </div>
+
+        <div data-feature="Rendering in different color spaces">
+          <p>New mobile screens can render content in high resolution using a broader color space beyond the classical sRGB color space. To adapt to wide-gamut displays, all the graphical systems of the Web will need to adapt to these broader color spaces. <a data-featureid="css-color-space">CSS Colors Level 4</a> is proposing to define CSS colors in color spaces beyond the classical sRGB. Similarly, work on <a data-featureid="color-canvas">making canvas color-managed</a> should enhance the support for colors in HTML Canvas.</p>
+        </div>
+
+        <div data-feature="Rendering in VR headsets">
+          <p>The <a data-featureid="webvr">WebVR</a> specification is a low-level API that allows applications to access and control head-mounted displays (HMD) using JavaScript. It is a critical enabler to render 360° video content in Virtual Reality headsets and in mobile devices used as such.</p>
+        </div>
+
+        <div data-feature="Capabilities and quality">
+          <p>Mobile devices have widely heterogeneous decoding (and encoding) capabilities. To improve the user experience and take advantage of advanced device capabilities when they are available, media providers e.g. need to know whether the user's device can decode a particular codec at a given resolution, bitrate and framerate. Will the playback be smooth and power efficient? Can the display render HDR and wide color gamut content? The <a data-featureid="media-capabilities">Media Capabilities</a> specification defines an API to expose that information, with a view to replacing the more basic and vague <code>isTypeSupported()</code> and <code>canPlayType()</code> functions defined in HTML.</p>
+          <p>Media providers also need some mechanism to assess the user's perceived playback quality to alter the quality of content transmitted using adaptive streaming. The <a data-featureid="media-playback-quality">Media Playback Quality</a> specification, initially part of Media Source Extensions, exposes metrics on the number of frames that were displayed or dropped.</p>
+        </div>
+
+        <div data-feature="Video processing">
+          <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Features not covered by ongoing work</h2>
+        <dl>
+          <dt>Color Management</dt>
+          <dd>To ensure the proper rendering of videos with high-dynamic range (HDR) and wide-gamut colors, content providers would need to determine whether the underlying device and browser have proper support for this. Similarly, content providers need a mechanism to match colors to mix HDR content and Standard Dynamic Range (SDR) content. The <a href="https://www.w3.org/community/colorweb/">Color on the Web Community Group</a> allows color experts from various fields to share ideas and discuss technical solutions to improve the state of Color on the Web.</dd>
+
+          <dt>Native support for 360° video rendering</dt>
+          <dd>While it is already possible to render 360° videos within a <code>&lt;video&gt;</code> element, integrated support for the rendering of 360° videos would allow to hide the complexity of the underlying adaptive streaming logic to applications, letting Web browsers optimize streaming and rendering on their own.</dd>
+
+          <dd>The Canvas API provide capabilities to do image and video processing, but these capabilities are limited by their reliance on the CPU for execution; modern GPUs provide hardware-acceleration for a wide range of operations, but the browsers don't provide hooks to these. The <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> is discussing solutions to expose GPU computation functionality to Web applications, which could eventually allow web applications to process video streams efficiently, taking advantage of the GPU power.</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt>Network service discovery</dt>
+          <dd>The <a data-featureid="discovery">Network Service Discovery API</a> was to offer a lower-level approach to the establishment of multi-device operations, by providing integration with local network-based media renderers, such as those enabled by DLNA, UPnP, etc. This effort was discontinued out of privacy concerns and lack of interest from implementers. The current approach is to let the user agent handle network discovery under the hoods, as done in the <a data-featureid="secondscreen">Presentation API</a> and <a data-featureid="remote-playback">Remote Playback API</a>.</dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

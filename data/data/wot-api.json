@@ -1,0 +1,10 @@
+{
+    "title": "Web of Things (WoT) Scripting API",
+    "wgs": [
+        {
+            "url": "https://www.w3.org/WoT/WG/",
+            "label": "Web of Things Working Group"
+        }
+    ],
+    "editors": "https://w3c.github.io/wot-scripting-api/"
+}

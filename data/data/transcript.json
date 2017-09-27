@@ -1,0 +1,10 @@
+{
+  "wgs": [
+    {
+      "label": "HTML Working Group Accessibility Task Force",
+      "url": "http://www.w3.org/WAI/PF/html-accessibility-tf"
+    }
+  ],
+  "editors": "http://w3c.github.io/html-transcript/html-transcript-src.html",
+  "title": "A transcript extension for HTML"
+}

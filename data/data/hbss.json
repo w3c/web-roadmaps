@@ -1,0 +1,10 @@
+{
+  "editors": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
+  "wgs": [
+    {
+      "label": "Hardware Based Secure Services Community Group",
+      "url": "https://www.w3.org/community/hb-secure-services/"
+    }
+  ],
+  "title": "Hardware Based Secure Services features"
+}

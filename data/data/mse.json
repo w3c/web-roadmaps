@@ -1,0 +1,10 @@
+{
+  "impl": {
+    "caniuse": "mediasource",
+    "chromestatus": 4563797888991232,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "TR": "https://www.w3.org/TR/media-source/"
+}

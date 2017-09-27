@@ -1,0 +1,10 @@
+{
+  "impl": {
+    "caniuse": "audio-api",
+    "chromestatus": 6261718720184320,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": "feature-web-audio"
+  },
+  "TR": "https://www.w3.org/TR/webaudio/"
+}

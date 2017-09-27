@@ -1,0 +1,6 @@
+{
+  "TR": "https://www.w3.org/TR/user-timing/",
+  "impl": {
+    "caniuse": "user-timing"
+  }
+}

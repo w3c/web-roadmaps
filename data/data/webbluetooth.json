@@ -1,0 +1,14 @@
+{
+    "title": "Web Bluetooth",
+    "wgs": [
+        {
+            "url": "https://www.w3.org/community/web-bluetooth/",
+            "label": "Web Bluetooth Community Group"
+        }
+    ],
+    "editors": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "impl": {
+        "caniuse": "web-bluetooth",
+        "chromestatus": 5264933985976320
+    }
+}

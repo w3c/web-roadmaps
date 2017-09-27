@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Device Adaptation</title>
+  </head>
+  <body>
+    <header>
+      <h1>Device Adaptation</h1>
+      <p>Mobile devices not only differ widely from traditional computers, but they also have a lot of variations among themselves, in term of screen size, resolution, type of keyboard, media recording capabilities, etc. The user interface needs to be adapted to the user’s device to provide a good user experience and, given the heterogeneity of devices available on the market, static adaptation, where a restricted number of user interfaces that match main classes of devices are maintained separately, is not a viable option. Instead, Web developers need to create <b>responsive layouts</b>, where the user interface automatically adjusts itself to the user’s device.</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <div data-feature="CSS-based adaptation">
+          <p><a data-featureid="mediaqueries">CSS Media Queries</a> defines a mechanism that allows adapting the layout and behavior of a Web page based on some of the characteristics of the device, most notably based on the screen resolution.</p>
+          <p>The <a data-featureid="viewport-units">viewport-relative CSS units <code>vw</code>, <code>vh</code>, <code>vmin</code> and <code>vmax</code></a> represent a percentage of the current viewport dimensions and let developers design layouts that automatically adapt to viewport dimensions changes.</p>
+        </div>
+        <div data-feature="Responsive images">
+        <p>The <a href="https://www.w3.org/community/respimg/">Responsive Images Community Group (RICG)</a> developed an extension to HTML, known as the <a data-featureid="picture"><code>picture</code> element</a>, that allows authors define what image to load depending on device capabilities and/or other media features.</p>
+        <p>As a complementary approach, the <a data-featureid="srcset"><code>srcset</code> attribute</a>, specified by the <a href="https://www.w3.org/community/whatwg/">WHATWG</a> and also published as an extension to HTML, let Web developers define the various device pixel ratios of an image, letting the browser pick the best choice for the pixel density of the screen.</p>
+        <p><a data-featureid="svg12">SVG</a>, which lets define images that can be scaled up and down without any loss of quality, is another critical tool to the development of Web applications that adapt to the resolution of the underlying device.</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>Technologies in progress</h2>
+        <div data-feature="CSS-based adaptation">
+          <p><a data-featureid="css-device-adapt">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
+          <p><a data-featureid="mediaqueries4">Media Queries Level 4</a> adds the availability and type of a pointing device, as well as the ability to hover over elements, to the list of capabilities that may be used to adapt the layout and behavior of a Web page. Moreover, <a data-featureid="mediaqueries5">Media Queries Level 5</a> lets developers specify media queries that react to the ambient luminosity and to <a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">script-defined variables</a>, making it easier to cater for more complex adaptation rules in the overall logic of the application.</p>
+        </div>
+
+        <div data-feature="Server-side adaptation">
+          <p>A common approach to content adaptation on mobile devices is to have the server deliver the content that fits the user's device right away. This approach avoids sending content to the client that the client does not need, preserving network bandwidth, and it avoids running the adaptation logic on the client itself, preserving CPU and memory. <strong>Server-side adaptation</strong> used to rely on <em>sniffing</em> the <code>User-Agent</code> string and mapping it to a database of devices to extract relevant capabilities. This mechanism is error-prone and requires continuous maintenance of the database of devices. Through the <a href="http://httpwg.org/http-extensions/client-hints.html">HTTP Client Hints</a> mechanism, developed by the IETF HTTP Working Group, clients and servers may now opt-in to exchange relevant capabilities for efficient content adaptation. The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> has started to work on a <a data-featureid="device-memory">Device Memory</a> specification that extends these hints to surface the memory available on the device. The specification also defines an API to surface that information to the Web application running on the client.</p>
+        </div>
+
+        <p data-feature="Media Capture Capabilities">The <a data-featureid="getusermedia-cap">Media Capture and Streams</a> API exposes some specific information on capabilities of camera and microphones to make it possible to take advantage of the large variety of media capturing devices provided on mobile phones.</p>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+        <div data-feature="CSS-based adaptation">
+          <p><a data-featureid="css-size-adjust">CSS Mobile Text Size Adjustment</a> lets text adapt to zoomed parts of a page.</p>
+        </div>
+        <div data-feature="JS-based adaptation">
+          <p>Most mobile devices feature on-screen keyboards for user input. They also commonly let the user zoom in on a page. Both of these features preserve the <em>layout viewport</em> (what the web page uses when laying out its user interface), so as not to clutter the screen with <code>position: fixed</code> elements. The <a data-featureid="viewportapi">Visual Viewport API</a> provides developers with a way to query and interact with the properties of the <em>visual viewport</em> (the box on the page that the user can currently see), and to be notified when these properties change.</p>
+        </div>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

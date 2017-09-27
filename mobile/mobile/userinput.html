@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Input</title>
+  </head>
+  <body>
+    <header>
+      <h1>User Input</h1>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <div data-feature="Touch-based interactions">
+          <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <strong><a data-featureid="touchevent">Touch Events in the DOM</a></strong> (Document Object Model) enable.</p>
+        </div>
+
+        <p data-feature="Vibration">The <a data-featureid="vibration">Vibration API</a> lets mobile developers take advantage of haptic feedback to create new form of interactions (e.g. in games).</p>
+
+        <p data-feature="Notification">Mobile devices follow their users everywhere, and many mobile users rely on them to remind them or notify them of events, such as messages: the <a data-featureid="notifications">Web Notifications</a> specification enables that feature in the Web environment.</p>
+
+        <div data-feature="Accessibility">
+          <p>The hardware constraints of mobile devices, and their different usage context can make <a href="https://www.w3.org/WAI/mobile/experiences">mobile users experience similar barriers to people with disabilities</a>. These similarities in barriers mean that similar solutions can be used to cater for them, <a href="https://www.w3.org/WAI/mobile/overlap">making a Web site accessible both for people with disabilities and mobile devices</a> a natural goal (as detailed in <a data-featureid="mwbp-wcag">Relationship between Mobile Web Best Practices and WCAG</a>).</p>
+          <p>The WCAG and UAWG Working Group provide guidance on mobile accessibility in <a data-featureid="mobile-wcag">how Web Content Accessibility Guidelines (WCAG) and other WAI guidelines apply to mobile</a> — that is, making websites and applications more accessible to people with disabilities when they are using mobile phones and a broad range of other devices.</p>
+          <p><a data-featureid="wai-aria"><cite>WAI-ARIA</cite></a> provides semantic information on widgets, structures and behaviors hooks to make Web applications more accessible, including on mobile devices.</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>Technologies in progress</h2>
+
+        <div data-feature="Touch-based interactions">
+          <p>The <a href="https://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has made good progress on an alternative approach to handle user input, <a data-featureid="pointer-events">Pointer Events</a>, that allows to handle mouse, touch and pen events under a single model. It provides a complementary and more unified  approach to the currently more widely deployed Touch Events.</p>
+          <p>In particular, the <a data-featureid="css-touch-action">CSS property <code>touch-action</code></a> that lets filter gesture events on elements is gaining traction beyond implementations of Pointer Events.</p>
+          <p>The early proposal for an <a data-featureid="inputdevice">InputDevice capabilities API</a> would provide information about a given “mouse” event comes from a touch-capable device.</p>
+        </div>
+
+        <div data-feature="Smooth scrolling">
+          <p>As more and more content gets rendered as long scrollable lists, more and more logic is attached to scrolling events, and the quality of the user experience of these actions is highly dependent on their performances. The <a data-featureid="cssom-view">CSSOM View Module</a> determines when scrolling events get fired, and let developers specify the type of scrolling behavior they want.</p>
+          <p>The proposed work on <a data-featureid="css-scroll-snap">CSS Scroll Snap Points</a> adds greater ability to control the behavior of panning and scrolling by defining points to which an app view would snap when the user moves through the page.</p>
+          <p>The <a data-featureid="css-will-change">CSS <code>will-change</code></a> property is also available to indicate to browsers that a given part of the page will be soon scrolled to and should be pre-rendered.</p>
+        </div>
+
+        <p data-feature="Notification">The <a data-featureid="push">Push API</a> makes it possible for server-side notifications to alert the user, even if the browser is not running.</p>
+
+        <p data-feature="Screen wake">Whether users are speaking commands to their apps or working with them through non-haptic interactions, they risk seeing the screens turned off automatically by their devices screensaver. An early proposal for a <a data-featureid="wake-lock">Wake Lock API</a> would let developers signal the needs to keep the screen up in these circumstances.</p>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+
+        <p data-feature="Speech-based interactions">Mobile devices, and mobile phones in particular, are also in many cases well-suited to be used through voice-interactions; the <a href="https://www.w3.org/community/speech-api/">Speech API Community Group</a> developed a JavaScript API to enable interactions with a Web page through spoken commands. <a data-featureid="speech-api-synthesis">Speech synthesis</a> is well supported across browsers. Support for <a data-featureid="speech-api-recognition">speech recognition</a> is still underway.</p>
+
+        <p data-feature="On-screen keyboard interactions">Many mobile devices use on-screen keyboards to let users type; the <a data-featureid="ime-api">Input Method Editor (IME) API</a> would make it possible to coordinate the interactions between that on-screen keyboard and Web applications. Editorial support is required for this specification to move forward.</p>
+      </section>
+
+      <section>
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt>Intent-based events</dt>
+          <dd>As the Web reaches new devices, and as devices gain new user interactions mechanisms, it seems useful to allow Web developers to react to a more abstract set of user interactions: instead of having to work in terms of “click”, “key press”, or “touch event”, being able to react to an “undo” command, or a “next page” command independently of how the user instructed it to the device. The <a data-featureid="indie-ui-events">IndieUI Events</a> specification was an attempt to address this need. The work has been discontinued for now, due to lack of support from would-be implementers.</dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

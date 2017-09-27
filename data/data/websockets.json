@@ -1,0 +1,7 @@
+{
+    "TR": "https://www.w3.org/TR/websockets/",
+    "impl": {
+        "caniuse": "websockets",
+        "chromestatus": 6555138000945152
+    }
+}
