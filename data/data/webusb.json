@@ -1,0 +1,13 @@
+{
+    "title": "WebUSB API",
+    "wgs": [
+        {
+            "url": "https://wicg.github.io/webusb/",
+            "label": "Web Platform Incubator Community Group"
+        }
+    ],
+    "editors": "https://wicg.github.io/webusb/",
+    "impl": {
+        "chromestatus": 5651917954875392
+    }
+}

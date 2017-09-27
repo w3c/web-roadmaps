@@ -1,0 +1,7 @@
+{
+  "impl": {
+    "caniuse": "audio"
+  },
+  "TR": "https://www.w3.org/TR/html51/semantics-embedded-content.html#the-audio-element",
+  "feature": "audio element"
+}

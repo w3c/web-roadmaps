@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset="utf-8">
+  <title>Network Control</title>
+    <header>
+      <h1>Network Control</h1>
+      <p>The gains in performance from new network capabilities are highly dependent on the level of control that Web applications have on the network.</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <p data-feature="Network monitoring">The <a data-featureid="resource-timing">Resource Timing API</a> gives Web developers the tools needed to measure actual network performance on network operations.</p>
+        <p data-feature="Network protocol support">Originally, Web applications were limited to use the client/server model of network interactions over HTTP. <a data-featureid="websockets">Web Sockets</a> has added bidirectional network exchanges, and more recently, <a data-featureid="p2p">WebRTC datachannels</a> have brought UDP-like data transmission.</p>
+        <p data-feature="Network control">To ensure that the variation in network conditions don't prevent users from streaming videos, <a data-featureid="mse">Media Source Extensions</a> bring adaptive streaming to Web applications.</p>
+      </section>
+        <section class="featureset in-progress">
+          <h2>Specifications in progress</h2>
+          <p data-feature="Network protocol support">The introduction of the <a data-featureid="push">Push API</a> brings the possibilities for servers to be the initiator of network operators toward the client.</p>
+          <div data-feature="Network control">
+            <p><a data-featureid="resource-hints">Resource Hints</a> enables Web developers to give guidance to the browsers as to what network operations will be needed and in what priority.</p>
+            <p>The addition of <a data-featureid="serviceworkers">Service Workers</a> to the Open Web Platform brings a fully programmable client-side HTTP proxy to Web developers, enabling management of diverse network conditions, esp. offline and low-network situations.</p>
+            <p>The establishment of audio-video communications as enabled by WebRTC requires deeper integration with the network layer: for instance, WebRTC enables defining <a data-featureid="webrtc-relay">enterprise-configured network relays</a>, and <a data-featureid="webrtc-qos">QoS settings for data transmission</a>.</p>
+          </div>
+        </section>
+        <section class="featureset exploratory-work">
+          <h2>Exploratory work</h2>
+          <p data-feature="Network monitoring">The <a data-featureid="netinfo">Network Information API</a> exposes to Web developers the type of connectivity on which the device is operating (e.g. WIFI, 3G, 4G) and the average network characteristics associated with it.</p>
+          <p data-feature="Network control">The <a data-featureid="background-sync">Web Background Synchronization API</a> makes it possible to trigger network operations beyond the traditional lifecycle of a Web application, enabling apps to fetch and download assets in the background.</p>
+        </section>
+        <section>
+          <h2>Features not covered by ongoing work</h2>
+          <dl>
+            <dt>Real-time adaptative to live network conditions</dt>
+            <dd>The advent of Multi-Access Edge Computing (MEC) brings perspective of networks that can measure and report their current local conditions, as explored in the <a href="https://tools.ietf.org/html/draft-flinck-mobile-throughput-guidance-04">Mobile Throughput Guidance Inband Signaling Protocol</a>. How should a browser expose that data to apps?</dd>
+            <dt>Adaptation to cost of network operations</dt>
+            <dd>The <a href="https://developers.google.com/mobile-data-plan/">Google Mobile Data Plan API</a> enables some apps (e.g. YouTube) to optimize download times based on the mobile data plan of their users. Can this be generalized and combined e.g. with Background Synchronization?</dd>
+            <dt>Network-provided optimizations</dt>
+            <dd>WebRTC relies on application providers for identifying and resourcing relay servers to traverse NATs and firewalls. The <a href="https://tools.ietf.org/html/draft-wang-rtcweb-oars-02">Operator-Assisted Relay Service Architecture (OARS)</a> paves the way for a situation where network operators provide these as a service - can this architecture be expanded to facilitate more cases where network operators are better positioned to optimize network traffic?</dd>
+            <dt>Prioritization in enterprise networks</dt>
+            <dd><a href="https://blogs.cisco.com/enterprise/turning-promise-into-reality-with-ios-10">Apple & Cisco have collaborated to bring optimized network conditions for business applications in enterprise networks</a> - can the mechanism by which well-known apps get preferential treatments in controled environments be extended to Web applications?</dd>
+          </dl>
+        </section>
+</main>
+<script src="../js/generate.js"></script>
+    </body>
+</html>

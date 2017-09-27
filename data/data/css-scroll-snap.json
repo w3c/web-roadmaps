@@ -1,0 +1,6 @@
+{
+  "impl": {
+    "caniuse": "css-snappoints"
+  },
+  "TR": "https://www.w3.org/TR/css-scroll-snap-1/"
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <meta charset=utf-8>
+  <title>Roadmap of Security Technologies for the Web</title>
+  <header>
+    <h1>Roadmap of Security Technologies for the Web</h1>
+                <p>
+                  Securing the Web is a multi-layered challenge. To secure the Web experience of end-users: its confidentiality, integrity, and authentication; we need to provide tools for end-users, for application developers, and for platform security. Moreover, the security of Web applications depends on underlying protocols, on browser and server software, hence we need to enlist the cooperation of participants throughout the ecosystem.
+                </p>
+  </header>
+  <main>
+    <section class="featureset well-deployed">
+      <h2>Well-deployed technologies</h2>
+      <p data-feature="Encryption">The <a data-featureid="crypto">Web Cryptography API</a> provides a first step toward enabling secure authentication and communication from the browser, with standard APIs to cryptographic functions such as encryption, decryption, signing, hashing, and verification. WebCrypto allows a web developer to build in their application a reliable security model protecting the user (such as authentication or secure communication between the browser and the server).</p>
+              <div data-feature="Protecting against code injection">
+          <p><a data-featureid="csp">Content Security Policy</a>  provides a policy language by which application developers can declare a security policy for a web resource. The goal of this specification is to reduce attack surface by specifying overall rules for what content may or may not do, thus preventing violation of security assumptions by attackers who are able to partially manipulate that content, for example by script injection or cross-site request forgery. An application delivered over a secure channel with CSP enabled can assure that users receive it as it was intended to be executed.</p>
+          <p><a data-featureid="sri">Subresource Integrity</a> enables the secure incorporation of additional elements into the application.</p>
+        </div>
+        <p data-feature="HTTPs adoption">The <a data-featureid="mixedcontent">Mixed Content specification</a> helps to migrate the Web toward being secure by default, by setting clear rules as to when content that is not served over HTTPs can or cannot be loaded from an HTTPs page.</p>
+
+    </section>
+    <section class="featureset well-deployed">
+      <h2>Specifications in progress</h2>
+
+      <p data-feature="Authorization">Most browsers offer to store and protect their users' credentials to simplify authentification; the <a data-featureid="credential-management">Credential Management API</a> offers to further streamline that authentification by allowing Web applications to detect and automatically use these credentials if authorized.</p>
+      <p data-feature="Authentication">Building on the multi-factor authentication work of the FIDO Alliance, <a data-featureid="webauthn">Secure Authentication</a> aims to standardize multi-factor authentication for the Web, using the combination of "something you have" with "something you know," so that hacking a password database is no longer sufficient to hijack user accounts.</p>
+      <p data-feature="Secure contexts"><a data-featureid="securecontexts">Secure Contexts</a> recommends that powerful features of the Web platform, including application code with access to sensitive or private data, be delivered only in secure contexts, over authenticated and confidential channels that guarantee data integrity. As the draft indicates, "delivering code securely cannot ensure that an application will always meet a user's security and privacy requirements, but it is a necessary precondition."</p>
+        <p data-feature="HTTPs adoption">Web sites with a lot of existing content set up to use resources loaded over HTTP can find the task of migrating that content to HTTPs daunting. The <a data-featureid="uir">Upgrade Insecure Requests specification</a> helps that migration by letting the browser know to load these resources over HTTPs.</p>
+        <p data-feature="Sandboxing">The <a data-featureid="uisecurity">User Interface Security and the Visibility API</a> document proposes to eliminate clickjacking by assuring element visibility at the graphics rendering level. For instance, a developer deploying it can assure that users clicking their site's "pay" button aren't being tricked into transferring their bank balances to an imposter instead.</p>
+    </section>
+    <section class="featureset exploratory-work">
+      <h2>Exploratory work</h2>
+      <p data-feature="Authentication"><a data-featureid="hbss">Hardware Based Secure Services</a> aims to improve the levels of assurance to which users and application providers are able to protect their online accounts and communications, by making hardware security services available to the Web.</p>
+    </section>
+    <section>
+      <h2>Features not covered by ongoing work</h2>
+      <dl>
+      </dl>
+    </section>
+  </main>
+  <script src="../js/generate.js"></script>
+</html>

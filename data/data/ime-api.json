@@ -1,0 +1,6 @@
+{
+  "impl": {
+    "caniuse": "ime"
+  },
+  "TR": "https://www.w3.org/TR/ime-api/"
+}

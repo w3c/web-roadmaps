@@ -1,0 +1,8 @@
+{
+  "impl": {
+    "caniuse": "indexeddb",
+    "chromestatus": 6507459568992256,
+    "webkitstatus": "specification-indexed-database"
+  },
+  "TR": "https://www.w3.org/TR/IndexedDB/"
+}

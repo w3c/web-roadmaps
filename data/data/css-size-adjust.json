@@ -1,0 +1,11 @@
+{
+  "editors": "https://drafts.csswg.org/css-size-adjust/",
+  "wgs": [
+    {
+      "url": "http://www.w3.org/Style/CSS/members",
+      "label": "CSS Working Group"
+    }
+  ],
+  "impl": {},
+  "title": "CSS Mobile Text Size Adjustment Module Level 1"
+}

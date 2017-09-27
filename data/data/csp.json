@@ -1,0 +1,7 @@
+{
+  "TR": "https://www.w3.org/TR/CSP2/",
+  "impl": {
+    "caniuse": "contentsecuritypolicy2",
+    "chromestatus": 4957003285790720
+  }
+}

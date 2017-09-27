@@ -1,0 +1,17 @@
+{
+  "title": "Sourcing In-band Media Resource Tracks from Media Containers into HTML",
+  "wgs": [
+    {
+      "label": "Media Resource In-band Tracks Community Group",
+      "url": "https://www.w3.org/community/inbandtracks/"
+    }
+  ],
+  "editors": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
+  "impl": {
+    "caniuse": null,
+    "chromestatus": null,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Roadmap of Web Applications on Mobile",
+  "discourse": {
+    "category": "W3C’s discourse forum",
+    "url": "https://discourse.wicg.io/"
+  },
+  "pages": [
+    {
+      "url": "graphics.html",
+      "title": "Graphics and Layout",
+      "icon": "../assets/img/mobile-graphics.svg",
+      "description": "Features needed to design compelling and smooth user interfaces."
+    },
+    {
+      "url": "adaptation.html",
+      "title": "Device Adaptation",
+      "icon": "../assets/img/mobile-adaptation.svg",
+      "description": "Features needed to create responsive layouts, where content automatically adjusts itself to heterogeneous screens, input mechanisms and other device capabilities."
+    },
+    {
+      "url": "forms.html",
+      "title": "Forms",
+      "icon": "../assets/img/mobile-forms.svg",
+      "description": "Features needed to build rich forms and optimize user input on devices where text input remains a challenge."
+    },
+    {
+      "url": "storage.html",
+      "title": "Data Storage",
+      "icon": "../assets/img/mobile-storage.svg",
+      "description": "Technologies available to save state, export content, and integrate data from files and services on the system."
+    },
+    {
+      "url": "media.html",
+      "title": "Media",
+      "icon": "../assets/img/mobile-media.svg",
+      "description": "Features needed to create immersive audio/video experiences on mobile devices."
+    },
+    {
+      "url": "userinput.html",
+      "title": "User Input",
+      "icon": "../assets/img/mobile-userinput.svg",
+      "description": "Features needed to engage the user through device-specific interaction mechanisms, such as touch-based interactions, vibration, notifications."
+    },
+    {
+      "url": "sensors.html",
+      "title": "Sensors and Local Interactions",
+      "icon": "../assets/img/mobile-sensors.svg",
+      "description": "Hooks to interact with sensors that compose mobile devices, from accelerometers and geolocation sensors to proximity-based communication mechanisms."
+    },
+    {
+      "url": "network.html",
+      "title": "Network and Communications",
+      "icon": "../assets/img/mobile-network.svg",
+      "description": "Interactions with the network to bring the power and immense storage capabilities of the Web to otherwise limited mobile devices."
+    },
+    {
+      "url": "lifecycle.html",
+      "title": "Application Lifecycle",
+      "icon": "../assets/img/mobile-lifecycle.svg",
+      "description": "Mechanisms to integrate the application with the rest of the system and provide a native-like experience."
+    },
+    {
+      "url": "payment.html",
+      "title": "Payment and Services",
+      "icon": "../assets/img/mobile-payment.svg",
+      "description": "Features needed to monetize an application, e.g. by integrating easy-to-use in-app purchases."
+    },
+    {
+      "url": "performance.html",
+      "title": "Performance and Tuning",
+      "icon": "../assets/img/mobile-performance.svg",
+      "description": "Mechanisms to monitor and improve the performances of an application on highly-constrained mobile devices."
+    },
+    {
+      "url": "security.html",
+      "title": "Security and Privacy",
+      "icon": "../assets/img/mobile-security.svg",
+      "description": "Technologies and considerations to guarantee privacy and security on mobile devices that hold some of the user’s most private and confidential data."
+    }
+  ]
+}

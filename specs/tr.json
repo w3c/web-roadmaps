@@ -401,7 +401,7 @@
     ]
   }, 
   "eme": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Encrypted Media Extensions", 
     "wgs": [
       {
@@ -841,7 +841,7 @@
     ]
   }, 
   "payment-request": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Payment Request API", 
     "wgs": [
       {
@@ -862,7 +862,7 @@
   }, 
   "permissions": {
     "maturity": "WD", 
-    "title": "The Permissions API", 
+    "title": "Permissions", 
     "wgs": [
       {
         "label": "Web Application Security Working Group", 

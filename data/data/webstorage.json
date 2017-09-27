@@ -1,0 +1,7 @@
+{
+  "TR": "https://www.w3.org/TR/webstorage/",
+  "impl": {
+    "caniuse": "namevalue-storage",
+    "chromestatus": 5345825534246912
+  }
+}

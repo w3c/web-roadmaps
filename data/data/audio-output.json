@@ -1,0 +1,10 @@
+{
+  "impl": {
+    "caniuse": null,
+    "chromestatus": 4621603249848320,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  },
+  "TR": "https://www.w3.org/TR/audio-output/"
+}

@@ -1,0 +1,7 @@
+{
+  "TR": "https://www.w3.org/TR/html51/browsers.html#browser-state",
+  "impl": {
+    "caniuse": "online-status"
+  },
+  "feature": "onLine DOM flag"
+}
