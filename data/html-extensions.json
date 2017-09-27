@@ -1,0 +1,11 @@
+{
+    "title" : "HTML Extension Specifications",
+    "wgs": [
+        {
+          "url": "https://www.w3.org/WebPlatform/WG/",
+          "label": "Web Platform Working Group"
+        }
+    ],
+    "editors": "https://w3c.github.io/html-extensions/"
+}
+  
