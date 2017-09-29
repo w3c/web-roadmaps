@@ -1,4 +1,6 @@
 {
-  "impl": {},
+  "impl": {
+    "caniuse": "html-media-capture"    
+  },
   "TR": "https://www.w3.org/TR/html-media-capture/"
 }
