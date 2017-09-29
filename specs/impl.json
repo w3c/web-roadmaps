@@ -1059,10 +1059,20 @@
     ]
   }, 
   "inputaccept": {
+    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "bb", 
+      "samsung", 
+      "ios_saf", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
   }, 
   "inputdate": {
     "chromeid": null, 
