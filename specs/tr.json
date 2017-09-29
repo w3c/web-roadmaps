@@ -326,6 +326,16 @@
       }
     ]
   }, 
+  "css-fonts-4": {
+    "maturity": "WD", 
+    "title": "CSS Fonts Module Level 4", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-gcpm-3": {
     "maturity": "WD", 
     "title": "CSS Generated Content for Paged Media Module", 
@@ -349,6 +359,16 @@
   "css-page-floats-3": {
     "maturity": "WD", 
     "title": "CSS Page Floats", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
+  "css-rhythm-1": {
+    "maturity": "WD", 
+    "title": "CSS Rhythmic Sizing", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
