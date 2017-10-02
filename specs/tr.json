@@ -644,6 +644,16 @@
       }
     ]
   }, 
+  "html-media-capture": {
+    "maturity": "CR", 
+    "title": "HTML Media Capture", 
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group", 
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  }, 
   "html5-browsing-context": {
     "maturity": "CR", 
     "title": "HTML 5.2", 
@@ -723,16 +733,6 @@
     "wgs": [
       {
         "url": "http://www.w3.org/WAI/IndieUI/"
-      }
-    ]
-  }, 
-  "inputaccept": {
-    "maturity": "CR", 
-    "title": "HTML Media Capture", 
-    "wgs": [
-      {
-        "label": "Device and Sensors Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 

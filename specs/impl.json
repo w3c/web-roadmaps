@@ -933,6 +933,22 @@
       "ie_mob"
     ]
   }, 
+  "html-media-capture": {
+    "chromeid": null, 
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "and_uc", 
+      "baidu", 
+      "bb", 
+      "samsung", 
+      "ios_saf", 
+      "op_mob", 
+      "and_chr", 
+      "android"
+    ]
+  }, 
   "html5-download": {
     "chromeid": 6473924464345088, 
     "consideration": [], 
@@ -1056,22 +1072,6 @@
       "android", 
       "ie", 
       "ie_mob"
-    ]
-  }, 
-  "inputaccept": {
-    "chromeid": null, 
-    "consideration": [], 
-    "experimental": [], 
-    "indevelopment": [], 
-    "shipped": [
-      "and_uc", 
-      "baidu", 
-      "bb", 
-      "samsung", 
-      "ios_saf", 
-      "op_mob", 
-      "and_chr", 
-      "android"
     ]
   }, 
   "inputdate": {
