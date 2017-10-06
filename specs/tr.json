@@ -83,16 +83,12 @@
     ]
   }, 
   "audio-output": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Audio Output Devices API", 
     "wgs": [
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
-      }, 
-      {
-        "label": "Device and Sensors Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -603,10 +599,6 @@
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
-      }, 
-      {
-        "label": "Device and Sensors Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 
@@ -617,10 +609,6 @@
       {
         "label": "Web Real-Time Communications Working Group", 
         "url": "http://www.w3.org/2011/04/webrtc/"
-      }, 
-      {
-        "label": "Device and Sensors Working Group", 
-        "url": "http://www.w3.org/2009/dap/"
       }
     ]
   }, 

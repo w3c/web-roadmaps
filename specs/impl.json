@@ -234,10 +234,14 @@
     "shipped": []
   }, 
   "color-gamut": {
+    "chromeid": 5354410980933632, 
     "consideration": [], 
     "experimental": [], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "chrome", 
+      "safari"
+    ]
   }, 
   "contacts-sys": {
     "consideration": [], 
@@ -1569,12 +1573,13 @@
     ], 
     "indevelopment": [], 
     "shipped": [
+      "firefox", 
       "samsung", 
       "chrome", 
       "opera", 
-      "and_chr", 
-      "safari", 
       "op_mob", 
+      "safari", 
+      "and_chr", 
       "android"
     ]
   }, 
