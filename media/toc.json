@@ -31,7 +31,7 @@
     },
     {
       "url": "synchronized.html",
-      "title": "Content orchestration",
+      "title": "Media orchestration",
       "icon": "../assets/img/media-synchronization.svg",
       "description": "Features needed to synchronize multiple media or non-media content together, on one or several devices."
     },

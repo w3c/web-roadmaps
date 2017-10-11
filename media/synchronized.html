@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Content orchestration</title>
+    <title>Media orchestration</title>
   </head>
   <body>
     <header>
-      <h1>Content orchestration</h1>
+      <h1>Media orchestration</h1>
       <p>In media content, time is of the essence, and when playing media content simultaneously either within a single device or across devices, ensuring that audio, video and other time-based content are properly synchronized is critical to deliver a good user experience.</p>
     </header>
     <main>
@@ -18,6 +18,7 @@
           <p>To associate external text track (e.g. close captions) to to a video, the <a data-featureid="webvtt">Web VTT</a> format can be plugged into a <code>&lt;video&gt;</code> element.</p>
           <p>While WebVTT is the main format used to render captions in browsers, <a data-featureid="ttml">TTML 2</a> provides a richer language for describing timed text that can be used as an interchange format among authoring systems.</p>
         </div>
+        <p data-feature="Timestamp accuracy in captured content">The <a data-featureid="getusermedia">Media Capture and Streams API</a>, which allows to control microphones and cameras from Web applications, exposes the targeted <a href="https://www.w3.org/TR/mediacapture-streams/#def-constraint-latency">latency</a> of the configuration, which can be used to relate timestamps in captured content to events happening in the real world.</p>
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
