@@ -1358,6 +1358,7 @@
       "samsung", 
       "chrome", 
       "and_ff", 
+      "opera", 
       "op_mob", 
       "and_chr", 
       "android"
@@ -1498,7 +1499,6 @@
     "chromeid": 5639348045217792, 
     "consideration": [], 
     "experimental": [
-      "opera", 
       "firefox", 
       "and_qq"
     ], 
@@ -1507,6 +1507,7 @@
     ], 
     "shipped": [
       "chrome", 
+      "opera", 
       "edge", 
       "and_chr", 
       "samsung"
@@ -1576,6 +1577,7 @@
       "firefox", 
       "samsung", 
       "chrome", 
+      "and_ff", 
       "opera", 
       "op_mob", 
       "safari", 
@@ -1792,13 +1794,13 @@
   }, 
   "speech-api-recognition": {
     "chromeid": 5908775487668224, 
-    "consideration": [], 
+    "consideration": [
+      "edge"
+    ], 
     "experimental": [
       "firefox"
     ], 
-    "indevelopment": [
-      "edge"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "baidu", 
       "samsung", 

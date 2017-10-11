@@ -1102,7 +1102,7 @@
     ]
   }, 
   "requestidlecallback": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Cooperative Scheduling of Background Tasks", 
     "wgs": [
       {
