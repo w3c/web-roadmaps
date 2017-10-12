@@ -1222,6 +1222,25 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "media-frags": {
+    "chromeid": null, 
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": [
+      "firefox", 
+      "chrome", 
+      "ios_saf", 
+      "and_ff", 
+      "opera", 
+      "and_chr", 
+      "safari", 
+      "android", 
+      "ie_mob"
+    ]
+  }, 
   "media-playback-quality": {
     "consideration": [], 
     "experimental": [], 

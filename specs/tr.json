@@ -804,6 +804,15 @@
       }
     ]
   }, 
+  "media-frags": {
+    "maturity": "REC", 
+    "title": "Media Fragments URI 1.0 (basic)", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/2008/WebVideo/Fragments/"
+      }
+    ]
+  }, 
   "mediacontroller": {
     "maturity": "REC", 
     "title": "HTML5", 
