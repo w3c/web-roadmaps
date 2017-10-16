@@ -8,7 +8,7 @@
     <header>
         <h1>Technologies for Media Overlay</h1>
         <p>
-           Media Overlay is essential for many types of (Web) Publications (e.g., in accessibility or in children’s books). EPUB relies on a subset of SMIL to achieve that; this is not available for Web Publications, because browsers do not SMIL. An alternative is to define a simple set of features for a minimal level of declarative media synchronization, and use that as a basis for Media Overlay on the Web.
+           Media Overlay is essential for many types of (Web) Publications (e.g., in accessibility or in children’s books). EPUB relies on a subset of SMIL to achieve that; this is not available for Web Publications, because browsers do not implement SMIL. An alternative is to define a simple set of features for a minimal level of declarative media synchronization, and use that as a basis for Media Overlay on the Web.
         </p>
     </header>
     <main>
@@ -18,6 +18,10 @@
                 <li data-feature="Web Animation API">Beyond text tracks, Web pages may contain many other time-based animations with which synchronization can be useful; the <a data-featureid="webanimations">Web Animations API</a> offers the tools needed to set up these synchronization points. This may become the basis for the Media Overlay work both in terms of model and terminology, as well as possible implementation work.</li>
 
                 <li data-feature="HTML Extensions">Media Overlay <em>may</em> require some simple extensions to HTML (e.g., additional attributes for Media Overlays). The <a data-featureid="html-extensions">HTML Extension Specifications</a> provides a good starting point for the roadmap to such extensions.</li>
+
+                <li data-feature="Timed Text Markup Language"><a data-featureid="ttml">TTML</a> Content may be used directly as a distribution format, for example, providing a standard content format to reference from a <code>track</code> element in an HTML document, or a <code>text</code> or <code>textstream</code> media element in a SMIL&nbsp;3.0 document.</li>
+
+                <li data-feature="WebVTT: The Web Video Text Tracks Format">The main use of <a data-featureid="webvtt">WebVTT</a> is for marking up external text track resources in connection with the HTML <code>track</code> element. WebVTT files provide captions or subtitles for video content, and also text video descriptions [MAUR], chapters for content navigation, and more generally any form of metadata that is time-aligned with audio or video content.</li>
             </ul>
         </section>
         <section class="featureset exploratory-work">
