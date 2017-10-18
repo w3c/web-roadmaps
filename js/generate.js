@@ -1,17 +1,72 @@
+/**
+ * Wraps querySelectorAll to return an Array across browsers
+ */
 const $ = (el, selector) =>
   Array.prototype.slice.call(el.querySelectorAll(selector), 0);
 
-const sections = $(document, 'section').map(el => el.cloneNode(true));
-const hero = $(document, 'header > *').map(el => el.cloneNode(true));
+/**
+ * Applied to an element, sets an ID for it (and returns it), using a specific
+ * prefix if provided, and a specific text if given.
+ *
+ * This code comes from Respec:
+ * https://github.com/w3c/respec/blob/develop/src/core/jquery-enhanced.js
+ *
+ * Changes made to Respec code:
+ * - "elem" added as first parameter
+ * - "txt" initialized with value of "data-feature" or "data-featureid"
+ * attributes when present
+ */
+const makeID = function(elem, pfx = "", txt = "", noLC = false) {
+  if (elem.id) {
+    return elem.id;
+  }
+  if (!txt) {
+    txt = (elem.getAttribute('data-featureid') ? elem.getAttribute('data-featureid') :
+      (elem.getAttribute('data-feature') ? elem.getAttribute('data-feature') :
+        (elem.title ? elem.title : elem.textContent))).trim();
+  }
+  var id = noLC ? txt : txt.toLowerCase();
+  id = id
+    .replace(/[\W]+/gmi, "-")
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
+  if (!id) {
+    id = "generatedID";
+  } else if (/\.$/.test(id) || !/^[a-z]/i.test(id)) {
+    id = "x" + id; // trailing . doesn't play well with jQuery
+  }
+  if (pfx) {
+    id = `${pfx}-${id}`;
+  }
+  if (elem.ownerDocument.getElementById(id)) {
+    let i = 0;
+    let nextId = id + "-" + i;
+    while (elem.ownerDocument.getElementById(nextId)) {
+      nextId = id + "-" + i++;
+    }
+    id = nextId;
+  }
+  elem.id = id;
+  return id;
+};
 
+/**
+ * List of scripts to include in all pages
+ */
 const scripts = ['../js/sidenav.js'];
 
+/**
+ * Table templates per section type
+ */
 const templates = {
   'well-deployed': '<table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current Implementations</th></tr></thead><tbody></tbody></table>',
   'exploratory-work':  '<table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody></tbody></table>'
 };
 const templateTocItem = '<a href=""><div class="description"></div></a>';
 
+/**
+ * List of maturity levels
+ */
 const maturityLevels = {
   'ED': 'low',
   'LastCall': 'medium',
@@ -23,6 +78,9 @@ const maturityLevels = {
   'LS': 'high'
 };
 
+/**
+ * Known browsers
+ */
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
 
 
@@ -88,14 +146,29 @@ let templateXhr = new XMLHttpRequest();
 templateXhr.responseType = 'text';
 templateXhr.open('GET', '../js/template-page');
 templateXhr.onload = function() {
+  // Save useful content from initial document
+  // (custom elements in the head, main header and sections)
+  const headElements = $(document, 'head > *').filter(el =>
+    (el.nodeName !== 'TITLE') &&
+    !((el.nodeName === 'META') && el.getAttribute('charset')));
+  const hero = $(document, 'header > *');
+  const sections = $(document, 'section');
+
+  // Replace doc by template doc and complete with content saved above
   document.documentElement.innerHTML = this.responseText;
-  sections.forEach(section => document.querySelector('.main-content .container').appendChild(section));
+  headElements.forEach(el => document.querySelector('head').appendChild(el));
   hero.forEach(el => document.querySelector('.hero .container').appendChild(el));
+  sections.forEach(section => document.querySelector('.main-content .container').appendChild(section));
+
   scripts.forEach(script => {
     let s = document.createElement("script");
     s.src = script;
     document.querySelector('body').appendChild(s);
   });
+
+  // Add IDs to all headers, data-feature paragraphs and data-featureid elements
+  $(document, 'h2:not([id]), h3:not([id]), h4:not([id]), h5:not([id]), h6:not([id]), *[data-feature]:not([id]), *[data-featureid]:not([id])')
+    .forEach(el => makeID(el));
 
   let tocXhr = new XMLHttpRequest();
   tocXhr.open('GET', 'toc.json');
@@ -130,7 +203,7 @@ templateXhr.onload = function() {
     implXhr.open('GET', '../specs/impl.json');
     implXhr.onload = function() {
       implData = JSON.parse(this.responseText);
-      fillTables();
+      fillTables(sections);
     }
     implXhr.send();
   };
@@ -139,7 +212,7 @@ templateXhr.onload = function() {
 templateXhr.send();
 
 
-function fillTables() {
+function fillTables(sections) {
   let counterReq = 0;
   let counterRes = 0;
 
@@ -202,9 +275,20 @@ function fillTables() {
             } catch (e) {
               console.error('Failed to parse ' + spec + '.json: ' + x.responseText + '(' + e + ')');
             }
-            $(document, 'a[data-featureid="' + s + '"]').forEach(link =>
-              link.setAttribute('href', data.editors || data.ls || data.TR)
-            );
+
+            // Complete links to this specification with the right URL and the
+            // spec title if the link is empty
+            $(document, 'a[data-featureid="' + s + '"]').forEach(link => {
+              link.setAttribute('href', data.editors || data.ls || data.TR);
+              if (!link.textContent) {
+                if (data.feature) {
+                  link.textContent = data.feature;
+                }
+                else if (specData[s] && specData[s].title) {
+                  link.textContent = specData[s].title;
+                }
+              }
+            });
             if (data.TR) {
               if (!specData[s]) {
                 console.error('No spec data on ' + s);
@@ -314,4 +398,3 @@ function formatImplData(data, implType) {
 
   return div;
 }
-

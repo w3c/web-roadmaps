@@ -1,8 +1,6 @@
 const $ = (el, selector) =>
   Array.prototype.slice.call(el.querySelectorAll(selector), 0);
 
-const hero = $(document, 'header > *').map(el => el.cloneNode(true));
-
 const scripts = ['../js/sidenav.js'];
 
 const templateItem = '<a href=""><div class="icon"><img src="" width="45" alt=""></div><div class="description"><h2></h2><p></p></div></a>';
@@ -12,7 +10,16 @@ let templateXhr = new XMLHttpRequest();
 templateXhr.responseType = 'text';
 templateXhr.open('GET', '../js/template-index');
 templateXhr.onload = function() {
+  // Save useful content from initial document
+  // (custom elements in the head, main header)
+  const headElements = $(document, 'head > *').filter(el =>
+    (el.nodeName !== 'TITLE') &&
+    !((el.nodeName === 'META') && el.getAttribute('charset')));
+  const hero = $(document, 'header > *');
+
+  // Replace doc by template doc and complete with content saved above
   document.documentElement.innerHTML = this.responseText;
+  headElements.forEach(el => document.querySelector('head').appendChild(el));
   hero.forEach(el => document.querySelector('.hero .container').appendChild(el));
 
   let tocXhr = new XMLHttpRequest();
