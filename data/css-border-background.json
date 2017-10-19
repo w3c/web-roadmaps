@@ -1,5 +1,5 @@
 {
-  "TR": "https://www.w3.org/TR/css3-background/",
+  "TR": "https://www.w3.org/TR/css-backgrounds-3/",
   "feature": "Complex backgrounds",
   "impl": {
     "caniuse": "border-radius"
