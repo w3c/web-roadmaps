@@ -1980,6 +1980,12 @@
     "indevelopment": [], 
     "shipped": []
   }, 
+  "ttml-imsc11": {
+    "consideration": [], 
+    "experimental": [], 
+    "indevelopment": [], 
+    "shipped": []
+  }, 
   "ttml1": {
     "consideration": [], 
     "experimental": [], 
@@ -2182,7 +2188,6 @@
     "chromeid": 5453022515691520, 
     "consideration": [], 
     "experimental": [
-      "edge", 
       "and_qq"
     ], 
     "indevelopment": [], 
@@ -2192,6 +2197,7 @@
       "ios_saf", 
       "and_ff", 
       "opera", 
+      "edge", 
       "and_chr", 
       "safari", 
       "android"

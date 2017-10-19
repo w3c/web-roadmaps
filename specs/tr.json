@@ -252,36 +252,6 @@
       }
     ]
   }, 
-  "css-border-background": {
-    "maturity": "CR", 
-    "title": "CSS Backgrounds and Borders Module Level 3", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
-  "css-border-radius": {
-    "maturity": "CR", 
-    "title": "CSS Backgrounds and Borders Module Level 3", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
-  "css-border-shadow": {
-    "maturity": "CR", 
-    "title": "CSS Backgrounds and Borders Module Level 3", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
   "css-break-3": {
     "maturity": "CR", 
     "title": "CSS Fragmentation Module Level 3", 
@@ -1286,6 +1256,16 @@
   "ttml-imsc1": {
     "maturity": "REC", 
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)", 
+    "wgs": [
+      {
+        "label": "Timed Text Working Group", 
+        "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "ttml-imsc11": {
+    "maturity": "WD", 
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1", 
     "wgs": [
       {
         "label": "Timed Text Working Group", 
