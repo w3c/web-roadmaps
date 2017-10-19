@@ -146,8 +146,8 @@ let templateXhr = new XMLHttpRequest();
 templateXhr.responseType = 'text';
 templateXhr.open('GET', '../js/template-page');
 templateXhr.onload = function() {
-  // Save useful content from initial document
-  // (custom elements in the head, main header and sections)
+  // Preserve initial content that needs to appear in final document
+  // (head elements, main header and sections)
   const headElements = $(document, 'head > *').filter(el =>
     (el.nodeName !== 'TITLE') &&
     !((el.nodeName === 'META') && el.getAttribute('charset')));
