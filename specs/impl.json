@@ -1697,7 +1697,9 @@
     "consideration": [
       "edge"
     ], 
-    "experimental": [], 
+    "experimental": [
+      "safari"
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
