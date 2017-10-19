@@ -352,6 +352,16 @@
       }
     ]
   }, 
+  "css-line-grid-1": {
+    "maturity": "WD", 
+    "title": "CSS Line Grid Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-page-floats-3": {
     "maturity": "WD", 
     "title": "CSS Page Floats", 
@@ -1101,7 +1111,7 @@
     ]
   }, 
   "remote-playback": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Remote Playback API", 
     "wgs": [
       {
