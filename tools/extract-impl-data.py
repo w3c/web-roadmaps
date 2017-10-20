@@ -9,7 +9,7 @@ errors = []
 # property.
 sources = {
     "caniuse": {
-        "url": "http://caniuse.com/data.json"
+        "url": "https://caniuse.com/data.json"
     },
     "chromestatus": {
         "url": "https://www.chromestatus.com/features.json",
@@ -30,7 +30,7 @@ def normalize_ua(sourceName, ua):
     return ua
 
 
-def getImplementationStatusFromSource(origdata, sourceName, key, silentfail = False):
+def get_implementation_status_from_source(origdata, sourceName, key, silentfail=False):
     source = sources[sourceName]["data"]
     impl = origdata["implementations"]
     chromeid = origdata.get("chromeid", None)
@@ -138,7 +138,7 @@ def processData():
     for key, source in sources.iteritems():
         unparsedjson = urlopen(source["url"])
         sources[key]["data"] = json.loads(unparsedjson.read())
-        if not sources[key].has_key("coreua"):
+        if "coreua" not in sources[key]:
             sources[key]["coreua"] = []
 
     # Loop through files given as command line parameters and compute the
@@ -157,20 +157,20 @@ def processData():
 
         # Compute implementation status only when we know where to look in the
         # implementation data
-        if feature_data.has_key("impl"):
+        if "impl" in feature_data:
             data[id] = { "implementations": [] }
             for sourceName, foo in sources.iteritems():
                 # If we have the id returned by the Chrome status platform, we
                 # can try to look at the Edge status platform, since it uses
                 # that ID as well
-                if data[id].has_key("chromeid") and sourceName == "edgestatus":
-                    data[id] = getImplementationStatusFromSource(
+                if ("chromeid" in data[id]) and (sourceName == "edgestatus"):
+                    data[id] = get_implementation_status_from_source(
                         data[id], sourceName, data[id]["chromeid"], silentfail = True)
 
                 # Otherwise, assemble the implementation info that we expect
                 # (note this may set "chromeid" on data[id])
                 if feature_data["impl"].get(sourceName, None):
-                    data[id] = getImplementationStatusFromSource(
+                    data[id] = get_implementation_status_from_source(
                         data[id], sourceName, feature_data["impl"][sourceName])
 
             # Compute the final implementation status for each user agent with
