@@ -3,35 +3,54 @@ import json
 from urllib import urlopen
 errors = []
 
-sources = {"caniuse": "http://caniuse.com/data.json", "chromestatus": "https://www.chromestatus.com/features.json", "edgestatus": "https://raw.githubusercontent.com/MicrosoftEdge/Status/production/status.json", "webkitstatus": "https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json"}
+# Implementation data sources
+# Some of these sources are maintained by browser vendors, and thus contain
+# "more accurate" data for some user agents. These UA appear in the "coreua"
+# property.
+sources = {
+    "caniuse": {
+        "url": "https://caniuse.com/data.json"
+    },
+    "chromestatus": {
+        "url": "https://www.chromestatus.com/features.json",
+        "coreua": ["chrome"]
+    },
+    "edgestatus": {
+        "url": "https://raw.githubusercontent.com/MicrosoftEdge/Status/production/status.json",
+        "coreua": ["edge"]
+    },
+    "webkitstatus": {
+        "url": "https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json",
+        "coreua": ["webkit", "safari"]
+    }
+}
 
-def normalize_ua(source, ua):
+
+def normalize_ua(sourceName, ua):
     return ua
 
 
-def feature_status(origdata, source, key, silentfail = False):
-    shipped = origdata["shipped"]
-    exp = origdata["experimental"]
-    indev = origdata["indevelopment"]
-    consider = origdata["consideration"]
+def get_implementation_status_from_source(origdata, sourceName, key, silentfail=False):
+    source = sources[sourceName]["data"]
+    impl = origdata["implementations"]
     chromeid = origdata.get("chromeid", None)
-    if source=="caniuse":
-        for ua, uadata in sources[source]["data"][key]["stats"].iteritems():
-            latest_version = sources[source]["agents"][ua]["versions"][-4]
-            experimental_versions = sources[source]["agents"][ua]["versions"][-3:]
+    if sourceName=="caniuse":
+        for ua, uadata in source["data"][key]["stats"].iteritems():
+            latest_version = source["agents"][ua]["versions"][-4]
+            experimental_versions = source["agents"][ua]["versions"][-3:]
 
-            ua = normalize_ua(source, ua)
+            ua = normalize_ua(sourceName, ua)
             if uadata[latest_version].startswith("y") or uadata[latest_version].startswith("a"):
-                shipped.add(ua)
+                impl.append({ "ua": ua, "status": "shipped", "source": sourceName })
             elif uadata[latest_version].startswith("n d"):
-                exp.add(ua)
+                impl.append({ "ua": ua, "status": "experimental", "source": sourceName })
             else:
                 for version in experimental_versions:
                     if version:
                         if uadata[version].startswith("y") or uadata[version].startswith("n d"):
-                            exp.add(ua)
-    elif source=="chromestatus":
-        matching_data = filter(lambda a: a["id"]==key, sources[source])
+                            impl.append({ "ua": ua, "status": "experimental", "source": sourceName })
+    elif sourceName=="chromestatus":
+        matching_data = filter(lambda a: a["id"]==key, source)
         chromestatus = None
         firefoxstatus = None
         if not(len(matching_data)):
@@ -47,39 +66,39 @@ def feature_status(origdata, source, key, silentfail = False):
             edgestatus = feature_data["edge"]["view"]["text"]
             safaristatus = feature_data["safari"]["view"]["text"]
         if chromestatus == "Enabled by default":
-            shipped.add("chrome")
+            impl.append({ "ua": "chrome", "status": "shipped", "source": sourceName })
         elif chromestatus == "Behind a flag":
-            exp.add("chrome")
+            impl.append({ "ua": "chrome", "status": "experimental", "source": sourceName })
         elif chromestatus == "Origin trial":
-            exp.add("chrome")
+            impl.append({ "ua": "chrome", "status": "experimental", "source": sourceName })
         elif chromestatus == "In development":
-            indev.add("chrome")
+            impl.append({ "ua": "chrome", "status": "indevelopment", "source": sourceName })
         elif chromestatus == "Proposed":
-            consider.add("chrome")
+            impl.append({ "ua": "chrome", "status": "consideration", "source": sourceName })
         if firefoxstatus == "Shipped":
-            shipped.add("firefox")
+            impl.append({ "ua": "firefox", "status": "shipped", "source": sourceName })
         elif firefoxstatus == "In development":
-            indev.add("firefox")
+            impl.append({ "ua": "firefox", "status": "indevelopment", "source": sourceName })
         elif firefoxstatus == "Public support":
-            consider.add("firefox")
+            impl.append({ "ua": "firefox", "status": "consideration", "source": sourceName })
         if edgestatus == "Shipped":
-            shipped.add("edge")
+            impl.append({ "ua": "edge", "status": "shipped", "source": sourceName })
         elif edgestatus == "In development":
-            indev.add("edge")
+            impl.append({ "ua": "edge", "status": "indevelopment", "source": sourceName })
         elif edgestatus == "Public support":
-            consider.add("edge")
+            impl.append({ "ua": "edge", "status": "consideration", "source": sourceName })
         if safaristatus == "Shipped":
-            shipped.add("safari")
+            impl.append({ "ua": "safari", "status": "shipped", "source": sourceName })
         elif safaristatus == "In development":
-            indev.add("safari")
+            impl.append({ "ua": "safari", "status": "indevelopment", "source": sourceName })
         elif safaristatus == "Public support":
-            consider.add("safari")
-    elif source=="edgestatus":
+            impl.append({ "ua": "safari", "status": "consideration", "source": sourceName })
+    elif sourceName=="edgestatus":
         key_filter = "id"
         if type(key) is unicode:
             key_filter = "name"
         try:
-            feature_data = filter(lambda a: a.get(key_filter, None)==key, sources[source])[0]
+            feature_data = filter(lambda a: a.get(key_filter, None)==key, source)[0]
             edgestatus = feature_data["ieStatus"]["text"]
         except IndexError:
             if not silentfail:
@@ -88,34 +107,42 @@ def feature_status(origdata, source, key, silentfail = False):
                 errors.append(err)
             edgestatus = ""
         if edgestatus in ["Shipped", "Prefixed"]:
-            shipped.add("edge")
+            impl.append({ "ua": "edge", "status": "shipped", "source": sourceName })
         elif edgestatus.lower() == "preview release":
-            exp.add("edge")
+            impl.append({ "ua": "edge", "status": "experimental", "source": sourceName })
         elif edgestatus == "In Development":
-            indev.add("edge")
+            impl.append({ "ua": "edge", "status": "indevelopment", "source": sourceName })
         elif edgestatus == "Under Consideration":
-            consider.add("edge")
-    elif source=="webkitstatus":
+            impl.append({ "ua": "edge", "status": "consideration", "source": sourceName })
+    elif sourceName=="webkitstatus":
         keytype = key.split("-")[0]
         if keytype == "feature":
             keytype = "features"
         keyname = " ".join(key.split("-")[1:])
-        feature_data = filter(lambda a: a["name"].lower() == keyname, sources[source][keytype])[0]
+        feature_data = filter(lambda a: a["name"].lower() == keyname, source[keytype])[0]
         webkitstatus = feature_data.get("status",{}).get("status", "")
         if webkitstatus == "Done" or webkitstatus == "Partial Support":
-            shipped.add("webkit")
+            impl.append({ "ua": "webkit", "status": "shipped", "source": sourceName })
         elif webkitstatus == "In Development":
-            indev.add("webkit")
+            impl.append({ "ua": "webkit", "status": "indevelopment", "source": sourceName })
         elif webkitstatus == "Under Consideration":
-            consider.add("webkit")
-    return {"shipped":shipped, "experimental":exp, "indevelopment": indev, "consideration": consider, "chromeid": chromeid}
+            impl.append({ "ua": "webkit", "status": "consideration", "source": sourceName })
+    return {
+        "implementations": impl,
+        "chromeid": chromeid
+    }
 
 
 def processData():
-    for key, url in sources.iteritems():
-        unparsedjson = urlopen(url)
-        sources[key] = json.loads(unparsedjson.read())
+    # Load implementation data per source
+    for key, source in sources.iteritems():
+        unparsedjson = urlopen(source["url"])
+        sources[key]["data"] = json.loads(unparsedjson.read())
+        if "coreua" not in sources[key]:
+            sources[key]["coreua"] = []
 
+    # Loop through files given as command line parameters and compute the
+    # implementation status for each of them
     data = {}
     for filename in sys.argv[1:]:
         id = filename.split("/")[-1].split(".")[0]
@@ -127,26 +154,90 @@ def processData():
             sys.stderr.write(err)
             errors.append(err)
             feature_data = {}
-        if feature_data.has_key("impl"):
-            data[id]={"shipped":set(), "experimental": set(), "indevelopment": set(), "consideration": set()}
-            for key, url in sources.iteritems():
-                if data[id].has_key("chromeid") and key == "edgestatus":
-                    data[id] = feature_status(data[id], key, data[id]["chromeid"], silentfail = True)
-                if feature_data["impl"].get(key, None):
-                    data[id] = feature_status(data[id], key, feature_data["impl"][key])
 
-            # in case of overlapping / conflicting data, we keep the most optimistic
+        # Compute implementation status only when we know where to look in the
+        # implementation data
+        if "impl" in feature_data:
+            data[id] = { "implementations": [] }
+            for sourceName, foo in sources.iteritems():
+                # If we have the id returned by the Chrome status platform, we
+                # can try to look at the Edge status platform, since it uses
+                # that ID as well
+                if ("chromeid" in data[id]) and (sourceName == "edgestatus"):
+                    data[id] = get_implementation_status_from_source(
+                        data[id], sourceName, data[id]["chromeid"], silentfail = True)
 
-            statuses = ["consideration", "indevelopment", "experimental", "shipped"]
-            for status in ["consideration", "indevelopment", "experimental"]:
-                higherstatuses = statuses[statuses.index(status)+1:]
-                for ua in data[id][status].copy():
-                    for st in higherstatuses:
-                        if ua in data[id][st]:
-                            data[id][status].remove(ua)
-                            break
-            # turning the sets into lists for JSON serialization
-            for status in statuses:
+                # Otherwise, assemble the implementation info that we expect
+                # (note this may set "chromeid" on data[id])
+                if feature_data["impl"].get(sourceName, None):
+                    data[id] = get_implementation_status_from_source(
+                        data[id], sourceName, feature_data["impl"][sourceName])
+
+            # Compute the final implementation status for each user agent with
+            # the following rules:
+            # 1. Trust platform sources to say the right thing about their own
+            # user-agent or rendering engine. For instance, if chromestatus says
+            # that a feature is "in development" in Chrome, consider that the
+            # feature is really "in development" in Chrome, and ignore possible
+            # claims in other sources that the feature is "shipped" in Chrome
+            # 2. Keep the most optimistic status otherwise, meaning that if
+            # chromestatus says that feature A has shipped in Edge while
+            # caniuse says it is in development, consider that the feature has
+            # shipped in Edge
+            # 3. Due to the close relationship between webkit and Safari, trust
+            # webkitstatus more than any other source about support in Safari.
+            # If webkitstatus says that a feature is in development in webkit,
+            # it means it cannot be at a more advanced level in Safari. In other
+            # words, constrain the implementation status in Safari to the
+            # implementation status in Webkit, when it is known to be lower.
+            # 4. Also, once 3. is done, drop the Webkit entry when there is also
+            # an entry for Safari. No need to confuse people with the
+            # distinction between Safari and Webkit, unless that is needed
+            # (it's only going to be needed for features that are being
+            # developed in Webkit but for which there has not been any public
+            # signal about support in Safari)
+            data[id] = {
+                "implementations": data[id]["implementations"],
+                "shipped": set(),
+                "experimental": set(),
+                "indevelopment": set(),
+                "consideration": set()
+            }
+            statuses = ["", "consideration", "indevelopment", "experimental", "shipped"]
+
+            # Extract the list of user agents that appear in implementation
+            # data, computing the status for "webkit" on the side to be able to
+            # apply rules 3 and 4, and apply rules for each user agent.
+            # (Note this code assumes that the webkitstatus platform is the only
+            # source that describes the implementation status in webkit)
+            uas = set(impl["ua"] for impl in data[id]["implementations"] if impl["ua"] != "webkit")
+            webkitstatus = [impl["status"] for impl in data[id]["implementations"] if impl["ua"] == "webkit"]
+            webkitstatus = webkitstatus[0] if len(webkitstatus) > 0 else ""
+            for ua in uas:
+                status = ""
+                impldata = [impl for impl in data[id]["implementations"] if impl["ua"] == ua]
+                for impl in impldata:
+                    if (ua == "safari") and (webkitstatus != "") and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
+                        # Rule 3, constrain safari status to that of webkit
+                        # when it is lower
+                        status = webkitstatus
+                    elif (ua in sources[impl["source"]]["coreua"]):
+                        # Rule 1, stop here, status comes from the right
+                        # platform, we've found the implementation status
+                        status = impl["status"]
+                        break;
+                    elif (statuses.index(impl["status"]) > statuses.index(status)):
+                        # Rule 2, be optimistic in life
+                        status = impl["status"]
+                if (status != ""):
+                    data[id][status].add(ua)
+
+            # Rule 4, insert Webkit entry if there was no Safari entry
+            if ((webkitstatus != "") and ("safari" not in uas)):
+                data[id][webkitstatus].add("webkit")
+
+            # Convert sets back to lists for JSON serialization
+            for status in statuses[1:]:
                 data[id][status] = list(data[id][status])
 
     print json.dumps(data, sort_keys=True, indent=2)
