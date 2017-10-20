@@ -1,41 +1,165 @@
 {
   "3dcamera": {
-    "chromeid": 5713419084759040, 
     "consideration": [
       "firefox"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
     "shipped": []
   }, 
   "accelerometer": {
-    "chromeid": 5698781827825664, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
     "shipped": []
   }, 
   "ambientlight": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [
       "chrome"
     ], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
-      "and_ff", 
+      "firefox", 
       "edge", 
-      "firefox"
+      "and_ff"
     ]
   }, 
   "animation-frames": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -60,13 +184,125 @@
   "annotation-model": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "appcache": {
-    "chromeid": 6192449487634432, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -89,11 +325,72 @@
     ]
   }, 
   "appmanifest": {
-    "chromeid": 6488656873259008, 
     "consideration": [
       "webkit"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "consideration", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
     "indevelopment": [
       "edge"
     ], 
@@ -109,9 +406,95 @@
     ]
   }, 
   "audio": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -134,11 +517,22 @@
     ]
   }, 
   "audio-output": {
-    "chromeid": 4621603249848320, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome"
@@ -147,13 +541,30 @@
   "autocomplete": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "background-sync": {
-    "chromeid": 6170807885627392, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "edge", 
       "firefox"
@@ -163,9 +574,55 @@
     ]
   }, 
   "battery": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -180,10 +637,96 @@
     ]
   }, 
   "beacon": {
-    "chromeid": 5517433905348608, 
     "consideration": [], 
     "experimental": [
       "safari"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -202,9 +745,100 @@
     ]
   }, 
   "canvas": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -230,13 +864,25 @@
   "color-canvas": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "color-gamut": {
-    "chromeid": 5354410980933632, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -246,13 +892,100 @@
   "contacts-sys": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "cors": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -275,11 +1008,52 @@
     ]
   }, 
   "credential-management": {
-    "chromeid": 5026422640869376, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [
       "safari"
     ], 
@@ -292,9 +1066,110 @@
     ]
   }, 
   "crypto": {
-    "chromeid": 5030265697075200, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -317,13 +1192,105 @@
   "cryptokey": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "csp": {
-    "chromeid": 4957003285790720, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -342,9 +1309,95 @@
     ]
   }, 
   "css-2d": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -367,9 +1420,95 @@
     ]
   }, 
   "css-3d": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -392,9 +1531,95 @@
     ]
   }, 
   "css-animation": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -417,9 +1642,95 @@
     ]
   }, 
   "css-border-background": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -442,9 +1753,95 @@
     ]
   }, 
   "css-border-radius": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -467,9 +1864,95 @@
     ]
   }, 
   "css-border-shadow": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -492,9 +1975,100 @@
     ]
   }, 
   "css-break-3": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -520,16 +2094,68 @@
   "css-color-space": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "css-device-adapt": {
-    "chromeid": 4737164243894272, 
     "consideration": [], 
     "experimental": [
       "chrome", 
       "opera", 
       "and_qq"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -540,9 +2166,90 @@
     ]
   }, 
   "css-font-loading": {
-    "chromeid": 6244676289953792, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -561,9 +2268,65 @@
     ]
   }, 
   "css-grid-1": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -580,9 +2343,40 @@
     ]
   }, 
   "css-scroll-snap": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -596,13 +2390,90 @@
   "css-size-adjust": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "css-touch-action": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -623,9 +2494,95 @@
     ]
   }, 
   "css-transitions": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -648,11 +2605,97 @@
     ]
   }, 
   "css-will-change": {
-    "chromeid": 5954199330226176, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -671,9 +2714,95 @@
     ]
   }, 
   "datalist": {
-    "chromeid": 6090950820495360, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -693,24 +2822,124 @@
   "ddr": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "device-memory": {
-    "chromeid": 5119701235531776, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome"
     ]
   }, 
   "deviceorientation": {
-    "chromeid": null, 
-    "consideration": [], 
+    "consideration": [
+      "edge"
+    ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -723,7 +2952,6 @@
       "and_ff", 
       "and_qq", 
       "opera", 
-      "edge", 
       "op_mob", 
       "and_chr", 
       "android", 
@@ -732,11 +2960,27 @@
     ]
   }, 
   "domcapture": {
-    "chromeid": 5522768674160640, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -744,9 +2988,35 @@
     ]
   }, 
   "eme": {
-    "chromeid": 6578378068983808, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -756,9 +3026,80 @@
     ]
   }, 
   "eventsource": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -778,9 +3119,100 @@
     ]
   }, 
   "fetch": {
-    "chromeid": 6730533392351232, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -799,9 +3231,95 @@
     ]
   }, 
   "fileapi": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -824,9 +3342,125 @@
     ]
   }, 
   "flexbox": {
-    "chromeid": 4837301406400512, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -850,9 +3484,95 @@
     ]
   }, 
   "geolocation": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -875,9 +3595,100 @@
     ]
   }, 
   "getusermedia": {
-    "chromeid": 5755699816562688, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -900,22 +3711,115 @@
   "getusermedia-cap": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "gyroscope": {
-    "chromeid": 5698781827825664, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
     "shipped": []
   }, 
   "hr-time": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -938,9 +3842,50 @@
     ]
   }, 
   "html-media-capture": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -954,9 +3899,95 @@
     ]
   }, 
   "html5-download": {
-    "chromeid": 6473924464345088, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -976,9 +4007,95 @@
     ]
   }, 
   "html5-sandbox": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1001,9 +4118,95 @@
     ]
   }, 
   "htmlmediaelement": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1026,9 +4229,20 @@
     ]
   }, 
   "imagecapture": {
-    "chromeid": 4843864737185792, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }
+    ], 
     "indevelopment": [
       "firefox"
     ], 
@@ -1037,9 +4251,25 @@
     ]
   }, 
   "ime-api": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "edge", 
@@ -1050,13 +4280,125 @@
   "inband": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "indexeddb": {
-    "chromeid": 6507459568992256, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1079,10 +4421,81 @@
     ]
   }, 
   "inputdate": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [
       "firefox"
+    ], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -1102,9 +4515,100 @@
     ]
   }, 
   "inputhint": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1128,19 +4632,116 @@
     ]
   }, 
   "inputmode": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [
-      "and_ff", 
-      "firefox"
+      "firefox", 
+      "and_ff"
+    ], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_ff"
+      }
     ], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "inputpattern": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1163,9 +4764,95 @@
     ]
   }, 
   "inputtext": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1188,11 +4875,91 @@
     ]
   }, 
   "intersectionobserver": {
-    "chromeid": 5695342691483648, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [
-      "webkit", 
       "safari"
     ], 
     "shipped": [
@@ -1208,9 +4975,15 @@
     ]
   }, 
   "magnetometer": {
-    "chromeid": 5698781827825664, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
@@ -1219,15 +4992,67 @@
   "media-capabilities": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "media-frags": {
-    "chromeid": null, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -1244,25 +5069,119 @@
   "media-playback-quality": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "mediacontroller": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "mediakeys": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "mediaqueries": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1286,21 +5205,48 @@
     ]
   }, 
   "mediaqueries4": {
-    "chromeid": null, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "mediasession": {
-    "chromeid": 5639924124483584, 
     "consideration": [
       "edge", 
       "firefox"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "safari"
     ], 
@@ -1309,9 +5255,25 @@
     ]
   }, 
   "mixedcontent": {
-    "chromeid": 6263395770695680, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -1320,9 +5282,100 @@
     ]
   }, 
   "mse": {
-    "chromeid": 4563797888991232, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1342,9 +5395,95 @@
     ]
   }, 
   "navigation-timing": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1367,9 +5506,60 @@
     ]
   }, 
   "netinfo": {
-    "chromeid": 6338383617982464, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -1384,9 +5574,55 @@
     ]
   }, 
   "notifications": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -1401,9 +5637,95 @@
     ]
   }, 
   "online": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1426,18 +5748,105 @@
     ]
   }, 
   "orientation": {
-    "chromeid": 5698781827825664, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
     "shipped": []
   }, 
   "p2p": {
-    "chromeid": 6612462929444864, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -1456,9 +5865,120 @@
     ]
   }, 
   "page-visibility": {
-    "chromeid": 5689697795833856, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1481,32 +6001,70 @@
     ]
   }, 
   "paint-timing": {
-    "chromeid": 5688621814251520, 
     "consideration": [
       "edge", 
       "safari"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "safari"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome"
     ]
   }, 
   "payment-handler": {
-    "chromeid": 5160285237149696, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
     "shipped": []
   }, 
   "payment-method-basic-card": {
-    "chromeid": 5408502604365824, 
     "consideration": [
       "firefox"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "edge"
     ], 
@@ -1515,11 +6073,72 @@
     ]
   }, 
   "payment-request": {
-    "chromeid": 5639348045217792, 
     "consideration": [], 
     "experimental": [
       "firefox", 
       "and_qq"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
     ], 
     "indevelopment": [
       "safari"
@@ -1533,9 +6152,40 @@
     ]
   }, 
   "permissions": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -1547,9 +6197,100 @@
     ]
   }, 
   "picture": {
-    "chromeid": 5910974510923776, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1569,9 +6310,65 @@
     ]
   }, 
   "pointer-events": {
-    "chromeid": 4504699138998272, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [
       "firefox"
     ], 
@@ -1586,10 +6383,61 @@
     ]
   }, 
   "preload": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [
       "ios_saf"
+    ], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -1605,25 +6453,103 @@
     ]
   }, 
   "proximity": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
-      "and_ff", 
-      "firefox"
+      "firefox", 
+      "and_ff"
     ]
   }, 
   "publishing-linking": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "push": {
-    "chromeid": 5416033485586432, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
     "indevelopment": [
       "edge"
     ], 
@@ -1642,15 +6568,62 @@
   "quota": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "recording": {
-    "chromeid": 5929649028726784, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -1661,11 +6634,27 @@
     ]
   }, 
   "remote-playback": {
-    "chromeid": 5778318691401728, 
     "consideration": [
       "firefox"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }
+    ], 
     "indevelopment": [
       "safari"
     ], 
@@ -1674,11 +6663,77 @@
     ]
   }, 
   "requestidlecallback": {
-    "chromeid": 5572795866021888, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -1693,12 +6748,83 @@
     ]
   }, 
   "resource-hints": {
-    "chromeid": 5560623895150592, 
     "consideration": [
       "edge"
     ], 
     "experimental": [
       "safari"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -1714,9 +6840,110 @@
     ]
   }, 
   "resource-timing": {
-    "chromeid": 5796350423728128, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1738,18 +6965,85 @@
     ]
   }, 
   "screencapture": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "edge"
     ], 
     "shipped": []
   }, 
   "screenlock": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1767,9 +7061,20 @@
     ]
   }, 
   "secondscreen": {
-    "chromeid": 6676265876586496, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }
+    ], 
     "indevelopment": [
       "firefox"
     ], 
@@ -1780,18 +7085,108 @@
   "selectors-states": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "serviceworkers": {
-    "chromeid": 6561526227927040, 
     "consideration": [], 
-    "experimental": [
-      "edge", 
-      "safari"
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [
-      "webkit"
+      "edge", 
+      "safari"
     ], 
     "shipped": [
       "and_uc", 
@@ -1810,16 +7205,78 @@
   "shape-detection": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "speech-api-recognition": {
-    "chromeid": 5908775487668224, 
     "consideration": [
       "edge"
     ], 
     "experimental": [
       "firefox"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -1832,9 +7289,80 @@
     ]
   }, 
   "speech-api-synthesis": {
-    "chromeid": 4782875580825600, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "firefox", 
@@ -1849,9 +7377,35 @@
     ]
   }, 
   "srcset": {
-    "chromeid": 4644337115725824, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -1861,11 +7415,87 @@
     ]
   }, 
   "sri": {
-    "chromeid": 6183089948590080, 
     "consideration": [], 
     "experimental": [
       "ios_saf", 
       "edge"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -1883,11 +7513,27 @@
     ]
   }, 
   "storage": {
-    "chromeid": 5630353511284736, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "firefox"
     ], 
@@ -1896,9 +7542,100 @@
     ]
   }, 
   "svg12": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1922,9 +7659,95 @@
     ]
   }, 
   "timeupdate": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1947,9 +7770,110 @@
     ]
   }, 
   "touchevent": {
-    "chromeid": 6156165603917824, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -1973,39 +7897,65 @@
   "ttml": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "ttml-imsc1": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "ttml-imsc11": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "ttml1": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "tvtuner": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "uir": {
-    "chromeid": 6534575509471232, 
     "consideration": [
       "edge"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -2016,13 +7966,95 @@
   "uisecurity": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "user-timing": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2046,13 +8078,75 @@
   "vehicle-info": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "vibration": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2070,9 +8164,95 @@
     ]
   }, 
   "video": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2097,13 +8277,100 @@
   "videoworker": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "viewport-units": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2126,22 +8393,124 @@
     ]
   }, 
   "viewportapi": {
-    "chromeid": 5737866978131968, 
     "consideration": [
       "edge", 
       "firefox", 
       "safari"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "safari"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome"
     ]
   }, 
   "wai-aria": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -2163,13 +8532,98 @@
     ]
   }, 
   "webanimations": {
-    "chromeid": 5650817352728576, 
     "consideration": [
-      "webkit"
+      "safari"
     ], 
     "experimental": [
-      "ios_saf", 
-      "safari"
+      "ios_saf"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "consideration", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -2187,10 +8641,87 @@
     ]
   }, 
   "webassembly": {
-    "chromeid": 5453022515691520, 
     "consideration": [], 
     "experimental": [
+      "edge", 
       "and_qq"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -2199,18 +8730,108 @@
       "ios_saf", 
       "and_ff", 
       "opera", 
-      "edge", 
       "and_chr", 
       "safari", 
       "android"
     ]
   }, 
   "webaudio": {
-    "chromeid": 6261718720184320, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [
-      "webkit"
+      "safari"
     ], 
     "shipped": [
       "baidu", 
@@ -2223,15 +8844,30 @@
       "opera", 
       "edge", 
       "op_mob", 
-      "safari", 
       "and_chr", 
       "android"
     ]
   }, 
   "webauthn": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "chrome", 
@@ -2240,12 +8876,48 @@
     ]
   }, 
   "webbluetooth": {
-    "chromeid": 5264933985976320, 
     "consideration": [
       "edge"
     ], 
     "experimental": [
       "and_qq"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -2256,12 +8928,28 @@
     ]
   }, 
   "webnfc": {
-    "chromeid": 6261030015467520, 
     "consideration": [
       "edge", 
       "firefox"
     ], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
     "indevelopment": [
       "chrome"
     ], 
@@ -2270,19 +8958,132 @@
   "webrtc-qos": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "webrtc-relay": {
     "consideration": [], 
     "experimental": [], 
+    "implementations": [], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "websockets": {
-    "chromeid": 6555138000945152, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2305,9 +9106,80 @@
     ]
   }, 
   "websql": {
-    "chromeid": 6330987952734208, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2325,9 +9197,120 @@
     ]
   }, 
   "webstorage": {
-    "chromeid": 5345825534246912, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2350,19 +9333,46 @@
     ]
   }, 
   "webusb": {
-    "chromeid": 5651917954875392, 
     "consideration": [], 
     "experimental": [
       "chrome"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }
     ], 
     "indevelopment": [], 
     "shipped": []
   }, 
   "webvr": {
-    "chromeid": 4532810371039232, 
     "consideration": [], 
     "experimental": [
       "chrome"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
     ], 
     "indevelopment": [], 
     "shipped": [
@@ -2371,9 +9381,90 @@
     ]
   }, 
   "webvtt": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -2395,9 +9486,95 @@
     ]
   }, 
   "webworkers": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2420,9 +9597,95 @@
     ]
   }, 
   "woff": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
@@ -2445,9 +9708,100 @@
     ]
   }, 
   "woff2": {
-    "chromeid": 6718644721549312, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "baidu", 
@@ -2466,9 +9820,95 @@
     ]
   }, 
   "xhr": {
-    "chromeid": null, 
     "consideration": [], 
     "experimental": [], 
+    "implementations": [
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_uc"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "bb"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
+      }
+    ], 
     "indevelopment": [], 
     "shipped": [
       "and_uc", 
