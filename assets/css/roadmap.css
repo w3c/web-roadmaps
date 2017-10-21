@@ -401,6 +401,11 @@ footer p {
     text-align: center;
 }
 
+span[lang=en] {
+  font-style: italic;
+  font-size: smaller;
+}
+
 
 @media (min-width: 768px) {
     .container {
