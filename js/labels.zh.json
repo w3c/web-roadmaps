@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "shipped": "已有稳定实现",
+    "experimental": "已有实验性实现",
+    "indevelopment": "开发中",
+    "consideration": "考虑实现",
+    "N/A": "无",
+    "in": "in"
+  },
+  "features": {
+    "audio element": "audio 元素",
+    "picture element": "picture 元素"
+  },
+  "groupNames": {
+    "CSS Working Group": "CSS 工作组"
+  },
+  "specTitles": {
+    "CSS Animations": "CSS 动画"
+  }
+}
