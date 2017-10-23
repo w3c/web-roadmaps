@@ -59,7 +59,7 @@ const scripts = ['../js/sidenav.js'];
 /**
  * Template to use for an item in the navigation menu
  */
-const templateTocItem = '<a href=""><div class="description"></div></a>';
+const templateTocItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
 /**
  * List of maturity levels
@@ -273,11 +273,16 @@ const applyToc = function (toc) {
     }
   });
 
+  if (toc.pages.length === 0) {
+    document.getElementById('side-nav-btn').hidden = true;
+  }
+
   let nav = document.querySelector('aside nav ul');
   toc.pages.forEach(page => {
     let navLi = document.createElement('li');
     navLi.innerHTML = templateTocItem;
     navLi.querySelector('a').href = page.url;
+    navLi.querySelector('img').src = page.icon;
     navLi.querySelector('div.description').textContent = page.title;
     nav.appendChild(navLi);
   });

@@ -3,8 +3,8 @@ const $ = (el, selector) =>
 
 const scripts = ['../js/sidenav.js'];
 
-const templateItem = '<a href=""><div class="icon"><img src="" width="45" alt=""></div><div class="description"><h2></h2><p></p></div></a>';
-const templateTocItem = '<a href=""><div class="description"></div></a>';
+const templateItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"><h2></h2><p></p></div></a>';
+const templateTocItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
 
 /**
@@ -130,6 +130,7 @@ loadLocalizedUrl('../js/template-index.html', lang)
       let navLi = document.createElement('li');
       navLi.innerHTML = templateTocItem;
       navLi.querySelector('a').href = page.url;
+      navLi.querySelector('img').src = page.icon;
       navLi.querySelector('div.description').textContent = page.title;
       nav.appendChild(navLi);
     });
