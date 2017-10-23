@@ -48,6 +48,7 @@
     "title": "Web Annotation Data Model", 
     "wgs": [
       {
+        "label": "Web Annotation Working Group", 
         "url": "http://www.w3.org/annotation/"
       }
     ]
@@ -132,6 +133,16 @@
       }
     ]
   }, 
+  "cloud-browser-arch": {
+    "maturity": "NOTE", 
+    "title": "Cloud Browser Architecture", 
+    "wgs": [
+      {
+        "label": "Media and Entertainment Interest Group", 
+        "url": "http://www.w3.org/2011/webtv/"
+      }
+    ]
+  }, 
   "color-gamut": {
     "maturity": "CR", 
     "title": "Media Queries Level 4", 
@@ -147,6 +158,7 @@
     "title": "Contacts Manager API", 
     "wgs": [
       {
+        "label": "System Applications Working Group", 
         "url": "http://www.w3.org/2012/sysapps/"
       }
     ]
@@ -166,6 +178,7 @@
     "title": "Cross-Origin Resource Sharing", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }, 
       {
@@ -477,6 +490,7 @@
     "title": "DeviceOrientation Event Specification", 
     "wgs": [
       {
+        "label": "Geolocation Working Group", 
         "url": "http://www.w3.org/2008/geolocation/"
       }
     ]
@@ -550,6 +564,7 @@
     "title": "Server-Sent Events", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]
@@ -559,6 +574,7 @@
     "title": "File API", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]
@@ -598,6 +614,7 @@
     "title": "Geolocation API Specification", 
     "wgs": [
       {
+        "label": "Geolocation Working Group", 
         "url": "http://www.w3.org/2008/geolocation/"
       }
     ]
@@ -721,6 +738,7 @@
     "title": "Indexed Database API", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]
@@ -730,6 +748,7 @@
     "title": "IndieUI: Events 1.0", 
     "wgs": [
       {
+        "label": "Independent User Interface Working Group", 
         "url": "http://www.w3.org/WAI/IndieUI/"
       }
     ]
@@ -819,6 +838,7 @@
     "title": "Media Fragments URI 1.0 (basic)", 
     "wgs": [
       {
+        "label": "Media Fragments Working Group", 
         "url": "http://www.w3.org/2008/WebVideo/Fragments/"
       }
     ]
@@ -922,6 +942,7 @@
     "title": "Web Notifications", 
     "wgs": [
       {
+        "label": "Web Notifications Working Group", 
         "url": "http://www.w3.org/2010/web-notifications/"
       }
     ]
@@ -1199,6 +1220,7 @@
     "title": "Selectors and States", 
     "wgs": [
       {
+        "label": "Web Annotation Working Group", 
         "url": "http://www.w3.org/annotation/"
       }
     ]
@@ -1398,6 +1420,7 @@
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.0", 
     "wgs": [
       {
+        "label": "Protocols and Formats Working Group", 
         "url": "http://www.w3.org/WAI/PF/"
       }
     ]
@@ -1491,6 +1514,7 @@
     "title": "The WebSocket API", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]
@@ -1500,6 +1524,7 @@
     "title": "Web SQL Database", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]
@@ -1509,6 +1534,7 @@
     "title": "Web Storage", 
     "wgs": [
       {
+        "label": "Web Applications Working Group", 
         "url": "http://www.w3.org/2008/webapps/"
       }
     ]

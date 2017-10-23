@@ -8659,12 +8659,12 @@
       }, 
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "shipped", 
         "ua": "edge"
       }, 
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "shipped", 
         "ua": "safari"
       }, 
       {
