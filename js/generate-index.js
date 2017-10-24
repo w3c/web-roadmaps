@@ -123,7 +123,7 @@ loadLocalizedUrl('../js/template-index.html', lang)
       li.innerHTML = templateItem;
       li.querySelector('a').href = page.url;
       li.querySelector('h2').textContent = page.title;
-      li.querySelector('img').src = page.icon;
+      li.querySelector('.icon img').src = page.icon;
       li.querySelector('p').textContent = page.description;
       ul.appendChild(li);
 

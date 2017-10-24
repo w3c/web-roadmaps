@@ -282,7 +282,7 @@ const applyToc = function (toc) {
     let navLi = document.createElement('li');
     navLi.innerHTML = templateTocItem;
     navLi.querySelector('a').href = page.url;
-    navLi.querySelector('img').src = page.icon;
+    navLi.querySelector('.icon img').src = page.icon;
     navLi.querySelector('div.description').textContent = page.title;
     nav.appendChild(navLi);
   });
