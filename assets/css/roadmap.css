@@ -77,7 +77,6 @@ header button[name="sidenav-opener"] {
   padding: 10px;
   background-color: transparent;
   border: 0px;
-  display: flex;
 }
 
 header .brand img {/*
@@ -209,7 +208,7 @@ filter: grayscale(1);*/
   flex-flow: row nowrap;
   align-items: center;
   text-decoration: none;
-
+  color: #547190;
 }
 
 #side-nav nav ul li a .icon {
@@ -222,6 +221,9 @@ filter: grayscale(1);*/
 
 #side-nav nav ul li a img {
   width: 25px;
+  height: auto;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 #side-nav nav ul li a .description {
