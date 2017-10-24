@@ -341,14 +341,11 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
   const labelTranslations = translations['labels'] || {};
   let sectionsData = [];
   let referencedFeatureIds = [];
-  sections.forEach(section => {
-    if (!section.classList.contains('featureset')) {
-      return;
-    }
 
+  sections.forEach(section => {
     let features = {};
-    $(section, '[data-feature]').forEach(featureEl => {
-      let featureName = featureEl.dataset['feature'];
+    let extractFeatures = featureEl => {
+      // Extract all feature IDs referenced under the given element
       let featureIds = [];
       if (featureEl.dataset['featureid']) {
         featureIds = [featureEl.dataset['featureid']];
@@ -361,23 +358,38 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
           }
         }
       }
-      if (features[featureName]) {
-        Array.prototype.push.apply(features[featureName], featureIds);
-      }
-      else {
-        features[featureName] = featureIds
-      }
       Array.prototype.push.apply(referencedFeatureIds, featureIds);
-    });
 
-    sectionsData.push({
-      sectionEl: section,
-      features: features
-    });
+      // Update the array of features referenced in the underlying section if
+      // the element under review has a data-feature attribute.
+      let featureName = featureEl.dataset['feature'];
+      if (featureName) {
+        if (features[featureName]) {
+          Array.prototype.push.apply(features[featureName], featureIds);
+        }
+        else {
+          features[featureName] = featureIds;
+        }
+      }
+    };
+
+    if (section.classList.contains('featureset')) {
+      // A table needs to be generated at the end of the section.
+      $(section, '[data-feature]').forEach(extractFeatures);
+      sectionsData.push({
+        sectionEl: section,
+        features: features
+      });
+    }
+
+    // The section may also use data-featureid outside without encapsulating
+    // them into data-feature. Or no table needs to be generated. In both cases,
+    // we'll need to convert these featureids into links (but we don't want
+    // them to appear in the generated table if there is one)
+    extractFeatures(section);
   });
 
-  // Remove duplicates from the list of referenced data files
-  // and load them
+  // Remove duplicates from the list of referenced data files and load them
   referencedFeatureIds.filter((fid, idx, self) => self.indexOf(fid) === idx);
   Promise.all(referencedFeatureIds
       .map(featureId => {
