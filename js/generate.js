@@ -76,6 +76,17 @@ const maturityLevels = {
 };
 
 /**
+ * Default English titles for common sections
+ */
+const sectionTitlesPerType = {
+  'well-deployed': 'Well deployed technologies',
+  'in-progress': 'Specifications in progress',
+  'exploratory-work': 'Exploratory work',
+  'not-covered': 'Features not covered by ongoing work',
+  'discontinued': 'Discontinued features'
+};
+
+/**
  * Known browsers
  */
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
@@ -331,6 +342,46 @@ const loadTableTemplates = function (lang) {
     let res = {};
     templateTypes.forEach((type, index) => res[type] = results[index]);
     return res;
+  });
+};
+
+
+/**
+ * Loop through sections and set titles to well-known sections without titles.
+ *
+ * Well-known sections are identified based on their "class" attribute, using
+ * an harcoded list of section titles and possible translations of these titles.
+ */
+const setSectionTitles = function (translations, lang) {
+  const sections = $(document, 'section');
+  let localizedSectionTitlesPerType = translations['sections'] || {};
+  sections.forEach(section => {
+    // Search for section's title, defined as the first title found that has
+    // the current section as first section ancestor.
+    let titleEl = section.querySelector('h1,h2,h3,h4,h5,h6');
+    if (titleEl) {
+      let parentSection = titleEl.parentNode;
+      while (parentSection !== section) {
+        if (parentSection.nodeName === 'SECTION') {
+          break;
+        }
+        parentSection = parentSection.parentNode;
+      }
+      if (parentSection === section) {
+        return;
+      }
+    }
+
+    // No title found, set the title if the section is a well-known one
+    let type = section.className.split(' ').find(type =>
+        Object.keys(localizedSectionTitlesPerType).includes(type) ||
+        Object.keys(sectionTitlesPerType).includes(type));
+    if (type) {
+      titleEl = document.createElement('h2');
+      titleEl.appendChild(document.createTextNode(
+          localizedSectionTitlesPerType[type] || sectionTitlesPerType[type]));
+      section.insertBefore(titleEl, section.firstChild);
+    }
   });
 };
 
@@ -641,4 +692,8 @@ loadTemplatePage(lang)
     lang,
     loadToc(lang)
   ]))
-  .then(results => fillTables.apply(null, results));
+  .then(results => {
+    setSectionTitles(results[3], results[4]);
+    fillTables.apply(null, results);
+
+  });
