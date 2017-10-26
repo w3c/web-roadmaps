@@ -6076,6 +6076,7 @@
     "consideration": [], 
     "experimental": [
       "firefox", 
+      "safari", 
       "and_qq"
     ], 
     "implementations": [
@@ -6136,13 +6137,16 @@
       }, 
       {
         "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
         "status": "shipped", 
         "ua": "and_chr"
       }
     ], 
-    "indevelopment": [
-      "safari"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "chrome", 
       "opera", 
