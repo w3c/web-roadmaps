@@ -76,17 +76,6 @@ const maturityLevels = {
 };
 
 /**
- * Default English titles for common sections
- */
-const sectionTitlesPerType = {
-  'well-deployed': 'Well deployed technologies',
-  'in-progress': 'Specifications in progress',
-  'exploratory-work': 'Exploratory work',
-  'not-covered': 'Features not covered by ongoing work',
-  'discontinued': 'Discontinued features'
-};
-
-/**
  * Known browsers
  */
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
@@ -212,7 +201,7 @@ const loadLocalizedUrl = function (url, lang) {
         throw err;
       }
       else {
-        console.warn('No localized version of ' + url + ' in ' + lang);
+        console.warn('No localized version of ' + url + ' in "' + lang + '"');
         return loadUrl(url);
       }
     })
@@ -258,16 +247,13 @@ const loadTemplatePage = function (lang) {
 };
 
 
+/**
+ * Loads translations of strings to be used in the right language, falling
+ * back to English if translations cannot be found.
+ */
 const loadTranslations = function (lang) {
-  if (lang === 'en') {
-    return {};
-  }
-  return loadUrl('../js/translations.' + lang + '.json')
-    .catch(err => {
-      console.warn('No translations of labels in ' + lang);
-      return '{}';
-    })
-    .then(response => JSON.parse(response));
+  return loadLocalizedUrl('../js/translations.json', lang)
+    .then(response => JSON.parse(response))
 };
 
 
@@ -306,7 +292,7 @@ const applyToc = function (toc) {
  * If a localized version of the TOC cannot be found, the function falls back
  * to the default Table of Contents.
  */
-const loadToc = function (lang) {
+const loadAndApplyToc = function (lang) {
   return loadLocalizedUrl('toc.json', lang)
     .then(response => JSON.parse(response))
     .then(toc => applyToc(toc));
@@ -354,7 +340,7 @@ const loadTableTemplates = function (lang) {
  */
 const setSectionTitles = function (translations, lang) {
   const sections = $(document, 'section');
-  let localizedSectionTitlesPerType = translations['sections'] || {};
+  let sectionTitlesPerType = translations['sections'] || {};
   sections.forEach(section => {
     // Search for section's title, defined as the first title found that has
     // the current section as first section ancestor.
@@ -374,13 +360,17 @@ const setSectionTitles = function (translations, lang) {
 
     // No title found, set the title if the section is a well-known one
     let type = section.className.split(' ').find(type =>
-        Object.keys(localizedSectionTitlesPerType).includes(type) ||
         Object.keys(sectionTitlesPerType).includes(type));
     if (type) {
       titleEl = document.createElement('h2');
-      titleEl.appendChild(document.createTextNode(
-          localizedSectionTitlesPerType[type] || sectionTitlesPerType[type]));
+      titleEl.appendChild(document.createTextNode(sectionTitlesPerType[type]));
       section.insertBefore(titleEl, section.firstChild);
+    }
+    else if (section.className && (section.className !== 'main-content')) {
+      console.warn('Found a titleless section with class attribute ' +
+        '"' + section.className + '" for which no title could be found in ' +
+        '"' + lang + '". Is it normal? If not, title needs to be added to ' +
+        'the `translations.' + lang + '.json` file');
     }
   });
 };
@@ -391,8 +381,8 @@ const setSectionTitles = function (translations, lang) {
  */
 const fillTables = function (tableTemplates, specData, implData, translations, lang) {
   const sections = $(document, 'section');
-  const specTitlesTranslations = translations['spectitles'] || {};
-  const groupNamesTranslations = translations['groupnames'] || {};
+  const specTitlesTranslations = translations['specifications'] || {};
+  const groupNamesTranslations = translations['groups'] || {};
   const featureTranslations = translations['features'] || {};
   const labelTranslations = translations['labels'] || {};
   let sectionsData = [];
@@ -446,7 +436,8 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
   });
 
   // Remove duplicates from the list of referenced data files and load them
-  referencedFeatureIds.filter((fid, idx, self) => self.indexOf(fid) === idx);
+  referencedFeatureIds = referencedFeatureIds.filter(
+    (fid, idx, self) => self.indexOf(fid) === idx);
   Promise.all(referencedFeatureIds
       .map(featureId => {
         return {
@@ -483,10 +474,16 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
           });
       }))
     .then(dataFiles => {
+      let warnings = [];
       sectionsData.forEach(sectionData => {
         let dataTable = document.createElement('div');
         let tableType = sectionData.sectionEl.className.split(' ')[1];
         tableType = (tableType === 'in-progress') ? 'well-deployed' : tableType;
+        if (!tableTemplates[tableType]) {
+          warnings.push('Nothing known about table type "' + tableType + '". ' +
+            'Skipping the section as a result');
+          return;
+        }
         dataTable.innerHTML = tableTemplates[tableType];
         let tbody = dataTable.querySelector('tbody');
 
@@ -520,7 +517,7 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
                 specTitle = specData[featureId].title;
               }
               else {
-                console.warn('No spec data found for TR feature "' + featureId + '"');
+                warnings.push('No spec data found for TR feature "' + featureId + '"');
               }
             }
             if (!specTitle) {
@@ -531,26 +528,30 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
                 localizedSpecTitle = specTitlesTranslations[specTitle];
               }
               else if (lang !== 'en') {
-                console.warn('No localized spec title for "' + specTitle + '" in ' + lang);
+                warnings.push('No localized spec title for "' + specTitle + '" in "' + lang + '"');
               }
             }
             if (!specTitle) {
-              console.warn('No spec title found for "' + featureId + '"');
+              warnings.push('No spec title found for "' + featureId + '"');
               specTitle = featureId + ' (Spec title not found!)';
             }
 
-            // TODO: Improve translation of "in", entry in translation table
-            // should rather be something like "%1 in %2".
-            let localizedLabel = (data.feature ?
-              (featureTranslations[data.feature] || data.feature) +
-              ' ' + (labelTranslations['in'] || 'in') + ' ' :
-              '');
-            localizedLabel += (localizedSpecTitle || specTitle);
+            let localizedLabel = localizedSpecTitle || specTitle;
+            if (data.feature) {
+              localizedLabel = (labelTranslations['%feature in %spec'] || '%feature in %spec')
+                .replace('%feature', featureTranslations[data.feature] || data.feature)
+                .replace('%spec', localizedSpecTitle || specTitle);
+            }
             let label = null;
             if ((featureTranslations[data.feature] &&
                 (featureTranslations[data.feature] !== data.feature)) ||
                 (localizedSpecTitle && localizedSpecTitle !== specTitle)) {
-              label = (data.feature ? data.feature + ' in ' : '') + specTitle;
+              label = specTitle;
+              if (data.feature) {
+                label = '%feature in %spec'
+                  .replace('%feature', data.feature)
+                  .replace('%spec', specTitle);
+              }
             }
             fillCell(specTd, {
               localizedLabel: localizedLabel,
@@ -575,7 +576,7 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
                 wg.localizedLabel = groupNamesTranslations[wg.label];
               }
               else if (lang !== 'en') {
-                console.warn('No localized group name for "' + wg.label + '" in ' + lang);
+                warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
               }
               if (tableType === 'well-deployed') {
                 wg.label = wg.label.replace(/ Working Group/,'');
@@ -605,7 +606,7 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
             // Render implementation status
             let implTd = document.createElement('td');
             implTd.appendChild(formatImplData(
-              implData[featureId], tableType, lang, labelTranslations));
+              implData[featureId], tableType, translations));
 
             // Append required cells to table row
             tr.appendChild(specTd);
@@ -621,32 +622,34 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
 
         sectionData.sectionEl.appendChild(dataTable);
       });
+      return warnings;
+    })
+    .then(warnings => {
+      // Remove duplicate warnings and report
+      warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
+      warnings.forEach(warning => console.warn(warning));
     });
 };
 
-const formatImplData = function (data, implType, lang, translations) {
+const formatImplData = function (data, implType, translations) {
+  const labelTranslations = translations['labels'] || {};
+  const statusTranslations = translations['implstatus'] || {};
   let div = document.createElement('div');
   if (!data) {
     if (implType === 'well-deployed') {
       let p = document.createElement('p');
-      p.appendChild(document.createTextNode(translations['N/A'] || 'N/A'));
+      p.appendChild(document.createTextNode(labelTranslations['N/A'] || 'N/A'));
       div.appendChild(p);
     }
     return div;
   }
-  let sectionTypes = {
-    'shipped': 'Shipped',
-    'experimental': 'Experimental',
-    'indevelopment': 'In development',
-    'consideration': 'Under consideration'
-  };
-  Object.keys(sectionTypes).forEach(type => {
+  Object.keys(data).forEach(type => {
     let uadata = data[type];
     uadata = uadata.filter(ua => browsers.indexOf(ua) !== -1);
     if (uadata.length) {
         let heading = document.createElement('p');
         heading.appendChild(document.createTextNode(
-          translations[type] || sectionTypes[type]));
+          statusTranslations[type] || type));
         heading.appendChild(document.createElement('br'));
         uadata.forEach(ua => {
           let icon = document.createElement('img');
@@ -684,16 +687,14 @@ lang = lang || 'en';
 // Load the template page, apply the content of the page to the template,
 // then load the additional information needed to generate the tables
 loadTemplatePage(lang)
-  .then(() => Promise.all([
+  .then(_ => loadTranslations(lang))
+  .then(translations => Promise.all([
     loadTableTemplates(lang),
     loadSpecData(),
     loadImplementationData(),
-    loadTranslations(lang),
+    translations,
     lang,
-    loadToc(lang)
+    loadAndApplyToc(lang),
+    setSectionTitles(translations, lang)
   ]))
-  .then(results => {
-    setSectionTitles(results[3], results[4]);
-    fillTables.apply(null, results);
-
-  });
+  .then(results => fillTables.apply(null, results));

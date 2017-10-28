@@ -4,11 +4,20 @@ This repository hosts a framework to present roadmaps of ongoing and future Web 
 
 It aims at simplifying the creation and maintenance of such roadmaps by collecting automatically information about standardization and implementation status of features described in W3C specifications and others.
 
-## Existing roadmaps
+## Available roadmaps
 * [Overview of Media Technologies for the Web](https://w3c.github.io/web-roadmaps/media/)
 * [Roadmap for Security technologies](https://w3c.github.io/web-roadmaps/security/)
 * [Roadmap of Web Applications on Mobile](https://w3c.github.io/web-roadmaps/mobile/)
 * [Roadmap of Technologies Needed for Web Publications](https://w3c.github.io/web-roadmaps/publishing/)
+
+## Table of contents
+* [Overview of the framework](#overview-of-the-framework)
+* [Adding a feature to a roadmap](#adding-a-feature-to-a-roadmap)
+* [JSON format for describing specifications](#json-format-for-describing-specifications)
+* [Creating a new roadmap page or a new single-page roadmap](#creating-a-new-roadmap-page-or-a-new-single-page-roadmap)
+* [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
+* [Repository branches](#repository-branches)
+* [Translating a roadmap](#translating-a-roadmap)
 
 ## Overview of the framework
 
@@ -70,24 +79,31 @@ Start from the following template
     </header>
     <main>
       <section class="featureset well-deployed">
-          <h2>Well-deployed technologies</h2>
-        </section>
-        <section class="featureset in-progress">
-          <h2>Specifications in progress</h2>
-        </section>
-        <section class="featureset exploratory-work">
-          <h2>Exploratory work</h2>
-        </section>
-        <section>
-          <h2>Features not covered by ongoing work</h2>
-          <dl>
-            <dt></dt>
-            <dd></dd>
-          </dl>
-        </section>
-</main>
-<script src="../js/generate.js"></script>
-    </body>
+        <h2>Well-deployed technologies</h2>
+      </section>
+      <section class="featureset in-progress">
+        <h2>Specifications in progress</h2>
+      </section>
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+      </section>
+      <section class="not-covered">
+        <h2>Features not covered by ongoing work</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section>
+      <section class="discontinued">
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
 </html>
 ```
 If adding to an existing roadmap, you should also edit the `toc.json` file to add a link to that new page.
@@ -102,7 +118,7 @@ The template for the index page is as follows:
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset=utf-8>
+    <meta charset="utf-8">
     <title>Title of the roadmap</title>
   </head>
   <body>
@@ -147,21 +163,69 @@ If you would like to visualize the contents of a roadmap locally as it would app
 
 ## Translating a roadmap
 
-*Note (September 2017): this part is unstable, and will likely evolve based on practical experience with translating roadmaps.*
+*Note (October 2017): this part is maturing but is still unstable, and will likely evolve based on further practical experience with translating roadmaps.*
 
 The translator needs to provide:
 
-* Translated versions of the HTML pages. That is the main content that needs to be translated. See below for recommendations.
-* Translations of the specifications titles (and feature name) featured in the roadmap **(still TBD)**
-* Translations of the groups names featured in the roadmap **(still TBD)**
-* Translations of the strings that appear in the framework code to populate the tables that summarize the standardization and implementation status **(still TBD)**
-* For multi-page roadmaps, translations of the table of contents (the `toc.json`) file
+* Translated versions of the HTML pages. See [Translating HTML pages](#translated-html-pages).
+* Translations of specification titles, feature names, group names and other labels used in the roadmap. See [Creating a `translations.xx.json` file](#creating-a-translations-xx-json-file).
+* Translations of the table of contents (the `toc.json`) file. See [Translating the `toc.json` file].
 
-A few recommendations to manage translations:
+To maintain translations over time, it is wise to use Git tags to create snapshots of a roadmap whenever a significant update is needed. Maintaining the translation then becomes a matter of comparing the latest snapshot with the previous one. The translator can retrieve the ZIP that contains the HTML files to translate from GitHub.
 
-* Set the `lang` attribute of the `<html>` tag to the right value.
-* If translations are saved in this repository, push them to a subfolder of the roadmap that is being translated, named after the language name identifier
-* If saving files in a separate folder, use a `<base>` tag set to the appropriate value for relative links not to break.
-* To maintain translations over time, it is wise to use Git tags to create snapshots of a roadmap whenever a significant update is needed. Maintaining the translation then becomes a matter of comparing the latest snapshot with the previous one. The translator can retrieve the ZIP that contains the HTML files to translate from GitHub.
+### Translating HTML pages
+
+That is the main content that needs to be translated. A few recommendations:
+
+* Save the translation of a page `filename.html` in the same folder, under the name `filename.xx.html` where `xx` is the BCP47 language code.
+* Set the `lang` attribute of the `<html>` tag to the right value in the translated file.
 * The overall structure and tags of the HTML content should be preserved. In particular, class names, `data-feature` and `data-featureid` are all important.
 * The paragraph structure should be preserved too. Paragraphs are relatively independent from one another on purpose, so that they can be moved to different section as the maturity of the underlying technology evolves.
+
+### Creating a `translations.xx.json` file
+
+The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs to contain the translations of all specification titles, group names, feature names and other labels used within the roadmaps that need to be translated. This file is common to all roadmaps. It should respect the following structure:
+
+```json
+{
+  "sections": {
+    "well-deployed": "",
+    "in-progress": "",
+    "exploratory-work": "",
+    "not-covered": "",
+    "discontinued": ""
+  },
+  "implstatus": {
+    "shipped": "",
+    "experimental": "",
+    "indevelopment": "",
+    "consideration": ""
+  },
+  "labels": {
+    "N/A": "",
+    "%feature in %spec": ""
+  },
+  "groups": {
+    "CSS Working Group": "",
+    "...": ""
+  },
+  "specifications": {
+    "CSS Animations": "",
+    "...": ""
+  },
+  "features": {
+    "audio element": "",
+    "picture element": "",
+    "...": ""
+  }
+}
+```
+
+The translations of section titles (`sections`), implementation status (`implstatus`) and labels (`labels`) are required. Translations of group names, specification titles and feature names are optional, although recommended. The framework will default to English when a translation is missing.
+
+Note the framework will also write the English version of specification titles and of group names next to their translations in the generated tables, because the English version is often used when referring to specs and groups in Web pages, regardless of the language of the page.
+
+
+### Translating the `toc.json` file
+
+Create a `toc.xx.json` file that follows the same structure as the `toc.json` file.
