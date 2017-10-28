@@ -686,9 +686,12 @@ lang = lang || 'en';
 
 // Load the template page, apply the content of the page to the template,
 // then load the additional information needed to generate the tables
-loadTemplatePage(lang)
-  .then(_ => loadTranslations(lang))
-  .then(translations => Promise.all([
+Promise.all([
+    loadTemplatePage(lang),
+    loadTranslations(lang)
+]).then(results => {
+  let translations = results[1];
+  return Promise.all([
     loadTableTemplates(lang),
     loadSpecData(),
     loadImplementationData(),
@@ -696,5 +699,5 @@ loadTemplatePage(lang)
     lang,
     loadAndApplyToc(lang),
     setSectionTitles(translations, lang)
-  ]))
-  .then(results => fillTables.apply(null, results));
+  ]);
+}).then(results => fillTables.apply(null, results));
