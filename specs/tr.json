@@ -574,8 +574,8 @@
     "title": "File API", 
     "wgs": [
       {
-        "label": "Web Applications Working Group", 
-        "url": "http://www.w3.org/2008/webapps/"
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -1068,7 +1068,7 @@
     ]
   }, 
   "preload": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Preload", 
     "wgs": [
       {

@@ -6030,17 +6030,17 @@
   }, 
   "payment-handler": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "chrome"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "chrome"
       }
     ], 
-    "indevelopment": [
-      "chrome"
-    ], 
+    "indevelopment": [], 
     "shipped": []
   }, 
   "payment-method-basic-card": {

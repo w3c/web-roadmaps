@@ -1,20 +1,29 @@
 {
-  "labels": {
+  "sections": {
+    "well-deployed": "广泛部署的技术",
+    "in-progress": "开发中的技术",
+    "exploratory-work": "探索性工作",
+    "not-covered": "Features not covered by ongoing work",
+    "discontinued": "不再进行的工作"
+  },
+  "implstatus": {
     "shipped": "已有稳定实现",
     "experimental": "已有实验性实现",
     "indevelopment": "开发中",
     "consideration": "考虑实现",
+  },
+  "labels": {
     "N/A": "无",
-    "in": "in"
+    "%feature in %spec": "%spec 的 %feature"
   },
   "features": {
     "audio element": "audio 元素",
     "picture element": "picture 元素"
   },
-  "groupNames": {
+  "groups": {
     "CSS Working Group": "CSS 工作组"
   },
-  "specTitles": {
+  "specifications": {
     "CSS Animations": "CSS 动画"
   }
 }
