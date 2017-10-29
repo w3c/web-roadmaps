@@ -61,6 +61,7 @@ const scripts = ['../js/sidenav.js'];
  */
 const templateTocItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
+
 /**
  * List of maturity levels
  */
@@ -76,9 +77,207 @@ const maturityLevels = {
 };
 
 /**
+ * Lists of columns in generated tables per type of table
+ *
+ * This structure may be completed or overridden in `toc.json` files.
+ */
+const tableColumnsPerType = {
+  'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
+  'in-progress': ['feature', 'spec', 'maturity', 'impl'],
+  'exploratory-work': ['feature', 'spec', 'group', 'implintents'],
+  'versions': ['feature', 'spec', 'maturity', 'versions']
+};
+
+/**
+ * Helper function that expands column definitions into an object structure
+ * (used to allow shortcuts in table columns definitions in tableColumnsPerType
+ * and in custom table definitions that may appear in toc.json.
+ */
+const expandColumns = function (columns, tr) {
+  return (columns || [])
+    .map(column => {
+      if (Object.prototype.toString.call(column) === '[object String]') {
+        return {
+          type: column,
+          title: tr.columns[column]
+        };
+      }
+      else if (!column.type) {
+        console.warn('Skip column definition as `type` property is missing');
+        return null;
+      }
+      else if (!column.title) {
+        column.title = tr.columns[column.type];
+        return column;
+      }
+      else {
+        return column;
+      }
+    })
+    .filter(column => !!column)
+    .map(column => {
+      if (!column.title) {
+        console.warn('No column title found for column type "' + column.type + '" in "' + lang + '"');
+        column.title = column.type;
+      }
+      return column;
+    })
+    .map(column => {
+      if (!tableColumnCreators[column.type]) {
+        console.warn('Skip unknown column type "' + column.type + '"');
+        return null;
+      }
+      column.createCell = tableColumnCreators[column.type];
+      return column;
+    })
+    .filter(column => !!column);
+};
+
+/**
  * Known browsers
  */
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
+
+/**
+ * Code to call to create a cell of the given type
+ *
+ * Creators should be called with an object that has the following properties:
+ * - column: The description of the column the cell will belong to
+ * - featureId: The ID of the feature for which the cell is being generated
+ * - featureName: The name of the wrapping feature
+ * - specData: Raw data about the feature ID (from the data/ folder)
+ * - specInfo: The available spec info for that feature ID
+ * - implInfo: The available implementation status for that feature ID
+ * - tr: Sanitized translations
+ * - lang: The language of the underlying document
+ * - pos: The zero-based index of the column in the table
+ * - warnings: An array of warnings that the creator may complete
+ */
+const createFeatureCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  let cell = document.createElement((pos === 0) ? 'th' : 'td');
+  cell.appendChild(document.createTextNode(featureName));
+  return cell;
+};
+
+const createSpecCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  let specUrl = specData.TR || specData.editors || specData.ls;
+  let specTitle = null;
+  let localizedSpecTitle = null;
+  if (specData.TR) {
+    specTitle = specInfo.title;
+  }
+  if (!specTitle) {
+    specTitle = specData.title;
+  }
+  if (specTitle) {
+    if (tr.specifications[specTitle]) {
+      localizedSpecTitle = tr.specifications[specTitle];
+    }
+    else if (lang !== 'en') {
+      warnings.push('No spec title for "' + specTitle + '" in "' + lang + '"');
+    }
+  }
+  if (!specTitle) {
+    warnings.push('No spec title found for "' + featureId + '"');
+    specTitle = featureId + ' (Spec title not found!)';
+  }
+
+  let localizedLabel = localizedSpecTitle || specTitle;
+  if (specData.feature) {
+    localizedLabel = (tr.labels['%feature in %spec'] || '%feature in %spec')
+      .replace('%feature', tr.features[specData.feature] || specData.feature)
+      .replace('%spec', localizedSpecTitle || specTitle);
+  }
+  let label = null;
+  if ((tr.features[specData.feature] &&
+      (tr.features[specData.feature] !== specData.feature)) ||
+      (localizedSpecTitle && localizedSpecTitle !== specTitle)) {
+    label = specTitle;
+    if (specData.feature) {
+      label = '%feature in %spec'
+        .replace('%feature', specData.feature)
+        .replace('%spec', specTitle);
+    }
+  }
+
+  let cell = document.createElement('td');
+  fillCell(cell, {
+    localizedLabel: localizedLabel,
+    label: label,
+    url: specUrl
+  });
+  return cell;
+};
+
+const createGroupCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  let cell = document.createElement('td');
+  specInfo.wgs = specInfo.wgs || [];
+  specInfo.wgs.forEach((wg, w) => {
+    wg.label = wg.label || '';
+    if (tr.groups[wg.label]) {
+      wg.localizedLabel = tr.groups[wg.label];
+    }
+    else if (lang !== 'en') {
+      warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
+    }
+    if (column.type === 'well-deployed') {
+      wg.label = wg.label.replace(/ Working Group/,'');
+    }
+    wg.label = wg.label
+      .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
+      .replace(/Technical Architecture Group/, 'TAG')
+      .replace(/Web Real-Time Communications/, 'WebRTC');
+    if (w > 0) {
+      if (w < specInfo.wgs.length - 1) {
+        cell.appendChild(document.createTextNode(','));
+      }
+      else {
+        cell.appendChild(document.createTextNode(' and'));
+      }
+      cell.appendChild(document.createElement('br'));
+    }
+    fillCell(cell, wg);
+  });
+  return cell;
+};
+
+const createMaturityCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  // Render maturity info
+  let cell = document.createElement('td');
+  let maturityInfo = maturityData(specInfo);
+  fillCell(cell, maturityInfo.maturity, maturityInfo.maturityIcon);
+  cell.classList.add('maturity');
+  return cell;
+};
+
+const createImplCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  let cell = document.createElement('td');
+  cell.appendChild(formatImplInfo(implInfo, tr));
+  return cell;
+};
+
+const createVersionsCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+  let cell = document.createElement('td');
+  (specData.versions || []).forEach((version, pos) => {
+    if (version.url && version.label) {
+      if (pos > 0) {
+        cell.appendChild(document.createElement('br'));
+      }
+      fillCell(cell, version);
+    }
+  });
+  return cell;
+};
+
+const tableColumnCreators = {
+  'feature': createFeatureCell,
+  'spec': createSpecCell,
+  'group': createGroupCell,
+  'maturity': createMaturityCell,
+  'impl': createImplCell,
+  'implintents': createImplCell,
+  'versions': createVersionsCell
+};
 
 
 const fillCell = function (el, data, image) {
@@ -254,6 +453,12 @@ const loadTemplatePage = function (lang) {
 const loadTranslations = function (lang) {
   return loadLocalizedUrl('../js/translations.json', lang)
     .then(response => JSON.parse(response))
+    .then(translations => {
+      // Sanitize translations
+      ['specifications', 'features', 'groups', 'labels', 'columns', 'implstatus']
+        .forEach(type => translations[type] = translations[type] || {});
+      return translations;
+    });
 };
 
 
@@ -283,26 +488,31 @@ const applyToc = function (toc) {
     navLi.querySelector('div.description').textContent = page.title;
     nav.appendChild(navLi);
   });
+
+  return toc;
 };
 
 
 /**
- * Loads, parses and applies the Table of Contents.
+ * Loads and parses the `toc.json` file.
  *
  * If a localized version of the TOC cannot be found, the function falls back
- * to the default Table of Contents.
+ * to the default TOC.
+ *
+ * NB: The `toc.json` obviously contains the table of contents. It also sets
+ * a few other parameters such as links for feedback and custom table
+ * structures as needed.
  */
-const loadAndApplyToc = function (lang) {
+const loadToc = function (lang) {
   return loadLocalizedUrl('toc.json', lang)
-    .then(response => JSON.parse(response))
-    .then(toc => applyToc(toc));
+    .then(response => JSON.parse(response));
 };
 
 
 /**
  * Loads known metadata for each specification
  */
-const loadSpecData = function () {
+const loadSpecInfo = function () {
   return loadUrl('../specs/tr.json')
     .then(response => JSON.parse(response));
 };
@@ -311,24 +521,9 @@ const loadSpecData = function () {
 /**
  * Loads known implementation data for each specification
  */
-const loadImplementationData = function () {
+const loadImplementationInfo = function () {
   return loadUrl('../specs/impl.json')
     .then(response => JSON.parse(response));
-};
-
-
-/**
- * Loads HTML table templates
- */
-const loadTableTemplates = function (lang) {
-  const templateTypes = ['well-deployed', 'exploratory-work'];
-  return Promise.all(templateTypes.map(type =>
-    loadLocalizedUrl('../js/template-table-' + type + '.html', lang)
-  )).then(results => {
-    let res = {};
-    templateTypes.forEach((type, index) => res[type] = results[index]);
-    return res;
-  });
 };
 
 
@@ -377,18 +572,25 @@ const setSectionTitles = function (translations, lang) {
 
 
 /**
- * Generates tables based on the information loaded
+ * Generates tables per section based on the information loaded
  */
-const fillTables = function (tableTemplates, specData, implData, translations, lang) {
-  const sections = $(document, 'section');
-  const specTitlesTranslations = translations['specifications'] || {};
-  const groupNamesTranslations = translations['groups'] || {};
-  const featureTranslations = translations['features'] || {};
-  const labelTranslations = translations['labels'] || {};
+const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
+  // Build the list of columns that will need to be generated per type of table
+  let columnsPerType = {};
+  Object.keys(customTables || {}).forEach(type => {
+    columnsPerType[type] = expandColumns(customTables[type], tr);
+  });
+  Object.keys(tableColumnsPerType).forEach(type => {
+    if (!columnsPerType[type]) {
+      columnsPerType[type] = expandColumns(tableColumnsPerType[type], tr);
+    }
+  })
+
+  // Extract the list of feature IDs referenced in the document and
+  // generate the list of sections for which a table needs to be generated
   let sectionsData = [];
   let referencedFeatureIds = [];
-
-  sections.forEach(section => {
+  $(document, 'section').forEach(section => {
     let features = {};
     let extractFeatures = featureEl => {
       // Extract all feature IDs referenced under the given element
@@ -435,7 +637,8 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
     extractFeatures(section);
   });
 
-  // Remove duplicates from the list of referenced data files and load them
+  // Remove duplicates from the list of referenced data files, load them, and
+  // apply that info to generate the tables at the end of sections
   referencedFeatureIds = referencedFeatureIds.filter(
     (fid, idx, self) => self.indexOf(fid) === idx);
   Promise.all(referencedFeatureIds
@@ -451,19 +654,22 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
           .then(data => {
             // Complete links to that feature ID with the right URL
             // and the spec title if the link is empty
+            if (!data) {
+              return null;
+            }
             $(document, 'a[data-featureid="' + feature.id + '"]')
               .forEach(link => {
                 link.setAttribute('href', data.editors || data.ls || data.TR);
                 if (!link.textContent) {
                   if (data.feature) {
                     link.textContent =
-                      featureTranslations[data.feature] ||
+                      tr.features[data.feature] ||
                       data.feature;
                   }
-                  else if ((specData[feature.id] && specData[feature.id].title) || data.title) {
-                    let specTitle = specData[feature.id].title || data.title;
-                    if (specTitlesTranslations[specTitle]) {
-                      specTitle = specTitlesTranslations[specTitle];
+                  else if ((specInfo[feature.id] && specInfo[feature.id].title) || data.title) {
+                    let specTitle = specInfo[feature.id].title || data.title;
+                    if (tr.specifications[specTitle]) {
+                      specTitle = tr.specifications[specTitle];
                     }
                     link.textContent = specTitle;
                   }
@@ -478,145 +684,66 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
       sectionsData.forEach(sectionData => {
         let dataTable = document.createElement('div');
         let tableType = sectionData.sectionEl.className.split(' ')[1];
-        tableType = (tableType === 'in-progress') ? 'well-deployed' : tableType;
-        if (!tableTemplates[tableType]) {
+        if (!columnsPerType[tableType]) {
           warnings.push('Nothing known about table type "' + tableType + '". ' +
             'Skipping the section as a result');
           return;
         }
-        dataTable.innerHTML = tableTemplates[tableType];
-        let tbody = dataTable.querySelector('tbody');
+        dataTable.appendChild(document.createElement('table'));
 
+        // Fill the table headers
+        let columns = columnsPerType[tableType];
+        let row = document.createElement('tr');
+        columns.forEach(column => {
+          let cell = document.createElement('th');
+          cell.appendChild(document.createTextNode(column.title));
+          row.appendChild(cell);
+        });
+
+        let thead = document.createElement('thead');
+        thead.appendChild(row);
+        dataTable.firstChild.appendChild(thead);
+
+        let tbody = document.createElement('tbody');
+        dataTable.firstChild.appendChild(tbody);
+
+        // Parse the list of feature names referenced in the section,
+        // and the list of feature IDs referenced per feature name,
+        // and generate a row per feature ID.
         let features = sectionData.features;
         Object.keys(features).forEach(featureName => {
-          let tr = document.createElement('tr');
-          let th = document.createElement('th');
-          th.appendChild(document.createTextNode(featureName));
-
           let featureIds = features[featureName];
-          if (featureIds.length > 1) {
-            th.setAttribute('rowspan', featureIds.length);
-          }
-          tr.appendChild(th);
-
-          featureIds.forEach((featureId, k) => {
-            if (k > 0) {
-              tr = document.createElement('tr');
-            }
-            tbody.appendChild(tr);
-
-            let data = dataFiles[referencedFeatureIds.indexOf(featureId)];
-
-            // Render the title of the spec in the "Specifications" columns
-            let specTd = document.createElement('td');
-            let specUrl = data.TR || data.editors || data.ls;
-            let specTitle = null;
-            let localizedSpecTitle = null;
-            if (data.TR) {
-              if (specData[featureId]) {
-                specTitle = specData[featureId].title;
-              }
-              else {
-                warnings.push('No spec data found for TR feature "' + featureId + '"');
-              }
-            }
-            if (!specTitle) {
-              specTitle = data.title;
-            }
-            if (specTitle) {
-              if (specTitlesTranslations[specTitle]) {
-                localizedSpecTitle = specTitlesTranslations[specTitle];
-              }
-              else if (lang !== 'en') {
-                warnings.push('No localized spec title for "' + specTitle + '" in "' + lang + '"');
-              }
-            }
-            if (!specTitle) {
-              warnings.push('No spec title found for "' + featureId + '"');
-              specTitle = featureId + ' (Spec title not found!)';
-            }
-
-            let localizedLabel = localizedSpecTitle || specTitle;
-            if (data.feature) {
-              localizedLabel = (labelTranslations['%feature in %spec'] || '%feature in %spec')
-                .replace('%feature', featureTranslations[data.feature] || data.feature)
-                .replace('%spec', localizedSpecTitle || specTitle);
-            }
-            let label = null;
-            if ((featureTranslations[data.feature] &&
-                (featureTranslations[data.feature] !== data.feature)) ||
-                (localizedSpecTitle && localizedSpecTitle !== specTitle)) {
-              label = specTitle;
-              if (data.feature) {
-                label = '%feature in %spec'
-                  .replace('%feature', data.feature)
-                  .replace('%spec', specTitle);
-              }
-            }
-            fillCell(specTd, {
-              localizedLabel: localizedLabel,
-              label: label,
-              url: specUrl
-            });
-
-            if (!specData[featureId]) {
-              specData[featureId] = {
-                wgs: data.wgs,
-                maturity: (data.editors ? "ED" : (data.ls ? "LS" : "Unknown"))
+          featureIds.forEach((featureId, featureIndex) => {
+            let specData = dataFiles[referencedFeatureIds.indexOf(featureId)];
+            if (!specInfo[featureId]) {
+              warnings.push('No spec data found for TR feature "' + featureId + '"');
+              specInfo[featureId] = {
+                wgs: specData.wgs,
+                maturity: (specData.editors ? "ED" : (specData.ls ? "LS" : "Unknown"))
               };
             }
 
-            // Render the name of the group that produced the spec
-            let wgTd = document.createElement('td');
-            specData[featureId].wgs = specData[featureId].wgs || [];
-            for (let w = 0 ; w < specData[featureId].wgs.length; w++) {
-              wg = specData[featureId].wgs[w];
-              wg.label = wg.label || '';
-              if (groupNamesTranslations[wg.label]) {
-                wg.localizedLabel = groupNamesTranslations[wg.label];
+            let row = document.createElement('tr');
+            tbody.appendChild(row);
+            columns.forEach((column, pos) => {
+              // Feature name cell will span multiple rows if there are more
+              // than one feature ID associated with the feature name
+              if ((column.type === 'feature') && (featureIndex > 0)) {
+                return;
               }
-              else if (lang !== 'en') {
-                warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
-              }
-              if (tableType === 'well-deployed') {
-                wg.label = wg.label.replace(/ Working Group/,'');
-              }
-              wg.label = wg.label
-                .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
-                .replace(/Technical Architecture Group/, 'TAG')
-                .replace(/Web Real-Time Communications/, 'WebRTC');
-              if (w > 0) {
-                if (w < specData[featureId].wgs.length - 1) {
-                  wgTd.appendChild(document.createTextNode(','));
-                }
-                else {
-                  wgTd.appendChild(document.createTextNode(' and'));
-                }
-                wgTd.appendChild(document.createElement('br'));
-              }
-              fillCell(wgTd, wg);
-            }
 
-            // Render maturity info
-            let maturityTd = document.createElement('td');
-            maturityInfo = maturityData(specData[featureId]);
-            fillCell(maturityTd, maturityInfo.maturity, maturityInfo.maturityIcon);
-            maturityTd.classList.add('maturity');
+              // Create the appropriate cell
+              let cell = column.createCell(
+                column, featureId, featureName,
+                specData, specInfo[featureId], implInfo[featureId],
+                tr, lang, pos, warnings);
 
-            // Render implementation status
-            let implTd = document.createElement('td');
-            implTd.appendChild(formatImplData(
-              implData[featureId], tableType, translations));
-
-            // Append required cells to table row
-            tr.appendChild(specTd);
-            if (tableType === 'well-deployed') {
-              tr.appendChild(maturityTd);
-            }
-            if (tableType !== 'well-deployed') {
-              tr.appendChild(wgTd);
-            }
-            tr.appendChild(implTd);
+              // Make feature name span multiple rows as needed
+              if ((column.type === 'feature') && (featureIds.length > 1)) {
+                cell.setAttribute('rowspan', featureIds.length);
+              }
+              row.appendChild(cell);
+            });
           });
         });
 
@@ -631,16 +758,14 @@ const fillTables = function (tableTemplates, specData, implData, translations, l
     });
 };
 
-const formatImplData = function (data, implType, translations) {
+const formatImplInfo = function (data, translations) {
   const labelTranslations = translations['labels'] || {};
   const statusTranslations = translations['implstatus'] || {};
   let div = document.createElement('div');
   if (!data) {
-    if (implType === 'well-deployed') {
-      let p = document.createElement('p');
-      p.appendChild(document.createTextNode(labelTranslations['N/A'] || 'N/A'));
-      div.appendChild(p);
-    }
+    let p = document.createElement('p');
+    p.appendChild(document.createTextNode(labelTranslations['N/A'] || 'N/A'));
+    div.appendChild(p);
     return div;
   }
   Object.keys(data).forEach(type => {
@@ -688,16 +813,19 @@ lang = lang || 'en';
 // then load the additional information needed to generate the tables
 Promise.all([
     loadTemplatePage(lang),
-    loadTranslations(lang)
+    loadTranslations(lang),
+    loadToc(lang)
 ]).then(results => {
   let translations = results[1];
+  let toc = results[2];
   return Promise.all([
-    loadTableTemplates(lang),
-    loadSpecData(),
-    loadImplementationData(),
-    translations,
-    lang,
-    loadAndApplyToc(lang),
-    setSectionTitles(translations, lang)
+    applyToc(toc),
+    setSectionTitles(translations, lang),
+    loadSpecInfo(),
+    loadImplementationInfo(),
+    translations
   ]);
-}).then(results => fillTables.apply(null, results));
+}).then(results => {
+  let customTables = results[0]['tables'];
+  return fillTables(results[2], results[3], customTables, results[4], lang);
+});
