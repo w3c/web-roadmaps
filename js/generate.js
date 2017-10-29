@@ -123,11 +123,11 @@ const expandColumns = function (columns, tr) {
       return column;
     })
     .map(column => {
-      if (!tableColumnGenerators[column.type]) {
+      if (!tableColumnCreators[column.type]) {
         console.warn('Skip unknown column type "' + column.type + '"');
         return null;
       }
-      column.generateCell = tableColumnGenerators[column.type];
+      column.createCell = tableColumnCreators[column.type];
       return column;
     })
     .filter(column => !!column);
@@ -139,9 +139,9 @@ const expandColumns = function (columns, tr) {
 const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
 
 /**
- * Code to call to generate a cell of the given type
+ * Code to call to create a cell of the given type
  *
- * Generators should be called with an object that has the following properties:
+ * Creators should be called with an object that has the following properties:
  * - column: The description of the column the cell will belong to
  * - featureId: The ID of the feature for which the cell is being generated
  * - featureName: The name of the wrapping feature
@@ -151,15 +151,15 @@ const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
  * - tr: Sanitized translations
  * - lang: The language of the underlying document
  * - pos: The zero-based index of the column in the table
- * - warnings: An array of warnings that the generator may complete
+ * - warnings: An array of warnings that the creator may complete
  */
-const generateFeatureCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createFeatureCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement((pos === 0) ? 'th' : 'td');
   cell.appendChild(document.createTextNode(featureName));
   return cell;
 };
 
-const generateSpecCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createSpecCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   let specUrl = specData.TR || specData.editors || specData.ls;
   let specTitle = null;
   let localizedSpecTitle = null;
@@ -209,7 +209,7 @@ const generateSpecCell = function (column, featureId, featureName, specData, spe
   return cell;
 };
 
-const generateGroupCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createGroupCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   specInfo.wgs = specInfo.wgs || [];
   specInfo.wgs.forEach((wg, w) => {
@@ -241,7 +241,7 @@ const generateGroupCell = function (column, featureId, featureName, specData, sp
   return cell;
 };
 
-const generateMaturityCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createMaturityCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   // Render maturity info
   let cell = document.createElement('td');
   let maturityInfo = maturityData(specInfo);
@@ -250,13 +250,13 @@ const generateMaturityCell = function (column, featureId, featureName, specData,
   return cell;
 };
 
-const generateImplCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createImplCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   cell.appendChild(formatImplInfo(implInfo, tr));
   return cell;
 };
 
-const generateVersionsCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createVersionsCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   (specData.versions || []).forEach((version, pos) => {
     if (version.url && version.label) {
@@ -269,14 +269,14 @@ const generateVersionsCell = function (column, featureId, featureName, specData,
   return cell;
 };
 
-const tableColumnGenerators = {
-  'feature': generateFeatureCell,
-  'spec': generateSpecCell,
-  'group': generateGroupCell,
-  'maturity': generateMaturityCell,
-  'impl': generateImplCell,
-  'implintents': generateImplCell,
-  'versions': generateVersionsCell
+const tableColumnCreators = {
+  'feature': createFeatureCell,
+  'spec': createSpecCell,
+  'group': createGroupCell,
+  'maturity': createMaturityCell,
+  'impl': createImplCell,
+  'implintents': createImplCell,
+  'versions': createVersionsCell
 };
 
 
@@ -654,6 +654,9 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
           .then(data => {
             // Complete links to that feature ID with the right URL
             // and the spec title if the link is empty
+            if (!data) {
+              return null;
+            }
             $(document, 'a[data-featureid="' + feature.id + '"]')
               .forEach(link => {
                 link.setAttribute('href', data.editors || data.ls || data.TR);
@@ -729,8 +732,8 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
                 return;
               }
 
-              // Generate the appropriate cell
-              let cell = column.generateCell(
+              // Create the appropriate cell
+              let cell = column.createCell(
                 column, featureId, featureName,
                 specData, specInfo[featureId], implInfo[featureId],
                 tr, lang, pos, warnings);
