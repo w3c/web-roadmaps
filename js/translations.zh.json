@@ -3,7 +3,7 @@
     "well-deployed": "广泛部署的技术",
     "in-progress": "开发中的技术",
     "exploratory-work": "探索性工作",
-    "not-covered": "Features not covered by ongoing work",
+    "not-covered": "未开始开发的技术",
     "discontinued": "不再进行的工作"
   },
   "implstatus": {
@@ -14,7 +14,7 @@
   },
   "labels": {
     "N/A": "无",
-    "%feature in %spec": "%spec 的 %feature"
+    "%feature in %spec": "%spec 中的 %feature"
   },
   "features": {
     "audio element": "audio 元素",
