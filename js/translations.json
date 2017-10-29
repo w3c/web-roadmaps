@@ -6,6 +6,15 @@
     "not-covered": "Features not covered by ongoing work",
     "discontinued": "Discontinued features"
   },
+  "columns": {
+    "feature": "Feature",
+    "spec": "Specification",
+    "group": "Group",
+    "maturity": "Maturity",
+    "impl": "Current implementations",
+    "implintents": "Implementation intents",
+    "versions": "Development versions"
+  },
   "implstatus": {
     "shipped": "Shipped",
     "experimental": "Experimental",
