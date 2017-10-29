@@ -195,6 +195,15 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
     "not-covered": "",
     "discontinued": ""
   },
+  "columns": {
+    "feature": "",
+    "spec": "",
+    "group": "",
+    "maturity": "",
+    "impl": "",
+    "implintents": "",
+    "versions": ""
+  },
   "implstatus": {
     "shipped": "",
     "experimental": "",
@@ -221,7 +230,7 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
 }
 ```
 
-The translations of section titles (`sections`), implementation status (`implstatus`) and labels (`labels`) are required. Translations of group names, specification titles and feature names are optional, although recommended. The framework will default to English when a translation is missing.
+The translations of section titles (`sections`), table columns headers (`columns`), implementation status (`implstatus`) and labels (`labels`) are required. Translations of group names, specification titles and feature names are optional, although recommended. The framework will default to English when a translation is missing.
 
 Note the framework will also write the English version of specification titles and of group names next to their translations in the generated tables, because the English version is often used when referring to specs and groups in Web pages, regardless of the language of the page.
 
