@@ -6,6 +6,15 @@
     "not-covered": "未开始开发的技术",
     "discontinued": "不再进行的工作"
   },
+  "columns": {
+    "feature": "特性",
+    "spec": "规范",
+    "group": "小组",
+    "maturity": "成熟度",
+    "impl": "现有实现",
+    "implintents": "实现意向",
+    "versions": "Development versions"
+  },
   "implstatus": {
     "shipped": "已有稳定实现",
     "experimental": "已有实验性实现",
