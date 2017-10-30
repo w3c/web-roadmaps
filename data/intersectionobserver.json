@@ -5,5 +5,11 @@
     "chromestatus": 5695342691483648,
     "webkitstatus": "specification-intersection-observer",
     "edgestatus": "Intersection Observer"
-  }
+  },
+  "polyfills": [
+    {
+      "label": "Polyfill.io",
+      "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
+    }
+  ]
 }

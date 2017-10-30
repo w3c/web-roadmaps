@@ -768,24 +768,50 @@ const formatImplInfo = function (data, translations) {
     div.appendChild(p);
     return div;
   }
-  Object.keys(data).forEach(type => {
-    let uadata = data[type];
-    uadata = uadata.filter(ua => browsers.indexOf(ua) !== -1);
-    if (uadata.length) {
-        let heading = document.createElement('p');
-        heading.appendChild(document.createTextNode(
-          statusTranslations[type] || type));
-        heading.appendChild(document.createElement('br'));
-        uadata.forEach(ua => {
-          let icon = document.createElement('img');
-          icon.src = '../assets/impl/' + ua + '.png';
-          icon.height = 30;
-          icon.alt = type + ' in ' + ua;
-          heading.appendChild(icon);
-        });
-        div.appendChild(heading);
-    }
-  });
+  Object.keys(data)
+    .filter(type => (type !== 'implementations') && (type !== 'polyfills'))
+    .forEach(type => {
+      let uadata = data[type];
+      uadata = uadata.filter(ua => browsers.indexOf(ua) !== -1);
+      if (uadata.length) {
+          let paragraph = document.createElement('p');
+          paragraph.appendChild(document.createTextNode(
+            statusTranslations[type] || type));
+          paragraph.appendChild(document.createElement('br'));
+          uadata.forEach(ua => {
+            let icon = document.createElement('img');
+            icon.src = '../assets/impl/' + ua + '.png';
+            icon.height = 30;
+            icon.alt = type + ' in ' + ua;
+            paragraph.appendChild(icon);
+          });
+          div.appendChild(paragraph);
+      }
+    });
+
+  if (data.polyfills) {
+    let el = document.createElement('p');
+    el.appendChild(document.createTextNode(
+      labelTranslations['Polyfills'] || 'Polyfills'));
+    div.appendChild(el);
+    el = document.createElement('ul');
+    data.polyfills.forEach((polyfill, pos) => {
+      let li = document.createElement('li');
+      let link = document.createElement('a');
+      link.setAttribute('href', polyfill.url);
+      if (polyfill.img && polyfill.img.src) {
+        let icon = document.createElement('img');
+        icon.src = polyfill.img.url;
+        icon.height = 30;
+        icon.alt = polyfill.img.label || '';
+        link.appendChild(icon);
+      }
+      link.appendChild(document.createTextNode(polyfill.label));
+      li.appendChild(link);
+      el.appendChild(li);
+    });
+    div.appendChild(el);
+  }
 
   return div;
 };
