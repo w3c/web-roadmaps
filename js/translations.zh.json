@@ -23,7 +23,8 @@
   },
   "labels": {
     "N/A": "无",
-    "%feature in %spec": "%spec 中的 %feature"
+    "%feature in %spec": "%spec 中的 %feature",
+    "Polyfills": "Polyfills"
   },
   "features": {
     "audio element": "audio 元素",
