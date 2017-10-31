@@ -465,7 +465,7 @@ const loadTranslations = function (lang) {
 /**
  * Creates the navigation menu from the Table of Contents
  */
-const applyToc = function (toc) {
+const applyToc = function (toc, translations, lang) {
   const title = document.querySelector('.hero .container h1').textContent;
   document.querySelector('title').textContent = title + ' - ' + toc.title;
   $(document, 'section.contribute .discourse').forEach(link => {
@@ -480,7 +480,14 @@ const applyToc = function (toc) {
   }
 
   let nav = document.querySelector('aside nav ul');
-  toc.pages.forEach(page => {
+  let pages = [{
+    title: ((translations.labels && translations.labels['Home']) ?
+      translations.labels['Home'] : 'Home'),
+    url: ((lang === 'en') ? './' : './index.' + lang + '.html'),
+    icon: '../assets/img/home.svg'
+  }];
+  pages = pages.concat(toc.pages);
+  pages.forEach(page => {
     let navLi = document.createElement('li');
     navLi.innerHTML = templateTocItem;
     navLi.querySelector('a').href = page.url;
@@ -845,7 +852,7 @@ Promise.all([
   let translations = results[1];
   let toc = results[2];
   return Promise.all([
-    applyToc(toc),
+    applyToc(toc, translations, lang),
     setSectionTitles(translations, lang),
     loadSpecInfo(),
     loadImplementationInfo(),

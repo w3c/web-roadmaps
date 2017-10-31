@@ -250,7 +250,8 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
   "labels": {
     "N/A": "",
     "%feature in %spec": "",
-    "Polyfills": ""
+    "Polyfills": "",
+    "Home": ""
   },
   "groups": {
     "CSS Working Group": "",
