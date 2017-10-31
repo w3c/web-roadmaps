@@ -4962,6 +4962,12 @@
     "indevelopment": [
       "safari"
     ], 
+    "polyfills": [
+      {
+        "label": "Polyfill.io", 
+        "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
+      }
+    ], 
     "shipped": [
       "firefox", 
       "samsung", 
@@ -7910,6 +7916,12 @@
     "experimental": [], 
     "implementations": [], 
     "indevelopment": [], 
+    "polyfills": [
+      {
+        "label": "imscJS", 
+        "url": "https://github.com/sandflow/imscJS"
+      }
+    ], 
     "shipped": []
   }, 
   "ttml-imsc11": {

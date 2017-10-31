@@ -92,6 +92,11 @@ tbody th, tbody td { padding-left: 0.5em;}
 td.maturity { text-align: center; padding: 0;}
 td.maturity img { vertical-align: middle; }
 td img + img { margin-left: 0.25em; }
+td ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -8px;
+}
 
 dl dt { margin-bottom: 0.3em;  font-size:1.1em;}
 dl dd{ margin-bottom: 1em;}
