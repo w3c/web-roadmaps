@@ -225,7 +225,7 @@ def processData():
                         # Rule 1, stop here, status comes from the right
                         # platform, we've found the implementation status
                         status = impl["status"]
-                        break;
+                        break
                     elif (statuses.index(impl["status"]) > statuses.index(status)):
                         # Rule 2, be optimistic in life
                         status = impl["status"]
