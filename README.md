@@ -204,9 +204,9 @@ If you would like to visualize the contents of a roadmap locally as it would app
 
 The translator needs to provide:
 
-* Translated versions of the HTML pages. See [Translating HTML pages](#translated-html-pages).
-* Translations of specification titles, feature names, group names and other labels used in the roadmap. See [Creating a `translations.xx.json` file](#creating-a-translations-xx-json-file).
-* Translations of the table of contents (the `toc.json`) file. See [Translating the `toc.json` file].
+* Translated versions of the HTML pages. See [Translating HTML pages](#translating-html-pages).
+* Translations of specification titles, feature names, group names and other labels used in the roadmap. See [Creating a `translations.xx.json` file](#creating-a-translationsxxjson-file).
+* Translations of the table of contents (the `toc.json`) file. See [Translating the `toc.json` file](#translating-the-tocjson-file).
 
 To maintain translations over time, it is wise to use Git tags to create snapshots of a roadmap whenever a significant update is needed. Maintaining the translation then becomes a matter of comparing the latest snapshot with the previous one. The translator can retrieve the ZIP that contains the HTML files to translate from GitHub.
 
