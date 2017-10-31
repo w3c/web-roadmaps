@@ -53,15 +53,52 @@ That JSON object is stored in a file in the [data](data/) directory, whose name 
 
 Depending on the advancement of the underlying specification, the JSON object can have the following properties:
 * for W3C specifications that have started their Recommendation track progress, the `TR` property should point to the URL of latest version of the spec; this URL will be used to collect data about the spec (standardization status, Working Groups that produce it, editors draft, etc)
-* for specifications for which browser implementations are expected, the `impl` property is an object with the following optional properties:
+* for specifications for which browser implementations are expected, the `impl` property is an object with one or more of the following optional properties:
   * `caniuse`: the name of the feature in [Can I use](http://caniuse.com/) (the one that appears in the URL after `#feat=`)
   * `chromestatus`: the number used to identify features in [Chrome Platform Status](https://www.chromestatus.com/features) (the one that appears in the URL after `features/`)
   * `edgestatus`: the name used to identify features in [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) (the one that appears in the URL after `platform/status/`)
   * `webkitstatus`: the name used to identify features in [WebKit Feature Status](https://webkit.org/status/) (the one that appears in the URL after `status/#`)
+  * `other`: an object that describes known implementation status per user agent. Object keys should be user agent names (typically one of `edge`, `firefox`, `chrome`, `safari`), and object values one of `shipped`, `indevelopment`, `experimental` or `consideration`, to mark the current implementation status. Maintaining implementation information is difficult and error prone. Whenever possible, the implementation status of a feature should rather be automatically extracted from main sources. This `other` mechanism should only be used as a fallback when implementation status is not available.
+* for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
 * in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json))
 * for specifications that have not started their Recommendation track progress, the `title` property gives the title of the specification
 * for specifications that have not started their Recommendation track progress, the `editors` property should point to the URL of the editors draft of the specification
 * for specifications that have not started their Recommendation track progress, the `wgs` property should be an array of objects describing the groups that are producing the spec; each such object should have a `url` property with a link to the group's home page, and a `label` property with the name of the group
+
+Here is an example of a JSON file that describes the "Intersection Observer" specification:
+```json
+{
+  "TR": "https://www.w3.org/TR/intersection-observer/",
+  "impl": {
+    "caniuse": "intersectionobserver",
+    "chromestatus": 5695342691483648,
+    "webkitstatus": "specification-intersection-observer",
+    "edgestatus": "Intersection Observer"
+  },
+  "polyfills": [
+    {
+      "label": "Polyfill.io",
+      "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
+    }
+  ]
+}
+```
+
+If you would like to state that a particular feature is implemented in Chrome, under development in Firefox, and being considered in Edge, you would add:
+
+```json
+{
+  "TR": "...",
+  "impl": {
+    "caniuse": "...",
+    "other": {
+      "chrome": "shipped",
+      "firefox": "indevelopment",
+      "edge": "consideration"
+    }
+  }
+}
+```
 
 ## Creating a new roadmap page or a new single-page roadmap
 Start from the following template
@@ -212,7 +249,8 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
   },
   "labels": {
     "N/A": "",
-    "%feature in %spec": ""
+    "%feature in %spec": "",
+    "Polyfills": ""
   },
   "groups": {
     "CSS Working Group": "",

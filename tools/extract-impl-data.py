@@ -22,7 +22,8 @@ sources = {
     "webkitstatus": {
         "url": "https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json",
         "coreua": ["webkit", "safari"]
-    }
+    },
+    "other": {}
 }
 
 
@@ -127,6 +128,13 @@ def get_implementation_status_from_source(origdata, sourceName, key, silentfail=
             impl.append({ "ua": "webkit", "status": "indevelopment", "source": sourceName })
         elif webkitstatus == "Under Consideration":
             impl.append({ "ua": "webkit", "status": "consideration", "source": sourceName })
+    elif sourceName=="other":
+        if isinstance(key, list):
+            for data in key:
+                impl.append({ "ua": data["ua"], "status": data["status"], "source": data["source"] if "source" in data else "other"})
+        else:
+            for ua, status in key.iteritems():
+                impl.append({ "ua": ua, "status": status, "source": "other" })
     return {
         "implementations": impl,
         "chromeid": chromeid
@@ -136,8 +144,11 @@ def get_implementation_status_from_source(origdata, sourceName, key, silentfail=
 def processData():
     # Load implementation data per source
     for key, source in sources.iteritems():
-        unparsedjson = urlopen(source["url"])
-        sources[key]["data"] = json.loads(unparsedjson.read())
+        if "url" in source:
+            unparsedjson = urlopen(source["url"])
+            sources[key]["data"] = json.loads(unparsedjson.read())
+        else:
+            sources[key]["data"] = {}
         if "coreua" not in sources[key]:
             sources[key]["coreua"] = []
 
@@ -221,7 +232,7 @@ def processData():
                         # Rule 3, constrain safari status to that of webkit
                         # when it is lower
                         status = webkitstatus
-                    elif (ua in sources[impl["source"]]["coreua"]):
+                    elif (impl["source"] in sources) and (ua in sources[impl["source"]]["coreua"]):
                         # Rule 1, stop here, status comes from the right
                         # platform, we've found the implementation status
                         status = impl["status"]
@@ -239,6 +250,22 @@ def processData():
             # Convert sets back to lists for JSON serialization
             for status in statuses[1:]:
                 data[id][status] = list(data[id][status])
+
+            # Copy polyfill information over from the feature data file
+            # (we'll just check that the data is correct)
+            if ("polyfills" in feature_data):
+                data[id]["polyfills"] = []
+                for polyfill in feature_data["polyfills"]:
+                    if ("url" not in polyfill):
+                        err = "Missing URL for polyfill in %s" % filename
+                        sys.stderr.write(err)
+                        errors.append(err)
+                    elif ("label" not in polyfill):
+                        err = "Missing label for polyfill in %s" % filename
+                        sys.stderr.write(err)
+                        errors.append(err)
+                    else:
+                        data[id]["polyfills"].append(polyfill)
 
     print json.dumps(data, sort_keys=True, indent=2)
     if len(errors):
