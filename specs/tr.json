@@ -164,7 +164,7 @@
     ]
   }, 
   "core-aam11": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Core Accessibility API Mappings 1.1", 
     "wgs": [
       {
@@ -530,7 +530,7 @@
     ]
   }, 
   "dpub-aam10": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Digital Publishing Accessibility API Mappings", 
     "wgs": [
       {
@@ -540,7 +540,7 @@
     ]
   }, 
   "dpub-aria10": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Digital Publishing WAI-ARIA Module 1.0", 
     "wgs": [
       {
@@ -670,7 +670,7 @@
     ]
   }, 
   "html5-browsing-context": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -690,7 +690,7 @@
     ]
   }, 
   "html5-sandbox": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -968,7 +968,7 @@
     ]
   }, 
   "p2p": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
     "wgs": [
       {
@@ -1240,8 +1240,8 @@
     "title": "Service Workers 1", 
     "wgs": [
       {
-        "label": "Web Platform Working Group", 
-        "url": "http://www.w3.org/WebPlatform/WG/"
+        "label": "Service Workers Working Group", 
+        "url": "https://www.w3.org/sw/"
       }
     ]
   }, 
@@ -1426,7 +1426,7 @@
     ]
   }, 
   "wai-aria11": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
     "wgs": [
       {
@@ -1490,7 +1490,7 @@
     ]
   }, 
   "webrtc-qos": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
     "wgs": [
       {
@@ -1500,7 +1500,7 @@
     ]
   }, 
   "webrtc-relay": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "WebRTC 1.0: Real-time Communication Between Browsers", 
     "wgs": [
       {

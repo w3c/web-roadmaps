@@ -6395,7 +6395,8 @@
   "preload": {
     "consideration": [], 
     "experimental": [
-      "ios_saf"
+      "ios_saf", 
+      "safari"
     ], 
     "implementations": [
       {
@@ -6435,7 +6436,7 @@
       }, 
       {
         "source": "caniuse", 
-        "status": "shipped", 
+        "status": "experimental", 
         "ua": "safari"
       }, 
       {
@@ -6457,7 +6458,6 @@
       "and_ff", 
       "opera", 
       "op_mob", 
-      "safari", 
       "and_chr", 
       "android"
     ]
@@ -6818,6 +6818,11 @@
       {
         "source": "caniuse", 
         "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
         "ua": "op_mob"
       }, 
       {
@@ -7083,10 +7088,16 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
       }
     ], 
     "indevelopment": [
-      "firefox"
+      "firefox", 
+      "safari"
     ], 
     "shipped": [
       "chrome"
@@ -8866,12 +8877,19 @@
   }, 
   "webauthn": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "firefox"
+    ], 
     "implementations": [
       {
         "source": "edgestatus", 
         "status": "shipped", 
         "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
       }, 
       {
         "source": "caniuse", 
