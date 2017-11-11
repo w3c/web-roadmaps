@@ -19,4 +19,5 @@ if [ -d out ]; then
   rm -rf out/web5g && cp -R web5g/ out/web5g/
   cp specs/tr.json out/specs/tr.json
   cp specs/impl.json out/specs/impl.json
+  cp README.md out/README.md
 fi
