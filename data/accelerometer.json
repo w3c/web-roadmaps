@@ -2,5 +2,11 @@
     "TR": "https://www.w3.org/TR/accelerometer/",
     "impl": {
         "chromestatus": 5698781827825664
-    }
+    },
+    "polyfills": [
+        {
+          "label": "sensor-polyfills",
+          "url": "https://github.com/kenchris/sensor-polyfills"
+        }
+    ]
 }

@@ -34,6 +34,12 @@
     "indevelopment": [
       "chrome"
     ], 
+    "polyfills": [
+      {
+        "label": "sensor-polyfills", 
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
+    ], 
     "shipped": []
   }, 
   "ambientlight": {
@@ -1031,11 +1037,6 @@
       {
         "source": "caniuse", 
         "status": "shipped", 
-        "ua": "samsung"
-      }, 
-      {
-        "source": "caniuse", 
-        "status": "shipped", 
         "ua": "chrome"
       }, 
       {
@@ -1061,8 +1062,7 @@
       "chrome", 
       "opera", 
       "android", 
-      "and_chr", 
-      "samsung"
+      "and_chr"
     ]
   }, 
   "crypto": {
@@ -3728,6 +3728,12 @@
     "indevelopment": [
       "chrome"
     ], 
+    "polyfills": [
+      {
+        "label": "sensor-polyfills", 
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
+    ], 
     "shipped": []
   }, 
   "hr-time": {
@@ -4422,9 +4428,7 @@
   }, 
   "inputdate": {
     "consideration": [], 
-    "experimental": [
-      "firefox"
-    ], 
+    "experimental": [], 
     "implementations": [
       {
         "source": "caniuse", 
@@ -4438,7 +4442,7 @@
       }, 
       {
         "source": "caniuse", 
-        "status": "experimental", 
+        "status": "shipped", 
         "ua": "firefox"
       }, 
       {
@@ -4501,6 +4505,7 @@
     "shipped": [
       "and_uc", 
       "baidu", 
+      "firefox", 
       "bb", 
       "samsung", 
       "chrome", 
@@ -5766,6 +5771,12 @@
     "indevelopment": [
       "chrome"
     ], 
+    "polyfills": [
+      {
+        "label": "sensor-polyfills", 
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
+    ], 
     "shipped": []
   }, 
   "p2p": {
@@ -6396,12 +6407,13 @@
     "consideration": [], 
     "experimental": [
       "ios_saf", 
+      "firefox", 
       "safari"
     ], 
     "implementations": [
       {
         "source": "caniuse", 
-        "status": "shipped", 
+        "status": "experimental", 
         "ua": "firefox"
       }, 
       {
@@ -6452,7 +6464,6 @@
     ], 
     "indevelopment": [], 
     "shipped": [
-      "firefox", 
       "samsung", 
       "chrome", 
       "and_ff", 
