@@ -227,14 +227,20 @@
       }
     ]
   }, 
+  "csp3": {
+    "maturity": "WD", 
+    "title": "Content Security Policy Level 3", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "css-2d": {
     "maturity": "WD", 
     "title": "CSS Transforms Module Level 1", 
     "wgs": [
-      {
-        "label": "SVG Working Group", 
-        "url": "http://www.w3.org/Graphics/SVG/WG/"
-      }, 
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
         "url": "http://www.w3.org/Style/CSS/members"
@@ -244,20 +250,6 @@
   "css-3d": {
     "maturity": "WD", 
     "title": "CSS Transforms Module Level 1", 
-    "wgs": [
-      {
-        "label": "SVG Working Group", 
-        "url": "http://www.w3.org/Graphics/SVG/WG/"
-      }, 
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
-  "css-animation": {
-    "maturity": "WD", 
-    "title": "CSS Animations", 
     "wgs": [
       {
         "label": "Cascading Style Sheets (CSS) Working Group", 
@@ -412,16 +404,6 @@
       {
         "label": "Pointer Events Working Group", 
         "url": "http://www.w3.org/2012/pointerevents/"
-      }
-    ]
-  }, 
-  "css-transitions": {
-    "maturity": "WD", 
-    "title": "CSS Transitions", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
@@ -660,7 +642,7 @@
     ]
   }, 
   "html-media-capture": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "HTML Media Capture", 
     "wgs": [
       {
