@@ -13,7 +13,7 @@
     },
     {
       "url": "control.html",
-      "title": "Media control",
+      "title": "Playback controls",
       "icon": "../assets/img/media-control.svg",
       "description": "Features needed to let the user interact with the playback of media content, both via local and remote interactions."
     },
