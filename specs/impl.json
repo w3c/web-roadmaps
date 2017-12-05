@@ -331,9 +331,7 @@
     ]
   }, 
   "appmanifest": {
-    "consideration": [
-      "webkit"
-    ], 
+    "consideration": [], 
     "experimental": [], 
     "implementations": [
       {
@@ -353,7 +351,7 @@
       }, 
       {
         "source": "webkitstatus", 
-        "status": "consideration", 
+        "status": "indevelopment", 
         "ua": "webkit"
       }, 
       {
@@ -398,6 +396,7 @@
       }
     ], 
     "indevelopment": [
+      "webkit", 
       "edge"
     ], 
     "shipped": [

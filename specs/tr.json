@@ -1463,7 +1463,7 @@
   }, 
   "webauthn": {
     "maturity": "WD", 
-    "title": "Web Authentication: An API for accessing Public Key Credentials Level 1", 
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1", 
     "wgs": [
       {
         "label": "Web Authentication Working Group", 
