@@ -257,6 +257,16 @@
       }
     ]
   }, 
+  "css-animation": {
+    "maturity": "WD", 
+    "title": "CSS Animations Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-border-background": {
     "maturity": "CR", 
     "title": "CSS Backgrounds and Borders Module Level 3", 
@@ -404,6 +414,16 @@
       {
         "label": "Pointer Events Working Group", 
         "url": "http://www.w3.org/2012/pointerevents/"
+      }
+    ]
+  }, 
+  "css-transitions": {
+    "maturity": "WD", 
+    "title": "CSS Transitions", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
