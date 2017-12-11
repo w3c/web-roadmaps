@@ -8586,6 +8586,44 @@
       "ie_mob"
     ]
   }, 
+  "wai-aria11": {
+    "consideration": [], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "chrome", 
+      "edge", 
+      "firefox", 
+      "safari"
+    ], 
+    "shipped": []
+  }, 
   "webanimations": {
     "consideration": [
       "safari"
