@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "font-loading",
-    "chromestatus": 6244676289953792
-  },
-  "TR": "https://www.w3.org/TR/css-font-loading-3/"
-}

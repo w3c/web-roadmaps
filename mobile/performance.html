@@ -1,96 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Performance and Tuning</title>
-  </head>
-  <body>
-    <header>
-      <h1>Performance and Tuning</h1>
-      <p>Due to their limited CPU, and more importantly to their limited battery, mobile devices require a lot of attention in terms of performance.</p>
-    </header>
-    <main>
-      <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+<html lang="en"><head>
+  <title>Performance and Tuning - Roadmap of Web Applications on Mobile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0072ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/roadmap.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
 
-        <div data-feature="Timing Hooks">
-          <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> developed a number of specifications that expose timing hooks to Web applications, to analyze time spent doing various tasks.</p>
+  <header>
+    <div class="container">
+      <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
 
-          <p>The <a data-featureid="hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. The <a data-featureid="performance-timeline">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are defined in separate specifications:</p>
 
+              <div class="brand">
+                <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+              </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <div class="content-wrapper">
+      <section class="hero">
+          <div class="container">
+          <h1>Performance and Tuning</h1><p>Due to their limited CPU, and more importantly to their limited battery, mobile devices require a lot of attention in terms of performance.</p></div>
+      </section>
+      <section class="main-content">
+          <div class="container">
+    <section class="featureset well-deployed">
+      <h2 id="well-deployed-technologies">Well-deployed technologies</h2>
+
+      <div data-feature="Timing Hooks" id="timing-hooks">
+        <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> developed a number of specifications that expose timing hooks to Web applications, to analyze time spent doing various tasks.</p>
+
+        <p>The <a data-featureid="hr-time" id="hr-time" href="https://www.w3.org/TR/hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. The <a data-featureid="performance-timeline" id="performance-timeline" href="https://www.w3.org/TR/performance-timeline/">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are defined in separate specifications:</p>
+
+        <ul>
+          <li><a data-featureid="navigation-timing" id="navigation-timing" href="https://www.w3.org/TR/navigation-timing/">Navigation Timing</a> exposes timing information relted to navigation and elements;</li>
+          <li><a data-featureid="resource-timing" id="resource-timing" href="https://www.w3.org/TR/resource-timing-1/">Resource Timing</a> exposes timing information for resources in a document;</li>
+          <li><a data-featureid="user-timing" id="user-timing" href="https://www.w3.org/TR/user-timing/">User Timing</a> help applications measure the performance of their applications using high precision timestamps.</li>
+        </ul>
+      </div>
+
+      <div data-feature="Page Visibility Detection" id="page-visibility-detection">
+        <p>The <a data-featureid="page-visibility" id="page-visibility" href="https://www.w3.org/TR/page-visibility/">API to determine whether a Web page is being displayed</a> (Page Visibility API) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized.</p>
+      </div>
+
+      <div data-feature="Animation Optimization" id="animation-optimization">
+        <p>The <a data-featureid="animation-frames" id="animation-frames" href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
+      </div>
+
+      <div data-feature="Threading" id="threading">
+        <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="webworkers" id="webworkers" href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
+      </div>
+
+      <div data-feature="Optimization Best Practices" id="optimization-best-practices">
+        <p>The <a data-featureid="mwabp" id="mwabp" href="https://www.w3.org/TR/mwabp/">Mobile Web Application Best Practices</a> provide general advice on how to build Web applications that work well on mobile devices, taking into account in particular the needs for optimization.</p>
+      </div>
+    <div><table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current implementations</th></tr></thead><tbody><tr><th rowspan="5">Timing Hooks</th><td><a href="https://www.w3.org/TR/hr-time">High Resolution Time</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/performance-timeline/">Performance Timeline</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>N/A</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/navigation-timing/">Navigation Timing</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/resource-timing-1/">Resource Timing Level 1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/user-timing/">User Timing</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Page Visibility Detection</th><td><a href="https://www.w3.org/TR/page-visibility/">Page Visibility</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Animation Optimization</th><td><a href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">requestAnimationFrame in HTML 5.1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Threading</th><td><a href="https://html.spec.whatwg.org/multipage/workers.html">Web workers in HTML (Living Standard)</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Optimization Best Practices</th><td><a href="https://www.w3.org/TR/mwabp/">Mobile Web Application Best Practices</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>N/A</p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+      <h2 id="technologies-in-progress">Technologies in progress</h2>
+      <div data-feature="Network Prioritization" id="network-prioritization">
+        <p>The <a data-featureid="resource-hints" id="resource-hints" href="https://www.w3.org/TR/resource-hints/">Resource Hints</a> and <a data-featureid="preload" id="preload" href="https://www.w3.org/TR/preload/">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
+      </div>
+
+      <div data-feature="Priority Handling" id="priority-handling">
+        <p>The <a data-featureid="requestidlecallback" id="requestidlecallback" href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks specification</a> defines the <code>requestIdleCallback</code> method that allows scheduling an operation at the next opportunity when the app is not processing another operation.</p>
+      </div>
+
+      <div data-feature="Caching" id="caching">
+        <p>The <a data-featureid="serviceworkers" id="serviceworkers" href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
+      </div>
+
+      <div data-feature="Battery Status" id="battery-status">
+        <p>The <a data-featureid="battery" id="battery" href="https://www.w3.org/TR/battery-status">Battery status API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device. However, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API.</p>
+      </div>
+
+      <div data-feature="Timing Hooks" id="timing-hooks-0">
+        <p><a data-featureid="server-timing" id="server-timing" href="https://www.w3.org/TR/server-timing">Server Timing</a> enables a server to communicate performance metrics about the request-response cycle to the user agent, and allows applications to act on these metrics to optimize application delivery.</p>
+        <p>The <a data-featureid="longtasks" id="longtasks" href="https://www.w3.org/TR/longtasks-1/">Long Tasks API</a> exposes a mechanism to detect long running tasks that monopolize the user interface's main thread for extended periods of time.</p>
+        <p>The <a data-featureid="paint-timing" id="paint-timing" href="https://www.w3.org/TR/paint-timing/">Paint Timing</a> specification allows the application to capture a series of key moments such as first paint and first contentful paint during page load.</p>
+      </div>
+
+      <div data-feature="Low-level Bytecode Format" id="low-level-bytecode-format">
+          <p><a data-featureid="webassembly" id="webassembly" href="https://webassembly.github.io/spec/">WebAssembly</a> is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages. It also defines an execution environment that attempts to maximize performance and interoperate gracefully with JavaScript and the Web, while ensuring security and consistent behavior across a variety of implementations.</p>
+      </div>
+
+      <div data-feature="Infinite scrolling" id="infinite-scrolling">
+        <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersectionobserver" id="intersectionobserver" href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
+      </div>
+    <div><table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current implementations</th></tr></thead><tbody><tr><th rowspan="2">Network Prioritization</th><td><a href="https://www.w3.org/TR/resource-hints/">Resource Hints</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>Under consideration<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>Experimental<br><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/preload/">Preload</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Experimental<br><img src="../assets/impl/firefox.png" alt="experimental in firefox" height="30"><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>Shipped<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>Priority Handling</th><td><a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="PR" width="50" height="50"></td><td><div><p>Under consideration<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>Caching</th><td><a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>In development<br><img src="../assets/impl/edge.png" alt="indevelopment in edge" height="30"><img src="../assets/impl/safari.png" alt="indevelopment in safari" height="30"></p><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>Battery Status</th><td><a href="https://www.w3.org/TR/battery-status">Battery Status API</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th rowspan="3">Timing Hooks</th><td><a href="https://www.w3.org/TR/server-timing">Server Timing</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>N/A</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/longtasks-1/">Long Tasks API 1</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>N/A</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/paint-timing/">Paint Timing 1</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>Under consideration<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"><img src="../assets/impl/safari.png" alt="consideration in safari" height="30"></p><p>Shipped<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>Low-level Bytecode Format</th><td><a href="https://webassembly.github.io/spec/">WebAssembly</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>Experimental<br><img src="../assets/impl/edge.png" alt="experimental in edge" height="30"></p><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Infinite scrolling</th><td><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>In development<br><img src="../assets/impl/safari.png" alt="indevelopment in safari" height="30"></p><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p><p>Polyfills</p><ul><li><a href="https://polyfill.io/v2/docs/features/#IntersectionObserver">Polyfill.io</a></li></ul></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+      <h2 id="exploratory-work">Exploratory work</h2>
+
+      <div data-feature="Rendering Performance" id="rendering-performance">
+        <p>The work on the <a data-featureid="frame-timing" id="frame-timing" href="https://www.w3.org/TR/frame-timing/">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</p>
+      </div>
+    <div><table><thead><tr><th>Feature</th><th>Specification</th><th>Group</th><th>Implementation intents</th></tr></thead><tbody><tr><th>Rendering Performance</th><td><a href="https://www.w3.org/TR/frame-timing/">Frame Timing</a></td><td><a href="https://www.w3.org/webperf/">Web Performance Working Group</a></td><td><div><p>N/A</p></div></td></tr></tbody></table></div></section><section>
+      <h2 id="features-not-covered-by-on-going-work">Features not covered by on-going work</h2>
+      <dl>
+        <dt>More fine-grained network prioritization</dt>
+        <dd>Existing mechanisms to specify priorities for resource fetching, such as the <code>preload</code> link type, are quite coarse. Applications could benefit from a declarative mechanism to specify the relative priorities of resources that the user agent will eventually need to fetch. Current discussions in the Web Platform Incubator Community Group could lead to exploratory work in this space.</dd>
+      </dl>
+    </section></div></section>
+      <section class="contribute">
+          <div class="container">
+          <h2 id="see-anything-missing">See anything missing?</h2>
+              <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+               <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+              </p>
+              <p class="call-to-action">
+                <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+              </p>
+          </div>
+      </section>
+    </div>
+
+      </main>
+
+      <aside id="side-nav">
+        <nav>
           <ul>
-            <li><a data-featureid="navigation-timing">Navigation Timing</a> exposes timing information relted to navigation and elements;</li>
-            <li><a data-featureid="resource-timing">Resource Timing</a> exposes timing information for resources in a document;</li>
-            <li><a data-featureid="user-timing">User Timing</a> help applications measure the performance of their applications using high precision timestamps.</li>
-          </ul>
-        </div>
+          <li><a href="./"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="graphics.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">Graphics and Layout</div></a></li><li><a href="adaptation.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">Device Adaptation</div></a></li><li><a href="forms.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">Forms</div></a></li><li><a href="storage.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">Data Storage</div></a></li><li><a href="media.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">Media</div></a></li><li><a href="userinput.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">User Input</div></a></li><li><a href="sensors.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">Sensors and Local Interactions</div></a></li><li><a href="network.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">Network and Communications</div></a></li><li><a href="lifecycle.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">Application Lifecycle</div></a></li><li><a href="payment.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">Payment and Services</div></a></li><li><a href="performance.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">Performance and Tuning</div></a></li><li><a href="security.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">Security and Privacy</div></a></li></ul>
+        </nav>
+      </aside>
+  <div id="mask"></div>
+      <footer>
+          <div class="container">
+              <p>
+                  © <a href="https://www.w3.org/">W3C</a>
+                  <br>
+                  <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                  <br>
+                  Usage policies apply
+              </p>
+              <p>Information on implementations of the APIs have been gathered from <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+          </p></div>
+      </footer>
+  
 
-        <div data-feature="Page Visibility Detection">
-          <p>The <a data-featureid="page-visibility">API to determine whether a Web page is being displayed</a> (Page Visibility API) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized.</p>
-        </div>
-
-        <div data-feature="Animation Optimization">
-          <p>The <a data-featureid="animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
-        </div>
-
-        <div data-feature="Threading">
-          <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="webworkers">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
-        </div>
-
-        <div data-feature="Optimization Best Practices">
-          <p>The <a data-featureid="mwabp">Mobile Web Application Best Practices</a> provide general advice on how to build Web applications that work well on mobile devices, taking into account in particular the needs for optimization.</p>
-        </div>
-      </section>
-
-      <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
-        <div data-feature="Network Prioritization">
-          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
-        </div>
-
-        <div data-feature="Priority Handling">
-          <p>The <a data-featureid="requestidlecallback">Cooperative Scheduling of Background Tasks specification</a> defines the <code>requestIdleCallback</code> method that allows scheduling an operation at the next opportunity when the app is not processing another operation.</p>
-        </div>
-
-        <div data-feature="Caching">
-          <p>The <a data-featureid="serviceworkers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
-        </div>
-
-        <div data-feature="Battery Status">
-          <p>The <a data-featureid="battery">Battery status API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device. However, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API.</p>
-        </div>
-
-        <div data-feature="Timing Hooks">
-          <p><a data-featureid="server-timing">Server Timing</a> enables a server to communicate performance metrics about the request-response cycle to the user agent, and allows applications to act on these metrics to optimize application delivery.</p>
-          <p>The <a data-featureid="longtasks">Long Tasks API</a> exposes a mechanism to detect long running tasks that monopolize the user interface's main thread for extended periods of time.</p>
-          <p>The <a data-featureid="paint-timing">Paint Timing</a> specification allows the application to capture a series of key moments such as first paint and first contentful paint during page load.</p>
-        </div>
-
-        <div data-feature="Low-level Bytecode Format">
-            <p><a data-featureid="webassembly">WebAssembly</a> is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages. It also defines an execution environment that attempts to maximize performance and interoperate gracefully with JavaScript and the Web, while ensuring security and consistent behavior across a variety of implementations.</p>
-        </div>
-
-        <div data-feature="Infinite scrolling">
-          <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersectionobserver">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
-        </div>
-      </section>
-
-      <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
-
-        <div data-feature="Rendering Performance">
-          <p>The work on the <a data-featureid="frame-timing">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</p>
-        </div>
-      </section>
-
-      <section>
-        <h2>Features not covered by on-going work</h2>
-        <dl>
-          <dt>More fine-grained network prioritization</dt>
-          <dd>Existing mechanisms to specify priorities for resource fetching, such as the <code>preload</code> link type, are quite coarse. Applications could benefit from a declarative mechanism to specify the relative priorities of resources that the user agent will eventually need to fetch. Current discussions in the Web Platform Incubator Community Group could lead to exploratory work in this space.</dd>
-        </dl>
-      </section>
-    </main>
-    <script src="../js/generate.js"></script>
-  </body>
-</html>
+<script src="../js/sidenav.js"></script></body></html>

@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "css-touch-action"
-  },
-  "TR": "https://www.w3.org/TR/pointerevents2/",
-  "feature": "touch-action"
-}

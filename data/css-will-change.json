@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "will-change",
-    "chromestatus": 5954199330226176,
-    "webkitstatus": "specification-css-will-change"
-  },
-  "TR": "https://www.w3.org/TR/css-will-change-1/"
-}

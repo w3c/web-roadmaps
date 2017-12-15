@@ -1,14 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset=utf-8>
-    <title>Roadmap of Web Applications on Mobile</title>
-  </head>
-  <body>
-    <header>
-      <h1>Roadmap of Web Applications on Mobile</h1>
-      <p>This document summarizes the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context.</p>
-    </header>
-  </body>
-  <script src="../js/generate-index.js"></script>
-</html>
+<html lang="en"><head>
+  <title>Roadmap of Web Applications on Mobile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0072ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/roadmap.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+              <div class="brand">
+                <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+              </div>
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <div class="content-wrapper">
+      <section class="hero">
+          <div class="container">
+          <h1>Roadmap of Web Applications on Mobile</h1>
+          <h2>December 2017</h2>
+        <dl>
+        <dt>Latest published version</dt>
+        <dd>
+          <a href="https://www.w3.org/Mobile/roadmap/">https://www.w3.org/Mobile/roadmap/</a>
+        </dd>
+        <dt>This version</dt>
+        <dd id="this"><a href="https://www.w3.org/2017/12/web-roadmaps/mobile/">https://www.w3.org/2017/12/web-roadmaps/mobile/</a></dd>
+        <dt>Previous version</dt>
+        <dd id="prev">N/A</dd>
+        </dl>
+          <p>This document summarizes the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context.</p></div>
+      </section>
+      <section class="features">
+          <div class="container">
+              <ul class="roadmap-list">
+              <li><a href="graphics.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description"><h2>Graphics and Layout</h2><p>Features needed to design compelling and smooth user interfaces.</p></div></a></li><li><a href="adaptation.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description"><h2>Device Adaptation</h2><p>Features needed to create responsive layouts, where content automatically adjusts itself to heterogeneous screens, input mechanisms and other device capabilities.</p></div></a></li><li><a href="forms.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description"><h2>Forms</h2><p>Features needed to build rich forms and optimize user input on devices where text input remains a challenge.</p></div></a></li><li><a href="storage.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description"><h2>Data Storage</h2><p>Technologies available to save state, export content, and integrate data from files and services on the system.</p></div></a></li><li><a href="media.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description"><h2>Media</h2><p>Features needed to create immersive audio/video experiences on mobile devices.</p></div></a></li><li><a href="userinput.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description"><h2>User Input</h2><p>Features needed to engage the user through device-specific interaction mechanisms, such as touch-based interactions, vibration, notifications.</p></div></a></li><li><a href="sensors.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description"><h2>Sensors and Local Interactions</h2><p>Hooks to interact with sensors that compose mobile devices, from accelerometers and geolocation sensors to proximity-based communication mechanisms.</p></div></a></li><li><a href="network.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description"><h2>Network and Communications</h2><p>Interactions with the network to bring the power and immense storage capabilities of the Web to otherwise limited mobile devices.</p></div></a></li><li><a href="lifecycle.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description"><h2>Application Lifecycle</h2><p>Mechanisms to integrate the application with the rest of the system and provide a native-like experience.</p></div></a></li><li><a href="payment.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description"><h2>Payment and Services</h2><p>Features needed to monetize an application, e.g. by integrating easy-to-use in-app purchases.</p></div></a></li><li><a href="performance.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description"><h2>Performance and Tuning</h2><p>Mechanisms to monitor and improve the performances of an application on highly-constrained mobile devices.</p></div></a></li><li><a href="security.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description"><h2>Security and Privacy</h2><p>Technologies and considerations to guarantee privacy and security on mobile devices that hold some of the user’s most private and confidential data.</p></div></a></li></ul>
+          </div>
+      </section>
+      <section class="contribute">
+          <div class="container">
+          <h2>See anything missing?</h2>
+              <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+               <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+              </p>
+              <p class="call-to-action">
+                <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+              </p>
+          </div>
+      </section>
+    </div>
+
+      </main>
+
+      <aside id="side-nav">
+        <nav>
+          <ul>
+          <li><a href="graphics.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">Graphics and Layout</div></a></li><li><a href="adaptation.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">Device Adaptation</div></a></li><li><a href="forms.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">Forms</div></a></li><li><a href="storage.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">Data Storage</div></a></li><li><a href="media.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">Media</div></a></li><li><a href="userinput.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">User Input</div></a></li><li><a href="sensors.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">Sensors and Local Interactions</div></a></li><li><a href="network.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">Network and Communications</div></a></li><li><a href="lifecycle.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">Application Lifecycle</div></a></li><li><a href="payment.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">Payment and Services</div></a></li><li><a href="performance.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">Performance and Tuning</div></a></li><li><a href="security.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">Security and Privacy</div></a></li></ul>
+        </nav>
+      </aside>
+  <div id="mask"></div>
+      <footer>
+          <div class="container">
+              <p>
+                  © <a href="https://www.w3.org/">W3C</a>
+                  <br>
+                  <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                  <br>
+                  Usage policies apply
+              </p>
+          </div>
+      </footer>
+  
+
+<script src="../js/sidenav.js"></script></body></html>
