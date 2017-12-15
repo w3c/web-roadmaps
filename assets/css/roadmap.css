@@ -94,6 +94,34 @@ filter: grayscale(1);*/
   padding-bottom: 30px;
 }
 
+.hero h2 {
+  font-size: 1.3em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: #47525d;
+}
+
+.hero details {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-weight: 300;
+  color: #47525d;
+}
+
+.hero summary {
+  cursor: pointer;
+}
+
+.hero dl {
+  margin-bottom: 0;
+}
+
+.hero dt, .hero dd {
+  margin-bottom: 0;
+  font-size: 1em;
+  color: #47525d;
+}
 
 .call-to-action a.btn {
   font-size: 1em;
