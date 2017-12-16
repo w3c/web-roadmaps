@@ -164,7 +164,7 @@
     ]
   }, 
   "core-aam11": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Core Accessibility API Mappings 1.1", 
     "wgs": [
       {
@@ -532,7 +532,7 @@
     ]
   }, 
   "dpub-aam10": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Digital Publishing Accessibility API Mappings", 
     "wgs": [
       {
@@ -542,7 +542,7 @@
     ]
   }, 
   "dpub-aria10": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Digital Publishing WAI-ARIA Module 1.0", 
     "wgs": [
       {
@@ -672,7 +672,7 @@
     ]
   }, 
   "html5-browsing-context": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -692,7 +692,7 @@
     ]
   }, 
   "html5-sandbox": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "HTML 5.2", 
     "wgs": [
       {
@@ -1428,7 +1428,7 @@
     ]
   }, 
   "wai-aria11": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
     "wgs": [
       {
@@ -1438,7 +1438,7 @@
     ]
   }, 
   "wake-lock": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Wake Lock API", 
     "wgs": [
       {

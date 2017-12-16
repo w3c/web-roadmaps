@@ -9440,18 +9440,18 @@
   }, 
   "webusb": {
     "consideration": [], 
-    "experimental": [
-      "chrome"
-    ], 
+    "experimental": [], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "experimental", 
+        "status": "shipped", 
         "ua": "chrome"
       }
     ], 
     "indevelopment": [], 
-    "shipped": []
+    "shipped": [
+      "chrome"
+    ]
   }, 
   "webvr": {
     "consideration": [], 
