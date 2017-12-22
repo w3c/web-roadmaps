@@ -337,7 +337,7 @@ const maturityData = function (spec) {
       label: spec.maturity,
       level: maturityLevels[spec.maturity] || 'low'
     },
-    maturityIcon: (!spec.maturity || (spec.maturity === 'NOTE')) ? null : {
+    maturityIcon: !spec.maturity ? null : {
       src: 'https://www.w3.org/2013/09/wpd-rectrack-icons/' +
         spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') +
         '.svg',
