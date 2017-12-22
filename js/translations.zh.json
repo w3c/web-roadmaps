@@ -19,7 +19,7 @@
     "shipped": "已有稳定实现",
     "experimental": "已有实验性实现",
     "indevelopment": "开发中",
-    "consideration": "考虑实现",
+    "consideration": "考虑实现"
   },
   "labels": {
     "N/A": "无",
