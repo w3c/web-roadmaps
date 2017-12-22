@@ -37,6 +37,7 @@
   "specifications": {
     "CSS Animations": "CSS 动画",
     "CSS Device Adaptation": "CSS 设备适配",
+    "CSS Transitions": "CSS 过渡",
     "Media Queries": "媒体查询",
     "Web Animations": "Web 动画",
     "Web Bluetooth": "Web 蓝牙"
