@@ -25,7 +25,7 @@
     "N/A": "无",
     "%feature in %spec": "%spec 中的 %feature",
     "Polyfills": "Polyfills",
-    "Home": "Home"
+    "Home": "首页"
   },
   "features": {
     "audio element": "audio 元素",
