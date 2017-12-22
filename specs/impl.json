@@ -7032,6 +7032,40 @@
       "chrome"
     ]
   }, 
+  "securecontexts": {
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": [
+      "edge"
+    ]
+  }, 
   "selectors-states": {
     "consideration": [], 
     "experimental": [], 
