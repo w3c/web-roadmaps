@@ -8560,6 +8560,21 @@
     ], 
     "shipped": []
   }, 
+  "web-lifecycle": {
+    "consideration": [], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
   "webanimations": {
     "consideration": [
       "safari"
