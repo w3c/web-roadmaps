@@ -611,6 +611,16 @@
       }
     ]
   }, 
+  "geofencing": {
+    "maturity": "Retired", 
+    "title": "Geofencing API", 
+    "wgs": [
+      {
+        "label": "Geolocation Working Group", 
+        "url": "http://www.w3.org/2008/geolocation/"
+      }
+    ]
+  }, 
   "geolocation": {
     "maturity": "REC", 
     "title": "Geolocation API Specification", 
@@ -1284,6 +1294,16 @@
       {
         "label": "SVG Working Group", 
         "url": "http://www.w3.org/Graphics/SVG/WG/"
+      }
+    ]
+  }, 
+  "task-scheduler": {
+    "maturity": "Retired", 
+    "title": "Task Scheduler API Specification", 
+    "wgs": [
+      {
+        "label": "System Applications Working Group", 
+        "url": "http://www.w3.org/2012/sysapps/"
       }
     ]
   }, 
