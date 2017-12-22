@@ -35,6 +35,8 @@
     "CSS Working Group": "CSS 工作组"
   },
   "specifications": {
-    "CSS Animations": "CSS 动画"
+    "CSS Animations": "CSS 动画",
+    "Web Animations": "Web 动画",
+    "CSS Device Adaptation": "CSS 设备适配"
   }
 }
