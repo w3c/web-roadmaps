@@ -23,7 +23,7 @@
   },
   "labels": {
     "N/A": "无",
-    "%feature in %spec": "%spec 中的 %feature",
+    "%feature in %spec": "%spec中的%feature",
     "Polyfills": "Polyfills",
     "Home": "首页"
   },
