@@ -1,6 +1,6 @@
 {
   "TR": "https://www.w3.org/TR/css-backgrounds-3/",
-  "feature": "box shadow effects",
+  "feature": "Box shadow effects",
   "impl": {
     "caniuse": "css-boxshadow"
   }

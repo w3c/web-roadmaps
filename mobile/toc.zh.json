@@ -55,9 +55,9 @@
       },
       {
         "url": "lifecycle.zh.html",
-        "title": "Application Lifecycle",
+        "title": "应用生命周期",
         "icon": "../assets/img/mobile-lifecycle.svg",
-        "description": "Mechanisms to integrate the application with the rest of the system and provide a native-like experience."
+        "description": "将应用与系统其他部分集成的机制并且提供类似原生应用的体验。"
       },
       {
         "url": "payment.zh.html",
