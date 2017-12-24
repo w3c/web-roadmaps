@@ -29,7 +29,10 @@
   },
   "features": {
     "audio element": "audio 元素",
-    "picture element": "picture 元素"
+    "box shadow effects": "盒子阴影效果",
+    "complex backgrounds": "复杂背景",
+    "picture element": "picture 元素",
+    "rounded corners": "圆角"
   },
   "groups": {
     "CSS Working Group": "CSS 工作组",
@@ -43,7 +46,7 @@
     "Accelerometer": "加速度传感器",
     "Ambient Humidity Events": "环境湿度事件",
     "Ambient Light Sensor": "环境光线传感器",
-    "CSS Animations": "CSS 动画",
+    "CSS Animations Level 1": "CSS 动画第一版",
     "CSS Device Adaptation": "CSS 设备适配",
     "CSS Transitions": "CSS 过渡",
     "Geolocation Sensor": "地理位置传感器",
@@ -54,6 +57,14 @@
     "Orientation Sensor": "方向传感器",
     "Proximity Sensor": "接近度传感器",
     "Web Animations": "Web 动画",
-    "Web Bluetooth": "Web 蓝牙"
+    "Web Bluetooth": "Web 蓝牙",
+    "CSS Backgrounds and Borders Module Level 3": "CSS 背景和边框模块第三版",
+    "CSS Transforms Module Level 1": "CSS 变换模块第一版",
+    "CSS Flexible Box Layout Module Level 1": "CSS弹性盒式布局模块第一版",
+    "WOFF File Format 1.0": "Web字体文件格式 1.0",
+    "WOFF File Format 2.0": "Web字体文件格式 2.0",
+    "Scalable Vector Graphics (SVG) 1.1 Specification": "可扩展矢量图形 (SVG) 1.1 规范",
+    "Scalable Vector Graphics (SVG) 2": "可扩展矢量图形 (SVG) 第二版",
+    "HTML Canvas 2D Context": "HTML画布2D上下文"
   }
 }
