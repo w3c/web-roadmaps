@@ -18,7 +18,7 @@
       <section class="featureset well-deployed">
         <h2>广泛部署的技术</h2>
 
-        <div data-feature="Strengthened security">
+        <div data-feature="安全加强">
           <p>用户的第一道防线以及 Web 应用的隔离单元是同源策略，它大致限制了 Web 应用可以访问同一来源的内容和数据，这里的来源是指协议、域名和端口的组合。</p>
 
           <p>由于这个策略提出较早，它在 Web 平台的某些部分并不严格，因此会通过跨站脚本或跨站请求伪造，将用户暴露给更大的攻击面。为了使 Web 应用编写者能够减少攻击面从而超出以往要求的效果，<a data-featureid="csp">内容安全策略</a>（Content Security Policy，CSP）提供了一些钩子，它们可以严重限制攻击者希望实现的损害。一个通过启用了 CSP 的通过安全隧道传输的应用可以确保用户能够接收的数据是其期望得到的数据。</p>
@@ -31,43 +31,43 @@
           <p>在聚合来自多个（可能不受信任的）源的内容的应用中，<a data-featureid="html5-sandbox">HTML5 <code>iframe</code> 的 <code>sandbox</code> 属性</a>可以限制第三方嵌入内容可以使用的交互类型。</p>
         </div>
 
-        <div data-feature="Encryption">
-          <p>The <a data-featureid="crypto">Web Cryptography API</a> provides the necessary tools to encrypt data for storage and transmission from within Web applications, with access to pre-provisioned keys via the <strong><a data-featureid="cryptokey">WebCrypto Key Discovery</a></strong> API.</p>
+        <div data-feature="加密">
+          <p>通过<strong><a data-featureid="cryptokey">WebCrypto密钥发现</a></strong>API访问预先配置的密钥，<a data-featureid="crypto">Web密码学API</a>提供必要的工具来加密数据，以便在Web应用中进行存储和传输。</p>
         </div>
 
-        <div data-feature="Tracking Protection">
-          <p>For users that wish to indicate their preferences not to be tracked across Web applications and sites, the <a data-featureid="dnt">Tracking Preference Expression (also known as Do No Track)</a> enables browsers to communicate explicitly their wish to content providers, and to determine whether a given content provider asserts fulfilling that wish. Not all content providers honor users' expressed preferences though.</p>
+        <div data-feature="跟踪保护">
+          <p>对于希望表明其偏好不被跨 Web 应用和站点追踪的用户，<a data-featureid="dnt">跟踪偏好表达式（Tracking Preference Expression，也被称为Do No Track）</a>使浏览器能够明确地向内容提供者传达用户的愿望，并确定给定的内容提供者是否声明满足该愿望。尽管如此，并不是所有的内容提供者都会尊重用户表达的偏好。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
+        <h2>开发中的技术</h2>
 
-        <p>Many sensitive APIs, e.g. those that expose mobile device sensors, are gated by a request for user consent; while these requests give control to the user, they can be sometimes hard to integrate in the overall user experience without visibility on which permission has been granted or denied. The <a data-featureid="permissions">Permissions API</a> aims at fixing this.</p>
+        <p>许多敏感的 API，比如那些移动设备传感器的 API，需要通过用户许可才能使用；当这些请求给予用户控制权时，由于关于授予或拒绝哪个权限并不可见，他们有时难以集成到整体用户体验中。<a data-featureid="permissions">权限API</a>旨在解决这个问题。</p>
 
-        <div data-feature="Identity Management">
-          <p>To facilitate the authentication of users to on-line services, the Web Application Security Working Group is proposing a <a data-featureid="credential-management">Credential Management API</a> that lets developers interact more seamless with user-agent-managed credentials.</p>
+        <div data-feature="身份管理">
+          <p>为了方便用户对在线服务的认证，Web应用安全工作组提出了<a data-featureid="credential-management">凭证管理API</a>，使开发人员能够与用户代理管理的凭证更加无缝地交互。</p>
         </div>
 
-        <p data-feature="Authentication">Building on the multi-factor authentication work of the FIDO Alliance, <a data-featureid="webauthn">Secure Authentication</a> aims to standardize multi-factor authentication for the Web, using the combination of "something you have" with "something you know," so that hacking a password database is no longer sufficient to hijack user accounts.</p>
+        <p data-feature="认证">基于 FIDO 联盟的多因素认证工作，<a data-featureid="webauthn">安全认证</a>的目标是使 Web 的多因素认证标准化，使用“你有的东西”和“你知道的东西”的组合，所以黑客窃取密码数据库已经不足以劫持用户帐户。</p>
 
-        <p data-feature="Secure contexts"><a data-featureid="securecontexts">Secure Contexts</a> recommends that powerful features of the Web platform, including application code with access to sensitive or private data, be delivered only in secure contexts, over authenticated and confidential channels that guarantee data integrity. As the draft indicates, "delivering code securely cannot ensure that an application will always meet a user's security and privacy requirements, but it is a necessary precondition."</p>
+        <p data-feature="认证"><a data-featureid="securecontexts">安全上下文</a>建议 Web 平台的强大特性（包括访问敏感数据或私有数据的应用程序代码）只能在安全上下文中通过经过身份验证和加密的渠道传输，以此保证数据的完整性。草案指出：“安全地交付代码不能确保应用程序总是能够满足用户的安全和隐私要求，但这是一个必要的先决条件。”</p>
 
-        <p data-feature="HTTPs adoption">Web sites with a lot of existing content set up to use resources loaded over HTTP can find the task of migrating that content to HTTPs daunting. The <a data-featureid="uir">Upgrade Insecure Requests specification</a> helps that migration by instructing the browser to load these resources over HTTPs.</p>
+        <p data-feature="采用 HTTPs">已经具有大量内容的网站在将这些内容从 HTTP 迁移到 HTTPs 是一个很艰巨的任务。<a data-featureid="uir">升级不安全请求规范</a>指示浏览器通过 HTTPs 加载这些资源来帮助迁移。</p>
 
-        <p data-feature="Sandboxing">The <a data-featureid="uisecurity">User Interface Security and the Visibility API</a> document proposes to eliminate clickjacking by assuring element visibility at the graphics rendering level. For instance, a developer deploying it can assure that users clicking their site's "pay" button aren't being tricked into transferring their bank balances to an imposter instead.</p>
+        <p data-feature="沙盒"><a data-featureid="uisecurity">用户界面安全性和可见性 API</a> 文档建议通过确保图形渲染级别的元素可见性来消除点击劫持。例如，一个开发者部署它可以确保用户点击他们的网站的“支付”按钮不被欺骗，而不会把他们的银行余额转移给冒名顶替者。</p>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
-        <p data-feature="Authentication"><a data-featureid="hbss">Hardware Based Secure Services</a> aims to improve the levels of assurance to which users and application providers are able to protect their online accounts and communications, by making hardware security services available to the Web.</p>
+        <h2>探索性工作</h2>
+        <p data-feature="Authentication"><a data-featureid="hbss">基于硬件的安全服务</a>旨在通过向 Web 提供硬件安全服务来提高用户和应用程序提供商能够保护其在线帐户和通信的保证水平。</p>
       </section>
 
       <section>
-        <h2>Discontinued features</h2>
+        <h2>不再进行的工作</h2>
         <dl>
-          <dt>HTTP request filtering</dt>
-          <dd>The <a data-featureid="epr">Entry Point Regulation</a> specification provided another layer of strengthening security. It defined a mechanism to filter the type of HTTP requests that can be made from external sites, reducing risks of cross-site script and cross-site request forgery. Work on this specification has been discontinued for the time being.</dd>
+          <dt>HTTP请求过滤</dt>
+          <dd><a data-featureid="epr">入口监管</a>规范提供了另一个加强安全的层面。它定义了一种机制来过滤可以从外部站点发起的 HTTP 请求的类型，降低了跨站点脚本和跨站点请求伪造的风险。这个规范的工作暂时停止了。</dd>
         </dl>
       </section>
     </main>

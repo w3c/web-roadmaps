@@ -37,9 +37,9 @@
       },
       {
         "url": "userinput.zh.html",
-        "title": "User Input",
+        "title": "用户输入",
         "icon": "../assets/img/mobile-userinput.svg",
-        "description": "Features needed to engage the user through device-specific interaction mechanisms, such as touch-based interactions, vibration, notifications."
+        "description": "通过设备特定的交互机制吸引用户的特性（如触控、振动、通知）。"
       },
       {
         "url": "sensors.zh.html",
