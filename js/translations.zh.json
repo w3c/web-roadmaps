@@ -35,11 +35,17 @@
     "CSS Working Group": "CSS 工作组"
   },
   "specifications": {
+    "Accelerometer": "加速度传感器",
+    "Ambient Light Sensor": "环境光线传感器",
     "CSS Animations": "CSS 动画",
     "CSS Device Adaptation": "CSS 设备适配",
     "CSS Transitions": "CSS 过渡",
+    "Gyroscope": "陀螺仪",
+    "Magnetometer": "磁强计",
     "Media Capture and Streams": "媒体捕捉与媒体流",
     "Media Queries": "媒体查询",
+    "Orientation Sensor": "方向传感器",
+    "Proximity Sensor": "接近度传感器",
     "Web Animations": "Web 动画",
     "Web Bluetooth": "Web 蓝牙"
   }
