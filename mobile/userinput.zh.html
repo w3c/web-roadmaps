@@ -11,34 +11,34 @@
     <main>
       <section class="featureset well-deployed">
         <h2>广泛部署的技术</h2>
-        <div data-feature="Touch-based interactions">
+        <div data-feature="基于触控的交互">
           <p>越来越多的移动设备依赖于触控。尽管在Web平台中公认的传统交互方式（键盘、鼠标输入）仍然可以在这种情况下应用，但更具针对性地处理触控输入是创建适应性良好的用户体验的关键因素，<strong><a data-featureid="touchevent">文档对象模型中的触摸事件</a></strong>可以解决这个问题。</p>
         </div>
 
-        <p data-feature="Vibration"><a data-featureid="vibration">振动 API</a> 让移动开发者利用触觉反馈来创建新的交互形式（例如在游戏中）。</p>
+        <p data-feature="振动"><a data-featureid="vibration">振动 API</a> 让移动开发者利用触觉反馈来创建新的交互形式（例如在游戏中）。</p>
 
-        <p data-feature="Notification">移动设备被用户随身携带，许多移动用户依赖它们去提醒和通知自己事件，如消息。<a data-featureid="notifications">Web通知</a>规范使这种特性在 Web 环境中可用。</p>
+        <p data-feature="通知">移动设备被用户随身携带，许多移动用户依赖它们去提醒和通知自己事件，如消息。<a data-featureid="notifications">Web通知</a>规范使这种特性在 Web 环境中可用。</p>
 
-        <div data-feature="Accessibility">
-          <p>The hardware constraints of mobile devices, and their different usage context can make <a href="https://www.w3.org/WAI/mobile/experiences">mobile users experience similar barriers to people with disabilities</a>. These similarities in barriers mean that similar solutions can be used to cater for them, <a href="https://www.w3.org/WAI/mobile/overlap">making a Web site accessible both for people with disabilities and mobile devices</a> a natural goal (as detailed in <a data-featureid="mwbp-wcag">Relationship between Mobile Web Best Practices and WCAG</a>).</p>
-          <p>The WCAG and UAWG Working Group provide guidance on mobile accessibility in <a data-featureid="mobile-wcag">how Web Content Accessibility Guidelines (WCAG) and other WAI guidelines apply to mobile</a> — that is, making websites and applications more accessible to people with disabilities when they are using mobile phones and a broad range of other devices.</p>
-          <p><a data-featureid="wai-aria"><cite>WAI-ARIA</cite></a> provides semantic information on widgets, structures and behaviors hooks to make Web applications more accessible, including on mobile devices.</p>
+        <div data-feature="信息无障碍">
+          <p>移动设备硬件的限制和不同的使用环境，<a href="https://www.w3.org/WAI/mobile/experiences">会使残疾人体验到相似的障碍</a>。而这些障碍的相似性意味着相似的方法可以被用来解决这类问题，<a href="https://www.w3.org/WAI/mobile/overlap">使拥有移动设备的残疾人能无障碍访问网站</a>就成为一个自然而然的目标（详见<a data-featureid="mwbp-wcag">移动 Web 最佳实践与 Web 内容无障碍指南之间的关系</a>）。</p>
+          <p>Web内容无障碍指南和用户代理无障碍指南工作组就 <a data-featureid="mobile-wcag">WCAG 和其它的 Web 无障碍指南如何应用到移动设备</a>提供了指导。更确切地说，这使残疾人在使用移动设备时能够更简单地访问网站和应用程序。</p>
+          <p><a data-featureid="wai-aria"><cite>WAI-ARIA</cite></a>提供有关部件、结构和行为钩子的语义信息，使 Web 应用程序能无障碍地访问，包括在移动设备上。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
+        <h2>开发中的技术</h2>
 
         <div data-feature="Touch-based interactions">
-          <p>The <a href="https://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has made good progress on an alternative approach to handle user input, <a data-featureid="pointer-events">Pointer Events</a>, that allows to handle mouse, touch and pen events under a single model. It provides a complementary and more unified  approach to the currently more widely deployed Touch Events.</p>
-          <p>In particular, the <a data-featureid="css-touch-action">CSS property <code>touch-action</code></a> that lets filter gesture events on elements is gaining traction beyond implementations of Pointer Events.</p>
-          <p>The early proposal for an <a data-featureid="inputdevice">InputDevice capabilities API</a> would provide information about a given “mouse” event comes from a touch-capable device.</p>
+          <p><a href="https://www.w3.org/2012/pointerevents/">指针事件工作组</a>在处理用户输入的替代方法上取得了很好的进展。<a data-featureid="pointer-events">指针事件</a>允许统一处理鼠标、触摸和笔事件。它为当前更广泛部署的触摸事件提供了一种补充和更统一的方法。</p>
+          <p>特别是，<a data-featureid="css-touch-action">CSS 的 <code>touch-action</code> 属性</a>使元素上的过滤器手势事件在实现指针事件之外进一步发展。</p>
+          <p><a data-featureid="inputdevice">输入设备能力API</a>的早期方案提供来自支持触摸设备的给定“鼠标“事件的信息。</p>
         </div>
 
         <div data-feature="Smooth scrolling">
-          <p>As more and more content gets rendered as long scrollable lists, more and more logic is attached to scrolling events, and the quality of the user experience of these actions is highly dependent on their performances. The <a data-featureid="cssom-view">CSSOM View Module</a> determines when scrolling events get fired, and let developers specify the type of scrolling behavior they want.</p>
-          <p>The proposed work on <a data-featureid="css-scroll-snap">CSS Scroll Snap Points</a> adds greater ability to control the behavior of panning and scrolling by defining points to which an app view would snap when the user moves through the page.</p>
-          <p>The <a data-featureid="css-will-change">CSS <code>will-change</code></a> property is also available to indicate to browsers that a given part of the page will be soon scrolled to and should be pre-rendered.</p>
+          <p>随着越来越多的内容被呈现为很长的可滚动列表，越来越多的逻辑被附加到滚动事件上，而且这些动作的用户体验的质量高度依赖于它们的性能。<a data-featureid="cssom-view">CSSOM视图模块</a>确定滚动事件何时被触发，并让开发者指定他们想要的滚动行为的类型。</p>
+          <p><a data-featureid="css-scroll-snap">CSS 滚动捕捉点</a>的提议通过定义当用户移动页面时应用视图捕捉的点，大大增加了控制平移和滚动行为的能力。</p>
+          <p><a data-featureid="css-will-change">CSS 的 <code>will-change</code></a> 属性也可以向浏览器指示将会很快被滚动到的部分并指示这部分应该被预渲染。</p>
         </div>
 
         <p data-feature="Notification">The <a data-featureid="push">Push API</a> makes it possible for server-side notifications to alert the user, even if the browser is not running.</p>
