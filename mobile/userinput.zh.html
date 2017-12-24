@@ -29,36 +29,36 @@
       <section class="featureset in-progress">
         <h2>开发中的技术</h2>
 
-        <div data-feature="Touch-based interactions">
+        <div data-feature="基于触控的交互">
           <p><a href="https://www.w3.org/2012/pointerevents/">指针事件工作组</a>在处理用户输入的替代方法上取得了很好的进展。<a data-featureid="pointer-events">指针事件</a>允许统一处理鼠标、触摸和笔事件。它为当前更广泛部署的触摸事件提供了一种补充和更统一的方法。</p>
           <p>特别是，<a data-featureid="css-touch-action">CSS 的 <code>touch-action</code> 属性</a>使元素上的过滤器手势事件在实现指针事件之外进一步发展。</p>
           <p><a data-featureid="inputdevice">输入设备能力API</a>的早期方案提供来自支持触摸设备的给定“鼠标“事件的信息。</p>
         </div>
 
-        <div data-feature="Smooth scrolling">
-          <p>随着越来越多的内容被呈现为很长的可滚动列表，越来越多的逻辑被附加到滚动事件上，而且这些动作的用户体验的质量高度依赖于它们的性能。<a data-featureid="cssom-view">CSSOM视图模块</a>确定滚动事件何时被触发，并让开发者指定他们想要的滚动行为的类型。</p>
+        <div data-feature="平滑滚动">
+          <p>随着越来越多的内容被呈现为很长的可滚动列表，越来越多的逻辑被附加到滚动事件上，而且这些动作的用户体验的质量高度依赖于它们的性能。<a data-featureid="cssom-view">CSSOM 视图模块</a>确定滚动事件何时被触发，并让开发者指定他们想要的滚动行为的类型。</p>
           <p><a data-featureid="css-scroll-snap">CSS 滚动捕捉点</a>的提议通过定义当用户移动页面时应用视图捕捉的点，大大增加了控制平移和滚动行为的能力。</p>
           <p><a data-featureid="css-will-change">CSS 的 <code>will-change</code></a> 属性也可以向浏览器指示将会很快被滚动到的部分并指示这部分应该被预渲染。</p>
         </div>
 
-        <p data-feature="Notification">The <a data-featureid="push">Push API</a> makes it possible for server-side notifications to alert the user, even if the browser is not running.</p>
+        <p data-feature="通知"><a data-featureid="push">推送API</a>使服务器端的通知可以提醒用户，即使是在浏览器没有运行的情况下。</p>
 
-        <p data-feature="Screen wake">Whether users are speaking commands to their apps or working with them through non-haptic interactions, they risk seeing the screens turned off automatically by their devices screensaver. An early proposal for a <a data-featureid="wake-lock">Wake Lock API</a> would let developers signal the needs to keep the screen up in these circumstances.</p>
+        <p data-feature="屏幕唤醒">不论用户使用语音向它们的应用设备下达命令还是通过非触觉交互来处理这些命令，他们都面临着由于屏幕保护程序导致的屏幕自动关闭的风险。<a data-featureid="wake-lock">唤醒锁 API</a> 让开发者在这种情况下保持屏幕不锁定。</p>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
+        <h2>探索性工作</h2>
 
-        <p data-feature="Speech-based interactions">Mobile devices, and mobile phones in particular, are also in many cases well-suited to be used through voice-interactions; the <a href="https://www.w3.org/community/speech-api/">Speech API Community Group</a> developed a JavaScript API to enable interactions with a Web page through spoken commands. <a data-featureid="speech-api-synthesis">Speech synthesis</a> is well supported across browsers. Support for <a data-featureid="speech-api-recognition">speech recognition</a> is still underway.</p>
+        <p data-feature="基于语音的交互">移动设备，特别是手机，在很多情况下也非常适合语音交互；<a href="https://www.w3.org/community/speech-api/">语音 API 社区组</a>开发了一个JavaScript API 来支持通过口头命令与网页进行交互。<a data-featureid="speech-api-synthesis">语音合成</a>在浏览器中有很好的支持。对<a data-featureid="speech-api-recognition">语音识别</a>的支持仍在进行中。</p>
 
-        <p data-feature="On-screen keyboard interactions">Many mobile devices use on-screen keyboards to let users type; the <a data-featureid="ime-api">Input Method Editor (IME) API</a> would make it possible to coordinate the interactions between that on-screen keyboard and Web applications. Editorial support is required for this specification to move forward.</p>
+        <p data-feature="输入法"><a data-featureid="ime-api">输入法 API</a> 允许脚本通过用户代理访问输入法。该规范目前需要更多的编辑工作。</p>
       </section>
 
       <section>
-        <h2>Discontinued features</h2>
+        <h2>不再进行的工作</h2>
         <dl>
-          <dt>Intent-based events</dt>
-          <dd>As the Web reaches new devices, and as devices gain new user interactions mechanisms, it seems useful to allow Web developers to react to a more abstract set of user interactions: instead of having to work in terms of “click”, “key press”, or “touch event”, being able to react to an “undo” command, or a “next page” command independently of how the user instructed it to the device. The <a data-featureid="indie-ui-events">IndieUI Events</a> specification was an attempt to address this need. The work has been discontinued for now, due to lack of support from would-be implementers.</dd>
+          <dt>基于意图的事件</dt>
+          <dd>随着 Web 来到新的设备上，并且设备获得新的用户交互机制，允许 Web 开发者对更抽象的用户交互集合作出响应似乎是有用的，而不是将工作集中在“点击”、“按键”或“触摸事件“，能够按照用户如何下达给设备的“撤消“或“下一页”命令单独作出响应。<a data-featureid="indie-ui-events">IndieUI Events</a> 规范就是为了解决这个需求。 由于缺乏实现，目前这项工作已经停止。</dd>
         </dl>
       </section>
     </main>
