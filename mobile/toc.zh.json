@@ -49,9 +49,9 @@
       },
       {
         "url": "network.zh.html",
-        "title": "Network and Communications",
+        "title": "网络和通信",
         "icon": "../assets/img/mobile-network.svg",
-        "description": "Interactions with the network to bring the power and immense storage capabilities of the Web to otherwise limited mobile devices."
+        "description": "通过与网络的交互将Web强大的功能和存储能力赋予原本受限的移动设备。"
       },
       {
         "url": "lifecycle.zh.html",
