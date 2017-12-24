@@ -2,32 +2,33 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Security and Privacy</title>
+    <title>安全和隐私</title>
   </head>
   <body>
     <header>
-      <h1>Security and Privacy</h1>
+      <h1>安全和隐私</h1>
 
-      <p>Mobile devices follow their users everywhere, and hold some of their most private or confidential data (contacts, pictures, calendar, etc.) As a result, it is critical for users to be able to rely on their phones to keep that data safe from attackers.</p>
+      <p>移动设备被用户随身携带，并拥有一些最隐私或机密的数据（联系人、图片、日程表等）。因此，用户能够依靠手机来保护数据免受攻击者的侵害是至关重要的。</p>
 
-      <p>W3C specifications are reviewed for their security and privacy impact as part of their progress through the Recommendation track; the <a href="https://www.w3.org/Privacy/">Privacy Interest Group</a> and the <a href="https://www.w3.org/Security/wiki/IG">Web Security Interest Group</a> in particular are coordinating reviews on their respective fields.</p>
+      <p>对 W3C 规范的安全性和隐私方面进行审查是影响通过推荐标准的进程的一部分；<a href="https://www.w3.org/Privacy/">隐私保护兴趣组</a>和 <a href="https://www.w3.org/Security/wiki/IG">Web 安全兴趣组</a>协调各自领域的审查。</p>
 
-      <p>Security and privacy technologies listed below have a particular resonance in a mobile context. Please check the <a href="../security">Security roadmap</a> document for a more comprehensive overview of security on the Web.</p>
+      <p>下面列出的安全和隐私技术在移动环境中有特别的意义。请查看<a href="https://w3c.github.io/web-roadmaps/security/">安全路线图</a>文档，以获得有关 Web 安全的更全面的概述。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+        <h2>广泛部署的技术</h2>
 
         <div data-feature="Strengthened security">
-          <p>The first line of defense for users, and the unit of isolation for Web apps is the same-origin policy that roughly limits what a Web application can access to content and data hosted on the same origin, i.e. the combination of URL scheme, domain name and port.</p>
+          <p>用户的第一道防线以及 Web 应用的隔离单元是同源策略，它大致限制了 Web 应用可以访问同一来源的内容和数据，这里的来源是指协议、域名和端口的组合。</p>
 
-          <p>For legacy reasons, this policy is not as stringent on some parts of the Web platform, exposing users to greater attack surface via cross-site scripting or cross-site request forgery. To enable Web application authors to reduce the attack surface beyond what legacy requires, the <a data-featureid="csp">Content Security Policy</a> offers hooks that severely limits damages that an attacker could hope to achieve. An application delivered over a secure channel with CSP enabled can assure that users receive it as it was intended to be executed.</p>
+          <p>由于这个策略提出较早，它在 Web 平台的某些部分并不严格，因此会通过跨站脚本或跨站请求伪造，将用户暴露给更大的攻击面。为了使 Web 应用编写者能够减少攻击面从而超出以往要求的效果，<a data-featureid="csp">内容安全策略</a>（Content Security Policy，CSP）提供了一些钩子，它们可以严重限制攻击者希望实现的损害。一个通过启用了 CSP 的通过安全隧道传输的应用可以确保用户能够接收的数据是其期望得到的数据。</p>
 
-          <p>To further strengthen the integrity of their applications, Web developers can make use of the proposed <a data-featureid="sri">Subresource integrity</a> mechanism that makes it possible to block man-in-the-middle attacks or compromised third-parties providers.</p>
+          <p>为了进一步加强应用的完整性，Web 开发着可以利用的<a data-featureid="sri"></a>子资源完整性的机制，从而阻止中间人攻击或被攻击的第三方供应商。</p>
 
-          <p>The <a data-featureid="mixedcontent">Mixed Content specification</a> helps to migrate the Web toward being secure by default, by setting clear rules as to when content that is not served over HTTPs can or cannot be loaded from an HTTPs page.</p>
+          <p><a data-featureid="mixedcontent">混合内容</a>规范有助于将 Web 默认迁移到安全状态，方法是设置明确的规则，以确定那些 HTTPs 不提供的内容在何时可以或不可以从 HTTPs 页面上加载。
+          </p>
                   
-          <p>In applications that aggregate content from multiple (possibly untrusted) sources, the <a data-featureid="html5-sandbox">HTML5 <code>iframe</code> sandbox attribute</a> makes it possible to restrict the kind of interactions third-party embedded content can make use of.</p>
+          <p>在聚合来自多个（可能不受信任的）源的内容的应用中，<a data-featureid="html5-sandbox">HTML5 <code>iframe</code> 的 <code>sandbox</code> 属性</a>可以限制第三方嵌入内容可以使用的交互类型。</p>
         </div>
 
         <div data-feature="Encryption">
