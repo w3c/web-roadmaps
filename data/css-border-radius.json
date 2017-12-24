@@ -1,6 +1,6 @@
 {
   "TR": "https://www.w3.org/TR/css-backgrounds-3/",
-  "feature": "rounded corners",
+  "feature": "Rounded corners",
   "impl": {
     "caniuse": "border-radius"
   }
