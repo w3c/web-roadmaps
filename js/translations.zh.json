@@ -32,14 +32,21 @@
     "picture element": "picture 元素"
   },
   "groups": {
-    "CSS Working Group": "CSS 工作组"
+    "CSS Working Group": "CSS 工作组",
+    "Device and Sensors Working Group": "设备与传感器工作组",
+    "Web Bluetooth Community Group": "Web 蓝牙社区组",
+    "Web NFC Community Group": "Web 近场通讯社区组",
+    "Web Platform Incubator Community Group": "Web 平台孵化社区组",
+    "WebRTC Working Group": "Web 实时通讯工作组"
   },
   "specifications": {
     "Accelerometer": "加速度传感器",
+    "Ambient Humidity Events": "环境湿度事件",
     "Ambient Light Sensor": "环境光线传感器",
     "CSS Animations": "CSS 动画",
     "CSS Device Adaptation": "CSS 设备适配",
     "CSS Transitions": "CSS 过渡",
+    "Geolocation Sensor": "地理位置传感器",
     "Gyroscope": "陀螺仪",
     "Magnetometer": "磁强计",
     "Media Capture and Streams": "媒体捕捉与媒体流",
