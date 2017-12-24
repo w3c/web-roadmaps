@@ -73,9 +73,9 @@
       },
       {
         "url": "security.zh.html",
-        "title": "Security and Privacy",
+        "title": "安全和隐私",
         "icon": "../assets/img/mobile-security.svg",
-        "description": "Technologies and considerations to guarantee privacy and security on mobile devices that hold some of the user’s most private and confidential data."
+        "description": "保证移动设备上隐私和安全的技术与要考虑的因素，因为移动设备保存着用户一些最隐私和机密的数据。"
       }
     ]
   }
