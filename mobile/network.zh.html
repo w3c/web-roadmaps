@@ -2,62 +2,62 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Network and Communications</title>
+    <title>网络和通信</title>
   </head>
   <body>
     <header>
-      <h1>Network and Communications</h1>
-      <p>Network connectivity represents a major asset for mobile devices: the Web is an immense store of content, as well as an almost endless source of processing power, overcoming two of the limitations of mobile devices. The Web platform is growing a number of APIs that facilitate establishing network connectivity in different contexts.</p>
-      <p>Likewise, the opportunity offered to deploy real-time communication services on the Web is another step towards the unification of the telecommunication and Web ecosystems.</p>
+      <h1>网络和通信</h1>
+      <p>网络连接代表了移动设备的主要优势：Web可以存储大量的内容，而且是几乎无穷的处理能力的来源，这克服了移动设备的两个限制。Web平台正在增加一些API，以便在不同情况下建立网络连接。</p>
+      <p>同样，在网络上部署实时通信服务的机会是实现电信和Web生态系统统一化的又一步。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+        <h2>广泛部署的技术</h2>
             
-        <div data-feature="HTTP Network API">
-          <p><a data-featureid="xhr">XMLHttpRequest</a> (the basis for Ajax development) is a widely deployed API to load content from Web servers using the HTTP and HTTPs protocol: the W3C specification (formerly known as XMLHttpRequest Level 2) was meant to document the existing deployed API (with the ability to make requests on servers in a different domain, programmatic feedback on the progress of the network operations, and more efficient handling of binary content). That work is now done in the <a href="https://whatwg.org/">WHATWG</a>. The WHATWG <a data-featureid="fetch">Fetch API</a> also provides a more powerful Promise-based alternative.</p>
+        <div data-feature="HTTP 网络 API">
+          <p><a data-featureid="xhr">XMLHttpRequest</a>（Ajax开发的基础）是一个广泛部署的API，用于使用 HTTP 和 HTTPs 协议从Web服务器加载内容：W3C 规范（以前称为XMLHttpRequest Level 2）旨在记录现有的已部署的 API（能够在不同域中的服务器上提出请求，对网络操作进度进行程序化反馈，以及更有效地处理二进制内容），这项工作现在已经在<a href="https://whatwg.org/">WHATWG</a>中完成了。WHATWG 的 <a data-featureid="fetch">Fetch API</a>还提供了一个更强大的基于 Promise 的替代方案。</p>
         </div>
             
-        <div data-feature="Cross-domain Requests">
-          <p>By default, browsers do not allow to make request across different domains (or more specifically, across different origins, a combination of the protocol, domain and port) from a single Web page; this rule protects the user from having a Web site abusing their credentials and stealing their data on another Web site. Sites can opt-out of that rule by making use of the <a data-featureid="cors">Cross-Origin Resource Sharing</a> (CORS) mechanism, opening up much wider cooperation across Web applications and services. Note the W3C version of the CORS specification does not reflect current implementations and will be obsoleted. The CORS mechanism is now a core part of the on-going <a href="https://fetch.spec.whatwg.org/">Fetch specification</a> in the WHATWG.</p>
+        <div data-feature="跨域请求">
+          <p>默认情况下，浏览器不允许在单个网页上的不同域名（或者更具体地说，不同源，包括协议、域名和端口的组合）之间进行请求；这个规则保护用户，使用户们不会被一个网站滥用他们的证书并窃取他们在另一个网站上的数据。站点可以通过使用<a data-featureid="cors">跨源资源共享</a>（Cross-Origin Resource Sharing，CORS）机制来选择退出该规则，从而在 Web 应用和服务之间开展更广泛的合作。请注意 CORS 规范的 W3C 版本并不能反映现有的实现，并将被废弃。CORS 机制现在是 WHATWG <a href="https://fetch.spec.whatwg.org/">Fetch 规范</a>的核心部分。</p>
         </div>
             
-        <div data-feature="Server-pushed Requests">
-          <p>XMLHttpRequest is useful for client-initiated network requests, but mobile devices with their limited network capabilities and the cost that network requests induce on their battery (and sometimes on their users bill) can often make better use of server-initiated requests. The <a data-featureid="eventsource">Server-Sent Events API</a> allows triggering DOM events based on push notifications (via HTTP and other protocols).</p>
+        <div data-feature="服务器推送请求">
+          <p>XMLHttpRequest 对于客户端发起的网络请求很有用，但是移动设备的网络能力有限，网络请求在其电池电量上（以及有时在用户账单上）引起的开销通常可以更好地利用服务器发起的请求。<a data-featureid="eventsource">Server-Sent Events API</a>允许基于推送通知触发 DOM 事件（通过 HTTP 和其他协议）。</p>
         </div>
             
-        <div data-feature="Bidirectional Connections">
-          <p>The <strong><a data-featureid="websockets">WebSocket API</a></strong>, built on top of the <a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket protocol</a> (RFC6455), offers a bidirectional, more flexible, and less resource intensive network connectivity than XMLHttpRequest.</p>
+        <div data-feature="双向连接">
+          <p><a data-featureid="websockets">WebSocket API</a> 构建在<a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket协议</a>（RFC6455）之上，与 XMLHttpRequest 相比，提供了双向、更灵活、消耗资源更少的网络连接。</p>
         </div>
 
-        <div data-feature="On-line State">
-          <p>Of course, an important part of using network connectivity relies on being able to determine if such connectivity exists, and the type of network available. The <a data-featureid="online">HTML5 <code>onLine</code> DOM flag</a>, and its associated change event, <code>online</code>, signals when network connectivity is <i>not</i> available to the Web environment (the flag is unreliable to assert that the Web environment is online).</p>
+        <div data-feature="在线状态">
+          <p>当然，使用网络连接的一个重要部分依赖于能够确定连通性是否存在以及网络的类型。当网络连接不可用于 Web 环境（该标志不能可靠地断言 Web 环境在线）时，<a data-featureid="online">HTML5 <code>onLine</code> DOM标志</a>及其关联的更改事件（<code>online</code>）将发出信号。</p>
         </div>
 
-        <div data-feature="Network Characteristics">
-          <p>The <a data-featureid="resource-timing">Resource Timing API</a> offers to measure precisely the impact of the network on the time needed to load various resources, offering another approach to adapt a Web app to its network environment.</p>
+        <div data-feature="网络特性">
+          <p><a data-featureid="resource-timing">Resource Timing API</a> 提供了精确地测量网络对加载各种资源所需时间的影响，提供了另一种方法来使 Web 应用适应其网络环境。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
-        <p data-feature="HTTP Network API">The <a data-featureid="beacon">Beacon API</a> aims at letting developers queue unsupervised HTTP requests, leaving it to the browser to execute them when appropriate, opening the door for better network optimizations.</p>
+        <h2>开发中的技术</h2>
+        <p data-feature="HTTP 网络 API"><a data-featureid="beacon">Beacon API</a> 旨在让开发人员排列无监督的 HTTP 请求，并在让浏览器在适当的时候执行它们，为更好的网络优化打开大门。</p>
 
-        <div data-feature="Server-pushed Requests">
-          <p>The <strong><a data-featureid="push">Push API</a></strong> allows Web applications to receive server-sent messages whether or not the said Web app is active in a browser window. The <a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF Web-Based Push Notifications Working Group</a> developed a companion protocol suitable to request the delivery of a push message to a user agent, create new push message delivery subscriptions, and monitor for new push messages (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>).</p>
+        <div data-feature="服务器推送请求">
+          <p><a data-featureid="push">推送 API</a> 允许 Web 应用接收服务器发送的消息，无论该 Web 应用是否在浏览器窗口中处于活动状态。<a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF 的基于 Web 的推送通知工作组</a>开发了适用于请求向用户代理传递推送消息，创建新的推送消息传送订阅以及监视新推送消息的协同协议（<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>）。</p>
         </div>
 
-        <div data-feature="P2P Data Connections">
-          <p>The work on <a data-featureid="p2p">Web Real-Time Communications</a> also provides direct <strong>peer-to-peer data connections</strong> between browsers with real-time characteristics, opening the way to collaborative multi-devices Web applications.</p>
+        <div data-feature="点对点数据连接">
+          <p><a data-featureid="p2p">Web 实时通讯</a>方面的工作还提供了具有实时特性的浏览器之间的直接<strong>点对点数据连接</strong>，为协作式多设备的 Web 应用开辟了道路。</p>
         </div>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
-        <p>Early work on a <a data-featureid="background-sync">Web Background Synchronization API</a> would provide a robust Service Worker-based mechanism to enable Web applications to download and upload content in the background, even in the absence of a running browser.</p>
+        <h2>探索性工作</h2>
+        <p><a data-featureid="background-sync">Web 后台同步 API</a> 的早期工作将提供一个强大的基于 Service Worker 的机制，使 Web 应用可以在后台下载和上传内容，即使没有正在运行的浏览器。</p>
 
-        <div data-feature="Network Characteristics">
-          <p>Discontinued work on the <a data-featureid="netinfo">Network Information API</a> to address discovery of the network characteristics has now been resumed in the Web Incubator Community Group.</p>
+        <div data-feature="网络特性">
+          <p>Web 平台孵化社区组重新恢复了之前停止的可以解决网络特性的发现问题的<a data-featureid="netinfo">网络信息 API</a> 的工作。</p>
         </div>
       </section>   
     </main>
