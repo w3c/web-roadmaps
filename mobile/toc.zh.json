@@ -67,9 +67,9 @@
       },
       {
         "url": "performance.zh.html",
-        "title": "Performance and Tuning",
+        "title": "性能和调优",
         "icon": "../assets/img/mobile-performance.svg",
-        "description": "Mechanisms to monitor and improve the performances of an application on highly-constrained mobile devices."
+        "description": "监控和改善在移动设备上高度受限的应用程序性能的机制。"
       },
       {
         "url": "security.zh.html",

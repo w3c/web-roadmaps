@@ -2,92 +2,93 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Performance and Tuning</title>
+    <title>性能和调优</title>
   </head>
   <body>
     <header>
-      <h1>Performance and Tuning</h1>
-      <p>Due to their limited CPU, and more importantly to their limited battery, mobile devices require a lot of attention in terms of performance.</p>
+      <h1>性能和调优</h1>
+      <p>由于其有限的CPU和电池，移动设备在性能方面需要很多关注。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+        <h2>广泛部署的技术</h2>
 
-        <div data-feature="Timing Hooks">
-          <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> developed a number of specifications that expose timing hooks to Web applications, to analyze time spent doing various tasks.</p>
+        <div data-feature="计时 API">
+          <p><a href="https://www.w3.org/webperf/">Web 性能工作组</a>开发了一些规范，它们向 Web 应用提供计时 API，用于分析各任务耗费的时间。</p>
 
-          <p>The <a data-featureid="hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. The <a data-featureid="performance-timeline">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are defined in separate specifications:</p>
+          <p><a data-featureid="hr-time">高解析度时间</a>将单调的亚毫秒级解析度时钟 API 提供给Web应用，以便 Web 应用可以精确地测量两个事件之间的时间间隔。<a data-featureid="performance-timeline">性能时间线</a>定义了一个统一的界面来存储和检索性能指标数据。单独的性能指标接口在不同的规范中定义：</p>
 
           <ul>
-            <li><a data-featureid="navigation-timing">Navigation Timing</a> exposes timing information relted to navigation and elements;</li>
-            <li><a data-featureid="resource-timing">Resource Timing</a> exposes timing information for resources in a document;</li>
-            <li><a data-featureid="user-timing">User Timing</a> help applications measure the performance of their applications using high precision timestamps.</li>
+            <li><a data-featureid="navigation-timing">导航计时</a>提供导航和元素相关的计时信息；</li>
+            <li><a data-featureid="resource-timing">资源计时</a>提供文档中资源的计时信息；</li>
+            <li><a data-featureid="user-timing">用户计时</a>帮助应用程序使用高解析度时间戳测量性能。</li>
           </ul>
         </div>
 
-        <div data-feature="Page Visibility Detection">
-          <p>The <a data-featureid="page-visibility">API to determine whether a Web page is being displayed</a> (Page Visibility API) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized.</p>
+        <div data-feature="页面可见性检测">
+          <p>用于确定是否正在显示网页的<a data-featureid="page-visibility">页面可见性API</a>也可用于使资源的使用适应 Web 应用的需要，例如通过在页面最小化时减少网络活动。</p>
         </div>
 
-        <div data-feature="Animation Optimization">
-          <p>The <a data-featureid="animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
+        <div data-feature="动画优化">
+          <p><a data-featureid="animation-frames">基于脚本的动画时间控制 API</a> 可以帮助减少播放动画时的资源使用量。</p>
         </div>
 
-        <div data-feature="Threading">
-          <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="webworkers">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
+        <div data-feature="线程">
+          <p>除了优化资源之外，应用程序的感知反应性也是移动用户体验的一个关键方面。通过 <a data-featureid="webworkers">Web Workers</a> 实现的<strong>类似于线程的机制</strong>允许通过将最耗费资源的操作卸载到后台进程来保持用户界面的响应。</p>
         </div>
 
-        <div data-feature="Optimization Best Practices">
-          <p>The <a data-featureid="mwabp">Mobile Web Application Best Practices</a> provide general advice on how to build Web applications that work well on mobile devices, taking into account in particular the needs for optimization.</p>
+        <div data-feature="优化最佳实践">
+          <p><a data-featureid="mwabp">移动 Web 应用最佳实践</a>提供有关如何构建可在移动设备上良好运行的 Web 应用的通用建议，并特别考虑优化的需求。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
-        <div data-feature="Network Prioritization">
-          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
+        <h2>开发中的技术</h2>
+        <div data-feature="网络优先级">
+          <p><a data-featureid="resource-hints">资源提示</a>和<a data-featureid="preload">预加载</a>规范使开发人员能够通过延迟下载或执行下载的资源来优化资源的下载。</p>
         </div>
 
-        <div data-feature="Priority Handling">
-          <p>The <a data-featureid="requestidlecallback">Cooperative Scheduling of Background Tasks specification</a> defines the <code>requestIdleCallback</code> method that allows scheduling an operation at the next opportunity when the app is not processing another operation.</p>
+        <div data-feature="本地优先级处理">
+          <p><a data-featureid="requestidlecallback">后台任务协同调度</a>规范定义了 <code>requestIdleCallback</code> 方法，该方法允许在应用未处理其他操作的下一个机会中调度操作。</p>
         </div>
 
-        <div data-feature="Caching">
-          <p>The <a data-featureid="serviceworkers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
+        <div data-feature="缓存">
+          <p><a data-featureid="serviceworkers">Service Workers</a> 规范定义了一种机制，允许应用拦截传出的网络请求并直接对其进行响应。应用可以利用这种机制直接实现灵活的缓存逻辑，从而避免了对服务器的冗长请求。</p>
         </div>
 
-        <div data-feature="Battery Status">
-          <p>The <a data-featureid="battery">Battery status API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device. However, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API.</p>
+        <div data-feature="电池状态">
+          <p><a data-featureid="battery">电池状态 API</a> 允许根据移动设备电池中当前可用的电力水平调整资源的使用。请注意，此规范的未来还不确定，因为它有<a href="https://github.com/w3c/battery/issues/5">潜在的隐私侵犯用途</a>。</p>
         </div>
 
-        <div data-feature="Timing Hooks">
-          <p><a data-featureid="server-timing">Server Timing</a> enables a server to communicate performance metrics about the request-response cycle to the user agent, and allows applications to act on these metrics to optimize application delivery.</p>
-          <p>The <a data-featureid="longtasks">Long Tasks API</a> exposes a mechanism to detect long running tasks that monopolize the user interface's main thread for extended periods of time.</p>
-          <p>The <a data-featureid="paint-timing">Paint Timing</a> specification allows the application to capture a series of key moments such as first paint and first contentful paint during page load.</p>
+        <div data-feature="计时 API">
+          <p><a data-featureid="server-timing">服务器计时</a>使服务器能够将有关请求-响应周期的性能指标传达给用户代理，并允许应用根据这些指标来优化应用响应时间。
+          </p>
+          <p><a data-featureid="longtasks">长任务 API</a> 提供了一种对在长时间内垄断用户界面主线程的长任务的检测机制。</p>
+          <p><a data-featureid="paint-timing">绘制计时</a>规范允许应用程序在页面加载过程中捕捉一系列关键时刻，例如第一次绘制和第一次内容丰富​​的绘制。</p>
         </div>
 
-        <div data-feature="Low-level Bytecode Format">
-            <p><a data-featureid="webassembly">WebAssembly</a> is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages. It also defines an execution environment that attempts to maximize performance and interoperate gracefully with JavaScript and the Web, while ensuring security and consistent behavior across a variety of implementations.</p>
+        <div data-feature="底层字节码格式">
+            <p><a data-featureid="webassembly">Web 汇编</a>是一种低级别的字节码格式，它在网络浏览器中可以以接近本机的速度运行，并支持从C/C++和其他语言进行编译。它还定义了一个试图最大限度地提高性能的执行环境，并与 JavaScript 和 Web 进行良性合作，确保各种实现的安全性和行为一致性。</p>
         </div>
 
-        <div data-feature="Infinite scrolling">
-          <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersectionobserver">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
+        <div data-feature="无限滚动">
+          <p>在移动设备上使用<b>无限滚动</b>列表（在用户滚动时加载和呈现越来越多的内容）非常常见。这样的列表提供比触摸屏上的分页更好的用户体验。不幸的是，应用程序需要不断地<em>同步</em>轮询 DOM 元素的布局信息来实现这个模式，这是一个性能开销的重要来源。<a data-featureid="intersectionobserver">交叉观察器</a>规范定义了一个 API，用于<em>异步</em>观察目标元素与祖先元素或顶层文档视图的交集中的变化，从而提供一种有效的机制来检索实现无限滚动所需的信息。</p>
         </div>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
+        <h2>探索性工作</h2>
 
-        <div data-feature="Rendering Performance">
-          <p>The work on the <a data-featureid="frame-timing">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</p>
+        <div data-feature="渲染性能">
+          <p><a data-featureid="frame-timing">帧计时 API</a> 的工作旨在提供应用在用户设备上运行时获得的每秒帧数的详细信息。</p>
         </div>
       </section>
 
       <section>
-        <h2>Features not covered by on-going work</h2>
+        <h2>未开始开发的技术</h2>
         <dl>
-          <dt>More fine-grained network prioritization</dt>
-          <dd>Existing mechanisms to specify priorities for resource fetching, such as the <code>preload</code> link type, are quite coarse. Applications could benefit from a declarative mechanism to specify the relative priorities of resources that the user agent will eventually need to fetch. Current discussions in the Web Platform Incubator Community Group could lead to exploratory work in this space.</dd>
+          <dt>更加精细的网络优化</dt>
+          <dd>现有指定资源获取优先级的机制是非常粗糙的，比如 <code>preload</code> 链接类型。应用可以从指定用户代理最终需要获取的资源的相对优先级的声明性机制中获益。Web平台孵化社区组目前的讨论可能存在这个领域的探索性工作。</dd>
         </dl>
       </section>
     </main>
