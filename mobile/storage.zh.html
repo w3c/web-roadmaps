@@ -2,49 +2,50 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Data Storage</title>
+    <title>数据存储</title>
   </head>
   <body>
     <header>
-      <h1>Data Storage</h1>
-      <p>A critical component of many applications is the ability to save state, export content, as well as integrate data from other files and services on the system.</p>
+      <h1>数据存储</h1>
+      <p>许多应用程序的关键组件是保存状态，导出内容和从系统中其他文件和服务集成数据的能力。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
-        <p data-feature="Simple data storage">For simple data storage, the <a data-featureid="webstorage">Web Storage</a> specification offers two basic mechanisms, <code>localStorage</code> and <code>sessionStorage</code>, that can preserve data respectively indefinitely, or on a browser-session basis.</p>
+        <h2>广泛部署的技术</h2>
+        <p data-feature="简单数据存储">对于简单的数据存储，<a data-featureid="webstorage">Web存储</a>规范提供了两个基本机制，<code>localStorage</code> 和 <code>sessionStorage</code>，前者可以无限期地保存数据，后者基于浏览器会话。</p>
 
-        <p data-feature="Database query/update">On top of this file-based access, the <a data-featureid="indexeddb">Indexed Database API</a> (IndexedDB) defines a database of values and hierarchical objects that integrates naturally with JavaScript, and can be queried and updated very efficiently - a <a href="https://w3c.github.io/IndexedDB/">second edition of the specification</a> is under development.</p>
+        <p data-feature="数据库查询/更新">在基于文件的访问之上，<a data-featureid="indexeddb">索引数据库 API</a>（IndexedDB）定义了一个与 JavaScript 集成的值和分层对象的数据库，并且可以非常有效地进行查询和更新 - <a href="https://w3c.github.io/IndexedDB/">第二版规范</a>正在开发中。</p>
 
-        <p data-feature="Encrypted storage">Some of this data need to be encrypted, the <a data-featureid="crypto">Web Cryptography API</a> from the <a href="https://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a> exposes strong cryptography primitives to Web applications, and can be bound to pre-provisioned keys via the <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API.</p>
+        <p data-feature="加密存储">对于需要加密的数据，<a href="https://www.w3.org/2012/webcrypto/">Web密码学工作组</a>提出的<a data-featureid="crypto">Web密码学API</a>为Web应用程序提供了强有力的加密原语，并且可以通过<a data-featureid="cryptokey">Web秘钥发现</a>API绑定到预先提供的密钥。</p>
 
-        <p>The <a data-featureid="html5-download">HTML5 <code>download</code> attribute</a> provides a simple mechanism to trigger a file download (rather than a page navigation), with the possibility of setting a user-friendly filename.</p>
+        <p><a data-featureid="html5-download">HTML5 的 <code>download</code> 属性</a>提供了一个简单的机制来触发文件下载（而不是页面导航），并可以设置用户友好的文件名。</p>
       </section>
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
+        <h2>开发中的技术</h2>
 
-        <div data-feature="File operations">
-          <p>The <a data-featureid="fileapi">File Reader API</a> makes it possible to load the content of a file, for richer interactions with the file system. However, note discussions on a sandboxed filesystem API that could have allowed to write files onto a sandboxed file system have halted for lack of interest.</p>
+        <div data-feature="文件操作">
+          <p><a data-featureid="fileapi">文件API</a>可以加载文件内容，以便与文件系统进行更丰富的交互。注意，对允许写入沙盒文件系统的沙盒文件系统API的研发由于缺乏兴趣而暂停了。</p>
         </div>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
+        <h2>探索性工作</h2>
 
-        <p data-feature="Quota for storage">As more and more data need to be stored by the browser (e.g. for offline usage), it becomes critical for developers to get reliable storage space. The proposed <a data-featureid="storage">Storage</a> specification will allow Web applications to get quota estimate for storage as well as to request that the data stored by the application be treated as persistent and cannot be evicted without the user’s explicit consent.</p>
+        <p data-feature="存储配额">随着越来越多的数据需要被浏览器存储（例如用于离线使用），对于开发者来说获得可靠的存储空间变得至关重要。<a data-featureid="storage">存储</a>规范将允许 Web 应用程序获取配额估计的存储空间，并要求将其存储的数据视为持久性数据。在未经用户明确同意的情况下，这些数据不能被抢占。</p>
       </section>
 
       <section>
-        <h2>Discontinued features</h2>
+        <h2>不再进行的工作</h2>
         <dl>
-          <dt>Quota management API</dt>
-          <dd>Work on the <a data-featureid="quota">Quota Management API</a>, started in the Web Platform Working Group to expose an API to manage usage and availability of local storage resources, was discontinued in favor of the newer <a data-featureid="storage">Storage</a> proposal.</dd>
+          <dt>配额管理 API</dt>
+          <dd>研发<a data-featureid="quota">配额管理 API</a> 的初衷是 Web 平台工作组希望提供一个管理本地存储资源使用和可用性的API，由于新的<a data-featureid="storage">存储</a>提议的出现现在已不再继续研发。
+          </dd>
 
-          <dt>Client-side SQL-based database</dt>
-          <dd>The work around a <a data-featureid="websql">client-side SQL-based database</a>, which had been started in 2009, has been abandoned in favor of the work on IndexedDB.</dd>
+          <dt>客户端基于 SQL 的数据库</dt>
+          <dd>为了支持在 IndexedDB 上的工作，从2009年开始的<a data-featureid="websql">客户端基于 SQL 的数据库</a>的工作已经不再进行。</dd>
 
-          <dt>Addressbook data</dt>
-          <dd>Communication applications can benefit from integrating with their users’ existing data records; on mobile devices, the address book is a particularly useful source of information. For Web apps outside of the browser, a purely programmatic approach was part of the <a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a>; since this group has now closed, no further work on the <a data-featureid="contacts-sys">Contacts Manager API</a> is expected for the time being. Within the browser, HTML 5.1 provides <a data-featureid="autocomplete">autocompleted fields for contacts information</a> that would let browsers re-use data from addressbooks.</dd>
+          <dt>地址簿数据</dt>
+          <dd>通信应用可以从与用户现有的数据记录集成中受益；在移动设备上，地址簿是一个特别有用的信息来源。对于浏览器之外的 Web 应用，纯程序化方法是<a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">系统应用工作组</a>的一部分；由于这个小组现在已经关闭，因此目前暂时不会有<a data-featureid="contacts-sys">联系人管理器 API</a> 相关的工作。在浏览器中，HTML 5.1 为联系人信息提供了<a data-featureid="autocomplete">自动填充字段</a>，可以让浏览器重新使用通讯录中的数据。</dd>
         </dl>
       </section>
     </main>
