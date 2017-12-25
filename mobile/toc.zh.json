@@ -25,9 +25,9 @@
       },
       {
         "url": "storage.zh.html",
-        "title": "Data Storage",
+        "title": "数据存储",
         "icon": "../assets/img/mobile-storage.svg",
-        "description": "Technologies available to save state, export content, and integrate data from files and services on the system."
+        "description": "保存状态，导出内容，从系统中的文件和服务集成数据的技术。"
       },
       {
         "url": "media.zh.html",

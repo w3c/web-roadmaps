@@ -49,7 +49,8 @@
     "Web NFC Community Group": "Web 近场通讯社区组",
     "Web Platform Incubator Community Group": "Web 平台孵化社区组",
     "Web Platform Working Group": "Web 平台工作组",
-    "WebRTC Working Group": "Web 实时通讯工作组"
+    "WebRTC Working Group": "Web 实时通讯工作组",
+    "WHATWG": "Web 超文本应用技术工作小组"
   },
   "specifications": {
     "A Lifecycle for the Web": "Web 生命周期",
@@ -72,6 +73,7 @@
     "CSS Values and Units Module Level 3": "CSS 值和单位模块第三版",
     "CSSOM View Module": "CSSOM视图模块",
     "Device Memory 1": "设备内存第一版",
+    "File API": "文件 API",
     "Geolocation Sensor": "地理位置传感器",
     "Gyroscope": "陀螺仪",
     "Hardware Based Secure Services features": "基于硬件的安全服务",
@@ -95,6 +97,7 @@
     "Scalable Vector Graphics (SVG) 2": "可扩展矢量图形 (SVG) 第二版",
     "Secure Contexts": "安全上下文",
     "Server-Sent Events": "服务器发送事件",
+    "Storage": "存储",
     "Subresource Integrity": "子资源完整性",
     "The Screen Orientation API": "屏幕方向API",
     "Touch Events": "触摸事件",
@@ -112,6 +115,7 @@
     "Web Notifications": "Web 通知",
     "Web Packaging": "Web 打包",
     "Web Speech API": "Web 语音 API",
+    "Web Storage": "Web 存储",
     "WebCrypto Key Discovery": "WebCrypto密钥发现",
     "WOFF File Format 1.0": "Web 字体文件格式 1.0",
     "WOFF File Format 2.0": "Web 字体文件格式 2.0"
