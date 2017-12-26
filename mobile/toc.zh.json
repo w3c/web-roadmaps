@@ -61,7 +61,7 @@
       },
       {
         "url": "payment.zh.html",
-        "title": "Payment and Services",
+        "title": "支付与服务",
         "icon": "../assets/img/mobile-payment.svg",
         "description": "Features needed to monetize an application, e.g. by integrating easy-to-use in-app purchases."
       },
