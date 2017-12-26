@@ -19,7 +19,7 @@
       },
       {
         "url": "forms.zh.html",
-        "title": "Forms",
+        "title": "表单",
         "icon": "../assets/img/mobile-forms.svg",
         "description": "Features needed to build rich forms and optimize user input on devices where text input remains a challenge."
       },
