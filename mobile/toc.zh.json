@@ -21,7 +21,7 @@
         "url": "forms.zh.html",
         "title": "表单",
         "icon": "../assets/img/mobile-forms.svg",
-        "description": "Features needed to build rich forms and optimize user input on devices where text input remains a challenge."
+        "description": "构建丰富的表单以及在文本输入仍然是挑战的设备上优化用户输入所需的特性。"
       },
       {
         "url": "storage.zh.html",
@@ -33,7 +33,7 @@
         "url": "media.zh.html",
         "title": "媒体",
         "icon": "../assets/img/mobile-media.svg",
-        "description": "Features needed to create immersive audio/video experiences on mobile devices."
+        "description": "在移动设备上创建身临其境的音频/视频体验所需的特性。"
       },
       {
         "url": "userinput.zh.html",
@@ -51,7 +51,7 @@
         "url": "network.zh.html",
         "title": "网络和通信",
         "icon": "../assets/img/mobile-network.svg",
-        "description": "通过与网络的交互将Web强大的功能和存储能力赋予原本受限的移动设备。"
+        "description": "通过与网络的交互将 Web 强大的功能和存储能力赋予原本受限的移动设备。"
       },
       {
         "url": "lifecycle.zh.html",
@@ -63,7 +63,7 @@
         "url": "payment.zh.html",
         "title": "支付与服务",
         "icon": "../assets/img/mobile-payment.svg",
-        "description": "Features needed to monetize an application, e.g. by integrating easy-to-use in-app purchases."
+        "description": "为应用变现所需的特性, 例如集成易用的应用程序内付费。"
       },
       {
         "url": "performance.zh.html",
