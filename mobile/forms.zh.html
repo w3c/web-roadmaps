@@ -2,35 +2,35 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Forms</title>
+    <title>表单</title>
   </head>
   <body>
     <header>
-      <h1>Forms</h1>
-      <p>The ability to build rich forms with HTML is the basis for user input in most Web-based applications. Due to the absence of physical keyboards and the limited size available for on-screen keyboards, text input on mobile devices remains a difficult task for most users though. HTML defines new types of form controls that optimize the way users may enter data.</p>
+      <h1>表单</h1>
+      <p>在大多数基于Web的应用上，HTML所提供的丰富表单是用户输入的基础。由于没有物理键盘且屏幕键盘尺寸受限，对很多用户来说，在移动设备上的文本输入并不方便。HTML定义了新的表单控制方法，可以优化用户数据输入的方式。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
-        <p data-feature="Customized text entries">The <code><a data-featureid="inputtext">&lt;input type="<strong>email</strong>"&gt;</a></code>, <code><a href="https://www.w3.org/TR/html51/sec-forms.html#telephone-state-typetel">&lt;input type="<strong>tel</strong>"&gt;</a></code> and <code><a href="https://www.w3.org/TR/html51/sec-forms.html#url-state-typeurl">&lt;input type="<strong>url</strong>"&gt;</a></code> can be used to optimize the ways user enter these often-difficult to type data, e.g. through dedicated virtual keyboards, or by accessing on-device records for these data (from the address book, bookmarks, etc.).</p>
+        <h2>广泛部署的技术</h2>
+        <p data-feature="定制文本条目">可以通过使用<code><a data-featureid="inputtext">&lt;input type="<strong>email</strong>"&gt;</a></code>, <code><a href="https://www.w3.org/TR/html51/sec-forms.html#telephone-state-typetel">&lt;input type="<strong>tel</strong>"&gt;</a></code> and <code><a href="https://www.w3.org/TR/html51/sec-forms.html#url-state-typeurl">&lt;input type="<strong>url</strong>"&gt;</a></code>优化那些通常并不容易的用户数据键入方法，例如专用的虚拟键盘，或访问设备记录的如地址簿或书签等数据。</p>
 
-        <p data-feature="Input validation">The <code><a data-featureid="inputpattern">pattern</a></code> attribute allows both to guide user input as well as to avoid server-side validation (which requires a network round-trip) or JavaScript-based validation (which takes up more resources), both useful optimization on constrained mobile devices.</p>
+        <p data-feature="输入校验"><code><a data-featureid="inputpattern">pattern</a></code> 属性既可以指导用户输入，也可以避免需要网络往返的服务器端验证或需要增多资源的基于 JavaScript 的验证，这些对于条件受限的移动设备来说都是有用的优化。</p>
 
-        <p data-feature="Input hint">The <code><a data-featureid="inputhint">placeholder</a></code> attribute allows to guide user input by inserting hints that describe the type of content expected in a text-entry control.</p>
+        <p data-feature="输入提示"><code><a data-featureid="inputhint">placeholder</a></code>属性通过描述一个文本输入控件所预期的输入内容类型来指导用户输入。</p>
 
-        <p data-feature="Form autocomplete">The <code><a data-featureid="datalist">&lt;datalist&gt;</a></code> element allows creating free-text input controls coming with <strong>pre-defined values</strong> the user can select from; the <a data-featureid="autocomplete"><code>autocomplete</code> attribute</a> is a mechanism to automatically fill input fields based on <strong>well-known data</strong> for the user, solving the problem of working with long and multi-page forms that are common on mobile devices, e.g. in mobile purchase scenarios.</p>
+        <p data-feature="表单自动完成"><code><a data-featureid="datalist">&lt;datalist&gt;</a></code>元素允许创建带有<strong>预定义值</strong>的自由文本输入控件；<a data-featureid="autocomplete"><code>autocomplete</code> 属性</a>是一种基于用户<strong>已知数据</strong>而实现自动填充输入字段的机制，这就解决了移动设备上常见的长页及多页表单带来的问题，例如移动购物应用场景。</p>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
-        <p data-feature="Customized text entries"><a data-featureid="inputdate">Date and time entries</a> can take advantage of a number of dedicated form controls (e.g. <code>&lt;input type="date"&gt;</code>) to trigger the use of a native calendar control, avoiding the need to create custom JS-based controls that cannot be easily tailored to cope for the variety of mobile devices available on the market.</p>
+        <h2>开发中的技术</h2>
+        <p data-feature="定制文本条目"><a data-featureid="inputdate">Date and time entries</a>可以利用很多特定的表单控件，（例如 <code>&lt;input type="date"&gt;</code>）来触发本地日历控件的使用，避免创建不易于针对市面上诸多移动设备而定制的自定义基于 JavaScript 的控件。</p>
       </section>
 
       <section>
-        <h2>Discontinued features</h2>
+        <h2>不再进行的工作</h2>
         <dl>
-          <dt>Input modality</dt>
-          <dd>The <code><a data-featureid="inputmode">inputmode</a></code> attribute defined the type of textual input expected in a text entry. Mobile browsers could use that hint to render the right type of on-screen keyboard, for instance to display a keypad when the user was expected to enter a credit card number. This attribute is no longer supported in recent browsers and has been removed from HTML. Developers are encouraged to use more specific input types (such as <code>tel</code>, <code>email</code> and <code>url</code>).</dd>
+          <dt>输入模式</dt>
+          <dd><code><a data-featureid="inputmode">inputmode</a></code>属性定义了文本输入所预期的文本输入类型。移动浏览器可以使用这些提示来渲染正确的屏幕键盘类型，例如当用户希望输入信用卡号码是展示一个数字键盘。这个属性已经不再被当前的大多数浏览器版本所支持，且这个属性已经被移出HTML规范。开发者应使用<code>tel</code>, <code>email</code> and <code>url</code>等更为具体的输入类型。</dd>
         </dl>
       </section>
     </main>
