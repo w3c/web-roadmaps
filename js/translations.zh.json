@@ -3,7 +3,7 @@
     "well-deployed": "广泛部署的技术",
     "in-progress": "开发中的技术",
     "exploratory-work": "探索性工作",
-    "not-covered": "未开始开发的技术",
+    "not-covered": "目前尚未覆盖的工作",
     "discontinued": "不再进行的工作"
   },
   "columns": {
@@ -43,7 +43,7 @@
     "sandbox iframe attribute": "iframe 元素的 sandbox 属性",
     "Source capabilities": "源功能",
     "srcset attribute": "srcset 属性",
-    "tel, email, url input types": "tel、email、url 输入类型",
+    "tel, email, url input types": "tel/email/url 输入类型",
     "viewport-percentage lengths": "与视口相关的CSS单位"
   },
   "groups": {
