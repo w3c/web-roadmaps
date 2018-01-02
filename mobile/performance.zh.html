@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>性能和调优 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>性能和调优</h1>
+            <h2>2018年1月版</h2>
+            <p>由于其有限的CPU和电池，移动设备在性能方面需要很多关注。</p></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+
+        <div data-feature="计时 API" id="api">
+          <p><a href="https://www.w3.org/webperf/">Web 性能工作组</a>开发了一些规范，它们向 Web 应用提供计时 API，用于分析各任务耗费的时间。</p>
+
+          <p><a data-featureid="hr-time" id="hr-time" href="https://www.w3.org/TR/hr-time">高解析度时间</a>将单调的亚毫秒级解析度时钟 API 提供给Web应用，以便 Web 应用可以精确地测量两个事件之间的时间间隔。<a data-featureid="performance-timeline" id="performance-timeline" href="https://www.w3.org/TR/performance-timeline/">性能时间线</a>定义了一个统一的界面来存储和检索性能指标数据。单独的性能指标接口在不同的规范中定义：</p>
+
+          <ul>
+            <li><a data-featureid="navigation-timing" id="navigation-timing" href="https://www.w3.org/TR/navigation-timing/">导航计时</a>提供导航和元素相关的计时信息；</li>
+            <li><a data-featureid="resource-timing" id="resource-timing" href="https://www.w3.org/TR/resource-timing-1/">资源计时</a>提供文档中资源的计时信息；</li>
+            <li><a data-featureid="user-timing" id="user-timing" href="https://www.w3.org/TR/user-timing/">用户计时</a>帮助应用程序使用高解析度时间戳测量性能。</li>
+          </ul>
+        </div>
+
+        <div data-feature="页面可见性检测" id="generatedID-0">
+          <p>用于确定是否正在显示网页的<a data-featureid="page-visibility" id="page-visibility" href="https://www.w3.org/TR/page-visibility/">页面可见性API</a>也可用于使资源的使用适应 Web 应用的需要，例如通过在页面最小化时减少网络活动。</p>
+        </div>
+
+        <div data-feature="动画优化" id="generatedID-1">
+          <p><a data-featureid="animation-frames" id="animation-frames" href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">基于脚本的动画时间控制 API</a> 可以帮助减少播放动画时的资源使用量。</p>
+        </div>
+
+        <div data-feature="线程" id="generatedID-2">
+          <p>除了优化资源之外，应用程序的感知反应性也是移动用户体验的一个关键方面。通过 <a data-featureid="webworkers" id="webworkers" href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a> 实现的<strong>类似于线程的机制</strong>允许通过将最耗费资源的操作卸载到后台进程来保持用户界面的响应。</p>
+        </div>
+
+        <div data-feature="优化最佳实践" id="generatedID-3">
+          <p><a data-featureid="mwabp" id="mwabp" href="https://www.w3.org/TR/mwabp/">移动 Web 应用最佳实践</a>提供有关如何构建可在移动设备上良好运行的 Web 应用的通用建议，并特别考虑优化的需求。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="5">计时 API</th><td><a href="https://www.w3.org/TR/hr-time">高解析度时间</a> <span lang="en">(High Resolution Time)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/performance-timeline/">性能时间线</a> <span lang="en">(Performance Timeline)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/navigation-timing/">导航计时</a> <span lang="en">(Navigation Timing)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/resource-timing-1/">资源计时第一版</a> <span lang="en">(Resource Timing Level 1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/user-timing/">用户计时</a> <span lang="en">(User Timing)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>页面可见性检测</th><td><a href="https://www.w3.org/TR/page-visibility/">页面可见性</a> <span lang="en">(Page Visibility)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>动画优化</th><td><a href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">HTML 5.1中的requestAnimationFrame</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>线程</th><td><a href="https://html.spec.whatwg.org/multipage/workers.html">HTML (Living Standard)中的Web workers</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>优化最佳实践</th><td><a href="https://www.w3.org/TR/mwabp/">移动 Web 应用最佳实践</a> <span lang="en">(Mobile Web Application Best Practices)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>无</p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-4">开发中的技术</h2>
+        <div data-feature="网络优先级" id="generatedID-5">
+          <p><a data-featureid="resource-hints" id="resource-hints" href="https://www.w3.org/TR/resource-hints/">资源提示</a>和<a data-featureid="preload" id="preload" href="https://www.w3.org/TR/preload/">预加载</a>规范使开发人员能够通过延迟下载或执行下载的资源来优化资源的下载。</p>
+        </div>
+
+        <div data-feature="本地优先级处理" id="generatedID-6">
+          <p><a data-featureid="requestidlecallback" id="requestidlecallback" href="https://www.w3.org/TR/requestidlecallback/">后台任务协同调度</a>规范定义了 <code>requestIdleCallback</code> 方法，该方法允许在应用未处理其他操作的下一个机会中调度操作。</p>
+        </div>
+
+        <div data-feature="缓存" id="generatedID-7">
+          <p><a data-featureid="serviceworkers" id="serviceworkers" href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> 规范定义了一种机制，允许应用拦截传出的网络请求并直接对其进行响应。应用可以利用这种机制直接实现灵活的缓存逻辑，从而避免了对服务器的冗长请求。</p>
+        </div>
+
+        <div data-feature="电池状态" id="generatedID-8">
+          <p><a data-featureid="battery" id="battery" href="https://www.w3.org/TR/battery-status">电池状态 API</a> 允许根据移动设备电池中当前可用的电力水平调整资源的使用。请注意，此规范的未来还不确定，因为它有<a href="https://github.com/w3c/battery/issues/5">潜在的隐私侵犯用途</a>。</p>
+        </div>
+
+        <div data-feature="计时 API" id="api-0">
+          <p><a data-featureid="server-timing" id="server-timing" href="https://www.w3.org/TR/server-timing">服务器计时</a>使服务器能够将有关请求-响应周期的性能指标传达给用户代理，并允许应用根据这些指标来优化应用响应时间。
+          </p>
+          <p><a data-featureid="longtasks" id="longtasks" href="https://www.w3.org/TR/longtasks-1/">长任务 API</a> 提供了一种对在长时间内垄断用户界面主线程的长任务的检测机制。</p>
+          <p><a data-featureid="paint-timing" id="paint-timing" href="https://www.w3.org/TR/paint-timing/">绘制计时</a>规范允许应用程序在页面加载过程中捕捉一系列关键时刻，例如第一次绘制和第一次内容丰富​​的绘制。</p>
+        </div>
+
+        <div data-feature="底层字节码格式" id="generatedID-9">
+            <p><a data-featureid="webassembly" id="webassembly" href="https://webassembly.github.io/spec/">Web 汇编</a>是一种低级别的字节码格式，它在网络浏览器中可以以接近本机的速度运行，并支持从C/C++和其他语言进行编译。它还定义了一个试图最大限度地提高性能的执行环境，并与 JavaScript 和 Web 进行良性合作，确保各种实现的安全性和行为一致性。</p>
+        </div>
+
+        <div data-feature="无限滚动" id="generatedID-10">
+          <p>在移动设备上使用<b>无限滚动</b>列表（在用户滚动时加载和呈现越来越多的内容）非常常见。这样的列表提供比触摸屏上的分页更好的用户体验。不幸的是，应用程序需要不断地<em>同步</em>轮询 DOM 元素的布局信息来实现这个模式，这是一个性能开销的重要来源。<a data-featureid="intersectionobserver" id="intersectionobserver" href="https://www.w3.org/TR/intersection-observer/">交叉观察器</a>规范定义了一个 API，用于<em>异步</em>观察目标元素与祖先元素或顶层文档视图的交集中的变化，从而提供一种有效的机制来检索实现无限滚动所需的信息。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="2">网络优先级</th><td><a href="https://www.w3.org/TR/resource-hints/">资源提示</a> <span lang="en">(Resource Hints)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有实验性实现<br><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/preload/">预加载</a> <span lang="en">(Preload)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/firefox.png" alt="experimental in firefox" height="30"><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>本地优先级处理</th><td><a href="https://www.w3.org/TR/requestidlecallback/">后台任务协同调度</a> <span lang="en">(Cooperative Scheduling of Background Tasks)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="PR" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>缓存</th><td><a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>开发中<br><img src="../assets/impl/edge.png" alt="indevelopment in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>电池状态</th><td><a href="https://www.w3.org/TR/battery-status">电池状态 API</a> <span lang="en">(Battery Status API)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th rowspan="3">计时 API</th><td><a href="https://www.w3.org/TR/server-timing">服务器计时</a> <span lang="en">(Server Timing)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/longtasks-1/">长任务 API 第一版</a> <span lang="en">(Long Tasks API 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/paint-timing/">绘制计时第一版</a> <span lang="en">(Paint Timing 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"><img src="../assets/impl/safari.png" alt="consideration in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>底层字节码格式</th><td><a href="https://webassembly.github.io/spec/">Web 汇编</a> <span lang="en">(WebAssembly)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/edge.png" alt="experimental in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>无限滚动</th><td><a href="https://www.w3.org/TR/intersection-observer/">交叉观察器</a> <span lang="en">(Intersection Observer)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/safari.png" alt="indevelopment in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p><p>Polyfills</p><ul><li><a href="https://polyfill.io/v2/docs/features/#IntersectionObserver">Polyfill.io</a></li></ul></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-11">探索性工作</h2>
+
+        <div data-feature="渲染性能" id="generatedID-12">
+          <p><a data-featureid="frame-timing" id="frame-timing" href="https://www.w3.org/TR/frame-timing/">帧计时 API</a> 的工作旨在提供应用在用户设备上运行时获得的每秒帧数的详细信息。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>小组</th><th>实现意向</th></tr></thead><tbody><tr><th>渲染性能</th><td><a href="https://www.w3.org/TR/frame-timing/">帧计时</a> <span lang="en">(Frame Timing)</span></td><td><a href="https://www.w3.org/webperf/">Web 性能工作组</a> <span lang="en">(Web Performance Working Group)</span></td><td><div><p>无</p></div></td></tr></tbody></table></div></section><section>
+        <h2 id="generatedID-13">目前尚未覆盖的工作</h2>
+        <dl>
+          <dt>更加精细的网络优化</dt>
+          <dd>现有指定资源获取优先级的机制是非常粗糙的，比如 <code>preload</code> 链接类型。应用可以从指定用户代理最终需要获取的资源的相对优先级的声明性机制中获益。Web平台孵化社区组目前的讨论可能存在这个领域的探索性工作。</dd>
+        </dl>
+      </section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-14">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>Translations: <a href="performance.html">English</a> | <span style="color: #47525d;">中文</a>
+                    <br>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>

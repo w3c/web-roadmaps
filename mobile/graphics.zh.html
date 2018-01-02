@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>图形和布局 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>图形和布局</h1><h2>2018年1月版</h2></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+
+        <p>Web上的内容可以使用<strong><a href="https://www.w3.org/standards/techs/css">CSS</a></strong>（层叠样式表）进行样式化。特别是CSS3（CSS规范的第三版）是作为规范的集合而建立的，这些规范定义了简单而强大的特性来创建图形效果，例如<span data-feature="边框和背景效果" id="generatedID-0"><a data-featureid="css-border-radius" id="css-border-radius" href="https://www.w3.org/TR/css-backgrounds-3/">圆角</a>、<a data-featureid="css-border-background" id="css-border-background" href="https://www.w3.org/TR/css-backgrounds-3/">复杂背景图像</a>、<a data-featureid="css-border-shadow" id="css-border-shadow" href="https://www.w3.org/TR/css-backgrounds-3/">阴影效果</a></span>、<span data-feature="变换效果" id="generatedID-1"><a data-featureid="css-2d" id="css-2d" href="https://www.w3.org/TR/css-transforms-1/">旋转内容</a>（<a href="https://www.w3.org/TR/css-transforms-1/">CSS变换</a>， 包括<a data-featureid="css-3d" id="css-3d" href="https://www.w3.org/TR/css-transforms-1/">3D效果</a>）</span>。</p>
+        <div data-feature="动画" id="generatedID-2">
+          <p>动画可以通过<a data-featureid="css-animation" id="css-animation" href="https://www.w3.org/TR/css-animations-1/">CSS动画</a>和<a data-featureid="css-transitions" id="css-transitions" href="https://www.w3.org/TR/css-transitions-1/">CSS过渡</a>声明性地描述。</p>
+          <p>使用脚本控制的动画可能需要很多计算资源，特别是在受限制的移动设备上。<a data-featureid="animation-frames" id="animation-frames" href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">动画帧</a>提供了管理动画更新速率的可能性。</p>
+        </div>
+        <p data-feature="复杂排版" id="generatedID-3"><a data-featureid="flexbox" id="flexbox" href="https://www.w3.org/TR/css-flexbox-1/">CSS 弹性盒式布局</a>引入了一种新的布局模式，用于布置更复杂的应用程序。 值得注意的是，通过允许在屏幕上重新排列元素的顺序，CSS 弹性盒式布局可以保持内容本身（HTML 和 SVG）与其布局之间的清晰分离，而不必更改底层HTML。 这对于需要调整用户界面和用户体验以适应屏幕和可用交互机制的移动设备尤为重要（另请参阅<a href="adaptation.zh.html">设备适配</a>）。</p>
+        <div data-feature="可下载字体" id="generatedID-4">
+          <p>字体在构建引人入胜的图形界面中扮演着重要的角色，但移动设备通常只包含有限的字体。<a data-featureid="woff" id="woff" href="https://www.w3.org/TR/WOFF/">WOFF 1.0</a>（Web 开放字体格式）通过使得易于使用通过样式表自动下载的字体来解决该限制，同时将下载字体的大小限制为呈现用户界面实际所需的大小。即将到来的 <a data-featureid="woff2" id="woff2" href="https://www.w3.org/TR/WOFF2/">WOFF 2.0</a> 将下载量减少了25％；在移动设备上，下载和显示这些字体所需的时间减少了35％。</p>
+        </div>
+        <div data-feature="2D矢量图形" id="x2d">
+          <p><strong><a data-featureid="svg12" id="svg12" href="https://www.w3.org/TR/SVG11/">SVG</a></strong>（可扩展矢量图形）提供了一种基于 XML 的标记语言来描述二维矢量图形。 由于这些图形被描述为一组几何形状，因此可以根据用户的请求进行缩放，这使得 SVG 非常适合在屏幕空间有限的移动设备上创建图形。SVG也很容易制作动画，以及复杂和平滑的用户界面。</p>
+          <p>SVG 在 HTML5 中的整合开辟了新的可能性，例如将高级图形过滤器（通过SVG过滤器）应用于多媒体内容（包括视频）。 <a data-featureid="svg2" id="svg2" href="https://www.w3.org/TR/SVG2/">SVG 2</a> 完善了上述整合和SVG的特性集合。</p>
+        </div>
+        <p data-feature="2D 可编程 API" id="x2d-api">作为 SVG 提供的声明性方法的补充，HTML5中添加的<strong><code>&lt;canvas&gt;</code></strong>元素使<a data-featureid="canvas" id="canvas" href="https://www.w3.org/TR/2dcontext/">2D编程API</a>非常适合以较少内存占用的方式处理图形。</p>
+        <p>图形密集型应用（例如游戏）中的另一个重要的特性是使用整个屏幕来显示图形；在<a data-featureid="fullscreen" id="fullscreen" href="https://fullscreen.spec.whatwg.org/">全屏API</a>上的工作可以请求和检测全屏显示，现在在 <a href="https://whatwg.org/">Web 超文本应用技术工作小组</a>中完成。</p>
+        <p><a href="https://www.khronos.org/">Khronos Group</a> 在 W3C 之外开发了一个名为 <a href="https://www.khronos.org/webgl/">WebGL</a> 的用于 HTML5 画布的 3D 图形API；这个 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，可用于嵌入式系统和移动设备。<a href="https://www.w3.org/community/gpu/">GPU for the Web 社区组</a>也开始设计一个新的 Web API，以高性能、强大和安全的方式展示现代 3D 图形和计算能力，目标是跨平台（例如 Direct3D 、Metal 或 Vulkan）。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="3">边框和背景效果</th><td><a href="https://www.w3.org/TR/css-backgrounds-3/">CSS 背景和边框模块第三版中的圆角</a> <span lang="en">(Rounded corners in CSS Backgrounds and Borders Module Level 3)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-backgrounds-3/">CSS 背景和边框模块第三版中的复杂背景</a> <span lang="en">(Complex backgrounds in CSS Backgrounds and Borders Module Level 3)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-backgrounds-3/">CSS 背景和边框模块第三版中的盒子阴影效果</a> <span lang="en">(Box shadow effects in CSS Backgrounds and Borders Module Level 3)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="2">变换效果</th><td><a href="https://www.w3.org/TR/css-transforms-1/">CSS 变换模块第一版中的2D 效果</a> <span lang="en">(2D effects in CSS Transforms Module Level 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-transforms-1/">CSS 变换模块第一版中的3D 效果</a> <span lang="en">(3D effects in CSS Transforms Module Level 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="3">动画</th><td><a href="https://www.w3.org/TR/css-animations-1/">CSS 动画第一版</a> <span lang="en">(CSS Animations Level 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-transitions-1/">CSS 过渡</a> <span lang="en">(CSS Transitions)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/html51/webappapis.html#animation-frames">HTML 5.1中的requestAnimationFrame</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>复杂排版</th><td><a href="https://www.w3.org/TR/css-flexbox-1/">CSS弹性盒式布局模块第一版</a> <span lang="en">(CSS Flexible Box Layout Module Level 1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="2">可下载字体</th><td><a href="https://www.w3.org/TR/WOFF/">Web 字体文件格式 1.0</a> <span lang="en">(WOFF File Format 1.0)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/WOFF2/">Web 字体文件格式 2.0</a> <span lang="en">(WOFF File Format 2.0)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="2">2D矢量图形</th><td><a href="https://www.w3.org/TR/SVG11/">可扩展矢量图形 (SVG) 1.1 规范</a> <span lang="en">(Scalable Vector Graphics (SVG) 1.1 Specification)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/SVG2/">可扩展矢量图形 (SVG) 第二版</a> <span lang="en">(Scalable Vector Graphics (SVG) 2)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><th>2D 可编程 API</th><td><a href="https://www.w3.org/TR/2dcontext/">HTML画布2D上下文</a> <span lang="en">(HTML Canvas 2D Context)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-5">开发中的技术</h2>
+        <div data-feature="动画" id="generatedID-6">
+          <p>动画也可以通过脚本通过<a data-featureid="webanimations" id="webanimations" href="https://www.w3.org/TR/web-animations-1/">Web动画</a>中的API进行管理。</p>
+          <p>为了应用的动画部分确保最佳的性能，Web 开发者可以使用<a data-featureid="css-will-change" id="css-will-change" href="https://www.w3.org/TR/css-will-change-1/">CSS <code>will-change</code></a>属性让浏览器在动画发生之前计算动画。</p>
+        </div>
+
+        <div data-feature="可下载字体" id="generatedID-7">
+          <p>考虑到通过移动网络下载字体所需的时间，Web 开发者需要调整其内容以适应字体的渐进可用性；<a data-featureid="css-font-loading" id="css-font-loading" href="https://www.w3.org/TR/css-font-loading-3/">CSS 字体加载</a>为开发者提供必要的事件来实现这种适应性。</p>
+        </div>
+
+        <p data-feature="方向锁定" id="generatedID-8"><strong>锁定屏幕的方向</strong>是一个有用的特性；<a data-featureid="screenlock" id="screenlock" href="https://www.w3.org/TR/screen-orientation/">屏幕方向API</a>不仅可以检测方向变化，还可以锁定方向为特定状态。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="2">动画</th><td><a href="https://www.w3.org/TR/web-animations-1/">Web 动画</a> <span lang="en">(Web Animations)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/safari.png" alt="consideration in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-will-change-1/">CSS Will Change Module Level 1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>可下载字体</th><td><a href="https://www.w3.org/TR/css-font-loading-3/">CSS 字体加载第三版</a> <span lang="en">(CSS Font Loading Module Level 3)</span></td><td class="medium maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/lcwd.svg" alt="LastCall" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>方向锁定</th><td><a href="https://www.w3.org/TR/screen-orientation/">屏幕方向API</a> <span lang="en">(The Screen Orientation API)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr></tbody></table></div></section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-9">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                        Translations: <a href="graphics.html">English</a> | <span style="color: #47525d;">中文</a>
+                            <br>© <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>

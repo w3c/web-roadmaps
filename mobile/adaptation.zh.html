@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>设备适配 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>设备适配</h1><h2>2018年1月版</h2><p>移动设备不仅与传统计算机有很大的不同，而且移动设备本身在屏幕尺寸、分辨率、键盘类型、媒体录制能力等方面也存在很大差异。用户界面需要适应用户的设备以提供良好的用户体验，并且考虑到市场上可用的设备的异构性，静态自适应（匹配主流设备的有限数量的用户界面分别单独维护）不是可行的选择。 Web开发人员需要创建<b>响应式布局</b>，其中用户界面自动根据用户设备进行调整。</p></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+        <div data-feature="基于 CSS 的适配" id="css">
+          <p><a data-featureid="mediaqueries" id="mediaqueries" href="https://www.w3.org/TR/css3-mediaqueries/">CSS 媒体查询</a>定义了一种机制，允许根据设备的一些特性（尤其是屏幕分辨率）调整网页的布局和行为。</p>
+          <p><a data-featureid="viewport-units" id="viewport-units" href="https://www.w3.org/TR/css-values-3/#viewport-relative-lengths">与视口（viewport）相关的CSS单位 <code>vw</code>、<code>vh</code>、<code>vmin</code> 和 <code>vmax</code></a> 表示当前视口尺寸的百分比，并允许开发者设计自动适应视口尺寸变化的布局。</p>
+        </div>
+        <div data-feature="响应式图像" id="generatedID-0">
+        <p><a href="https://www.w3.org/community/respimg/">响应式图像社区组（RICG）</a>开发了对HTML的扩展（<a data-featureid="picture" id="picture" href="https://www.w3.org/TR/html51/semantics-embedded-content.html#the-picture-element"><code>picture元素</code></a>），允许作者根据设备功能和/或其他媒体特性定义要加载的图像。</p>
+        <p>作为补充，<a href="https://whatwg.org/">WHATWG</a>指定的<a data-featureid="srcset" id="srcset" href="https://www.w3.org/TR/html51/semantics-embedded-content.html#element-attrdef-img-srcset"><code>srcset属性</code></a>也可作为HTML的扩展，让Web开发者定义图像的设备像素比，让浏览器选择最适合屏幕像素密度的图片。</p>
+        <p><a data-featureid="svg12" id="svg12" href="https://www.w3.org/TR/SVG11/">SVG</a>可以定义可缩放的图像，而不会造成任何质量损失，这是开发适应多种设备分辨率的Web应用的另一个重要工具。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="2">基于 CSS 的适配</th><td><a href="https://www.w3.org/TR/css3-mediaqueries/">媒体查询</a> <span lang="en">(Media Queries)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-values-3/#viewport-relative-lengths">CSS 值和单位模块第三版中的与视口相关的CSS单位</a> <span lang="en">(viewport-percentage lengths in CSS Values and Units Module Level 3)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="3">响应式图像</th><td><a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#the-picture-element">HTML 5.1中的picture 元素</a> <span lang="en">(picture element in HTML 5.1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#element-attrdef-img-srcset">HTML 5.1中的srcset 属性</a> <span lang="en">(srcset attribute in HTML 5.1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/SVG11/">可扩展矢量图形 (SVG) 1.1 规范</a> <span lang="en">(Scalable Vector Graphics (SVG) 1.1 Specification)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-1">开发中的技术</h2>
+        <div data-feature="基于 CSS 的适配" id="css-0">
+          <p><a data-featureid="css-device-adapt" id="css-device-adapt" href="https://www.w3.org/TR/css-device-adapt-1/">CSS设备适配</a>定义了一组CSS指令来定义该布局应该基于的尺寸，相对于底层设备的大小——指定<code>&lt;meta name="viewport"&gt;</code>元素实现的内容。</p>
+          <p><a data-featureid="mediaqueries4" id="mediaqueries4" href="https://www.w3.org/TR/mediaqueries-4/">媒体查询第四版</a>添加了指向设备和将指向设备悬停在元素上的能力。此外，<a data-featureid="mediaqueries5" id="mediaqueries5" href="https://drafts.csswg.org/mediaqueries-5/">媒体查询第五版</a>让开发人员能够指定对环境亮度和<a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">脚本定义的变量</a>做出反应的媒体查询，从而更容易满足应用整体逻辑中更复杂的适配规则。</p>
+        </div>
+
+        <div data-feature="服务器端适配" id="generatedID-2">
+          <p>在移动设备上进行内容适配的常用方法是让服务器提供适合用户设备的内容。这种方法避免了向客户端发送客户端不需要的内容，节约了网络带宽，避免了在客户端上运行适配逻辑，保留了CPU和内存。<strong>服务器端适配</strong>用于依赖<em>嗅探</em> <code>User-Agent</code> 字符串并将其映射到设备数据库以适配相关功能。这种机制很容易出错，需要对设备数据库进行持续维护。通过由IETF HTTP工作组开发的<a href="http://httpwg.org/http-extensions/client-hints.html">HTTP客户端提示</a>机制，客户端和服务器现在可以选择交换相关功能以实现高效的内容自适应。<a href="https://www.w3.org/webperf/">Web性能工作组</a>已经开始使用<a data-featureid="device-memory" id="device-memory" href="https://w3c.github.io/device-memory/">设备内存</a>规范来扩展这些提示，以表示设备上可用的内存。该规范还定义了一个API来将该信息显示给运行在客户端上的Web应用。</p>
+        </div>
+
+        <p data-feature="媒体捕获功能" id="generatedID-3"><a data-featureid="getusermedia-cap" id="getusermedia-cap" href="https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings">媒体捕捉与媒体流</a> API 开放了一些有关摄像头和麦克风功能的信息，以便利用手机上提供的各种媒体捕获设备。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="3">基于 CSS 的适配</th><td><a href="https://www.w3.org/TR/css-device-adapt-1/">CSS 设备适配模块第一版</a> <span lang="en">(CSS Device Adaptation Module Level 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/chrome.png" alt="experimental in chrome" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/mediaqueries-4/">媒体查询第四版</a> <span lang="en">(Media Queries Level 4)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p></div></td></tr><tr><td><a href="https://drafts.csswg.org/mediaqueries-5/">媒体查询第五版</a> <span lang="en">(Media Queries Level 5)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><th>服务器端适配</th><td><a href="https://w3c.github.io/device-memory/">设备内存第一版</a> <span lang="en">(Device Memory 1)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>媒体捕获功能</th><td><a href="https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings">媒体捕捉与媒体流中的源功能</a> <span lang="en">(Source capabilities in Media Capture and Streams)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-4">探索性工作</h2>
+        <div data-feature="基于 CSS 的适配" id="css-1">
+          <p><a data-featureid="css-size-adjust" id="css-size-adjust" href="https://drafts.csswg.org/css-size-adjust/">CSS 移动文本大小调整</a>让文本适应页面的缩放部分。</p>
+        </div>
+        <div data-feature="基于 JS 的适配" id="js">
+          <p>大多数移动设备都具有屏幕键盘，也通常让用户能够缩放页面。这两个功能都保留了<em>布局视口</em>（网页在布局其用户界面使用的视口），以免被 <code>position: fixed</code> 的元素弄乱屏幕。<a data-featureid="viewportapi" id="viewportapi" href="https://wicg.github.io/visual-viewport/">Visual Viewport API</a> 为开发人员提供了一种查看<em>可视视口</em>属性（用户当前可见的内容）并与之交互的方法，并在这些属性发生变化时得到通知。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>小组</th><th>实现意向</th></tr></thead><tbody><tr><th>基于 CSS 的适配</th><td><a href="https://drafts.csswg.org/css-size-adjust/">CSS 移动文本大小调整模块第一版</a> <span lang="en">(CSS Mobile Text Size Adjustment Module Level 1)</span></td><td><a href="http://www.w3.org/Style/CSS/members">CSS 工作组</a> <span lang="en">(CSS Working Group)</span></td><td><div></div></td></tr><tr><th>基于 JS 的适配</th><td><a href="https://wicg.github.io/visual-viewport/">可视视口 API</a> <span lang="en">(Visual Viewport API)</span></td><td><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"><img src="../assets/impl/firefox.png" alt="consideration in firefox" height="30"><img src="../assets/impl/safari.png" alt="consideration in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr></tbody></table></div></section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-5">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>Translations: <a href="adaptation.html">English</a> | <span style="color: #47525d;">中文</a>
+                    <br>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>

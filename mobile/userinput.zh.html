@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>用户输入 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>用户输入</h1><h2>2018年1月版</h2></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+        <div data-feature="基于触控的交互" id="generatedID-0">
+          <p>越来越多的移动设备依赖于触控。尽管在Web平台中公认的传统交互方式（键盘、鼠标输入）仍然可以在这种情况下应用，但更具针对性地处理触控输入是创建适应性良好的用户体验的关键因素，<strong><a data-featureid="touchevent" id="touchevent" href="https://www.w3.org/TR/touch-events/">文档对象模型中的触摸事件</a></strong>可以解决这个问题。</p>
+        </div>
+
+        <p data-feature="振动" id="generatedID-1"><a data-featureid="vibration" id="vibration" href="https://www.w3.org/TR/vibration/">振动 API</a> 让移动开发者利用触觉反馈来创建新的交互形式（例如在游戏中）。</p>
+
+        <p data-feature="通知" id="generatedID-2">移动设备被用户随身携带，许多移动用户依赖它们去提醒和通知自己事件，如消息。<a data-featureid="notifications" id="notifications" href="https://www.w3.org/TR/notifications/">Web通知</a>规范使这种特性在 Web 环境中可用。</p>
+
+        <div data-feature="信息无障碍" id="generatedID-3">
+          <p>移动设备硬件的限制和不同的使用环境，<a href="https://www.w3.org/WAI/mobile/experiences">会使残疾人体验到相似的障碍</a>。而这些障碍的相似性意味着相似的方法可以被用来解决这类问题，<a href="https://www.w3.org/WAI/mobile/overlap">使拥有移动设备的残疾人能无障碍访问网站</a>就成为一个自然而然的目标（详见<a data-featureid="mwbp-wcag" id="mwbp-wcag" href="https://www.w3.org/TR/mwbp-wcag/">移动 Web 最佳实践与 Web 内容无障碍指南之间的关系</a>）。</p>
+          <p>Web内容无障碍指南和用户代理无障碍指南工作组就 <a data-featureid="mobile-wcag" id="mobile-wcag" href="https://w3c.github.io/Mobile-A11y-TF-Note/">WCAG 和其它的 Web 无障碍指南如何应用到移动设备</a>提供了指导。更确切地说，这使残疾人在使用移动设备时能够更简单地访问网站和应用程序。</p>
+          <p><a data-featureid="wai-aria" id="wai-aria" href="https://www.w3.org/TR/wai-aria/"><cite>WAI-ARIA</cite></a>提供有关部件、结构和行为钩子的语义信息，使 Web 应用程序能无障碍地访问，包括在移动设备上。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th>基于触控的交互</th><td><a href="https://www.w3.org/TR/touch-events/">触摸事件</a> <span lang="en">(Touch Events)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>振动</th><td><a href="https://www.w3.org/TR/vibration/">振动 API</a> <span lang="en">(Vibration API)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>通知</th><td><a href="https://www.w3.org/TR/notifications/">Web 通知</a> <span lang="en">(Web Notifications)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th rowspan="3">信息无障碍</th><td><a href="https://www.w3.org/TR/mwbp-wcag/">移动 Web 最佳实践与 Web 内容无障碍指南之间的关系</a> <span lang="en">(Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG))</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="NOTE" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://w3c.github.io/Mobile-A11y-TF-Note/">移动无障碍性：Web内容无障碍指南2.0和其他 W3C 无障碍计划如何应用到移动设备</a> <span lang="en">(Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/wai-aria/">可访问富互联应用 1.0</a> <span lang="en">(Accessible Rich Internet Applications (WAI-ARIA) 1.0)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-4">开发中的技术</h2>
+
+        <div data-feature="基于触控的交互" id="generatedID-5">
+          <p><a href="https://www.w3.org/2012/pointerevents/">指针事件工作组</a>在处理用户输入的替代方法上取得了很好的进展。<a data-featureid="pointer-events" id="pointer-events" href="https://www.w3.org/TR/pointerevents2/">指针事件</a>允许统一处理鼠标、触摸和笔事件。它为当前更广泛部署的触摸事件提供了一种补充和更统一的方法。</p>
+          <p>特别是，<a data-featureid="css-touch-action" id="css-touch-action" href="https://www.w3.org/TR/pointerevents2/">CSS 的 <code>touch-action</code> 属性</a>使元素上的过滤器手势事件在实现指针事件之外进一步发展。</p>
+          <p><a data-featureid="inputdevice" id="inputdevice" href="https://wicg.github.io/InputDeviceCapabilities/">输入设备能力API</a>的早期方案提供来自支持触摸设备的给定“鼠标“事件的信息。</p>
+        </div>
+
+        <div data-feature="平滑滚动" id="generatedID-6">
+          <p>随着越来越多的内容被呈现为很长的可滚动列表，越来越多的逻辑被附加到滚动事件上，而且这些动作的用户体验的质量高度依赖于它们的性能。<a data-featureid="cssom-view" id="cssom-view" href="https://www.w3.org/TR/cssom-view-1/">CSSOM 视图模块</a>确定滚动事件何时被触发，并让开发者指定他们想要的滚动行为的类型。</p>
+          <p><a data-featureid="css-scroll-snap" id="css-scroll-snap" href="https://www.w3.org/TR/css-scroll-snap-1/">CSS 滚动捕捉点</a>的提议通过定义当用户移动页面时应用视图捕捉的点，大大增加了控制平移和滚动行为的能力。</p>
+          <p><a data-featureid="css-will-change" id="css-will-change" href="https://www.w3.org/TR/css-will-change-1/">CSS 的 <code>will-change</code></a> 属性也可以向浏览器指示将会很快被滚动到的部分并指示这部分应该被预渲染。</p>
+        </div>
+
+        <p data-feature="通知" id="generatedID-7"><a data-featureid="push" id="push" href="https://www.w3.org/TR/push-api/">推送API</a>使服务器端的通知可以提醒用户，即使是在浏览器没有运行的情况下。</p>
+
+        <p data-feature="屏幕唤醒" id="generatedID-8">不论用户使用语音向它们的应用设备下达命令还是通过非触觉交互来处理这些命令，他们都面临着由于屏幕保护程序导致的屏幕自动关闭的风险。<a data-featureid="wake-lock" id="wake-lock" href="https://www.w3.org/TR/wake-lock/">唤醒锁 API</a> 让开发者在这种情况下保持屏幕不锁定。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="3">基于触控的交互</th><td><a href="https://www.w3.org/TR/pointerevents2/">指针事件第二版</a> <span lang="en">(Pointer Events - Level 2)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/firefox.png" alt="indevelopment in firefox" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/pointerevents2/">指针事件第二版中的touch-action</a> <span lang="en">(touch-action in Pointer Events - Level 2)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr><tr><td><a href="https://wicg.github.io/InputDeviceCapabilities/">输入设备能力</a> <span lang="en">(Input Device Capabilities)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="ED" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><th rowspan="3">平滑滚动</th><td><a href="https://www.w3.org/TR/cssom-view-1/">CSSOM视图模块</a> <span lang="en">(CSSOM View Module)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-scroll-snap-1/">CSS 滚动捕捉点第一版</a> <span lang="en">(CSS Scroll Snap Module Level 1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/css-will-change-1/">CSS Will Change Module Level 1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>通知</th><td><a href="https://www.w3.org/TR/push-api/">推送 API</a> <span lang="en">(Push API)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/edge.png" alt="indevelopment in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>屏幕唤醒</th><td><a href="https://www.w3.org/TR/wake-lock/">唤醒锁 API</a> <span lang="en">(Wake Lock API)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>无</p></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-9">探索性工作</h2>
+
+        <p data-feature="基于语音的交互" id="generatedID-10">移动设备，特别是手机，在很多情况下也非常适合语音交互；<a href="https://www.w3.org/community/speech-api/">语音 API 社区组</a>开发了一个JavaScript API 来支持通过口头命令与网页进行交互。<a data-featureid="speech-api-synthesis" id="speech-api-synthesis" href="https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html">语音合成</a>在浏览器中有很好的支持。对<a data-featureid="speech-api-recognition" id="speech-api-recognition" href="https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html">语音识别</a>的支持仍在进行中。</p>
+
+        <p data-feature="输入法" id="generatedID-11"><a data-featureid="ime-api" id="ime-api" href="https://www.w3.org/TR/ime-api/">输入法 API</a> 允许脚本通过用户代理访问输入法。该规范目前需要更多的编辑工作。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>小组</th><th>实现意向</th></tr></thead><tbody><tr><th rowspan="2">基于语音的交互</th><td><a href="https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html">Web 语音 API中的Speech synthesis</a> <span lang="en">(Speech synthesis in Web Speech API)</span></td><td><a href="https://www.w3.org/community/speech-api/">语音 API 社区组</a> <span lang="en">(Speech API Community Group)</span></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html">Web 语音 API中的Speech recognition</a> <span lang="en">(Speech recognition in Web Speech API)</span></td><td><a href="https://www.w3.org/community/speech-api/">语音 API 社区组</a> <span lang="en">(Speech API Community Group)</span></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有实验性实现<br><img src="../assets/impl/firefox.png" alt="experimental in firefox" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>输入法</th><td><a href="https://www.w3.org/TR/ime-api/">输入法 API</a> <span lang="en">(Input Method Editor API)</span></td><td><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></td><td><div><p>已有稳定实现<br><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr></tbody></table></div></section><section>
+        <h2 id="generatedID-12">不再进行的工作</h2>
+        <dl>
+          <dt>基于意图的事件</dt>
+          <dd>随着 Web 来到新的设备上，并且设备获得新的用户交互机制，允许 Web 开发者对更抽象的用户交互集合作出响应似乎是有用的，而不是将工作集中在“点击”、“按键”或“触摸事件“，能够按照用户如何下达给设备的“撤消“或“下一页”命令单独作出响应。<a data-featureid="indie-ui-events" id="indie-ui-events" href="https://www.w3.org/TR/indie-ui-events/">IndieUI Events</a> 规范就是为了解决这个需求。 由于缺乏实现，目前这项工作已经停止。</dd>
+        </dl>
+      </section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-13">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>Translations: <a href="userinput.html">English</a> | <span style="color: #47525d;">中文</a>
+                    <br>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>

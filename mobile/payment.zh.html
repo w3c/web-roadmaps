@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>支付与服务 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>支付与服务</h1>
+            <h2>2018年1月版</h2>
+            <p>在原生的移动应用商店里，开发者可以通过销售应用或应用内付费等方式，更为容易地变现。</p><p>Web 应用可以使用广为人知的在线支付方法，但是这些支付方案在移动设备端通常不太便捷。</p></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+
+        <p data-feature="自动完成" id="generatedID-0">HTML通过 <code>cc-<em>xxx</em></code> 提供了<a data-featureid="autocomplete" id="autocomplete" href="https://www.w3.org/TR/html51/sec-forms.html#element-attrdef-autocompleteelements-autocomplete">针对信息卡细节信息的自动完成</a>的具体支持，这些信息输入之后，使用信用卡就变得方便多了。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th>自动完成</th><td><a href="https://www.w3.org/TR/html51/sec-forms.html#element-attrdef-autocompleteelements-autocomplete">HTML 5.1中的autocomplete 属性</a> <span lang="en">(autocomplete attribute in HTML 5.1)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-1">开发中的技术</h2>
+
+        <p>在2014年一场非常成功的 <a href="https://www.w3.org/2013/10/payments/">Web 支付研讨会</a>以及 Web 支付兴趣组开展的<a href="https://www.w3.org/TR/web-payments-use-cases/">关于 Web 支付用例和优先级</a>的讨论之后，W3C启动了 <a href="https://www.w3.org/Payments/IG/">Web 支付工作组</a>来开发辅助Web应用支付操作的浏览器API：</p>
+
+        <ul data-feature="Web 支付" id="web">
+          <li><a data-featureid="payment-request" id="payment-request" href="https://www.w3.org/TR/payment-request/">支付请求 API</a> 定义了一个API，允许商家（如销售实物或虚拟物品的在线商店）以最少的集成代码使用一种或多种支付方法。在这种模式下，浏览器促进商家和用户之间的支付流的完成。</li>
+          <li><a data-featureid="payment-method-basic-card" id="payment-method-basic-card" href="https://www.w3.org/TR/payment-method-basic-card/">基本卡支付</a>规范描述了允许在支付请求API中使用借记卡和信用卡的数据结构。</li>
+          <li><a data-featureid="payment-handler" id="payment-handler" href="https://www.w3.org/TR/payment-handler/">支付处理程序 API</a> 定义了一个标准的方式来启动网页和应用程序的支付请求。</li>
+        </ul>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th rowspan="3">Web 支付</th><td><a href="https://www.w3.org/TR/payment-request/">支付请求API</a> <span lang="en">(Payment Request API)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/firefox.png" alt="experimental in firefox" height="30"><img src="../assets/impl/safari.png" alt="experimental in safari" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/payment-method-basic-card/">基本卡支付</a> <span lang="en">(Basic Card Payment)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/firefox.png" alt="consideration in firefox" height="30"></p><p>开发中<br><img src="../assets/impl/edge.png" alt="indevelopment in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/payment-handler/">支付处理程序API</a> <span lang="en">(Payment Handler API)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/chrome.png" alt="experimental in chrome" height="30"></p></div></td></tr></tbody></table></div></section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-2">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>Translations: <a href="payment.html">English</a> | <span style="color: #47525d;">中文</a>
+                    <br>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>

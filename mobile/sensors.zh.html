@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+    <title>传感器和用户本地交互 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
+
+
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
+      </div>
+
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>传感器和用户本地交互</h1><h2>2018年1月版</h2><p>移动设备中有很多传感器，使其成为真实和虚拟世界之间的桥梁：GPS、加速度计、环境光检测器、麦克风、摄像头、温度计等。为了充分利用移动 Web 应用中的这些传感器，Web开发人员需要提供与他们互动的API。</p></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+
+        <div data-feature="地理位置" id="generatedID-0">
+          <p><a data-featureid="geolocation" id="geolocation" href="https://www.w3.org/TR/geolocation-API/">地理位置应用编程接口</a>提供了一个独立于底层技术（GPS、Wi-Fi网络识别、蜂窝网络中的三角测量等）的用于定位设备的通用接口。</p>
+        </div>
+
+        <div data-feature="运动传感器" id="generatedID-1">
+          <p><a data-featureid="deviceorientation" id="deviceorientation" href="https://www.w3.org/TR/orientation-event/">设备方向事件规范</a>定义了几个DOM事件，提供关于设备的物理方向和运动的信息。大多数浏览器都支持这个规范，尽管存在各种互操作性问题。地理位置工作组关闭时，规范本身的工作已经停止，但将来可能会落在<a href="https://www.w3.org/2009/dap/">设备与传感器工作组</a>的范围之内，以便减少各个实现之间的不一致性，并相应地完成规范，同时设备与传感器工作组也在开发更强大的<a href="https://w3c.github.io/orientation-sensor/">方向传感器</a>规范。</p>
+        </div>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th>地理位置</th><td><a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>运动传感器</th><td><a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/retired.svg" alt="Retired" width="50" height="50"></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-2">开发中的技术</h2>
+
+        <p><a data-feature="通用传感器" data-featureid="generic-sensor" id="generic-sensor" href="https://www.w3.org/TR/generic-sensor/">通用传感器API</a>定义了一个以一致的方式将传感器数据开放给Web平台的框架。该规范特别定义了编写具体传感器规格的蓝图以及可扩展以适应不同传感器类型的一个抽象的 <code>Sensor</code> 接口。</p>
+
+        <p>许多传感器API构建在通用传感器API之上。<a data-feature="接近度传感器" data-featureid="proximity" id="proximity" href="https://www.w3.org/TR/proximity/">接近度传感器</a>规范定义了一个API来监控附近物体的存在，而无需物理接触。<a data-feature="环境光线传感器" data-featureid="ambientlight" id="ambientlight" href="https://www.w3.org/TR/ambient-light/">环境光线传感器</a>规范定义了一个API来监控环境光照水平。<a data-feature="电池状态" data-featureid="battery" id="battery" href="https://www.w3.org/TR/battery-status">电池状态API</a>公开了有关设备的电池状态信息（但是，请注意，最后一个规范的未来由于其<a href="https://github.com/w3c/battery/issues/5">隐私侵入性</a>还不明朗）。</p>
+
+        <p>运动的检测是通过在通用传感器API之上构建的底层和高层运动传感器规范的组合来实现的：</p>
+
+        <ul data-feature="运动传感器" id="generatedID-3">
+          <li><a data-featureid="accelerometer" id="accelerometer" href="https://www.w3.org/TR/accelerometer/">加速度传感器</a>获得有关设备本地三个主轴的加速度信息；</li>
+          <li><a data-featureid="gyroscope" id="gyroscope" href="https://www.w3.org/TR/gyroscope/">陀螺仪</a>监测设备本地三个主轴周围的旋转速率；</li>
+          <li><a data-featureid="magnetometer" id="magnetometer" href="https://www.w3.org/TR/magnetometer/">磁强计</a>用于测量设备本地三个主轴周围的磁场；</li>
+          <li><a data-featureid="orientation" id="orientation" href="https://www.w3.org/TR/orientation-sensor/">方向传感器</a>监测物理设备在一个静态三维笛卡尔坐标系统中的方向（朝向）。</li>
+        </ul>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>成熟度</th><th>现有实现</th></tr></thead><tbody><tr><th>通用传感器</th><td><a href="https://www.w3.org/TR/generic-sensor/">通用传感器 API</a> <span lang="en">(Generic Sensor API)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>无</p></div></td></tr><tr><th>接近度传感器</th><td><a href="https://www.w3.org/TR/proximity/">接近度传感器</a> <span lang="en">(Proximity Sensor)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"></p></div></td></tr><tr><th>环境光线传感器</th><td><a href="https://www.w3.org/TR/ambient-light/">环境光线传感器</a> <span lang="en">(Ambient Light Sensor)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>已有实验性实现<br><img src="../assets/impl/chrome.png" alt="experimental in chrome" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"></p></div></td></tr><tr><th>电池状态</th><td><a href="https://www.w3.org/TR/battery-status">电池状态 API</a> <span lang="en">(Battery Status API)</span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th rowspan="4">运动传感器</th><td><a href="https://www.w3.org/TR/accelerometer/">加速度传感器</a> <span lang="en">(Accelerometer)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/chrome.png" alt="indevelopment in chrome" height="30"></p><p>Polyfills</p><ul><li><a href="https://github.com/kenchris/sensor-polyfills">sensor-polyfills</a></li></ul></div></td></tr><tr><td><a href="https://www.w3.org/TR/gyroscope/">陀螺仪</a> <span lang="en">(Gyroscope)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/chrome.png" alt="indevelopment in chrome" height="30"></p><p>Polyfills</p><ul><li><a href="https://github.com/kenchris/sensor-polyfills">sensor-polyfills</a></li></ul></div></td></tr><tr><td><a href="https://www.w3.org/TR/magnetometer/">磁强计</a> <span lang="en">(Magnetometer)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/chrome.png" alt="indevelopment in chrome" height="30"></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/orientation-sensor/">方向传感器</a> <span lang="en">(Orientation Sensor)</span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td><div><p>开发中<br><img src="../assets/impl/chrome.png" alt="indevelopment in chrome" height="30"></p><p>Polyfills</p><ul><li><a href="https://github.com/kenchris/sensor-polyfills">sensor-polyfills</a></li></ul></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-4">探索性工作</h2>
+
+        <p data-feature="地理位置" id="generatedID-5"><a data-featureid="geolocation-sensor" id="geolocation-sensor" href="https://wicg.github.io/geolocation-sensor/">地理位置传感器</a>是用于从设备获取地理位置的API。地理位置传感器的功能集与地理位置API类似，但是基于通用传感器API，提高了安全性和隐私性，并且具有可扩展性。</p>
+
+        <p data-feature="相机和麦克风流" id="generatedID-6">正如本文档的<a href="media.zh.html">媒体</a>部分所详述的那样，<a data-featureid="getusermedia" id="getusermedia" href="https://www.w3.org/TR/mediacapture-streams/">开放相机和麦克风流的API</a>目前正在开发。</p>
+
+        <p data-feature="近场通讯" id="generatedID-7"><a href="https://w3c.github.io/web-nfc/" data-featureid="webnfc" id="webnfc">Web 近场通讯（NFC）API</a>已经开始在<a href="https://www.w3.org/community/web-nfc/">Web NFC社区组</a>中开始开发，能够在两个紧邻的设备之间进行无线通信。</p>
+
+        <p data-feature="蓝牙" id="generatedID-8">同样，由<a href="https://www.w3.org/community/web-bluetooth">Web蓝牙社区组</a>开发的<a data-featureid="webbluetooth" id="webbluetooth" href="https://webbluetoothcg.github.io/web-bluetooth/">Web蓝牙</a>规范描述了一个API，用于通过蓝牙低功耗（BLE）模式发现并与设备进行通信。</p>
+
+        <p><a data-feature="Humidity sensor" data-featureid="humidity" id="humidity" href="https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html">环境湿度事件</a>将允许移动Web应用接收与环境湿度变化相对应的事件。</p>
+      <div><table><thead><tr><th>特性</th><th>规范</th><th>小组</th><th>实现意向</th></tr></thead><tbody><tr><th>地理位置</th><td><a href="https://wicg.github.io/geolocation-sensor/">地理位置传感器</a> <span lang="en">(Geolocation Sensor)</span></td><td><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></td><td><div><p>无</p></div></td></tr><tr><th>相机和麦克风流</th><td><a href="https://www.w3.org/TR/mediacapture-streams/">媒体捕捉与媒体流</a> <span lang="en">(Media Capture and Streams)</span></td><td><a href="http://www.w3.org/2011/04/webrtc/">WebRTC Working Group</a></td><td><div><p>已有稳定实现<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>近场通讯</th><td><a href="https://w3c.github.io/web-nfc/">Web NFC API</a></td><td><a href="https://www.w3.org/community/web-nfc/">Web 近场通讯社区组</a> <span lang="en">(Web NFC Community Group)</span></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"><img src="../assets/impl/firefox.png" alt="consideration in firefox" height="30"></p><p>开发中<br><img src="../assets/impl/chrome.png" alt="indevelopment in chrome" height="30"></p></div></td></tr><tr><th>蓝牙</th><td><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web 蓝牙</a> <span lang="en">(Web Bluetooth)</span></td><td><a href="https://www.w3.org/community/web-bluetooth/">Web 蓝牙社区组</a> <span lang="en">(Web Bluetooth Community Group)</span></td><td><div><p>考虑实现<br><img src="../assets/impl/edge.png" alt="consideration in edge" height="30"></p><p>已有稳定实现<br><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"></p></div></td></tr><tr><th>Humidity sensor</th><td><a href="https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html">环境湿度事件</a> <span lang="en">(Ambient Humidity Events)</span></td><td><a href="http://www.w3.org/2009/dap/">设备与传感器工作组</a> <span lang="en">(Device and Sensors Working Group)</span></td><td><div><p>无</p></div></td></tr></tbody></table></div></section><section>
+        <h2 id="generatedID-9">不再进行的工作</h2>
+        <dl>
+          <dt>地理围栏 API</dt>
+          <dd>检测设备何时进入给定地理区域的能力将能够基于用户在特定地点的实际存在来实现交互和通知。为此，地理位置工作组开发了<a data-featureid="geofencing" id="geofencing" href="https://www.w3.org/TR/geofencing/">地理围栏 API</a>。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。该规范的工作可能会在未来继续，这取决于潜在的实现者的兴趣。</dd>
+        </dl>
+      </section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-10">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户输入</div></a></li><li><a href="sensors.zh.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>Translations: <a href="sensors.html">English</a> | <span style="color: #47525d;">中文</a>
+                    <br>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script></body></html>
