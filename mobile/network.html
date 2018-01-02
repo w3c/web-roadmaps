@@ -1,122 +1,121 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <title>Network and Communications - Roadmap of Web Applications on Mobile</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0072ff">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../assets/css/theme.css">
-  <link rel="stylesheet" href="../assets/css/roadmap.css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
+    <title>Network and Communications - Roadmap of Web Applications on Mobile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
 
-  <header>
-    <div class="container">
-      <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
-
-
-              <div class="brand">
-                <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
-              </div>
-    </div>
-
-  </header>
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/menu.svg" alt="" height="15"></button>
 
 
-  <main>
-    <div class="content-wrapper">
-      <section class="hero">
-          <div class="container">
-          <h1>Network and Communications</h1>
-          <h2>December 2017</h2>
-          <p>Network connectivity represents a major asset for mobile devices: the Web is an immense store of content, as well as an almost endless source of processing power, overcoming two of the limitations of mobile devices. The Web platform is growing a number of APIs that facilitate establishing network connectivity in different contexts.</p><p>Likewise, the opportunity offered to deploy real-time communication services on the Web is another step towards the unification of the telecommunication and Web ecosystems.</p></div>
-      </section>
-      <section class="main-content">
-          <div class="container">
-    <section class="featureset well-deployed">
-      <h2 id="well-deployed-technologies">Well-deployed technologies</h2>
-          
-      <div data-feature="HTTP Network API" id="http-network-api">
-        <p><a data-featureid="xhr" id="xhr" href="https://xhr.spec.whatwg.org/">XMLHttpRequest</a> (the basis for Ajax development) is a widely deployed API to load content from Web servers using the HTTP and HTTPs protocol: the W3C specification (formerly known as XMLHttpRequest Level 2) was meant to document the existing deployed API (with the ability to make requests on servers in a different domain, programmatic feedback on the progress of the network operations, and more efficient handling of binary content). That work is now done in the <a href="https://whatwg.org/">WHATWG</a>. The WHATWG <a data-featureid="fetch" id="fetch" href="https://fetch.spec.whatwg.org/">Fetch API</a> also provides a more powerful Promise-based alternative.</p>
-      </div>
-          
-      <div data-feature="Cross-domain Requests" id="cross-domain-requests">
-        <p>By default, browsers do not allow to make request across different domains (or more specifically, across different origins, a combination of the protocol, domain and port) from a single Web page; this rule protects the user from having a Web site abusing their credentials and stealing their data on another Web site. Sites can opt-out of that rule by making use of the <a data-featureid="cors" id="cors" href="https://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a> (CORS) mechanism, opening up much wider cooperation across Web applications and services. Note the W3C version of the CORS specification does not reflect current implementations and will be obsoleted. The CORS mechanism is now a core part of the on-going <a href="https://fetch.spec.whatwg.org/">Fetch specification</a> in the WHATWG.</p>
-      </div>
-          
-      <div data-feature="Server-pushed Requests" id="server-pushed-requests">
-        <p>XMLHttpRequest is useful for client-initiated network requests, but mobile devices with their limited network capabilities and the cost that network requests induce on their battery (and sometimes on their users bill) can often make better use of server-initiated requests. The <a data-featureid="eventsource" id="eventsource" href="https://www.w3.org/TR/eventsource">Server-Sent Events API</a> allows triggering DOM events based on push notifications (via HTTP and other protocols).</p>
-      </div>
-          
-      <div data-feature="Bidirectional Connections" id="bidirectional-connections">
-        <p>The <strong><a data-featureid="websockets" id="websockets" href="https://www.w3.org/TR/websockets/">WebSocket API</a></strong>, built on top of the <a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket protocol</a> (RFC6455), offers a bidirectional, more flexible, and less resource intensive network connectivity than XMLHttpRequest.</p>
+                <div class="brand">
+                  <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" alt="W3C" height="30"></a>
+                </div>
       </div>
 
-      <div data-feature="On-line State" id="on-line-state">
-        <p>Of course, an important part of using network connectivity relies on being able to determine if such connectivity exists, and the type of network available. The <a data-featureid="online" id="online" href="https://www.w3.org/TR/html51/browsers.html#browser-state">HTML5 <code>onLine</code> DOM flag</a>, and its associated change event, <code>online</code>, signals when network connectivity is <i>not</i> available to the Web environment (the flag is unreliable to assert that the Web environment is online).</p>
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+            <h1>Network and Communications</h1>
+            <p>Network connectivity represents a major asset for mobile devices: the Web is an immense store of content, as well as an almost endless source of processing power, overcoming two of the limitations of mobile devices. The Web platform is growing a number of APIs that facilitate establishing network connectivity in different contexts.</p><p>Likewise, the opportunity offered to deploy real-time communication services on the Web is another step towards the unification of the telecommunication and Web ecosystems.</p></div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+      <section class="featureset well-deployed">
+        <h2 id="well-deployed-technologies">Well-deployed technologies</h2>
+            
+        <div data-feature="HTTP Network API" id="http-network-api">
+          <p><a data-featureid="xhr" id="xhr" href="https://xhr.spec.whatwg.org/">XMLHttpRequest</a> (the basis for Ajax development) is a widely deployed API to load content from Web servers using the HTTP and HTTPs protocol: the W3C specification (formerly known as XMLHttpRequest Level 2) was meant to document the existing deployed API (with the ability to make requests on servers in a different domain, programmatic feedback on the progress of the network operations, and more efficient handling of binary content). That work is now done in the <a href="https://whatwg.org/">WHATWG</a>. The WHATWG <a data-featureid="fetch" id="fetch" href="https://fetch.spec.whatwg.org/">Fetch API</a> also provides a more powerful Promise-based alternative.</p>
+        </div>
+            
+        <div data-feature="Cross-domain Requests" id="cross-domain-requests">
+          <p>By default, browsers do not allow to make request across different domains (or more specifically, across different origins, a combination of the protocol, domain and port) from a single Web page; this rule protects the user from having a Web site abusing their credentials and stealing their data on another Web site. Sites can opt-out of that rule by making use of the <a data-featureid="cors" id="cors" href="https://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a> (CORS) mechanism, opening up much wider cooperation across Web applications and services. Note the W3C version of the CORS specification does not reflect current implementations and will be obsoleted. The CORS mechanism is now a core part of the on-going <a href="https://fetch.spec.whatwg.org/">Fetch specification</a> in the WHATWG.</p>
+        </div>
+            
+        <div data-feature="Server-pushed Requests" id="server-pushed-requests">
+          <p>XMLHttpRequest is useful for client-initiated network requests, but mobile devices with their limited network capabilities and the cost that network requests induce on their battery (and sometimes on their users bill) can often make better use of server-initiated requests. The <a data-featureid="eventsource" id="eventsource" href="https://www.w3.org/TR/eventsource">Server-Sent Events API</a> allows triggering DOM events based on push notifications (via HTTP and other protocols).</p>
+        </div>
+            
+        <div data-feature="Bidirectional Connections" id="bidirectional-connections">
+          <p>The <a data-featureid="websockets" id="websockets" href="https://www.w3.org/TR/websockets/">WebSocket API</a>, built on top of the <a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket protocol</a> (RFC6455), offers a bidirectional, more flexible, and less resource intensive network connectivity than XMLHttpRequest.</p>
+        </div>
+
+        <div data-feature="On-line State" id="on-line-state">
+          <p>Of course, an important part of using network connectivity relies on being able to determine if such connectivity exists, and the type of network available. The <a data-featureid="online" id="online" href="https://www.w3.org/TR/html51/browsers.html#browser-state">HTML5 <code>onLine</code> DOM flag</a>, and its associated change event, <code>online</code>, signals when network connectivity is <i>not</i> available to the Web environment (the flag is unreliable to assert that the Web environment is online).</p>
+        </div>
+
+        <div data-feature="Network Characteristics" id="network-characteristics">
+          <p>The <a data-featureid="resource-timing" id="resource-timing" href="https://www.w3.org/TR/resource-timing-1/">Resource Timing API</a> offers to measure precisely the impact of the network on the time needed to load various resources, offering another approach to adapt a Web app to its network environment.</p>
+        </div>
+      <div><table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current implementations</th></tr></thead><tbody><tr><th rowspan="2">HTTP Network API</th><td><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://fetch.spec.whatwg.org/">Fetch</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Cross-domain Requests</th><td><a href="https://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Server-pushed Requests</th><td><a href="https://www.w3.org/TR/eventsource">Server-Sent Events</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Bidirectional Connections</th><td><a href="https://www.w3.org/TR/websockets/">The WebSocket API</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>On-line State</th><td><a href="https://www.w3.org/TR/html51/browsers.html#browser-state">onLine DOM flag in HTML 5.1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Network Characteristics</th><td><a href="https://www.w3.org/TR/resource-timing-1/">Resource Timing Level 1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="technologies-in-progress">Technologies in progress</h2>
+        <p data-feature="HTTP Network API" id="http-network-api-0">The <a data-featureid="beacon" id="beacon">Beacon API</a> aims at letting developers queue unsupervised HTTP requests, leaving it to the browser to execute them when appropriate, opening the door for better network optimizations.</p>
+
+        <div data-feature="Server-pushed Requests" id="server-pushed-requests-0">
+          <p>The <a data-featureid="push" id="push" href="https://www.w3.org/TR/push-api/">Push API</a> allows Web applications to receive server-sent messages whether or not the said Web app is active in a browser window. The <a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF Web-Based Push Notifications Working Group</a> developed a companion protocol suitable to request the delivery of a push message to a user agent, create new push message delivery subscriptions, and monitor for new push messages (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>).</p>
+        </div>
+
+        <div data-feature="P2P Data Connections" id="p2p-data-connections">
+          <p>The work on <a data-featureid="p2p" id="p2p" href="https://www.w3.org/TR/webrtc/">Web Real-Time Communications</a> also provides direct <strong>peer-to-peer data connections</strong> between browsers with real-time characteristics, opening the way to collaborative multi-devices Web applications.</p>
+        </div>
+      </section><section class="featureset exploratory-work">
+        <h2 id="exploratory-work">Exploratory work</h2>
+        <p>Early work on a <a data-featureid="background-sync" id="background-sync" href="https://wicg.github.io/BackgroundSync/spec/">Web Background Synchronization API</a> would provide a robust Service Worker-based mechanism to enable Web applications to download and upload content in the background, even in the absence of a running browser.</p>
+
+        <div data-feature="Network Characteristics" id="network-characteristics-0">
+          <p>Discontinued work on the <a data-featureid="netinfo" id="netinfo" href="https://wicg.github.io/netinfo/">Network Information API</a> to address discovery of the network characteristics has now been resumed in the Web Platform Incubator Community Group.</p>
+        </div>
+      </section></div></section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="see-anything-missing">See anything missing?</h2>
+                <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
       </div>
 
-      <div data-feature="Network Characteristics" id="network-characteristics">
-        <p>The <a data-featureid="resource-timing" id="resource-timing" href="https://www.w3.org/TR/resource-timing-1/">Resource Timing API</a> offers to measure precisely the impact of the network on the time needed to load various resources, offering another approach to adapt a Web app to its network environment.</p>
-      </div>
-    <div><table><thead><tr><th>Feature</th><th>Specification</th><th>Maturity</th><th>Current implementations</th></tr></thead><tbody><tr><th rowspan="2">HTTP Network API</th><td><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><td><a href="https://fetch.spec.whatwg.org/">Fetch</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Cross-domain Requests</th><td><a href="https://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Server-pushed Requests</th><td><a href="https://www.w3.org/TR/eventsource">Server-Sent Events</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Bidirectional Connections</th><td><a href="https://www.w3.org/TR/websockets/">The WebSocket API</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>On-line State</th><td><a href="https://www.w3.org/TR/html51/browsers.html#browser-state">onLine DOM flag in HTML 5.1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="53"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr><tr><th>Network Characteristics</th><td><a href="https://www.w3.org/TR/resource-timing-1/">Resource Timing Level 1</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="CR" width="50" height="50"></td><td><div><p>Shipped<br><img src="../assets/impl/firefox.png" alt="shipped in firefox" height="30"><img src="../assets/impl/chrome.png" alt="shipped in chrome" height="30"><img src="../assets/impl/edge.png" alt="shipped in edge" height="30"><img src="../assets/impl/safari.png" alt="shipped in safari" height="30"></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
-      <h2 id="technologies-in-progress">Technologies in progress</h2>
-      <p data-feature="HTTP Network API" id="http-network-api-0">The <a data-featureid="beacon" id="beacon">Beacon API</a> aims at letting developers queue unsupervised HTTP requests, leaving it to the browser to execute them when appropriate, opening the door for better network optimizations.</p>
+        </main>
 
-      <div data-feature="Server-pushed Requests" id="server-pushed-requests-0">
-        <p>The <strong><a data-featureid="push" id="push" href="https://www.w3.org/TR/push-api/">Push API</a></strong> allows Web applications to receive server-sent messages whether or not the said Web app is active in a browser window. The <a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF Web-Based Push Notifications Working Group</a> developed a companion protocol suitable to request the delivery of a push message to a user agent, create new push message delivery subscriptions, and monitor for new push messages (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>).</p>
-      </div>
-
-      <div data-feature="P2P Data Connections" id="p2p-data-connections">
-        <p>The work on <a data-featureid="p2p" id="p2p" href="https://www.w3.org/TR/webrtc/">Web Real-Time Communications</a> also provides direct <strong>peer-to-peer data connections</strong> between browsers with real-time characteristics, opening the way to collaborative multi-devices Web applications.</p>
-      </div>
-    </section><section class="featureset exploratory-work">
-      <h2 id="exploratory-work">Exploratory work</h2>
-      <p>Early work on a <a data-featureid="background-sync" id="background-sync" href="https://wicg.github.io/BackgroundSync/spec/">Web Background Synchronization API</a> would provide a robust Service Worker-based mechanism to enable Web applications to download and upload content in the background, even in the absence of a running browser.</p>
-
-      <div data-feature="Network Characteristics" id="network-characteristics-0">
-        <p>Discontinued work on the <a data-featureid="netinfo" id="netinfo" href="https://wicg.github.io/netinfo/">Network Information API</a> to address discovery of the network characteristics has now been resumed in the Web Incubator Community Group.</p>
-      </div>
-    </section></div></section>
-      <section class="contribute">
-          <div class="container">
-          <h2 id="see-anything-missing">See anything missing?</h2>
-              <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
-               <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
-              </p>
-              <p class="call-to-action">
-                <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
-                <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
-              </p>
-          </div>
-      </section>
-    </div>
-
-      </main>
-
-      <aside id="side-nav">
-        <nav>
-          <ul>
-          <li><a href="./"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="graphics.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">Graphics and Layout</div></a></li><li><a href="adaptation.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">Device Adaptation</div></a></li><li><a href="forms.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">Forms</div></a></li><li><a href="storage.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">Data Storage</div></a></li><li><a href="media.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">Media</div></a></li><li><a href="userinput.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">User Input</div></a></li><li><a href="sensors.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">Sensors and Local Interactions</div></a></li><li><a href="network.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">Network and Communications</div></a></li><li><a href="lifecycle.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">Application Lifecycle</div></a></li><li><a href="payment.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">Payment and Services</div></a></li><li><a href="performance.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">Performance and Tuning</div></a></li><li><a href="security.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">Security and Privacy</div></a></li></ul>
-        </nav>
-      </aside>
-  <div id="mask"></div>
-      <footer>
-          <div class="container">
-              <p>
-                  © <a href="https://www.w3.org/">W3C</a>
-                  <br>
-                  <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
-                  <br>
-                  Usage policies apply
-              </p>
-              <p>Information on implementations of the APIs have been gathered from <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
-          </p></div>
-      </footer>
-  
+        <aside id="side-nav" class=" hidden">
+          <nav>
+            <ul>
+            <li><a href="./"><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="graphics.html"><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">Graphics and Layout</div></a></li><li><a href="adaptation.html"><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">Device Adaptation</div></a></li><li><a href="forms.html"><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">Forms</div></a></li><li><a href="storage.html"><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">Data Storage</div></a></li><li><a href="media.html"><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">Media</div></a></li><li><a href="userinput.html"><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">User Input</div></a></li><li><a href="sensors.html"><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">Sensors and Local Interactions</div></a></li><li><a href="network.html"><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">Network and Communications</div></a></li><li><a href="lifecycle.html"><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">Application Lifecycle</div></a></li><li><a href="payment.html"><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">Payment and Services</div></a></li><li><a href="performance.html"><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">Performance and Tuning</div></a></li><li><a href="security.html"><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">Security and Privacy</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask" class=" hidden"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>Information on implementations of the APIs have been gathered from <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+            </p></div>
+        </footer>
+    
 
 <script src="../js/sidenav.js"></script></body></html>
