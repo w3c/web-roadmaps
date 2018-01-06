@@ -200,13 +200,14 @@ If you would like to visualize the contents of a roadmap locally as it would app
 
 ## Translating a roadmap
 
-*Note (October 2017): this part is maturing but is still unstable, and will likely evolve based on further practical experience with translating roadmaps.*
+*Note (January 2018): this part should be mostly stable now, but it may still evolve based on practical experience with translating roadmaps.*
 
 The translator needs to provide:
 
 * Translated versions of the HTML pages. See [Translating HTML pages](#translating-html-pages).
 * Translations of specification titles, feature names, group names and other labels used in the roadmap. See [Creating a `translations.xx.json` file](#creating-a-translationsxxjson-file).
 * Translations of the table of contents (the `toc.json`) file. See [Translating the `toc.json` file](#translating-the-tocjson-file).
+* The list of translations in the `toc.json` file so that the framework can generate links in the footer to switch from one language to another. See [List translations in the `toc.json` file](#list-translations-in-the-tocjson-file).
 
 To maintain translations over time, it is wise to use Git tags to create snapshots of a roadmap whenever a significant update is needed. Maintaining the translation then becomes a matter of comparing the latest snapshot with the previous one. The translator can retrieve the ZIP that contains the HTML files to translate from GitHub.
 
@@ -276,4 +277,47 @@ Note the framework will also write the English version of specification titles a
 
 ### Translating the `toc.json` file
 
-Create a `toc.xx.json` file that follows the same structure as the `toc.json` file.
+Create a `toc.xx.json` file that follows the same structure as the `toc.json` file. The contents of the localized version will overwrite the same content in the `toc.json`. You do not need to duplicate content that does not need to change. For instance, in the following translation in French of the example JSON file listing sub-pages that appears earlier in this document, note that the URL of the Discourse instance and the URL and icon of the subpage have not been duplicated in the localized file:
+
+```json
+{
+  "title": "Le titre de la feuille de route",
+  "discourse": {
+    "category": "Ma catégorie",
+  },
+  "pages": [
+    {
+      "title": "Titre de la sous-page",
+      "description": "Une courte description de la sous-page"
+    }
+  ]
+}
+```
+
+### List translations in the `toc.json` file
+
+To add links between translations in the footer of each page, the framework needs to know which translations are available. You should add the list in a `translations` key in the `toc.json` file, for instance:
+
+```json
+{
+  "title": "Title of the Roadmap",
+  "discourse": {...},
+  "pages": [...],
+  "translations": [
+    {
+      "title": "Français",
+      "lang": "fr"
+    },
+    {
+      "title: "English",
+      "lang": "en"
+    },
+    {
+      "title": "中文",
+      "lang": "zh""
+    }
+  ]
+}
+```
+
+The list of translations only needs to appear in the `toc.json` file, and does not need to appear in the localized `toc.xx.json` files.

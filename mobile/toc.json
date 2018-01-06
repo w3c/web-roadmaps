@@ -77,5 +77,15 @@
       "icon": "../assets/img/mobile-security.svg",
       "description": "Technologies and considerations to guarantee privacy and security on mobile devices that hold some of the user’s most private and confidential data."
     }
+  ],
+  "translations": [
+    {
+      "title": "English",
+      "lang": "en"
+    },
+    {
+      "title": "中文",
+      "lang": "zh"
+    }
   ]
 }
