@@ -164,7 +164,7 @@ The template for the index page is as follows:
       <p>Introduction of roadmap scope</p>
     </header>
   </body>
-  <script src="../js/generate-index.js"></script>
+  <script src="../js/generate.js"></script>
 </html>
 ```
 
