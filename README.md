@@ -309,7 +309,7 @@ To add links between translations in the footer of each page, the framework need
       "lang": "fr"
     },
     {
-      "title: "English",
+      "title": "English",
       "lang": "en"
     },
     {
