@@ -5830,6 +5830,16 @@
         "ua": "firefox"
       }, 
       {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
         "source": "edgestatus", 
         "status": "shipped", 
         "ua": "edge"
