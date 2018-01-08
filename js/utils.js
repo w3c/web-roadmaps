@@ -70,17 +70,17 @@ const makeID = function(elem, pfx = "", txt = "", noLC = false) {
 /**
  * List of scripts to include in all pages once the page has been generated
  */
-const scripts = ['../js/sidenav.js'];
+const scripts = ['../js/sidenav.js', '../js/filter-implstatus.js'];
 
 /**
  * Template to use for an item in the main navigation menu
  */
-const templateItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"><h2></h2><p></p></div></a>';
+const templateItem = '<a href="" data-nav><div class="icon"><img src="" alt=""></div><div class="description"><h2></h2><p></p></div></a>';
 
 /**
  * Template to use for an item in the side navigation menu
  */
-const templateTocItem = '<a href=""><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
+const templateTocItem = '<a href="" data-nav><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
 
 /**
@@ -582,7 +582,7 @@ const applyToc = function (toc, translations, lang, pagetype) {
           // Replace language in the current URL with the target language
           url = window.location.pathname.replace(/\.([^\.]+)\.([^\.]+)$/, '.' + tr.lang + '.$2');
         }
-        return '<a href="' + url + '">' + tr.title + '</a>';
+        return '<a href="' + url + '" data-nav>' + tr.title + '</a>';
       }
     });
     $(document, '.translations').forEach(el => el.innerHTML = trtext.join (' | '));
@@ -796,7 +796,7 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
   // apply that info to generate the tables at the end of sections
   referencedFeatureIds = referencedFeatureIds.filter(
     (fid, idx, self) => self.indexOf(fid) === idx);
-  Promise.all(referencedFeatureIds
+  return Promise.all(referencedFeatureIds
       .map(featureId => {
         return {
           id: featureId,
@@ -930,6 +930,7 @@ const formatImplInfo = function (data, translations) {
       uadata = uadata.filter(ua => browsers.indexOf(ua) !== -1);
       if (uadata.length) {
           let paragraph = document.createElement('p');
+          paragraph.setAttribute('data-implstatus', '');
           paragraph.appendChild(document.createTextNode(
             statusTranslations[type] || type));
           paragraph.appendChild(document.createElement('br'));
@@ -938,6 +939,7 @@ const formatImplInfo = function (data, translations) {
             icon.src = '../assets/impl/' + ua + '.png';
             icon.height = 30;
             icon.alt = type + ' in ' + ua;
+            icon.setAttribute('data-ua', ua);
             paragraph.appendChild(icon);
           });
           div.appendChild(paragraph);
