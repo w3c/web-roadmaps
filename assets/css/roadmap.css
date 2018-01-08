@@ -431,6 +431,10 @@ footer p {
     text-align: center;
 }
 
+.translations span {
+  color: #47525d;
+}
+
 span[lang=en] {
   font-style: italic;
   font-size: smaller;
