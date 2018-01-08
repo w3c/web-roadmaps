@@ -5,6 +5,22 @@ const $ = (el, selector) =>
   Array.prototype.slice.call(el.querySelectorAll(selector), 0);
 
 /**
+ * Returns true if the given object is an array
+ */
+const isArray = Array.prototype.isArray || function(obj) {
+  return Object.prototype.toString.call(obj) === '[object Array]';
+};
+
+/**
+ * Returns true if the given object is a real object
+ */
+const isObject = function(obj) {
+  var type = typeof obj;
+  return type === 'function' || type === 'object' && !!obj;
+};
+
+
+/**
  * Applied to an element, sets an ID for it (and returns it), using a specific
  * prefix if provided, and a specific text if given.
  *
@@ -505,15 +521,18 @@ const applyToc = function (toc, translations, lang, pagetype) {
   let pages = pagetype.menu ? [] : [{
     title: ((translations.labels && translations.labels['Home']) ?
       translations.labels['Home'] : 'Home'),
-    url: ((lang === 'en') ? './' : './index.' + lang + '.html'),
+    url: ((lang === 'en') ? './' : './index.html'),
     icon: '../assets/img/home.svg'
   }];
   pages = pages.concat(toc.pages);
   pages.forEach(page => {
+    const localizedUrl = ((lang === 'en') ? page.url :
+      page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));
+
     if (mainNav) {
       let mainNavItem = document.createElement('li');
       mainNavItem.innerHTML = templateItem;
-      mainNavItem.querySelector('a').href = page.url;
+      mainNavItem.querySelector('a').href = localizedUrl;
       mainNavItem.querySelector('h2').textContent = page.title;
       mainNavItem.querySelector('.icon img').src = page.icon;
       mainNavItem.querySelector('p').textContent = page.description;
@@ -523,12 +542,51 @@ const applyToc = function (toc, translations, lang, pagetype) {
     if (sideNav) {
       let sideNavItem = document.createElement('li');
       sideNavItem.innerHTML = templateTocItem;
-      sideNavItem.querySelector('a').href = page.url;
+      sideNavItem.querySelector('a').href = localizedUrl;
       sideNavItem.querySelector('.icon img').src = page.icon;
       sideNavItem.querySelector('div.description').textContent = page.title;
       sideNav.appendChild(sideNavItem);
     }
   });
+
+  let listOfTranslations = toc.translations || [];
+  if (listOfTranslations.length <= 1) {
+    $(document, '.translations-wrapper').forEach(el => el.parentNode.removeChild(el));
+  }
+  else {
+    let trtext = listOfTranslations.map(tr => {
+      if (tr.lang === lang) {
+        return '<span>' + tr.title + '</span>';
+      }
+      else {
+        // Compute the URL of the same page as the current one in the target
+        // language, taking into account that we handle English as an exception
+        // to the rule (files in English do not have "en" in their name), and
+        // that the index page in English may end with "/" instead of with
+        // "/index.html"
+        let url = null;
+        if (lang === 'en') {
+          // Current doc is in English, add the right lang to the current URL
+          if (!window.location.pathname.match(/\.([^\.]+)$/)) {
+            url = window.location.pathname + 'index.' + tr.lang + '.html';
+          }
+          else {
+            url = window.location.pathname.replace(/\.([^\.]+)$/, '.' + tr.lang + '.$1');
+          }
+        }
+        else if (tr.lang === 'en') {
+          // English version, remove the lang from the URL
+          url = window.location.pathname.replace(/\.([^\.]+)\.([^\.]+)$/, '.$2');
+        }
+        else {
+          // Replace language in the current URL with the target language
+          url = window.location.pathname.replace(/\.([^\.]+)\.([^\.]+)$/, '.' + tr.lang + '.$2');
+        }
+        return '<a href="' + url + '">' + tr.title + '</a>';
+      }
+    });
+    $(document, '.translations').forEach(el => el.innerHTML = trtext.join (' | '));
+  }
 
   return toc;
 };
@@ -537,16 +595,72 @@ const applyToc = function (toc, translations, lang, pagetype) {
 /**
  * Loads and parses the `toc.json` file.
  *
- * If a localized version of the TOC cannot be found, the function falls back
- * to the default TOC.
+ * The function will both download the `toc.json` file (in other words the
+ * default TOC file of the English version), and the localized version of the
+ * file if it exists. It will then merge the two files into one.
+ *
+ * Note that if the localized version contains a "reset: true" flag, the
+ * whole content of the default TOC file is dropped.
  *
  * NB: The `toc.json` obviously contains the table of contents. It also sets
  * a few other parameters such as links for feedback and custom table
  * structures as needed.
  */
 const loadToc = function (lang) {
-  return loadLocalizedUrl('toc.json', lang)
-    .then(response => JSON.parse(response));
+  let toc = null;
+  return loadUrl('toc.json')
+    .then(response => JSON.parse(response))
+    .then(defaultToc => toc = defaultToc)
+    .catch(err => {
+      console.error ('Could not find "toc.json" file');
+      throw err;
+    })
+    .then(_ => {
+      if (lang === 'en') {
+        return toc;
+      }
+      return loadUrl('toc.' + lang + '.json')
+        .then(response => JSON.parse(response))
+        .then(localizedToc => {
+          if (localizedToc.reset) {
+            toc = localizedToc;
+          }
+          else {
+            // Overwrite default TOC with localized info when it exists.
+            // For object parameters, we'll keep the keys that are not defined
+            // in the localized version. We'll do the same thing for array
+            // parameters whose items are objects
+            Object.keys(localizedToc).forEach(key => {
+              if (!toc[key]) {
+                toc[key] = localizedToc[key];
+              }
+              else if (isArray(toc[key]) && isArray(localizedToc[key])) {
+                localizedToc[key].forEach((item, pos) => {
+                  if (toc[key][pos] && isObject(toc[key][pos]) && isObject(item)) {
+                    Object.keys(item).forEach(subkey =>
+                      toc[key][pos][subkey] = item[subkey]);
+                  }
+                  else {
+                    toc[key][pos] = item;
+                  }
+                });
+              }
+              else if (isObject(toc[key]) && isObject(localizedToc[key])) {
+                Object.keys(localizedToc[key]).forEach(subkey =>
+                  toc[key][subkey] = localizedToc[key][subkey]);
+              }
+              else {
+                toc[key] = localizedToc[key];
+              }
+            });
+          }
+          return toc;
+        })
+        .catch(err => {
+          console.warn('No localized version of toc.json in "' + lang + '"');
+          return toc;
+        });
+    });
 };
 
 

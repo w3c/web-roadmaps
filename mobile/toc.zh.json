@@ -1,80 +1,55 @@
 {
     "title": "移动 Web 应用路线图",
     "discourse": {
-      "category": "W3C 的 discourse 论坛",
-      "url": "https://discourse.wicg.io/"
+      "category": "W3C 的 discourse 论坛"
     },
     "pages": [
       {
-        "url": "graphics.zh.html",
         "title": "图形和布局",
-        "icon": "../assets/img/mobile-graphics.svg",
         "description": "用来设计引人注目和流畅的用户界面的特性。"
       },
       {
-        "url": "adaptation.zh.html",
         "title": "设备适配",
-        "icon": "../assets/img/mobile-adaptation.svg",
         "description": "创建响应式布局所需的特性，其中的内容自动调整到不同的屏幕、输入机制和其他设备功能。"
       },
       {
-        "url": "forms.zh.html",
         "title": "表单",
-        "icon": "../assets/img/mobile-forms.svg",
         "description": "构建丰富的表单以及在文本输入仍然是挑战的设备上优化用户输入所需的特性。"
       },
       {
-        "url": "storage.zh.html",
         "title": "数据存储",
-        "icon": "../assets/img/mobile-storage.svg",
         "description": "保存状态，导出内容，从系统中的文件和服务集成数据的技术。"
       },
       {
-        "url": "media.zh.html",
         "title": "媒体",
-        "icon": "../assets/img/mobile-media.svg",
         "description": "在移动设备上创建身临其境的音频/视频体验所需的特性。"
       },
       {
-        "url": "userinput.zh.html",
         "title": "用户输入",
-        "icon": "../assets/img/mobile-userinput.svg",
         "description": "通过设备特定的交互机制吸引用户的特性（如触控、振动、通知）。"
       },
       {
-        "url": "sensors.zh.html",
         "title": "传感器和用户本地交互",
-        "icon": "../assets/img/mobile-sensors.svg",
         "description": "与移动设备中的传感器交互所需的API，包括从加速计和地理定位传感器到基于距离传感器的通信机制。"
       },
       {
-        "url": "network.zh.html",
         "title": "网络和通信",
-        "icon": "../assets/img/mobile-network.svg",
         "description": "通过与网络的交互将 Web 强大的功能和存储能力赋予原本受限的移动设备。"
       },
       {
-        "url": "lifecycle.zh.html",
         "title": "应用生命周期",
-        "icon": "../assets/img/mobile-lifecycle.svg",
         "description": "将应用与系统其他部分集成的机制并且提供类似原生应用的体验。"
       },
       {
-        "url": "payment.zh.html",
         "title": "支付与服务",
-        "icon": "../assets/img/mobile-payment.svg",
         "description": "为应用变现所需的特性, 例如集成易用的应用程序内付费。"
       },
       {
-        "url": "performance.zh.html",
         "title": "性能和调优",
-        "icon": "../assets/img/mobile-performance.svg",
         "description": "监控和改善在移动设备上高度受限的应用程序性能的机制。"
       },
       {
-        "url": "security.zh.html",
         "title": "安全和隐私",
-        "icon": "../assets/img/mobile-security.svg",
         "description": "保证移动设备上隐私和安全的技术与要考虑的因素，因为移动设备保存着用户一些最隐私和机密的数据。"
       }
     ]
