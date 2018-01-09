@@ -116,4 +116,7 @@ loadScript('../js/utils.js').then(_ => {
 }).then(results => {
   let customTables = results[0]['tables'];
   return fillTables(results[2], results[3], customTables, results[4], lang);
+}).then(_ => {
+  document.documentElement.setAttribute('data-generated', '');
+  document.dispatchEvent(new Event('generate'));
 });
