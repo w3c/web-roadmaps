@@ -6135,6 +6135,28 @@
       "chrome"
     ]
   }, 
+  "payment-method-manifest": {
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "payment-request": {
     "consideration": [], 
     "experimental": [
@@ -6162,6 +6184,11 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
       }, 
       {
         "source": "edgestatus", 

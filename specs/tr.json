@@ -1029,6 +1029,26 @@
       }
     ]
   }, 
+  "payment-method-id": {
+    "maturity": "CR", 
+    "title": "Payment Method Identifiers", 
+    "wgs": [
+      {
+        "label": "Web Payments Working Group", 
+        "url": "https://www.w3.org/Payments/WG/"
+      }
+    ]
+  }, 
+  "payment-method-manifest": {
+    "maturity": "WD", 
+    "title": "Payment Method Manifest", 
+    "wgs": [
+      {
+        "label": "Web Payments Working Group", 
+        "url": "https://www.w3.org/Payments/WG/"
+      }
+    ]
+  }, 
   "payment-request": {
     "maturity": "CR", 
     "title": "Payment Request API", 

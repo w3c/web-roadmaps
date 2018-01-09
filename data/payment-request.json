@@ -1,7 +1,9 @@
 {
   "impl": {
     "caniuse": "payment-request",
-    "chromestatus": 5639348045217792
+    "chromestatus": 5639348045217792,
+    "edgestatus": "Payment Request API",
+    "webkitstatus": "feature-payment-request"
   },
   "TR": "https://www.w3.org/TR/payment-request/"
 }
