@@ -23,17 +23,17 @@
   }, 
   "accelerometer": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "chrome"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "chrome"
       }
     ], 
-    "indevelopment": [
-      "chrome"
-    ], 
+    "indevelopment": [], 
     "polyfills": [
       {
         "label": "sensor-polyfills", 
@@ -3747,17 +3747,17 @@
   }, 
   "gyroscope": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "chrome"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "chrome"
       }
     ], 
-    "indevelopment": [
-      "chrome"
-    ], 
+    "indevelopment": [], 
     "polyfills": [
       {
         "label": "sensor-polyfills", 
@@ -5017,17 +5017,17 @@
   }, 
   "magnetometer": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "chrome"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "chrome"
       }
     ], 
-    "indevelopment": [
-      "chrome"
-    ], 
+    "indevelopment": [], 
     "shipped": []
   }, 
   "media-capabilities": {
@@ -5796,17 +5796,17 @@
   }, 
   "orientation": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "chrome"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "chrome"
       }
     ], 
-    "indevelopment": [
-      "chrome"
-    ], 
+    "indevelopment": [], 
     "polyfills": [
       {
         "label": "sensor-polyfills", 
@@ -6487,7 +6487,8 @@
     "experimental": [
       "ios_saf", 
       "firefox", 
-      "safari"
+      "safari", 
+      "edge"
     ], 
     "implementations": [
       {
@@ -6519,6 +6520,11 @@
         "source": "caniuse", 
         "status": "shipped", 
         "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "edge"
       }, 
       {
         "source": "caniuse", 
@@ -6582,7 +6588,9 @@
   }, 
   "push": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "edge"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
@@ -6601,7 +6609,7 @@
       }, 
       {
         "source": "edgestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "edge"
       }, 
       {
@@ -6655,9 +6663,7 @@
         "ua": "and_chr"
       }
     ], 
-    "indevelopment": [
-      "edge"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "and_uc", 
       "firefox", 
@@ -7242,6 +7248,7 @@
   "serviceworkers": {
     "consideration": [], 
     "experimental": [
+      "edge", 
       "safari"
     ], 
     "implementations": [
@@ -7262,7 +7269,7 @@
       }, 
       {
         "source": "edgestatus", 
-        "status": "indevelopment", 
+        "status": "experimental", 
         "ua": "edge"
       }, 
       {
@@ -7331,9 +7338,7 @@
         "ua": "android"
       }
     ], 
-    "indevelopment": [
-      "edge"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "and_uc", 
       "baidu", 

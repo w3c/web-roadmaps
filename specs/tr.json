@@ -1602,7 +1602,7 @@
     ]
   }, 
   "woff2": {
-    "maturity": "CR", 
+    "maturity": "PR", 
     "title": "WOFF File Format 2.0", 
     "wgs": [
       {
