@@ -327,6 +327,16 @@
       }
     ]
   }, 
+  "css-flexbox": {
+    "maturity": "CR", 
+    "title": "CSS Flexible Box Layout Module Level 1", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-font-loading": {
     "maturity": "LastCall", 
     "title": "CSS Font Loading Module Level 3", 
@@ -578,16 +588,6 @@
       {
         "label": "Web Platform Working Group", 
         "url": "http://www.w3.org/WebPlatform/WG/"
-      }
-    ]
-  }, 
-  "flexbox": {
-    "maturity": "CR", 
-    "title": "CSS Flexible Box Layout Module Level 1", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
       }
     ]
   }, 
