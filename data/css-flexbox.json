@@ -1,7 +1,8 @@
 {
   "impl": {
     "caniuse": "flexbox",
-    "chromestatus": 4837301406400512
+    "chromestatus": 4837301406400512,
+    "edgestatus": "Flexbox"
   },
   "TR": "https://www.w3.org/TR/css-flexbox-1/"
 }
