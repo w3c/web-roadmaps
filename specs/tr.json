@@ -419,7 +419,7 @@
   }, 
   "css-touch-action": {
     "maturity": "WD", 
-    "title": "Pointer Events - Level 2", 
+    "title": "Pointer Events", 
     "wgs": [
       {
         "label": "Pointer Events Working Group", 
@@ -672,7 +672,7 @@
     ]
   }, 
   "html-media-capture": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "HTML Media Capture", 
     "wgs": [
       {
@@ -1091,7 +1091,7 @@
   }, 
   "pointer-events": {
     "maturity": "WD", 
-    "title": "Pointer Events - Level 2", 
+    "title": "Pointer Events", 
     "wgs": [
       {
         "label": "Pointer Events Working Group", 
@@ -1488,7 +1488,7 @@
     ]
   }, 
   "wcag21": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Web Content Accessibility Guidelines (WCAG) 2.1", 
     "wgs": [
       {
