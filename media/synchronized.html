@@ -22,18 +22,26 @@
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
-        <p data-feature="Timeline management">Beyond text tracks, Web pages may contain many other time-based animations with which synchronization can be useful; the <a data-featureid="webanimations">Web Animations API</a> offers the tools needed to set up these synchronization points.</p>
+        <p data-feature="Timeline management">Beyond text tracks, Web pages may contain many other time-based animations with which synchronization can be useful; the <a data-featureid="webanimations">Web Animations API</a> offers the tools needed to set up these synchronization points. However, it does not allow synchronizing animations to playback of audio or video media.</p>
       </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <p data-feature="Close Captioning">When media resources enclose their own text tracks, having this in-band information exposed to the Web application enables creating richer interactions; the <a data-featureid="inband">Sourcing In-band Media Resource Tracks from Media Containers into HTML</a> document offers guidance as to how that in-band information should be exposed in browsers.</p>
-        <p data-feature="Multi-device synchronization">There are a number of cases that need synchronization of several tracks in the same page, for instance to synchronize the sign-language transcript of an audio track with its associated video. The <code>MediaController</code> interface, initially defined in HTML5, was dropped from the HTML specification due to very limited implementation support. The <a data-featureid="timing">Timing Object</a> specification proposes a mechanism to bring shared on-line clocks to browsers and ease synchronization of heterogeneous content within a single device and across devices.</p>
+        <p data-feature="Multi-device synchronization">There are a number of cases that need synchronization of several tracks in the same page, for instance to synchronize the sign-language transcript of an audio track with its associated video. The <code>MediaController</code> interface, initially defined in HTML5, was dropped from the HTML specification due to very limited implementation support. The <a data-featureid="timing">Timing Object</a> specification proposes a mechanism to bring shared on-line clocks to browsers and ease synchronization of heterogeneous content within a single device and across devices. The proposed timing model is generic, in that it could be applied to any timed media, such as audio or video playback or presentation or animation of web content in general.</p>
       </section>
       <section>
         <h2>Discontinued features</h2>
         <dl>
           <dt>The <code>MediaController</code> interface</dt>
           <dd>The <code>MediaController</code> interface had been introduced in HTML5 to ease the playback synchronization of different media elements within a single page. The interface was dropped from the HTML5.1 specification due to very limited implementation support and concerns about the performance and technical viability of such solutions on constrained devices.</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>Features not covered by ongoing work</h2>
+        <dl>
+          <dt>Media-synchronised Web animations</dt>
+          <dd><a data-featureid="webanimations">Web Animations</a> allows Web applications to synchronise CSS Transitions, CSS Animations, and SVG with a global clock. There is no built-in mechanism to synchronize animations to playback of audio or video media, which could be useful to enable tighter synchronization in libraries such as Mozilla's <a href="https://github.com/menismu/popcorn-js">Popcorn.js</a>. Possible solutions include an extension to Web Animations to be able to associate animations with a media element, or integration with the more generic Timing Object solution.
+          </dd>
         </dl>
       </section>
     </main>
