@@ -42,7 +42,9 @@
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
 
-        <p>Many sensitive APIs, e.g. those that expose mobile device sensors, are gated by a request for user consent; while these requests give control to the user, they can be sometimes hard to integrate in the overall user experience without visibility on which permission has been granted or denied. The <a data-featureid="permissions">Permissions API</a> aims at fixing this.</p>
+        <div data-feature="Permissions">
+          <p>Many sensitive APIs, e.g. those that expose mobile device sensors, are gated by a request for user consent; while these requests give control to the user, they can be sometimes hard to integrate in the overall user experience without visibility on which permission has been granted or denied. The <a data-featureid="permissions">Permissions API</a> aims at fixing this.</p>
+        </div>
 
         <div data-feature="Identity Management">
           <p>To facilitate the authentication of users to on-line services, the Web Application Security Working Group is proposing a <a data-featureid="credential-management">Credential Management API</a> that lets developers interact more seamless with user-agent-managed credentials.</p>
@@ -59,6 +61,10 @@
 
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
+        <div data-feature="Permissions">
+          <p>Different APIs use different mechanisms to grant permission to use or access an underlying powerful feature. To ease design of permission-related code, the <a data-featureid="permissions-request">Requesting permissions</a> and <a data-featureid="permissions-revoke">Relinquishing permissions</a> proposals extend the <a href="https://www.w3.org/TR/permissions/">Permissions API</a> to provide a uniform function for requesting and revoking permission to use powerful features.</p>
+        </div>
+
         <p data-feature="Authentication"><a data-featureid="hbss">Hardware Based Secure Services</a> aims to improve the levels of assurance to which users and application providers are able to protect their online accounts and communications, by making hardware security services available to the Web.</p>
       </section>
 
