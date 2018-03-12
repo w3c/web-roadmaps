@@ -7532,11 +7532,15 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "safari"
+      }, 
+      {
+        "source": "other", 
+        "status": "", 
+        "ua": "webkit"
       }
     ], 
     "indevelopment": [
-      "firefox", 
-      "safari"
+      "firefox"
     ], 
     "shipped": [
       "chrome"
