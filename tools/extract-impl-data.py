@@ -223,12 +223,12 @@ def processData():
             # source that describes the implementation status in webkit)
             uas = set(impl["ua"] for impl in data[id]["implementations"] if impl["ua"] != "webkit")
             webkitstatus = [impl["status"] for impl in data[id]["implementations"] if impl["ua"] == "webkit"]
-            webkitstatus = webkitstatus[0] if len(webkitstatus) > 0 else ""
+            webkitstatus = webkitstatus[0] if len(webkitstatus) > 0 else None
             for ua in uas:
                 status = ""
                 impldata = [impl for impl in data[id]["implementations"] if impl["ua"] == ua]
                 for impl in impldata:
-                    if (ua == "safari") and (webkitstatus != "") and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
+                    if (ua == "safari") and (webkitstatus is not None) and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
                         # Rule 3, constrain safari status to that of webkit
                         # when it is lower
                         status = webkitstatus
@@ -244,7 +244,7 @@ def processData():
                     data[id][status].add(ua)
 
             # Rule 4, insert Webkit entry if there was no Safari entry
-            if ((webkitstatus != "") and ("safari" not in uas)):
+            if ((webkitstatus is not None) and (webkitstatus != "") and ("safari" not in uas)):
                 data[id][webkitstatus].add("webkit")
 
             # Convert sets back to lists for JSON serialization

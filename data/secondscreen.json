@@ -4,7 +4,10 @@
     "chromestatus": 6676265876586496,
     "mozstatus": null,
     "edgestatus": null,
-    "webkitstatus": null
+    "webkitstatus": null,
+    "other": {
+      "webkit": ""
+    }
   },
   "TR": "https://www.w3.org/TR/presentation-api/"
 }
