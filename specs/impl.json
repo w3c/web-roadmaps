@@ -6495,6 +6495,16 @@
     "experimental": [], 
     "implementations": [
       {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
         "source": "caniuse", 
         "status": "shipped", 
         "ua": "firefox"
@@ -6534,6 +6544,50 @@
       "opera", 
       "and_chr"
     ]
+  }, 
+  "permissions-request": {
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
+  "permissions-revoke": {
+    "consideration": [
+      "firefox"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
   }, 
   "picture": {
     "consideration": [], 

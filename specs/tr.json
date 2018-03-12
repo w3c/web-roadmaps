@@ -581,6 +581,16 @@
       }
     ]
   }, 
+  "epr": {
+    "maturity": "NOTE", 
+    "title": "Entry Point Regulation", 
+    "wgs": [
+      {
+        "label": "Web Application Security Working Group", 
+        "url": "http://www.w3.org/2011/webappsec/"
+      }
+    ]
+  }, 
   "eventsource": {
     "maturity": "REC", 
     "title": "Server-Sent Events", 
