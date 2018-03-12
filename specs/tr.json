@@ -1523,7 +1523,7 @@
   }, 
   "webauthn": {
     "maturity": "WD", 
-    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1", 
+    "title": "Web Authentication: An API for accessing Public Key Credentials Level 1", 
     "wgs": [
       {
         "label": "Web Authentication Working Group", 
@@ -1602,7 +1602,7 @@
     ]
   }, 
   "woff2": {
-    "maturity": "PR", 
+    "maturity": "REC", 
     "title": "WOFF File Format 2.0", 
     "wgs": [
       {

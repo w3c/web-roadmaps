@@ -2489,6 +2489,11 @@
       }, 
       {
         "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
         "status": "shipped", 
         "ua": "ios_saf"
       }, 
@@ -8896,6 +8901,67 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "chrome"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
+  "web-share": {
+    "consideration": [
+      "firefox", 
+      "safari"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "consideration", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "and_chr"
+    ]
+  }, 
+  "web-share-target": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
       }
     ], 
     "indevelopment": [
