@@ -3376,6 +3376,28 @@
       "android"
     ]
   }, 
+  "feature-policy": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome"
+    ]
+  }, 
   "fetch": {
     "consideration": [], 
     "experimental": [], 

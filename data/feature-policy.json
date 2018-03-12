@@ -1,0 +1,13 @@
+{
+    "editors": "https://wicg.github.io/feature-policy/",
+    "title": "Feature Policy",
+    "wgs": [
+        {
+            "url": "https://www.w3.org/community/wicg/",
+            "label": "Web Platform Incubator Community Group"
+        }
+    ],
+    "impl": {
+        "chromestatus": 5694225681219584
+    }
+}
