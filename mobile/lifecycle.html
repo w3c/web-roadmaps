@@ -55,6 +55,11 @@
         <div data-feature="State transition">
           <p>Applications running on mobile devices can go through different application states, from running to being idle, paused, stopped, discarded, or terminated. Transitions between these states are triggered by the underlying operating system, and hidden from web applications. The <a data-featureid="web-lifecycle">Web Lifecycle</a> proposal seeks to expose application state transitions to applications so that these applications can persist/restore state, enable/disable use of network, etc.</p>
         </div>
+
+        <div data-feature="Sharing content">
+          <p>The <em>share action</em> is a common paradigm on mobile devices to pass content across application boundaries, for instance to post a URL or an image to one's favorite social network application. The <a data-featureid="web-share">Web Share API</a> proposal allows a Web application to share text, links and other content to an arbitrary destination of the user's choice. The API is a more focused version of the <a href="https://plus.google.com/116171619992010691739">Web Intents</a> proposal, which was abandoned end of 2012, in part because its genericity triggered user experience issues.</p>
+          <p>The <a data-featureid="web-share-target">Web Share Target API</a> proposal allows web applications to declare, in their application manifest, that they can receive content shared from other applications. This allows Web applications, that the user chose to install, to be listed among other native applications in share menus.</p>
+        </div>
       </section>
 
       <section>
