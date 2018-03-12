@@ -437,6 +437,16 @@
       }
     ]
   }, 
+  "css-ui-box-sizing": {
+    "maturity": "PR", 
+    "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-will-change": {
     "maturity": "CR", 
     "title": "CSS Will Change Module Level 1", 
