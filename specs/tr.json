@@ -338,7 +338,7 @@
     ]
   }, 
   "css-font-loading": {
-    "maturity": "LastCall", 
+    "maturity": "WD", 
     "title": "CSS Font Loading Module Level 3", 
     "wgs": [
       {
@@ -1368,7 +1368,7 @@
     ]
   }, 
   "ttml": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Timed Text Markup Language 2 (TTML2)", 
     "wgs": [
       {

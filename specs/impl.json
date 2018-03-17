@@ -4912,6 +4912,7 @@
   "inputmode": {
     "consideration": [], 
     "experimental": [
+      "chrome", 
       "firefox", 
       "and_ff"
     ], 
@@ -4920,6 +4921,11 @@
         "source": "caniuse", 
         "status": "experimental", 
         "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "chrome"
       }, 
       {
         "source": "caniuse", 
@@ -6726,7 +6732,9 @@
   }, 
   "pointer-events": {
     "consideration": [], 
-    "experimental": [], 
+    "experimental": [
+      "firefox"
+    ], 
     "implementations": [
       {
         "source": "chromestatus", 
@@ -6747,6 +6755,21 @@
         "source": "edgestatus", 
         "status": "shipped", 
         "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
       }, 
       {
         "source": "caniuse", 
@@ -6789,9 +6812,7 @@
         "ua": "ie_mob"
       }
     ], 
-    "indevelopment": [
-      "firefox"
-    ], 
+    "indevelopment": [], 
     "shipped": [
       "samsung", 
       "chrome", 
@@ -7527,11 +7548,6 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "firefox"
-      }, 
-      {
-        "source": "chromestatus", 
-        "status": "indevelopment", 
-        "ua": "safari"
       }, 
       {
         "source": "other", 

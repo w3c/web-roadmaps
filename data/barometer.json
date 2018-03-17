@@ -1,0 +1,10 @@
+{
+  "editors": "https://kenchris.github.io/barometer/",
+  "title": "Ambient Atmospheric Pressure (Barometric) Sensor",
+  "wgs": [
+    {
+      "label": "Device and Sensors Working Group",
+      "url": "http://www.w3.org/2009/dap/"
+    }
+  ]
+}
