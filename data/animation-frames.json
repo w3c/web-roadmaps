@@ -1,5 +1,5 @@
 {
-  "TR": "https://www.w3.org/TR/html51/webappapis.html#animation-frames",
+  "TR": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
   "impl": {
     "caniuse": "requestanimationframe"
   },
