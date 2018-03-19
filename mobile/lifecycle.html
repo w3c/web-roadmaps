@@ -15,10 +15,6 @@
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
-                
-        <div data-feature="Offline Web Apps">
-          <p>HTML5’s <code><a data-featureid="appcache">ApplicationCache</a></code> enables access to Web applications offline through the definition of a manifest of files that the browser is expected to keep in its cache. The feature is well deployed but this approach is extremely limited in terms of how much developers can control what gets cached when. The feature has been obsoleted in HTML 5.1, in favor of the <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> specification, which defines a much more powerful approach.</p>
-        </div>
 
         <div data-feature="Foreground Detection">
           <p>The <a data-featureid="page-visibility">Page Visibility</a> specification lets developers detect when their application is in the foreground, and thus adapt their operations and resource consumption accordingly.</p>
@@ -66,6 +62,9 @@
         <h2>Discontinued features</h2>
 
         <dl>
+          <dt>Application caches</dt>
+          <dd>The <a data-featureid="appcache">application cache</a> mechanism was introduced in HTML5 to enable access to Web applications offline through the definition of a manifest of files that the browser is expected to keep in its cache. The feature is well deployed but raises security issues and is extremely limited in terms of how much developers can control what gets cached when. The feature was obsoleted in HTML 5.1, and dropped from HTML 5.2, in favor of the <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> specification, which defines a much more powerful approach.</dd>
+
           <dt>Task Scheduling</dt>
           <dd>The <a data-featureid="task-scheduler">Task Scheduler API</a> made it possible to trigger a task at a specified time via the service worker associated with a Web app. This specification was in scope of the now-closed System Applications Working Group and was shelved as a result.</dd>
 
