@@ -5,9 +5,15 @@
     "mozstatus": null,
     "edgestatus": null,
     "webkitstatus": null,
-    "other": {
-      "webkit": ""
-    }
+    "other": [
+      {
+        "ua": "webkit",
+        "status": "",
+        "source": "feedback",
+        "date": "2018-03-16",
+        "comment": "No public indication that the Presentation API is in development in Webkit, see https://twitter.com/othersight/status/959442416599117824"
+      }
+    ]
   },
   "TR": "https://www.w3.org/TR/presentation-api/"
 }

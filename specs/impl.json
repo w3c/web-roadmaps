@@ -44,10 +44,49 @@
   }, 
   "ambientlight": {
     "consideration": [], 
-    "experimental": [
-      "chrome"
-    ], 
+    "experimental": [], 
     "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "comment": "The version based on the Generic Sensor API is not what is shipping in Firefox, see https://github.com/w3c/web-roadmaps/issues/160", 
+        "date": "2018-03-16", 
+        "source": "feedback", 
+        "status": "", 
+        "ua": "firefox"
+      }, 
+      {
+        "comment": "The version based on the Generic Sensor API is not what is shipping in Firefox, see https://github.com/w3c/web-roadmaps/issues/160", 
+        "date": "2018-03-16", 
+        "source": "feedback", 
+        "status": "", 
+        "ua": "and_ff"
+      }, 
+      {
+        "comment": "The version based on the Generic Sensor API is not what is shipping in Edge, see https://github.com/w3c/web-roadmaps/issues/160", 
+        "date": "2018-03-16", 
+        "source": "feedback", 
+        "status": "", 
+        "ua": "edge"
+      }, 
       {
         "source": "caniuse", 
         "status": "shipped", 
@@ -71,9 +110,7 @@
     ], 
     "indevelopment": [], 
     "shipped": [
-      "firefox", 
-      "edge", 
-      "and_ff"
+      "chrome"
     ]
   }, 
   "animation-frames": {
@@ -7550,7 +7587,9 @@
         "ua": "firefox"
       }, 
       {
-        "source": "other", 
+        "comment": "No public indication that the Presentation API is in development in Webkit, see https://twitter.com/othersight/status/959442416599117824", 
+        "date": "2018-03-16", 
+        "source": "feedback", 
         "status": "", 
         "ua": "webkit"
       }
