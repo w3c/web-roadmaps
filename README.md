@@ -53,12 +53,7 @@ That JSON object is stored in a file in the [data](data/) directory, whose name 
 
 Depending on the advancement of the underlying specification, the JSON object can have the following properties:
 * for W3C specifications that have started their Recommendation track progress, the `TR` property should point to the URL of latest version of the spec; this URL will be used to collect data about the spec (standardization status, Working Groups that produce it, editors draft, etc)
-* for specifications for which browser implementations are expected, the `impl` property is an object with one or more of the following optional properties:
-  * `caniuse`: the name of the feature in [Can I use](http://caniuse.com/) (the one that appears in the URL after `#feat=`)
-  * `chromestatus`: the number used to identify features in [Chrome Platform Status](https://www.chromestatus.com/features) (the one that appears in the URL after `features/`)
-  * `edgestatus`: the name used to identify features in [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) (the one that appears in the URL after `platform/status/`)
-  * `webkitstatus`: the name used to identify features in [WebKit Feature Status](https://webkit.org/status/) (the one that appears in the URL after `status/#`)
-  * `other`: an object that describes known implementation status per user agent. Object keys should be user agent names (typically one of `edge`, `firefox`, `chrome`, `safari`), and object values one of `shipped`, `indevelopment`, `experimental` or `consideration`, to mark the current implementation status. Maintaining implementation information is difficult and error prone. Whenever possible, the implementation status of a feature should rather be automatically extracted from main sources. This `other` mechanism should only be used as a fallback when implementation status is not available.
+* for specifications for which browser implementations are expected, the `impl` property, described below in [Describing implementation status](#describing-implementation-status)
 * for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
 * in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json))
 * for specifications that have not started their Recommendation track progress, the `title` property gives the title of the specification
@@ -84,21 +79,62 @@ Here is an example of a JSON file that describes the "Intersection Observer" spe
 }
 ```
 
-If you would like to state that a particular feature is implemented in Chrome, under development in Firefox, and being considered in Edge, you would add:
+### Describing implementation status
+
+*Note (March 2018): implementation status features are still being worked upon in the framework. The implementation description should remain backward compatible, but it may still evolve.*
+
+Provided the description contains relevant information, the framework can automatically retrieve the implementation status in main browsers from the following Web platform status sources: [Can I use](http://caniuse.com/), [Chrome Platform Status](https://www.chromestatus.com/features), [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) and [WebKit Feature Status](https://webkit.org/status/).
+
+To enable this, the decription must contain an `impl` property whose value is an object with one or more of the following optional properties:
+* `caniuse`: the name of the feature in [Can I use](http://caniuse.com/) (the one that appears in the URL after `#feat=`)
+* `chromestatus`: the number used to identify features in [Chrome Platform Status](https://www.chromestatus.com/features) (the one that appears in the URL after `features/`)
+* `edgestatus`: the name used to identify features in [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) (the full feature title that appears in the page)
+* `webkitstatus`: the name used to identify features in [WebKit Feature Status](https://webkit.org/status/) (the one that appears in the URL after `status/#`)
+* `other`: manually entered implementation status. See below for details.
+
+From time to time, platform status sources may:
+* contain implementation information about the specification but at a different granularity level, e.g. you want implementation info about the entire specification and the site only gives implementation status about a particular feature within the specification, or the opposite)
+* contain implementation information which you know is *incorrect*.
+* not contain any information about a specification at all
+
+When this happens, you may use the `other` sub-property to specify implementation status manually. Property value must be an array of objects that have the following properties:
+* `ua`: the user agent name (typically one of `edge`, `firefox`, `chrome`, `safari`, `webkit`)
+* `status`: the implementation status, which should be one of `shipped`, `indevelopment`, `experimental`, `consideration`, or an empty string to say "Not currently considered".
+* `source` (optional but recommended): a short name that identifies the origin of the information. Use `feedback` to flag information that comes from review and that should override whatever other implementation status the framework might be able to retrieve automatically for the user agent under consideration.
+* `date` (optional but recommended): the `YYYY-MM-DD` date at which that manually information was last reviewed. Keeping implementation information up to date, is difficult, and error prone. The information needs to be periodically checked and re-validated. The date is meant to track the last time when someone checked and validated the information.
+* `comment` (optional but recommended): a comment that provides contextual information, for instance to explain why the information in platform status sources should be regarded as incorrect.
+
+For instance, let's say that "Can I use" report that a particular feature is in development in Webkit, whereas you know that the feature has not yet been considered there; and that it does not report anything on status in Edge, whereas you know from discussion with the Edge team that it is being considered, you could add:
 
 ```json
 {
   "TR": "...",
   "impl": {
     "caniuse": "...",
-    "other": {
-      "chrome": "shipped",
-      "firefox": "indevelopment",
-      "edge": "consideration"
-    }
+    "other": [
+      {
+        "ua": "webkit",
+        "status": "",
+        "source": "feedback",
+        "date": "2018-03-19",
+        "comment": "No public signal in Webkit for the feature, information reported by Can I Use is incorrect"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "insight",
+        "date": "2018-03-19",
+        "comment": "From discussion with the Edge team, the feature is under consideration"
+      }
+    ]
   }
 }
 ```
+
+In the previous example, the information on `webkit` will override the information reported by "Can I Use", whereas the information on `edge` will not be used if "Can I Use" asserts that the development has started or that the feature has shipped in Edge.
+
+
+**Important:** As noted above, maintaining implementation information over time is difficult and error prone. Whenever possible, the implementation status of a particular feature should be automatically extracted from main sources, and the `other` mechanism should only be used as a fallback when implementation status is incorrect or not available.
 
 ## Creating a new roadmap page or a new single-page roadmap
 Start from the following template
