@@ -131,7 +131,12 @@ def get_implementation_status_from_source(origdata, sourceName, key, silentfail=
     elif sourceName=="other":
         if isinstance(key, list):
             for data in key:
-                impl.append({ "ua": data["ua"], "status": data["status"], "source": data["source"] if "source" in data else "other"})
+                implstatus = { "ua": data["ua"], "status": data["status"], "source": data["source"] if "source" in data else "other" }
+                if ("date" in data):
+                    implstatus["date"] = data["date"]
+                if ("comment" in data):
+                    implstatus["comment"] = data["comment"]
+                impl.append(implstatus)
         else:
             for ua, status in key.iteritems():
                 impl.append({ "ua": ua, "status": status, "source": "other" })
@@ -186,6 +191,9 @@ def processData():
 
             # Compute the final implementation status for each user agent with
             # the following rules:
+            # 0. Trust the "feedback" source as being authoritative. It should
+            # contain feedback from reviewers about implementation statuses that
+            # are incorrectly reported by other sources.
             # 1. Trust platform sources to say the right thing about their own
             # user-agent or rendering engine. For instance, if chromestatus says
             # that a feature is "in development" in Chrome, consider that the
@@ -226,20 +234,34 @@ def processData():
             webkitstatus = webkitstatus[0] if len(webkitstatus) > 0 else None
             for ua in uas:
                 status = ""
+                corestatus = False
                 impldata = [impl for impl in data[id]["implementations"] if impl["ua"] == ua]
                 for impl in impldata:
-                    if (ua == "safari") and (webkitstatus is not None) and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
-                        # Rule 3, constrain safari status to that of webkit
-                        # when it is lower
-                        status = webkitstatus
-                    elif (impl["source"] in sources) and (ua in sources[impl["source"]]["coreua"]):
-                        # Rule 1, stop here, status comes from the right
-                        # platform, we've found the implementation status
+                    if (impl["source"] == "feedback"):
+                        # Rule 0, status comes from reviewer feedback, consider
+                        # it as authoritative
                         status = impl["status"]
                         break
-                    elif (statuses.index(impl["status"]) > statuses.index(status)):
-                        # Rule 2, be optimistic in life
-                        status = impl["status"]
+                    elif (impl["source"] in sources) and (ua in sources[impl["source"]]["coreua"]):
+                        # Rule 1, status comes from the right platform, we've
+                        # found the implementation status unless we got some
+                        # feedback from a reviewer that this status is incorrect
+                        # which will be handled by Rule 0
+                        corestatus = True
+
+                        # Rule 3, constrain safari status to that of webkit
+                        # when it is lower
+                        if (ua == "safari") and (webkitstatus is not None) and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
+                            status = webkitstatus
+                        else:
+                            status = impl["status"]
+                    elif (not corestatus) and (statuses.index(impl["status"]) > statuses.index(status)):
+                        # Rule 2, be optimistic in life... except if Rule 1 was
+                        # already applied. Also take rule 3 into account
+                        if (ua == "safari") and (webkitstatus is not None) and (statuses.index(impl["status"]) > statuses.index(webkitstatus)):
+                            status = webkitstatus
+                        else:
+                            status = impl["status"]
                 if (status != ""):
                     data[id][status].add(ua)
 
