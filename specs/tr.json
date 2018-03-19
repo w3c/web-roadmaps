@@ -35,7 +35,7 @@
   }, 
   "animation-frames": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -75,7 +75,7 @@
   }, 
   "audio": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -95,7 +95,7 @@
   }, 
   "autocomplete": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -489,7 +489,7 @@
   }, 
   "datalist": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -713,7 +713,7 @@
   }, 
   "html5-download": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -733,7 +733,7 @@
   }, 
   "htmlmediaelement": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -787,7 +787,7 @@
   }, 
   "inputdate": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -797,7 +797,7 @@
   }, 
   "inputhint": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -817,7 +817,7 @@
   }, 
   "inputpattern": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -827,7 +827,7 @@
   }, 
   "inputtext": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -981,7 +981,7 @@
   }, 
   "online": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -1101,7 +1101,7 @@
   }, 
   "picture": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -1299,7 +1299,7 @@
   }, 
   "srcset": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -1349,7 +1349,7 @@
   }, 
   "timeupdate": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 
@@ -1459,7 +1459,7 @@
   }, 
   "video": {
     "maturity": "REC", 
-    "title": "HTML 5.1", 
+    "title": "HTML 5.2", 
     "wgs": [
       {
         "label": "Web Platform Working Group", 

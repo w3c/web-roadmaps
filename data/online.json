@@ -1,5 +1,5 @@
 {
-  "TR": "https://www.w3.org/TR/html51/browsers.html#browser-state",
+  "TR": "https://www.w3.org/TR/html52/browsers.html#browser-state",
   "impl": {
     "caniuse": "online-status"
   },
