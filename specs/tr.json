@@ -14,7 +14,7 @@
     ]
   }, 
   "accelerometer": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Accelerometer", 
     "wgs": [
       {
@@ -24,7 +24,7 @@
     ]
   }, 
   "ambientlight": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Ambient Light Sensor", 
     "wgs": [
       {
@@ -357,6 +357,16 @@
       }
     ]
   }, 
+  "css-fonts-variable": {
+    "maturity": "WD", 
+    "title": "CSS Fonts Module Level 4", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-gcpm-3": {
     "maturity": "WD", 
     "title": "CSS Generated Content for Paged Media Module", 
@@ -622,7 +632,7 @@
     ]
   }, 
   "generic-sensor": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Generic Sensor API", 
     "wgs": [
       {
@@ -672,7 +682,7 @@
     ]
   }, 
   "gyroscope": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Gyroscope", 
     "wgs": [
       {
@@ -856,7 +866,7 @@
     ]
   }, 
   "magnetometer": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Magnetometer", 
     "wgs": [
       {
@@ -990,7 +1000,7 @@
     ]
   }, 
   "orientation": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Orientation Sensor", 
     "wgs": [
       {
@@ -1542,7 +1552,7 @@
     ]
   }, 
   "webauthn": {
-    "maturity": "WD", 
+    "maturity": "CR", 
     "title": "Web Authentication: An API for accessing Public Key Credentials Level 1", 
     "wgs": [
       {

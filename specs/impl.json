@@ -2386,6 +2386,95 @@
       "android"
     ]
   }, 
+  "css-fonts-variable": {
+    "consideration": [], 
+    "experimental": [
+      "edge", 
+      "firefox"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
+    "indevelopment": [
+      "safari"
+    ], 
+    "shipped": [
+      "chrome", 
+      "opera", 
+      "android", 
+      "ios_saf", 
+      "and_chr"
+    ]
+  }, 
   "css-grid-1": {
     "consideration": [], 
     "experimental": [], 
