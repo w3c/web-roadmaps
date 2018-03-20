@@ -24,7 +24,7 @@
           <p>Flexbox focuses on space distribution within an axis, and uses a simpler bottom-up approach to layout, while Grid enforces 2-dimensional alignment, and uses a top-down approach to layout. It is expected that both will be valuable and complementary tools for web developers.</p>
         </div>
         <div data-feature="Downloadable fonts">
-          <p>Fonts play also an important role in building appealing graphical interfaces, but mobile devices are in general distributed with only a limited set of fonts. <a data-featureid="woff">WOFF 1.0</a> (Web Open Font Format) addresses that limitation by making it easy to use fonts that are automatically downloaded through style sheets, while keeping the size of the downloaded fonts limited to what is actually needed to render the interface. The upcoming <a data-featureid="woff2">WOFF 2.0</a> update to that format promises 25%-smaller download sizes; on mobile, a 35% reduction in the time needed to download and display these fonts has been measured.</p>
+          <p>Fonts play also an important role in building appealing graphical interfaces, but mobile devices are in general distributed with only a limited set of fonts. <a data-featureid="woff2">WOFF</a> (Web Open Font Format) addresses that limitation by making it easy to use fonts that are automatically downloaded through style sheets, while keeping the size of the downloaded fonts limited to what is actually needed to render the interface. WOFF is particularly friendly to mobile devices, thanks to a font data preprocessing and optimization step that reduces redundancy of font data structures, and a dedicated entropy coding scheme for compression that does not require excessive CPU or memory usage for decoding, even on lower-end mobile devices.</p>
         </div>
         <div data-feature="2D Vector Graphics">
           <p><strong><a data-featureid="svg12">SVG</a></strong>, Scalable Vector Graphics, provides an XML-based markup language to describe two-dimensions vector graphics. Since these graphics are described as a set of geometric shapes, they can be zoomed at the user request, which makes them well-suited to create graphics on mobile devices where screen space is limited. They can also be easily animated, enabling the creation of very advanced and slick user interfaces.</p>
@@ -43,6 +43,7 @@
 
         <div data-feature="Downloadable fonts">
           <p>Given the time required for downloading fonts over mobile networks, authors need to adapt their content to the progressive availability of fonts; <a data-featureid="css-font-loading">CSS Font Loading</a> gives the necessary events to developers to enable that adaptation.</p>
+          <p>Font variations along different axes (width, weight, optical size) can be encoded in a single font file. The <a data-featureid="css-fonts-variable">Font variation properties</a> in CSS allow finer control over usage of font variants and can further help developers avoid unnecessary network requests to fetch additional variants of a font.</p>
         </div>
 
         <p data-feature="Orientation Lock">It is often useful to be able to <strong>lock the orientation of the screen</strong>; the <a data-featureid="screenlock">Screen Orientation API</a> allows not only to detect orientation change, but also to lock the orientation in a specific state.</p>
