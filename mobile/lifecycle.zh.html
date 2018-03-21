@@ -15,10 +15,6 @@
     <main>
       <section class="featureset well-deployed">
         <h2>广泛部署的技术</h2>
-                
-        <div data-feature="离线 Web 应用">
-          <p>HTML5 的<code><a data-featureid="appcache">ApplicationCache</a></code>允许通过定义浏览器保存在缓存中的文件清单来访问Web应用。该功能部署良好，但是这种方法在开发人员能够控制什么时候缓存什么的方面是非常有限的。因为 <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> 规范定义了一个更强大的方法，应用缓存特性在 HTML5.1 中已经废弃了。</p>
-        </div>
 
         <div data-feature="可见性检测">
           <p><a data-featureid="page-visibility">页面可见性</a>规范允许开发者检测他们的应用何时在前台，从而相应地调整他们的操作和资源消耗。</p>
@@ -66,6 +62,9 @@
         <h2>不再进行的工作</h2>
 
         <dl>
+          <dt>应用缓存</dt>
+          <dd><a data-featureid="appcache">应用缓存</a>机制是在HTML5中引入的。通过一个缓存清单，浏览器能够知道哪些文件需要被保留在缓存中，从而允许脱机访问Web应用。该特性已经被所有的主流浏览器实现，但存在安全问题，而且开发人员对缓存的控制极其有限，所以该功能在HTML 5.1中已不推荐使用，并于HTML 5.2中删除。<a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a>规范定义了一种更加强大的替代方法。</dd>
+
           <dt>任务调度</dt>
           <dd><a data-featureid="task-scheduler">任务调度 API</a> 可以通过与 Web 应用关联的 service worker 在指定的时间触发任务。该规范属于现在已经关闭的系统应用工作组（System Applications Working Group）的范围，因此被搁置了。</dd>
 

@@ -5039,8 +5039,10 @@
     "consideration": [], 
     "experimental": [
       "chrome", 
-      "firefox", 
-      "and_ff"
+      "opera", 
+      "and_chr", 
+      "and_ff", 
+      "firefox"
     ], 
     "implementations": [
       {
@@ -5057,6 +5059,16 @@
         "source": "caniuse", 
         "status": "experimental", 
         "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_chr"
       }
     ], 
     "indevelopment": [], 
@@ -6858,9 +6870,7 @@
   }, 
   "pointer-events": {
     "consideration": [], 
-    "experimental": [
-      "firefox"
-    ], 
+    "experimental": [], 
     "implementations": [
       {
         "source": "chromestatus", 
@@ -6884,17 +6894,7 @@
       }, 
       {
         "source": "caniuse", 
-        "status": "experimental", 
-        "ua": "firefox"
-      }, 
-      {
-        "source": "caniuse", 
-        "status": "experimental", 
-        "ua": "firefox"
-      }, 
-      {
-        "source": "caniuse", 
-        "status": "experimental", 
+        "status": "shipped", 
         "ua": "firefox"
       }, 
       {
@@ -6940,6 +6940,7 @@
     ], 
     "indevelopment": [], 
     "shipped": [
+      "firefox", 
       "samsung", 
       "chrome", 
       "opera", 
@@ -6954,14 +6955,13 @@
     "consideration": [], 
     "experimental": [
       "ios_saf", 
-      "firefox", 
       "safari", 
       "edge"
     ], 
     "implementations": [
       {
         "source": "caniuse", 
-        "status": "experimental", 
+        "status": "shipped", 
         "ua": "firefox"
       }, 
       {
@@ -7017,6 +7017,7 @@
     ], 
     "indevelopment": [], 
     "shipped": [
+      "firefox", 
       "samsung", 
       "chrome", 
       "and_ff", 
