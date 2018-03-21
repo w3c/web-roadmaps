@@ -46,6 +46,7 @@
     "Source capabilities": "源功能",
     "srcset attribute": "srcset 属性",
     "tel, email, url input types": "tel、email 和 url 输入类型",
+    "Variable fonts": "可变字体",
     "video element": "video 元素",
     "viewport-percentage lengths": "与视口相关的CSS单位"
   },
@@ -86,6 +87,7 @@
     "CSS Device Adaptation Module Level 1": "CSS 设备适配模块第一版",
     "CSS Flexible Box Layout Module Level 1": "CSS 弹性盒式布局模块第一版",
     "CSS Font Loading Module Level 3": "CSS 字体加载第三版",
+    "CSS Fonts Module Level 4": "CSS 字体模块第四版",
     "CSS Grid Layout Module Level 1": "CSS 网格布局模块第一版",
     "CSS Mobile Text Size Adjustment Module Level 1": "CSS 移动文本大小调整模块第一版",
     "CSS Scroll Snap Module Level 1": "CSS 滚动捕捉点第一版",
@@ -94,6 +96,7 @@
     "CSS Values and Units Module Level 3": "CSS 值和单位模块第三版",
     "CSSOM View Module": "CSSOM视图模块",
     "Device Memory 1": "设备内存第一版",
+    "Element Queries": "元素查询",
     "Encrypted Media Extensions": "加密媒体扩展",
     "Feature Policy": "特性策略",
     "File API": "文件 API",
