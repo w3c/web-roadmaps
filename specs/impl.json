@@ -2284,8 +2284,100 @@
       "ie_mob"
     ]
   }, 
-  "css-font-loading": {
+  "css-font-display": {
     "consideration": [], 
+    "experimental": [
+      "ios_saf", 
+      "op_mob", 
+      "and_qq", 
+      "samsung"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
+    "indevelopment": [
+      "safari"
+    ], 
+    "shipped": [
+      "chrome", 
+      "opera", 
+      "and_chr", 
+      "firefox"
+    ]
+  }, 
+  "css-font-loading": {
+    "consideration": [
+      "edge"
+    ], 
     "experimental": [], 
     "implementations": [
       {
@@ -2302,6 +2394,11 @@
         "source": "chromestatus", 
         "status": "indevelopment", 
         "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
       }, 
       {
         "source": "caniuse", 

@@ -1,0 +1,9 @@
+{
+  "TR": "https://www.w3.org/TR/css-fonts-4/#font-display-desc",
+  "feature": "font-display",
+  "impl": {
+    "caniuse": "css-font-rendering-controls",
+    "chromestatus": 4799947908055040,
+    "webkitstatus": "specification-css-font-display"
+  }
+}

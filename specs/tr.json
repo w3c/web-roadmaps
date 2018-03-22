@@ -337,6 +337,16 @@
       }
     ]
   }, 
+  "css-font-display": {
+    "maturity": "WD", 
+    "title": "CSS Fonts Module Level 4", 
+    "wgs": [
+      {
+        "label": "Cascading Style Sheets (CSS) Working Group", 
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  }, 
   "css-font-loading": {
     "maturity": "WD", 
     "title": "CSS Font Loading Module Level 3", 
