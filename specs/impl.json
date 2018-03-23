@@ -8309,6 +8309,102 @@
       "chrome"
     ]
   }, 
+  "streams": {
+    "consideration": [], 
+    "experimental": [
+      "and_ff", 
+      "firefox"
+    ], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": [
+      "opera", 
+      "ios_saf", 
+      "edge", 
+      "and_chr", 
+      "safari", 
+      "op_mob", 
+      "android"
+    ]
+  }, 
   "svg12": {
     "consideration": [], 
     "experimental": [], 
