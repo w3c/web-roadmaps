@@ -118,6 +118,36 @@
     "experimental": [], 
     "implementations": [
       {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
         "source": "caniuse", 
         "status": "shipped", 
         "ua": "and_uc"
@@ -824,6 +854,36 @@
     "consideration": [], 
     "experimental": [], 
     "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
       {
         "source": "caniuse", 
         "status": "shipped", 
@@ -1606,7 +1666,7 @@
       "ie_mob"
     ]
   }, 
-  "css-animation": {
+  "css-animations": {
     "consideration": [], 
     "experimental": [], 
     "implementations": [
@@ -1835,7 +1895,7 @@
       "ie_mob"
     ]
   }, 
-  "css-border-shadow": {
+  "css-box-shadow": {
     "consideration": [], 
     "experimental": [], 
     "implementations": [
@@ -7674,22 +7734,7 @@
       "ie_mob"
     ]
   }, 
-  "screencapture": {
-    "consideration": [], 
-    "experimental": [], 
-    "implementations": [
-      {
-        "source": "edgestatus", 
-        "status": "indevelopment", 
-        "ua": "edge"
-      }
-    ], 
-    "indevelopment": [
-      "edge"
-    ], 
-    "shipped": []
-  }, 
-  "screenlock": {
+  "screen-orientation": {
     "consideration": [], 
     "experimental": [], 
     "implementations": [
@@ -7769,6 +7814,21 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "screencapture": {
+    "consideration": [], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "edgestatus", 
+        "status": "indevelopment", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "edge"
+    ], 
+    "shipped": []
   }, 
   "secondscreen": {
     "consideration": [], 
@@ -8521,6 +8581,50 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "svg2": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "chrome", 
+      "firefox", 
+      "safari"
+    ], 
+    "shipped": []
   }, 
   "timeupdate": {
     "consideration": [], 
@@ -9439,83 +9543,7 @@
     ], 
     "shipped": []
   }, 
-  "web-lifecycle": {
-    "consideration": [], 
-    "experimental": [], 
-    "implementations": [
-      {
-        "source": "chromestatus", 
-        "status": "indevelopment", 
-        "ua": "chrome"
-      }
-    ], 
-    "indevelopment": [
-      "chrome"
-    ], 
-    "shipped": []
-  }, 
-  "web-share": {
-    "consideration": [
-      "firefox", 
-      "safari"
-    ], 
-    "experimental": [], 
-    "implementations": [
-      {
-        "source": "chromestatus", 
-        "status": "shipped", 
-        "ua": "chrome"
-      }, 
-      {
-        "source": "chromestatus", 
-        "status": "consideration", 
-        "ua": "firefox"
-      }, 
-      {
-        "source": "chromestatus", 
-        "status": "consideration", 
-        "ua": "safari"
-      }, 
-      {
-        "source": "webkitstatus", 
-        "status": "consideration", 
-        "ua": "webkit"
-      }, 
-      {
-        "source": "caniuse", 
-        "status": "shipped", 
-        "ua": "and_chr"
-      }
-    ], 
-    "indevelopment": [], 
-    "shipped": [
-      "chrome", 
-      "and_chr"
-    ]
-  }, 
-  "web-share-target": {
-    "consideration": [
-      "edge"
-    ], 
-    "experimental": [], 
-    "implementations": [
-      {
-        "source": "chromestatus", 
-        "status": "indevelopment", 
-        "ua": "chrome"
-      }, 
-      {
-        "source": "chromestatus", 
-        "status": "consideration", 
-        "ua": "edge"
-      }
-    ], 
-    "indevelopment": [
-      "chrome"
-    ], 
-    "shipped": []
-  }, 
-  "webanimations": {
+  "web-animations": {
     "consideration": [
       "safari"
     ], 
@@ -9623,6 +9651,82 @@
       "and_chr", 
       "android"
     ]
+  }, 
+  "web-lifecycle": {
+    "consideration": [], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
+  }, 
+  "web-share": {
+    "consideration": [
+      "firefox", 
+      "safari"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "webkitstatus", 
+        "status": "consideration", 
+        "ua": "webkit"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }
+    ], 
+    "indevelopment": [], 
+    "shipped": [
+      "chrome", 
+      "and_chr"
+    ]
+  }, 
+  "web-share-target": {
+    "consideration": [
+      "edge"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
   }, 
   "webassembly": {
     "consideration": [], 

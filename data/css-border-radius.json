@@ -1,5 +1,5 @@
 {
-  "TR": "https://www.w3.org/TR/css-backgrounds-3/",
+  "TR": "https://www.w3.org/TR/css-backgrounds-3/#the-border-radius",
   "feature": "Rounded corners",
   "impl": {
     "caniuse": "border-radius"

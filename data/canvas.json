@@ -1,9 +1,8 @@
 {
   "impl": {
     "caniuse": "canvas",
-    "chromestatus": null,
-    "mozstatus": null,
-    "edgestatus": null,
+    "chromestatus": 5100084685438976,
+    "edgestatus": "Canvas",
     "webkitstatus": null
   },
   "TR": "https://www.w3.org/TR/2dcontext/"

@@ -247,17 +247,7 @@
       }
     ]
   }, 
-  "css-3d": {
-    "maturity": "WD", 
-    "title": "CSS Transforms Module Level 1", 
-    "wgs": [
-      {
-        "label": "Cascading Style Sheets (CSS) Working Group", 
-        "url": "http://www.w3.org/Style/CSS/members"
-      }
-    ]
-  }, 
-  "css-animation": {
+  "css-animations": {
     "maturity": "WD", 
     "title": "CSS Animations Level 1", 
     "wgs": [
@@ -287,7 +277,7 @@
       }
     ]
   }, 
-  "css-border-shadow": {
+  "css-box-shadow": {
     "maturity": "CR", 
     "title": "CSS Backgrounds and Borders Module Level 3", 
     "wgs": [
@@ -1243,6 +1233,16 @@
       }
     ]
   }, 
+  "screen-orientation": {
+    "maturity": "WD", 
+    "title": "The Screen Orientation API", 
+    "wgs": [
+      {
+        "label": "Web Platform Working Group", 
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  }, 
   "screencapture": {
     "maturity": "WD", 
     "title": "Screen Capture", 
@@ -1254,16 +1254,6 @@
       {
         "label": "Device and Sensors Working Group", 
         "url": "http://www.w3.org/2009/dap/"
-      }
-    ]
-  }, 
-  "screenlock": {
-    "maturity": "WD", 
-    "title": "The Screen Orientation API", 
-    "wgs": [
-      {
-        "label": "Web Platform Working Group", 
-        "url": "http://www.w3.org/WebPlatform/WG/"
       }
     ]
   }, 
@@ -1537,7 +1527,7 @@
       }
     ]
   }, 
-  "webanimations": {
+  "web-animations": {
     "maturity": "WD", 
     "title": "Web Animations", 
     "wgs": [
