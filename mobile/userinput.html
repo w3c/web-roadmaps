@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>User Input</title>
+    <title>User Interaction</title>
   </head>
   <body>
     <header>
-      <h1>User Input</h1>
+      <h1>User Interaction</h1>
+      <p>The possibility to use mobile devices on the go where the user's attention may be limited, coupled with the form factor of these devices that make touch the main means of interaction, mean that Web developers need to pay particular attention to interaction functionalities when they develop applications that are to run on mobile devices.</p>
+      <p>Addressing the accessibility of these interactions requires a multi-layer approach. At the device level, accessibility support exposed by operating systems and assistive technologies have made a lot of progress in the past few years. At the browser level, user agents need to interact with assistive technologies to expose the semantics of the web content. At the application level, Web content developers need to follow a set of accessibility principles to help users with disabilities interact with their content. Interestingly, the mobile constraints mentioned above can make mobile users experience similar barriers to people with disabilities and similar solutions can be used to cater for both angles.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
@@ -15,14 +17,16 @@
           <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <strong><a data-featureid="touchevent">Touch Events in the DOM</a></strong> (Document Object Model) enable.</p>
         </div>
 
-        <p data-feature="Vibration">The <a data-featureid="vibration">Vibration API</a> lets mobile developers take advantage of haptic feedback to create new form of interactions (e.g. in games).</p>
+        <p data-feature="Vibration">The <a data-featureid="vibration">Vibration API</a> lets mobile developers take advantage of haptic feedback to create new forms of interactions (e.g. in games).</p>
 
         <p data-feature="Notification">Mobile devices follow their users everywhere, and many mobile users rely on them to remind them or notify them of events, such as messages: the <a data-featureid="notifications">Web Notifications</a> specification enables that feature in the Web environment.</p>
 
         <div data-feature="Accessibility">
-          <p>The hardware constraints of mobile devices, and their different usage context can make <a href="https://www.w3.org/WAI/mobile/experiences">mobile users experience similar barriers to people with disabilities</a>. These similarities in barriers mean that similar solutions can be used to cater for them, <a href="https://www.w3.org/WAI/mobile/overlap">making a Web site accessible both for people with disabilities and mobile devices</a> a natural goal (as detailed in <a data-featureid="mwbp-wcag">Relationship between Mobile Web Best Practices and WCAG</a>).</p>
-          <p>The WCAG and UAWG Working Group provide guidance on mobile accessibility in <a data-featureid="mobile-wcag">how Web Content Accessibility Guidelines (WCAG) and other WAI guidelines apply to mobile</a> — that is, making websites and applications more accessible to people with disabilities when they are using mobile phones and a broad range of other devices.</p>
-          <p><a data-featureid="wai-aria"><cite>WAI-ARIA</cite></a> provides semantic information on widgets, structures and behaviors hooks to make Web applications more accessible, including on mobile devices.</p>
+          <p>The <a data-featureid="uaag20">User Agent Accessibility Guidelines (UAAG) 2.0</a> note defines principles and guidelines for user agents to design an accessible user agent interface and communicate with assistive technologies. The supporting document <a data-featureid="uaag20-reference">UAAG 2.0 Reference</a> explains the intent and best practices of UAAG 2.0 success criteria, and lists numerous examples for each of them. Examples that are directly targeted at mobile devices are summarized in the <a href="https://www.w3.org/TR/UAAG20-Reference/mobile.html">Mobile Accessibility Examples from UAAG 2.0 Reference</a>.</p>
+          <p>Following the <a data-featureid="wcag21">Web Content Accessibility Guidelines (WCAG) 2.1</a> will make content accessible to a wider range of people with disabilities. The 2.1 revision adds new success criteria and guidelines to version 2.0, including new criteria that have a specific resonance in mobile contexts, such as the <a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">Pointer Gestures</a>, <a href="https://www.w3.org/TR/WCAG21/#target-size">Target Size</a> and <a href="https://www.w3.org/TR/WCAG21/#orientation">Orientation</a> criteria.</p>
+          <p>Web content developers may benefit from authoring tools that follow the <a data-featureid="atag20">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a> standard, which provides guidelines for designing Web content authoring tools that are both more accessible to authors with disabilities and that help design content that conforms to WCAG.</p>
+          <p>The <a data-featureid="mobile-accessibility-mapping">Mobile Accessibility</a> note explains how WCAG and other accessibility guidelines can be applied to mobile Web applications, as well as to native applications and hybrid applciations using Web components inside native applications.</p>
+          <p>The <a data-featureid="wai-aria">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a> standard provides an ontology of roles, states, and properties that define the semantics of user interface elements and that can be used to improve the accessibility and interoperability of Web content and applications. The <a data-featureid="core-aam11">Core Accessibility API Mappings 1.1</a> standard describes how user agents should expose these semantics to accessibility APIs.</p>
         </div>
       </section>
 
