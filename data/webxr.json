@@ -1,0 +1,17 @@
+{
+  "editors": "https://w3c.github.io/webvr/",
+  "title": "WebXR Device API",
+  "wgs": [
+    {
+      "label": "Immersive Web Community Group",
+      "url": "https://www.w3.org/community/webvr/"
+    }
+  ],
+  "impl": {
+    "caniuse": null,
+    "chromestatus": 5680169905815552,
+    "mozstatus": null,
+    "edgestatus": null,
+    "webkitstatus": null
+  }
+}

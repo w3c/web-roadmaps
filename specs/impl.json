@@ -10353,6 +10353,7 @@
   "webvr": {
     "consideration": [], 
     "experimental": [
+      "baidu", 
       "chrome"
     ], 
     "implementations": [
@@ -10372,15 +10373,59 @@
         "ua": "edge"
       }, 
       {
+        "source": "webkitstatus", 
+        "status": "indevelopment", 
+        "ua": "webkit"
+      }, 
+      {
         "source": "edgestatus", 
         "status": "shipped", 
         "ua": "edge"
+      }, 
+      {
+        "source": "edgestatus", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "experimental", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
       }
     ], 
-    "indevelopment": [], 
+    "indevelopment": [
+      "webkit"
+    ], 
     "shipped": [
+      "and_chr", 
       "edge", 
-      "firefox"
+      "firefox", 
+      "samsung"
     ]
   }, 
   "webvtt": {
@@ -10598,6 +10643,34 @@
       "ie", 
       "ie_mob"
     ]
+  }, 
+  "webxr": {
+    "consideration": [
+      "edge", 
+      "firefox"
+    ], 
+    "experimental": [], 
+    "implementations": [
+      {
+        "source": "chromestatus", 
+        "status": "indevelopment", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "chromestatus", 
+        "status": "consideration", 
+        "ua": "edge"
+      }
+    ], 
+    "indevelopment": [
+      "chrome"
+    ], 
+    "shipped": []
   }, 
   "woff": {
     "consideration": [], 
