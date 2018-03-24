@@ -2,11 +2,13 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>用户输入</title>
+    <title>用户交互</title>
   </head>
   <body>
     <header>
-      <h1>用户输入</h1>
+      <h1>用户交互</h1>
+      <p>用户使用移动设备时注意力受限的可能性，再加上这些设备的规格，使触摸成为交互的主要手段，这意味着当开发移动设备上的应用时，Web开发者需要特别关注交互功能。</p>
+      <p>解决这些交互的可访问性需要从多个层次来入手。在设备层面，操作系统和辅助技术提供的信息无障碍支持在过去几年中取得了很大进展。在浏览器层面，用户代理需要与辅助技术交互以利用Web内容的语义。在应用层面，Web内容开发人员需要遵循一套无障碍原则，以帮助残疾用户与内容交互。有趣的是，上述的移动限制可以使移动用户和残疾人体验到类似的障碍，而相似的解决方案可以用来解决这两个问题。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
@@ -20,9 +22,11 @@
         <p data-feature="通知">移动设备被用户随身携带，许多移动用户依赖它们去提醒和通知自己事件，如消息。<a data-featureid="notifications">Web通知</a>规范使这种特性在 Web 环境中可用。</p>
 
         <div data-feature="信息无障碍">
-          <p>移动设备硬件的限制和不同的使用环境，<a href="https://www.w3.org/WAI/mobile/experiences">会使残疾人体验到相似的障碍</a>。而这些障碍的相似性意味着相似的方法可以被用来解决这类问题，<a href="https://www.w3.org/WAI/mobile/overlap">使拥有移动设备的残疾人能无障碍访问网站</a>就成为一个自然而然的目标（详见<a data-featureid="mwbp-wcag">移动 Web 最佳实践与 Web 内容无障碍指南之间的关系</a>）。</p>
-          <p>Web内容无障碍指南和用户代理无障碍指南工作组就 <a data-featureid="mobile-wcag">WCAG 和其它的 Web 无障碍指南如何应用到移动设备</a>提供了指导。更确切地说，这使残疾人在使用移动设备时能够更简单地访问网站和应用程序。</p>
-          <p><a data-featureid="wai-aria"><cite>WAI-ARIA</cite></a>提供有关部件、结构和行为钩子的语义信息，使 Web 应用程序能无障碍地访问，包括在移动设备上。</p>
+          <p><a data-featureid="uaag20">用户代理无障碍指南（UAAG）2.0</a>文档包含了用户代理设计接口时与辅助技术交互的原则。支持性文档<a data-featureid="uaag20-reference">UAAG 2.0参考</a>介绍了UAAG 2.0的目的和成功标准的最佳实践，并举了很多例子。针对移动设备的举例在<a href="https://www.w3.org/TR/UAAG20-Reference/mobile.html">UAAG 2.0参考中的移动信息无障碍实例</a>中有总结。</p>
+          <p>遵从<a data-featureid="wcag21">Web内容无障碍指南（WCAG）2.1</a>将使内容能够让更多的残疾人访问。相比2.0版本，2.1版本增加了新的成功标准和指导方针，包括在移动环境中特有的<a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">指针手势</a>、<a href="https://www.w3.org/TR/WCAG21/#target-size">目标大小</a>和<a href="https://www.w3.org/TR/WCAG21/#orientation">方向</a>等。</p>
+          <p>Web开发者可从遵从<a data-featureid="atag20">编辑工具可访问性指南（ATAG）2.0</a>的编辑工具中获益，ATAG提供了改善编辑工具本身的可访问性的指南和帮助编辑工具生成的内容符合WCAG标准的指南。</p>
+          <p><a data-featureid="mobile-accessibility-mapping">移动信息无障碍</a>文档解释了将WCAG和其他无障碍指南应用于移动Web应用、原生应用和在原生应用中包含Web应用组件的混合应用的方法。</p>
+          <p><a data-featureid="wai-aria">可访问富互联应用（WAI-ARIA）1.1</a>标准提供了一个角色、状态和属性的本体，这个本体定义了可访问的用户界面元素，并可用于改进Web内容和应用的可访问性和互操作性。<a data-featureid="core-aam11">核心可访问API映射1.1</a>标准描述了用户代理如何将这些语义映射到无障碍API中。</p>
         </div>
       </section>
 
