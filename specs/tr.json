@@ -73,6 +73,15 @@
       }
     ]
   }, 
+  "atag20": {
+    "maturity": "REC", 
+    "title": "Authoring Tool Accessibility Guidelines (ATAG) 2.0", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/WAI/AU/"
+      }
+    ]
+  }, 
   "audio": {
     "maturity": "REC", 
     "title": "HTML 5.2", 
@@ -935,6 +944,19 @@
       }
     ]
   }, 
+  "mobile-accessibility-mapping": {
+    "maturity": "WD", 
+    "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile", 
+    "wgs": [
+      {
+        "label": "Accessibility Guidelines Working Group", 
+        "url": "http://www.w3.org/WAI/GL/"
+      }, 
+      {
+        "url": "http://www.w3.org/WAI/UA/"
+      }
+    ]
+  }, 
   "mse": {
     "maturity": "REC", 
     "title": "Media Source Extensions\u2122", 
@@ -952,20 +974,6 @@
       {
         "label": "Mobile Web Best Practices Working Group", 
         "url": "http://www.w3.org/2005/MWI/BPWG/"
-      }
-    ]
-  }, 
-  "mwbp-wcag": {
-    "maturity": "NOTE", 
-    "title": "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)", 
-    "wgs": [
-      {
-        "label": "Mobile Web Best Practices Working Group", 
-        "url": "http://www.w3.org/2005/MWI/BPWG/"
-      }, 
-      {
-        "label": "Education and Outreach Working Group", 
-        "url": "http://www.w3.org/WAI/EO/"
       }
     ]
   }, 
@@ -1414,6 +1422,24 @@
       {
         "label": "Timed Text Working Group", 
         "url": "http://www.w3.org/AudioVideo/TT/"
+      }
+    ]
+  }, 
+  "uaag20": {
+    "maturity": "NOTE", 
+    "title": "User Agent Accessibility Guidelines (UAAG) 2.0", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/WAI/UA/"
+      }
+    ]
+  }, 
+  "uaag20-reference": {
+    "maturity": "NOTE", 
+    "title": "UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0", 
+    "wgs": [
+      {
+        "url": "http://www.w3.org/WAI/UA/"
       }
     ]
   }, 

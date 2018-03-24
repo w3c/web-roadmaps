@@ -9533,15 +9533,108 @@
         "source": "edgestatus", 
         "status": "indevelopment", 
         "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "baidu"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "firefox"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "samsung"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "chrome"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mini"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ios_saf"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_ff"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_qq"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "opera"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "edge"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "op_mob"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "safari"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "and_chr"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "android"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie"
+      }, 
+      {
+        "source": "caniuse", 
+        "status": "shipped", 
+        "ua": "ie_mob"
       }
     ], 
     "indevelopment": [
       "chrome", 
-      "edge", 
-      "firefox", 
-      "safari"
+      "edge"
     ], 
-    "shipped": []
+    "shipped": [
+      "baidu", 
+      "firefox", 
+      "samsung", 
+      "opera", 
+      "op_mini", 
+      "ios_saf", 
+      "and_ff", 
+      "and_qq", 
+      "op_mob", 
+      "safari", 
+      "and_chr", 
+      "android", 
+      "ie", 
+      "ie_mob"
+    ]
   }, 
   "web-animations": {
     "consideration": [
