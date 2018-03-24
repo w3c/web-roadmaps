@@ -54,6 +54,7 @@
     "CSS Working Group": "CSS 工作组",
     "Device and Sensors Working Group": "设备与传感器工作组",
     "Hardware Based Secure Services Community Group": "基于硬件的安全服务社区组",
+    "Immersive Web Community Group": "沉浸式Web社区组",
     "Multi-Device Timing Community Group": "多设备时计社区组",
     "Second Screen Community Group": "第二屏社区组",
     "Speech API Community Group": "语音 API 社区组",
@@ -92,6 +93,7 @@
     "CSS Mobile Text Size Adjustment Module Level 1": "CSS 移动文本大小调整模块第一版",
     "CSS Scroll Snap Module Level 1": "CSS 滚动捕捉点第一版",
     "CSS Transforms Module Level 1": "CSS 变换模块第一版",
+    "CSS Transforms Module Level 2": "CSS 变换模块第二版",
     "CSS Transitions": "CSS 过渡",
     "CSS Values and Units Module Level 3": "CSS 值和单位模块第三版",
     "CSSOM View Module": "CSSOM视图模块",
@@ -182,6 +184,7 @@
     "WebAssembly": "Web 汇编",
     "WebCrypto Key Discovery": "WebCrypto密钥发现",
     "WebRTC 1.0: Real-time Communication Between Browsers": "WebRTC 1.0: 浏览器间实时通讯",
+    "WebXR Device API": "WebXR 设备 API",
     "WOFF File Format 1.0": "Web 字体文件格式 1.0",
     "WOFF File Format 2.0": "Web 字体文件格式 2.0"
   }
