@@ -50,8 +50,8 @@
         <div data-feature="Rendering in different color spaces">
           <p>To adapt to wide-gamut displays, all the graphical systems of the Web will need to adapt to these broader color spaces. <a data-featureid="css-color-space">CSS Colors Level 4</a> is proposing to define CSS colors in color spaces beyond the classical sRGB. Similarly, work on <a data-featureid="color-canvas">making canvas color-managed</a> should enhance the support for colors in HTML Canvas.</p>
         </div>
-        <div data-feature="Rendering in VR headsets">
-          <p>The <a data-featureid="webvr">WebVR</a> specification is a low-level API that allows applications to access and control head-mounted displays (HMD) using JavaScript. It is a critical enabler to render 360° video content in Virtual Reality headsets.</p>
+        <div data-feature="Rendering in VR/AR headsets">
+          <p>The <a data-featureid="webxr">WebXR Device API</a> specification is a low-level API that allows applications to access and control head-mounted displays (HMD) using JavaScript and create compelling Virtual Reality (VR) / Augmented Reality (AR) experiences. It is a critical enabler to render 360° video content in Virtual Reality headsets.</p>
         </div>
       </section>
       <section>
@@ -72,6 +72,9 @@
         <dl>
           <dt>Network service discovery</dt>
           <dd>The <a data-featureid="discovery">Network Service Discovery API</a> was to offer a lower-level approach to the establishment of multi-device operations, by providing integration with local network-based media renderers, such as those enabled by DLNA, UPnP, etc. This effort was discontinued out of privacy concerns and lack of interest from implementers. The current approach is to let the user agent handle network discovery under the hoods, as done in the <a data-featureid="secondscreen">Presentation API</a> and <a data-featureid="remote-playback">Remote Playback API</a>.</dd>
+
+          <dt>WebVR</dt>
+          <dd>Development of the <a data-featureid="webvr">WebVR</a> specification that allowed access and control of Virtual Reality (VR) devices, and which is supported in some browsers, has halted in favor of the <a data-featureid="webxr">WebXR Device API</a>, which extends the scope of the work to Augmented Reality (AR) devices.</dd>
         </dl>
       </section>
     </main>
