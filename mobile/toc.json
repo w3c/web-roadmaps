@@ -37,9 +37,9 @@
     },
     {
       "url": "userinput.html",
-      "title": "User Input",
+      "title": "User Interaction",
       "icon": "../assets/img/mobile-userinput.svg",
-      "description": "Features needed to engage the user through device-specific interaction mechanisms, such as touch-based interactions, vibration, notifications."
+      "description": "Features needed to engage the user through device-specific interaction mechanisms (touch, vibration, notifications), and guarantee the accessibility of these interactions."
     },
     {
       "url": "sensors.html",

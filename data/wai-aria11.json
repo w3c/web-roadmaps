@@ -1,5 +1,6 @@
 {
   "impl": {
+    "caniuse": "wai-aria",
     "chromestatus": 5761503818940416,
     "edgestatus": "Accessible Rich Internet Applications (WAI-ARIA) 1.1"
   },
