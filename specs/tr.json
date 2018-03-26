@@ -1513,16 +1513,6 @@
       }
     ]
   }, 
-  "wai-aria": {
-    "maturity": "REC", 
-    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.0", 
-    "wgs": [
-      {
-        "label": "Protocols and Formats Working Group", 
-        "url": "http://www.w3.org/WAI/PF/"
-      }
-    ]
-  }, 
   "wai-aria11": {
     "maturity": "REC", 
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1", 
