@@ -13,5 +13,11 @@
     "mozstatus": null,
     "edgestatus": null,
     "webkitstatus": null
-  }
+  },
+  "polyfills": [
+    {
+      "label": "webxr-polyfill",
+      "url": "https://github.com/immersive-web/webxr-polyfill"
+    }
+  ]
 }
