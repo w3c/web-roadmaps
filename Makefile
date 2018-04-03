@@ -3,10 +3,10 @@ all: specs/tr.json specs/impl.json
 DATA=$(wildcard data/*.json)
 
 specs/tr.json: $(DATA)
-	python tools/extract-spec-data.py $^ > $@
+	node tools/extract-spec-data.js $^ > $@
 
 specs/impl.json: $(DATA)
-	python tools/extract-impl-data.py $^ > $@
+	node tools/extract-impl-data.js $^ > $@
 
 check: $(DATA) $(wildcard */*.html)
 	python tools/validate-schema.py $(DATA)
