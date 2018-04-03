@@ -231,7 +231,7 @@ The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roa
 
 If you would like to visualize the contents of a roadmap locally as it would appear on the published version, you will need to:
 
-1. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Python 2.7 (and a few other libraries) for that to work.
+1. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
 2. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
 
 ## Translating a roadmap
