@@ -3,7 +3,7 @@ Helper script that parses data files and fetches implementation information from
 Web status platforms such as Can I use and those provided by browser vendors
 
 To parse files:
-node tools/extract-impl-data.js dta/3dcamera.json data/webvtt.json
+node tools/extract-impl-data.js data/3dcamera.json data/webvtt.json
 *******************************************************************************/
 
 const fetch = require('fetch-filecache-for-crawling');
@@ -128,7 +128,7 @@ let sources = {
           case 'Public support':
             impl.push({ ua, status: 'consideration', source });
             break;
-        };
+        }
       });
 
       return impl;

@@ -3,7 +3,7 @@ Helper script that parses data files and fetches additional information from
 the W3C API.
 
 To parse files:
-node tools/extract-spec-data.js dta/3dcamera.json data/webvtt.json
+node tools/extract-spec-data.js data/3dcamera.json data/webvtt.json
 *******************************************************************************/
 
 const fetch = require('fetch-filecache-for-crawling');
