@@ -1,10 +1,11 @@
 sudo: false
 language: node_js
 node_js:
-- 'node'
+- node
 script:
 - bash "./deploy.sh"
 env:
   global:
-  - ENCRYPTION_LABEL: "8a84087ed6cb"
-  - COMMIT_AUTHOR_EMAIL: "plh+deploy@w3.org"
+  - ENCRYPTION_LABEL: 8a84087ed6cb
+  - COMMIT_AUTHOR_EMAIL: plh+deploy@w3.org
+  - secure: G9Jn9JWbJWjCJUoCbuKMpc+REZZI7ajY+1ZeuvutB0ScwEE/OwAj0V7fPze6ffkYvLxkxJGc8uWUGYPljvSZYoqAg81BZK8c22iV09tmdoPngtzm5dDceVOEvvpzrtakCpt4DuPaBGYHnoczNMVXbyeePSjyrqUWeaGpFJ0SLo29WImo1lrAJNcOCuolj2EqJY3dVJKxdIOyrjA9YP6lLkjASfdU9MbdSGdS3FR0pq+sgpkwW56L4aD6pJswOxhDWYiYFZh1vobDUFcQ8brzQWiJveGzq1QSoBeDLBqD/h6rd0X9exBkQSgaL73WucCXeqX+3XX7fVgp6yZqd7En0bPwP5jz4VSKGb2t5B7Y/pvW/7O9YvW1jU7ZKoe32w0NaMj/ad+ZVtAn1Gpo/7C8K9fDzq3uNqPmK117AOfoJp6bGgde9QznUPOVMonAUxkPvcPdrObQAKGNRjfmeagfLlbOGm/sGrSH/E57edPsBInfIcqHOxEAclAH8U2gIgZ+Ayk9GOdtJs4dQwJE0dUd7HU+Nkr3YAdP1RDSnr3dHninFqoHcxMMvKfXhXDdfvnR+hZttu1/pj8sJOd04r32w9PHVLHIjTM/ucFkng7RN2VtEU5VoXXA8ZaA8YPJnqmWGk3p/m2ueq3988WgDlZjP/WgrXuX/k0H7BqQ2+RrhFE=

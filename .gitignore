@@ -1,3 +1,4 @@
 deploy_key
 .cache
 node_modules
+config.json

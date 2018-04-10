@@ -10,6 +10,6 @@ specs/impl.json: $(DATA)
 
 check: $(DATA) $(wildcard */*.html)
 	python tools/validate-schema.py $(DATA)
-	python tools/extract-impl-data.py $(DATA) > /dev/null
-	python tools/extract-spec-data.py $(DATA) > /dev/null
+	node tools/extract-impl-data.js $(DATA) > /dev/null
+	node tools/extract-spec-data.js $(DATA) > /dev/null
 	html5validator --root .

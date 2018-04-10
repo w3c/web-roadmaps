@@ -52,18 +52,18 @@ Each specification is described by a JSON object that will allow retrieving info
 That JSON object is stored in a file in the [data](data/) directory, whose name is then used to refer to the said specification from relevant features.
 
 Depending on the advancement of the underlying specification, the JSON object can have the following properties:
-* for W3C specifications that have started their Recommendation track progress, the `TR` property should point to the URL of latest version of the spec; this URL will be used to collect data about the spec (standardization status, Working Groups that produce it, editors draft, etc)
-* for specifications for which browser implementations are expected, the `impl` property, described below in [Describing implementation status](#describing-implementation-status)
-* for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
-* in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json))
-* for specifications that have not started their Recommendation track progress, the `title` property gives the title of the specification
-* for specifications that have not started their Recommendation track progress, the `editors` property should point to the URL of the editors draft of the specification
-* for specifications that have not started their Recommendation track progress, the `wgs` property should be an array of objects describing the groups that are producing the spec; each such object should have a `url` property with a link to the group's home page, and a `label` property with the name of the group
+* `url`: should point to the URL of the latest version of the specification. This URL will be used to collect additional data about the spec (standardization status, Working Groups that produce it, editors draft, etc) and as target of links that reference the feature. URL may contain a fragment to point to a specific section in a specification. If the `url` property is not specified, the framework assumes that the underlying specification is a W3C specification,  that the filename is its short name, and that the URL of the spec is `https://www.w3.org/TR/[filename]/`.
+* `impl`: for specifications for which browser implementations are expected, the `impl` property explains where to look for implementation info. Described below in [Describing implementation status](#describing-implementation-status)
+* `polyfills`: for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
+* `feature`: in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json))
+* `title`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `title` property should be set to the title of the specification
+* `edDraft`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), or when these APIs do not know the URL of the Editor's Draft for the specification, the `edDraft` property should contain the URL of the Editor's Draft of the specification.
+* `wgs`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `wgs` property should be an array of objects describing the groups that are producing the spec; each such object should have a `url` property with a link to the group's home page, and a `label` property with the name of the group.
 
 Here is an example of a JSON file that describes the "Intersection Observer" specification:
 ```json
 {
-  "TR": "https://www.w3.org/TR/intersection-observer/",
+  "url": "https://www.w3.org/TR/intersection-observer/",
   "impl": {
     "caniuse": "intersectionobserver",
     "chromestatus": 5695342691483648,
@@ -231,8 +231,10 @@ The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roa
 
 If you would like to visualize the contents of a roadmap locally as it would appear on the published version, you will need to:
 
-1. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
-2. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
+1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/41989/apikeys) if not already done
+2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key
+3. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
+4. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
 
 ## Translating a roadmap
 

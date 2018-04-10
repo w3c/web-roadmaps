@@ -1,8 +1,11 @@
 {
   "name": "web-roadmaps",
   "dependencies": {
-    "fetch-filecache-for-crawling": "^1.1.1",
+    "fetch-filecache-for-crawling": "^1.4.0",
     "xmldom": "^0.1.27",
     "xpath": "0.0.27"
+  },
+  "scripts": {
+    "specinfo": "node tools/extract-spec-data.js data > specs/tr.json"
   }
 }

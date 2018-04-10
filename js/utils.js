@@ -166,7 +166,6 @@ const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
  * - column: The description of the column the cell will belong to
  * - featureId: The ID of the feature for which the cell is being generated
  * - featureName: The name of the wrapping feature
- * - specData: Raw data about the feature ID (from the data/ folder)
  * - specInfo: The available spec info for that feature ID
  * - implInfo: The available implementation status for that feature ID
  * - tr: Sanitized translations
@@ -174,49 +173,37 @@ const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
  * - pos: The zero-based index of the column in the table
  * - warnings: An array of warnings that the creator may complete
  */
-const createFeatureCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createFeatureCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement((pos === 0) ? 'th' : 'td');
   cell.appendChild(document.createTextNode(featureName));
   return cell;
 };
 
-const createSpecCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
-  let specUrl = specData.TR || specData.editors || specData.ls;
-  let specTitle = null;
+const createSpecCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
+  let specUrl = specInfo.url;
+  let specTitle = specInfo.title;
   let localizedSpecTitle = null;
-  if (specData.TR) {
-    specTitle = specInfo.title;
+  if (tr.specifications[specTitle]) {
+    localizedSpecTitle = tr.specifications[specTitle];
   }
-  if (!specTitle) {
-    specTitle = specData.title;
-  }
-  if (specTitle) {
-    if (tr.specifications[specTitle]) {
-      localizedSpecTitle = tr.specifications[specTitle];
-    }
-    else if (lang !== 'en') {
-      warnings.push('No spec title for "' + specTitle + '" in "' + lang + '"');
-    }
-  }
-  if (!specTitle) {
-    warnings.push('No spec title found for "' + featureId + '"');
-    specTitle = featureId + ' (Spec title not found!)';
+  else if (lang !== 'en') {
+    warnings.push('No spec title for "' + specTitle + '" in "' + lang + '"');
   }
 
   let localizedLabel = localizedSpecTitle || specTitle;
-  if (specData.feature) {
+  if (specInfo.feature) {
     localizedLabel = (tr.labels['%feature in %spec'] || '%feature in %spec')
-      .replace('%feature', tr.features[specData.feature] || specData.feature)
+      .replace('%feature', tr.features[specInfo.feature] || specInfo.feature)
       .replace('%spec', localizedSpecTitle || specTitle);
   }
   let label = null;
-  if ((tr.features[specData.feature] &&
-      (tr.features[specData.feature] !== specData.feature)) ||
+  if ((tr.features[specInfo.feature] &&
+      (tr.features[specInfo.feature] !== specInfo.feature)) ||
       (localizedSpecTitle && localizedSpecTitle !== specTitle)) {
     label = specTitle;
-    if (specData.feature) {
+    if (specInfo.feature) {
       label = '%feature in %spec'
-        .replace('%feature', specData.feature)
+        .replace('%feature', specInfo.feature)
         .replace('%spec', specTitle);
     }
   }
@@ -230,7 +217,7 @@ const createSpecCell = function (column, featureId, featureName, specData, specI
   return cell;
 };
 
-const createGroupCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createGroupCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   specInfo.wgs = specInfo.wgs || [];
   specInfo.wgs.forEach((wg, w) => {
@@ -262,7 +249,7 @@ const createGroupCell = function (column, featureId, featureName, specData, spec
   return cell;
 };
 
-const createMaturityCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createMaturityCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   // Render maturity info
   let cell = document.createElement('td');
   let maturityInfo = maturityData(specInfo);
@@ -271,15 +258,15 @@ const createMaturityCell = function (column, featureId, featureName, specData, s
   return cell;
 };
 
-const createImplCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createImplCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   cell.appendChild(formatImplInfo(implInfo, tr));
   return cell;
 };
 
-const createVersionsCell = function (column, featureId, featureName, specData, specInfo, implInfo, tr, lang, pos, warnings) {
+const createVersionsCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
-  (specData.versions || []).forEach((version, pos) => {
+  (specInfo.versions || []).forEach((version, pos) => {
     if (version.url && version.label) {
       if (pos > 0) {
         cell.appendChild(document.createElement('br'));
@@ -792,125 +779,105 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
     extractFeatures(section);
   });
 
-  // Remove duplicates from the list of referenced data files, load them, and
-  // apply that info to generate the tables at the end of sections
+  // Remove duplicates from the list of referenced data files, look them up in
+  // tr.json, and update links in the document accordingly
+  let warnings = [];
   referencedFeatureIds = referencedFeatureIds.filter(
     (fid, idx, self) => self.indexOf(fid) === idx);
-  return Promise.all(referencedFeatureIds
-      .map(featureId => {
-        return {
-          id: featureId,
-          url: '../data/' + featureId + '.json'
-        }
-      })
-      .map(feature => {
-        return loadUrl(feature.url, true)
-          .then(response => JSON.parse(response))
-          .then(data => {
-            // Complete links to that feature ID with the right URL
-            // and the spec title if the link is empty
-            if (!data) {
-              return null;
-            }
-            $(document, 'a[data-featureid="' + feature.id + '"]')
-              .forEach(link => {
-                link.setAttribute('href', data.editors || data.ls || data.TR);
-                if (!link.textContent) {
-                  if (data.feature) {
-                    link.textContent =
-                      tr.features[data.feature] ||
-                      data.feature;
-                  }
-                  else if ((specInfo[feature.id] && specInfo[feature.id].title) || data.title) {
-                    let specTitle = specInfo[feature.id].title || data.title;
-                    if (tr.specifications[specTitle]) {
-                      specTitle = tr.specifications[specTitle];
-                    }
-                    link.textContent = specTitle;
-                  }
-                }
-              });
+  let referencedFeatures = referencedFeatureIds.map(id => {
+    let info = specInfo[id];
+    if (!info) {
+      warnings.push('Unknown feature "' + id + '"');
+      info = { url: '', title: '' };
+    }
+    if (!info.url) {
+      warnings.push('No URL found for feature "' + id + '"');
+      info.url = '';
+    }
+    if (!info.title) {
+      warnings.push('No title found for feature "' + id + '"');
+      info.title = id + ' (Spec title not found!)';
+    }
+    return { id, info };
+  }).map(spec => {
+    // Complete links with the right URL and set title if the link is empty
+    let info = spec.info;
+    $(document, 'a[data-featureid="' + spec.id + '"]').forEach(link => {
+      link.setAttribute('href', info.url);
+      if (!link.textContent) {
+        link.textContent = (spec.feature ?
+          tr.features[spec.feature] || spec.feature :
+          tr.specifications[info.title] || info.title);
+      }
+    });
+    return spec;
+  });
 
-            return data;
-          });
-      }))
-    .then(dataFiles => {
-      let warnings = [];
-      sectionsData.forEach(sectionData => {
-        let dataTable = document.createElement('div');
-        let tableType = sectionData.sectionEl.className.split(' ')[1];
-        if (!columnsPerType[tableType]) {
-          warnings.push('Nothing known about table type "' + tableType + '". ' +
-            'Skipping the section as a result');
-          return;
-        }
-        dataTable.appendChild(document.createElement('table'));
+  // Apply spec info to generate the tables at the end of each section
+  sectionsData.forEach(sectionData => {
+    let dataTable = document.createElement('div');
+    let tableType = sectionData.sectionEl.className.split(' ')[1];
+    if (!columnsPerType[tableType]) {
+      warnings.push('Nothing known about table type "' + tableType + '". ' +
+        'Skipping the section as a result');
+      return;
+    }
+    dataTable.appendChild(document.createElement('table'));
 
-        // Fill the table headers
-        let columns = columnsPerType[tableType];
+    // Fill the table headers
+    let columns = columnsPerType[tableType];
+    let row = document.createElement('tr');
+    columns.forEach(column => {
+      let cell = document.createElement('th');
+      cell.appendChild(document.createTextNode(column.title));
+      row.appendChild(cell);
+    });
+
+    let thead = document.createElement('thead');
+    thead.appendChild(row);
+    dataTable.firstChild.appendChild(thead);
+
+    let tbody = document.createElement('tbody');
+    dataTable.firstChild.appendChild(tbody);
+
+    // Parse the list of feature names referenced in the section,
+    // and the list of feature IDs referenced per feature name,
+    // and generate a row per feature ID.
+    let features = sectionData.features;
+    Object.keys(features).forEach(featureName => {
+      let featureIds = features[featureName];
+      featureIds.forEach((featureId, featureIndex) => {
+        let info = referencedFeatures.find(feature => feature.id === featureId).info;
         let row = document.createElement('tr');
-        columns.forEach(column => {
-          let cell = document.createElement('th');
-          cell.appendChild(document.createTextNode(column.title));
+        tbody.appendChild(row);
+        columns.forEach((column, pos) => {
+          // Feature name cell will span multiple rows if there are more
+          // than one feature ID associated with the feature name
+          if ((column.type === 'feature') && (featureIndex > 0)) {
+            return;
+          }
+
+          // Create the appropriate cell
+          let cell = column.createCell(
+            column, featureId, featureName,
+            info, implInfo[featureId],
+            tr, lang, pos, warnings);
+
+          // Make feature name span multiple rows as needed
+          if ((column.type === 'feature') && (featureIds.length > 1)) {
+            cell.setAttribute('rowspan', featureIds.length);
+          }
           row.appendChild(cell);
         });
-
-        let thead = document.createElement('thead');
-        thead.appendChild(row);
-        dataTable.firstChild.appendChild(thead);
-
-        let tbody = document.createElement('tbody');
-        dataTable.firstChild.appendChild(tbody);
-
-        // Parse the list of feature names referenced in the section,
-        // and the list of feature IDs referenced per feature name,
-        // and generate a row per feature ID.
-        let features = sectionData.features;
-        Object.keys(features).forEach(featureName => {
-          let featureIds = features[featureName];
-          featureIds.forEach((featureId, featureIndex) => {
-            let specData = dataFiles[referencedFeatureIds.indexOf(featureId)];
-            if (!specInfo[featureId]) {
-              warnings.push('No spec data found for TR feature "' + featureId + '"');
-              specInfo[featureId] = {
-                wgs: specData.wgs,
-                maturity: (specData.editors ? "ED" : (specData.ls ? "LS" : "Unknown"))
-              };
-            }
-
-            let row = document.createElement('tr');
-            tbody.appendChild(row);
-            columns.forEach((column, pos) => {
-              // Feature name cell will span multiple rows if there are more
-              // than one feature ID associated with the feature name
-              if ((column.type === 'feature') && (featureIndex > 0)) {
-                return;
-              }
-
-              // Create the appropriate cell
-              let cell = column.createCell(
-                column, featureId, featureName,
-                specData, specInfo[featureId], implInfo[featureId],
-                tr, lang, pos, warnings);
-
-              // Make feature name span multiple rows as needed
-              if ((column.type === 'feature') && (featureIds.length > 1)) {
-                cell.setAttribute('rowspan', featureIds.length);
-              }
-              row.appendChild(cell);
-            });
-          });
-        });
-
-        sectionData.sectionEl.appendChild(dataTable);
       });
-      return warnings;
-    })
-    .then(warnings => {
-      // Remove duplicate warnings and report
-      warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
-      warnings.forEach(warning => console.warn(warning));
     });
+
+    sectionData.sectionEl.appendChild(dataTable);
+  });
+
+  // Remove duplicate warnings and report
+  warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
+  warnings.forEach(warning => console.warn(warning));
 };
 
 const formatImplInfo = function (data, translations) {
