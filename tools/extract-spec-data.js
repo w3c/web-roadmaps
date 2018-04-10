@@ -190,7 +190,10 @@ async function extractSpecData(files, config) {
   let w3cHttpOptions = {
     agent: new https.Agent({ maxSockets: 5 }),
     keepAlive: true,
-    headers: { 'Authorization': `W3C-API apikey="${config.w3cApiKey}"` }
+    headers: {
+      'Authorization': `W3C-API apikey="${config.w3cApiKey}"`,
+      'Origin': 'https://www.w3.org'
+    }
   };
 
   // Fetch spec info from Specref when spec is not a TR spec.
