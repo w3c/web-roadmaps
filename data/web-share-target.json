@@ -1,11 +1,6 @@
 {
   "editors": "https://wicg.github.io/web-share-target/",
-  "wgs": [{
-    "url": "https://www.w3.org/community/wicg/",
-    "label": "Web Platform Incubator Community Group"
-  }],
   "impl": {
     "chromestatus": 5662315307335680
-  },
-  "title": "Web Share Target API"
+  }
 }

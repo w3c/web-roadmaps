@@ -1,11 +1,4 @@
 {
-    "title": "Network Information API",
-    "wgs": [
-        {
-            "url": "https://wicg.io/",
-            "label": "Web Platform Incubator Community Group"
-        }
-    ],
     "editors": "https://wicg.github.io/netinfo/",
     "impl": {
         "caniuse": "netinfo",
