@@ -231,7 +231,7 @@ The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roa
 
 If you would like to visualize the contents of a roadmap locally as it would appear on the published version, you will need to:
 
-1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/41989/apikeys) if not already done
+1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done
 2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key
 3. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
 4. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
