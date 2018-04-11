@@ -43,6 +43,36 @@ const maturityMapping = {
   'Group Note': 'NOTE'
 };
 
+/**
+ * Well-known publishers and URL pattern of the specs they publish
+ * (Note the w3c.github.io is not restricted to WICG in practice, but the
+ * code associates a WICG spec with W3C in any case, so that's good enough
+ * for now and avoids having to handle arrays of patterns)
+ */
+const publishers = {
+  'W3C': {
+    label: 'W3C',
+    url: 'https://www.w3.org/',
+    urlPattern: '.w3.org'
+  },
+  'WHATWG': {
+    label: 'WHATWG',
+    url: 'https://whatwg.org',
+    urlPattern: '.spec.whatwg.org'
+  },
+  'IETF': {
+    label: 'IETF',
+    url: 'https://ietf.org',
+    urlPattern: '.ietf.org'
+  },
+  'WICG': {
+    label: 'Web Platform Incubator Community Group',
+    url: 'https://www.w3.org/community/wicg/',
+    urlPattern: 'w3c.github.io',
+    parentPublisher: 'W3C'
+  }
+};
+
 
 /**
  * Wrapper around the "require" function to require files relative to the
@@ -231,7 +261,8 @@ async function extractSpecData(files, config) {
         url: latestInfo.shortlink,
         edDraft: latestInfo['editor-draft'],
         title: latestInfo.title,
-        status: latestInfo.status
+        status: latestInfo.status,
+        publisher: 'W3C'
       };
       let deliverersJson = await fetchJson(
         latestInfo._links.deliverers.href + `?embed=1`,
@@ -251,7 +282,8 @@ async function extractSpecData(files, config) {
       edDraft: spec.data.edDraft || spec.data.editors || trInfo.edDraft || lookupInfo.edDraft,
       title: spec.data.title || trInfo.title || lookupInfo.title,
       status: spec.data.status || trInfo.status || lookupInfo.status || 'ED',
-      deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || []
+      deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || [],
+      publisher: spec.data.publisher || trInfo.publisher || lookupInfo.publisher
     };
 
     // Spec must have a title, either retrieved from Specref or defined in
@@ -270,6 +302,57 @@ async function extractSpecData(files, config) {
       throw new Error(`- ${spec.id}: Unknown maturity status (status: ${info.status})`);
     }
 
+    // Groups that deliver the spec should have friendly labels
+    if (info.deliveredBy && (info.deliveredBy.length > 0)) {
+      info.deliveredBy = info.deliveredBy.map(group => {
+        let label = group.label || info.publisher || group.shortname;
+        if (label && label.startsWith('W3C ')) {
+          label = label.slice(4);
+        }
+        if (!label) {
+          console.warn(`- ${spec.id}: No group label found (home page: ${group.url})`);
+        }
+        return { url: group.url, label };
+      });
+    }
+    else if (info.publisher && (info.publisher in publishers)) {
+      let publisher = publishers[info.publisher];
+      info.deliveredBy = [{ url: publisher.url, label: publisher.label }];
+    }
+    if (!info.deliveredBy) {
+      info.deliveredBy = [];
+    }
+
+    // Spec should have a well-known publisher, try to find one
+    if (info.publisher) {
+      if (info.publisher.startsWith('W3C ')) {
+        info.publisher = 'W3C';
+      }
+      if (!(info.publisher in publishers)) {
+        console.warn(`- ${spec.id}: Unknown publisher "${info.publisher}"`);
+      }
+    }
+    if (!info.publisher) {
+      if (info.deliveredBy && (info.deliveredBy.length > 0)) {
+        let groupUrl = info.deliveredBy[0].url || '';
+        info.publisher = Object.keys(publishers)
+          .find(id => groupUrl.includes(publishers[id].urlPattern));
+      }
+      if (!info.publisher) {
+        info.publisher = Object.keys(publishers)
+          .find(id => info.url.includes(publishers[id].urlPattern));
+      }
+      if (!info.publisher) {
+        console.warn(`- ${spec.id}: No publisher found`);
+      }
+    }
+
+    // Consider that the publisher is the parent organization of the group
+    // that develops the spec
+    if (info.publisher && publishers[info.publisher] && publishers[info.publisher].parentPublisher) {
+      info.publisher = publishers[info.publisher].parentPublisher;
+    }
+
     return { id: spec.id, data: spec.data, info };
   }
 
@@ -277,26 +360,7 @@ async function extractSpecData(files, config) {
   let resultsArray = await Promise.all(specs.map(fetchSpecInfo));
   let results = {};
   for (let result of resultsArray) {
-    let info = result.info;
-    results[result.id] = {
-      url: info.url,
-      edDraft: info.edDraft,
-      title: info.title,
-      maturity: info.status,
-      wgs: (info.deliveredBy || []).map(group => {
-        if (!group.label) {
-          // TODO: ignored for the time being but we should probably do
-          // something about it such as complete the data file
-          console.error(`- ${result.id}: Deliverer group not found (home page: ${group.url})`);
-        }
-        let wg = {};
-        if (group.label) {
-          wg.label = group.label;
-        }
-        wg.url = group.url;
-        return wg;
-      })
-    }
+    results[result.id] = result.info;
 
     // Complete spec info with other properties of interest from data file
     Object.keys(result.data).forEach(key => {
