@@ -1,13 +1,8 @@
 {
   "editors": "https://wicg.github.io/web-share/",
-  "wgs": [{
-    "url": "https://www.w3.org/community/wicg/",
-    "label": "Web Platform Incubator Community Group"
-  }],
   "impl": {
     "caniuse": "web-share",
     "chromestatus": 5668769141620736,
     "webkitstatus": "feature-web-share"
-  },
-  "title": "Web Share API"
+  }
 }

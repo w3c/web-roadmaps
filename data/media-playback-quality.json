@@ -1,10 +1,4 @@
 {
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ],
   "impl": {
     "caniuse": null,
     "chromestatus": null,
@@ -12,6 +6,5 @@
     "edgestatus": null,
     "webkitstatus": null
   },
-  "title": "Media Playback Quality",
   "editors": "https://wicg.github.io/media-playback-quality/"
 }

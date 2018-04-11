@@ -1,10 +1,3 @@
 {
-  "editors": "https://wicg.github.io/picture-in-picture/",
-  "title": "Picture in Picture",
-  "wgs": [
-    {
-      "label": "Web Platform Incubator Community Group",
-      "url": "https://www.w3.org/community/wicg/"
-    }
-  ]
+  "editors": "https://wicg.github.io/picture-in-picture/"
 }
