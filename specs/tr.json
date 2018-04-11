@@ -1,5 +1,7 @@
 {
   "3dcamera": {
+    "url": "https://www.w3.org/TR/mediacapture-depth/",
+    "edDraft": "https://w3c.github.io/mediacapture-depth/",
     "title": "Media Capture Depth Stream Extensions",
     "maturity": "WD",
     "wgs": [
@@ -14,6 +16,8 @@
     ]
   },
   "accelerometer": {
+    "url": "https://www.w3.org/TR/accelerometer/",
+    "edDraft": "https://w3c.github.io/accelerometer/",
     "title": "Accelerometer",
     "maturity": "CR",
     "wgs": [
@@ -21,9 +25,17 @@
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
       }
+    ],
+    "polyfills": [
+      {
+        "label": "sensor-polyfills",
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
     ]
   },
   "ambientlight": {
+    "url": "https://www.w3.org/TR/ambient-light/",
+    "edDraft": "https://w3c.github.io/ambient-light/",
     "title": "Ambient Light Sensor",
     "maturity": "CR",
     "wgs": [
@@ -34,6 +46,8 @@
     ]
   },
   "animation-frames": {
+    "url": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -41,29 +55,37 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "requestAnimationFrame"
   },
   "annotation-model": {
+    "url": "https://www.w3.org/TR/annotation-model/",
+    "edDraft": "http://w3c.github.io/web-annotation/",
     "title": "Web Annotation Data Model",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Annotation Working Group",
-        "url": "http://www.w3.org/annotation/"
+        "url": "https://www.w3.org/annotation/"
       }
     ]
   },
   "appcache": {
-    "title": "HTML 5.1",
+    "url": "https://www.w3.org/TR/html51/obsolete.html#application-caches",
+    "edDraft": "https://rawgit.com/w3c/html/html5.1-2/single-page.html",
+    "title": "HTML 5.1 2nd Edition",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "ApplicationCache"
   },
   "appmanifest": {
+    "url": "https://www.w3.org/TR/appmanifest/",
+    "edDraft": "https://w3c.github.io/manifest/",
     "title": "Web App Manifest",
     "maturity": "WD",
     "wgs": [
@@ -74,15 +96,19 @@
     ]
   },
   "atag20": {
+    "url": "https://www.w3.org/TR/ATAG20/",
     "title": "Authoring Tool Accessibility Guidelines (ATAG) 2.0",
     "maturity": "REC",
     "wgs": [
       {
+        "label": "Authoring Tool Accessibility Guidelines Working Group",
         "url": "http://www.w3.org/WAI/AU/"
       }
     ]
   },
   "audio": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -90,9 +116,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "audio element"
   },
   "audio-output": {
+    "url": "https://www.w3.org/TR/audio-output/",
+    "edDraft": "https://w3c.github.io/mediacapture-output/",
     "title": "Audio Output Devices API",
     "maturity": "CR",
     "wgs": [
@@ -103,6 +132,8 @@
     ]
   },
   "autocomplete": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -110,9 +141,36 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
+    ],
+    "feature": "autocomplete attribute"
+  },
+  "background-sync": {
+    "url": "https://wicg.github.io/BackgroundSync/spec/",
+    "edDraft": "https://wicg.github.io/BackgroundSync/spec/",
+    "title": "Web Background Synchronization",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "barometer": {
+    "url": "https://kenchris.github.io/barometer/",
+    "edDraft": "https://kenchris.github.io/barometer/",
+    "title": "Ambient Atmospheric Pressure (Barometric) Sensor",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group",
+        "url": "http://www.w3.org/2009/dap/"
+      }
     ]
   },
   "battery": {
+    "url": "https://www.w3.org/TR/battery-status",
+    "edDraft": "https://w3c.github.io/battery/",
     "title": "Battery Status API",
     "maturity": "CR",
     "wgs": [
@@ -123,6 +181,8 @@
     ]
   },
   "beacon": {
+    "url": "https://www.w3.org/TR/beacon/",
+    "edDraft": "https://w3c.github.io/beacon/",
     "title": "Beacon",
     "maturity": "CR",
     "wgs": [
@@ -133,6 +193,7 @@
     ]
   },
   "canvas": {
+    "url": "https://www.w3.org/TR/2dcontext/",
     "title": "HTML Canvas 2D Context",
     "maturity": "REC",
     "wgs": [
@@ -143,6 +204,8 @@
     ]
   },
   "cloud-browser-arch": {
+    "url": "http://www.w3.org/TR/cloud-browser-arch/",
+    "edDraft": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
     "title": "Cloud Browser Architecture",
     "maturity": "NOTE",
     "wgs": [
@@ -152,7 +215,16 @@
       }
     ]
   },
+  "color-canvas": {
+    "url": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
+    "edDraft": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
+    "title": "Color managing canvas contents",
+    "maturity": "ED",
+    "wgs": []
+  },
   "color-gamut": {
+    "url": "https://www.w3.org/TR/mediaqueries-4/#color-gamut",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-4/",
     "title": "Media Queries Level 4",
     "maturity": "CR",
     "wgs": [
@@ -160,9 +232,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "color-gamut media query"
   },
   "contacts-sys": {
+    "url": "https://www.w3.org/TR/contacts-manager-api/",
+    "edDraft": "http://www.w3.org/2012/sysapps/contacts-manager-api/",
     "title": "Contacts Manager API",
     "maturity": "Retired",
     "wgs": [
@@ -173,6 +248,8 @@
     ]
   },
   "core-aam11": {
+    "url": "https://www.w3.org/TR/core-aam-1.1/",
+    "edDraft": "https://w3c.github.io/core-aam/",
     "title": "Core Accessibility API Mappings 1.1",
     "maturity": "REC",
     "wgs": [
@@ -183,6 +260,7 @@
     ]
   },
   "cors": {
+    "url": "https://www.w3.org/TR/cors/",
     "title": "Cross-Origin Resource Sharing",
     "maturity": "REC",
     "wgs": [
@@ -197,6 +275,8 @@
     ]
   },
   "credential-management": {
+    "url": "https://www.w3.org/TR/credential-management-1/",
+    "edDraft": "https://w3c.github.io/webappsec-credential-management/",
     "title": "Credential Management Level 1",
     "maturity": "WD",
     "wgs": [
@@ -207,6 +287,8 @@
     ]
   },
   "crypto": {
+    "url": "https://www.w3.org/TR/WebCryptoAPI/",
+    "edDraft": "https://w3c.github.io/webcrypto/Overview.html",
     "title": "Web Cryptography API",
     "maturity": "REC",
     "wgs": [
@@ -217,6 +299,8 @@
     ]
   },
   "cryptokey": {
+    "url": "https://www.w3.org/TR/webcrypto-key-discovery/",
+    "edDraft": "http://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
     "title": "WebCrypto Key Discovery",
     "maturity": "NOTE",
     "wgs": [
@@ -227,6 +311,8 @@
     ]
   },
   "csp3": {
+    "url": "https://www.w3.org/TR/CSP3/",
+    "edDraft": "https://w3c.github.io/webappsec-csp/",
     "title": "Content Security Policy Level 3",
     "maturity": "WD",
     "wgs": [
@@ -237,6 +323,8 @@
     ]
   },
   "csp": {
+    "url": "https://www.w3.org/TR/CSP2/",
+    "edDraft": "https://w3c.github.io/webappsec-csp/",
     "title": "Content Security Policy Level 2",
     "maturity": "REC",
     "wgs": [
@@ -247,6 +335,8 @@
     ]
   },
   "css-2d": {
+    "url": "https://www.w3.org/TR/css-transforms-1/",
+    "edDraft": "https://drafts.csswg.org/css-transforms/",
     "title": "CSS Transforms Module Level 1",
     "maturity": "WD",
     "wgs": [
@@ -254,10 +344,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "2D effects"
   },
   "css2": {
-    "title": "Cascading Style Sheets, level 2 (CSS2) Specification",
+    "url": "http://www.w3.org/TR/CSS2/",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
     "maturity": "REC",
     "wgs": [
       {
@@ -266,7 +358,21 @@
       }
     ]
   },
+  "css-3d": {
+    "url": "https://drafts.csswg.org/css-transforms-2/",
+    "edDraft": "https://drafts.csswg.org/css-transforms-2/",
+    "title": "CSS Transform Module Level 2",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "CSS Working Group",
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ],
+    "feature": "3D effects"
+  },
   "css3-page": {
+    "url": "https://www.w3.org/TR/css3-page/",
     "title": "CSS Paged Media Module Level 3",
     "maturity": "WD",
     "wgs": [
@@ -277,6 +383,8 @@
     ]
   },
   "css-animations": {
+    "url": "https://www.w3.org/TR/css-animations-1/",
+    "edDraft": "https://drafts.csswg.org/css-animations/",
     "title": "CSS Animations Level 1",
     "maturity": "WD",
     "wgs": [
@@ -287,6 +395,8 @@
     ]
   },
   "css-border-background": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
     "title": "CSS Backgrounds and Borders Module Level 3",
     "maturity": "CR",
     "wgs": [
@@ -294,9 +404,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "Complex backgrounds"
   },
   "css-border-radius": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/#the-border-radius",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
     "title": "CSS Backgrounds and Borders Module Level 3",
     "maturity": "CR",
     "wgs": [
@@ -304,9 +417,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "Rounded corners"
   },
   "css-box-shadow": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/#the-box-shadow",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
     "title": "CSS Backgrounds and Borders Module Level 3",
     "maturity": "CR",
     "wgs": [
@@ -314,9 +430,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "Box shadow effects"
   },
   "css-break-3": {
+    "url": "https://www.w3.org/TR/css-break-3/",
+    "edDraft": "https://drafts.csswg.org/css-break/",
     "title": "CSS Fragmentation Module Level 3",
     "maturity": "CR",
     "wgs": [
@@ -326,7 +445,22 @@
       }
     ]
   },
+  "css-color-space": {
+    "url": "https://drafts.csswg.org/css-color/#icc-colors",
+    "edDraft": "https://drafts.csswg.org/css-color/#icc-colors",
+    "title": "CSS Color Module Level 4",
+    "maturity": "WD",
+    "wgs": [
+      {
+        "label": "CSS Working Group",
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ],
+    "feature": "profiled device-dependent colors"
+  },
   "css-content-3": {
+    "url": "http://www.w3.org/TR/css-content-3/",
+    "edDraft": "https://drafts.csswg.org/css-content/",
     "title": "CSS Generated Content Module Level 3",
     "maturity": "WD",
     "wgs": [
@@ -337,6 +471,8 @@
     ]
   },
   "css-device-adapt": {
+    "url": "https://www.w3.org/TR/css-device-adapt-1/",
+    "edDraft": "https://drafts.csswg.org/css-device-adapt/",
     "title": "CSS Device Adaptation Module Level 1",
     "maturity": "WD",
     "wgs": [
@@ -347,6 +483,8 @@
     ]
   },
   "css-flexbox": {
+    "url": "https://www.w3.org/TR/css-flexbox-1/",
+    "edDraft": "https://drafts.csswg.org/css-flexbox/",
     "title": "CSS Flexible Box Layout Module Level 1",
     "maturity": "CR",
     "wgs": [
@@ -357,6 +495,8 @@
     ]
   },
   "css-font-display": {
+    "url": "https://www.w3.org/TR/css-fonts-4/#font-display-desc",
+    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
     "title": "CSS Fonts Module Level 4",
     "maturity": "WD",
     "wgs": [
@@ -364,9 +504,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "font-display"
   },
   "css-font-loading": {
+    "url": "https://www.w3.org/TR/css-font-loading-3/",
+    "edDraft": "https://drafts.csswg.org/css-font-loading/",
     "title": "CSS Font Loading Module Level 3",
     "maturity": "WD",
     "wgs": [
@@ -377,6 +520,8 @@
     ]
   },
   "css-fonts-4": {
+    "url": "https://www.w3.org/TR/css-fonts-4/",
+    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
     "title": "CSS Fonts Module Level 4",
     "maturity": "WD",
     "wgs": [
@@ -387,6 +532,8 @@
     ]
   },
   "css-fonts-variable": {
+    "url": "https://www.w3.org/TR/css-fonts-4/#font-variation-props",
+    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
     "title": "CSS Fonts Module Level 4",
     "maturity": "WD",
     "wgs": [
@@ -394,9 +541,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "Variable fonts"
   },
   "css-gcpm-3": {
+    "url": "http://www.w3.org/TR/css-gcpm-3/",
+    "edDraft": "https://drafts.csswg.org/css-gcpm/",
     "title": "CSS Generated Content for Paged Media Module",
     "maturity": "WD",
     "wgs": [
@@ -407,6 +557,8 @@
     ]
   },
   "css-grid-1": {
+    "url": "https://www.w3.org/TR/css-grid-1/",
+    "edDraft": "https://drafts.csswg.org/css-grid/",
     "title": "CSS Grid Layout Module Level 1",
     "maturity": "CR",
     "wgs": [
@@ -417,6 +569,8 @@
     ]
   },
   "css-line-grid-1": {
+    "url": "https://www.w3.org/TR/css-line-grid-1/",
+    "edDraft": "https://drafts.csswg.org/css-line-grid/",
     "title": "CSS Line Grid Module Level 1",
     "maturity": "WD",
     "wgs": [
@@ -427,6 +581,8 @@
     ]
   },
   "cssom-view": {
+    "url": "https://www.w3.org/TR/cssom-view-1/",
+    "edDraft": "https://drafts.csswg.org/cssom-view/",
     "title": "CSSOM View Module",
     "maturity": "WD",
     "wgs": [
@@ -437,6 +593,8 @@
     ]
   },
   "css-page-floats-3": {
+    "url": "http://www.w3.org/TR/css-page-floats-3/",
+    "edDraft": "https://drafts.csswg.org/css-page-floats/",
     "title": "CSS Page Floats",
     "maturity": "WD",
     "wgs": [
@@ -447,6 +605,8 @@
     ]
   },
   "css-rhythm-1": {
+    "url": "https://www.w3.org/TR/css-rhythm-1/",
+    "edDraft": "https://drafts.csswg.org/css-rhythm/",
     "title": "CSS Rhythmic Sizing",
     "maturity": "WD",
     "wgs": [
@@ -457,6 +617,8 @@
     ]
   },
   "css-scroll-snap": {
+    "url": "https://www.w3.org/TR/css-scroll-snap-1/",
+    "edDraft": "https://drafts.csswg.org/css-scroll-snap-1/",
     "title": "CSS Scroll Snap Module Level 1",
     "maturity": "CR",
     "wgs": [
@@ -466,7 +628,21 @@
       }
     ]
   },
+  "css-size-adjust": {
+    "url": "https://drafts.csswg.org/css-size-adjust/",
+    "edDraft": "https://drafts.csswg.org/css-size-adjust/",
+    "title": "CSS Mobile Text Size Adjustment Module Level 1",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "CSS Working Group",
+        "url": "http://www.w3.org/Style/CSS/members"
+      }
+    ]
+  },
   "css-touch-action": {
+    "url": "https://www.w3.org/TR/pointerevents2/",
+    "edDraft": "https://w3c.github.io/pointerevents/",
     "title": "Pointer Events",
     "maturity": "WD",
     "wgs": [
@@ -474,9 +650,12 @@
         "label": "Pointer Events Working Group",
         "url": "http://www.w3.org/2012/pointerevents/"
       }
-    ]
+    ],
+    "feature": "touch-action"
   },
   "css-transitions": {
+    "url": "https://www.w3.org/TR/css-transitions-1/",
+    "edDraft": "https://drafts.csswg.org/css-transitions/",
     "title": "CSS Transitions",
     "maturity": "WD",
     "wgs": [
@@ -487,6 +666,8 @@
     ]
   },
   "css-ui-box-sizing": {
+    "url": "https://www.w3.org/TR/css-ui-3/#box-sizing",
+    "edDraft": "https://drafts.csswg.org/css-ui/",
     "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
     "maturity": "PR",
     "wgs": [
@@ -494,9 +675,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "box-sizing property"
   },
   "css-will-change": {
+    "url": "https://www.w3.org/TR/css-will-change-1/",
+    "edDraft": "https://drafts.csswg.org/css-will-change/",
     "title": "CSS Will Change Module Level 1",
     "maturity": "CR",
     "wgs": [
@@ -507,6 +691,8 @@
     ]
   },
   "datalist": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -514,19 +700,30 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "datalist element"
   },
   "ddr": {
+    "url": "https://www.w3.org/TR/DDR-Simple-API/",
     "title": "Device Description Repository Simple API",
     "maturity": "REC",
     "wgs": [
       {
-        "label": "Device Description Working Group",
+        "label": "Mobile Web Initiative Device Description Working Group",
         "url": "http://www.w3.org/2005/MWI/DDWG/"
       }
     ]
   },
+  "device-memory": {
+    "url": "https://w3c.github.io/device-memory/",
+    "edDraft": "https://w3c.github.io/device-memory/",
+    "title": "Device Memory 1",
+    "maturity": "ED",
+    "wgs": []
+  },
   "deviceorientation": {
+    "url": "https://www.w3.org/TR/orientation-event/",
+    "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
     "title": "DeviceOrientation Event Specification",
     "maturity": "Retired",
     "wgs": [
@@ -537,6 +734,8 @@
     ]
   },
   "discovery": {
+    "url": "https://www.w3.org/TR/discovery-api/",
+    "edDraft": "http://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
     "title": "Network Service Discovery",
     "maturity": "Retired",
     "wgs": [
@@ -547,6 +746,8 @@
     ]
   },
   "dnt": {
+    "url": "https://www.w3.org/TR/tracking-dnt",
+    "edDraft": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
     "title": "Tracking Preference Expression (DNT)",
     "maturity": "CR",
     "wgs": [
@@ -557,20 +758,24 @@
     ]
   },
   "domcapture": {
+    "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+    "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
     "title": "Media Capture from DOM Elements",
     "maturity": "WD",
     "wgs": [
       {
-        "label": "Web Real-Time Communications Working Group",
-        "url": "http://www.w3.org/2011/04/webrtc/"
-      },
-      {
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
+      },
+      {
+        "label": "Web Real-Time Communications Working Group",
+        "url": "http://www.w3.org/2011/04/webrtc/"
       }
     ]
   },
   "dpub-aam10": {
+    "url": "https://www.w3.org/TR/dpub-aam-1.0/",
+    "edDraft": "https://w3c.github.io/dpub-aam/",
     "title": "Digital Publishing Accessibility API Mappings",
     "maturity": "REC",
     "wgs": [
@@ -581,6 +786,8 @@
     ]
   },
   "dpub-aria10": {
+    "url": "https://www.w3.org/TR/dpub-aria-1.0/",
+    "edDraft": "https://w3c.github.io/dpub-aria/",
     "title": "Digital Publishing WAI-ARIA Module 1.0",
     "maturity": "REC",
     "wgs": [
@@ -590,7 +797,21 @@
       }
     ]
   },
+  "element-queries": {
+    "url": "https://wicg.github.io/cq-usecases/",
+    "edDraft": "https://wicg.github.io/cq-usecases/",
+    "title": "Element Queries",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "eme": {
+    "url": "https://www.w3.org/TR/encrypted-media/",
+    "edDraft": "https://w3c.github.io/encrypted-media/",
     "title": "Encrypted Media Extensions",
     "maturity": "REC",
     "wgs": [
@@ -601,6 +822,8 @@
     ]
   },
   "epr": {
+    "url": "https://www.w3.org/TR/epr/",
+    "edDraft": "https://w3c.github.io/webappsec-epr/",
     "title": "Entry Point Regulation",
     "maturity": "NOTE",
     "wgs": [
@@ -611,6 +834,8 @@
     ]
   },
   "eventsource": {
+    "url": "https://www.w3.org/TR/eventsource",
+    "edDraft": "http://dev.w3.org/html5/eventsource/",
     "title": "Server-Sent Events",
     "maturity": "REC",
     "wgs": [
@@ -620,7 +845,32 @@
       }
     ]
   },
+  "feature-policy": {
+    "url": "https://wicg.github.io/feature-policy/",
+    "edDraft": "https://wicg.github.io/feature-policy/",
+    "title": "Feature Policy",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "fetch": {
+    "url": "https://fetch.spec.whatwg.org/",
+    "title": "Fetch",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "WHATWG",
+        "url": "https://whatwg.org/"
+      }
+    ]
+  },
   "fileapi": {
+    "url": "https://www.w3.org/TR/FileAPI/",
+    "edDraft": "https://w3c.github.io/FileAPI/",
     "title": "File API",
     "maturity": "WD",
     "wgs": [
@@ -631,6 +881,8 @@
     ]
   },
   "frame-timing": {
+    "url": "https://www.w3.org/TR/frame-timing/",
+    "edDraft": "https://w3c.github.io/frame-timing/",
     "title": "Frame Timing",
     "maturity": "NOTE",
     "wgs": [
@@ -640,7 +892,20 @@
       }
     ]
   },
+  "fullscreen": {
+    "url": "https://fullscreen.spec.whatwg.org/",
+    "title": "Fullscreen API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "WHATWG",
+        "url": "https://whatwg.org/"
+      }
+    ]
+  },
   "generic-sensor": {
+    "url": "https://www.w3.org/TR/generic-sensor/",
+    "edDraft": "https://w3c.github.io/sensors/",
     "title": "Generic Sensor API",
     "maturity": "CR",
     "wgs": [
@@ -651,6 +916,8 @@
     ]
   },
   "geofencing": {
+    "url": "https://www.w3.org/TR/geofencing/",
+    "edDraft": "https://w3c.github.io/geofencing-api/",
     "title": "Geofencing API",
     "maturity": "Retired",
     "wgs": [
@@ -661,7 +928,8 @@
     ]
   },
   "geolocation": {
-    "title": "Geolocation API Specification",
+    "url": "https://www.w3.org/TR/geolocation-API/",
+    "title": "Geolocation API Specification 2nd Edition",
     "maturity": "REC",
     "wgs": [
       {
@@ -670,7 +938,21 @@
       }
     ]
   },
+  "geolocation-sensor": {
+    "url": "https://wicg.github.io/geolocation-sensor/",
+    "edDraft": "https://wicg.github.io/geolocation-sensor/",
+    "title": "Geolocation Sensor",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "getusermedia-cap": {
+    "url": "https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
+    "edDraft": "https://w3c.github.io/mediacapture-main/",
     "title": "Media Capture and Streams",
     "maturity": "CR",
     "wgs": [
@@ -678,9 +960,12 @@
         "label": "Web Real-Time Communications Working Group",
         "url": "http://www.w3.org/2011/04/webrtc/"
       }
-    ]
+    ],
+    "feature": "Source capabilities"
   },
   "getusermedia": {
+    "url": "https://www.w3.org/TR/mediacapture-streams/",
+    "edDraft": "https://w3c.github.io/mediacapture-main/",
     "title": "Media Capture and Streams",
     "maturity": "CR",
     "wgs": [
@@ -691,6 +976,8 @@
     ]
   },
   "gyroscope": {
+    "url": "https://www.w3.org/TR/gyroscope/",
+    "edDraft": "https://w3c.github.io/gyroscope/",
     "title": "Gyroscope",
     "maturity": "CR",
     "wgs": [
@@ -698,9 +985,28 @@
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
       }
+    ],
+    "polyfills": [
+      {
+        "label": "sensor-polyfills",
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
+    ]
+  },
+  "hbss": {
+    "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
+    "edDraft": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
+    "title": "Hardware Based Secure Services features",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Hardware Based Secure Services Community Group",
+        "url": "https://www.w3.org/community/hb-secure-services/"
+      }
     ]
   },
   "hr-time": {
+    "url": "https://www.w3.org/TR/hr-time",
     "title": "High Resolution Time",
     "maturity": "REC",
     "wgs": [
@@ -711,6 +1017,8 @@
     ]
   },
   "html5-browsing-context": {
+    "url": "https://www.w3.org/TR/html52/browsers.html#sec-browsing-contexts",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -718,9 +1026,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "browsing context"
   },
   "html5-download": {
+    "url": "https://www.w3.org/TR/html52/links.html#downloading-resources",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -728,19 +1039,37 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "download attribute"
   },
   "html5-sandbox": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-iframe-sandbox",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ],
+    "feature": "sandbox iframe attribute"
+  },
+  "html-extensions": {
+    "url": "https://w3c.github.io/html-extensions/",
+    "edDraft": "https://w3c.github.io/html-extensions/",
+    "title": "HTML Extension Specifications",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Working Group",
+        "url": "https://www.w3.org/WebPlatform/WG/"
       }
     ]
   },
   "html-media-capture": {
+    "url": "https://www.w3.org/TR/html-media-capture",
+    "edDraft": "https://w3c.github.io/html-media-capture/",
     "title": "HTML Media Capture",
     "maturity": "REC",
     "wgs": [
@@ -751,6 +1080,8 @@
     ]
   },
   "htmlmediaelement": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-media-elements",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -758,23 +1089,40 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "HTMLMediaElement interface"
   },
-  "imagecapture": {
-    "title": "\"MediaStream Image Capture\"",
-    "maturity": "WD",
+  "humidity": {
+    "url": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
+    "edDraft": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
+    "title": "Ambient Humidity Events",
+    "maturity": "ED",
     "wgs": [
-      {
-        "label": "Web Real-Time Communications Working Group",
-        "url": "http://www.w3.org/2011/04/webrtc/"
-      },
       {
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
       }
     ]
   },
+  "imagecapture": {
+    "url": "https://www.w3.org/TR/image-capture/",
+    "edDraft": "https://w3c.github.io/mediacapture-image/",
+    "title": "\"MediaStream Image Capture\"",
+    "maturity": "WD",
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group",
+        "url": "http://www.w3.org/2009/dap/"
+      },
+      {
+        "label": "Web Real-Time Communications Working Group",
+        "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  },
   "ime-api": {
+    "url": "https://www.w3.org/TR/ime-api/",
+    "edDraft": "http://w3c.github.io/ime-api/",
     "title": "Input Method Editor API",
     "maturity": "Retired",
     "wgs": [
@@ -784,7 +1132,21 @@
       }
     ]
   },
+  "inband": {
+    "url": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
+    "edDraft": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
+    "title": "Sourcing In-band Media Resource Tracks from Media Containers into HTML",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Media Resource In-band Tracks Community Group",
+        "url": "https://www.w3.org/community/inbandtracks/"
+      }
+    ]
+  },
   "indexeddb": {
+    "url": "https://www.w3.org/TR/IndexedDB/",
+    "edDraft": "http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html",
     "title": "Indexed Database API",
     "maturity": "REC",
     "wgs": [
@@ -795,26 +1157,45 @@
     ]
   },
   "indie-ui-events": {
+    "url": "https://www.w3.org/TR/indie-ui-events/",
+    "edDraft": "https://w3c.github.io/indie-ui/indie-ui-events.html",
     "title": "IndieUI: Events 1.0",
     "maturity": "WD",
     "wgs": [
       {
-        "label": "Independent User Interface Working Group",
+        "label": "Independent User Interface (Indie UI) Working Group",
         "url": "http://www.w3.org/WAI/IndieUI/"
       }
     ]
   },
   "inputdate": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#date-state-typedate",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ],
+    "feature": "Date and time input types"
+  },
+  "inputdevice": {
+    "url": "https://wicg.github.io/InputDeviceCapabilities/",
+    "edDraft": "https://wicg.github.io/InputDeviceCapabilities/",
+    "title": "Input Device Capabilities",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
       }
     ]
   },
   "inputhint": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-placeholder-attribute",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -822,19 +1203,25 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "input placeholder attribute"
   },
   "inputmode": {
-    "title": "HTML 5.1",
+    "url": "https://www.w3.org/TR/html51/sec-forms.html#input-modalities-the-inputmode-attribute",
+    "edDraft": "https://rawgit.com/w3c/html/html5.1-2/single-page.html",
+    "title": "HTML 5.1 2nd Edition",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "inputmode attribute"
   },
   "inputpattern": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-pattern-attribute",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -842,9 +1229,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "pattern attribute for input fields"
   },
   "inputtext": {
+    "url": "https://www.w3.org/TR/html52/sec-forms.html#email-state-typeemail",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -852,9 +1242,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "tel, email, url input types"
   },
   "intersectionobserver": {
+    "url": "https://www.w3.org/TR/intersection-observer/",
+    "edDraft": "https://w3c.github.io/IntersectionObserver/",
     "title": "Intersection Observer",
     "maturity": "WD",
     "wgs": [
@@ -862,9 +1255,17 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
+    ],
+    "polyfills": [
+      {
+        "label": "Polyfill.io",
+        "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
+      }
     ]
   },
   "longtasks": {
+    "url": "https://www.w3.org/TR/longtasks-1/",
+    "edDraft": "https://w3c.github.io/longtasks/",
     "title": "Long Tasks API 1",
     "maturity": "WD",
     "wgs": [
@@ -875,6 +1276,8 @@
     ]
   },
   "magnetometer": {
+    "url": "https://www.w3.org/TR/magnetometer/",
+    "edDraft": "https://w3c.github.io/magnetometer/",
     "title": "Magnetometer",
     "maturity": "CR",
     "wgs": [
@@ -884,17 +1287,32 @@
       }
     ]
   },
+  "media-capabilities": {
+    "url": "https://wicg.github.io/media-capabilities/",
+    "edDraft": "https://wicg.github.io/media-capabilities/",
+    "title": "Media Capabilities",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "mediacontroller": {
+    "url": "https://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
     "title": "HTML5",
-    "maturity": "REC",
+    "maturity": "Retired",
     "wgs": [
       {
         "label": "HTML Media Extensions Working Group",
         "url": "http://www.w3.org/html/wg/"
       }
-    ]
+    ],
+    "feature": "MediaController interface"
   },
   "media-frags": {
+    "url": "https://www.w3.org/TR/media-frags/",
     "title": "Media Fragments URI 1.0 (basic)",
     "maturity": "REC",
     "wgs": [
@@ -905,6 +1323,8 @@
     ]
   },
   "mediakeys": {
+    "url": "https://www.w3.org/TR/uievents-key/#keys-multimedia",
+    "edDraft": "https://w3c.github.io/uievents-key/",
     "title": "UI Events KeyboardEvent key Values",
     "maturity": "CR",
     "wgs": [
@@ -912,9 +1332,24 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
+    ],
+    "feature": "Media keys"
+  },
+  "media-playback-quality": {
+    "url": "https://wicg.github.io/media-playback-quality/",
+    "edDraft": "https://wicg.github.io/media-playback-quality/",
+    "title": "Media Playback Quality",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
     ]
   },
   "mediaqueries4": {
+    "url": "https://www.w3.org/TR/mediaqueries-4/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-4/",
     "title": "Media Queries Level 4",
     "maturity": "CR",
     "wgs": [
@@ -924,7 +1359,20 @@
       }
     ]
   },
+  "mediaqueries5": {
+    "url": "https://drafts.csswg.org/mediaqueries-5/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-5/",
+    "title": "Media Queries Level 5",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "CSS Working Group",
+        "url": "https://www.w3.org/Style/CSS/members"
+      }
+    ]
+  },
   "mediaqueries": {
+    "url": "https://www.w3.org/TR/css3-mediaqueries/",
     "title": "Media Queries",
     "maturity": "REC",
     "wgs": [
@@ -934,7 +1382,21 @@
       }
     ]
   },
+  "mediasession": {
+    "url": "https://wicg.github.io/mediasession/",
+    "edDraft": "https://wicg.github.io/mediasession/",
+    "title": "Media Session",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "mixedcontent": {
+    "url": "https://www.w3.org/TR/mixed-content/",
+    "edDraft": "https://w3c.github.io/webappsec-mixed-content/",
     "title": "Mixed Content",
     "maturity": "CR",
     "wgs": [
@@ -945,6 +1407,8 @@
     ]
   },
   "mobile-accessibility-mapping": {
+    "url": "https://www.w3.org/TR/mobile-accessibility-mapping/",
+    "edDraft": "http://w3c.github.io/Mobile-A11y-TF-Note/",
     "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile",
     "maturity": "WD",
     "wgs": [
@@ -953,11 +1417,28 @@
         "url": "http://www.w3.org/WAI/GL/"
       },
       {
+        "label": "User Agent Accessibility Guidelines Working Group",
         "url": "http://www.w3.org/WAI/UA/"
       }
     ]
   },
+  "mobile-wcag": {
+    "url": "https://w3c.github.io/Mobile-A11y-TF-Note/",
+    "edDraft": "https://w3c.github.io/Mobile-A11y-TF-Note/",
+    "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile",
+    "maturity": "WD",
+    "wgs": [
+      {
+        "url": "https://www.w3.org/WAI/GL/"
+      },
+      {
+        "url": "https://www.w3.org/WAI/UA/"
+      }
+    ]
+  },
   "mse": {
+    "url": "https://www.w3.org/TR/media-source/",
+    "edDraft": "https://w3c.github.io/media-source/",
     "title": "Media Source Extensions™",
     "maturity": "REC",
     "wgs": [
@@ -968,6 +1449,7 @@
     ]
   },
   "mwabp": {
+    "url": "https://www.w3.org/TR/mwabp/",
     "title": "Mobile Web Application Best Practices",
     "maturity": "REC",
     "wgs": [
@@ -978,6 +1460,7 @@
     ]
   },
   "navigation-timing": {
+    "url": "https://www.w3.org/TR/navigation-timing/",
     "title": "Navigation Timing",
     "maturity": "REC",
     "wgs": [
@@ -987,17 +1470,32 @@
       }
     ]
   },
+  "netinfo": {
+    "url": "https://wicg.github.io/netinfo/",
+    "edDraft": "https://wicg.github.io/netinfo/",
+    "title": "Network Information API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://wicg.io/"
+      }
+    ]
+  },
   "notifications": {
+    "url": "https://www.w3.org/TR/notifications/",
     "title": "Web Notifications",
     "maturity": "REC",
     "wgs": [
       {
-        "label": "Web Notifications Working Group",
+        "label": "Web Notification Working Group",
         "url": "http://www.w3.org/2010/web-notifications/"
       }
     ]
   },
   "online": {
+    "url": "https://www.w3.org/TR/html52/browsers.html#browser-state",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -1005,9 +1503,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "onLine DOM flag"
   },
   "orientation": {
+    "url": "https://www.w3.org/TR/orientation-sensor/",
+    "edDraft": "https://w3c.github.io/orientation-sensor/",
     "title": "Orientation Sensor",
     "maturity": "CR",
     "wgs": [
@@ -1015,9 +1516,17 @@
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
       }
+    ],
+    "polyfills": [
+      {
+        "label": "sensor-polyfills",
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
     ]
   },
   "p2p": {
+    "url": "https://www.w3.org/TR/webrtc/",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
     "title": "WebRTC 1.0: Real-time Communication Between Browsers",
     "maturity": "CR",
     "wgs": [
@@ -1027,8 +1536,21 @@
       }
     ]
   },
+  "packaging": {
+    "url": "https://github.com/WICG/webpackage",
+    "edDraft": "https://github.com/WICG/webpackage",
+    "title": "Web Packaging",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "page-visibility": {
-    "title": "Page Visibility",
+    "url": "https://www.w3.org/TR/page-visibility/",
+    "title": "Page Visibility (Second Edition)",
     "maturity": "REC",
     "wgs": [
       {
@@ -1038,6 +1560,8 @@
     ]
   },
   "paint-timing": {
+    "url": "https://www.w3.org/TR/paint-timing/",
+    "edDraft": "https://w3c.github.io/paint-timing/",
     "title": "Paint Timing 1",
     "maturity": "WD",
     "wgs": [
@@ -1048,6 +1572,8 @@
     ]
   },
   "payment-handler": {
+    "url": "https://www.w3.org/TR/payment-handler/",
+    "edDraft": "https://w3c.github.io/payment-handler/",
     "title": "Payment Handler API",
     "maturity": "WD",
     "wgs": [
@@ -1058,6 +1584,8 @@
     ]
   },
   "payment-method-basic-card": {
+    "url": "https://www.w3.org/TR/payment-method-basic-card/",
+    "edDraft": "https://w3c.github.io/payment-method-basic-card/",
     "title": "Payment Method: Basic Card",
     "maturity": "WD",
     "wgs": [
@@ -1068,6 +1596,8 @@
     ]
   },
   "payment-method-id": {
+    "url": "https://www.w3.org/TR/payment-method-id/",
+    "edDraft": "https://w3c.github.io/payment-method-id/",
     "title": "Payment Method Identifiers",
     "maturity": "CR",
     "wgs": [
@@ -1078,6 +1608,8 @@
     ]
   },
   "payment-method-manifest": {
+    "url": "https://www.w3.org/TR/payment-method-manifest/",
+    "edDraft": "https://w3c.github.io/payment-method-manifest/",
     "title": "Payment Method Manifest",
     "maturity": "WD",
     "wgs": [
@@ -1088,6 +1620,8 @@
     ]
   },
   "payment-request": {
+    "url": "https://www.w3.org/TR/payment-request/",
+    "edDraft": "https://w3c.github.io/payment-request/",
     "title": "Payment Request API",
     "maturity": "CR",
     "wgs": [
@@ -1098,6 +1632,7 @@
     ]
   },
   "performance-timeline": {
+    "url": "https://www.w3.org/TR/performance-timeline/",
     "title": "Performance Timeline",
     "maturity": "REC",
     "wgs": [
@@ -1108,6 +1643,8 @@
     ]
   },
   "permissions": {
+    "url": "https://www.w3.org/TR/permissions/",
+    "edDraft": "https://w3c.github.io/permissions/",
     "title": "Permissions",
     "maturity": "WD",
     "wgs": [
@@ -1117,7 +1654,45 @@
       }
     ]
   },
+  "permissions-request": {
+    "url": "https://wicg.github.io/permissions-request/",
+    "edDraft": "https://wicg.github.io/permissions-request/",
+    "title": "Requesting Permissions",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "permissions-revoke": {
+    "url": "https://wicg.github.io/permissions-revoke/",
+    "edDraft": "https://wicg.github.io/permissions-revoke/",
+    "title": "Relinquishing Permissions",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "picture-in-picture": {
+    "url": "https://wicg.github.io/picture-in-picture/",
+    "edDraft": "https://wicg.github.io/picture-in-picture/",
+    "title": "Picture in Picture",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
   "picture": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-picture-element",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -1125,9 +1700,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "picture element"
   },
   "pointer-events": {
+    "url": "https://www.w3.org/TR/pointerevents2/",
+    "edDraft": "https://w3c.github.io/pointerevents/",
     "title": "Pointer Events",
     "maturity": "WD",
     "wgs": [
@@ -1138,6 +1716,8 @@
     ]
   },
   "preload": {
+    "url": "https://www.w3.org/TR/preload/",
+    "edDraft": "https://w3c.github.io/preload/",
     "title": "Preload",
     "maturity": "CR",
     "wgs": [
@@ -1148,6 +1728,8 @@
     ]
   },
   "proximity": {
+    "url": "https://www.w3.org/TR/proximity/",
+    "edDraft": "https://w3c.github.io/proximity/",
     "title": "Proximity Sensor",
     "maturity": "WD",
     "wgs": [
@@ -1158,7 +1740,8 @@
     ]
   },
   "publishing-linking": {
-    "title": "Publishing and Linking on the Web",
+    "url": "https://www.w3.org/TR/publishing-linking/",
+    "title": "Publishing and Linking",
     "maturity": "NOTE",
     "wgs": [
       {
@@ -1168,6 +1751,8 @@
     ]
   },
   "push": {
+    "url": "https://www.w3.org/TR/push-api/",
+    "edDraft": "https://w3c.github.io/push-api/",
     "title": "Push API",
     "maturity": "WD",
     "wgs": [
@@ -1178,6 +1763,8 @@
     ]
   },
   "quota": {
+    "url": "https://www.w3.org/TR/quota-api/",
+    "edDraft": "http://w3c.github.io/quota-api/",
     "title": "Quota Management API",
     "maturity": "Retired",
     "wgs": [
@@ -1188,20 +1775,24 @@
     ]
   },
   "recording": {
+    "url": "https://www.w3.org/TR/mediastream-recording/",
+    "edDraft": "https://w3c.github.io/mediacapture-record/",
     "title": "MediaStream Recording",
     "maturity": "WD",
     "wgs": [
       {
-        "label": "Web Real-Time Communications Working Group",
-        "url": "http://www.w3.org/2011/04/webrtc/"
-      },
-      {
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
+      },
+      {
+        "label": "Web Real-Time Communications Working Group",
+        "url": "http://www.w3.org/2011/04/webrtc/"
       }
     ]
   },
   "remote-playback": {
+    "url": "https://www.w3.org/TR/remote-playback/",
+    "edDraft": "https://w3c.github.io/remote-playback/",
     "title": "Remote Playback API",
     "maturity": "CR",
     "wgs": [
@@ -1212,6 +1803,8 @@
     ]
   },
   "requestidlecallback": {
+    "url": "https://www.w3.org/TR/requestidlecallback/",
+    "edDraft": "https://w3c.github.io/requestidlecallback/",
     "title": "Cooperative Scheduling of Background Tasks",
     "maturity": "PR",
     "wgs": [
@@ -1222,6 +1815,8 @@
     ]
   },
   "resource-hints": {
+    "url": "https://www.w3.org/TR/resource-hints/",
+    "edDraft": "https://w3c.github.io/resource-hints/",
     "title": "Resource Hints",
     "maturity": "WD",
     "wgs": [
@@ -1232,6 +1827,8 @@
     ]
   },
   "resource-timing": {
+    "url": "https://www.w3.org/TR/resource-timing-1/",
+    "edDraft": "https://w3c.github.io/resource-timing/",
     "title": "Resource Timing Level 1",
     "maturity": "CR",
     "wgs": [
@@ -1242,20 +1839,24 @@
     ]
   },
   "screencapture": {
+    "url": "https://www.w3.org/TR/screen-capture/",
+    "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
     "title": "Screen Capture",
     "maturity": "WD",
     "wgs": [
       {
-        "label": "Web Real-Time Communications Working Group",
-        "url": "http://www.w3.org/2011/04/webrtc/"
-      },
-      {
         "label": "Device and Sensors Working Group",
         "url": "http://www.w3.org/2009/dap/"
+      },
+      {
+        "label": "Web Real-Time Communications Working Group",
+        "url": "http://www.w3.org/2011/04/webrtc/"
       }
     ]
   },
   "screen-orientation": {
+    "url": "https://www.w3.org/TR/screen-orientation/",
+    "edDraft": "https://w3c.github.io/screen-orientation/",
     "title": "The Screen Orientation API",
     "maturity": "WD",
     "wgs": [
@@ -1266,6 +1867,8 @@
     ]
   },
   "secondscreen": {
+    "url": "https://www.w3.org/TR/presentation-api/",
+    "edDraft": "https://w3c.github.io/presentation-api/",
     "title": "Presentation API",
     "maturity": "CR",
     "wgs": [
@@ -1275,7 +1878,21 @@
       }
     ]
   },
+  "secondscreen-openscreen": {
+    "url": "https://github.com/webscreens/openscreenprotocol",
+    "edDraft": "https://github.com/webscreens/openscreenprotocol",
+    "title": "Open Screen Protocol",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Second Screen Community Group",
+        "url": "https://www.w3.org/community/webscreens/"
+      }
+    ]
+  },
   "securecontexts": {
+    "url": "https://www.w3.org/TR/secure-contexts/",
+    "edDraft": "https://w3c.github.io/webappsec-secure-contexts/",
     "title": "Secure Contexts",
     "maturity": "CR",
     "wgs": [
@@ -1286,16 +1903,20 @@
     ]
   },
   "selectors-states": {
+    "url": "https://www.w3.org/TR/selectors-states/",
+    "edDraft": "http://w3c.github.io/web-annotation/selector-note/",
     "title": "Selectors and States",
     "maturity": "NOTE",
     "wgs": [
       {
         "label": "Web Annotation Working Group",
-        "url": "http://www.w3.org/annotation/"
+        "url": "https://www.w3.org/annotation/"
       }
     ]
   },
   "server-timing": {
+    "url": "https://www.w3.org/TR/server-timing",
+    "edDraft": "https://w3c.github.io/server-timing/",
     "title": "Server Timing",
     "maturity": "WD",
     "wgs": [
@@ -1306,6 +1927,8 @@
     ]
   },
   "serviceworkers": {
+    "url": "https://www.w3.org/TR/service-workers-1/",
+    "edDraft": "https://w3c.github.io/ServiceWorker/v1/",
     "title": "Service Workers 1",
     "maturity": "WD",
     "wgs": [
@@ -1315,7 +1938,59 @@
       }
     ]
   },
+  "shape-detection": {
+    "url": "https://wicg.github.io/shape-detection-api",
+    "edDraft": "https://wicg.github.io/shape-detection-api",
+    "title": "Shape Detection API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "spatial-navigation": {
+    "url": "https://github.com/WICG/spatial-navigation",
+    "edDraft": "https://github.com/WICG/spatial-navigation",
+    "title": "Spatial Navigation",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "speech-api-recognition": {
+    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "edDraft": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "title": "Web Speech API",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Speech API Community Group",
+        "url": "https://www.w3.org/community/speech-api/"
+      }
+    ],
+    "feature": "Speech recognition"
+  },
+  "speech-api-synthesis": {
+    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "edDraft": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "title": "Web Speech API",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Speech API Community Group",
+        "url": "https://www.w3.org/community/speech-api/"
+      }
+    ],
+    "feature": "Speech synthesis"
+  },
   "srcset": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -1323,9 +1998,12 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
-    ]
+    ],
+    "feature": "srcset attribute"
   },
   "sri": {
+    "url": "https://www.w3.org/TR/SRI/",
+    "edDraft": "https://w3c.github.io/webappsec-subresource-integrity/",
     "title": "Subresource Integrity",
     "maturity": "REC",
     "wgs": [
@@ -1335,8 +2013,31 @@
       }
     ]
   },
+  "storage": {
+    "url": "https://storage.spec.whatwg.org/",
+    "title": "Storage",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "WHATWG",
+        "url": "https://whatwg.org/"
+      }
+    ]
+  },
+  "streams": {
+    "url": "https://streams.spec.whatwg.org/",
+    "title": "Streams",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "WHATWG",
+        "url": "https://whatwg.org/"
+      }
+    ]
+  },
   "svg12": {
-    "title": "Scalable Vector Graphics (SVG) 1.1 Specification",
+    "url": "https://www.w3.org/TR/SVG11/",
+    "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
     "maturity": "REC",
     "wgs": [
       {
@@ -1346,6 +2047,8 @@
     ]
   },
   "svg2": {
+    "url": "https://www.w3.org/TR/SVG2/",
+    "edDraft": "https://svgwg.org/svg2-draft/",
     "title": "Scalable Vector Graphics (SVG) 2",
     "maturity": "CR",
     "wgs": [
@@ -1356,6 +2059,8 @@
     ]
   },
   "task-scheduler": {
+    "url": "https://www.w3.org/TR/task-scheduler/",
+    "edDraft": "http://www.w3.org/2012/sysapps/web-alarms/",
     "title": "Task Scheduler API Specification",
     "maturity": "Retired",
     "wgs": [
@@ -1365,7 +2070,21 @@
       }
     ]
   },
+  "thermometer": {
+    "url": "https://kenchris.github.io/thermometer/",
+    "edDraft": "https://kenchris.github.io/thermometer/",
+    "title": "Ambient Temperature (Thermometer) sensor",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group",
+        "url": "http://www.w3.org/2009/dap/"
+      }
+    ]
+  },
   "timeupdate": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#eventdef-media-timeupdate",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -1373,9 +2092,24 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
+    ],
+    "feature": "timeupdate event"
+  },
+  "timing": {
+    "url": "http://webtiming.github.io/timingobject/",
+    "edDraft": "http://webtiming.github.io/timingobject/",
+    "title": "Timing Object",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Multi-Device Timing Community Group",
+        "url": "http://www.w3.org/community/webtiming/"
+      }
     ]
   },
   "touchevent": {
+    "url": "https://www.w3.org/TR/touch-events/",
+    "edDraft": "https://w3c.github.io/touch-events/",
     "title": "Touch Events",
     "maturity": "REC",
     "wgs": [
@@ -1385,8 +2119,21 @@
       }
     ]
   },
+  "transcript": {
+    "url": "http://w3c.github.io/html-transcript/html-transcript-src.html",
+    "edDraft": "http://w3c.github.io/html-transcript/html-transcript-src.html",
+    "title": "A transcript extension for HTML",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "HTML Working Group Accessibility Task Force",
+        "url": "http://www.w3.org/WAI/PF/html-accessibility-tf"
+      }
+    ]
+  },
   "ttml1": {
-    "title": "Timed Text Markup Language (TTML) 1.0",
+    "url": "https://www.w3.org/TR/ttml1/",
+    "title": "Timed Text Markup Language 1 (TTML1) (Second Edition)",
     "maturity": "REC",
     "wgs": [
       {
@@ -1396,6 +2143,8 @@
     ]
   },
   "ttml-imsc11": {
+    "url": "https://www.w3.org/TR/ttml-imsc1.1/",
+    "edDraft": "https://rawgit.com/w3c/imsc/IMSC1.1/imsc1/spec/ttml-ww-profiles.html",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1",
     "maturity": "WD",
     "wgs": [
@@ -1406,6 +2155,8 @@
     ]
   },
   "ttml-imsc1": {
+    "url": "https://www.w3.org/TR/ttml-imsc1/",
+    "edDraft": "https://rawgit.com/w3c/imsc1/master/spec/ttml-ww-profiles.html",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)",
     "maturity": "REC",
     "wgs": [
@@ -1413,9 +2164,17 @@
         "label": "Timed Text Working Group",
         "url": "http://www.w3.org/AudioVideo/TT/"
       }
+    ],
+    "polyfills": [
+      {
+        "label": "imscJS",
+        "url": "https://github.com/sandflow/imscJS"
+      }
     ]
   },
   "ttml": {
+    "url": "https://www.w3.org/TR/ttml2/",
+    "edDraft": "https://w3c.github.io/ttml2/index.html",
     "title": "Timed Text Markup Language 2 (TTML2)",
     "maturity": "CR",
     "wgs": [
@@ -1425,25 +2184,44 @@
       }
     ]
   },
+  "tvtuner": {
+    "url": "https://w3c.github.io/tvcontrol-api/",
+    "edDraft": "https://w3c.github.io/tvcontrol-api/",
+    "title": "TV Control API",
+    "maturity": "NOTE",
+    "wgs": [
+      {
+        "label": "TV Control Working Group ",
+        "url": "https://www.w3.org/2016/tvcontrol/"
+      }
+    ]
+  },
   "uaag20": {
+    "url": "https://www.w3.org/TR/UAAG20/",
+    "edDraft": "http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/",
     "title": "User Agent Accessibility Guidelines (UAAG) 2.0",
     "maturity": "NOTE",
     "wgs": [
       {
+        "label": "User Agent Accessibility Guidelines Working Group",
         "url": "http://www.w3.org/WAI/UA/"
       }
     ]
   },
   "uaag20-reference": {
+    "url": "https://www.w3.org/TR/UAAG20-Reference/",
     "title": "UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0",
     "maturity": "NOTE",
     "wgs": [
       {
+        "label": "User Agent Accessibility Guidelines Working Group",
         "url": "http://www.w3.org/WAI/UA/"
       }
     ]
   },
   "uir": {
+    "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+    "edDraft": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
     "title": "Upgrade Insecure Requests",
     "maturity": "CR",
     "wgs": [
@@ -1454,6 +2232,8 @@
     ]
   },
   "uisecurity": {
+    "url": "https://www.w3.org/TR/UISecurity/",
+    "edDraft": "http://w3c.github.io/webappsec-uisecurity/index.html",
     "title": "User Interface Security and the Visibility API",
     "maturity": "WD",
     "wgs": [
@@ -1464,6 +2244,7 @@
     ]
   },
   "user-timing": {
+    "url": "https://www.w3.org/TR/user-timing/",
     "title": "User Timing",
     "maturity": "REC",
     "wgs": [
@@ -1474,6 +2255,8 @@
     ]
   },
   "vehicle-info": {
+    "url": "https://www.w3.org/TR/vehicle-information-api",
+    "edDraft": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
     "title": "Vehicle Information API Specification",
     "maturity": "WD",
     "wgs": [
@@ -1484,7 +2267,9 @@
     ]
   },
   "vibration": {
-    "title": "Vibration API",
+    "url": "https://www.w3.org/TR/vibration/",
+    "edDraft": "https://w3c.github.io/vibration/",
+    "title": "Vibration API (Second Edition)",
     "maturity": "REC",
     "wgs": [
       {
@@ -1494,6 +2279,8 @@
     ]
   },
   "video": {
+    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
+    "edDraft": "https://w3c.github.io/html/",
     "title": "HTML 5.2",
     "maturity": "REC",
     "wgs": [
@@ -1501,9 +2288,40 @@
         "label": "Web Platform Working Group",
         "url": "http://www.w3.org/WebPlatform/WG/"
       }
+    ],
+    "feature": "video element"
+  },
+  "videoworker": {
+    "url": "https://w3c.github.io/mediacapture-worker/",
+    "edDraft": "https://w3c.github.io/mediacapture-worker/",
+    "title": "Media Capture Stream with Worker",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Device and Sensors Working Group",
+        "url": "https://www.w3.org/2009/dap/"
+      },
+      {
+        "label": "Web Real-Time Communications Working Group",
+        "url": "https://www.w3.org/2011/04/webrtc/"
+      }
+    ]
+  },
+  "viewportapi": {
+    "url": "https://wicg.github.io/visual-viewport/",
+    "edDraft": "https://wicg.github.io/visual-viewport/",
+    "title": "Visual Viewport API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
     ]
   },
   "viewport-units": {
+    "url": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
+    "edDraft": "https://drafts.csswg.org/css-values/",
     "title": "CSS Values and Units Module Level 3",
     "maturity": "CR",
     "wgs": [
@@ -1511,9 +2329,12 @@
         "label": "Cascading Style Sheets (CSS) Working Group",
         "url": "http://www.w3.org/Style/CSS/members"
       }
-    ]
+    ],
+    "feature": "viewport-percentage lengths"
   },
   "wai-aria11": {
+    "url": "https://www.w3.org/TR/wai-aria-1.1/",
+    "edDraft": "https://w3c.github.io/aria/",
     "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
     "maturity": "REC",
     "wgs": [
@@ -1524,6 +2345,8 @@
     ]
   },
   "wake-lock": {
+    "url": "https://www.w3.org/TR/wake-lock/",
+    "edDraft": "https://w3c.github.io/wake-lock/",
     "title": "Wake Lock API",
     "maturity": "CR",
     "wgs": [
@@ -1534,6 +2357,8 @@
     ]
   },
   "wcag21": {
+    "url": "https://www.w3.org/TR/WCAG21/",
+    "edDraft": "https://w3c.github.io/wcag21/guidelines/",
     "title": "Web Content Accessibility Guidelines (WCAG) 2.1",
     "maturity": "CR",
     "wgs": [
@@ -1544,6 +2369,8 @@
     ]
   },
   "web-animations": {
+    "url": "https://www.w3.org/TR/web-animations-1/",
+    "edDraft": "https://w3c.github.io/web-animations/",
     "title": "Web Animations",
     "maturity": "WD",
     "wgs": [
@@ -1557,7 +2384,21 @@
       }
     ]
   },
+  "webassembly": {
+    "url": "https://webassembly.github.io/spec/",
+    "edDraft": "https://webassembly.github.io/spec/",
+    "title": "WebAssembly",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "WebAssembly Working Group",
+        "url": "https://www.w3.org/wasm/"
+      }
+    ]
+  },
   "webaudio": {
+    "url": "https://www.w3.org/TR/webaudio/",
+    "edDraft": "https://webaudio.github.io/web-audio-api/",
     "title": "Web Audio API",
     "maturity": "WD",
     "wgs": [
@@ -1568,6 +2409,8 @@
     ]
   },
   "webauthn": {
+    "url": "https://www.w3.org/TR/webauthn/",
+    "edDraft": "https://w3c.github.io/webauthn/",
     "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
     "maturity": "CR",
     "wgs": [
@@ -1577,7 +2420,69 @@
       }
     ]
   },
+  "webbluetooth": {
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "edDraft": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "title": "Web Bluetooth",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Bluetooth Community Group",
+        "url": "https://www.w3.org/community/web-bluetooth/"
+      }
+    ]
+  },
+  "web-lifecycle": {
+    "url": "https://github.com/WICG/web-lifecycle",
+    "edDraft": "https://github.com/WICG/web-lifecycle",
+    "title": "A Lifecycle for the Web",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "webmediaapi": {
+    "url": "https://w3c.github.io/webmediaapi/",
+    "edDraft": "https://w3c.github.io/webmediaapi/",
+    "title": "Web Media APIs 2017",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Media API Community Group",
+        "url": "https://www.w3.org/community/webmediaapi/"
+      }
+    ]
+  },
+  "webmediaguidelines": {
+    "url": "https://w3c.github.io/webmediaguidelines/",
+    "edDraft": "https://w3c.github.io/webmediaguidelines/",
+    "title": "Web Media Application Developer Guidelines",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web Media API Community Group",
+        "url": "https://www.w3.org/community/webmediaapi/"
+      }
+    ]
+  },
+  "webnfc": {
+    "url": "https://w3c.github.io/web-nfc/",
+    "edDraft": "https://w3c.github.io/web-nfc/",
+    "title": "Web NFC API",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Web NFC Community Group",
+        "url": "https://www.w3.org/community/web-nfc/"
+      }
+    ]
+  },
   "webrtc-qos": {
+    "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
     "title": "WebRTC 1.0: Real-time Communication Between Browsers",
     "maturity": "CR",
     "wgs": [
@@ -1585,19 +2490,48 @@
         "label": "Web Real-Time Communications Working Group",
         "url": "http://www.w3.org/2011/04/webrtc/"
       }
-    ]
+    ],
+    "feature": "Priority and QoS Model"
   },
   "webrtc-relay": {
+    "url": "https://www.w3.org/TR/webrtc//#dom-rtcpeerconnection-getdefaulticeservers",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
     "title": "WebRTC 1.0: Real-time Communication Between Browsers",
     "maturity": "CR",
     "wgs": [
       {
         "label": "Web Real-Time Communications Working Group",
         "url": "http://www.w3.org/2011/04/webrtc/"
+      }
+    ],
+    "feature": "Browser default ICE servers"
+  },
+  "web-share": {
+    "url": "https://wicg.github.io/web-share/",
+    "edDraft": "https://wicg.github.io/web-share/",
+    "title": "Web Share API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
+      }
+    ]
+  },
+  "web-share-target": {
+    "url": "https://wicg.github.io/web-share-target/",
+    "edDraft": "https://wicg.github.io/web-share-target/",
+    "title": "Web Share Target API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://www.w3.org/community/wicg/"
       }
     ]
   },
   "websockets": {
+    "url": "https://www.w3.org/TR/websockets/",
     "title": "The WebSocket API",
     "maturity": "CR",
     "wgs": [
@@ -1608,6 +2542,7 @@
     ]
   },
   "websql": {
+    "url": "https://www.w3.org/TR/webdatabase/",
     "title": "Web SQL Database",
     "maturity": "Retired",
     "wgs": [
@@ -1618,16 +2553,44 @@
     ]
   },
   "webstorage": {
-    "title": "Web Storage",
+    "url": "https://www.w3.org/TR/webstorage/",
+    "edDraft": "https://w3c.github.io/webstorage/",
+    "title": "Web Storage (Second Edition)",
     "maturity": "REC",
     "wgs": [
       {
-        "label": "Web Applications Working Group",
-        "url": "http://www.w3.org/2008/webapps/"
+        "label": "Web Platform Working Group",
+        "url": "http://www.w3.org/WebPlatform/WG/"
+      }
+    ]
+  },
+  "webusb": {
+    "url": "https://wicg.github.io/webusb/",
+    "edDraft": "https://wicg.github.io/webusb/",
+    "title": "WebUSB API",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "Web Platform Incubator Community Group",
+        "url": "https://wicg.github.io/webusb/"
+      }
+    ]
+  },
+  "webvr": {
+    "url": "https://w3c.github.io/webvr/",
+    "edDraft": "https://w3c.github.io/webvr/",
+    "title": "WebVR",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Immersive Web Community Group",
+        "url": "https://www.w3.org/community/webvr/"
       }
     ]
   },
   "webvtt": {
+    "url": "https://www.w3.org/TR/webvtt1/",
+    "edDraft": "https://w3c.github.io/webvtt/",
     "title": "WebVTT: The Web Video Text Tracks Format",
     "maturity": "WD",
     "wgs": [
@@ -1637,7 +2600,34 @@
       }
     ]
   },
+  "webworkers": {
+    "url": "https://html.spec.whatwg.org/multipage/workers.html",
+    "title": "HTML (Living Standard)",
+    "maturity": "LS",
+    "wgs": [],
+    "feature": "Web workers"
+  },
+  "webxr": {
+    "url": "https://immersive-web.github.io/webxr/spec/latest/",
+    "edDraft": "https://immersive-web.github.io/webxr/spec/latest/",
+    "title": "WebXR Device API",
+    "maturity": "ED",
+    "wgs": [
+      {
+        "label": "Immersive Web Community Group",
+        "url": "https://www.w3.org/community/webvr/"
+      }
+    ],
+    "polyfills": [
+      {
+        "label": "webxr-polyfill",
+        "url": "https://github.com/immersive-web/webxr-polyfill"
+      }
+    ]
+  },
   "woff2": {
+    "url": "https://www.w3.org/TR/WOFF2/",
+    "edDraft": "https://w3c.github.io/woff/woff2/",
     "title": "WOFF File Format 2.0",
     "maturity": "REC",
     "wgs": [
@@ -1648,12 +2638,48 @@
     ]
   },
   "woff": {
+    "url": "https://www.w3.org/TR/WOFF/",
     "title": "WOFF File Format 1.0",
     "maturity": "REC",
     "wgs": [
       {
         "label": "Web Fonts Working Group",
         "url": "http://www.w3.org/Fonts/WG/"
+      }
+    ]
+  },
+  "wot-api": {
+    "url": "https://w3c.github.io/wot-scripting-api/",
+    "edDraft": "https://w3c.github.io/wot-scripting-api/",
+    "title": "Web of Things (WoT) Scripting API",
+    "maturity": "WD",
+    "wgs": [
+      {
+        "label": "Web of Things Working Group",
+        "url": "https://www.w3.org/WoT/WG/"
+      }
+    ]
+  },
+  "wot-description": {
+    "url": "https://w3c.github.io/wot-thing-description/",
+    "edDraft": "https://w3c.github.io/wot-thing-description/",
+    "title": "Web of Things (WoT) Thing Description",
+    "maturity": "WD",
+    "wgs": [
+      {
+        "label": "Web of Things Working Group",
+        "url": "https://www.w3.org/WoT/WG/"
+      }
+    ]
+  },
+  "xhr": {
+    "url": "https://xhr.spec.whatwg.org/",
+    "title": "XMLHttpRequest",
+    "maturity": "LS",
+    "wgs": [
+      {
+        "label": "WHATWG",
+        "url": "https://whatwg.org/"
       }
     ]
   }

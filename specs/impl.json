@@ -25,16 +25,23 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "chromestatus"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
         "source": "chromestatus"
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome"
     ],
+    "experimental": [],
     "indevelopment": [],
-    "consideration": [],
+    "consideration": [
+      "edge"
+    ],
     "polyfills": [
       {
         "label": "sensor-polyfills",
@@ -2551,6 +2558,11 @@
         "source": "caniuse"
       },
       {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "caniuse"
+      },
+      {
         "ua": "firefox",
         "status": "experimental",
         "source": "caniuse"
@@ -4269,16 +4281,23 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "chromestatus"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
         "source": "chromestatus"
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome"
     ],
+    "experimental": [],
     "indevelopment": [],
-    "consideration": [],
+    "consideration": [
+      "edge"
+    ],
     "polyfills": [
       {
         "label": "sensor-polyfills",
@@ -5563,16 +5582,23 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "chromestatus"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
         "source": "chromestatus"
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome"
     ],
+    "experimental": [],
     "indevelopment": [],
-    "consideration": []
+    "consideration": [
+      "edge"
+    ]
   },
   "media-capabilities": {
     "implementations": [],
@@ -6334,16 +6360,23 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "chromestatus"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
         "source": "chromestatus"
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome"
     ],
+    "experimental": [],
     "indevelopment": [],
-    "consideration": [],
+    "consideration": [
+      "edge"
+    ],
     "polyfills": [
       {
         "label": "sensor-polyfills",
@@ -7102,6 +7135,11 @@
         "source": "caniuse"
       },
       {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "caniuse"
+      },
+      {
         "ua": "firefox",
         "status": "shipped",
         "source": "caniuse"
@@ -7211,6 +7249,11 @@
   },
   "push": {
     "implementations": [
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "caniuse"
+      },
       {
         "ua": "edge",
         "status": "experimental",
@@ -8219,6 +8262,11 @@
   },
   "sri": {
     "implementations": [
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "caniuse"
+      },
       {
         "ua": "edge",
         "status": "experimental",
