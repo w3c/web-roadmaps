@@ -1,10 +1,11 @@
 sudo: false
 language: node_js
 node_js:
-- 'node'
+- node
 script:
 - bash "./deploy.sh"
 env:
   global:
-  - ENCRYPTION_LABEL: "8a84087ed6cb"
-  - COMMIT_AUTHOR_EMAIL: "plh+deploy@w3.org"
+  - ENCRYPTION_LABEL: 8a84087ed6cb
+  - COMMIT_AUTHOR_EMAIL: plh+deploy@w3.org
+  - W3C_API_KEY: pnvbbs930w0wkkckowww0sk0wocow0k

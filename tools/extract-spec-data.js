@@ -1,6 +1,6 @@
 /*******************************************************************************
 Helper script that parses data files and fetches additional information from
-the W3C API.
+the W3C API for TR specs and from Specref for other specs.
 
 To parse files:
 node tools/extract-spec-data.js data/3dcamera.json data/webvtt.json
@@ -8,20 +8,40 @@ node tools/extract-spec-data.js data/3dcamera.json data/webvtt.json
 
 const fetch = require('fetch-filecache-for-crawling');
 const path = require('path');
-const DOMParser = require('xmldom').DOMParser;
-const xpath = require('xpath');
+const fs = require('fs');
+const https = require('https');
 
-const namespaces = {
-  'c': 'http://www.w3.org/2000/10/swap/pim/contact#',
-  'o': 'http://www.w3.org/2001/04/roadmap/org#',
-  'd': 'http://www.w3.org/2000/10/swap/pim/doc#',
-  'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-  'rec': 'http://www.w3.org/2001/02pd/rec54#',
-  'dc': 'http://purl.org/dc/elements/1.1/'
+
+/**
+ * Possible maturity levels for specifications
+ *
+ * The list only exists to perform a sanity check on data.
+ */
+const maturities = [
+  'ED',
+  'WD',
+  'LS',
+  'CR',
+  'PR',
+  'REC',
+  'Retired',
+  'NOTE'
+];
+
+/**
+ * Mapping for some maturity status values
+ */
+const maturityMapping = {
+  'Working Draft': 'WD',
+  'Candidate Recommendation': 'CR',
+  'Proposed Recommendation': 'PR',
+  'Recommendation': 'REC',
+  'LastCall': 'WD',
+  'Unofficial Draft': 'ED',
+  'Draft Community Group Report': 'ED',
+  'Living Standard': 'LS',
+  'Group Note': 'NOTE'
 };
-const xselect = xpath.useNamespaces(namespaces);
-
-const maturities = ['LastCall', 'WD', 'CR', 'PR', 'REC', 'Retired', 'NOTE'];
 
 
 /**
@@ -42,125 +62,296 @@ function requireFromWorkingDirectory(filename) {
 }
 
 
-async function fetchXml(url) {
-  let response = await fetch(url);
-  let text = await response.text();
-  return new DOMParser().parseFromString(text);
+/**
+ * Return true if given spec is a TR document.
+ *
+ * The current spec is considered to be a TR document when:
+ * 1. it defines its URL in a "TR" property
+ * 2. the URL it defines looks like a TR URL
+ * 3. it does not define any URL (filename is considered to be the TR shortname
+ * when that happens)
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {Boolean} True if spec should be considered to be a TR spec
+ */
+function isTRSpec(spec) {
+  let data = spec.data || {};
+  let specUrl = data.url || data.TR || data.edDraft || data.editors || data.ls;
+  return (!!data.TR || !specUrl || specUrl.toLowerCase().includes('w3.org/tr/'));
 }
 
 
-async function extractSpecData(files) {
-  files = (files || []).map(file => {
-    return {
-      id: file.split('/').pop().split('.')[0],
-      file
-    };
-  });
-
-  let trsXml = await fetchXml('http://www.w3.org/2002/01/tr-automation/tr.rdf');
-  let wgsXml = await fetchXml('http://www.w3.org/2000/04/mem-news/public-groups.rdf');
-  let closedWgsXml = await fetchXml('http://www.w3.org/2000/04/mem-news/closed-groups.rdf');
-
-  // XPath implementation is slow, so let's index what we need
-  // (generation takes ~1s with the indexation, >1 min without it)
-  let trs = {};
-  xselect('/rdf:RDF/*/d:versionOf[@rdf:resource]', trsXml)
-    .map(element => {
-      let attr = xselect('string(@rdf:resource)', element);
-      if (!trs[attr]) trs[attr] = element.parentNode;
-    });
-
-  let wgs = {};
-  xselect('/rdf:RDF/*[c:homePage/@rdf:resource]', wgsXml)
-    .map(element => {
-      let homePageUrl = xselect('string(c:homePage/@rdf:resource)', element, true);
-      if (!wgs[homePageUrl]) wgs[homePageUrl] = element;
-    });
-  xselect('/rdf:RDF/*[c:homePage/@rdf:resource]', closedWgsXml)
-    .map(element => {
-      let homePageUrl = xselect('string(c:homePage/@rdf:resource)', element, true);
-      if (!wgs[homePageUrl]) wgs[homePageUrl] = element;
-    });
+/**
+ * Return the shortname for the spec.
+ *
+ * If the spec is a TR spec, that shortname is after /TR/ in the URL. Otherwise
+ * we'll consider that the file name is the shortname.
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {String} The spec's shortname
+ */
+function getShortname(spec) {
+  let data = spec.data || {};
+  let specUrl = data.url || data.TR || data.edDraft || data.editors || data.ls;
+  return (isTRSpec(spec) && specUrl) ?
+    specUrl.split('/')[4] :
+    spec.id;
+}
 
 
-  async function parseDataFile(spec) {
-    let data = requireFromWorkingDirectory(spec.file);
-    if (!data.TR) {
-      return;
+/**
+ * Return the URL of spec as entered in the data file
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {String} The URL of the spec
+ */
+function getSpecUrl(spec) {
+  return spec.data.url || spec.data.TR || spec.data.edDraft ||
+    spec.data.editors || spec.data.ls;
+}
+
+
+/**
+ * Return the URL to use to search for additional info about the given spec in
+ * Specref.
+ *
+ * Note the returned URL is not meant to be used to fetch the spec. The logic
+ * may "break" the initial URL in particular.
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {String} The Specref lookup URL to use
+ */
+function getUrlForReverseLookup(spec) {
+  let data = spec.data;
+  if (!data) return;
+
+  let specUrl = getSpecUrl(spec);
+  if (isTRSpec(spec)) {
+    if (specUrl) {
+      return 'https:/' + specUrl.split('/').slice(1, 5).join('/');
     }
-
-    let urlParts = (data.TR || '').split('/');
-    if (urlParts.length === 1) {
-      return;
+    else {
+      return 'https://www.w3.org/TR/' + getShortname(spec);
     }
-
-    let trLatest = 'http:/' + urlParts.slice(1, 5).join('/');
-    let trLatestHttps = 'https:/' + urlParts.slice(1, 5).join('/');
-
-    //let tr = xselect(`/rdf:RDF/*[d:versionOf/@rdf:resource='${trLatest}' or d:versionOf/@rdf:resource='${trLatest}/' or d:versionOf/@rdf:resource='${trLatestHttps}' or d:versionOf/@rdf:resource='${trLatestHttps}/']`, trs, true);
-    let tr = trs[trLatest] || trs[trLatest + '/'] ||
-      trs[trLatestHttps] || trs[trLatestHttps + '/'];
-    if (!tr) {
-      throw new Error(`${spec.id}: ${trLatest} not found in tr.rdf`);
+  }
+  else {
+    let parts = specUrl.split('#')[0].split('/');
+    if (parts[parts.length - 1].endsWith('.html')) {
+      parts = parts.slice(0, -1);
     }
+    return parts.join('/');
+  }
+}
 
-    let title = xselect('string(dc:title/text())', tr, true);
-    let maturityUrls = xselect('rdf:type/@rdf:resource', tr);
-    let maturityTypes = maturityUrls
-      .map(attr => attr.value)
-      .map(url => url.split('#')[1])
-      .filter(type => !!type);
-    maturityTypes.push(tr.tagName);
 
-    let maturity = maturityTypes.reduce((mat1, mat2) =>
-      (!maturities.includes(mat2) ||
-        (maturities.includes(mat1) && (maturities.indexOf(mat1) < maturities.indexOf(mat2)))) ?
-      mat1 : mat2);
+/**
+ * Fetch a JSON resource on the network.
+ *
+ * @function
+ * @param {String} url URL to fetch
+ * @param {Object} options Fetch options
+ * @return {Promise<Object>} Promise to get the JSON result. The promise gets
+ *  rejected when a network error occurs or when the server returns an HTTP
+ *  status code different from 200.
+ */
+async function fetchJson(url, options) {
+  let response = await fetch(url, options);
+  if (response.status !== 200) {
+    throw new Error(`Fetch returned a non OK HTTP status code (url: ${url})`);
+  }
+  return response.json();
+}
 
-    let wgsUrls = xselect('o:deliveredBy/c:homePage/@rdf:resource', tr)
-      .map(attr => attr.value);
 
-    let specData = {
-      title,
-      maturity,
-      wgs: wgsUrls.map(url => {
-        let label = (wgs[url] ? xselect('string(o:name/text())', wgs[url]) : null);
-        if (!label) {
-          // TODO: ignored for the time being but we should probably do something about it
-          // such as complete the list of closed groups
-          console.error(`${spec.id}: No group with home page ${url} found in public-groups.rdf nor closed-groups.rdf`);
-        }
-        let wg = {};
-        if (label) {
-          wg.label = label;
-        }
-        wg.url = url;
-        return wg;
-      })
-    };
+/**
+ * Take a list of data files, fetch and return info about the underlying spec
+ * using the W3C API or Specref.
+ *
+ * @function
+ * @public
+ * @param {Array<String>} files The list of data files to process.
+ * @param {Object} config Configuration settings, "w3cApiKey" property required
+ * @return {Promise<Object>} Promise to get an object that contains additional
+ *   information about specs referenced by the data files
+ */
+async function extractSpecData(files, config) {
+  let specs = (files || []).map(file => Object.assign({
+    file,
+    id: file.split(/\/|\\/).pop().split('.')[0],
+    data: requireFromWorkingDirectory(file)
+  }));
 
-    return {
-      id: spec.id,
-      data: specData
-    };
+  // Create a dedicated HTTP agent with socket pooling enabled for requests to
+  // the W3C API server as it does not like being bothered too much at once
+  let w3cHttpOptions = {
+    agent: new https.Agent({ maxSockets: 5 }),
+    keepAlive: true,
+    headers: {
+      'Authorization': `W3C-API apikey="${config.w3cApiKey}"`,
+      'Origin': 'https://www.w3.org'
+    }
+  };
+
+  // Fetch spec info from Specref when spec is not a TR spec.
+  // (Proceed in chunks not to end up with a URL that is thousands of bytes
+  // long, and only fetch a given lookup URL once)
+  let lookupUrls = specs
+    .filter(spec => !isTRSpec(spec))
+    .map(spec => encodeURIComponent(getUrlForReverseLookup(spec)))
+    .filter((url, index, self) => self.indexOf(url) === index);
+  let lookupChunks = [];
+  let chunkSize = 10;
+  for (let i = 0, j = lookupUrls.length; i < j; i += chunkSize) {
+    let chunk = lookupUrls.slice(i, i + chunkSize);
+    lookupChunks.push(chunk);
   }
 
-  return Promise.all(
-    files.map(file => parseDataFile(file).catch(err => console.error(err)))
-  ).then(results => {
-    let res = {};
-    results.forEach(spec => {
-      if (!spec) return;
-      res[spec.id] = spec.data;
+  let specsInfo = {};
+  for (let chunk of lookupChunks) {
+    let info = await fetchJson(
+      `https://api.specref.org/reverse-lookup?urls=${chunk.join(',')}`);
+    specsInfo = Object.assign(specsInfo, info);
+  }
+
+  async function fetchSpecInfo(spec) {
+    let trInfo = {};
+    let lookupInfo = {};
+
+    if (isTRSpec(spec)) {
+      // For TR specs, retrieve spec and group info from W3C API
+      let shortname = getShortname(spec);
+      let latestInfo = await fetchJson(
+        `https://api.w3.org/specifications/${shortname}/versions/latest`,
+        w3cHttpOptions);
+      trInfo = {
+        url: latestInfo.shortlink,
+        edDraft: latestInfo['editor-draft'],
+        title: latestInfo.title,
+        status: latestInfo.status
+      };
+      let deliverersJson = await fetchJson(
+        latestInfo._links.deliverers.href + `?embed=1`,
+        w3cHttpOptions);
+      trInfo.deliveredBy = deliverersJson._embedded.deliverers.map(deliverer => Object.assign({
+        label: deliverer.name,
+        url: deliverer._links.homepage.href
+      }));
+    }
+    else {
+      // For other specs, use info returned by Specref
+      lookupInfo = specsInfo[getUrlForReverseLookup(spec)] || {};
+    }
+
+    let info = {
+      url: getSpecUrl(spec) || trInfo.url || lookupInfo.href,
+      edDraft: spec.data.edDraft || spec.data.editors || trInfo.edDraft || lookupInfo.edDraft,
+      title: spec.data.title || trInfo.title || lookupInfo.title,
+      status: spec.data.status || trInfo.status || lookupInfo.status || 'ED',
+      deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || []
+    };
+
+    // Spec must have a title, either retrieved from Specref or defined in
+    // the data file. Throw an error if that is not the case so that someone
+    // completes the data.
+    if (!info.title) {
+      throw new Error(`No title found for ${spec.id}`);
+    }
+
+    // Maturity status must be a known value. Throw an error if that is not the
+    // case so that someone investigates.
+    if (maturityMapping[info.status]) {
+      info.status = maturityMapping[info.status];
+    }
+    if (!maturities.includes(info.status)) {
+      throw new Error(`- ${spec.id}: Unknown maturity status (status: ${info.status})`);
+    }
+
+    return { id: spec.id, data: spec.data, info };
+  }
+
+
+  let resultsArray = await Promise.all(specs.map(fetchSpecInfo));
+  let results = {};
+  for (let result of resultsArray) {
+    let info = result.info;
+    results[result.id] = {
+      url: info.url,
+      edDraft: info.edDraft,
+      title: info.title,
+      maturity: info.status,
+      wgs: (info.deliveredBy || []).map(group => {
+        if (!group.label) {
+          // TODO: ignored for the time being but we should probably do
+          // something about it such as complete the data file
+          console.error(`- ${result.id}: Deliverer group not found (home page: ${group.url})`);
+        }
+        let wg = {};
+        if (group.label) {
+          wg.label = group.label;
+        }
+        wg.url = group.url;
+        return wg;
+      })
+    }
+
+    // Complete spec info with other properties of interest from data file
+    Object.keys(result.data).forEach(key => {
+      if (['impl', 'TR', 'editors', 'ls'].includes(key) ||
+          results[result.id].hasOwnProperty(key)) {
+        return;
+      }
+      results[result.id][key] = result.data[key];
     });
-    return res;
-  });
+  }
+  return results;
 }
 
+
+/*******************************************************************************
+Export main function to allow use as a module
+*******************************************************************************/
 module.exports.extractSpecData = extractSpecData;
 
+
+/*******************************************************************************
+If run from the command-line, process the list of files provided
+*******************************************************************************/
 if (require.main === module) {
-  const files = process.argv.slice(2);
-  extractSpecData(files)
-    .then(data => console.log(JSON.stringify(data, null, 2)));
+  let config = {};
+  try {
+    config = requireFromWorkingDirectory('config.json');
+  }
+  catch (err) {}
+
+  // Read the W3C API key from the environment if defined there
+  if (process.env.W3C_API_KEY) {
+    config.w3cApiKey = process.env.W3C_API_KEY;
+  }
+
+  if (!config.w3cApiKey) {
+    // Cannot retrieve the information without an API key!
+    console.error('No key found to access the W3C API.' +
+      ' Define a W3C_API_KEY environment variable' +
+      ' or create a config.json file with a "w3cApiKey" property');
+    process.exit(1);
+  }
+
+  const files = process.argv.slice(2).map(file => {
+    let stat = fs.statSync(file);
+    if (stat.isDirectory()) {
+      let contents = fs.readdirSync(file);
+      return contents.filter(f => f.endsWith('.json'))
+        .map(f => path.join(file, f));
+    }
+    else {
+      return file;
+    }
+  }).reduce((res, files) => res.concat(files), []);
+  extractSpecData(files, config)
+    .then(data => console.log(JSON.stringify(data, null, 2)))
+    .catch(err => console.error(err));
 }
