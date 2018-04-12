@@ -342,16 +342,16 @@ const fillCell = function (el, data, image) {
 const maturityData = function (spec) {
   return {
     maturity: {
-      label: spec.maturity,
-      level: maturityLevels[spec.maturity] || 'low'
+      label: spec.status,
+      level: maturityLevels[spec.status] || 'low'
     },
-    maturityIcon: !spec.maturity ? null : {
+    maturityIcon: !spec.status ? null : {
       src: 'https://www.w3.org/2013/09/wpd-rectrack-icons/' +
-        spec.maturity.toLowerCase().replace(/lastcall/,'lcwd') +
+        spec.status.toLowerCase().replace(/lastcall/,'lcwd') +
         '.svg',
-      alt: spec.maturity,
+      alt: spec.status,
       width: 50,
-      height: (spec.maturity === 'REC' || spec.maturity === 'LastCall') ? 53 : 50
+      height: (spec.status === 'REC' || spec.status === 'LastCall') ? 53 : 50
     }
   };
 };
