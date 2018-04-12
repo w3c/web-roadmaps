@@ -7,6 +7,7 @@ node tools/extract-impl-data.js data/3dcamera.json data/webvtt.json
 *******************************************************************************/
 
 const fetch = require('fetch-filecache-for-crawling');
+const fs = require('fs');
 const path = require('path');
 
 
@@ -29,21 +30,6 @@ function requireFromWorkingDirectory(filename) {
 
 
 /**
- * Map User Agent name returned by a source to an internal name shared across
- * sources.
- *
- * @function
- * @param {String} ua The User-Agent name to normalize
- * @param {String} sourceName The name of the source
- * @return {String} The normalized User-Agent name
- */
-function normalizeUA(ua, sourceName) {
-  // No specific logic for now
-  return ua;
-}
-
-
-/**
  * Implementation data sources
  *
  * Some of these sources are maintained by browser vendors, and thus contain
@@ -53,32 +39,80 @@ function normalizeUA(ua, sourceName) {
 let sources = {
   caniuse: {
     url: "https://caniuse.com/data.json",
+    userAgents: {
+      'and_chr': 'chrome_android',
+      'and_ff': 'firefox_android',
+      'and_qq': 'qq_android',
+      'and_uc': 'uc_android',
+      'baidu': 'baidu',
+      'chrome': 'chrome',
+      'edge': 'edge',
+      'firefox': 'firefox',
+      'ios_saf': 'safari_ios',
+      'op_mini': 'opera_mini',
+      'op_mob': 'opera_android',
+      'opera': 'opera',
+      'safari': 'safari',
+      'samsung': 'samsunginternet_android'
+    },
     getImplStatus: function (key) {
       let source = 'caniuse';
       let sourcedata = sources[source].data;
       let impl = [];
       let impldata = sourcedata.data[key].stats;
+      let implnotes = sourcedata.data[key].notes_by_num;
       Object.keys(impldata).forEach(ua => {
         let uadata = impldata[ua];
         let latestUAVersion = sourcedata.agents[ua].versions.slice(-4, -3);
         let experimentalUAversions = sourcedata.agents[ua].versions.slice(-3);
 
-        ua = normalizeUA(ua, source);
-        if (uadata[latestUAVersion].startsWith('y') ||
-            uadata[latestUAVersion].startsWith('a')) {
-          impl.push({ ua, status: 'shipped', source });
+        // Only save implementation info for UA we're interested in,
+        // and normalize UA name
+        if (!(ua in sources[source].userAgents)) {
+          return;
         }
-        else if (uadata[latestUAVersion].startsWith('n d')) {
-          impl.push({ ua, status: 'experimental', source });
+        ua = sources[source].userAgents[ua];
+
+        function parseStatus(caniuseStatus, experimental) {
+          let res = { ua };
+          if (caniuseStatus.startsWith('y') || caniuseStatus.startsWith('a')) {
+            res.status = (experimental ? 'experimental' : 'shipped');
+          }
+          else if (caniuseStatus.startsWith('n d')) {
+            res.status = 'experimental';
+          }
+          if (caniuseStatus.includes('x')) {
+            res.prefix = true;
+          }
+          if (caniuseStatus.includes('d')) {
+            res.flag = true;
+          }
+          if ((res.status === 'shipped') && (res.prefix || res.flag)) {
+            res.status = 'experimental';
+          }
+          let notes = caniuseStatus.split(' ')
+            .filter(token => token.startsWith('#'))
+            .map(noteid => implnotes[noteid.slice(1)])
+            .filter(note => !!note);
+          if (notes.length > 0) {
+            res.notes = notes;
+          }
+          res.source = source;
+          return res;
+        }
+
+        let info = parseStatus(uadata[latestUAVersion]);
+        if ((info.status === 'shipped') || (info.status === 'experimental')) {
+          impl.push(info);
         }
         else {
           experimentalUAversions.forEach(version => {
             if (!version) return;
-            if (uadata[version].startsWith('y') ||
-                uadata[version].startsWith('n d')) {
-              impl.push({ ua, status: 'experimental', source});
+            let info = parseStatus(uadata[version], true);
+            if (info.status === 'experimental') {
+              impl.push(info);
             }
-          })
+          });
         }
       });
       return impl;
@@ -92,44 +126,96 @@ let sources = {
       let sourcedata = sources[source].data;
       let ua = 'chrome';
       let impl = [];
-      let matchingData = sourcedata.find(feature => feature.id === key);
-      let implstatus = {
-        chrome: null,
-        firefox: null,
-        edgestatus: null,
-        safaristatus: null
-      };
-      if (matchingData) {
-        let impldata = matchingData.browsers;
-        implstatus.chrome = impldata.chrome.status.text;
-        implstatus.firefox = impldata.ff.view.text;
-        implstatus.edge = impldata.edge.view.text;
-        implstatus.safari = impldata.safari.view.text;
+      let impldata = sourcedata.find(feature => feature.id === key);
+      if (impldata) {
+        impldata = impldata.browsers;
       }
-      else {
-        console.error(`Unknown Chrome feature ${key}`);
-        // TODO: throw an error
+      if (!impldata) {
+        throw new Error(`Unknown Chrome feature ${key}`);
       }
 
-      Object.keys(implstatus).forEach(ua => {
-        switch (implstatus[ua]) {
+      function parseStatus(chromestatus) {
+        if (!chromestatus) {
+          return null;
+        }
+        let status = (chromestatus.status ?
+          chromestatus.status.text :
+          chromestatus.view.text);
+        let res = {};
+        switch (status) {
           case 'Enabled by default':
           case 'Shipped':
-            impl.push({ ua, status: 'shipped', source });
+            res.status = 'shipped';
             break;
           case 'Behind a flag':
           case 'Origin trial':
-            impl.push({ ua, status: 'experimental', source });
+            res.status = 'experimental';
             break;
           case 'In development':
-            impl.push({ ua, status: 'indevelopment', source });
+            res.status = 'indevelopment';
             break;
           case 'Proposed':
           case 'Public support':
-            impl.push({ ua, status: 'consideration', source });
+            res.status = 'consideration';
+            break;
+          case 'No public signals':
+          case 'Mixed public signals':
+          case 'Public skepticism':
+          case 'Opposed':
+            res.status = '';
+            break;
+          default:
+            console.warn(`- Unknown chrome status ${status}`);
             break;
         }
-      });
+        if (chromestatus.prefixed) {
+          res.prefix = true;
+        }
+        if (chromestatus.flag || (status === 'Behind a flag')) {
+          res.flag = true;
+        }
+        if ((res.status === 'shipped') && (res.prefix || res.flag)) {
+          res.status = 'experimental';
+        }
+        res.source = source;
+        return res;
+      }
+
+      for (let ua of ['chrome', 'ff', 'edge', 'safari']) {
+        let info = parseStatus(impldata[ua]);
+        ua = (ua === 'ff' ? 'firefox' : ua);
+        if (info) {
+          // Chromestatus has more detailed implementation info about Chrome
+          // ("in development" and "consideration" are at the Chromium level
+          // and thus apply to Chrome for desktops and Chrome for Android)
+          let enabledOnAllPlatforms = (info.status === 'indevelopment') ||
+              (info.status === 'consideration') ||
+              (impldata.chrome.status.milestone_str === 'Enabled by default');
+          if (ua === 'chrome') {
+            if (impldata.chrome.desktop || enabledOnAllPlatforms) {
+              impl.push(Object.assign({ ua: 'chrome'}, info));
+            }
+            if (impldata.chrome.android || enabledOnAllPlatforms) {
+              impl.push(Object.assign({ ua: 'chrome_android'}, info));
+            }
+          }
+          else {
+            impl.push(Object.assign({ ua }, info));
+          }
+        }
+      }
+
+      // Support in Opera is reported differently, not exactly sure how
+      // to read that info though (typically, if it completes "chrome" info,
+      // we should take the prefix and flag info from "chrome" into account)
+      if (impldata.opera) {
+        if (impldata.opera.desktop) {
+          impl.push({ ua: 'opera', status: 'shipped', source });
+        }
+        if (impldata.opera.android) {
+          impl.push({ ua: 'opera_android', status: 'shipped', source });
+        }
+      }
 
       return impl;
     }
@@ -144,28 +230,46 @@ let sources = {
       let sourcedata = sources[source].data;
       let impl = [];
       let impldata = sourcedata.find(feature => feature[property] === key);
-      let edgestatus = '';
       if (impldata) {
-        edgestatus = impldata.ieStatus.text;
+        let edgestatus = impldata.ieStatus.text;
+        let res = { ua };
+        switch (edgestatus) {
+          case 'Shipped':
+            res.status = 'shipped';
+            break;
+          case 'Preview Release':
+          case 'Prefixed':
+            res.status = 'experimental';
+            break;
+          case 'In Development':
+            res.status = 'indevelopment';
+            break;
+          case 'Under Consideration':
+            res.status = 'consideration';
+            break;
+          case 'Not currently planned':
+            res.status = '';
+            break;
+          default:
+            console.warn(`- Unknown edge status ${edgestatus}`);
+            break;
+        }
+        if (impldata.ieStatus.iePrefixed && !impldata.ieStatus.ieUnprefixed) {
+          res.prefix = true;
+        }
+        if (impldata.ieStatus.flag) {
+          res.flag = true;
+        }
+        if ((res.status === 'shipped') && (res.prefix || res.flag)) {
+          res.status = 'experimental';
+        }
+        res.source = source;
+        if (res.status || (res.status === '')) {
+          impl.push(res);
+        }
       }
       else if (property === 'name') {
-        console.error(`Unknown Edge feature ${key} (property ${property})`);
-        // TODO throw an error
-      }
-      switch (edgestatus) {
-        case 'Shipped':
-        case 'Prefixed':
-          impl.push({ ua, status: 'shipped', source });
-          break;
-        case 'Preview Release':
-          impl.push({ ua, status: 'experimental', source });
-          break;
-        case 'In Development':
-          impl.push({ ua, status: 'indevelopment', source });
-          break;
-        case 'Under Consideration':
-          impl.push({ ua, status: 'consideration', source });
-          break;
+        throw new Error(`Unknown Edge feature ${key} (property ${property})`);
       }
       return impl;
     }
@@ -184,19 +288,53 @@ let sources = {
         keyType = 'features';
       }
       let keyName = key.split('-').slice(1).join(' ');
-      let impldata = sourcedata[keyType].find(feature => feature.name.toLowerCase() === keyName);
-      let webkitstatus = (impldata.status || {}).status;
-      switch (webkitstatus) {
-        case 'Done':
-        case 'Partial Support':
-          impl.push({ ua, status: 'shipped', source });
-          break;
-        case 'In Development':
-          impl.push({ ua, status: 'indevelopment', source });
-          break;
-        case 'Under Consideration':
-          impl.push({ ua, status: 'consideration', source });
-          break;
+      let impldata = sourcedata[keyType]
+        .find(feature => feature.name.toLowerCase() === keyName);
+      if (!impldata) {
+        throw new Error(`Unknown webkit feature ${key}`);
+      }
+      impldata = impldata.status;
+      if (impldata) {
+        let webkitstatus = impldata.status;
+        let res = { ua };
+        switch (webkitstatus) {
+          case 'Supported':
+          case 'Partially Supported':
+            res.status = 'shipped';
+            break;
+          case 'Supported In Preview':
+            res.status = 'experimental';
+            break;
+          case 'In Development':
+            res.status = 'indevelopment';
+            break;
+          case 'Under Consideration':
+            res.status = 'consideration';
+            break;
+          default:
+            console.warn(`- Unknown status ${webkitstatus}`);
+        }
+
+        if (('enabled_by_default' in impldata) &&
+            !impldata.enabled_by_default) {
+          res.flag = true;
+        }
+        // No specific info about whether implementation requires use of a
+        // prefix but that seems to be noted in comments, so let's assume that
+        // the presence of the term "prefixed" is a good-enough indicator.
+        if (impldata.comment && impldata.comment.includes(' prefixed')) {
+          res.prefix = true;
+        }
+        if ((res.status === 'shipped') && (res.prefix || res.flag)) {
+          res.status = 'experimental';
+        }
+        if (impldata.comment) {
+          res.notes = [impldata.comment];
+        }
+        res.source = source;
+        if (res.status || (res.status === '')) {
+          impl.push(res);
+        }
       }
       return impl;
     }
@@ -212,11 +350,17 @@ let sources = {
             status: d.status,
             source: d.source || 'other'
           };
+          if (d.prefix) {
+            implstatus.prefix = true;
+          }
+          if (d.flag) {
+            implstatus.flag = true;
+          }
           if (d.date) {
             implstatus.date = d.date;
           }
           if (d.comment) {
-            implstatus.comment = d.comment;
+            implstatus.notes = [d.comment];
           }
           impl.push(implstatus);
         });
@@ -235,7 +379,7 @@ let sources = {
 async function fetchImplData() {
   return Promise.all(Object.keys(sources).map(async function (source) {
     if (sources[source].url) {
-      let response = await fetch(sources[source].url)
+      let response = await fetch(sources[source].url, { timeout: 300000 })
       let data = await response.json();
       sources[source].data = data;
     }
@@ -256,7 +400,7 @@ async function extractImplData(files) {
   // Loop through files and compute the implementation status for each of them
   let impldata = {};
   files.forEach(file => {
-    let id = file.split('/').slice(-1)[0].split('.')[0];
+    let id = file.split(/\/|\\/).pop().split('.')[0];
     let feature = requireFromWorkingDirectory(file);
     let implementations = [];
 
@@ -421,7 +565,18 @@ module.exports.extractImplData = extractImplData;
 
 
 if (require.main === module) {
-  const files = process.argv.slice(2);
+  const files = process.argv.slice(2).map(file => {
+    let stat = fs.statSync(file);
+    if (stat.isDirectory()) {
+      let contents = fs.readdirSync(file);
+      return contents.filter(f => f.endsWith('.json'))
+        .map(f => path.join(file, f));
+    }
+    else {
+      return file;
+    }
+  }).reduce((res, files) => res.concat(files), []);
+
   extractImplData(files)
     .then(data => console.log(JSON.stringify(data, null, 2)));
 }
