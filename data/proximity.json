@@ -11,7 +11,7 @@
         "comment": "The version based on the Generic Sensor API is not what is shipping in Firefox, see https://github.com/w3c/web-roadmaps/issues/160"
       },
       {
-        "ua": "and_ff",
+        "ua": "firefox_android",
         "status": "",
         "source": "feedback",
         "date": "2018-03-19",

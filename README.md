@@ -104,6 +104,8 @@ When this happens, you may use the `other` sub-property to specify implementatio
 * `source` (optional but recommended): a short name that identifies the origin of the information. Use `feedback` to flag information that comes from review and that should override whatever other implementation status the framework might be able to retrieve automatically for the user agent under consideration.
 * `date` (optional but recommended): the `YYYY-MM-DD` date at which that manually information was last reviewed. Keeping implementation information up to date, is difficult, and error prone. The information needs to be periodically checked and re-validated. The date is meant to track the last time when someone checked and validated the information.
 * `comment` (optional but recommended): a comment that provides contextual information, for instance to explain why the information in platform status sources should be regarded as incorrect.
+* `prefix` (optional): whether the implementation requires the use of a prefix
+* `flag` (optional): whether some flag needs to be set to enable the feature
 
 For instance, let's say that "Can I use" report that a particular feature is in development in Webkit, whereas you know that the feature has not yet been considered there; and that it does not report anything on status in Edge, whereas you know from discussion with the Edge team that it is being considered, you could add:
 
@@ -234,7 +236,7 @@ If you would like to visualize the contents of a roadmap locally as it would app
 
 1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done
 2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key
-3. Run the [Makefile](Makefile) to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
+3. Run `npm run all` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
 4. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
 
 ## Translating a roadmap

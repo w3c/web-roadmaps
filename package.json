@@ -6,6 +6,8 @@
     "xpath": "0.0.27"
   },
   "scripts": {
-    "specinfo": "node tools/extract-spec-data.js data > specs/tr.json"
+    "all": "npm run specinfo && npm run implinfo",
+    "specinfo": "node tools/extract-spec-data.js data > specs/tr.json",
+    "implinfo": "node tools/extract-impl-data.js data > specs/impl.json"
   }
 }

@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
 
-node tools/extract-spec-data.js data/*.json > specs/tr.json
-node tools/extract-impl-data.js data/*.json > specs/impl.json
+node tools/extract-spec-data.js data > specs/tr.json
+node tools/extract-impl-data.js data > specs/impl.json
 
 if [ -d out ]; then
   rm -rf out/assets && cp -R assets/ out/assets/
