@@ -1,4 +1,16 @@
 /**
+ * List of implementation sources
+ */
+const sources = {
+  'caniuse': 'Can I use',
+  'chromestatus': 'Chrome Platform Status',
+  'edgestatus': 'Microsoft Edge Platform Status',
+  'webkitstatus': 'WebKit Feature Status',
+  'feedback': 'User feedback',
+  'other': 'Other'
+}
+
+/**
  * Wraps querySelectorAll to return an Array across browsers
  */
 const $ = (el, selector) =>
@@ -82,6 +94,16 @@ const templateItem = '<a href="" data-nav><div class="icon"><img src="" alt=""><
  */
 const templateTocItem = '<a href="" data-nav><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
+/**
+ * Ordered list of known implementation stages
+ */
+const implementationStatuses = [
+  'shipped',
+  'experimental',
+  'indevelopment',
+  'consideration'
+];
+
 
 /**
  * List of maturity levels
@@ -120,7 +142,7 @@ const expandColumns = function (columns, tr) {
       if (Object.prototype.toString.call(column) === '[object String]') {
         return {
           type: column,
-          title: tr.columns[column]
+          title: tr('columns', column)
         };
       }
       else if (!column.type) {
@@ -128,7 +150,7 @@ const expandColumns = function (columns, tr) {
         return null;
       }
       else if (!column.title) {
-        column.title = tr.columns[column.type];
+        column.title = tr('columns', column.type);
         return column;
       }
       else {
@@ -157,7 +179,7 @@ const expandColumns = function (columns, tr) {
 /**
  * Known browsers
  */
-const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
+const browsers = ['firefox', 'chrome', 'edge', 'opera', 'safari', 'webkit'];
 
 /**
  * Code to call to create a cell of the given type
@@ -168,7 +190,8 @@ const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
  * - featureName: The name of the wrapping feature
  * - specInfo: The available spec info for that feature ID
  * - implInfo: The available implementation status for that feature ID
- * - tr: Sanitized translations
+ * - tr: A translation function that takes a category and a label and returns
+ * the corresponding localized label
  * - lang: The language of the underlying document
  * - pos: The zero-based index of the column in the table
  * - warnings: An array of warnings that the creator may complete
@@ -176,30 +199,27 @@ const browsers = ['firefox', 'chrome', 'edge', 'safari', 'webkit'];
 const createFeatureCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement((pos === 0) ? 'th' : 'td');
   cell.appendChild(document.createTextNode(featureName));
+  cell.classList.add('feature');
   return cell;
 };
 
 const createSpecCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let specUrl = specInfo.url;
   let specTitle = specInfo.title;
-  let localizedSpecTitle = null;
-  if (tr.specifications[specTitle]) {
-    localizedSpecTitle = tr.specifications[specTitle];
-  }
-  else if (lang !== 'en') {
+  let localizedSpecTitle = tr('specifications', specTitle);
+  if ((localizedSpecTitle === specTitle) && (lang !== 'en')) {
     warnings.push('No spec title for "' + specTitle + '" in "' + lang + '"');
   }
 
-  let localizedLabel = localizedSpecTitle || specTitle;
+  let localizedLabel = localizedSpecTitle;
   if (specInfo.feature) {
-    localizedLabel = (tr.labels['%feature in %spec'] || '%feature in %spec')
-      .replace('%feature', tr.features[specInfo.feature] || specInfo.feature)
+    localizedLabel = tr('labels', '%feature in %spec')
+      .replace('%feature', tr('features', specInfo.feature))
       .replace('%spec', localizedSpecTitle || specTitle);
   }
   let label = null;
-  if ((tr.features[specInfo.feature] &&
-      (tr.features[specInfo.feature] !== specInfo.feature)) ||
-      (localizedSpecTitle && localizedSpecTitle !== specTitle)) {
+  if ((tr('features', specInfo.feature) !== specInfo.feature) ||
+      (localizedSpecTitle !== specTitle)) {
     label = specTitle;
     if (specInfo.feature) {
       label = '%feature in %spec'
@@ -222,10 +242,8 @@ const createGroupCell = function (column, featureId, featureName, specInfo, impl
   specInfo.deliveredBy = specInfo.deliveredBy || [];
   specInfo.deliveredBy.forEach((wg, w) => {
     wg.label = wg.label || '';
-    if (tr.groups[wg.label]) {
-      wg.localizedLabel = tr.groups[wg.label];
-    }
-    else if (lang !== 'en') {
+    wg.localizedLabel = tr('groups', wg.label);
+    if ((wg.localizedLabel === wg.label) && (lang !== 'en')) {
       warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
     }
     if (column.type === 'well-deployed') {
@@ -261,6 +279,7 @@ const createMaturityCell = function (column, featureId, featureName, specInfo, i
 const createImplCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
   cell.appendChild(formatImplInfo(implInfo, tr));
+  cell.classList.add('impl');
   return cell;
 };
 
@@ -716,7 +735,13 @@ const setSectionTitles = function (translations, lang) {
 /**
  * Generates tables per section based on the information loaded
  */
-const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
+const fillTables = function (specInfo, implInfo, customTables, translations, lang) {
+  let tr = function (category, text) {
+    let catTranslations = (translations || {})[category];
+    if (!catTranslations) return text;
+    return catTranslations[text] || text;
+  };
+
   // Build the list of columns that will need to be generated per type of table
   let columnsPerType = {};
   Object.keys(customTables || {}).forEach(type => {
@@ -726,7 +751,7 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
     if (!columnsPerType[type]) {
       columnsPerType[type] = expandColumns(tableColumnsPerType[type], tr);
     }
-  })
+  });
 
   // Extract the list of feature IDs referenced in the document and
   // generate the list of sections for which a table needs to be generated
@@ -806,8 +831,8 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
       link.setAttribute('href', info.url);
       if (!link.textContent) {
         link.textContent = (spec.feature ?
-          tr.features[spec.feature] || spec.feature :
-          tr.specifications[info.title] || info.title);
+          tr('features', spec.feature) :
+          tr('specifications', info.title));
       }
     });
     return spec;
@@ -880,43 +905,122 @@ const fillTables = function (specInfo, implInfo, customTables, tr, lang) {
   warnings.forEach(warning => console.warn(warning));
 };
 
-const formatImplInfo = function (data, translations) {
-  const labelTranslations = translations['labels'] || {};
-  const statusTranslations = translations['implstatus'] || {};
+const formatImplInfo = function (data, tr) {
   let div = document.createElement('div');
   if (!data) {
     let p = document.createElement('p');
-    p.appendChild(document.createTextNode(labelTranslations['N/A'] || 'N/A'));
+    p.appendChild(document.createTextNode(tr('labels', 'N/A')));
     div.appendChild(p);
     return div;
   }
-  Object.keys(data)
-    .filter(type => (type !== 'implementations') && (type !== 'polyfills'))
-    .forEach(type => {
-      let uadata = data[type];
-      uadata = uadata.filter(ua => browsers.indexOf(ua) !== -1);
-      if (uadata.length) {
-          let paragraph = document.createElement('p');
-          paragraph.setAttribute('data-implstatus', '');
-          paragraph.appendChild(document.createTextNode(
-            statusTranslations[type] || type));
-          paragraph.appendChild(document.createElement('br'));
-          uadata.forEach(ua => {
-            let icon = document.createElement('img');
-            icon.src = '../assets/impl/' + ua + '.png';
-            icon.height = 30;
-            icon.alt = type + ' in ' + ua;
-            icon.setAttribute('data-ua', ua);
-            paragraph.appendChild(icon);
-          });
-          div.appendChild(paragraph);
+
+  // Arrange the implementation info per implementation status
+  let info = {};
+  implementationStatuses.forEach(status => {
+    let implementations = data.implementations.filter(impl =>
+      impl.selected && (impl.status === status) &&
+      browsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
+    ).filter((impl, index, arr) => {
+      // Group mobile info with desktop info when it exists and add flags
+      let tokens = impl.ua.split('_');
+      if (tokens[1]) {
+        let desktop = arr.find(i => i.ua === tokens[0]);
+        if (desktop) {
+          desktop.mobile = true;
+          return false;
+        }
+        else {
+          impl.mobile = true;
+          impl.ua = tokens[0];
+          return true;
+        }
+      }
+      else {
+        impl.desktop = true;
+        return true;
       }
     });
 
+    if (implementations.length > 0) {
+      info[status] = implementations.sort((i1, i2) => {
+        if (i1.ua < i2.ua) {
+          return -1;
+        }
+        if (i1.ua > i2.ua) {
+          return 1;
+        }
+        return 0;
+      });
+    }
+  });
+
+  Object.keys(info).forEach(status => {
+    let statusLabel = tr('implstatus', status);
+    let p = document.createElement('p');
+    p.setAttribute('data-implstatus', status);
+    p.appendChild(document.createTextNode(statusLabel + ':'));
+    p.appendChild(document.createElement('br'));
+    info[status].forEach(impl => {
+      let versions = [];
+      if (impl.desktop) {
+        versions.push('desktop');
+      }
+      if (impl.mobile) {
+        versions.push('mobile');
+      }
+      let title = tr('labels', '%status in %ua (%versions).')
+        .replace('%status', statusLabel)
+        .replace('%ua', impl.ua)
+        .replace('%versions', versions.join(', '));
+      if (impl.prefix && impl.flag) {
+        title += ' ' + tr('labels', 'Feature requires using a prefix and is behind a flag.');
+      }
+      else if (impl.prefix) {
+        title += ' ' + tr('labels', 'Feature requires using a prefix.');
+      }
+      else if (impl.flag) {
+        title += ' ' + tr('labels', 'Feature is behind a flag.');
+      }
+      title += ' ' + tr('labels', 'Source: %source.')
+        .replace('%source', sources[impl.source] || impl.source);
+      let link = document.createElement('a');
+      link.setAttribute('class', 'ua');
+      link.setAttribute('data-ua', impl.ua);
+      if (impl.href) {
+        link.setAttribute('href', impl.href);
+      }
+      let abbr = document.createElement('abbr');
+      abbr.setAttribute('title', title);
+      let span = document.createElement('span');
+      span.appendChild(document.createTextNode(title));
+      abbr.appendChild(span);
+      let i = document.createElement('i');
+      i.setAttribute('class', impl.ua);
+      abbr.appendChild(i);
+      if (versions.length > 0) {
+        let i = document.createElement('i');
+        i.setAttribute('class', versions.join(' '));
+        abbr.appendChild(i);
+      }
+      if (impl.prefix) {
+        let i = document.createElement('i');
+        i.setAttribute('class', 'prefix');
+        abbr.appendChild(i);
+      }
+      if (impl.flag) {
+        let i = document.createElement('i');
+        i.setAttribute('class', 'flag');
+        abbr.appendChild(i);
+      }
+      link.appendChild(abbr);
+      p.appendChild(link);
+    });
+    div.appendChild(p);
+  });
+
   if (data.polyfills) {
     let el = document.createElement('p');
-    el.appendChild(document.createTextNode(
-      labelTranslations['Polyfills'] || 'Polyfills'));
+    el.appendChild(document.createTextNode(tr('labels', 'Polyfills')));
     div.appendChild(el);
     el = document.createElement('ul');
     data.polyfills.forEach((polyfill, pos) => {

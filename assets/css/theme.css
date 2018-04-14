@@ -86,17 +86,105 @@ section.featureset { margin-bottom: 2em;}
 
 table { border-collapse: collapse; width: 100%}
 tbody th { text-align:left;}
-thead th { background-color: #0070cc; color: #eee; padding: 0 0.3em;}
-th, td { border-bottom:  thin solid; border-top:  thin solid;}
+thead th {
+    background-color: #0070cc;
+    color: #eee;
+    padding: 0.5em 0.1em;}
+th, td {
+    border-bottom: thin solid #0070cc;
+    border-top: thin solid #0070cc;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 tbody th, tbody td { padding-left: 0.5em;}
-td.maturity { text-align: center; padding: 0;}
+th.feature { max-width: 150px; }
+td.maturity { text-align: center; }
 td.maturity img { vertical-align: middle; }
+td.impl { min-width: 220px; }
 td img + img { margin-left: 0.25em; }
 td ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: -8px;
 }
+
+
+/************************************************************
+Styles for the "current implementations" column
+************************************************************/
+.ua {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+}
+
+.ua abbr {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide text visually but not to accessible tools */
+.ua span {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.ua i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Stack badges on the right on top of one another */
+.ua i:nth-child(n+3) {
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.ua i:nth-child(3) {
+    bottom: -5px;
+    z-index: 4;
+}
+
+.ua i:nth-child(4) {
+    bottom: 10px;
+    z-index: 3;
+}
+
+.ua i:nth-child(5) {
+    bottom: 25px;
+    z-index: 2;
+}
+
+/* Browser icons */
+.ua .chrome { background-image: url('../impl/chrome.png'); }
+.ua .edge { background-image: url('../impl/edge.png'); }
+.ua .firefox { background-image: url('../impl/firefox.png'); }
+.ua .opera { background-image: url('../impl/opera.png'); }
+.ua .safari { background-image: url('../impl/safari.png'); }
+.ua .webkit { background-image: url('../impl/webkit.png'); }
+
+/* Desktop/Mobile badges */
+.ua .desktop { background-image: url('../impl/desktop.svg'); }
+.ua .mobile { background-image: url('../impl/mobile.svg'); }
+.ua .desktop.mobile { background-image: url('../impl/desktop-mobile.svg'); }
+
+/* Prefix required and behind a flag badges */
+.ua .prefix { background-image: url('../impl/prefix.svg'); }
+.ua .flag { background-image: url('../impl/flag.svg'); }
+
+
 
 dl dt { margin-bottom: 0.3em;  font-size:1.1em;}
 dl dd{ margin-bottom: 1em;}

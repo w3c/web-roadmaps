@@ -98,6 +98,7 @@ let sources = {
             res.notes = notes;
           }
           res.source = source;
+          res.href = `https://caniuse.com/#feat=${key}`;
           return res;
         }
 
@@ -120,7 +121,7 @@ let sources = {
   },
   chromestatus: {
     url: "https://www.chromestatus.com/features.json",
-    coreua: ["chrome"],
+    coreua: ["chrome", "chrome_android"],
     getImplStatus: function (key) {
       let source = 'chromestatus';
       let sourcedata = sources[source].data;
@@ -178,6 +179,7 @@ let sources = {
           res.status = 'experimental';
         }
         res.source = source;
+        res.href = `https://www.chromestatus.com/features/${key}`;
         return res;
       }
 
@@ -209,11 +211,12 @@ let sources = {
       // to read that info though (typically, if it completes "chrome" info,
       // we should take the prefix and flag info from "chrome" into account)
       if (impldata.opera) {
+        let href = `https://www.chromestatus.com/features/${key}`;
         if (impldata.opera.desktop) {
-          impl.push({ ua: 'opera', status: 'shipped', source });
+          impl.push({ ua: 'opera', status: 'shipped', source, href });
         }
         if (impldata.opera.android) {
-          impl.push({ ua: 'opera_android', status: 'shipped', source });
+          impl.push({ ua: 'opera_android', status: 'shipped', source, href });
         }
       }
 
@@ -264,6 +267,9 @@ let sources = {
           res.status = 'experimental';
         }
         res.source = source;
+
+        let implid = impldata.name.toLowerCase().replace(/\W/g, '');
+        res.href = `https://developer.microsoft.com/en-us/microsoft-edge/platform/status/${implid}/`;
         if (res.status || (res.status === '')) {
           impl.push(res);
         }
@@ -332,6 +338,7 @@ let sources = {
           res.notes = [impldata.comment];
         }
         res.source = source;
+        res.href = `https://webkit.org/status/#${key}`;
         if (res.status || (res.status === '')) {
           impl.push(res);
         }
@@ -361,6 +368,9 @@ let sources = {
           }
           if (d.comment) {
             implstatus.notes = [d.comment];
+          }
+          if (d.href) {
+            implstatus.href = d.href;
           }
           impl.push(implstatus);
         });
@@ -427,134 +437,143 @@ async function extractImplData(files) {
         implementations = implementations.concat(
           sources[source].getImplStatus(chromeid));
       }
+    });
 
-      // TODO: we may have found twice the same implementation status info
-      // from the Edge status platform. Should remove one instance.
+    // We may have found the implementation status info from the Edge status
+    // platform twice (once with the real feature name, once with a Chrome ID).
+    // Let's remote one instance if that happened.
+    implementations = implementations.filter(impl =>
+      (impl.source !== 'edgestatus') ||
+      (impl === implementations.find(i => i.source === 'edgestatus'))
+    );
 
-      // Compute the final implementation status for each user agent with
-      // the following rules:
-      // 0. Trust the "feedback" source as being authoritative. It should
-      // contain feedback from reviewers about implementation statuses that
-      // are incorrectly reported by other sources.
-      // 1. Trust platform sources to say the right thing about their own
-      // user-agent or rendering engine. For instance, if chromestatus says
-      // that a feature is "in development" in Chrome, consider that the
-      // feature is really "in development" in Chrome, and ignore possible
-      // claims in other sources that the feature is "shipped" in Chrome
-      // 2. Keep the most optimistic status otherwise, meaning that if
-      // chromestatus says that feature A has shipped in Edge while
-      // caniuse says it is in development, consider that the feature has
-      // shipped in Edge
-      // 3. Due to the close relationship between webkit and Safari, trust
-      // webkitstatus more than any other source about support in Safari.
-      // If webkitstatus says that a feature is in development in webkit,
-      // it means it cannot be at a more advanced level in Safari. In other
-      // words, constrain the implementation status in Safari to the
-      // implementation status in Webkit, when it is known to be lower.
-      // 4. Also, once 3. is done, drop the Webkit entry when there is also
-      // an entry for Safari. No need to confuse people with the
-      // distinction between Safari and Webkit, unless that is needed
-      // (it's only going to be needed for features that are being
-      // developed in Webkit but for which there has not been any public
-      // signal about support in Safari)
-      impldata[id] = {
-        implementations,
-        shipped: [],
-        experimental: [],
-        indevelopment: [],
-        consideration: []
-      }
+    // Compute the final implementation status for each user agent with
+    // the following rules:
+    // 0. Trust the "feedback" source as being authoritative. It should
+    // contain feedback from reviewers about implementation statuses that
+    // are incorrectly reported by other sources.
+    // 1. Trust platform sources to say the right thing about their own
+    // user-agent or rendering engine. For instance, if chromestatus says
+    // that a feature is "in development" in Chrome, consider that the
+    // feature is really "in development" in Chrome, and ignore possible
+    // claims in other sources that the feature is "shipped" in Chrome
+    // 2. Keep the most optimistic status otherwise, meaning that if
+    // chromestatus says that feature A has shipped in Edge while
+    // caniuse says it is in development, consider that the feature has
+    // shipped in Edge
+    // 3. Due to the close relationship between webkit and Safari, trust
+    // webkitstatus more than any other source about support in Safari.
+    // If webkitstatus says that a feature is in development in webkit,
+    // it means it cannot be at a more advanced level in Safari. In other
+    // words, constrain the implementation status in Safari to the
+    // implementation status in Webkit, when it is known to be lower.
+    // 4. Also, once 3. is done, drop the Webkit entry when there is also
+    // an entry for Safari. No need to confuse people with the
+    // distinction between Safari and Webkit, unless that is needed
+    // (it's only going to be needed for features that are being
+    // developed in Webkit but for which there has not been any public
+    // signal about support in Safari)
+    impldata[id] = {
+      implementations,
+      shipped: [],
+      experimental: [],
+      indevelopment: [],
+      consideration: []
+    }
 
-      let statuses = ['', 'consideration', 'indevelopment', 'experimental', 'shipped'];
+    let statuses = ['', 'consideration', 'indevelopment', 'experimental', 'shipped'];
 
-      function onlyUnique(value, index, self) {
-        return self.indexOf(value) === index;
-      }
+    function onlyUnique(value, index, self) {
+      return self.indexOf(value) === index;
+    }
 
-      // Extract the list of user agents that appear in implementation
-      // data, computing the status for "webkit" on the side to be able to
-      // apply rules 3 and 4, and apply rules for each user agent.
-      // (Note this code assumes that the webkitstatus platform is the only
-      // source that describes the implementation status in webkit)
-      let webkitstatus = (implementations.find(impl => impl.ua === 'webkit') || {})
-        .status;
-      let uas = implementations
-        .map(impl => (impl.ua !== 'webkit') ? impl.ua : null)
-        .filter(ua => !!ua)
-        .filter(onlyUnique);
-      uas.forEach(ua => {
-        let status = '';
-        let authoritativeStatusFound = false;
-        let coreStatusFound = false;
-        implementations.filter(impl => impl.ua === ua).forEach(impl => {
-          if (authoritativeStatusFound) return;
-          if (impl.source === 'feedback') {
-            // Rule 0, status comes from reviewer feedback, consider
-            // it as authoritative
-            status = impl.status;
-            authoritativeStatusFound = true;
+    // Extract the list of user agents that appear in implementation
+    // data, computing the status for "webkit" on the side to be able to
+    // apply rules 3 and 4, and apply rules for each user agent.
+    let webkitInfo = implementations.find(impl => impl.source === 'webkitstatus');
+    let webkitStatus = (webkitInfo || {}).status;
+    let uas = implementations
+      .map(impl => (impl.ua !== 'webkit') ? impl.ua : null)
+      .filter(ua => !!ua)
+      .filter(onlyUnique);
+    uas.forEach(ua => {
+      let status = '';
+      let authoritativeStatusFound = false;
+      let coreStatusFound = false;
+      let selectedImplInfo = null;
+      implementations.filter(impl => impl.ua === ua).forEach(impl => {
+        if (authoritativeStatusFound) return;
+        if (impl.source === 'feedback') {
+          // Rule 0, status comes from reviewer feedback, consider
+          // it as authoritative
+          authoritativeStatusFound = true;
+          selectedImplInfo = impl;
+        }
+        else if (Object.keys(sources).includes(impl.source) &&
+            sources[impl.source].coreua.includes(ua)) {
+          // Rule 1, status comes from the right platform, we've
+          // found the implementation status unless we got some
+          // feedback from a reviewer that this status is incorrect
+          // which will be handled by Rule 0
+          coreStatusFound = true;
+
+          // Rule 3, constrain safari status to that of webkit
+          // when it is lower
+          if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
+              statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
+            selectedImplInfo = webkitInfo;
           }
-          else if (Object.keys(sources).includes(impl.source) &&
-              sources[impl.source].coreua.includes(ua)) {
-            // Rule 1, status comes from the right platform, we've
-            // found the implementation status unless we got some
-            // feedback from a reviewer that this status is incorrect
-            // which will be handled by Rule 0
-            coreStatusFound = true;
-
-            // Rule 3, constrain safari status to that of webkit
-            // when it is lower
-            if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
-                statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
-              status = webkitstatus;
-            }
-            else {
-              status = impl.status;
-            }
+          else {
+            selectedImplInfo = impl;
           }
-          else if (!coreStatusFound &&
-              (statuses.indexOf(impl.status) > statuses.indexOf(status))) {
-            // Rule 2, be optimistic in life... except if Rule 1 was
-            // already applied. Also take rule 3 into account
-            if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
-                statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
-              status = webkitstatus
-            }
-            else {
-              status = impl.status;
-            }
+        }
+        else if (!selectedImplInfo || (!coreStatusFound &&
+            (statuses.indexOf(impl.status) > statuses.indexOf(selectedImplInfo.status)))) {
+          // Rule 2, be optimistic in life... except if Rule 1 was
+          // already applied. Also take rule 3 into account
+          if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
+              statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
+            selectedImplInfo = impl;
           }
-        });
-
-        if (status !== '') {
-          impldata[id][status].push(ua);
+          else {
+            selectedImplInfo = impl;
+          }
         }
       });
 
-      // Rule 4, insert Webkit entry if there was no Safari entry
-      if ((typeof webkitstatus === 'string') &&
-          (webkitstatus !== '') &&
-          !uas.includes('safari')) {
-        impldata[id][webkitstatus].push('webkit');
+      if (selectedImplInfo) {
+        // Flag the selected implementation info:
+        selectedImplInfo.selected = true;
+        status = selectedImplInfo.status;
       }
-
-      // Copy polyfill information over from the feature data file
-      // (we'll just check that the data is correct)
-      if (feature.polyfills) {
-        impldata[id].polyfills = [];
-        feature.polyfills.forEach(polyfill => {
-          if (!polyfill.url) {
-            console.error(`Missing URL for polyfill in ${file}`);
-          }
-          else if (!polyfill.label) {
-            console.error(`Missing label for polyfill in ${file}`);
-          }
-          else {
-            impldata[id].polyfills.push(polyfill);
-          }
-        });
+      if (status !== '') {
+        impldata[id][status].push(ua);
       }
     });
+
+    // Rule 4, insert Webkit entry if there was no Safari entry
+    if ((typeof webkitstatus === 'string') &&
+        (webkitstatus !== '') &&
+        !uas.includes('safari')) {
+      impldata[id][webkitstatus].push('webkit');
+    }
+
+    // Copy polyfill information over from the feature data file
+    // (we'll just check that the data is correct)
+    if (feature.polyfills) {
+      impldata[id].polyfills = [];
+      feature.polyfills.forEach(polyfill => {
+        if (!polyfill.url) {
+          console.error(`Missing URL for polyfill in ${file}`);
+        }
+        else if (!polyfill.label) {
+          console.error(`Missing label for polyfill in ${file}`);
+        }
+        else {
+          impldata[id].polyfills.push(polyfill);
+        }
+      });
+    }
   });
 
   return impldata;

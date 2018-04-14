@@ -28,8 +28,10 @@ pages.
     }
 
     // Reset elements, making sure they are all visible
-    $(document, '[data-implstatus],[data-ua]')
-      .forEach(el => el.hidden = false);
+    // Note that using "hidden" on ua blocks is not enough to hide them,
+    // because the CSS also changes the value of the "display" property
+    $(document, '[data-implstatus],[data-ua]').forEach(el => el.hidden = false);
+    $(document, '[data-ua]').forEach(el => el.style.display = 'inline-block');
 
     // Nothing to filter if all UA are to be displayed
     if (!ua || (ua.length === 0)) {
@@ -39,7 +41,7 @@ pages.
     // Hide UA implementations that are not requested
     $(document, '[data-ua]')
       .filter(el => !ua.includes(el.getAttribute('data-ua')))
-      .forEach(el => el.hidden = true);
+      .forEach(el => { el.hidden = true; el.style.display = 'none'; });
 
     // Hide wrapping label if there are no more visible implementation status
     // to show under that label
@@ -57,12 +59,12 @@ pages.
     filtered = true;
 
     // Get requested user-agents from query string
-    let ua = (window.location.search || '').substring(1)
+    let uas = (window.location.search || '').substring(1)
       .split('&')
       .filter(param => param.split('=')[0] === 'ua')
       .map(param => param.split('=')[1])
-      .pop()
-      .split(',');
+      .pop();
+    uas = (uas ? uas.split(',') : []);
 
     // Update links in navigation menus to preserve the current query string
     // across pages
@@ -73,7 +75,7 @@ pages.
     });
 
     // Filter implementation status results as requested
-    filterImplementations(ua);
+    filterImplementations(uas);
   };
 
   // Apply the filtering when the document is loaded and has been generated,
