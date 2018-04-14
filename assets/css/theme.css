@@ -1,42 +1,76 @@
 html, body {
-    margin: 0px;
-    padding: 0px;
-    outline: 0px;
-    font-family: Open Sans, sans-serif;
-    font-family: sans-serif;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  font-family: Open Sans, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.6em;
-    color: #47525d;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #47525d;
 }
 
 h2 {
-    font-size: 0.9em;
-    font-weight: 400;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0070cc;
 }
 
+h3 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #47525d;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1.5em;
+  color: #47525d;
+}
 
 p {
-    font-size: 0.9em;
-    font-weight: 400;
-    line-height: 1.6em;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-p a {
-    text-decoration: none;
-    font-weight: 400;
-    color: #0072ff;
+p.highlight {
+  color: #00C853;
+}
+
+a {
+  color: #0062af;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: #0062af 2px solid;
+}
+
+a:visited {
+  color: #004881;
 }
 
 
 .btn-reverse {
     background-color: transparent;
-    border: 1px solid #0072ff;
+    border: 1px solid #036;
     border-radius: 2px;
     padding: 7px 15px 7px 15px;
 }
@@ -45,7 +79,7 @@ p a {
     background-color: white;
     border: 1px solid white;
     border-radius: 2px;
-    color: #0072ff;
+    color: #036;
     padding: 7px 15px 7px 15px;
 }
 
@@ -110,6 +144,26 @@ td ul {
 
 
 /************************************************************
+Styles for the "spec title" column
+************************************************************/
+.group {
+    font-size: smaller;
+    color: #777;
+}
+
+.group a {
+    color: #777;
+}
+.group a:visited {
+    color: #777;
+}
+.group a:hover {
+    border-bottom: #777 2px solid;
+}
+
+
+
+/************************************************************
 Styles for the "current implementations" column
 ************************************************************/
 .ua {
@@ -118,6 +172,10 @@ Styles for the "current implementations" column
     width: 40px;
     height: 40px;
     margin: 0 2px;
+}
+
+.ua:hover {
+    border-bottom: none;
 }
 
 .ua abbr {

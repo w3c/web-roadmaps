@@ -8,8 +8,7 @@
   },
   "columns": {
     "feature": "特性",
-    "spec": "规范",
-    "group": "小组",
+    "spec": "规范 / 小组",
     "maturity": "成熟度",
     "impl": "现有实现",
     "implintents": "实现意向",

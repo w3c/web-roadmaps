@@ -8,8 +8,7 @@
   },
   "columns": {
     "feature": "Feature",
-    "spec": "Specification",
-    "group": "Group",
+    "spec": "Specification / Group",
     "maturity": "Maturity",
     "impl": "Current implementations",
     "implintents": "Implementation intents",

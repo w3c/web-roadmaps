@@ -127,7 +127,7 @@ const maturityLevels = {
 const tableColumnsPerType = {
   'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
   'in-progress': ['feature', 'spec', 'maturity', 'impl'],
-  'exploratory-work': ['feature', 'spec', 'group', 'implintents'],
+  'exploratory-work': ['feature', 'spec', 'implintents'],
   'versions': ['feature', 'spec', 'maturity', 'versions']
 };
 
@@ -234,36 +234,25 @@ const createSpecCell = function (column, featureId, featureName, specInfo, implI
     label: label,
     url: specUrl
   });
-  return cell;
-};
 
-const createGroupCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
-  let cell = document.createElement('td');
   specInfo.deliveredBy = specInfo.deliveredBy || [];
   specInfo.deliveredBy.forEach((wg, w) => {
     wg.label = wg.label || '';
-    wg.localizedLabel = tr('groups', wg.label);
-    if ((wg.localizedLabel === wg.label) && (lang !== 'en')) {
-      warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
-    }
-    if (column.type === 'well-deployed') {
-      wg.label = wg.label.replace(/ Working Group/,'');
-    }
     wg.label = wg.label
       .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
       .replace(/Technical Architecture Group/, 'TAG')
       .replace(/Web Real-Time Communications/, 'WebRTC');
-    if (w > 0) {
-      if (w < specInfo.deliveredBy.length - 1) {
-        cell.appendChild(document.createTextNode(','));
-      }
-      else {
-        cell.appendChild(document.createTextNode(' and'));
-      }
-      cell.appendChild(document.createElement('br'));
+    wg.localizedLabel = tr('groups', wg.label);
+    if ((wg.localizedLabel === wg.label) && (lang !== 'en')) {
+      warnings.push('No localized group name for "' + wg.label + '" in "' + lang + '"');
     }
-    fillCell(cell, wg);
+    cell.appendChild(document.createElement('br'));
+    let span = document.createElement('span');
+    span.classList.add('group');
+    fillCell(span, wg);
+    cell.appendChild(span);
   });
+
   return cell;
 };
 
@@ -299,7 +288,6 @@ const createVersionsCell = function (column, featureId, featureName, specInfo, i
 const tableColumnCreators = {
   'feature': createFeatureCell,
   'spec': createSpecCell,
-  'group': createGroupCell,
   'maturity': createMaturityCell,
   'impl': createImplCell,
   'implintents': createImplCell,
