@@ -73,13 +73,7 @@
         "label": "Web Annotation Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Annotation Working Group",
-        "url": "https://www.w3.org/annotation/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "appcache": {
     "url": "https://www.w3.org/TR/html51/obsolete.html#application-caches",
@@ -185,13 +179,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Device and Sensors Working Group",
-        "url": "http://www.w3.org/2009/dap/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "battery": {
     "url": "https://www.w3.org/TR/battery-status",
@@ -249,8 +237,7 @@
     "edDraft": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
     "title": "Color managing canvas contents",
     "status": "ED",
-    "deliveredBy": [],
-    "wgs": []
+    "deliveredBy": []
   },
   "color-gamut": {
     "url": "https://www.w3.org/TR/mediaqueries-4/#color-gamut",
@@ -399,12 +386,6 @@
       }
     ],
     "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
-      }
-    ],
     "feature": "3D effects"
   },
   "css-animations": {
@@ -487,12 +468,6 @@
       }
     ],
     "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
-      }
-    ],
     "feature": "profiled device-dependent colors"
   },
   "css-content-3": {
@@ -677,13 +652,7 @@
         "label": "CSS Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "css-touch-action": {
     "url": "https://www.w3.org/TR/pointerevents2/",
@@ -903,13 +872,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "eme": {
     "url": "https://www.w3.org/TR/encrypted-media/",
@@ -973,13 +936,7 @@
         "label": "WHATWG"
       }
     ],
-    "publisher": "WHATWG",
-    "wgs": [
-      {
-        "label": "WHATWG",
-        "url": "https://whatwg.org/"
-      }
-    ]
+    "publisher": "WHATWG"
   },
   "fileapi": {
     "url": "https://www.w3.org/TR/FileAPI/",
@@ -1017,13 +974,7 @@
         "label": "WHATWG"
       }
     ],
-    "publisher": "WHATWG",
-    "wgs": [
-      {
-        "label": "WHATWG",
-        "url": "https://whatwg.org/"
-      }
-    ]
+    "publisher": "WHATWG"
   },
   "generic-sensor": {
     "url": "https://www.w3.org/TR/generic-sensor/",
@@ -1133,13 +1084,7 @@
         "label": "Hardware Based Secure Services Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Hardware Based Secure Services Community Group",
-        "url": "https://www.w3.org/community/hb-secure-services/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "hr-time": {
     "url": "https://www.w3.org/TR/hr-time",
@@ -1164,13 +1109,7 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "html-media-capture": {
     "url": "https://www.w3.org/TR/html-media-capture",
@@ -1252,13 +1191,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Device and Sensors Working Group",
-        "url": "http://www.w3.org/2009/dap/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "imagecapture": {
     "url": "https://www.w3.org/TR/image-capture/",
@@ -1301,13 +1234,7 @@
         "label": "Media Resource In-band Tracks Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Media Resource In-band Tracks Community Group",
-        "url": "https://www.w3.org/community/inbandtracks/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "indexeddb": {
     "url": "https://www.w3.org/TR/IndexedDB/",
@@ -1564,13 +1491,7 @@
         "label": "CSS Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "CSS Working Group",
-        "url": "https://www.w3.org/Style/CSS/members"
-      }
-    ]
+    "publisher": "W3C"
   },
   "mediasession": {
     "url": "https://wicg.github.io/mediasession/",
@@ -1734,13 +1655,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "page-visibility": {
     "url": "https://www.w3.org/TR/page-visibility/",
@@ -1855,13 +1770,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Platform Incubator Community Group",
-        "url": "https://www.w3.org/community/wicg/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "permissions-revoke": {
     "url": "https://wicg.github.io/permissions-revoke/",
@@ -1874,13 +1783,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Platform Incubator Community Group",
-        "url": "https://www.w3.org/community/wicg/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "permissions": {
     "url": "https://www.w3.org/TR/permissions/",
@@ -1971,13 +1874,7 @@
         "label": "Technical Architecture Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Technical Architecture Group",
-        "url": "http://www.w3.org/2001/tag/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "push": {
     "url": "https://www.w3.org/TR/push-api/",
@@ -2115,13 +2012,7 @@
         "label": "Second Screen Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/webscreens/",
-        "label": "Second Screen Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "secondscreen": {
     "url": "https://www.w3.org/TR/presentation-api/",
@@ -2160,13 +2051,7 @@
         "label": "Web Annotation Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Annotation Working Group",
-        "url": "https://www.w3.org/annotation/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "server-timing": {
     "url": "https://www.w3.org/TR/server-timing",
@@ -2218,13 +2103,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "speech-api-recognition": {
     "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
@@ -2238,13 +2117,7 @@
       }
     ],
     "publisher": "W3C",
-    "feature": "Speech recognition",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/speech-api/",
-        "label": "Speech API Community Group"
-      }
-    ]
+    "feature": "Speech recognition"
   },
   "speech-api-synthesis": {
     "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
@@ -2258,13 +2131,7 @@
       }
     ],
     "publisher": "W3C",
-    "feature": "Speech synthesis",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/speech-api/",
-        "label": "Speech API Community Group"
-      }
-    ]
+    "feature": "Speech synthesis"
   },
   "srcset": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
@@ -2303,13 +2170,7 @@
         "label": "WHATWG"
       }
     ],
-    "publisher": "WHATWG",
-    "wgs": [
-      {
-        "label": "WHATWG",
-        "url": "https://whatwg.org/"
-      }
-    ]
+    "publisher": "WHATWG"
   },
   "streams": {
     "url": "https://streams.spec.whatwg.org/",
@@ -2321,13 +2182,7 @@
         "label": "WHATWG"
       }
     ],
-    "publisher": "WHATWG",
-    "wgs": [
-      {
-        "label": "WHATWG",
-        "url": "https://whatwg.org/"
-      }
-    ]
+    "publisher": "WHATWG"
   },
   "svg11": {
     "url": "https://www.w3.org/TR/SVG11/",
@@ -2378,13 +2233,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Device and Sensors Working Group",
-        "url": "http://www.w3.org/2009/dap/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "timeupdate": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#eventdef-media-timeupdate",
@@ -2411,13 +2260,7 @@
         "label": "Multi-Device Timing Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "http://www.w3.org/community/webtiming/",
-        "label": "Multi-Device Timing Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "touchevent": {
     "url": "https://www.w3.org/TR/touch-events/",
@@ -2443,13 +2286,7 @@
         "label": "HTML Working Group Accessibility Task Force"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "HTML Working Group Accessibility Task Force",
-        "url": "http://www.w3.org/WAI/PF/html-accessibility-tf"
-      }
-    ]
+    "publisher": "W3C"
   },
   "ttml-imsc1": {
     "url": "https://www.w3.org/TR/ttml-imsc1/",
@@ -2519,13 +2356,7 @@
         "label": "TV Control Working Group "
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/2016/tvcontrol/",
-        "label": "TV Control Working Group "
-      }
-    ]
+    "publisher": "W3C"
   },
   "uaag20-reference": {
     "url": "https://www.w3.org/TR/UAAG20-Reference/",
@@ -2645,17 +2476,7 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/2009/dap/",
-        "label": "Device and Sensors Working Group"
-      },
-      {
-        "url": "https://www.w3.org/2011/04/webrtc/",
-        "label": "Web Real-Time Communications Working Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "viewport-units": {
     "url": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
@@ -2751,13 +2572,7 @@
         "label": "Web Platform Incubator Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "web-share-target": {
     "url": "https://wicg.github.io/web-share-target/",
@@ -2796,13 +2611,7 @@
         "label": "WebAssembly Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "WebAssembly Working Group",
-        "url": "https://www.w3.org/wasm/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "webaudio": {
     "url": "https://www.w3.org/TR/webaudio/",
@@ -2854,13 +2663,7 @@
         "label": "Web Media API Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Media API Community Group",
-        "url": "https://www.w3.org/community/webmediaapi/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "webmediaguidelines": {
     "url": "https://w3c.github.io/webmediaguidelines/",
@@ -2873,13 +2676,7 @@
         "label": "Web Media API Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Web Media API Community Group",
-        "url": "https://www.w3.org/community/webmediaapi/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "webnfc": {
     "url": "https://w3c.github.io/web-nfc/",
@@ -2892,13 +2689,7 @@
         "label": "Web NFC Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/community/web-nfc/",
-        "label": "Web NFC Community Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "webrtc-qos": {
     "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
@@ -2989,13 +2780,7 @@
         "label": "Immersive Web Community Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Immersive Web Community Group",
-        "url": "https://www.w3.org/community/webvr/"
-      }
-    ]
+    "publisher": "W3C"
   },
   "webvtt": {
     "url": "https://www.w3.org/TR/webvtt1/",
@@ -3035,12 +2820,6 @@
       }
     ],
     "publisher": "W3C",
-    "wgs": [
-      {
-        "label": "Immersive Web Community Group",
-        "url": "https://www.w3.org/community/webvr/"
-      }
-    ],
     "polyfills": [
       {
         "label": "webxr-polyfill",
@@ -3084,13 +2863,7 @@
         "label": "Web of Things Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/WoT/WG/",
-        "label": "Web of Things Working Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "wot-description": {
     "url": "https://w3c.github.io/wot-thing-description/",
@@ -3103,13 +2876,7 @@
         "label": "Web of Things Working Group"
       }
     ],
-    "publisher": "W3C",
-    "wgs": [
-      {
-        "url": "https://www.w3.org/WoT/WG/",
-        "label": "Web of Things Working Group"
-      }
-    ]
+    "publisher": "W3C"
   },
   "xhr": {
     "url": "https://xhr.spec.whatwg.org/",
@@ -3121,12 +2888,6 @@
         "label": "WHATWG"
       }
     ],
-    "publisher": "WHATWG",
-    "wgs": [
-      {
-        "label": "WHATWG",
-        "url": "https://whatwg.org/"
-      }
-    ]
+    "publisher": "WHATWG"
   }
 }
