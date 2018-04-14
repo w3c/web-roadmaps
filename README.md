@@ -355,7 +355,7 @@ To add links between translations in the footer of each page, the framework need
     },
     {
       "title": "中文",
-      "lang": "zh""
+      "lang": "zh"
     }
   ]
 }
