@@ -364,7 +364,7 @@ async function extractSpecData(files, config) {
 
     // Complete spec info with other properties of interest from data file
     Object.keys(result.data).forEach(key => {
-      if (['impl', 'TR', 'editors', 'ls'].includes(key) ||
+      if (['impl', 'TR', 'editors', 'ls', 'wgs'].includes(key) ||
           results[result.id].hasOwnProperty(key)) {
         return;
       }

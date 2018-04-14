@@ -219,8 +219,8 @@ const createSpecCell = function (column, featureId, featureName, specInfo, implI
 
 const createGroupCell = function (column, featureId, featureName, specInfo, implInfo, tr, lang, pos, warnings) {
   let cell = document.createElement('td');
-  specInfo.wgs = specInfo.wgs || [];
-  specInfo.wgs.forEach((wg, w) => {
+  specInfo.deliveredBy = specInfo.deliveredBy || [];
+  specInfo.deliveredBy.forEach((wg, w) => {
     wg.label = wg.label || '';
     if (tr.groups[wg.label]) {
       wg.localizedLabel = tr.groups[wg.label];
@@ -236,7 +236,7 @@ const createGroupCell = function (column, featureId, featureName, specInfo, impl
       .replace(/Technical Architecture Group/, 'TAG')
       .replace(/Web Real-Time Communications/, 'WebRTC');
     if (w > 0) {
-      if (w < specInfo.wgs.length - 1) {
+      if (w < specInfo.deliveredBy.length - 1) {
         cell.appendChild(document.createTextNode(','));
       }
       else {
