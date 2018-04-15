@@ -127,7 +127,7 @@ const maturityLevels = {
 const tableColumnsPerType = {
   'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
   'in-progress': ['feature', 'spec', 'maturity', 'impl'],
-  'exploratory-work': ['feature', 'spec', 'implintents'],
+  'exploratory-work': ['feature', 'spec', 'impl-intents'],
   'versions': ['feature', 'spec', 'maturity', 'versions']
 };
 
@@ -179,7 +179,10 @@ const expandColumns = function (columns, tr) {
 /**
  * Known browsers
  */
-const browsers = ['firefox', 'chrome', 'edge', 'opera', 'safari', 'webkit'];
+const browsers = [
+  'firefox', 'chrome', 'edge', 'safari', 'webkit',
+  'opera', 'samsunginternet', 'baidu', 'qq', 'uc'
+];
 
 /**
  * Code to call to create a cell of the given type
@@ -290,7 +293,7 @@ const tableColumnCreators = {
   'spec': createSpecCell,
   'maturity': createMaturityCell,
   'impl': createImplCell,
-  'implintents': createImplCell,
+  'impl-intents': createImplCell,
   'versions': createVersionsCell
 };
 
@@ -842,6 +845,7 @@ const fillTables = function (specInfo, implInfo, customTables, translations, lan
     let row = document.createElement('tr');
     columns.forEach(column => {
       let cell = document.createElement('th');
+      cell.setAttribute('data-col', column.type);
       cell.appendChild(document.createTextNode(column.title));
       row.appendChild(cell);
     });
@@ -931,10 +935,12 @@ const formatImplInfo = function (data, tr) {
 
     if (implementations.length > 0) {
       info[status] = implementations.sort((i1, i2) => {
-        if (i1.ua < i2.ua) {
+        let pos1 = browsers.indexOf(i1.ua);
+        let pos2 = browsers.indexOf(i2.ua);
+        if (pos1 < pos2) {
           return -1;
         }
-        if (i1.ua > i2.ua) {
+        if (pos1 > pos2) {
           return 1;
         }
         return 0;

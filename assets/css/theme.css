@@ -123,7 +123,9 @@ tbody th { text-align:left;}
 thead th {
     background-color: #0070cc;
     color: #eee;
-    padding: 0.5em 0.1em;}
+    padding: 0.5em 0;
+    vertical-align: top;
+}
 th, td {
     border-bottom: thin solid #0070cc;
     border-top: thin solid #0070cc;
@@ -226,11 +228,15 @@ Styles for the "current implementations" column
 }
 
 /* Browser icons */
+.ua .baidu { background-image: url('../impl/baidu.png'); }
 .ua .chrome { background-image: url('../impl/chrome.png'); }
 .ua .edge { background-image: url('../impl/edge.png'); }
 .ua .firefox { background-image: url('../impl/firefox.png'); }
 .ua .opera { background-image: url('../impl/opera.png'); }
+.ua .qq { background-image: url('../impl/qq.png'); }
 .ua .safari { background-image: url('../impl/safari.png'); }
+.ua .samsunginternet { background-image: url('../impl/samsunginternet.png'); }
+.ua .uc { background-image: url('../impl/uc.png'); }
 .ua .webkit { background-image: url('../impl/webkit.png'); }
 
 /* Desktop/Mobile badges */
@@ -242,7 +248,35 @@ Styles for the "current implementations" column
 .ua .prefix { background-image: url('../impl/prefix.svg'); }
 .ua .flag { background-image: url('../impl/flag.svg'); }
 
+/* UA filtering menu */
+[data-col|=impl] details {
+  position: relative;
+  display: block;
+  padding: 0 0.1em;
+  text-align: left;
+}
 
+[data-col|=impl] summary {
+  font-size: smaller;
+  padding-left: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+[data-col|=impl] div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #0070cc;
+  font-size: smaller;
+  z-index: 10;
+}
+
+[data-col|=impl] ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em;
+}
 
 dl dt { margin-bottom: 0.3em;  font-size:1.1em;}
 dl dd{ margin-bottom: 1em;}

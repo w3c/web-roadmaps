@@ -519,7 +519,7 @@ async function extractImplData(files) {
 
           // Rule 3, constrain safari status to that of webkit
           // when it is lower
-          if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
+          if (ua.startsWith('safari') && (typeof webkitstatus === 'string') &&
               statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
             selectedImplInfo = webkitInfo;
           }

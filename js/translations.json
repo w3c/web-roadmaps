@@ -11,7 +11,7 @@
     "spec": "Specification / Group",
     "maturity": "Maturity",
     "impl": "Current implementations",
-    "implintents": "Implementation intents",
+    "impl-intents": "Implementation intents",
     "versions": "Development versions"
   },
   "implstatus": {

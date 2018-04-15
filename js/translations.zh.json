@@ -11,7 +11,7 @@
     "spec": "规范 / 小组",
     "maturity": "成熟度",
     "impl": "现有实现",
-    "implintents": "实现意向",
+    "impl-intents": "实现意向",
     "versions": "Development versions"
   },
   "implstatus": {
