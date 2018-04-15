@@ -299,6 +299,7 @@ margin-top: 10px;
 
 ul.roadmap-list li a {
     text-decoration: none;
+    border-bottom: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -357,10 +358,6 @@ ul.roadmap-list li .description p {
     margin: 0px;
     color: #47525d;
     font-size: 0.9em;
-}
-
-.contribute p a:hover {
-  text-decoration: underline;
 }
 
 .contribute p.call-to-action {
