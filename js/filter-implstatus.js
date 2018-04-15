@@ -31,19 +31,8 @@ Details Element Polyfill 2.0.1
 
 (function () {
   const browsers = {
-    main: [
-      { ua: 'chrome', title: 'Chrome' },
-      { ua: 'edge', title: 'Edge' },
-      { ua: 'firefox', title: 'Firefox' },
-      { ua: 'safari|webkit', title: 'Safari / Webkit' }
-    ],
-    secondary: [
-      { ua: 'baidu', title: 'Baidu Browser' },
-      { ua: 'opera', title: 'Opera' },
-      { ua: 'qq', title: 'QQ Browser' },
-      { ua: 'samsunginternet', title: 'Samsung Internet' },
-      { ua: 'uc', title: 'UC Browser' },
-    ]
+    main: ['chrome', 'edge', 'firefox', 'safari|webkit'],
+    secondary: ['baidu', 'opera', 'qq', 'samsunginternet', 'uc']
   };
 
   const $ = (el, selector) =>
@@ -60,7 +49,7 @@ Details Element Polyfill 2.0.1
 
     // Display main browsers by default
     if (!uas) {
-      uas = browsers.main.map(browser => browser.ua.split('|'))
+      uas = browsers.main.map(ua => ua.split('|'))
         .reduce((arr, val) => arr.concat(val), []);
     }
 
@@ -113,33 +102,35 @@ Details Element Polyfill 2.0.1
    *
    * @param {Array(String)} uas Requested User-Agents
    */
-  const addFilteringMenu = function (uas) {
+  const addFilteringMenu = function (uas, translate) {
     // Display main browsers by default
     if (!uas) {
-      uas = browsers.main.map(browser => browser.ua.split('|'))
+      uas = browsers.main.map(ua => ua.split('|'))
         .reduce((arr, val) => arr.concat(val), []);
     }
 
     $(document, 'th[data-col|=impl]').forEach(th => {
       let menu = document.createElement('details');
       let summary = document.createElement('summary');
-      summary.appendChild(document.createTextNode('Select browsers...'));
+      summary.appendChild(document.createTextNode(
+        translate('labels', 'Select browsers...')));
       menu.appendChild(summary);
 
       let container = document.createElement('div');
       ['main', 'secondary'].forEach(type => {
         let list = document.createElement('ul');
-        browsers[type].forEach(browser => {
+        browsers[type].forEach(ua => {
           let li = document.createElement('li');
           let label = document.createElement('label');
           let input = document.createElement('input');
           input.setAttribute('type', 'checkbox');
-          input.setAttribute('value', browser.ua);
-          if (uas.includes(browser.ua.split('|')[0])) {
+          input.setAttribute('value', ua);
+          if (uas.includes(ua.split('|')[0])) {
             input.setAttribute('checked', 'checked');
           }
           label.appendChild(input);
-          label.appendChild(document.createTextNode(browser.title));
+          label.appendChild(document.createTextNode(
+            translate('browsers', ua)));
           li.appendChild(label);
           list.appendChild(li);
         });
@@ -164,35 +155,50 @@ Details Element Polyfill 2.0.1
     }
     filtered = true;
 
-    // Get requested user-agents from query string
-    let uas = (window.location.search || '').substring(1)
-      .split('&')
-      .filter(param => param.split('=')[0] === 'ua')
-      .map(param => param.split('=')[1])
-      .pop();
-    if (uas) {
-      uas = uas.split(',');
+    let lang = document.documentElement.lang;
+    if (!lang) {
+      let match = window.location.pathname.match(/\/.+\.(.*)\.html$/);
+      if (match) {
+        lang = match[1];
+      }
     }
+    lang = lang || 'en';
 
-    // Load requested user-agents from session storage if no specific
-    // user-agents were provided in the query string
-    if (!uas && window.sessionStorage.getItem('uas')) {
-      uas = window.sessionStorage.getItem('uas').split('|');
-    }
+    // Load translations for filtering menu label and browser names
+    loadTranslations(lang).then(translate => {
+      // Get requested user-agents from query string
+      let uas = (window.location.search || '').substring(1)
+        .split('&')
+        .filter(param => param.split('=')[0] === 'ua')
+        .map(param => param.split('=')[1])
+        .pop();
+      if (uas) {
+        uas = uas.split(',');
+      }
 
-    // Update links in navigation menus to preserve the current query string
-    // across pages
-    $(document, '[data-nav]').forEach(el => {
-      let url = el.getAttribute('href').replace(/\?.*$/, '') +
-        window.location.search;
-      el.setAttribute('href', url);
+      // Load requested user-agents from session storage if no specific
+      // user-agents were provided in the query string
+      if (!uas && window.sessionStorage.getItem('uas')) {
+        uas = window.sessionStorage.getItem('uas').split('|');
+      }
+
+      // Update links in navigation menus to preserve the current query string
+      // across pages
+      $(document, '[data-nav]').forEach(el => {
+        let url = el.getAttribute('href').replace(/\?.*$/, '') +
+          window.location.search;
+        el.setAttribute('href', url);
+      });
+
+      // Add filtering menu
+      addFilteringMenu(uas, translate);
+
+      // Filter implementation status results as requested
+      filterImplementations(uas);
+
+      // Tell the rest of the world we're done
+      document.dispatchEvent(new Event('filter-uas'));
     });
-
-    // Add filtering menu
-    addFilteringMenu(uas);
-
-    // Filter implementation status results as requested
-    filterImplementations(uas);
   };
 
   // Apply the filtering when the document is loaded and has been generated,
