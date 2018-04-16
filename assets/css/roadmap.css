@@ -1,58 +1,3 @@
-html, body {
-  margin: 0px;
-  padding: 0px;
-  outline: 0px;
-  font-family: Open Sans, 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  color: #47525d;
-}
-
-h2 {
-  font-size: 1.4em;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #47525d;
-}
-
-h3 {
-  font-size: 1.2em;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  color: #47525d;
-}
-
-h4 {
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: 600;
-  color: #47525d;
-}
-
-p {
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin: 0px;
-  color: #47525d;
-}
-
-p.highlight {
-  color:#00C853;
-}
-
 .container {
   width: 100%;
   box-sizing: border-box;
@@ -149,6 +94,10 @@ filter: grayscale(1);*/
   background-color: white;
   transition:0.4s;
   box-shadow: 1px 0 0 rgba(0,0,0,0.1),0 0 15px rgba(0,0,0,0.1);
+}
+
+#side-nav a:hover {
+  border-bottom: none;
 }
 
 #side-nav.active {
@@ -350,6 +299,7 @@ margin-top: 10px;
 
 ul.roadmap-list li a {
     text-decoration: none;
+    border-bottom: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -408,10 +358,6 @@ ul.roadmap-list li .description p {
     margin: 0px;
     color: #47525d;
     font-size: 0.9em;
-}
-
-.contribute p a:hover {
-  text-decoration: underline;
 }
 
 .contribute p.call-to-action {
@@ -552,10 +498,6 @@ span[lang=en] {
     line-height: 50px;
     margin-top: 20px;
     margin-bottom: 15px;
-    color:  #0070cc;
-    color: #007ee5;
-    color: #47525d;
-
   }
 
   h1.hero-heading {
@@ -569,38 +511,29 @@ span[lang=en] {
 
   h2 {
     font-size: 1.5em;
-    font-weight: 300;
     line-height: 35px;
     margin-top: 15px;
     margin-bottom: 10px;
-    color: #0070cc;
   }
 
   h3 {
     font-size: 1.125em;
-    font-weight: 400;
     line-height: 30px;
     margin-top: 15px;
     margin-bottom: 0px;
-    color: #47525d;
   }
 
   h4 {
-    font-size: 1em;
     font-weight: 800;
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #47525d;
   }
 
   p {
-    font-size: 1em;
-    font-weight: 400;
     line-height: 25px;
     margin-top: 0px;
     margin-bottom: 8px;
-    color: #47525d;
   }
 }
 

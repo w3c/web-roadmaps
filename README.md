@@ -277,7 +277,6 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
   "columns": {
     "feature": "",
     "spec": "",
-    "group": "",
     "maturity": "",
     "impl": "",
     "implintents": "",
