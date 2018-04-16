@@ -1,42 +1,76 @@
 html, body {
-    margin: 0px;
-    padding: 0px;
-    outline: 0px;
-    font-family: Open Sans, sans-serif;
-    font-family: sans-serif;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  font-family: Open Sans, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.6em;
-    color: #47525d;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #47525d;
 }
 
 h2 {
-    font-size: 0.9em;
-    font-weight: 400;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0070cc;
 }
 
+h3 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #47525d;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1.5em;
+  color: #47525d;
+}
 
 p {
-    font-size: 0.9em;
-    font-weight: 400;
-    line-height: 1.6em;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-p a {
-    text-decoration: none;
-    font-weight: 400;
-    color: #0072ff;
+p.highlight {
+  color: #00C853;
+}
+
+a {
+  color: #0062af;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: #0062af 2px solid;
+}
+
+a:visited {
+  color: #004881;
 }
 
 
 .btn-reverse {
     background-color: transparent;
-    border: 1px solid #0072ff;
+    border: 1px solid #036;
     border-radius: 2px;
     padding: 7px 15px 7px 15px;
 }
@@ -45,7 +79,7 @@ p a {
     background-color: white;
     border: 1px solid white;
     border-radius: 2px;
-    color: #0072ff;
+    color: #036;
     padding: 7px 15px 7px 15px;
 }
 
@@ -86,16 +120,162 @@ section.featureset { margin-bottom: 2em;}
 
 table { border-collapse: collapse; width: 100%}
 tbody th { text-align:left;}
-thead th { background-color: #0070cc; color: #eee; padding: 0 0.3em;}
-th, td { border-bottom:  thin solid; border-top:  thin solid;}
+thead th {
+    background-color: #0070cc;
+    color: #eee;
+    padding: 0.5em 0;
+    vertical-align: top;
+}
+th, td {
+    border-bottom: thin solid #0070cc;
+    border-top: thin solid #0070cc;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 tbody th, tbody td { padding-left: 0.5em;}
-td.maturity { text-align: center; padding: 0;}
+th.feature { max-width: 150px; }
+td.maturity { text-align: center; }
 td.maturity img { vertical-align: middle; }
+td.impl { min-width: 220px; }
 td img + img { margin-left: 0.25em; }
 td ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: -8px;
+}
+
+
+/************************************************************
+Styles for the "spec title" column
+************************************************************/
+.group {
+    font-size: smaller;
+    color: #777;
+}
+
+.group a {
+    color: #777;
+}
+.group a:visited {
+    color: #777;
+}
+.group a:hover {
+    border-bottom: #777 2px solid;
+}
+
+
+
+/************************************************************
+Styles for the "current implementations" column
+************************************************************/
+.ua {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+}
+
+.ua:hover {
+    border-bottom: none;
+}
+
+.ua abbr {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide text visually but not to accessible tools */
+.ua span {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.ua i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Stack badges on the right on top of one another */
+.ua i:nth-child(n+3) {
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.ua i:nth-child(3) {
+    bottom: -5px;
+    z-index: 4;
+}
+
+.ua i:nth-child(4) {
+    bottom: 10px;
+    z-index: 3;
+}
+
+.ua i:nth-child(5) {
+    bottom: 25px;
+    z-index: 2;
+}
+
+/* Browser icons */
+.ua .baidu { background-image: url('../impl/baidu.png'); }
+.ua .chrome { background-image: url('../impl/chrome.png'); }
+.ua .edge { background-image: url('../impl/edge.png'); }
+.ua .firefox { background-image: url('../impl/firefox.png'); }
+.ua .opera { background-image: url('../impl/opera.png'); }
+.ua .qq { background-image: url('../impl/qq.png'); }
+.ua .safari { background-image: url('../impl/safari.png'); }
+.ua .samsunginternet { background-image: url('../impl/samsunginternet.png'); }
+.ua .uc { background-image: url('../impl/uc.png'); }
+.ua .webkit { background-image: url('../impl/webkit.png'); }
+
+/* Desktop/Mobile badges */
+.ua .desktop { background-image: url('../impl/desktop.svg'); }
+.ua .mobile { background-image: url('../impl/mobile.svg'); }
+.ua .desktop.mobile { background-image: url('../impl/desktop-mobile.svg'); }
+
+/* Prefix required and behind a flag badges */
+.ua .prefix { background-image: url('../impl/prefix.svg'); }
+.ua .flag { background-image: url('../impl/flag.svg'); }
+
+/* UA filtering menu */
+[data-col|=impl] details {
+  position: relative;
+  display: block;
+  padding: 0 0.1em;
+  text-align: left;
+}
+
+[data-col|=impl] summary {
+  font-size: smaller;
+  padding-left: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+[data-col|=impl] div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #0070cc;
+  font-size: smaller;
+  z-index: 10;
+}
+
+[data-col|=impl] ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em;
 }
 
 dl dt { margin-bottom: 0.3em;  font-size:1.1em;}

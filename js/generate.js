@@ -97,26 +97,34 @@ To generate the page, the following code:
 - generates the side navigation menu
 - generates the main menu and/or the tables at the end of each section
 *******************************************************************************/
-loadScript('../js/utils.js').then(_ => {
-  return Promise.all([
-    loadTemplatePage(lang, pagetype),
-    loadTranslations(lang),
-    loadToc(lang)
-  ]);
-}).then(results => {
-  let translations = results[1];
-  let toc = results[2];
-  return Promise.all([
-    applyToc(toc, translations, lang, pagetype),
-    setSectionTitles(translations, lang),
-    loadSpecInfo(),
-    loadImplementationInfo(),
-    translations
-  ]);
-}).then(results => {
-  let customTables = results[0]['tables'];
-  return fillTables(results[2], results[3], customTables, results[4], lang);
-}).then(_ => {
-  document.documentElement.setAttribute('data-generated', '');
-  document.dispatchEvent(new Event('generate'));
-});
+loadScript('../js/utils.js')
+  .then(_ => loadScript('../js/generate-utils.js'))
+  .then(_ => {
+    return Promise.all([
+      loadTemplatePage(lang, pagetype),
+      loadTranslations(lang),
+      loadToc(lang)
+    ]);
+  }).then(results => {
+    let translations = results[1];
+    let toc = results[2];
+    return Promise.all([
+      applyToc(toc, translations, lang, pagetype),
+      setSectionTitles(translations, lang),
+      loadSpecInfo(),
+      loadImplementationInfo(),
+      translations
+    ]);
+  }).then(results => {
+    let customTables = results[0]['tables'];
+    return fillTables(results[2], results[3], customTables, results[4], lang);
+  }).then(_ => {
+    document.documentElement.setAttribute('data-generated', '');
+    document.dispatchEvent(new Event('generate'));
+
+    // Remove duplicate warnings and report them after filtering menu is ready
+    document.addEventListener('filter-uas', _ => {
+      warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
+      warnings.forEach(warning => console.warn(warning));
+    });
+  });

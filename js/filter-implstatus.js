@@ -13,8 +13,28 @@ in Edge.
 
 The script also updates navigation links to preserve the query string across
 pages.
+
+The script includes the following polyfill (for Microsoft Edge):
+
+Details Element Polyfill 2.0.1
+Copyright © 2018 Javan Makhmali
+MIT License
+See: https://github.com/javan/details-element-polyfill
 *******************************************************************************/
+
+/*******************************************************************************
+Details Element Polyfill 2.0.1
+*******************************************************************************/
+(function(){}).call(this),function(){
+  var t,e,n,r,u,o,i,a,l,s,c,d;s={element:function(){var t,e,n,r,u;return e=document.createElement("details"),"open"in e?(e.innerHTML="<summary>a</summary>b",e.setAttribute("style","position: absolute; left: -9999px"),r=null!=(u=document.body)?u:document.documentElement,r.appendChild(e),t=e.offsetHeight,e.open=!0,n=e.offsetHeight,r.removeChild(e),t!==n):!1}(),toggleEvent:function(){var t;return t=document.createElement("details"),"ontoggle"in t}()},s.element&&s.toggleEvent||(i=function(){return document.head.insertAdjacentHTML("afterbegin",'<style>@charset"UTF-8";details:not([open])>*:not(summary){display:none;}details>summary{display:block;}details>summary::before{content:"\u25ba";padding-right:0.3rem;font-size:0.6rem;cursor:default;}details[open]>summary::before{content:"\u25bc";}</style>')},o=function(){var t,e,n,r;return e=document.createElement("details").constructor.prototype,r=e.setAttribute,n=e.removeAttribute,t=Object.getOwnPropertyDescriptor(e,"open"),Object.defineProperties(e,{open:{get:function(){var e;return"DETAILS"===this.tagName?this.hasAttribute("open"):null!=t&&null!=(e=t.get)?e.call(this):void 0},set:function(e){var n;return"DETAILS"===this.tagName?(e?this.setAttribute("open",""):this.removeAttribute("open"),e):null!=t&&null!=(n=t.set)?n.call(this,e):void 0}},setAttribute:{value:function(t,e){return d(this,function(n){return function(){return r.call(n,t,e)}}(this))}},removeAttribute:{value:function(t){return d(this,function(e){return function(){return n.call(e,t)}}(this))}}})},a=function(){return r(function(t){var e;return e=t.querySelector("summary"),t.hasAttribute("open")?(t.removeAttribute("open"),e.setAttribute("aria-expanded",!1)):(t.setAttribute("open",""),e.setAttribute("aria-expanded",!0))})},u=function(){var e,n,r,u,o;for(u=document.querySelectorAll("summary"),e=0,n=u.length;n>e;e++)o=u[e],t(o);return"undefined"!=typeof MutationObserver&&null!==MutationObserver?(r=new MutationObserver(function(e){var n,r,u,i,a;for(i=[],r=0,u=e.length;u>r;r++)n=e[r].addedNodes,i.push(function(){var e,r,u;for(u=[],e=0,r=n.length;r>e;e++)a=n[e],"DETAILS"===a.tagName&&(o=a.querySelector("summary"))?u.push(t(o,a)):u.push(void 0);return u}());return i}),r.observe(document.documentElement,{subtree:!0,childList:!0})):document.addEventListener("DOMNodeInserted",function(e){return"SUMMARY"===e.target.tagName?t(e.target):void 0})},t=function(t,e){return null==e&&(e=n(t,"DETAILS")),t.setAttribute("aria-expanded",e.hasAttribute("open")),t.hasAttribute("tabindex")||t.setAttribute("tabindex","0"),t.hasAttribute("role")?void 0:t.setAttribute("role","button")},l=function(){var t;return"undefined"!=typeof MutationObserver&&null!==MutationObserver?(t=new MutationObserver(function(t){var e,n,r,u,o,i;for(o=[],n=0,r=t.length;r>n;n++)u=t[n],i=u.target,e=u.attributeName,"DETAILS"===i.tagName&&"open"===e?o.push(c(i)):o.push(void 0);return o}),t.observe(document.documentElement,{attributes:!0,subtree:!0})):r(function(t){var e;return e=t.getAttribute("open"),setTimeout(function(){return t.getAttribute("open")!==e?c(t):void 0},1)})},e=function(t){return!(t.defaultPrevented||t.altKey||t.ctrlKey||t.metaKey||t.shiftKey||t.target.isContentEditable)},r=function(t){return addEventListener("click",function(r){var u,o;return e(r)&&r.which<=1&&(u=n(r.target,"SUMMARY"))&&"DETAILS"===(null!=(o=u.parentElement)?o.tagName:void 0)?t(u.parentElement):void 0},!1),addEventListener("keydown",function(r){var u,o,i;return e(r)&&(13===(o=r.keyCode)||32===o)&&(u=n(r.target,"SUMMARY"))&&"DETAILS"===(null!=(i=u.parentElement)?i.tagName:void 0)?(t(u.parentElement),r.preventDefault()):void 0},!1)},n=function(){return"function"==typeof Element.prototype.closest?function(t,e){return t.closest(e)}:function(t,e){for(;t;){if(t.tagName===e)return t;t=t.parentElement}}}(),c=function(t){var e;return e=document.createEvent("Events"),e.initEvent("toggle",!0,!1),t.dispatchEvent(e)},d=function(t,e){var n,r;return n=t.getAttribute("open"),r=e(),t.getAttribute("open")!==n&&c(t),r},s.element||(i(),o(),a(),u()),s.element&&!s.toggleEvent&&l())
+}.call(this);
+
 (function () {
+  const browsers = {
+    main: ['chrome', 'edge', 'firefox', 'safari|webkit'],
+    secondary: ['baidu', 'opera', 'qq', 'samsunginternet', 'uc']
+  };
+
   const $ = (el, selector) =>
     Array.prototype.slice.call(el.querySelectorAll(selector), 0);
 
@@ -22,24 +42,27 @@ pages.
     return Object.prototype.toString.call(obj) === '[object String]';
   };
 
-  const filterImplementations = function (ua) {
-    if (ua && isString[ua]) {
-      ua = [ua];
+  const filterImplementations = function (uas) {
+    if (uas && isString[uas]) {
+      uas = [uas];
+    }
+
+    // Display main browsers by default
+    if (!uas) {
+      uas = browsers.main.map(ua => ua.split('|'))
+        .reduce((arr, val) => arr.concat(val), []);
     }
 
     // Reset elements, making sure they are all visible
-    $(document, '[data-implstatus],[data-ua]')
-      .forEach(el => el.hidden = false);
-
-    // Nothing to filter if all UA are to be displayed
-    if (!ua || (ua.length === 0)) {
-      return;
-    }
+    // Note that using "hidden" on ua blocks is not enough to hide them,
+    // because the CSS also changes the value of the "display" property
+    $(document, '[data-implstatus],[data-ua]').forEach(el => el.hidden = false);
+    $(document, '[data-ua]').forEach(el => el.style.display = 'inline-block');
 
     // Hide UA implementations that are not requested
     $(document, '[data-ua]')
-      .filter(el => !ua.includes(el.getAttribute('data-ua')))
-      .forEach(el => el.hidden = true);
+      .filter(el => !uas.includes(el.getAttribute('data-ua')))
+      .forEach(el => { el.hidden = true; el.style.display = 'none'; });
 
     // Hide wrapping label if there are no more visible implementation status
     // to show under that label
@@ -48,32 +71,134 @@ pages.
       .forEach(el => el.hidden = true);
   };
 
+
+  /**
+   * Handler for change events on input elements
+   */
+  const uaChangeHandler = function (evt) {
+    // Pointer to list that contains the input
+    let list = evt.target.parentElement.parentElement.parentElement.parentElement;
+    let uas = $(list, 'input')
+      .map(input => (input.checked ? input.value.split('|') : null))
+      .filter(ua => !!ua)
+      .reduce((arr, val) => arr.concat(val), []);
+
+    // Apply filtering
+    filterImplementations(uas);
+
+    // Update all menus in the page accordingly
+    $(document, 'th[data-col|=impl] input')
+      .forEach(input => input.checked = uas.includes(input.value.split('|')[0]));
+
+    // Save the list of selected UA to the session storage
+    // (not using persistent storage as default view seems preferable when
+    // the user comes back to the page after some time)
+    window.sessionStorage.setItem('uas', uas.join('|'));
+  };
+
+
+  /**
+   * Add filtering menu as a dropdown with check boxes
+   *
+   * @param {Array(String)} uas Requested User-Agents
+   */
+  const addFilteringMenu = function (uas, translate) {
+    // Display main browsers by default
+    if (!uas) {
+      uas = browsers.main.map(ua => ua.split('|'))
+        .reduce((arr, val) => arr.concat(val), []);
+    }
+
+    $(document, 'th[data-col|=impl]').forEach(th => {
+      let menu = document.createElement('details');
+      let summary = document.createElement('summary');
+      summary.appendChild(document.createTextNode(
+        translate('labels', 'Select browsers...')));
+      menu.appendChild(summary);
+
+      let container = document.createElement('div');
+      ['main', 'secondary'].forEach(type => {
+        let list = document.createElement('ul');
+        browsers[type].forEach(ua => {
+          let li = document.createElement('li');
+          let label = document.createElement('label');
+          let input = document.createElement('input');
+          input.setAttribute('type', 'checkbox');
+          input.setAttribute('value', ua);
+          if (uas.includes(ua.split('|')[0])) {
+            input.setAttribute('checked', 'checked');
+          }
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(
+            translate('browsers', ua)));
+          li.appendChild(label);
+          list.appendChild(li);
+        });
+        container.appendChild(list);
+      });
+      menu.appendChild(container);
+      th.appendChild(menu);
+    });
+
+    $(document, 'th[data-col|=impl] input').forEach(
+      input => input.addEventListener('change', uaChangeHandler));
+  }
+
   let filtered = false;
 
+  /**
+   * Initialize filtering state when the page is loaded
+   */
   const loadHandler = function () {
     if (filtered || !document.querySelector('[data-generated]')) {
       return;
     }
     filtered = true;
 
-    // Get requested user-agents from query string
-    let ua = (window.location.search || '').substring(1)
-      .split('&')
-      .filter(param => param.split('=')[0] === 'ua')
-      .map(param => param.split('=')[1])
-      .pop()
-      .split(',');
+    let lang = document.documentElement.lang;
+    if (!lang) {
+      let match = window.location.pathname.match(/\/.+\.(.*)\.html$/);
+      if (match) {
+        lang = match[1];
+      }
+    }
+    lang = lang || 'en';
 
-    // Update links in navigation menus to preserve the current query string
-    // across pages
-    $(document, '[data-nav]').forEach(el => {
-      let url = el.getAttribute('href').replace(/\?.*$/, '') +
-        window.location.search;
-      el.setAttribute('href', url);
+    // Load translations for filtering menu label and browser names
+    loadTranslations(lang).then(translate => {
+      // Get requested user-agents from query string
+      let uas = (window.location.search || '').substring(1)
+        .split('&')
+        .filter(param => param.split('=')[0] === 'ua')
+        .map(param => param.split('=')[1])
+        .pop();
+      if (uas) {
+        uas = uas.split(',');
+      }
+
+      // Load requested user-agents from session storage if no specific
+      // user-agents were provided in the query string
+      if (!uas && window.sessionStorage.getItem('uas')) {
+        uas = window.sessionStorage.getItem('uas').split('|');
+      }
+
+      // Update links in navigation menus to preserve the current query string
+      // across pages
+      $(document, '[data-nav]').forEach(el => {
+        let url = el.getAttribute('href').replace(/\?.*$/, '') +
+          window.location.search;
+        el.setAttribute('href', url);
+      });
+
+      // Add filtering menu
+      addFilteringMenu(uas, translate);
+
+      // Filter implementation status results as requested
+      filterImplementations(uas);
+
+      // Tell the rest of the world we're done
+      document.dispatchEvent(new Event('filter-uas'));
     });
-
-    // Filter implementation status results as requested
-    filterImplementations(ua);
   };
 
   // Apply the filtering when the document is loaded and has been generated,

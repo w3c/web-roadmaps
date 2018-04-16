@@ -8,11 +8,10 @@
   },
   "columns": {
     "feature": "Feature",
-    "spec": "Specification",
-    "group": "Group",
+    "spec": "Specification / Group",
     "maturity": "Maturity",
     "impl": "Current implementations",
-    "implintents": "Implementation intents",
+    "impl-intents": "Implementation intents",
     "versions": "Development versions"
   },
   "implstatus": {
@@ -20,5 +19,16 @@
     "experimental": "Experimental",
     "indevelopment": "In development",
     "consideration": "Under consideration"
+  },
+  "browsers": {
+    "chrome": "Chrome",
+    "edge": "Microsoft Edge",
+    "firefox": "Firefox",
+    "safari|webkit": "Safari / Webkit",
+    "baidu": "Baidu Browser",
+    "opera": "Opera",
+    "qq": "QQ Browser",
+    "samsunginternet": "Samsung Internet",
+    "uc": "UC Browser"
   }
 }
