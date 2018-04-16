@@ -24,7 +24,12 @@
     "N/A": "无",
     "%feature in %spec": "%spec中的%feature",
     "Polyfills": "Polyfills",
-    "Home": "首页"
+    "Home": "首页",
+    "Feature requires using a prefix and is behind a flag.": "Feature requires using a prefix and is behind a flag.",
+    "Feature requires using a prefix.": "Feature requires using a prefix.",
+    "Feature is behind a flag.": "Feature is behind a flag.",
+    "Source: %source.": "来源：%source",
+    "Select browsers...": "选择浏览器..."
   },
   "features": {
     "2D effects": "2D 效果",
