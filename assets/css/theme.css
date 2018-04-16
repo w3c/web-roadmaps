@@ -67,6 +67,10 @@ a:visited {
   color: #004881;
 }
 
+strong {
+  font-weight: 800;
+}
+
 
 .btn-reverse {
     background-color: transparent;
@@ -119,6 +123,7 @@ footer {
 section.featureset { margin-bottom: 2em; }
 
 table { border-collapse: collapse; width: 100% }
+th { font-weight: 800; }
 tbody th { text-align:left; }
 thead th {
     background-color: #0070cc;
@@ -254,6 +259,7 @@ Styles for the "current implementations" column
   display: block;
   padding: 0 0.1em;
   text-align: left;
+  font-weight: 400;
 }
 
 [data-col|=impl] summary {
