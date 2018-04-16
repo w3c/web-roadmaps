@@ -14,6 +14,17 @@
     "impl-intents": "实现意向",
     "versions": "Development versions"
   },
+  "browsers": {
+    "chrome": "Chrome",
+    "edge": "Microsoft Edge",
+    "firefox": "Firefox",
+    "safari|webkit": "Safari / Webkit",
+    "baidu": "百度浏览器",
+    "opera": "Opera",
+    "qq": "QQ浏览器",
+    "samsunginternet": "三星浏览器",
+    "uc": "UC浏览器"
+  },
   "implstatus": {
     "shipped": "已有稳定实现",
     "experimental": "已有实验性实现",
