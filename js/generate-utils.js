@@ -185,11 +185,23 @@ const expandColumns = function (columns, translate) {
 
 /**
  * Known browsers
+ *
+ * The "main" browsers are the individual browser engines. A more "proper"
+ * categorization would have used Blink, EdgeHTML, Gecko, and Webkit, but
+ * random people don't think in terms of underlying engines and implementation
+ * info is usually provided for browsers themselves.
+ *
+ * As an exception to the rule, the Webkit platform status site reports
+ * implementation info about Webkit and, once in a while, features shipped in
+ * the latest version of Webkit are not in the latest version of Safari. As a
+ * consequence, Safari and Webkit are treated both as different browsers and as
+ * the same one: implementation info about Safari will be displayed if
+ * available, otherwise we'll display implementation info about Webkit.
  */
-const browsers = [
-  'firefox', 'chrome', 'edge', 'safari', 'webkit',
-  'opera', 'samsunginternet', 'baidu', 'qq', 'uc'
-];
+const browsers = {
+  main: ['chrome', 'edge', 'firefox', 'safari|webkit'],
+  secondary: ['baidu', 'opera', 'qq', 'samsunginternet', 'uc']
+};
 
 /**
  * Code to call to create a cell of the given type
@@ -820,12 +832,16 @@ const formatImplInfo = function (data, translate) {
     return div;
   }
 
+  let allBrowsers = browsers.main.concat(browsers.secondary)
+    .map(ua => ua.split('|'))
+    .reduce((arr, val) => arr.concat(val), []);
+
   // Arrange the implementation info per implementation status
   let info = {};
   implementationStatuses.forEach(status => {
     let implementations = data.implementations.filter(impl =>
       impl.selected && (impl.status === status) &&
-      browsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
+      allBrowsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
     ).filter((impl, index, arr) => {
       // Group mobile info with desktop info when it exists and add flags
       let tokens = impl.ua.split('_');
@@ -849,8 +865,8 @@ const formatImplInfo = function (data, translate) {
 
     if (implementations.length > 0) {
       info[status] = implementations.sort((i1, i2) => {
-        let pos1 = browsers.indexOf(i1.ua);
-        let pos2 = browsers.indexOf(i2.ua);
+        let pos1 = allBrowsers.indexOf(i1.ua);
+        let pos2 = allBrowsers.indexOf(i2.ua);
         if (pos1 < pos2) {
           return -1;
         }
@@ -879,7 +895,8 @@ const formatImplInfo = function (data, translate) {
       let title = translate('labels', '%status in %ua (%versions).')
         .replace('%status', statusLabel)
         .replace('%ua', impl.ua)
-        .replace('%versions', versions.join(', '));
+        .replace('%versions', versions.map(
+          version => translate('labels', version)).join(', '));
       if (impl.prefix && impl.flag) {
         title += ' ' + translate('labels', 'Feature requires using a prefix and is behind a flag.');
       }
@@ -950,4 +967,41 @@ const formatImplInfo = function (data, translate) {
   }
 
   return div;
+};
+
+
+/**
+ * Add filtering menus to implementation columns as a dropdown with check boxes
+ *
+ * @function
+ * @param {function} translate Translation function
+ */
+const addFilteringMenus = function (translate) {
+  $(document, 'th[data-col|=impl]').forEach(th => {
+    let menu = document.createElement('details');
+    let summary = document.createElement('summary');
+    summary.appendChild(document.createTextNode(
+      translate('labels', 'Select browsers...')));
+    menu.appendChild(summary);
+
+    let container = document.createElement('div');
+    ['main', 'secondary'].forEach(type => {
+      let list = document.createElement('ul');
+      browsers[type].forEach(ua => {
+        let li = document.createElement('li');
+        let label = document.createElement('label');
+        let input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        input.setAttribute('value', ua);
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(
+          translate('browsers', ua)));
+        li.appendChild(label);
+        list.appendChild(li);
+      });
+      container.appendChild(list);
+    });
+    menu.appendChild(container);
+    th.appendChild(menu);
+  });
 };
