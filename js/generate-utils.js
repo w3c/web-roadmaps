@@ -894,7 +894,7 @@ const formatImplInfo = function (data, translate) {
       }
       let title = translate('labels', '%status in %ua (%versions).')
         .replace('%status', statusLabel)
-        .replace('%ua', impl.ua)
+        .replace('%ua', translate('browsers', impl.ua))
         .replace('%versions', versions.map(
           version => translate('labels', version)).join(', '));
       if (impl.prefix && impl.flag) {

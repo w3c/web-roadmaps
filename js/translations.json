@@ -25,6 +25,8 @@
     "edge": "Microsoft Edge",
     "firefox": "Firefox",
     "safari|webkit": "Safari / Webkit",
+    "safari": "Safari",
+    "webkit": "Webkit",
     "baidu": "Baidu Browser",
     "opera": "Opera",
     "qq": "QQ Browser",
