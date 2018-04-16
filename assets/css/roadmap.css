@@ -165,7 +165,6 @@ filter: grayscale(1);*/
   font-weight: 800;
   margin-top: 30px;
   margin-bottom: 20px;
-  color: white;
   font-family: sans-serif;
 }
 
@@ -328,7 +327,7 @@ ul.roadmap-list li .description {
     padding-right: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
-  -- border-bottom: 1px solid rgba(0,0,0,0.1);
+    --border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 ul.roadmap-list li:last-child .description {
@@ -348,10 +347,9 @@ ul.roadmap-list li .description p {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-    background-color: #F6F8FA;
-    display: flex;
-    box-sizing: border-box;
-    box-sizing: border-box;
+  background-color: #F6F8FA;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .contribute p {
@@ -431,13 +429,11 @@ span[lang=en] {
 
     ul.roadmap-list {
         width: 100%;
-        margin: 0px;
         padding: 0px;
         padding-bottom: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: auto;
         justify-content: space-between;
     }
 
