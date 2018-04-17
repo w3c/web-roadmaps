@@ -4792,7 +4792,7 @@
       },
       {
         "ua": "firefox",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/features/5694225681219584",
         "selected": true
@@ -4835,6 +4835,7 @@
     "experimental": [],
     "indevelopment": [],
     "consideration": [
+      "firefox",
       "edge"
     ]
   },

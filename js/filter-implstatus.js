@@ -43,14 +43,8 @@ Details Element Polyfill 2.0.1
   };
 
   const filterImplementations = function (uas) {
-    if (uas && isString[uas]) {
+    if (isString[uas]) {
       uas = [uas];
-    }
-
-    // Display main browsers by default
-    if (!uas) {
-      uas = browsers.main.map(ua => ua.split('|'))
-        .reduce((arr, val) => arr.concat(val), []);
     }
 
     // Reset elements, making sure they are all visible
@@ -86,9 +80,8 @@ Details Element Polyfill 2.0.1
     // Apply filtering
     filterImplementations(uas);
 
-    // Update all menus in the page accordingly
-    $(document, 'th[data-col|=impl] input')
-      .forEach(input => input.checked = uas.includes(input.value.split('|')[0]));
+    // Check the right browsers in the filtering menus
+    updateFilteringMenus(uas);
 
     // Save the list of selected UA to the session storage
     // (not using persistent storage as default view seems preferable when
@@ -96,53 +89,18 @@ Details Element Polyfill 2.0.1
     window.sessionStorage.setItem('uas', uas.join('|'));
   };
 
-
   /**
-   * Add filtering menu as a dropdown with check boxes
+   * Check the right browsers in the filtering menus
    *
-   * @param {Array(String)} uas Requested User-Agents
+   * @function
+   * @param  {Array{string}} uas The list of user agents to check
    */
-  const addFilteringMenu = function (uas, translate) {
-    // Display main browsers by default
-    if (!uas) {
-      uas = browsers.main.map(ua => ua.split('|'))
-        .reduce((arr, val) => arr.concat(val), []);
-    }
+  const updateFilteringMenus = function (uas) {
+    // Update all menus in the page accordingly
+    $(document, 'th[data-col|=impl] input')
+      .forEach(input => input.checked = uas.includes(input.value.split('|')[0]));
+  };
 
-    $(document, 'th[data-col|=impl]').forEach(th => {
-      let menu = document.createElement('details');
-      let summary = document.createElement('summary');
-      summary.appendChild(document.createTextNode(
-        translate('labels', 'Select browsers...')));
-      menu.appendChild(summary);
-
-      let container = document.createElement('div');
-      ['main', 'secondary'].forEach(type => {
-        let list = document.createElement('ul');
-        browsers[type].forEach(ua => {
-          let li = document.createElement('li');
-          let label = document.createElement('label');
-          let input = document.createElement('input');
-          input.setAttribute('type', 'checkbox');
-          input.setAttribute('value', ua);
-          if (uas.includes(ua.split('|')[0])) {
-            input.setAttribute('checked', 'checked');
-          }
-          label.appendChild(input);
-          label.appendChild(document.createTextNode(
-            translate('browsers', ua)));
-          li.appendChild(label);
-          list.appendChild(li);
-        });
-        container.appendChild(list);
-      });
-      menu.appendChild(container);
-      th.appendChild(menu);
-    });
-
-    $(document, 'th[data-col|=impl] input').forEach(
-      input => input.addEventListener('change', uaChangeHandler));
-  }
 
   let filtered = false;
 
@@ -155,50 +113,49 @@ Details Element Polyfill 2.0.1
     }
     filtered = true;
 
-    let lang = document.documentElement.lang;
-    if (!lang) {
-      let match = window.location.pathname.match(/\/.+\.(.*)\.html$/);
-      if (match) {
-        lang = match[1];
-      }
+    // Get requested user-agents from query string
+    let uas = (window.location.search || '').substring(1)
+      .split('&')
+      .filter(param => param.split('=')[0] === 'ua')
+      .map(param => param.split('=')[1])
+      .pop();
+    if (uas) {
+      uas = uas.split(',');
     }
-    lang = lang || 'en';
 
-    // Load translations for filtering menu label and browser names
-    loadTranslations(lang).then(translate => {
-      // Get requested user-agents from query string
-      let uas = (window.location.search || '').substring(1)
-        .split('&')
-        .filter(param => param.split('=')[0] === 'ua')
-        .map(param => param.split('=')[1])
-        .pop();
-      if (uas) {
-        uas = uas.split(',');
-      }
+    // Load requested user-agents from session storage if no specific
+    // user-agents were provided in the query string
+    if (!uas && window.sessionStorage.getItem('uas')) {
+      uas = window.sessionStorage.getItem('uas').split('|');
+    }
 
-      // Load requested user-agents from session storage if no specific
-      // user-agents were provided in the query string
-      if (!uas && window.sessionStorage.getItem('uas')) {
-        uas = window.sessionStorage.getItem('uas').split('|');
-      }
+    // Display main browsers by default
+    // (the ones that appear in the first list in filtering menus)
+    if (!uas) {
+      let mainList = document.querySelector('th[data-col|=impl] details ul');
+      uas = $(mainList, 'input').map(input => input.value.split('|'))
+        .reduce((arr, val) => arr.concat(val), []);
+    }
 
-      // Update links in navigation menus to preserve the current query string
-      // across pages
-      $(document, '[data-nav]').forEach(el => {
-        let url = el.getAttribute('href').replace(/\?.*$/, '') +
-          window.location.search;
-        el.setAttribute('href', url);
-      });
-
-      // Add filtering menu
-      addFilteringMenu(uas, translate);
-
-      // Filter implementation status results as requested
-      filterImplementations(uas);
-
-      // Tell the rest of the world we're done
-      document.dispatchEvent(new Event('filter-uas'));
+    // Update links in navigation menus to preserve the current query string
+    // across pages
+    $(document, '[data-nav]').forEach(el => {
+      let url = el.getAttribute('href').replace(/\?.*$/, '') +
+        window.location.search;
+      el.setAttribute('href', url);
     });
+
+    // Activate filtering menus
+    $(document, 'th[data-col|=impl] details').forEach(
+      menu => menu.classList.add('active'));
+    $(document, 'th[data-col|=impl] input').forEach(
+      input => input.addEventListener('change', uaChangeHandler));
+
+    // Filter implementation status results as requested
+    filterImplementations(uas);
+
+    // Check the right browsers in the filtering menus
+    updateFilteringMenus(uas);
   };
 
   // Apply the filtering when the document is loaded and has been generated,
