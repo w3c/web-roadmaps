@@ -329,7 +329,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=requestanimationframe",
@@ -393,7 +393,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -491,7 +491,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=offline-apps",
@@ -555,7 +555,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -625,7 +625,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
@@ -700,7 +700,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu",
+      "baidu_android",
       "firefox"
     ],
     "experimental": [],
@@ -842,7 +842,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=audio",
@@ -862,7 +862,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -982,7 +982,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=battery-status",
@@ -997,7 +997,7 @@
       "firefox_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -1087,7 +1087,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=beacon",
@@ -1164,7 +1164,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -1264,7 +1264,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=canvas",
@@ -1336,7 +1336,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -1512,7 +1512,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cors",
@@ -1532,7 +1532,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -1699,7 +1699,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cryptography",
@@ -1769,7 +1769,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "edge"
@@ -1867,7 +1867,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=contentsecuritypolicy2",
@@ -1937,7 +1937,7 @@
       "firefox_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2033,7 +2033,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=transforms2d",
@@ -2053,7 +2053,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2152,7 +2152,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=transforms3d",
@@ -2172,7 +2172,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2266,7 +2266,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-animation",
@@ -2285,7 +2285,7 @@
       "firefox_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "qq_android"
@@ -2387,7 +2387,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=border-radius",
@@ -2407,7 +2407,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2500,7 +2500,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-boxshadow",
@@ -2520,7 +2520,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2682,7 +2682,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "notes": [
           "Supports the `page-break-*` alias from the CSS 2.1 specification, but not the `break-*` properties from the latest spec.",
@@ -2708,7 +2708,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -2932,7 +2932,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=flexbox",
@@ -2997,7 +2997,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -3224,7 +3224,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=font-loading",
@@ -3294,7 +3294,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -3777,7 +3777,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-touch-action",
@@ -3796,7 +3796,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -3889,7 +3889,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-transitions",
@@ -3909,7 +3909,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -4009,7 +4009,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css3-boxsizing",
@@ -4030,7 +4030,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -4114,7 +4114,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=will-change",
@@ -4190,7 +4190,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -4269,7 +4269,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist",
@@ -4338,7 +4338,7 @@
       "firefox_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu",
+      "baidu_android",
       "opera_android"
     ],
     "experimental": [],
@@ -4496,7 +4496,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=deviceorientation",
@@ -4521,7 +4521,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -4749,7 +4749,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=eventsource",
@@ -4768,7 +4768,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -4923,7 +4923,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fetch",
@@ -5000,7 +5000,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -5096,7 +5096,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fileapi",
@@ -5116,7 +5116,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -5251,7 +5251,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "experimental",
         "prefix": true,
         "notes": [
@@ -5327,7 +5327,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "indevelopment": [],
     "consideration": []
@@ -5443,7 +5443,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "notes": [
           "Only works on secure (https) servers"
@@ -5466,7 +5466,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -5569,7 +5569,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "experimental",
         "prefix": true,
         "notes": [
@@ -5640,7 +5640,7 @@
     ],
     "experimental": [
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "indevelopment": [],
     "consideration": []
@@ -5802,7 +5802,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=high-resolution-time",
@@ -5822,7 +5822,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -5872,7 +5872,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=html-media-capture",
@@ -5885,7 +5885,7 @@
       "chrome_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -5969,7 +5969,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=download",
@@ -6038,7 +6038,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6131,7 +6131,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=iframe-sandbox",
@@ -6151,7 +6151,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6250,7 +6250,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=video",
@@ -6270,7 +6270,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6456,7 +6456,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=indexeddb",
@@ -6526,7 +6526,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6618,7 +6618,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-datetime",
@@ -6637,7 +6637,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6737,7 +6737,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-placeholder",
@@ -6758,7 +6758,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -6914,7 +6914,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-pattern",
@@ -6934,7 +6934,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -7027,7 +7027,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-email-tel-url",
@@ -7047,7 +7047,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -7495,7 +7495,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-mediaqueries",
@@ -7516,7 +7516,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -7696,7 +7696,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediasource",
@@ -7753,7 +7753,7 @@
       "firefox_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "chrome",
@@ -7849,7 +7849,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=nav-timing",
@@ -7869,7 +7869,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -7936,7 +7936,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "notes": [
           "Only supports the `type` and `downloadMax` values."
@@ -7994,7 +7994,7 @@
       "chrome_android",
       "firefox_android",
       "samsunginternet_android",
-      "baidu",
+      "baidu_android",
       "firefox"
     ],
     "experimental": [],
@@ -8155,7 +8155,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=online-status",
@@ -8175,7 +8175,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -8331,7 +8331,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "experimental",
         "prefix": true,
         "source": "caniuse",
@@ -8404,7 +8404,7 @@
     "experimental": [
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "indevelopment": [],
     "consideration": []
@@ -8494,7 +8494,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=pagevisibility",
@@ -8558,7 +8558,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -9179,7 +9179,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture",
@@ -9256,7 +9256,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -9879,7 +9879,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=requestidlecallback",
@@ -9935,7 +9935,7 @@
       "firefox_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -10016,7 +10016,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preconnect",
@@ -10084,7 +10084,7 @@
       "chrome_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -10177,7 +10177,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resource-timing",
@@ -10241,7 +10241,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -10314,7 +10314,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=screen-orientation",
@@ -10330,7 +10330,7 @@
       "firefox_android",
       "uc_android",
       "samsunginternet_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "edge"
@@ -10563,7 +10563,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=serviceworkers",
@@ -10639,7 +10639,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "edge"
@@ -10721,7 +10721,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "experimental",
         "prefix": true,
         "notes": [
@@ -10782,7 +10782,7 @@
       "chrome_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "indevelopment": [],
     "consideration": [
@@ -11088,7 +11088,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=subresource-integrity",
@@ -11145,7 +11145,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "edge",
@@ -11469,7 +11469,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=svg",
@@ -11490,7 +11490,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -11645,7 +11645,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=video",
@@ -11665,7 +11665,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -11753,7 +11753,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=touch",
@@ -11817,7 +11817,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu",
+      "baidu_android",
       "safari"
     ],
     "experimental": [],
@@ -12031,7 +12031,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=user-timing",
@@ -12051,7 +12051,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -12130,7 +12130,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=vibration",
@@ -12147,7 +12147,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -12246,7 +12246,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=video",
@@ -12266,7 +12266,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -12366,7 +12366,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=viewport-units",
@@ -12386,7 +12386,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -12542,7 +12542,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=wai-aria",
@@ -12598,7 +12598,7 @@
       "firefox_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [
@@ -12718,7 +12718,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "notes": [
           "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
@@ -12789,7 +12789,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "safari",
@@ -13152,7 +13152,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=audio-api",
@@ -13229,7 +13229,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [
       "chrome",
@@ -13560,7 +13560,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=websockets",
@@ -13624,7 +13624,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -13695,7 +13695,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage",
@@ -13757,7 +13757,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -13847,7 +13847,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=namevalue-storage",
@@ -13918,7 +13918,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -14022,7 +14022,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "experimental",
         "flag": true,
         "notes": [
@@ -14080,7 +14080,7 @@
     "experimental": [
       "chrome",
       "chrome_android",
-      "baidu"
+      "baidu_android"
     ],
     "indevelopment": [],
     "consideration": []
@@ -14168,7 +14168,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvtt",
@@ -14187,7 +14187,7 @@
       "firefox_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -14280,7 +14280,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webworkers",
@@ -14300,7 +14300,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -14467,7 +14467,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=woff",
@@ -14487,7 +14487,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -14573,7 +14573,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=woff2",
@@ -14649,7 +14649,7 @@
       "firefox_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -14742,7 +14742,7 @@
         "selected": true
       },
       {
-        "ua": "baidu",
+        "ua": "baidu_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=xhr2",
@@ -14762,7 +14762,7 @@
       "uc_android",
       "samsunginternet_android",
       "qq_android",
-      "baidu"
+      "baidu_android"
     ],
     "experimental": [],
     "indevelopment": [],
