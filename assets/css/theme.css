@@ -255,11 +255,15 @@ Styles for the "current implementations" column
 
 /* UA filtering menu */
 [data-col|=impl] details {
+  display: none;
   position: relative;
-  display: block;
   padding: 0 0.1em;
   text-align: left;
   font-weight: 400;
+}
+
+[data-col|=impl] details.active {
+  display: block;
 }
 
 [data-col|=impl] summary {

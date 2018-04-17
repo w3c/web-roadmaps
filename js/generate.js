@@ -106,25 +106,24 @@ loadScript('../js/utils.js')
       loadToc(lang)
     ]);
   }).then(results => {
-    let translations = results[1];
+    let translate = results[1];
     let toc = results[2];
     return Promise.all([
-      applyToc(toc, translations, lang, pagetype),
-      setSectionTitles(translations, lang),
+      applyToc(toc, translate, lang, pagetype),
+      setSectionTitles(translate, lang),
       loadSpecInfo(),
       loadImplementationInfo(),
-      translations
+      translate
     ]);
   }).then(results => {
     let customTables = results[0]['tables'];
-    return fillTables(results[2], results[3], customTables, results[4], lang);
+    fillTables(results[2], results[3], customTables, results[4], lang);
+    addFilteringMenus(results[4]);
   }).then(_ => {
+    // Remove duplicate warnings and report them
+    warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
+    warnings.forEach(warning => console.warn(warning));
+
     document.documentElement.setAttribute('data-generated', '');
     document.dispatchEvent(new Event('generate'));
-
-    // Remove duplicate warnings and report them after filtering menu is ready
-    document.addEventListener('filter-uas', _ => {
-      warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
-      warnings.forEach(warning => console.warn(warning));
-    });
   });

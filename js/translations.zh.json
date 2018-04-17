@@ -19,6 +19,8 @@
     "edge": "Microsoft Edge",
     "firefox": "Firefox",
     "safari|webkit": "Safari / Webkit",
+    "safari": "Safari",
+    "webkit": "Webkit",
     "baidu": "百度浏览器",
     "opera": "Opera",
     "qq": "QQ浏览器",
