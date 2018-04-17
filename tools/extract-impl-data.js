@@ -44,7 +44,7 @@ let sources = {
       'and_ff': 'firefox_android',
       'and_qq': 'qq_android',
       'and_uc': 'uc_android',
-      'baidu': 'baidu',
+      'baidu': 'baidu_android',
       'chrome': 'chrome',
       'edge': 'edge',
       'firefox': 'firefox',
