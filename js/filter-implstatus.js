@@ -129,10 +129,13 @@ Details Element Polyfill 2.0.1
       uas = window.sessionStorage.getItem('uas').split('|');
     }
 
-    // Display main browsers by default
-    // (the ones that appear in the first list in filtering menus)
+    // Display main browsers by default (the ones that appear in the first list
+    // in filtering menus) or return if there are no filtering menus to activate
     if (!uas) {
       let mainList = document.querySelector('th[data-col|=impl] details ul');
+      if (!mainList) {
+        return;
+      }
       uas = $(mainList, 'input').map(input => input.value.split('|'))
         .reduce((arr, val) => arr.concat(val), []);
     }
