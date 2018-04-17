@@ -37,6 +37,20 @@ function requireFromWorkingDirectory(filename) {
  * property.
  */
 let sources = {
+  /**
+   * Some notes about Can I Use:
+   * - info about Samsung Internet browser may be slightly outdated. As of
+   * April 2018, it's for v6.2 from Oct 2017, whereas v6.4 shipped in Feb 2018.
+   * That's not perfect but we'll make do with it.
+   * - info about Chinese browsers (Baidu, QQ, UC) seems slightly outdated too
+   * (info is for releases in 2016 and 2017, more recent versions exist). That's
+   * far from perfect but we'll make do with it nevertheless.
+   * - info about Opera for Android and Opera Mini seem completely outdated. As
+   * of April 2018, it's for v37 from Sept 2016 for Opera for Android, whereas
+   * v45 was released in March 2018. Here, the gap seems too wide for it to be
+   * useful to report on Opera for Android and Opera Mini, so the info is just
+   * not processed.
+   */
   caniuse: {
     url: "https://caniuse.com/data.json",
     userAgents: {
@@ -49,8 +63,6 @@ let sources = {
       'edge': 'edge',
       'firefox': 'firefox',
       'ios_saf': 'safari_ios',
-      'op_mini': 'opera_mini',
-      'op_mob': 'opera_android',
       'opera': 'opera',
       'safari': 'safari',
       'samsung': 'samsunginternet_android'
@@ -135,6 +147,24 @@ let sources = {
         throw new Error(`Unknown Chrome feature ${key}`);
       }
 
+      // The JSON file returned by the Chrome Platform Status does not give any
+      // information about which version is the current one
+      // (see https://github.com/GoogleChrome/chromium-dashboard/issues/440 for
+      // a related issue)
+      // We'll get the info from Can I Use data for now
+      // The assumption is that the mobile version is the same as the desktop
+      // version. That's usually correct as there seems to be one or two days
+      // of difference between desktop and mobile releases at most:
+      // https://en.wikipedia.org/wiki/Google_Chrome_version_history
+      // (Also the information on Can I Use for Chrome for Android is not as
+      // accurate. For instance, it reports that the today's version of Chrome
+      // for Android is 64 whereas it should be 65 in practice)
+      // Opera's version is a priori consistently Chrome's version - 13 as
+      // explained in:
+      // https://github.com/w3c/web-roadmaps/issues/13#issuecomment-351468443
+      let chromeVersion = sources.caniuse.data.agents['chrome'].versions.slice(-4, -3);
+      let operaVersion = chromeVersion - 13;
+
       function parseStatus(chromestatus) {
         if (!chromestatus) {
           return null;
@@ -179,7 +209,7 @@ let sources = {
           res.status = 'experimental';
         }
         res.source = source;
-        res.href = `https://www.chromestatus.com/features/${key}`;
+        res.href = `https://www.chromestatus.com/feature/${key}`;
         return res;
       }
 
@@ -187,18 +217,31 @@ let sources = {
         let info = parseStatus(impldata[ua]);
         ua = (ua === 'ff' ? 'firefox' : ua);
         if (info) {
-          // Chromestatus has more detailed implementation info about Chrome
-          // ("in development" and "consideration" are at the Chromium level
-          // and thus apply to Chrome for desktops and Chrome for Android)
+          // Chromestatus has more detailed and forward-looking implementation
+          // info about Chrome (aslo, "in development" and "consideration" are
+          // at the Chromium level and thus apply to Chrome for desktops and
+          // Chrome for Android)
           let enabledOnAllPlatforms = (info.status === 'indevelopment') ||
               (info.status === 'consideration') ||
               (impldata.chrome.status.milestone_str === 'Enabled by default');
           if (ua === 'chrome') {
-            if (impldata.chrome.desktop || enabledOnAllPlatforms) {
-              impl.push(Object.assign({ ua: 'chrome'}, info));
+            if (impldata.chrome.desktop &&
+                (impldata.chrome.desktop > chromeVersion) &&
+                (info.status === 'shipped')) {
+              impl.push(Object.assign({ ua: 'chrome' }, info,
+                { status: 'experimental' }));
             }
-            if (impldata.chrome.android || enabledOnAllPlatforms) {
-              impl.push(Object.assign({ ua: 'chrome_android'}, info));
+            else if (impldata.chrome.desktop || enabledOnAllPlatforms) {
+              impl.push(Object.assign({ ua: 'chrome' }, info));
+            }
+            if (impldata.chrome.android &&
+                (impldata.chrome.android > chromeVersion) &&
+                (info.status === 'shipped')) {
+              impl.push(Object.assign({ ua: 'chrome_android' }, info,
+                { status: 'experimental' }));
+            }
+            else if (impldata.chrome.android || enabledOnAllPlatforms) {
+              impl.push(Object.assign({ ua: 'chrome_android' }, info));
             }
           }
           else {
@@ -207,17 +250,19 @@ let sources = {
         }
       }
 
-      // Support in Opera is reported differently, not exactly sure how
-      // to read that info though (typically, if it completes "chrome" info,
-      // we should take the prefix and flag info from "chrome" into account)
-      if (impldata.opera) {
-        let href = `https://www.chromestatus.com/features/${key}`;
-        if (impldata.opera.desktop) {
-          impl.push({ ua: 'opera', status: 'shipped', source, href });
-        }
-        if (impldata.opera.android) {
-          impl.push({ ua: 'opera_android', status: 'shipped', source, href });
-        }
+      // Support in Opera is reported differently, and follows an "Opera
+      // version is Chromium's version - 13" rule which is correct for the
+      // desktop version, but Opera for Android seems to follow its own
+      // schedule (today's version of Opera for Android is 45 and is based on
+      // Chromium 61, so that's version - 16...). We could deduce the right
+      // information for Opera for Android if we knew on which version of
+      // Chromium the current version of Opera for Android is based, but there
+      // is no easy way to tell, so let's ignore the Opera for Android info.
+      if (impldata.opera && impldata.opera.desktop) {
+        let href = `https://www.chromestatus.com/feature/${key}`;
+        let status = (impldata.opera.desktop > operaVersion) ?
+          'experimental' : 'shipped';
+        impl.push({ ua: 'opera', status, source, href });
       }
 
       return impl;
