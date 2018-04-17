@@ -16,6 +16,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [JSON format for describing specifications](#json-format-for-describing-specifications)
 * [Creating a new roadmap page or a new single-page roadmap](#creating-a-new-roadmap-page-or-a-new-single-page-roadmap)
 * [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
+* [Creating an About this document page](#creating-an-about-this-document-page))
 * [Repository branches](#repository-branches)
 * [Translating a roadmap](#translating-a-roadmap)
 
@@ -224,6 +225,71 @@ The template for the JSON file listing sub-pages is as follows:
     }
   ]
 }
+```
+
+## Creating an About this document page
+In a multi-page roadmap, it is good practice to link to an "About this document" page that provides useful information about the contents and status of the document. The about page is a specific page in that it does not appear in the index page along with the other pages. As such, it needs to be defined in a separate `about` property in the JSON file that lists sub-pages, as in:
+
+```json
+{
+  "title": "Title of the Roadmap",
+  "pages": [],
+  "about": {
+    "url": "about.html"
+  }
+}
+```
+
+The `url` property is the only mandated property to describe the about page, but note you may also provide a `title` property to force a different title in the side navigation menu (default is "About this document"), and an `icon` property to provide a custom icon.
+
+The referenced file must exist. The framework defines a default "About this document" page whose contents you can reference using a `data-contents="about"` HTML attribute. A minimal about page would be:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About this document</title>
+  </head>
+  <body>
+    <header>
+      <h1>About this document</h1>
+    </header>
+    <main data-contents="about"></main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>
+```
+
+Children of the `<main>` element in the about page are automatically appended to the default "About this document" page. You may insert elements before existing ones or replace contents by using a `data-insertBefore` or `data-replace` attribute along with a CSS selector. For instance, the following about page would use the default one and replace the first paragraph of the Goals section (which is the second sibling in that section), add an "Authors" section before the "Audience" one, and finish the page with a "Share the love" section:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About this document</title>
+  </head>
+  <body>
+    <header>
+      <h1>About this document</h1>
+    </header>
+    <main data-contents="about">
+      <p data-replace="#goals p:nth-child(2)">
+        This document brings the Web to its full potential.
+      </p>
+      <section data-insertBefore="#audience">
+        <h2>Authors</h2>
+        <p>I!</p>
+      </section>
+      <section>
+        <h2>Share the love</h2>
+        <p>❤</p>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>
 ```
 
 ## Repository branches

@@ -10,5 +10,8 @@
      "title":"Network Control",
      "icon":"",
      "description":"Features needed to manage & control network operations from Web applications."
-    }]
+    }],
+    "about": {
+        "url": "about.html"
+    }
 }

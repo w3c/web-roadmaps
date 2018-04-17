@@ -47,5 +47,8 @@
       "icon": "../assets/img/media-app.svg",
       "description": "Platform features and best practices to develop media applications on the Web"
     }
-  ]
+  ],
+  "about": {
+    "url": "about.html"
+  }
 }

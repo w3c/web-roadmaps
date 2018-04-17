@@ -35,5 +35,8 @@
       "icon": "../assets/img/media-rendering.svg",
       "description": "Accessibility Technologies"
     }
-  ]
+  ],
+  "about": {
+    "url": "about.html"
+  }
 }
