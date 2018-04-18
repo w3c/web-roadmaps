@@ -218,7 +218,7 @@ let sources = {
         ua = (ua === 'ff' ? 'firefox' : ua);
         if (info) {
           // Chromestatus has more detailed and forward-looking implementation
-          // info about Chrome (aslo, "in development" and "consideration" are
+          // info about Chrome (also, "in development" and "consideration" are
           // at the Chromium level and thus apply to Chrome for desktops and
           // Chrome for Android)
           let enabledOnAllPlatforms = (info.status === 'indevelopment') ||
