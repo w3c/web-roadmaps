@@ -26,12 +26,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 0px;
   color: #47525d;
+  text-decoration: underline;
 }
 
 h4 {
@@ -122,7 +123,11 @@ footer {
 
 section.featureset { margin-bottom: 2em; }
 
-table { border-collapse: collapse; width: 100% }
+table {
+  border-collapse: collapse;
+  border-bottom: 5px solid #0070cc;
+  width: 100%
+}
 th { font-weight: 800; }
 tbody th { text-align:left; }
 thead th {
@@ -133,7 +138,6 @@ thead th {
 }
 th, td {
     border-bottom: thin solid #0070cc;
-    border-top: thin solid #0070cc;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -290,6 +294,23 @@ Styles for the "current implementations" column
 
 dl dt { margin-bottom: 0.3em;  font-size:1.1em;}
 dl dd{ margin-bottom: 1em;}
+
+
+/************************************************************
+Styles for the "about" page
+************************************************************/
+#legend table {
+  margin: 2em auto;
+}
+#legend table td:nth-child(1) {
+  width: 80px;
+}
+#legend img {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
 
 
 @media (min-width: 768px) {
