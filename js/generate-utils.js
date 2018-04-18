@@ -117,7 +117,6 @@ const implementationStatuses = [
  */
 const maturityLevels = {
   'ED': 'low',
-  'LastCall': 'medium',
   'WD': 'low',
   'CR': 'high',
   'PR': 'high',
@@ -371,11 +370,10 @@ const maturityData = function (spec) {
     },
     maturityIcon: !spec.status ? null : {
       src: 'https://www.w3.org/2013/09/wpd-rectrack-icons/' +
-        spec.status.toLowerCase().replace(/lastcall/,'lcwd') +
-        '.svg',
+        spec.status.toLowerCase() + '.svg',
       alt: spec.status,
       width: 50,
-      height: (spec.status === 'REC' || spec.status === 'LastCall') ? 53 : 50
+      height: 50
     }
   };
 };
@@ -396,7 +394,8 @@ const loadTemplatePage = function (lang, pagetype) {
         (el.nodeName !== 'TITLE') &&
         !((el.nodeName === 'META') && el.getAttribute('charset')));
       const hero = $(document, 'header > *');
-      const sections = $(document, 'section');
+      const sections = $(document, 'main > *');
+      const aboutContents = !!document.querySelector('[data-contents=about]');
 
       // Replace doc by template doc
       document.documentElement.innerHTML = responseText;
@@ -409,22 +408,56 @@ const loadTemplatePage = function (lang, pagetype) {
           $(document, '[data-pagetype="' + type + '"]').forEach(el =>
             el.parentNode.removeChild(el)));
 
+      const completeContents = function (aboutHTML) {
+        if (aboutContents) {
+          document.querySelector('.main-content .container').innerHTML = aboutHTML;
+        }
+
+        headElements.forEach(el => document.querySelector('head').appendChild(el));
+        hero.forEach(el => document.querySelector('.hero .container').appendChild(el));
+        let container = document.querySelector('.main-content .container');
+        sections.forEach(section => {
+          if (section.hasAttribute('data-insertBefore')) {
+            let before = container.querySelector(section.getAttribute('data-insertBefore'));
+            document.querySelector('.main-content .container').insertBefore(section, before);
+          }
+          else if (section.hasAttribute('data-replace')) {
+            let toReplace = container.querySelector(section.getAttribute('data-replace'));
+            if (toReplace) {
+              toReplace.parentNode.replaceChild(section, toReplace);
+            }
+            else {
+              console.warn('Replacement selector does not match anything: ' +
+                section.getAttribute('data-replace'));
+            }
+          }
+          else {
+            document.querySelector('.main-content .container')
+              .appendChild(section);
+          }
+        });
+        document.documentElement.lang = lang;
+
+        // Add JS scripts to the end of the body
+        scripts.forEach(script => {
+          let s = document.createElement("script");
+          s.src = script;
+          document.querySelector('body').appendChild(s);
+        });
+
+        // Add IDs to all headers, data-feature paragraphs and data-featureid elements
+        $(document, 'h2:not([id]), h3:not([id]), h4:not([id]), h5:not([id]), h6:not([id]), *[data-feature]:not([id]), *[data-featureid]:not([id])')
+          .forEach(el => makeID(el));
+      };
+
       // Complete the new doc with the content saved above
-      headElements.forEach(el => document.querySelector('head').appendChild(el));
-      hero.forEach(el => document.querySelector('.hero .container').appendChild(el));
-      sections.forEach(section => document.querySelector('.main-content .container').appendChild(section));
-      document.documentElement.lang = lang;
-
-      // Add JS scripts to the end of the body
-      scripts.forEach(script => {
-        let s = document.createElement("script");
-        s.src = script;
-        document.querySelector('body').appendChild(s);
-      });
-
-      // Add IDs to all headers, data-feature paragraphs and data-featureid elements
-      $(document, 'h2:not([id]), h3:not([id]), h4:not([id]), h5:not([id]), h6:not([id]), *[data-feature]:not([id]), *[data-featureid]:not([id])')
-        .forEach(el => makeID(el));
+      if (aboutContents) {
+        return loadLocalizedUrl('../js/template-about.html', lang)
+          .then(responseText => completeContents(responseText));
+      }
+      else {
+        return completeContents();
+      }
     });
 };
 
@@ -438,7 +471,11 @@ const loadTemplatePage = function (lang, pagetype) {
  * current page is not the menu page)
  */
 const applyToc = function (toc, translate, lang, pagetype) {
-  const title = document.querySelector('.hero .container h1').textContent;
+  const h1 = document.querySelector('.hero .container h1');
+  let title = (h1 ? h1.textContent : null);
+  if (!title && pagetype.about) {
+    title = toc.about.title || translate('labels', 'About this document');
+  }
   document.querySelector('title').textContent =
     (pagetype.menu ? '' : title + ' - ') + toc.title;
   $(document, 'section.contribute .discourse').forEach(link => {
@@ -460,6 +497,15 @@ const applyToc = function (toc, translate, lang, pagetype) {
     icon: '../assets/img/home.svg'
   }];
   pages = pages.concat(toc.pages);
+  if (toc.about) {
+    pages.push({
+      title: toc.about.title || translate('labels', 'About this document'),
+      url: ((lang === 'en') ?
+        toc.about.url :
+        toc.about.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')),
+      icon: toc.about.icon || '../assets/img/about.svg'
+    });
+  }
   pages.forEach(page => {
     const localizedUrl = ((lang === 'en') ? page.url :
       page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));

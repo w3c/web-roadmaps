@@ -78,6 +78,9 @@
       "description": "Technologies and considerations to guarantee privacy and security on mobile devices that hold some of the user’s most private and confidential data."
     }
   ],
+  "about": {
+    "url": "about.html"
+  },
   "translations": [
     {
       "title": "English",

@@ -52,7 +52,8 @@ why not).
 *******************************************************************************/
 let pagetype = {
   menu: !!document.querySelector('*[data-pagetype="menu"]'),
-  page: !!document.querySelector('*[data-pagetype="page"]')
+  page: !!document.querySelector('*[data-pagetype="page"]'),
+  about: !!document.querySelector('*[data-contents="about"]')
 };
 
 if (!pagetype.menu && !pagetype.page) {

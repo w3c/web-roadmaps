@@ -14311,7 +14311,6 @@
       {
         "ua": "chrome",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/features/5680169905815552",
         "selected": true
@@ -14319,7 +14318,6 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/features/5680169905815552",
         "selected": true
