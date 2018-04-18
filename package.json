@@ -9,7 +9,7 @@
     "generate": "npm run specinfo && npm run implinfo",
     "specinfo": "node tools/extract-spec-data.js data > specs/tr.json",
     "implinfo": "node tools/extract-impl-data.js data > specs/impl.json",
-    "validate-data": "ajv -s tools/spec.jsons -d data/*.json --errors=text",
+    "validate-data": "ajv -s tools/spec.jsons -d data/\\*.json --errors=text",
     "validate-html": "node tools/validate-html.js media mobile publishing security web5g",
     "validate-specinfo": "ajv -s tools/tr.jsons -d specs/tr.json --errors=text",
     "validate-implinfo": "ajv -s tools/impl.jsons -d specs/impl.json --errors=text"
