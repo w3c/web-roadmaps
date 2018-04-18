@@ -1,62 +1,62 @@
 <section id="goals">
-  <h2>Goals</h2>
+  <h2>目标</h2>
   <p>
-    This document summarizes technologies developed or under development in W3C or elsewhere, and that can be used to build a particular type of applications (e.g. media applications, games) or to promote a particular aspect of application development (e.g. security). The document is organized in pages that present specific features per deployment status and explain their relevance to the underlying theme. Tables at the end of sections summarize the standardization and implementation status of specifications that define features presented in the text.
+    本文档总结了在W3C和其他地方开发的技术，可用于构建特定类型的应用（例如媒体应用、游戏等）或促进应用开发（例如安全性）的特定方面。该文档按页面进行组织，为每个部署状态提供特定功能并解释其与基础主题的相关性。部分末尾的表格总结了定义文本中介绍的特征的规范的标准化和实施状态。
   </p>
   <p>
-    Features are mostly presented in isolation with minimal text. This is on purpose to ease moving features around as they progress on the standardization front and get deployed in implementations.
+    不同特性的描述相互之间通常没有关联，这样做的目的是在标准化方面取得进展并在实现中部署时能够轻松地移动特性描述文本的位置。
   </p>
 </section>
 <section id="audience">
-  <h2>Audience</h2>
+  <h2>受众</h2>
   <p>
-    This document is mainly targeted at developers of Web applications willing to understand the status of the Web platform for particular vertical needs (e.g. publishing) or on particular devices (e.g. mobiles). Device manufacturers may also find valuable information about features that their products should support.
+    本文档主要面向愿意了解Web平台针对特定垂直需求（例如出版）或特定设备（例如移动设备）的状态的Web应用开发人员。设备制造商也可能会找到有关其产品应支持的功能的重要信息。
   </p>
   <p>
-    This document answers questions such as:
+    本文档回答了如下的问题：
   </p>
   <ul>
-    <li>Which technologies are available today across browsers?</li>
-    <li>Which technologies should be available tomorrow?</li>
-    <li>What are the features that being explored and that could lead to new technologies later on?</li>
-    <li>Are there technical gaps in a given field for which there are no active standardization work today?</li>
+    <li>目前哪些技术可以跨浏览器使用？</li>
+    <li>哪些技术在将来可以使用？</li>
+    <li>有哪些功能正在探索之中，并可能在将来成为新的技术？</li>
+    <li>在某个特定领域中是否存在技术缺口，目前还没有积极的标准化工作？</li>
   </ul>
 </section>
 <section id="legend">
-  <h2>Understanding tables</h2>
+  <h2>了解表格</h2>
   <p>
-    Tables at the end of sections summarize information about individual features. Columns displayed may depend on the table. Features of interest come with a name, one or more specifications (or individual features within specifications) that enable this feature, and details about each specification.
+    末尾的表格汇总了有关各个特性的信息。不同表格显示的列可能不同。特性包含一个名称、一个或多个支持该特性的规范（或规范内的个别特性）以及每个规范的详细信息。
   </p>
   <section id="maturity">
-    <h3>Maturity levels</h3>
+    <h3>成熟度</h3>
     <p>
-      The maturity of a feature refers to its standardization status.
+      特性的成熟度指其标准化状态。
     </p>
     <table>
       <thead>
-        <th>Maturity</th>
-        <th>Meaning</th>
+        <th>成熟度</th>
+        <th>含义</th>
       </thead>
       <tbody>
         <tr>
-          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="Editor's Draft"></td>
-          <td>Defined in an Editor's Draft, not yet published officially anywhere. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="编辑草案"></td>
+          <td>在编辑草案中定义，尚未在任何地方正式发布。该特性不应该被认为是稳定的，并且在特性稳定之前，可能的实现仍然可以有重要的改动。</td>
         </tr>
         <tr>
-          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="Working Draft"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C Working Draft</a>. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="工作草案"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C工作草案</a>中定义。该特性不应该被认为是稳定的，并且在特性稳定之前，可能的实现仍然可以有重要的改动。</td>
         </tr>
         <tr>
-          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="Candidate Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C Candidate Recommendation</a>. Feature may be considered stable but could still change based on implementation experience. Implementations may not be fully interoperable.</td>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="候选推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C候选推荐标准</a>中定义。该特性可能被认为是稳定的，但仍可以根据实现的经验进行改动，并且现有的实现可能不具有完全的互操作性。</td>
         </tr>
         <tr>
-          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="Proposed Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C Proposed Recommendation</a>. Feature is undergoing a final review by W3C Members. It is stable and existing implementations should be mostly interoperable.</td>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="提案推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C提案推荐标准</a>中定义。特性已稳定，并开始由W3C会员进行最终审查，现有的实现应该大部分是可互操作的。</td>
         </tr>
         <tr>
-          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C Recommendation</a>. Feature is stable and existing implementations should be mostly interoperable.</td>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="正式推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C正式推荐标准</a>中定义。特性是稳定的，实现通常是可互操作的。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="Living Standard"></td>
