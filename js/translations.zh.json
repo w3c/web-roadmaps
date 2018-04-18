@@ -42,7 +42,8 @@
     "Feature requires using a prefix.": "Feature requires using a prefix.",
     "Feature is behind a flag.": "Feature is behind a flag.",
     "Source: %source.": "来源：%source",
-    "Select browsers...": "选择浏览器..."
+    "Select browsers...": "选择浏览器...",
+    "%status in %ua (%versions).": "在%ua（%versions）中%status."
   },
   "features": {
     "2D effects": "2D 效果",
