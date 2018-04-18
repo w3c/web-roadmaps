@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "JSON Schema that the generated specs/tr.json file needs to follow.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "implementations": {
+        "type": "array",
+        "additionalItems": false,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ua", "status"],
+          "properties": {
+            "ua": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "type": "string",
+              "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            },
+            "href": {
+              "type": "string",
+              "format": "uri"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "comment": {
+              "type": "string",
+              "minLength": 1
+            },
+            "prefix": {
+              "type": "boolean"
+            },
+            "flag": {
+              "type": "boolean"
+            },
+            "selected": {
+              "type": "boolean"
+            },
+            "notes": {
+              "type": "array",
+              "additionalItems": false,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      },
+      "shipped": {
+        "type": "array",
+        "additionalItems": false,
+        "items": { "type": "string", "minLengh": 1 }
+      },
+      "experimental": {
+        "type": "array",
+        "additionalItems": false,
+        "items": { "type": "string", "minLengh": 1 }
+      },
+      "indevelopment": {
+        "type": "array",
+        "additionalItems": false,
+        "items": { "type": "string", "minLengh": 1 }
+      },
+      "consideration": {
+        "type": "array",
+        "additionalItems": false,
+        "items": { "type": "string", "minLengh": 1 }
+      },
+      "polyfills": {
+        "title": "Polyfills",
+        "description": "Polyfills available for the feature",
+        "type": "array",
+        "additionalItems": false,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "label"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

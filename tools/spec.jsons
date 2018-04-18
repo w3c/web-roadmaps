@@ -1,35 +1,146 @@
 {
-    "type":"object",
-    "additionalProperties": false,
-    "properties": {
-        "TR": { "type": "string", "format": "uri", "pattern": "https://www.w3.org/TR/.*"},
-        "editors": { "type": "string", "format": "uri"},
-        "impl": {"type": "object",
-                 "additionalProperties": false,
-                 "properties": {
-                     "caniuse": { "type": ["string", "null"]},
-                     "chromestatus": { "type": ["integer", "null"]},
-                     "mozstatus": { "type": ["string", "null"]},
-                     "edgestatus": { "type": ["string", "null"]},
-                     "webkitstatus": { "type": ["string", "null"]}
-                 }
-                },
-        "wgs": {"type": "array",
-                "additionalItems": false,
-                "items": { "type": "object",
-                           "additionalProperties": false,
-                           "required": ["url", "label"],
-                           "properties": {
-                               "url": { "type": "string", "format": "uri"},
-                               "label": { "type": "string", "minLength": 1}
-                           }
-                         }
-               },
-        "title": {"type": "string"},
-        "feature": {"type": "string"}
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "JSON Schema that spec/feature files in the data folder need to respect.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "url": {
+      "title": "URL of the specification",
+      "description": "Should point to the URL of the latest version of the specification. This URL will be used to collect additional data about the spec (standardization status, Working Groups that produce it, editors draft, etc) and as target of links that reference the feature. URL may contain a fragment to point to a specific section in a specification. If the url property is not specified, the framework assumes that the underlying specification is a W3C specification, that the filename is its short name, and that the URL of the spec is https://www.w3.org/TR/[filename]/.",
+      "type": "string",
+      "format": "uri"
     },
-    "oneOf": [
-        { "required": ["TR"] , "not": {"required": ["wgs"]}},
-        { "required": ["editors", "wgs", "title"], "not": {"required": ["TR"]}}
-    ]
+    "edDraft": {
+      "title": "Editor's Draft URL",
+      "description": "when the specification is unknown to the W3C API and to Specref, or when these APIs do not know the URL of the Editor’s Draft for the specification, the edDraft property should contain the URL of the Editor’s Draft of the specification.",
+      "type": "string",
+      "format": "uri"
+    },
+    "impl": {
+      "title": "Implementation info",
+      "description": "For specifications for which browser implementations are expected, the impl property explains where to look for implementation info",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "caniuse": { "type": ["string", "null"] },
+        "chromestatus": { "type": ["integer", "null"] },
+        "mozstatus": { "type": ["string", "null"] },
+        "edgestatus": { "type": ["string", "null"] },
+        "webkitstatus": { "type": ["string", "null"] },
+        "other": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "ua", "status" ],
+            "properties": {
+              "ua": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "type": "string",
+                "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "comment": {
+                "type": "string",
+                "minLength": 1
+              },
+              "prefix": {
+                "type": "boolean"
+              },
+              "flag": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "polyfills": {
+      "title": "Polyfills",
+      "description": "For specifications for which there are polyfills available that would be worth reporting, the polyfills property lists these polyfills.",
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "label"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "title": {
+      "title": "Title of the specification",
+      "description": "When the specification is unknown to the W3C API and to Specref, the title property should be set to the title of the specification.",
+      "type": "string",
+      "minLength": 1
+    },
+    "feature": {
+      "title": "Feature name",
+      "description": "In case the reference to the specification would benefit from being more specific than the specification as a whole, the feature property allows to add the name of the specific feature",
+      "type": "string",
+      "minLength": 1
+    },
+    "wgs": {
+      "title": "Group(s)",
+      "description": "When the specification is unknown to the W3C API and to Specref, the wgs property should list the group(s) responsible for the specification.",
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "label"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "publisher": {
+      "title": "Publisher",
+      "description": "The organization that published the specification. The framework automatically computes the publisher for W3C, WHATWG, and IETF specifications.",
+      "type": "string",
+      "minLength": 1
+    },
+    "TR": {
+      "description": "The shortlink URL for W3C specs. Deprecated. Use `url` instead.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "https://www.w3.org/TR/.*"
+    },
+    "editors": {
+      "description": "The URL of the Editor's Draft. Deprecated. Use `url` or `edDraft` instead.",
+      "type": "string",
+      "format": "uri"
+    },
+    "ls": {
+      "description": "The URL of the Living Standard. Deprecated. Use `url` instead.",
+      "type": "string",
+      "format": "uri"
+    }
+  }
 }

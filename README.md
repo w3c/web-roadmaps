@@ -203,8 +203,8 @@ The template for the index page is as follows:
       <h1>Title of roadmap</h1>
       <p>Introduction of roadmap scope</p>
     </header>
+    <script src="../js/generate.js"></script>
   </body>
-  <script src="../js/generate.js"></script>
 </html>
 ```
 
@@ -302,7 +302,7 @@ If you would like to visualize the contents of a roadmap locally as it would app
 
 1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done.
 2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key.
-3. Run `npm run all` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
+3. Run `npm run all` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. It should also validate the data files, the generated files and the HTML files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
 4. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
 
 ## Translating a roadmap

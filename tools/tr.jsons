@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "JSON Schema that the generated specs/tr.json file needs to follow.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["url", "title", "status", "deliveredBy"],
+    "properties": {
+      "url": {
+        "title": "URL of the specification",
+        "description": "URL of the latest version of the specification. URL may contain a fragment to point to a specific section in a specification.",
+        "type": "string",
+        "format": "uri"
+      },
+      "edDraft": {
+        "title": "Editor's Draft URL",
+        "description": "URL of the Editor’s Draft of the specification.",
+        "type": "string",
+        "format": "uri"
+      },
+      "title": {
+        "title": "Title of the specification",
+        "description": "Title of the specification.",
+        "type": "string",
+        "minLength": 1
+      },
+      "feature": {
+        "title": "Feature name",
+        "description": "In case the reference to the specification would benefit from being more specific than the specification as a whole, the feature property allows to add the name of the specific feature",
+        "type": "string",
+        "minLength": 1
+      },
+      "status": {
+        "title": "Maturity status",
+        "description": "The maturity level of the specification",
+        "type": "string",
+        "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE"]
+      },
+      "deliveredBy": {
+        "title": "Group(s)",
+        "description": "Group(s) responsible for the specification.",
+        "type": "array",
+        "additionalItems": false,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "label"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "publisher": {
+        "title": "Publisher",
+        "description": "The organization that published the specification.",
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
