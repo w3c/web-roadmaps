@@ -1027,7 +1027,7 @@ const addFilteringMenus = function (translate) {
     let menu = document.createElement('details');
     let summary = document.createElement('summary');
     summary.appendChild(document.createTextNode(
-      translate('labels', 'Select browsers...')));
+      translate('labels', 'Select browsers…')));
     menu.appendChild(summary);
 
     let container = document.createElement('div');
