@@ -43,7 +43,7 @@
     "Feature is behind a flag.": "Feature is behind a flag.",
     "Source: %source.": "来源：%source",
     "Select browsers...": "选择浏览器...",
-    "%status in %ua (%versions).": "在%ua（%versions）中%status."
+    "%status in %ua (%versions).": "在 %ua（%versions）中%status."
   },
   "features": {
     "2D effects": "2D 效果",
