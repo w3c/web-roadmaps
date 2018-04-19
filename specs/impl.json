@@ -114,6 +114,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/)."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=ambient-light"
       },
@@ -121,7 +124,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Partial support in desktop Firefox refers to support being limited to Mac OS X. [Support for Windows 7 is in progress](https://bugzilla.mozilla.org/show_bug.cgi?id=754199)"
+          "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/)."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=ambient-light"
@@ -131,7 +134,7 @@
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Available by enabling the \"Experimental Web Platform Features\" experimental flag in `about:flags`"
+          "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=ambient-light"
@@ -7251,7 +7254,7 @@
         "ua": "chrome_android",
         "status": "shipped",
         "notes": [
-          "Only supports the `type` and `downloadMax` values."
+          "Only supports the `type` and `downlinkMax` values."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=netinfo"
@@ -7270,7 +7273,7 @@
         "ua": "samsunginternet_android",
         "status": "shipped",
         "notes": [
-          "Only supports the `type` and `downloadMax` values."
+          "Only supports the `type` and `downlinkMax` values."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=netinfo",
@@ -7280,7 +7283,7 @@
         "ua": "baidu_android",
         "status": "shipped",
         "notes": [
-          "Only supports the `type` and `downloadMax` values."
+          "Only supports the `type` and `downlinkMax` values."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=netinfo",
