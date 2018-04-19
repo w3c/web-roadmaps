@@ -27,13 +27,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "sensor-polyfills",
-        "url": "https://github.com/kenchris/sensor-polyfills"
-      }
-    ]
+    "publisher": "W3C"
   },
   "ambientlight": {
     "url": "https://www.w3.org/TR/ambient-light/",
@@ -220,7 +214,7 @@
     "publisher": "W3C"
   },
   "cloud-browser-arch": {
-    "url": "http://www.w3.org/TR/cloud-browser-arch/",
+    "url": "https://www.w3.org/TR/cloud-browser-arch/",
     "edDraft": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
     "title": "Cloud Browser Architecture",
     "status": "NOTE",
@@ -471,7 +465,7 @@
     "feature": "profiled device-dependent colors"
   },
   "css-content-3": {
-    "url": "http://www.w3.org/TR/css-content-3/",
+    "url": "https://www.w3.org/TR/css-content-3/",
     "edDraft": "https://drafts.csswg.org/css-content/",
     "title": "CSS Generated Content Module Level 3",
     "status": "WD",
@@ -564,7 +558,7 @@
     "feature": "Variable fonts"
   },
   "css-gcpm-3": {
-    "url": "http://www.w3.org/TR/css-gcpm-3/",
+    "url": "https://www.w3.org/TR/css-gcpm-3/",
     "edDraft": "https://drafts.csswg.org/css-gcpm/",
     "title": "CSS Generated Content for Paged Media Module",
     "status": "WD",
@@ -603,7 +597,7 @@
     "publisher": "W3C"
   },
   "css-page-floats-3": {
-    "url": "http://www.w3.org/TR/css-page-floats-3/",
+    "url": "https://www.w3.org/TR/css-page-floats-3/",
     "edDraft": "https://drafts.csswg.org/css-page-floats/",
     "title": "CSS Page Floats",
     "status": "WD",
@@ -709,7 +703,7 @@
     "publisher": "W3C"
   },
   "css2": {
-    "url": "http://www.w3.org/TR/CSS2/",
+    "url": "https://www.w3.org/TR/CSS2/",
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
     "status": "REC",
     "deliveredBy": [
@@ -1065,13 +1059,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "sensor-polyfills",
-        "url": "https://github.com/kenchris/sensor-polyfills"
-      }
-    ]
+    "publisher": "W3C"
   },
   "hbss": {
     "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
@@ -1356,13 +1344,7 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "Polyfill.io",
-        "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
-      }
-    ]
+    "publisher": "W3C"
   },
   "longtasks": {
     "url": "https://www.w3.org/TR/longtasks-1/",
@@ -1623,13 +1605,7 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "sensor-polyfills",
-        "url": "https://github.com/kenchris/sensor-polyfills"
-      }
-    ]
+    "publisher": "W3C"
   },
   "p2p": {
     "url": "https://www.w3.org/TR/webrtc/",
@@ -2299,13 +2275,7 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "imscJS",
-        "url": "https://github.com/sandflow/imscJS"
-      }
-    ]
+    "publisher": "W3C"
   },
   "ttml-imsc11": {
     "url": "https://www.w3.org/TR/ttml-imsc1.1/",
@@ -2819,13 +2789,7 @@
         "label": "Immersive Web Community Group"
       }
     ],
-    "publisher": "W3C",
-    "polyfills": [
-      {
-        "label": "webxr-polyfill",
-        "url": "https://github.com/immersive-web/webxr-polyfill"
-      }
-    ]
+    "publisher": "W3C"
   },
   "woff": {
     "url": "https://www.w3.org/TR/WOFF/",
