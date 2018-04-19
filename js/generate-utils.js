@@ -500,9 +500,7 @@ const applyToc = function (toc, translate, lang, pagetype) {
   if (toc.about) {
     pages.push({
       title: toc.about.title || translate('labels', 'About this document'),
-      url: ((lang === 'en') ?
-        toc.about.url :
-        toc.about.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')),
+      url: toc.about.url,
       icon: toc.about.icon || '../assets/img/about.svg'
     });
   }
@@ -510,7 +508,7 @@ const applyToc = function (toc, translate, lang, pagetype) {
     const localizedUrl = ((lang === 'en') ? page.url :
       page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));
 
-    if (mainNav) {
+    if (mainNav && (!toc.about || (page.url !== toc.about.url))) {
       let mainNavItem = document.createElement('li');
       mainNavItem.innerHTML = templateItem;
       mainNavItem.querySelector('a').href = localizedUrl;
