@@ -544,22 +544,23 @@ const applyToc = function (toc, translate, lang, pagetype) {
         // that the index page in English may end with "/" instead of with
         // "/index.html"
         let url = null;
+        let filename = window.location.pathname.replace(/^.*\/([^\/]*)$/, '$1');
         if (lang === 'en') {
           // Current doc is in English, add the right lang to the current URL
-          if (!window.location.pathname.match(/\.([^\.]+)$/)) {
-            url = window.location.pathname + 'index.' + tr.lang + '.html';
+          if (!filename) {
+            url = 'index.' + tr.lang + '.html';
           }
           else {
-            url = window.location.pathname.replace(/\.([^\.]+)$/, '.' + tr.lang + '.$1');
+            url = filename.replace(/\.([^\.]+)$/, '.' + tr.lang + '.$1')
           }
         }
         else if (tr.lang === 'en') {
           // English version, remove the lang from the URL
-          url = window.location.pathname.replace(/\.([^\.]+)\.([^\.]+)$/, '.$2');
+          url = filename.replace(/\.([^\.]+)\.([^\.]+)$/, '.$2');
         }
         else {
           // Replace language in the current URL with the target language
-          url = window.location.pathname.replace(/\.([^\.]+)\.([^\.]+)$/, '.' + tr.lang + '.$2');
+          url = filename.replace(/\.([^\.]+)\.([^\.]+)$/, '.' + tr.lang + '.$2');
         }
         return '<a href="' + url + '" data-nav>' + tr.title + '</a>';
       }
