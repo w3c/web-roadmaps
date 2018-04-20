@@ -187,6 +187,11 @@ filter: grayscale(1);*/
   color: #547190;
 }
 
+#side-nav nav ul li a:focus {
+  padding: 14px 0px 14px 9px;
+  border: 1px dashed #547190;
+}
+
 #side-nav nav ul li a .icon {
   width: 15%;
   display: flex;
@@ -370,7 +375,7 @@ footer {
 footer p {
     margin: 0px;
     padding: 20px 0px 20px 0px;
-    color: #A2B1C1;
+    color: #767676;
     font-size: 0.9em;
     text-align: center;
 }
