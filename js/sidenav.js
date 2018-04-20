@@ -8,6 +8,7 @@
   // Key codes of key events we want to respond to in the menu
   const keys = {
     tab: 9,
+    escape: 27,
     pageup: 33,
     pagedown: 34,
     end: 35,
@@ -107,6 +108,7 @@
       return true;
     }
     switch (evt.keyCode) {
+      case keys.escape:
       case keys.tab:
       case keys.down:
       case keys.up:
@@ -126,7 +128,7 @@
   /**
    * Toggle the menu
    */
-  function toggleMenu() {
+  function toggleMenu(evt) {
     if (isMenuOpened) {
       mask.className = mask.className.replace('active', 'hidden');
       menu.className = menu.className.replace('active', 'hidden');
@@ -148,14 +150,19 @@
       menuItems[0].focus();
     }
     isMenuOpened = !isMenuOpened;
+
+    evt.preventDefault();
+    evt.stopPropagation();
+    return false;
   }
 
   // React to user actions that toggle the menu
   button.addEventListener('click', toggleMenu);
   mask.addEventListener('click', toggleMenu);
   document.addEventListener('keydown', function (evt) {
-    if ((evt.key === 'm') || (evt.key === 'M')) {
-      return toggleMenu();
+    if ((evt.key === 'm') || (evt.key === 'M') ||
+      (isMenuOpened && (evt.keyCode === keys.escape))) {
+      return toggleMenu(evt);
     }
   });
 
