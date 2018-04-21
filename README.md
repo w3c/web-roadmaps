@@ -16,7 +16,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [JSON format for describing specifications](#json-format-for-describing-specifications)
 * [Creating a new roadmap page or a new single-page roadmap](#creating-a-new-roadmap-page-or-a-new-single-page-roadmap)
 * [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
-* [Creating an About this document page](#creating-an-about-this-document-page))
+* [Creating an About this document page](#creating-an-about-this-document-page)
 * [Repository branches](#repository-branches)
 * [Generate content locally](#generate-content-locally)
 * [Translating a roadmap](#translating-a-roadmap)
