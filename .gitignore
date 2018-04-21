@@ -1,4 +1,5 @@
 deploy_key
 .cache
+.out
 node_modules
 config.json

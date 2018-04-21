@@ -18,6 +18,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
 * [Creating an About this document page](#creating-an-about-this-document-page))
 * [Repository branches](#repository-branches)
+* [Generate content locally](#generate-content-locally)
 * [Translating a roadmap](#translating-a-roadmap)
 
 ## Overview of the framework
@@ -298,12 +299,22 @@ The source of the roadmaps is in the `master` branch. This is the default branch
 
 The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roadmaps/`](https://w3c.github.io/web-roadmaps/).
 
+## Generate content locally
+
 If you would like to visualize the contents of a roadmap locally as it would appear on the published version, you will need to:
 
 1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done.
 2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key.
-3. Run `npm run all` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. It should also validate the data files, the generated files and the HTML files. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
-4. Serve the root folder of the repository over HTTP (any HTTP server should work). In particular, opening the file directly with your Web browser will not work because the JavaScript code needs to send cross origin requests, which are not supported for `file://` URLs.
+3. Run `npm run all` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. It should also validate the data files, the generated files and the HTML files. Last but not least, it should generate static versions of the roadmap pages in an `.out` folder. Note you'll need Node.js v8.0.0 or above and you'll need to run `npm install` first.
+4. Browse the contents of the `.out` folder on your favorite Web browser (opening the file works fine, no need to serve the file over HTTP).
+
+The `npm run all` script can take some time. If you want to have a more interactive way to browse updates you're making to files, you may follow these instructions instead:
+
+1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done.
+2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key.
+3. Run `npm run generate-info` to update information and implementation data. This should generate `specs/tr.json` and `specs/impl.json` files. This step needs to be run again whenever you make changes to information in the `data` folder.
+4. Serve the root folder over HTTP (any simple HTTP server should work), and browse the roadmap files over HTTP in your favorite Web browser. Refresh the content whenever you've made changes to the HTML, JS, or data files.
+
 
 ## Translating a roadmap
 
