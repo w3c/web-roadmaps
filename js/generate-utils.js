@@ -648,7 +648,7 @@ const loadToc = function (lang) {
  * Loads known metadata for each specification
  */
 const loadSpecInfo = function () {
-  return loadUrl('../specs/tr.json')
+  return loadUrl('../.out/data/tr.json')
     .then(response => JSON.parse(response));
 };
 
@@ -657,7 +657,7 @@ const loadSpecInfo = function () {
  * Loads known implementation data for each specification
  */
 const loadImplementationInfo = function () {
-  return loadUrl('../specs/impl.json')
+  return loadUrl('../.out/data/impl.json')
     .then(response => JSON.parse(response));
 };
 
