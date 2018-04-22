@@ -116,7 +116,7 @@ catch (err) {
 const inputFolders = fs.readdirSync('.')
   .filter(f => fs.statSync(f).isDirectory())
   .filter(f => !f.startsWith('.'))
-  .filter(f => !['assets', 'data', 'js', 'node_modules', 'specs', 'tools'].includes(f));
+  .filter(f => !['assets', 'data', 'js', 'node_modules', 'tools'].includes(f));
 const files = inputFolders.map(folder => {
   return fs.readdirSync(folder)
     .filter(f => f.endsWith('.html'))
@@ -129,7 +129,6 @@ Promise.all(files.map(file => generatePage(file, outputFolder)
   ))
   .then(_ => copyFolder('assets', path.join(outputFolder, 'assets')))
   .then(_ => copyFolder('js', path.join(outputFolder, 'js')))
-  .then(_ => copyFolder('specs', path.join(outputFolder, 'specs')))
   .catch(err => {
     console.error(err);
     process.exit(2);
