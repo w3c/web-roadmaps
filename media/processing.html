@@ -1,30 +1,47 @@
-<!DOCTYPE html>
-<html lang=en>
-  <head>
+<!DOCTYPE html><html lang="en" data-generated=""><head>
+    <title>Media Processing - Overview of Media Technologies for the Web</title>
     <meta charset="utf-8">
-    <title>Media Processing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
   </head>
   <body>
+
     <header>
-      <h1>Media Processing</h1>
-      <p>Whether before rendering or after capture, media content often requires some processing to make it fit its expected usage.</p>
-    </header>
-    <main>
-      <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
-        <p data-feature="Image and Video Processing">The <a data-featureid="canvas">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames. One of its limitations is that it operates using the CPU instead of the more optimized operations enabled by modern GPUs.</p>
-        <p data-feature="Video inserts">The <a data-featureid="mse">Media Source Extensions API</a> (MSE) allows application to insert chunks of media (e.g. a video clip) into an existing media stream.</p>
-        <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
-        <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
-      </section>
-      <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
-        <div data-feature="Video processing">
-          <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
+            <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
         </div>
-      </section>
-      <section>
-        <h2>Features not covered by ongoing work</h2>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><h1>Media Processing</h1><p>Whether before rendering or after capture, media content often requires some processing to make it fit its expected usage.</p></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section class="featureset well-deployed">
+        <h2 id="well-deployed-technologies">Well-deployed technologies</h2>
+        <p data-feature="Image and Video Processing" id="image-and-video-processing">The <a data-featureid="canvas" id="canvas" href="https://www.w3.org/TR/2dcontext/">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames. One of its limitations is that it operates using the CPU instead of the more optimized operations enabled by modern GPUs.</p>
+        <p data-feature="Video inserts" id="video-inserts">The <a data-featureid="mse" id="mse" href="https://www.w3.org/TR/media-source/">Media Source Extensions API</a> (MSE) allows application to insert chunks of media (e.g. a video clip) into an existing media stream.</p>
+        <p data-feature="Protected Media" id="protected-media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme" id="eme" href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
+        <p data-feature="Audio Processing" id="audio-processing">The <a data-featureid="webaudio" id="webaudio" href="https://www.w3.org/TR/webaudio/">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
+      <div><table><thead><tr><th data-col="feature">Feature</th><th data-col="spec">Specification / Group</th><th data-col="maturity">Maturity</th><th data-col="impl">Current implementations<details><summary>Select browsers…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">Baidu Browser</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ Browser</label></li><li><label><input type="checkbox" value="samsunginternet">Samsung Internet</label></li><li><label><input type="checkbox" value="uc">UC Browser</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">Image and Video Processing</th><td><a href="https://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a><br><span class="group"><a href="http://www.w3.org/html/wg/">HTML Media Extensions Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5100084685438976"><abbr title="Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status."><span>Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/canvas/"><abbr title="Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status."><span>Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in Firefox (desktop, mobile). Source: Can I use."><span>Shipped in Firefox (desktop, mobile). Source: Can I use.</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in Safari (desktop, mobile). Source: Can I use."><span>Shipped in Safari (desktop, mobile). Source: Can I use.</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in Baidu Browser (mobile). Source: Can I use."><span>Shipped in Baidu Browser (mobile). Source: Can I use.</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in Opera (desktop). Source: Can I use."><span>Shipped in Opera (desktop). Source: Can I use.</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in QQ Browser (mobile). Source: Can I use."><span>Shipped in QQ Browser (mobile). Source: Can I use.</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in Samsung Internet (mobile). Source: Can I use."><span>Shipped in Samsung Internet (mobile). Source: Can I use.</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=canvas"><abbr title="Shipped in UC Browser (mobile). Source: Can I use."><span>Shipped in UC Browser (mobile). Source: Can I use.</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr><tr><th class="feature">Video inserts</th><td><a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a><br><span class="group"><a href="http://www.w3.org/html/wg/">HTML Media Extensions Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediasourceextensions/"><abbr title="Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status."><span>Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in Firefox (desktop, mobile). Source: Can I use."><span>Shipped in Firefox (desktop, mobile). Source: Can I use.</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in Safari (desktop). Source: Can I use."><span>Shipped in Safari (desktop). Source: Can I use.</span><i class="safari"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in Baidu Browser (mobile). Source: Can I use."><span>Shipped in Baidu Browser (mobile). Source: Can I use.</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in Opera (desktop). Source: Can I use."><span>Shipped in Opera (desktop). Source: Can I use.</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in Samsung Internet (mobile). Source: Can I use."><span>Shipped in Samsung Internet (mobile). Source: Can I use.</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=mediasource"><abbr title="Shipped in UC Browser (mobile). Source: Can I use."><span>Shipped in UC Browser (mobile). Source: Can I use.</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="experimental">Experimental:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/4563797888991232"><abbr title="Experimental in Chrome (desktop, mobile). Feature requires using a prefix. Source: Chrome Platform Status."><span>Experimental in Chrome (desktop, mobile). Feature requires using a prefix. Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i><i class="prefix"></i></abbr></a></p></div></td></tr><tr><th class="feature">Protected Media</th><td><a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a><br><span class="group"><a href="http://www.w3.org/html/wg/">HTML Media Extensions Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6578378068983808"><abbr title="Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status."><span>Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/encryptedmediaextensions/"><abbr title="Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status."><span>Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://www.chromestatus.com/feature/6578378068983808"><abbr title="Shipped in Firefox (desktop). Source: Chrome Platform Status."><span>Shipped in Firefox (desktop). Source: Chrome Platform Status.</span><i class="firefox"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="safari" href="https://www.chromestatus.com/feature/6578378068983808"><abbr title="Shipped in Safari (desktop). Source: Chrome Platform Status."><span>Shipped in Safari (desktop). Source: Chrome Platform Status.</span><i class="safari"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="opera" href="https://www.chromestatus.com/feature/6578378068983808"><abbr title="Shipped in Opera (desktop). Source: Chrome Platform Status."><span>Shipped in Opera (desktop). Source: Chrome Platform Status.</span><i class="opera"></i><i class="desktop"></i></abbr></a></p></div></td></tr><tr><th class="feature">Audio Processing</th><td><a href="https://www.w3.org/TR/webaudio/">Web Audio API</a><br><span class="group"><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webaudioapi/"><abbr title="Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status."><span>Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in Firefox (desktop, mobile). Source: Can I use."><span>Shipped in Firefox (desktop, mobile). Source: Can I use.</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://www.chromestatus.com/feature/6261718720184320"><abbr title="Shipped in Safari (desktop). Source: Chrome Platform Status."><span>Shipped in Safari (desktop). Source: Chrome Platform Status.</span><i class="safari"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in Baidu Browser (mobile). Source: Can I use."><span>Shipped in Baidu Browser (mobile). Source: Can I use.</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in Opera (desktop). Source: Can I use."><span>Shipped in Opera (desktop). Source: Can I use.</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in QQ Browser (mobile). Source: Can I use."><span>Shipped in QQ Browser (mobile). Source: Can I use.</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in Samsung Internet (mobile). Source: Can I use."><span>Shipped in Samsung Internet (mobile). Source: Can I use.</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=audio-api"><abbr title="Shipped in UC Browser (mobile). Source: Can I use."><span>Shipped in UC Browser (mobile). Source: Can I use.</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="experimental">Experimental:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6261718720184320"><abbr title="Experimental in Chrome (desktop, mobile). Feature requires using a prefix. Source: Chrome Platform Status."><span>Experimental in Chrome (desktop, mobile). Feature requires using a prefix. Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i><i class="prefix"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=audio-api"><abbr title="Experimental in Safari (mobile). Feature requires using a prefix. Source: Can I use."><span>Experimental in Safari (mobile). Feature requires using a prefix. Source: Can I use.</span><i class="safari"></i><i class="mobile"></i><i class="prefix"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="exploratory-work">Exploratory work</h2>
+        <div data-feature="Video processing" id="video-processing">
+          <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection" id="shape-detection" href="https://wicg.github.io/shape-detection-api">Shape Detection API</a> is exploring this space.</p>
+        </div>
+      <div><table><thead><tr><th data-col="feature">Feature</th><th data-col="spec">Specification / Group</th><th data-col="impl-intents">Implementation intents<details><summary>Select browsers…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">Baidu Browser</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ Browser</label></li><li><label><input type="checkbox" value="samsunginternet">Samsung Internet</label></li><li><label><input type="checkbox" value="uc">UC Browser</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">Video processing</th><td><a href="https://wicg.github.io/shape-detection-api">Accelerated Shape Detection in Images</a><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></span></td><td class="impl"><div></div></td></tr></tbody></table></div></section><section>
+        <h2 id="features-not-covered-by-ongoing-work">Features not covered by ongoing work</h2>
         <dl>
           <dt>JavaScript-based Codecs</dt>
           <dd>The algorithms used to compress and decompress bandwidth-intensive media content are required to be provided by the browsers at this time; a system enabling these algorithms to be written and distributed in JavaScript or Web Assembly and get them integrated in the overall media flow of user agents would provide much greater freedom to specialize and innovate in this space (see <a href="https://discourse.wicg.io/t/custom-image-audio-video-codec-apis/1270">related discussion on W3C’s discourse forum</a>).</dd>
@@ -37,15 +54,50 @@
           <dt>Hardware-accelerated video processing</dt>
           <dd>The Canvas API provides capabilities to do image and video processing, but these capabilities are limited by their reliance on the CPU for execution; modern GPUs provide hardware-acceleration for a wide range of operations, but browsers don't provide hooks to these. The <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> is discussing solutions to expose GPU computation functionality to Web applications, which could eventually allow web applications to process video streams efficiently, taking advantage of the GPU power.</dd>
         </dl>
-      </section>
-      <section>
-        <h2>Discontinued features</h2>
+      </section><section>
+        <h2 id="discontinued-features">Discontinued features</h2>
         <dl>
           <dt>Media Capture Stream with Worker</dt>
-          <dd>Video processing using the Canvas API is very CPU intensive, and as such, can benefit from executing separately from the rest of a Web application. The <a data-featureid="videoworker">Media Capture Stream with Worker</a> specification was an early approach to process video streams in a dedicated worker thread. That processing would still be done on the CPU though, and work on this document has been discontinued. Work in the <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> could eventually allow Web applications to process video streams directly using the power of the GPU.</dd>
+          <dd>Video processing using the Canvas API is very CPU intensive, and as such, can benefit from executing separately from the rest of a Web application. The <a data-featureid="videoworker" id="videoworker" href="https://w3c.github.io/mediacapture-worker/">Media Capture Stream with Worker</a> specification was an early approach to process video streams in a dedicated worker thread. That processing would still be done on the CPU though, and work on this document has been discontinued. Work in the <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> could eventually allow Web applications to process video streams directly using the power of the GPU.</dd>
         </dl>
-      </section>
-    </main>
-    <script src="../js/generate.js"></script>
-  </body>
-</html>
+      </section></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="see-anything-missing">See anything missing?</h2>
+                <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/c/mediartc">Media and Real-Time Communications category of W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/c/mediartc">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="rendering.html" data-nav=""><div class="icon"><img src="../assets/img/media-rendering.svg" alt=""></div><div class="description">Media rendering</div></a></li><li><a href="control.html" data-nav=""><div class="icon"><img src="../assets/img/media-control.svg" alt=""></div><div class="description">Playback controls</div></a></li><li><a href="distribution.html" data-nav=""><div class="icon"><img src="../assets/img/media-distribution.svg" alt=""></div><div class="description">Media distribution</div></a></li><li><a href="processing.html" data-nav=""><div class="icon"><img src="../assets/img/media-processing.svg" alt=""></div><div class="description">Media processing</div></a></li><li><a href="synchronized.html" data-nav=""><div class="icon"><img src="../assets/img/media-synchronization.svg" alt=""></div><div class="description">Media orchestration</div></a></li><li><a href="capture.html" data-nav=""><div class="icon"><img src="../assets/img/media-capture.svg" alt=""></div><div class="description">Media capture</div></a></li><li><a href="apps.html" data-nav=""><div class="icon"><img src="../assets/img/media-app.svg" alt=""></div><div class="description">Media application development</div></a></li><li><a href="about.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">About this document</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>Information on implementations of the APIs have been gathered from <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+            </p></div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>

@@ -1,78 +1,128 @@
-<!DOCTYPE html>
-<html lang="zh">
-  <head>
+<!DOCTYPE html><html lang="zh" data-generated=""><head>
+    <title>应用生命周期 - 移动 Web 应用路线图</title>
     <meta charset="utf-8">
-    <title>应用生命周期</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
   </head>
   <body>
+
     <header>
-      <h1>应用生命周期</h1>
-
-      <p>应用程序中用户体验的一个重要方面是应用如何与系统的其他部分集成在一起，以提供类似原生应用的体验，即使离线也永久可用的用户响应界面，这一点在移动设备上尤其重要，并且需要可安装在用户的主屏幕上，可重新使用（这意味着很容易将通知推送给用户，使其重新进入应用）。</p>
-
-      <p>这些概念是整个<strong>应用生命周期</strong>的一部分：应用如何安装、显示在应用列表、启动、停止、从远程通知中唤醒、在设备在线时同步。它们构成了<strong>渐进式Web应用</strong>（PWA）的支柱。</p>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
+          <img src="../assets/img/menu.svg" height="15" alt="打开菜单" data-altclose="关闭菜单">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
+        </div>
+      </div>
     </header>
+
+
     <main>
-      <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><h1>应用生命周期</h1><p>应用程序中用户体验的一个重要方面是应用如何与系统的其他部分集成在一起，以提供类似原生应用的体验，即使离线也永久可用的用户响应界面，这一点在移动设备上尤其重要，并且需要可安装在用户的主屏幕上，可重新使用（这意味着很容易将通知推送给用户，使其重新进入应用）。</p><p>这些概念是整个<strong>应用生命周期</strong>的一部分：应用如何安装、显示在应用列表、启动、停止、从远程通知中唤醒、在设备在线时同步。它们构成了<strong>渐进式Web应用</strong>（PWA）的支柱。</p></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
 
-        <div data-feature="可见性检测">
-          <p><a data-featureid="page-visibility">页面可见性</a>规范允许开发者检测他们的应用何时在前台，从而相应地调整他们的操作和资源消耗。</p>
+        <div data-feature="可见性检测" id="generatedID-0">
+          <p><a data-featureid="page-visibility" id="page-visibility" href="https://www.w3.org/TR/page-visibility/">页面可见性</a>规范允许开发者检测他们的应用何时在前台，从而相应地调整他们的操作和资源消耗。</p>
         </div>
-      </section>
-
-      <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
-        <div data-feature="打包">
-          <p>无论是否打包，用户都依靠各种元数据（名称、图标）在常用应用列表中来识别他们想要使用的应用。<a data-featureid="appmanifest">Web应用清单</a>规范允许开发人员将所有这些元数据放在一个 JSON 文件中。</p>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="maturity">成熟度</th><th data-col="impl">现有实现<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">可见性检测</th><td><a href="https://www.w3.org/TR/page-visibility/">页面可见性</a> <span lang="en">(Page Visibility (Second Edition))</span><br><span class="group"><a href="https://www.w3.org/webperf/">Web 性能工作组</a> <span lang="en">(Web Performance Working Group)</span></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5689697795833856"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pagevisibilityapi/"><abbr title="在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=pagevisibility"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-1">开发中的技术</h2>
+        <div data-feature="打包" id="generatedID-2">
+          <p>无论是否打包，用户都依靠各种元数据（名称、图标）在常用应用列表中来识别他们想要使用的应用。<a data-featureid="appmanifest" id="appmanifest" href="https://www.w3.org/TR/appmanifest/">Web应用清单</a>规范允许开发人员将所有这些元数据放在一个 JSON 文件中。</p>
         </div>
 
-        <div data-feature="离线 Web 应用">
-          <p><a data-featureid="serviceworkers">Service Workers</a> 规范描述了一种方法，该方法使应用能够利用持久的后台处理，为离线运行应用打开了大门。</p>
+        <div data-feature="离线 Web 应用" id="web">
+          <p><a data-featureid="serviceworkers" id="serviceworkers" href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> 规范描述了一种方法，该方法使应用能够利用持久的后台处理，为离线运行应用打开了大门。</p>
           <p>Service Workers 不仅可以使 Web 应用在离线或网络条件较差的情况下无缝地脱机工作，它还创建了一个模型可以使 Web 应用在浏览器窗口未打开，或者浏览器本身未运行时也能进行操作。这种能力为在后台运行 Web 应用打开了大门，并且可以对远程触发的事件作出反应。</p>
         </div>
 
-        <div data-feature="远程通知">
-          <p><a data-featureid="push">推送 API</a> 使 Web 应用能够订阅远程通知，并在接收到后唤醒应用。长期以来，原生应用受益于这些通知带来的更多的用户参与。</p>
+        <div data-feature="远程通知" id="generatedID-3">
+          <p><a data-featureid="push" id="push" href="https://www.w3.org/TR/push-api/">推送 API</a> 使 Web 应用能够订阅远程通知，并在接收到后唤醒应用。长期以来，原生应用受益于这些通知带来的更多的用户参与。</p>
         </div>
 
-        <div data-feature="后台同步">
-          <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
+        <div data-feature="后台同步" id="generatedID-4">
+          <p><a data-featureid="background-sync" id="background-sync" href="https://wicg.github.io/BackgroundSync/spec/">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
         </div>
-      </section>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="maturity">成熟度</th><th data-col="impl">现有实现<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">打包</th><td><a href="https://www.w3.org/TR/appmanifest/">Web 应用清单</a> <span lang="en">(Web App Manifest)</span><br><span class="group"><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6488656873259008"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="firefox" href="https://www.chromestatus.com/feature/6488656873259008"><abbr title="在 Firefox（桌面）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Firefox（桌面）中已有稳定实现。 来源：Chrome Platform Status</span><i class="firefox"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=web-app-manifest"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="indevelopment">开发中:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webapplicationmanifest/"><abbr title="在 Microsoft Edge（桌面）中开发中。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中开发中。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a></p></div></td></tr><tr><th class="feature">离线 Web 应用</th><td><a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a><br><span class="group"><a href="https://www.w3.org/sw/">Service Workers Working Group</a></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6561526227927040"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=serviceworkers"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="experimental">已有实验性实现:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/serviceworker/"><abbr title="在 Microsoft Edge（桌面）中已有实验性实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有实验性实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a></p></div></td></tr><tr><th class="feature">远程通知</th><td><a href="https://www.w3.org/TR/push-api/">推送 API</a> <span lang="en">(Push API)</span><br><span class="group"><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5416033485586432"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=push-api"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=push-api"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=push-api"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=push-api"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=push-api"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="experimental">已有实验性实现:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pushapi/"><abbr title="在 Microsoft Edge（桌面）中已有实验性实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有实验性实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a></p></div></td></tr><tr><th class="feature">后台同步</th><td><a href="https://wicg.github.io/BackgroundSync/spec/">Web 后台同步</a> <span lang="en">(Web Background Synchronization)</span><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="LS" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6170807885627392"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a></p><p data-implstatus="indevelopment">开发中:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/backgroundsyncapi/"><abbr title="在 Microsoft Edge（桌面）中开发中。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中开发中。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://www.chromestatus.com/feature/6170807885627392"><abbr title="在 Firefox（桌面）中开发中。 来源：Chrome Platform Status"><span>在 Firefox（桌面）中开发中。 来源：Chrome Platform Status</span><i class="firefox"></i><i class="desktop"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-5">探索性工作</h2>
 
-      <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
-
-        <div data-feature="打包">
-          <p><a data-featureid="packaging">Web 打包</a>文档描述了用于网站和应用的新包格式的用例，并概述了这种格式。</p>
+        <div data-feature="打包" id="generatedID-6">
+          <p><a data-featureid="packaging" id="packaging" href="https://github.com/WICG/webpackage">Web 打包</a>文档描述了用于网站和应用的新包格式的用例，并概述了这种格式。</p>
         </div>
 
-        <div data-feature="状态转换">
-          <p>在移动设备上运行的应用可以通过不同的状态，从运行到空闲、暂停、停止、丢弃或终止。这些状态之间的转换由底层操作系统触发，并从 Web 应用中隐藏。<a data-featureid="web-lifecycle">Web 生命周期</a>方案旨在向应用公开状态转换，以便这些应用能够保持/恢复状态、启用/禁用网络等。</p>
+        <div data-feature="状态转换" id="generatedID-7">
+          <p>在移动设备上运行的应用可以通过不同的状态，从运行到空闲、暂停、停止、丢弃或终止。这些状态之间的转换由底层操作系统触发，并从 Web 应用中隐藏。<a data-featureid="web-lifecycle" id="web-lifecycle" href="https://github.com/WICG/web-lifecycle">Web 生命周期</a>方案旨在向应用公开状态转换，以便这些应用能够保持/恢复状态、启用/禁用网络等。</p>
         </div>
 
-        <div data-feature="内容分享">
-            <p><em>分享操作</em>是移动设备上通过跨应用边界传递内容的常见范例，例如将URL或图像发布到自己最喜欢的社交网络应用中。<a data-featureid="web-share">Web分享API</a>建议允许Web应用将文本、链接和其他内容分享到用户选择的任意目的地。API是<a href="https://plus.google.com/116171619992010691739">Web Intents</a>提案的一个更有针对性的版本，它在2012年被放弃，部分原因是它的一般性引发了用户体验问题。</p>
-            <p><a data-featureid="web-share-target">Web分享目标API</a>建议允许Web应用在其应用清单中声明其可接收来自其他应用的内容。这允许用户选择安装的Web应用在分享菜单中被其他本地应用列出。</p>
+        <div data-feature="内容分享" id="generatedID-8">
+            <p><em>分享操作</em>是移动设备上通过跨应用边界传递内容的常见范例，例如将URL或图像发布到自己最喜欢的社交网络应用中。<a data-featureid="web-share" id="web-share" href="https://wicg.github.io/web-share/">Web分享API</a>建议允许Web应用将文本、链接和其他内容分享到用户选择的任意目的地。API是<a href="https://plus.google.com/116171619992010691739">Web Intents</a>提案的一个更有针对性的版本，它在2012年被放弃，部分原因是它的一般性引发了用户体验问题。</p>
+            <p><a data-featureid="web-share-target" id="web-share-target" href="https://wicg.github.io/web-share-target/">Web分享目标API</a>建议允许Web应用在其应用清单中声明其可接收来自其他应用的内容。这允许用户选择安装的Web应用在分享菜单中被其他本地应用列出。</p>
         </div>
-      </section>
-
-      <section>
-        <h2>不再进行的工作</h2>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="impl-intents">实现意向<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">打包</th><td><a href="https://github.com/WICG/webpackage">Web 打包</a> <span lang="en">(Web Packaging)</span><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></span></td><td class="impl"><div><p>无</p></div></td></tr><tr><th class="feature">状态转换</th><td><a href="https://github.com/WICG/web-lifecycle">Web 生命周期</a> <span lang="en">(A Lifecycle for the Web)</span><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></span></td><td class="impl"><div><p data-implstatus="indevelopment">开发中:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5644602711212032"><abbr title="在 Chrome（桌面, 移动）中开发中。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中开发中。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a></p></div></td></tr><tr><th class="feature" rowspan="2">内容分享</th><td><a href="https://wicg.github.io/web-share/">Web 分享API</a> <span lang="en">(Web Share API)</span><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></span></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5668769141620736"><abbr title="在 Chrome（移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="consideration">考虑实现:<br><a class="ua" data-ua="firefox" href="https://www.chromestatus.com/feature/5668769141620736"><abbr title="在 Firefox（桌面）中考虑实现。 来源：Chrome Platform Status"><span>在 Firefox（桌面）中考虑实现。 来源：Chrome Platform Status</span><i class="firefox"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="safari" href="https://www.chromestatus.com/feature/5668769141620736"><abbr title="在 Safari（桌面）中考虑实现。 来源：Chrome Platform Status"><span>在 Safari（桌面）中考虑实现。 来源：Chrome Platform Status</span><i class="safari"></i><i class="desktop"></i></abbr></a></p></div></td></tr><tr><td><a href="https://wicg.github.io/web-share-target/">Web 分享目标API</a> <span lang="en">(Web Share Target API)</span><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web 平台孵化社区组</a> <span lang="en">(Web Platform Incubator Community Group)</span></span></td><td class="impl"><div><p data-implstatus="indevelopment">开发中:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5662315307335680"><abbr title="在 Chrome（桌面, 移动）中开发中。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中开发中。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a></p><p data-implstatus="consideration">考虑实现:<br><a class="ua" data-ua="edge" href="https://www.chromestatus.com/feature/5662315307335680"><abbr title="在 Microsoft Edge（桌面）中考虑实现。 来源：Chrome Platform Status"><span>在 Microsoft Edge（桌面）中考虑实现。 来源：Chrome Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section>
+        <h2 id="generatedID-9">不再进行的工作</h2>
 
         <dl>
           <dt>应用缓存</dt>
-          <dd><a data-featureid="appcache">应用缓存</a>机制是在HTML5中引入的。通过一个缓存清单，浏览器能够知道哪些文件需要被保留在缓存中，从而允许脱机访问Web应用。该特性已经被所有的主流浏览器实现，但存在安全问题，而且开发人员对缓存的控制极其有限，所以该功能在HTML 5.1中已不推荐使用，并于HTML 5.2中删除。<a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a>规范定义了一种更加强大的替代方法。</dd>
+          <dd><a data-featureid="appcache" id="appcache" href="https://www.w3.org/TR/html51/obsolete.html#application-caches">应用缓存</a>机制是在HTML5中引入的。通过一个缓存清单，浏览器能够知道哪些文件需要被保留在缓存中，从而允许脱机访问Web应用。该特性已经被所有的主流浏览器实现，但存在安全问题，而且开发人员对缓存的控制极其有限，所以该功能在HTML 5.1中已不推荐使用，并于HTML 5.2中删除。<a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a>规范定义了一种更加强大的替代方法。</dd>
 
           <dt>任务调度</dt>
-          <dd><a data-featureid="task-scheduler">任务调度 API</a> 可以通过与 Web 应用关联的 service worker 在指定的时间触发任务。该规范属于现在已经关闭的系统应用工作组（System Applications Working Group）的范围，因此被搁置了。</dd>
+          <dd><a data-featureid="task-scheduler" id="task-scheduler" href="https://www.w3.org/TR/task-scheduler/">任务调度 API</a> 可以通过与 Web 应用关联的 service worker 在指定的时间触发任务。该规范属于现在已经关闭的系统应用工作组（System Applications Working Group）的范围，因此被搁置了。</dd>
 
           <dt>地理围栏 API</dt>
-          <dd><a data-featureid="geofencing">地理围栏 API</a> 可以在设备进入指定的地理区域时唤醒Web应用。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。该规范的工作可能会在未来继续，这取决于潜在的实现者的兴趣。</dd>
+          <dd><a data-featureid="geofencing" id="geofencing" href="https://www.w3.org/TR/geofencing/">地理围栏 API</a> 可以在设备进入指定的地理区域时唤醒Web应用。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。该规范的工作可能会在未来继续，这取决于潜在的实现者的兴趣。</dd>
         </dl>
-      </section>
-    </main>
-    <script src="../js/generate.js"></script>
-  </body>
-</html>
+      </section></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-10">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户交互</div></a></li><li><a href="sensors.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li><li><a href="about.zh.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">关于此文档</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    <span class="translations-wrapper">语言: <span class="translations"><a href="lifecycle.html" data-nav="">English</a> | <span>中文</span></span><br></span>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>

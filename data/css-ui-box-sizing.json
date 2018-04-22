@@ -1,7 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/css-ui-3/#box-sizing",
-  "impl": {
-    "caniuse": "css3-boxsizing"
-  },
-  "feature": "box-sizing property"
-}

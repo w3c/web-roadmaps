@@ -1,7 +1,0 @@
-{
-    "title": "Web Background Synchronization",
-    "editors": "https://wicg.github.io/BackgroundSync/spec/",
-    "impl": {
-        "chromestatus": 6170807885627392
-    }
-}

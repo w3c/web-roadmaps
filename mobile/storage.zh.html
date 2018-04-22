@@ -1,54 +1,108 @@
-<!DOCTYPE html>
-<html lang="zh">
-  <head>
+<!DOCTYPE html><html lang="zh" data-generated=""><head>
+    <title>数据存储 - 移动 Web 应用路线图</title>
     <meta charset="utf-8">
-    <title>数据存储</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
   </head>
   <body>
+
     <header>
-      <h1>数据存储</h1>
-      <p>许多应用程序的关键组件是保存状态，导出内容和从系统中其他文件和服务集成数据的能力。</p>
-    </header>
-    <main>
-      <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
-        <p data-feature="简单数据存储">对于简单的数据存储，<a data-featureid="webstorage">Web存储</a>规范提供了两个基本机制，<code>localStorage</code> 和 <code>sessionStorage</code>，前者可以无限期地保存数据，后者基于浏览器会话。</p>
-
-        <p data-feature="数据库查询/更新">在基于文件的访问之上，<a data-featureid="indexeddb">索引数据库 API</a>（IndexedDB）定义了一个与 JavaScript 集成的值和分层对象的数据库，并且可以非常有效地进行查询和更新 - <a href="https://w3c.github.io/IndexedDB/">第二版规范</a>正在开发中。</p>
-
-        <p data-feature="加密存储">对于需要加密的数据，<a href="https://www.w3.org/2012/webcrypto/">Web密码学工作组</a>提出的<a data-featureid="crypto">Web密码学API</a>为Web应用程序提供了强有力的加密原语，并且可以通过<a data-featureid="cryptokey">Web秘钥发现</a>API绑定到预先提供的密钥。</p>
-
-        <p data-feature="文件下载"><a data-featureid="html5-download">HTML5 的 <code>download</code> 属性</a>提供了一个简单的机制来触发文件下载（而不是页面导航），并可以设置用户友好的文件名。</p>
-      </section>
-      <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
-
-        <div data-feature="文件操作">
-          <p><a data-featureid="fileapi">文件API</a>可以加载文件内容，以便与文件系统进行更丰富的交互。注意，对允许写入沙盒文件系统的沙盒文件系统API的研发由于缺乏兴趣而暂停了。</p>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
+          <img src="../assets/img/menu.svg" height="15" alt="打开菜单" data-altclose="关闭菜单">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
 
-        <p data-feature="存储配额">随着越来越多的数据需要被浏览器存储（例如用于离线使用），对于开发者来说获得可靠的存储空间变得至关重要。<a data-featureid="storage">存储</a>规范将允许 Web 应用程序获取配额估计的存储空间，并要求将其存储的数据视为持久性数据。在未经用户明确同意的情况下，这些数据不能被抢占。</p>
-      </section>
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><h1>数据存储</h1><p>许多应用程序的关键组件是保存状态，导出内容和从系统中其他文件和服务集成数据的能力。</p></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section class="featureset well-deployed">
+        <h2 id="generatedID">广泛部署的技术</h2>
+        <p data-feature="简单数据存储" id="generatedID-0">对于简单的数据存储，<a data-featureid="webstorage" id="webstorage" href="https://www.w3.org/TR/webstorage/">Web存储</a>规范提供了两个基本机制，<code>localStorage</code> 和 <code>sessionStorage</code>，前者可以无限期地保存数据，后者基于浏览器会话。</p>
 
-      <section>
-        <h2>不再进行的工作</h2>
+        <p data-feature="数据库查询/更新" id="generatedID-1">在基于文件的访问之上，<a data-featureid="indexeddb" id="indexeddb" href="https://www.w3.org/TR/IndexedDB/">索引数据库 API</a>（IndexedDB）定义了一个与 JavaScript 集成的值和分层对象的数据库，并且可以非常有效地进行查询和更新 - <a href="https://w3c.github.io/IndexedDB/">第二版规范</a>正在开发中。</p>
+
+        <p data-feature="加密存储" id="generatedID-2">对于需要加密的数据，<a href="https://www.w3.org/2012/webcrypto/">Web密码学工作组</a>提出的<a data-featureid="crypto" id="crypto" href="https://www.w3.org/TR/WebCryptoAPI/">Web密码学API</a>为Web应用程序提供了强有力的加密原语，并且可以通过<a data-featureid="cryptokey" id="cryptokey" href="https://www.w3.org/TR/webcrypto-key-discovery/">Web秘钥发现</a>API绑定到预先提供的密钥。</p>
+
+        <p data-feature="文件下载" id="generatedID-3"><a data-featureid="html5-download" id="html5-download" href="https://www.w3.org/TR/html52/links.html#downloading-resources">HTML5 的 <code>download</code> 属性</a>提供了一个简单的机制来触发文件下载（而不是页面导航），并可以设置用户友好的文件名。</p>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="maturity">成熟度</th><th data-col="impl">现有实现<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">简单数据存储</th><td><a href="https://www.w3.org/TR/webstorage/">Web Storage (Second Edition)</a><br><span class="group"><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5345825534246912"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webstorage/"><abbr title="在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=namevalue-storage"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr><tr><th class="feature">数据库查询/更新</th><td><a href="https://www.w3.org/TR/IndexedDB/">索引数据库 API</a> <span lang="en">(Indexed Database API)</span><br><span class="group"><a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6507459568992256"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/indexeddb/"><abbr title="在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=indexeddb"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr><tr><th class="feature" rowspan="2">加密存储</th><td><a href="https://www.w3.org/TR/WebCryptoAPI/">Web密码学API</a> <span lang="en">(Web Cryptography API)</span><br><span class="group"><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5030265697075200"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=cryptography"><abbr title="在 Firefox（桌面）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=cryptography"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=cryptography"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=cryptography"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=cryptography"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=cryptography"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=cryptography"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p><p data-implstatus="experimental">已有实验性实现:<br><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webcryptoapi/"><abbr title="在 Microsoft Edge（桌面）中已有实验性实现。 特性需要使用浏览器引擎前缀。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有实验性实现。 特性需要使用浏览器引擎前缀。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i><i class="prefix"></i></abbr></a></p></div></td></tr><tr><td><a href="https://www.w3.org/TR/webcrypto-key-discovery/">WebCrypto密钥发现</a> <span lang="en">(WebCrypto Key Discovery)</span><br><span class="group"><a href="http://www.w3.org/2012/webcrypto/">Web Cryptography Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="NOTE" width="50" height="50"></td><td class="impl"><div></div></td></tr><tr><th class="feature">文件下载</th><td><a href="https://www.w3.org/TR/html52/links.html#downloading-resources">HTML 5.2中的download attribute</a><br><span class="group"><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="REC" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6473924464345088"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/adownloadattribute/"><abbr title="在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status"><span>在 Microsoft Edge（桌面）中已有稳定实现。 来源：Microsoft Edge Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=download"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=download"><abbr title="在 Safari（桌面）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=download"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=download"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=download"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=download"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=download"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="generatedID-4">开发中的技术</h2>
+
+        <div data-feature="文件操作" id="generatedID-5">
+          <p><a data-featureid="fileapi" id="fileapi" href="https://www.w3.org/TR/FileAPI/">文件API</a>可以加载文件内容，以便与文件系统进行更丰富的交互。注意，对允许写入沙盒文件系统的沙盒文件系统API的研发由于缺乏兴趣而暂停了。</p>
+        </div>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="maturity">成熟度</th><th data-col="impl">现有实现<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">文件操作</th><td><a href="https://www.w3.org/TR/FileAPI/">文件 API</a> <span lang="en">(File API)</span><br><span class="group"><a href="http://www.w3.org/WebPlatform/WG/">Web 平台工作组</a> <span lang="en">(Web Platform Working Group)</span></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="WD" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://caniuse.com/#feat=fileapi"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://caniuse.com/#feat=fileapi"><abbr title="在 Microsoft Edge（桌面）中已有稳定实现。 来源：Can I use"><span>在 Microsoft Edge（桌面）中已有稳定实现。 来源：Can I use</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=fileapi"><abbr title="在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Firefox（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=fileapi"><abbr title="在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use"><span>在 Safari（桌面, 移动）中已有稳定实现。 来源：Can I use</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=fileapi"><abbr title="在 百度浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 百度浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=fileapi"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Can I use"><span>在 Opera（桌面）中已有稳定实现。 来源：Can I use</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=fileapi"><abbr title="在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 QQ浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=fileapi"><abbr title="在 三星浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 三星浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=fileapi"><abbr title="在 UC浏览器（移动）中已有稳定实现。 来源：Can I use"><span>在 UC浏览器（移动）中已有稳定实现。 来源：Can I use</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="generatedID-6">探索性工作</h2>
+
+        <p data-feature="存储配额" id="generatedID-7">随着越来越多的数据需要被浏览器存储（例如用于离线使用），对于开发者来说获得可靠的存储空间变得至关重要。<a data-featureid="storage" id="storage" href="https://storage.spec.whatwg.org/">存储</a>规范将允许 Web 应用程序获取配额估计的存储空间，并要求将其存储的数据视为持久性数据。在未经用户明确同意的情况下，这些数据不能被抢占。</p>
+      <div><table><thead><tr><th data-col="feature">特性</th><th data-col="spec">规范 / 小组</th><th data-col="impl-intents">实现意向<details><summary>选择浏览器…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / Webkit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">百度浏览器</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ浏览器</label></li><li><label><input type="checkbox" value="samsunginternet">三星浏览器</label></li><li><label><input type="checkbox" value="uc">UC浏览器</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">存储配额</th><td><a href="https://storage.spec.whatwg.org/">存储</a> <span lang="en">(Storage)</span><br><span class="group"><a href="https://whatwg.org/">Web 超文本应用技术工作小组</a> <span lang="en">(WHATWG)</span></span></td><td class="impl"><div><p data-implstatus="shipped">已有稳定实现:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5630353511284736"><abbr title="在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Chrome（桌面, 移动）中已有稳定实现。 来源：Chrome Platform Status</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://www.chromestatus.com/feature/5630353511284736"><abbr title="在 Opera（桌面）中已有稳定实现。 来源：Chrome Platform Status"><span>在 Opera（桌面）中已有稳定实现。 来源：Chrome Platform Status</span><i class="opera"></i><i class="desktop"></i></abbr></a></p><p data-implstatus="indevelopment">开发中:<br><a class="ua" data-ua="firefox" href="https://www.chromestatus.com/feature/5630353511284736"><abbr title="在 Firefox（桌面）中开发中。 来源：Chrome Platform Status"><span>在 Firefox（桌面）中开发中。 来源：Chrome Platform Status</span><i class="firefox"></i><i class="desktop"></i></abbr></a></p><p data-implstatus="consideration">考虑实现:<br><a class="ua" data-ua="edge" href="https://www.chromestatus.com/feature/5630353511284736"><abbr title="在 Microsoft Edge（桌面）中考虑实现。 来源：Chrome Platform Status"><span>在 Microsoft Edge（桌面）中考虑实现。 来源：Chrome Platform Status</span><i class="edge"></i><i class="desktop"></i></abbr></a></p></div></td></tr></tbody></table></div></section><section>
+        <h2 id="generatedID-8">不再进行的工作</h2>
         <dl>
           <dt>配额管理 API</dt>
-          <dd>研发<a data-featureid="quota">配额管理 API</a> 的初衷是 Web 平台工作组希望提供一个管理本地存储资源使用和可用性的API，由于新的<a data-featureid="storage">存储</a>提议的出现现在已不再继续研发。
+          <dd>研发<a data-featureid="quota" id="quota" href="https://www.w3.org/TR/quota-api/">配额管理 API</a> 的初衷是 Web 平台工作组希望提供一个管理本地存储资源使用和可用性的API，由于新的<a data-featureid="storage" id="storage-0" href="https://storage.spec.whatwg.org/">存储</a>提议的出现现在已不再继续研发。
           </dd>
 
           <dt>客户端基于 SQL 的数据库</dt>
-          <dd>为了支持在 IndexedDB 上的工作，从2009年开始的<a data-featureid="websql">客户端基于 SQL 的数据库</a>的工作已经不再进行。</dd>
+          <dd>为了支持在 IndexedDB 上的工作，从2009年开始的<a data-featureid="websql" id="websql" href="https://www.w3.org/TR/webdatabase/">客户端基于 SQL 的数据库</a>的工作已经不再进行。</dd>
 
           <dt>地址簿数据</dt>
-          <dd>通信应用可以从与用户现有的数据记录集成中受益；在移动设备上，地址簿是一个特别有用的信息来源。对于浏览器之外的 Web 应用，纯程序化方法是<a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">系统应用工作组</a>的一部分；由于这个小组现在已经关闭，因此目前暂时不会有<a data-featureid="contacts-sys">联系人管理器 API</a> 相关的工作。在浏览器中，HTML 5.1 为联系人信息提供了<a data-featureid="autocomplete">自动填充字段</a>，可以让浏览器重新使用通讯录中的数据。</dd>
+          <dd>通信应用可以从与用户现有的数据记录集成中受益；在移动设备上，地址簿是一个特别有用的信息来源。对于浏览器之外的 Web 应用，纯程序化方法是<a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">系统应用工作组</a>的一部分；由于这个小组现在已经关闭，因此目前暂时不会有<a data-featureid="contacts-sys" id="contacts-sys" href="https://www.w3.org/TR/contacts-manager-api/">联系人管理器 API</a> 相关的工作。在浏览器中，HTML 5.1 为联系人信息提供了<a data-featureid="autocomplete" id="autocomplete" href="https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute">自动填充字段</a>，可以让浏览器重新使用通讯录中的数据。</dd>
         </dl>
-      </section>
-    </main>
-    <script src="../js/generate.js"></script>
-  </body>
-</html>
+      </section></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-9">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./index.zh.html" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户交互</div></a></li><li><a href="sensors.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li><li><a href="about.zh.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">关于此文档</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    <span class="translations-wrapper">语言: <span class="translations"><a href="storage.html" data-nav="">English</a> | <span>中文</span></span><br></span>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>

@@ -1,9 +1,0 @@
-{
-  "TR": "https://www.w3.org/TR/css-grid-1/",
-  "impl": {
-    "caniuse": "css-grid",
-    "chromestatus": 4589636412243968,
-    "edgestatus": "CSS Grid Layout",
-    "webkitstatus": "specification-css-grid-layout-level-1"
-  }
-}

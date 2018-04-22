@@ -1,14 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!DOCTYPE html><html lang="en" data-generated=""><head>
+    <title>About this document - Roadmap of Web Applications on Mobile</title>
     <meta charset="utf-8">
-    <title>About this document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
   </head>
   <body>
+
     <header>
-      <h1>About this document</h1>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
+            <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
+        </div>
+      </div>
     </header>
-    <main data-contents="about"></main>
-    <script src="../js/generate.js"></script>
-  </body>
-</html>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><h1>About this document</h1></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section id="goals">
+  <h2 id="goals-0">Goals</h2>
+  <p>
+    This document summarizes technologies developed or under development in W3C or elsewhere, and that can be used to build a particular type of applications (e.g. media applications, games) or to promote a particular aspect of application development (e.g. security). The document is organized in pages that present specific features per deployment status and explain their relevance to the underlying theme. Tables at the end of sections summarize the standardization and implementation status of specifications that define features presented in the text.
+  </p>
+  <p>
+    Features are mostly presented in isolation with minimal text. This is on purpose to ease moving features around as they progress on the standardization front and get deployed in implementations.
+  </p>
+</section>
+<section id="audience">
+  <h2 id="audience-0">Audience</h2>
+  <p>
+    This document is mainly targeted at developers of Web applications willing to understand the status of the Web platform for particular vertical needs (e.g. publishing) or on particular devices (e.g. mobiles). Device manufacturers may also find valuable information about features that their products should support.
+  </p>
+  <p>
+    This document answers questions such as:
+  </p>
+  <ul>
+    <li>Which technologies are available today across browsers?</li>
+    <li>Which technologies should be available tomorrow?</li>
+    <li>What are the features that being explored and that could lead to new technologies later on?</li>
+    <li>Are there technical gaps in a given field for which there are no active standardization work today?</li>
+  </ul>
+</section>
+<section id="legend">
+  <h2 id="understanding-tables">Understanding tables</h2>
+  <p>
+    Tables at the end of sections summarize information about individual features. Columns displayed may depend on the table. Features of interest come with a name, one or more specifications (or individual features within specifications) that enable this feature, and details about each specification.
+  </p>
+  <section id="maturity">
+    <h3 id="maturity-levels">Maturity levels</h3>
+    <p>
+      The maturity of a feature refers to its standardization status.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Maturity</th>
+        <th>Meaning</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="Editor's Draft"></td>
+          <td>Defined in an Editor's Draft, not yet published officially anywhere. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="Working Draft"></td>
+          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C Working Draft</a>. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="Candidate Recommendation"></td>
+          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C Candidate Recommendation</a>. Feature may be considered stable but could still change based on implementation experience. Implementations may not be fully interoperable.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="Proposed Recommendation"></td>
+          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C Proposed Recommendation</a>. Feature is undergoing a final review by W3C Members. It is stable and existing implementations should be mostly interoperable.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation"></td>
+          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C Recommendation</a>. Feature is stable and existing implementations should be mostly interoperable.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="Living Standard"></td>
+          <td>Defined in a <a href="https://whatwg.org/working-mode">WHATWG Living Standard</a>. Stability and interoperability depend on the feature being considered and are usually noted in the specification itself.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="Note"></td>
+          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#WGNote">W3C Note</a>. Publication as a Note either indicates that the feature is informational in nature (e.g. guidelines, techniques, best practices), or that work on the feature has been discontinued for some reason.</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/retired.svg" alt="Retired"></td>
+          <td>Feature was part of a Web standard, but implementation and usage are no longer recommended for some reason (e.g. privacy concerns, security issues, better mechanism available).</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="implementation">
+    <h3 id="implementation-info">Implementation info</h3>
+    <p>
+      For features that target Web browsers, the "Current implementations" and "Implementation intents" columns display known implementation status in main browsers. The information is structured per implementation status, which can be one of:
+    </p>
+    <ul>
+      <li><strong>Shipped:</strong> the feature is supported in the browser and can be used right away.</li>
+      <li><strong>Experimental:</strong> the feature is planned for an upcoming version of the browser, and can be tried out in nightly builds of the browser. The feature may also be behind a flag, or it may require the use of a prefix.</li>
+      <li><strong>In development:</strong> the feature is being developed but is not yet available.</li>
+      <li><strong>Under consideration:</strong> the feature is not yet in development but is being considered for a future version of the browser.</li>
+    </ul>
+    <p>
+      The tables may contain implementation information about the following browsers:
+    </p>
+    <table>
+      <thead>
+        <tr><th>Icon</th>
+        <th>Browser name</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <th colspan="2">Main browser engines</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/chrome.png" alt="Chrome"></td>
+          <td>Chrome</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/edge.png" alt="Edge"></td>
+          <td>Microsoft Edge</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/firefox.png" alt="Firefox"></td>
+          <td>Firefox</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/safari.png" alt="Safari"></td>
+          <td>Safari</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th colspan="2">Based on the main browser engines</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/baidu.png" alt="Baidu Browser"></td>
+          <td>Baidu Browser</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/opera.png" alt="Opera"></td>
+          <td>Opera</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/qq.png" alt="QQ Browser"></td>
+          <td>QQ Browser</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/samsunginternet.png" alt="Samsung Internet"></td>
+          <td>Samsung Internet</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/uc.png" alt="UC Browser"></td>
+          <td>UC Browser</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Badges overlaid on top of browser icons convey additional implementation information:
+    </p>
+    <table>
+      <thead>
+        <tr><th>Badge</th>
+        <th>Meaning</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><img src="../assets/impl/desktop.svg" alt="Desktop only"></td>
+          <td>Implementation information applies to the desktop version of the browser.</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/mobile.svg" alt="Mobile only"></td>
+          <td>Implementation information applies to the mobile version of the browser.<br>Note that the implementation info only applies to mobile versions where the browser uses <i>its own layout engine</i> (e.g. "Firefox for Android", or "Safari for iOS"), not to mobile versions where the browser uses <i>another layout engine</i> (e.g. "Firefox for iOS"). In other words, given the implementation information available today, the mobile badge means "iOS" for Safari, and "Android" for all other browsers.</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/desktop-mobile.svg" alt="Desktop and mobile"></td>
+          <td>Implementation information applies both to the desktop and mobile versions of the browser.</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/flag.svg" alt="Behind a flag"></td>
+          <td>Some flag needs to be set in order to enable the feature in the browser. That flag may be a <i>preference flag</i> that the user may set in parameters, a <i>compile flag</i> that must be set before compiling the browser, or a <i>runtime flag</i> that must be set before starting the browser.</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/prefix.svg" alt="Prefix required"></td>
+          <td>A prefix must be used to access the feature. For instance, in Firefox, this usually means adding something like a <code>-moz-</code> prefix for CSS properties and a <code>moz</code> prefix to API functions.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      On devices that support hovering, a tooltip that summarizes the implementation information is displayed when the user moves over a browser icon.
+    </p>
+    <p>
+      Under the hoods, the implementation information is being gathered from the following platform status sources:
+    </p>
+    <ul>
+      <li><a href="http://caniuse.com/">Can I Use?</a></li>
+      <li><a href="https://www.chromestatus.com/features">Chrome Platform Status</a></li>
+      <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a></li>
+      <li><a href="https://webkit.org/status/">WebKit Feature Status</a></li>
+    </ul>
+    <p>
+      Clicking on a browser icon in an implementation should take you to the right page on the platform status Web site that provided the implementation information.
+    </p>
+    <p>
+      The absence of implementation information for a given browser usually means that the feature is not supported at all, and that it is not being developed for now in that browser. However, it may also mean that the implementation information is not yet available. If you notice missing or incorrect implementation info, please create an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+    </p>
+  </section>
+</section>
+</div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="see-anything-missing">See anything missing?</h2>
+                <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
+        </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+            <li><a href="./" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="graphics.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">Graphics and Layout</div></a></li><li><a href="adaptation.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">Device Adaptation</div></a></li><li><a href="forms.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">Forms</div></a></li><li><a href="storage.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">Data Storage</div></a></li><li><a href="media.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">Media</div></a></li><li><a href="userinput.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">User Interaction</div></a></li><li><a href="sensors.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">Sensors and Local Interactions</div></a></li><li><a href="network.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">Network and Communications</div></a></li><li><a href="lifecycle.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">Application Lifecycle</div></a></li><li><a href="payment.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">Payment and Services</div></a></li><li><a href="performance.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">Performance and Tuning</div></a></li><li><a href="security.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">Security and Privacy</div></a></li><li><a href="about.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">About this document</div></a></li></ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
+        <footer>
+            <div class="container">
+                <p>
+                    <span class="translations-wrapper">Translations: <span class="translations"><span>English</span> | <a href="about.zh.html" data-nav="">中文</a></span><br></span>
+                    © <a href="https://www.w3.org/">W3C</a>
+                    <br>
+                    <a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>Information on implementations of the APIs have been gathered from <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+            </p></div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>
