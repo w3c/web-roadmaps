@@ -1,12 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
 
-# Start from a fresh ".out" folder to avoid keeping files
-# that should be removed
-if [ -d .out ]; then
-  rm -rf .out
-fi
-
 # Generate the roadmaps, which should populate the ".out" folder
 # with all the files that need to be published
 npm run all
