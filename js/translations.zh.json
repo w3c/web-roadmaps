@@ -44,7 +44,9 @@
     "Source: %source.": "来源：%source",
     "Select browsers…": "选择浏览器…",
     "%status in %ua (%versions).": "在 %ua（%versions）中%status。",
-    "About this document": "关于此文档"
+    "About this document": "关于此文档",
+    "desktop": "桌面",
+    "mobile": "移动"
   },
   "features": {
     "2D effects": "2D 效果",
@@ -70,15 +72,22 @@
     "viewport-percentage lengths": "与视口相关的CSS单位"
   },
   "groups": {
+    "Audio Working Group": "音频工作组",
     "CSS Working Group": "CSS 工作组",
     "Device and Sensors Working Group": "设备与传感器工作组",
     "Hardware Based Secure Services Community Group": "基于硬件的安全服务社区组",
+    "HTML Media Extensions Working Group": "HTML 媒体扩展工作组",
     "Immersive Web Community Group": "沉浸式Web社区组",
     "Multi-Device Timing Community Group": "多设备时计社区组",
     "Second Screen Community Group": "第二屏社区组",
+    "Second Screen Working Group": "第二屏工作组",
     "Speech API Community Group": "语音 API 社区组",
+    "SVG Working Group": "SVG 工作组",
+    "Web Application Security Working Group": "Web 应用安全工作组",
     "Web Bluetooth Community Group": "Web 蓝牙社区组",
+    "Web Fonts Working Group": "Web 字体工作组",
     "Web NFC Community Group": "Web 近场通讯社区组",
+    "Web Payments Working Group": "Web 支付工作组",
     "Web Performance Working Group": "Web 性能工作组",
     "Web Platform Incubator Community Group": "Web 平台孵化社区组",
     "Web Platform Working Group": "Web 平台工作组",
