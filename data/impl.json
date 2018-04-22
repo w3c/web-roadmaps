@@ -4149,6 +4149,138 @@
     "indevelopment": [],
     "consideration": []
   },
+  "dom-addeventlistener-passive": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=passive-event-listener",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745543795965952"
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/passiveeventlisteners/",
+        "selected": true
+      }
+    ],
+    "shipped": [
+      "firefox",
+      "chrome",
+      "safari",
+      "opera",
+      "safari_ios",
+      "chrome_android",
+      "firefox_android",
+      "uc_android",
+      "samsunginternet_android"
+    ],
+    "experimental": [
+      "edge"
+    ],
+    "indevelopment": [],
+    "consideration": []
+  },
   "domcapture": {
     "implementations": [
       {

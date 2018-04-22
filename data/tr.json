@@ -812,6 +812,19 @@
     ],
     "publisher": "W3C"
   },
+  "dom-addeventlistener-passive": {
+    "url": "https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions",
+    "title": "DOM Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "feature": "EventListenerOptions"
+  },
   "domcapture": {
     "url": "https://www.w3.org/TR/mediacapture-fromelement/",
     "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
