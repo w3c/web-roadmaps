@@ -37,6 +37,10 @@
           <p>The <a data-featureid="animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
         </div>
 
+        <div data-feature="Scrolling Optimization">
+          <p>Smooth scrolling performance is essential for a good user experience on the web, especially on touch-based devices. Through the <a data-featureid="dom-addeventlistener-passive"><code>passive</code> event listener option</a>, developers can declare up-front that an event listener will not call <code>preventDefault()</code> on the event, allowing the browser not to wait for the event listener to have run before it performs the default action associated with the event. This is particularly recommended on touch and wheel events to guarantee smooth scrolling. Note: some browsers automatically set the <code>passive</code> flag on <code>touchstart</code> and <code>touchmove</code> by default.</p>
+        </div>
+
         <div data-feature="Threading">
           <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="webworkers">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
         </div>

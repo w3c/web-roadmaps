@@ -1,0 +1,9 @@
+{
+    "impl": {
+        "chromestatus": 5745543795965952,
+        "caniuse": "passive-event-listener",
+        "edgestatus": "Passive Event Listeners"
+    },
+    "url": "https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions",
+    "feature": "EventListenerOptions"
+}
