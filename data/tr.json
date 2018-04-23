@@ -813,7 +813,7 @@
     "publisher": "W3C"
   },
   "dom-addeventlistener-passive": {
-    "url": "https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions",
+    "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
     "title": "DOM Standard",
     "status": "LS",
     "deliveredBy": [
@@ -823,7 +823,7 @@
       }
     ],
     "publisher": "WHATWG",
-    "feature": "EventListenerOptions"
+    "feature": "Passive event listeners"
   },
   "domcapture": {
     "url": "https://www.w3.org/TR/mediacapture-fromelement/",
