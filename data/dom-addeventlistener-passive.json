@@ -4,6 +4,6 @@
         "caniuse": "passive-event-listener",
         "edgestatus": "Passive Event Listeners"
     },
-    "url": "https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions",
-    "feature": "EventListenerOptions"
+    "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
+    "feature": "Passive event listeners"
 }
