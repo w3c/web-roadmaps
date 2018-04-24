@@ -217,6 +217,7 @@ The template for the JSON file listing sub-pages is as follows:
     "category": "Category of the discourse instance where to post suggestions for new feature (leave empty if none)",
     "url": "https://discourse.wicg.io/"
   },
+  "github": "https://github.com/[org]/[repo]",
   "pages": [
     {
       "url": "subpage.html",
@@ -227,6 +228,21 @@ The template for the JSON file listing sub-pages is as follows:
   ]
 }
 ```
+
+The following settings may be added to the `toc.json` file to generate the appropriate Document Metadata section near the top of the index page:
+* `github`: The URL of the GitHub repository that contains the source of the roadmap. If specified, that URL adds a few links to the repository, the issue tracker and the commit history. That URL is also used to compute the URL of the Editor's Draft, unless already specified through the `edDraftUrl` setting.
+* `edDraft`: The URL of the Editor's Draft. If not specified, the framework will try to compute it from the `github` setting.
+* `thisVersion`: The URL of this document. If not specified, the framework will use the Editor's Draft URL or the current URL is the URL of the Editor's Draft is unknown.
+* `publishedVersion`: The URL of the latest published version. Generates a "Latest Published Version" link.
+* `previousVersion`: The URL of the previous published version. Generates a "Previous Version" link.
+* `publishDate`: The date of the publication, following a `YYYY-MM` format. Generates a subheading under the page's title with the date.
+
+The above settings may also be passed to the page as query string parameters, which can be useful to generate specific snapshots (in particular to pass the `publishDate` parameter). For instance, supposing the page can be served over a local HTTP server running at port 8080, you could use the following to view a "complete" Document Metadata section:
+
+`https://localhost:8080/mobile/?publishDate=2018-04&previousVersion=https://www.w3.org/2018/01/web-roadmaps/mobile/&publishedVersion=https://www.w3.org/Mobile/roadmap/`
+
+**Note:** this last mechanism cannot be used on pages that have already been generated, such as those published under `https://w3c.github.io/web-roadmaps/`.
+
 
 ## Creating an About this document page
 In a multi-page roadmap, it is good practice to link to an "About this document" page that provides useful information about the contents and status of the document. The about page is a specific page in that it does not appear in the index page along with the other pages. As such, it needs to be defined in a separate `about` property in the JSON file that lists sub-pages, as in:
