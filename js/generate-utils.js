@@ -488,12 +488,17 @@ const fillDocumentMetadata = function (toc, translate, pagetype) {
   params.publishDate = params.publishDate || toc.publishDate;
 
   // Compute missing URLs when possible
+  // NB: for the Editor's Draft URL, we'll assume that the GitHub repo was
+  // cloned in a folder that has the name of the repo (that's needed to get
+  // the remainder of the path when the repo contains more than one roadmap)
   if (!params.edDraft && params.github) {
     let parts = params.github.split('/');
     if (parts[3] && parts[4]) {
       params.edDraft = 'https://' +
         parts[3] + '.github.io/' + parts[4] +
-        window.location.pathname.replace('index.html', '');
+        window.location.pathname
+          .replace(new RegExp('^(?:.*)/' + parts[4] + '(/.*)$'), '$1')
+          .replace('index.html', '');
     }
   }
   if (!params.thisVersion) {
