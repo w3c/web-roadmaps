@@ -230,7 +230,7 @@ The template for the JSON file listing sub-pages is as follows:
 ```
 
 The following settings may be added to the `toc.json` file to generate the appropriate Document Metadata section near the top of the index page:
-* `github`: The URL of the GitHub repository that contains the source of the roadmap. If specified, that URL adds a few links to the repository, the issue tracker and the commit history. That URL is also used to compute the URL of the Editor's Draft, unless already specified through the `edDraftUrl` setting.
+* `github`: The URL of the GitHub repository that contains the source of the roadmap. If specified, that URL adds a few links to the repository, the issue tracker and the commit history. That URL is also used to compute the URL of the Editor's Draft, unless already specified through the `edDraft` setting.
 * `edDraft`: The URL of the Editor's Draft. If not specified, the framework will try to compute it from the `github` setting.
 * `thisVersion`: The URL of this document. If not specified, the framework will use the Editor's Draft URL or the current URL is the URL of the Editor's Draft is unknown.
 * `publishedVersion`: The URL of the latest published version. Generates a "Latest Published Version" link.
