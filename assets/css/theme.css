@@ -51,6 +51,10 @@ p {
   color: #333;
 }
 
+li {
+  color: #333;
+}
+
 p.highlight {
   color: #00C853;
 }
@@ -299,7 +303,12 @@ Styles for the "current implementations" column
   margin: 0.6em;
 }
 
-dl dt { margin-bottom: 0.3em;  font-size:1.1em;}
+dl dt {
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+  font-weight: bold;
+
+}
 dl dd{ margin-bottom: 1em;}
 
 
