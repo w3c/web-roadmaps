@@ -2318,8 +2318,9 @@
   },
   "ttml1": {
     "url": "https://www.w3.org/TR/ttml1/",
-    "title": "Timed Text Markup Language 1 (TTML1) (Second Edition)",
-    "status": "REC",
+    "edDraft": "https://w3c.github.io/ttml1/index.html",
+    "title": "Timed Text Markup Language 1 (TTML1) (Third Edition)",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -2518,7 +2519,7 @@
     "url": "https://www.w3.org/TR/WCAG21/",
     "edDraft": "https://w3c.github.io/wcag21/guidelines/",
     "title": "Web Content Accessibility Guidelines (WCAG) 2.1",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/WAI/GL/",

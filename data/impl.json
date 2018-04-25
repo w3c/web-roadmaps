@@ -5618,7 +5618,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6473924464345088"
       },
@@ -10164,7 +10164,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4782875580825600"
       },
