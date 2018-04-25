@@ -4,6 +4,8 @@
     "category": "W3C’s discourse forum",
     "url": "https://discourse.wicg.io/"
   },
+  "github": "https://github.com/w3c/web-roadmaps",
+  "publishedVersion": "https://www.w3.org/Mobile/roadmap/",
   "pages": [
     {
       "url": "graphics.html",

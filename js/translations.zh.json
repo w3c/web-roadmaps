@@ -48,6 +48,17 @@
     "desktop": "桌面",
     "mobile": "移动"
   },
+  "metadata": {
+    "Document Metadata": "文档元数据",
+    "Latest published version": "最新发布版",
+    "This version": "当前版本",
+    "Previous version": "上一个版本",
+    "Editor's Draft": "编辑草案",
+    "Repository": "GitHub 仓库",
+    "We are on GitHub": "我们在 GitHub 上",
+    "File a bug": "建议与意见",
+    "Commit history": "提交历史"
+  },
   "features": {
     "2D effects": "2D 效果",
     "3D effects": "3D 效果",

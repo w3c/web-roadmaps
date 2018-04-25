@@ -415,6 +415,7 @@ const loadTemplatePage = function (lang, pagetype) {
 
         headElements.forEach(el => document.querySelector('head').appendChild(el));
         hero.forEach(el => document.querySelector('.hero .container').appendChild(el));
+
         let container = document.querySelector('.main-content .container');
         sections.forEach(section => {
           if (section.hasAttribute('data-insertBefore')) {
@@ -463,6 +464,130 @@ const loadTemplatePage = function (lang, pagetype) {
 
 
 /**
+ * Create the Document Metadata section based on query string parameters and
+ * info in the toc.json file.
+ */
+const fillDocumentMetadata = function (toc, translate, pagetype) {
+  // Retrieve information from the query string or from the toc.json file
+  let params = {};
+  let queryString = window.location.search;
+  if (queryString && queryString.startsWith('?')) {
+    queryString = queryString.slice(1).split('&');
+    queryString = queryString.forEach(paramvalue => {
+      let tokens = paramvalue.split('=');
+      if (tokens[0]) {
+        params[tokens[0]] = tokens[1];
+      }
+    });
+  }
+  params.publishedVersion = params.publishedVersion || toc.publishedVersion;
+  params.thisVersion = params.thisVersion || toc.thisVersion;
+  params.previousVersion = params.previousVersion || toc.previousVersion;
+  params.edDraft = params.edDraft || toc.edDraft;
+  params.github = params.github || toc.github;
+  params.publishDate = params.publishDate || toc.publishDate;
+
+  // Compute missing URLs when possible
+  if (!params.edDraft && params.github) {
+    let parts = params.github.split('/');
+    if (parts[3] && parts[4]) {
+      params.edDraft = 'https://' +
+        parts[3] + '.github.io/' + parts[4] +
+        window.location.pathname.replace('index.html', '');
+    }
+  }
+  if (!params.thisVersion) {
+    params.thisVersion = params.edDraft || window.location.href;
+  }
+
+  // Insert publication date and document metadata section to header
+  let container = document.querySelector('.hero .container');
+  let firstContent = $(document, '.hero .container > *').find(el =>
+    (el.nodeName !== 'H1') && (el.nodeName !== 'H2') &&
+    (el.nodeName !== 'H3') && !el.getAttribute('data-beforemetadata'));
+
+  if (params.publishDate) {
+    let mainHeading = container.querySelector('h2');
+    if (mainHeading) {
+      mainHeading.appendChild(document.createTextNode(' - '));
+    }
+    else {
+      mainHeading = document.createElement('h2');
+      container.insertBefore(mainHeading, firstContent);
+    }
+    let publishDate = new Date(params.publishDate);
+    mainHeading.appendChild(document.createTextNode(
+      publishDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })));
+  }
+
+  if (!pagetype.menu) {
+    return;
+  }
+
+  // Prepare Document Metadata section
+  // (a bit verbose, but pretty straightforward)
+  let metadata = document.createElement('details');
+  let summary = document.createElement('summary');
+  summary.appendChild(document.createTextNode(
+    translate('metadata', 'Document Metadata')));
+  metadata.appendChild(summary);
+
+  let links = document.createElement('dl');
+
+  const addMetatadataLinkTitle = function (title) {
+    let dt = document.createElement('dt');
+    dt.appendChild(document.createTextNode(
+      translate('metadata', title)));
+    links.appendChild(dt);
+  };
+
+  const addMetatadataLink = function (url, title) {
+    let dd = document.createElement('dd');
+    let link = document.createElement('a');
+    link.setAttribute('href', url);
+    link.appendChild(document.createTextNode(
+      title ? translate('metadata', title) : url));
+    dd.appendChild(link);
+    links.appendChild(dd);
+  };
+
+  if (params.publishedVersion) {
+    addMetatadataLinkTitle('Latest published version');
+    addMetatadataLink(params.publishedVersion);
+  }
+  if (params.thisVersion) {
+    addMetatadataLinkTitle('This version');
+    addMetatadataLink(params.thisVersion);
+  }
+  if (params.previousVersion) {
+    addMetatadataLinkTitle('Previous version');
+    addMetatadataLink(params.previousVersion);
+  }
+  if (params.edDraft) {
+    addMetatadataLinkTitle('Editor\'s Draft');
+    addMetatadataLink(params.edDraft);
+  }
+  if (params.github) {
+    addMetatadataLinkTitle('Repository');
+    addMetatadataLink(
+      params.github,
+      'We are on GitHub');
+    addMetatadataLink(
+      params.github + (params.github.endsWith('/') ? '' : '/') + 'issues',
+      'File a bug');
+    addMetatadataLink(
+      params.github + (params.github.endsWith('/') ? '' : '/') + 'commits',
+      'Commit history');
+  }
+
+  let linksContainer = document.createElement('div');
+  linksContainer.appendChild(links);
+  metadata.appendChild(linksContainer);
+  container.insertBefore(metadata, firstContent);
+}
+
+
+/**
  * Applies the information contained in the toc.json file to:
  * - set the title of the document
  * - set the links to the discourse instance and GitHub repo for feedback
@@ -488,6 +613,8 @@ const applyToc = function (toc, translate, lang, pagetype) {
   if (toc.pages.length === 0) {
     document.getElementById('side-nav-btn').hidden = true;
   }
+
+  fillDocumentMetadata(toc, translate, pagetype);
 
   let mainNav = document.querySelector('ul.roadmap-list');
   let sideNav = document.querySelector('aside nav ul');
