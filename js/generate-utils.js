@@ -614,8 +614,10 @@ const applyToc = function (toc, translate, lang, pagetype) {
     document.getElementById('side-nav-btn').hidden = true;
   }
 
+  // Fill out document metadata section
   fillDocumentMetadata(toc, translate, pagetype);
 
+  // Fill out the main menu (in the index page) and the side menu
   let mainNav = document.querySelector('ul.roadmap-list');
   let sideNav = document.querySelector('aside nav ul');
   let pages = pagetype.menu ? [] : [{
@@ -655,6 +657,24 @@ const applyToc = function (toc, translate, lang, pagetype) {
     }
   });
 
+  // Update links to other roadmap pages as needed
+  $(document, '[data-page]').map(el => {
+    let ref = el.getAttribute('data-page');
+    let page = toc.pages.find(p => p.url.startsWith(ref));
+    if (!page) {
+      console.warn('Referenced roadmap page does not exist: ' + ref);
+      return;
+    }
+
+    const localizedUrl = ((lang === 'en') ? page.url :
+      page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));
+    el.setAttribute('href', localizedUrl);
+    if (!el.textContent) {
+      el.textContent = page.title;
+    }
+  });
+
+  // Fill out the list of translations
   let listOfTranslations = toc.translations || [];
   if (listOfTranslations.length <= 1) {
     $(document, '.translations-wrapper').forEach(el => el.parentNode.removeChild(el));
