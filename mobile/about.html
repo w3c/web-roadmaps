@@ -25,7 +25,7 @@
     <main>
       <div class="content-wrapper">
         <section class="hero">
-            <div class="container"><h1>About this document</h1></div>
+            <div class="container"><h1>About this document</h1><h1></h1><p>This roadmap is published and maintained by W3C Team. The <a href="https://w3c.github.io/web-roadmaps/mobile/">Editor's Draft of this document</a> is edited continuously based on progress of standardization discussions at W3C and elsewhere, and on feedback received on the <a href="https://github.com/w3c/web-roadmaps">GitHub repository</a>. Snapshots of this roadmap are published every few months. This page summarizes changes made between snapshots.</p></div>
         </section>
         
         <section class="main-content" data-pagetype="page">
@@ -221,7 +221,60 @@
     </p>
   </section>
 </section>
-</div>
+<section>
+        <h2 id="change-history">Change History</h2>
+        <section>
+          <h3 id="april-2018">April 2018</h3>
+          <p>The <a href="https://www.w3.org/2018/04/web-roadmaps/mobile/">April 2018</a> snapshot introduces a number of features that were missing from the <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">January 2018</a> snapshot. Content-wise, the following changes were made:</p>
+          <dl>
+            <dt>Exploratory work</dt>
+            <dd><ul>
+              <li>Mention the Web Share API and the Web Share Target API in <a data-page="lifecycle" href="lifecycle.html">Application Lifecycle</a> (#178)</li>
+              <li>Mention Requesting/Revoking permissions specifications in <a data-page="security" href="security.html">Security and Privacy</a> (#180)</li>
+              <li>Mention Feature Policy in <a data-page="security" href="security.html">Security and Privacy</a> (#180)</li>
+              <li>Mention Element Queries in <a data-page="adaptation" href="adaptation.html">Device Adaptation</a> (#195)</li>
+              <li>Replace WebVR by WebXR and mention polyfill in <a data-page="media" href="media.html">Media</a> (#199 and #204)</li>
+            </ul></dd>
+
+            <dt>Technologies in progress</dt>
+            <dd><ul>
+              <li>Fix Proximity sensor implementation status in <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a> (#192)</li>
+              <li>Fix Ambient light API implementation status in Firefox and Edge in <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a> (#186)</li>
+              <li>Fix Presentation API implementation status in Webkit in <a data-page="media" href="media.html">Media</a> (#182)</li>
+              <li>Mention the CSS <code>font-display</code> property and update text on downloadable fonts in <a data-page="graphics" href="graphics.html">Graphics and Layout</a> (#196)</li>
+              <li>Mention the Streams specification in <a data-page="network" href="network.html">Network and Communications</a> (#198)</li>
+            </ul></dd>
+
+            <dt>Well-deployed technologies</dt>
+            <dd><ul>
+              <li>Mention the CSS <code>box-sizing</code> property in <a data-page="graphics" href="graphics.html">Graphics and Layout</a> (#179)</li>
+              <li>Move <code>requestIdleCallback</code> to the Well-deployed section in <a data-page="performance" href="performance.html">Performance and Tuning</a> (#190)</li>
+              <li>Update text on WOFF (WOFF 2.0 was recently published as a W3C Recommendation), mention variable fonts in <a data-page="graphics" href="graphics.html">Graphics and Layout</a> (#194)</li>
+              <li>Refine accessibility part in <a data-page="userinput" href="userinput.html">User Interaction</a> and rename the category to promote accessibility (#201)</li>
+              <li>Mention the passive flag for event listeners in <a data-page="performance" href="performance.html">Performance and Tuning</a> (#236)</li>
+            </ul></dd>
+
+            <dt>Discontinued features</dt>
+            <dd><ul>
+              <li>Mark humidity, thermometer, barometer proposals as discontinued in <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a> (#187)</li>
+              <li>Mark appcache as discontinued in <a data-page="lifecycle" href="lifecycle.html">Application Lifecycle</a> (#193)</li>
+            </ul></dd>
+          </dl>
+
+          <p>The implementation info rendered in tables at the end of each section now embeds information about mobile browsers, and warns when a prefix is required or when a flag must be set to use a feature. Such features are also now consistently flagged as "Experimental" throughout the tables. Implementation information about additional browsers (Baidu, Opera, QQ, Samsung Internet, UC Web) can now be displayed from a dropdown menu. By default, tables will only display information about main browsers (Chrome, Microsoft Edge, Firefox, Safari), because this information is more up-to-date and reliable (information for other browsers may still be outdated or incorrect in some cases).</p>
+
+          <p>This version also features a series of User Interface improvements to improve the readability and accessibility of the pages.</p>
+
+          <p>Under the hoods, the roadmap framework has been almost entirely re-written to ease Roadmap authoring, and the publication of future snapshots. For instance, the extraction of information about W3C, WHATWG, and IETF specifications should now be automatic in most cases. Please refer to the <a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">documentation</a> for details.</p>
+        </section>
+
+        <section>
+          <h3 id="january-2018">January 2018</h3>
+          <p>The <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">January 2018</a> snapshot is a major overhaul of the <a href="https://www.w3.org/2015/08/mobile-web-app-state/">previous mobile roadmap</a>, published until August 2015. Categories have remained vastly intact, but the new version comes with a new lightweight design, and the contents of the pages have been significantly updated to follow the evolution of the Web platform in the past few years.</p>
+          <p>The roadmap is published in <a href="https://www.w3.org/Mobile/roadmap/index.html">English</a> and <a href="https://www.w3.org/Mobile/roadmap/index.zh.html">Chinese</a>.</p>
+          <p>Some content may still be missing or incomplete. Among other things, implementation information only targets desktop browsers and is known not to be perfectly correct.</p>
+        </section>
+      </section></div>
         </section>
         <section class="contribute">
             <div class="container">
