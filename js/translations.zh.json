@@ -144,6 +144,7 @@
     "Element Queries": "元素查询",
     "Encrypted Media Extensions": "加密媒体扩展",
     "Feature Policy": "特性策略",
+    "Fetch": "Fetch",
     "File API": "文件 API",
     "Frame Timing": "帧计时",
     "Generic Sensor API": "通用传感器 API",
@@ -151,6 +152,7 @@
     "Gyroscope": "陀螺仪",
     "Hardware Based Secure Services features": "基于硬件的安全服务",
     "High Resolution Time": "高解析度时间",
+    "HTML 5.2": "HTML 5.2",
     "HTML Canvas 2D Context": "HTML画布2D上下文",
     "HTML Media Capture": "HTML媒体捕捉",
     "Indexed Database API": "索引数据库 API",
@@ -191,6 +193,7 @@
     "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)": "移动 Web 最佳实践与 Web 内容无障碍指南之间的关系",
     "Relinquishing Permissions": "放弃权限",
     "Remote Playback API": "远程回放 API",
+    "requestAnimationFrame": "requestAnimationFrame",
     "Requesting Permissions": "请求权限",
     "Resource Hints": "资源提示",
     "Resource Timing Level 1": "资源计时第一版",
@@ -199,6 +202,7 @@
     "Secure Contexts": "安全上下文",
     "Server Timing": "服务器计时",
     "Server-Sent Events": "服务器发送事件",
+    "Service Workers 1": "Service Workers 1",
     "Storage": "存储",
     "Subresource Integrity": "子资源完整性",
     "The Screen Orientation API": "屏幕方向API",
@@ -232,6 +236,7 @@
     "WebRTC 1.0: Real-time Communication Between Browsers": "WebRTC 1.0: 浏览器间实时通讯",
     "WebXR Device API": "WebXR 设备 API",
     "WOFF File Format 1.0": "Web 字体文件格式 1.0",
-    "WOFF File Format 2.0": "Web 字体文件格式 2.0"
+    "WOFF File Format 2.0": "Web 字体文件格式 2.0",
+    "XMLHttpRequest": "XMLHttpRequest"
   }
 }
