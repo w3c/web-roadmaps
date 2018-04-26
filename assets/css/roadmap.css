@@ -36,14 +36,57 @@ filter: grayscale(1);*/
 }
 
 .hero .container {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .hero h2 {
-  font-size: 1.3em;
-  margin-top: -1em;
-  margin-bottom: 1em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
   color: #47525d;
+}
+
+.hero h2 a {
+  color: #47525d;
+  border-bottom: none;
+}
+
+.hero h2 a:hover {
+  border-bottom: rgba(0,0,0,0.1) 1px solid;
+}
+
+.hero h2 + h1 {
+  margin-top: 0;
+}
+
+.hero .container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 500px) {
+  .hero .container .title {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hero .container .title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero .container .title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+
+.hero .container img {
+  height: 80px;
+  padding-right: 1em;
 }
 
 .hero details {
@@ -391,7 +434,6 @@ span[lang=en] {
   font-size: smaller;
 }
 
-
 @media (min-width: 768px) {
     .container {
         width: 100%;
@@ -415,8 +457,6 @@ span[lang=en] {
         border-bottom: 0px;
         background-color: transparent;
     }
-
-
 
     .hero .btn-negative {
         background-color: #0070cc;
@@ -495,14 +535,6 @@ span[lang=en] {
         border-top: 1px solid rgba(0,0,0,0.1);
     }
 
-  h1 {
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 50px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-
   h1.hero-heading {
     font-size: 4em;
     font-weight: 400;
@@ -512,23 +544,14 @@ span[lang=en] {
     color: #47525d;
   }
 
-  h2 {
-    font-size: 1.5em;
-    line-height: 35px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-
   h3 {
     font-size: 1.3em;
-    line-height: 30px;
     margin-top: 15px;
     margin-bottom: 0px;
   }
 
   h4 {
     font-weight: 800;
-    line-height: 30px;
     margin-top: 10px;
     margin-bottom: 5px;
   }

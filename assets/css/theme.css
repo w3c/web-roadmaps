@@ -8,17 +8,16 @@ html, body {
 }
 
 h1 {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 2em;
+  line-height: 1em;
   font-weight: 300;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   color: #47525d;
 }
 
 h2 {
-  font-size: 1.4em;
-  line-height: 1.5em;
+  font-size: 1.5em;
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -27,7 +26,6 @@ h2 {
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.5em;
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -38,7 +36,6 @@ h3 {
 h4 {
   font-size: 1em;
   font-weight: 800;
-  line-height: 1.5em;
   color: #47525d;
 }
 
