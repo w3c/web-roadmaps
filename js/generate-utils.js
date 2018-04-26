@@ -102,6 +102,12 @@ const templateItem = '<a href="" data-nav><div class="icon"><img src="" alt=""><
 const templateTocItem = '<a href="" data-nav><div class="icon"><img src="" alt=""></div><div class="description"></div></a>';
 
 /**
+ * Template to use for the title in a page
+ * (replaces the h1 that authors set in the source page)
+ */
+const templatePageTitle = '<h2><a href="" data-breadcrumb></a> ></h2><div class="title"><img src="" alt="" data-icon><div><h1 data-title></h1><h2 data-publishdate></h2></div></div>';
+
+/**
  * Ordered list of known implementation stages
  */
 const implementationStatuses = [
@@ -507,22 +513,13 @@ const fillDocumentMetadata = function (toc, translate, pagetype) {
 
   // Insert publication date and document metadata section to header
   let container = document.querySelector('.hero .container');
-  let firstContent = $(document, '.hero .container > *').find(el =>
-    (el.nodeName !== 'H1') && (el.nodeName !== 'H2') &&
-    (el.nodeName !== 'H3') && !el.getAttribute('data-beforemetadata'));
-
+  let publishDate = container.querySelector('[data-publishdate]');
   if (params.publishDate) {
-    let mainHeading = container.querySelector('h2');
-    if (mainHeading) {
-      mainHeading.appendChild(document.createTextNode(' - '));
-    }
-    else {
-      mainHeading = document.createElement('h2');
-      container.insertBefore(mainHeading, firstContent);
-    }
-    let publishDate = new Date(params.publishDate);
-    mainHeading.appendChild(document.createTextNode(
-      publishDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })));
+    publishDate.textContent = (new Date(params.publishDate))
+      .toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  }
+  else {
+    publishDate.parentNode.removeChild(publishDate);
   }
 
   if (!pagetype.menu) {
@@ -588,6 +585,10 @@ const fillDocumentMetadata = function (toc, translate, pagetype) {
   let linksContainer = document.createElement('div');
   linksContainer.appendChild(links);
   metadata.appendChild(linksContainer);
+
+  let firstContent = $(document, '.hero .container > *').find(el =>
+    (el.nodeName !== 'H1') && (el.nodeName !== 'H2') &&
+    (el.nodeName !== 'H3') && !el.getAttribute('data-beforemetadata'));
   container.insertBefore(metadata, firstContent);
 }
 
@@ -601,7 +602,9 @@ const fillDocumentMetadata = function (toc, translate, pagetype) {
  * current page is not the menu page)
  */
 const applyToc = function (toc, translate, lang, pagetype) {
-  const h1 = document.querySelector('.hero .container h1');
+  // Add title of roadmap to the title in sub-pages
+  const container = document.querySelector('.hero .container');
+  const h1 = container.querySelector('h1');
   let title = (h1 ? h1.textContent : null);
   if (!title && pagetype.about) {
     title = toc.about.title || translate('labels', 'About this document');
@@ -614,6 +617,35 @@ const applyToc = function (toc, translate, lang, pagetype) {
       link.textContent = toc.discourse.category;
     }
   });
+
+  let currentPage = toc.pages.find(page =>
+    window.location.pathname.endsWith(page.url) ||
+    window.location.pathname.endsWith(page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')));
+  let iconUrl = (currentPage && currentPage.icon ? currentPage.icon : null);
+  let titleContainer = document.createElement('div');
+  titleContainer.setAttribute('data-beforemetadata', 'true');
+  titleContainer.innerHTML = templatePageTitle;
+
+  let breadcrumb = titleContainer.querySelector('[data-breadcrumb]');
+  if (pagetype.menu) {
+    breadcrumb = breadcrumb.parentNode;
+    breadcrumb.parentNode.removeChild(breadcrumb);
+  }
+  else {
+    breadcrumb.setAttribute('href', ((lang === 'en') ? './' : './index.' + lang + 'html'));
+    breadcrumb.textContent = toc.title;
+  }
+
+  let icon = titleContainer.querySelector('[data-icon]');
+  if (iconUrl) {
+    icon.src = iconUrl;
+  }
+  else {
+    icon.parentNode.removeChild(icon);
+  }
+
+  titleContainer.querySelector('[data-title]').textContent = h1.textContent;
+  container.replaceChild(titleContainer, h1);
 
   if (toc.pages.length === 0) {
     document.getElementById('side-nav-btn').hidden = true;
