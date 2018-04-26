@@ -622,6 +622,11 @@ const applyToc = function (toc, translate, lang, pagetype) {
     window.location.pathname.endsWith(page.url) ||
     window.location.pathname.endsWith(page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')));
   let iconUrl = (currentPage && currentPage.icon ? currentPage.icon : null);
+  if (!currentPage && toc.about && toc.about.url &&
+      (window.location.pathname.endsWith(toc.about.url) ||
+      window.location.pathname.endsWith(toc.about.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')))) {
+    iconUrl = toc.about.icon || '../assets/img/about.svg';
+  }
   let titleContainer = document.createElement('div');
   titleContainer.setAttribute('data-beforemetadata', 'true');
   titleContainer.innerHTML = templatePageTitle;
