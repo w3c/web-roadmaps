@@ -606,7 +606,7 @@
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6488656873259008"
       },
@@ -8598,13 +8598,13 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5910974510923776"
       },
       {
         "ua": "safari",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5910974510923776"
       },
@@ -8983,7 +8983,7 @@
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5416033485586432"
       },
@@ -9886,7 +9886,7 @@
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6561526227927040"
       },
@@ -10381,7 +10381,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6183089948590080"
       },
@@ -11097,7 +11097,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6534575509471232"
       },
