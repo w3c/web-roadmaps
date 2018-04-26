@@ -12301,7 +12301,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6261718720184320"
       },

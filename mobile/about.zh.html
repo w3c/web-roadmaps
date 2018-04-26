@@ -25,7 +25,7 @@
     <main>
       <div class="content-wrapper">
         <section class="hero">
-            <div class="container"><h1>关于此文档</h1></div>
+            <div class="container"><h1>关于此文档</h1><p>本文档由 W3C 团队发布和维护。 基于 W3C 和其他地方标准化讨论的进展以及在 <a href="https://github.com/w3c/web-roadmaps">GitHub</a> 收到的反馈，本文档的<a href="https://w3c.github.io/web-roadmaps/mobile/">编辑草案</a>将不断更新，并会定期发布新的版本。本页总结了每个版本所包含的更改。</p></div>
         </section>
         
         <section class="main-content" data-pagetype="page">
@@ -220,11 +220,64 @@
       浏览器缺少实现信息通常意味着该特性完全不受支持且尚未开始开发，但这也可能意味着我们目前暂时没有实现信息。如果您发现了错误的实现信息，请<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
     </p>
   </section>
-</section></div>
+</section><section>
+        <h2 id="generatedID-4">更改历史</h2>
+        <section>
+          <h3 id="x2018-4">2018年4月</h3>
+          <p><a href="https://www.w3.org/2018/04/web-roadmaps/mobile/">2018年4月版</a>添加了在<a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">2018年1月版</a>中缺少的一些功能。在内容方面，进行了以下更改：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>Mention the Web Share API and the Web Share Target API in <a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a> (#178)</li>
+              <li>Mention Requesting/Revoking permissions specifications in <a data-page="security" href="security.zh.html">安全和隐私</a> (#180)</li>
+              <li>Mention Feature Policy in <a data-page="security" href="security.zh.html">安全和隐私</a> (#180)</li>
+              <li>Mention Element Queries in <a data-page="adaptation" href="adaptation.zh.html">设备适配</a> (#195)</li>
+              <li>Replace WebVR by WebXR and mention polyfill in <a data-page="media" href="media.zh.html">媒体</a> (#199 and #204)</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>Fix Proximity sensor implementation status in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a> (#192)</li>
+              <li>Fix Ambient light API implementation status in Firefox and Edge in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a> (#186)</li>
+              <li>Fix Presentation API implementation status in Webkit in <a data-page="media" href="media.zh.html">媒体</a> (#182)</li>
+              <li>Mention the CSS <code>font-display</code> property and update text on downloadable fonts in <a data-page="graphics" href="graphics.zh.html">图形和布局</a> (#196)</li>
+              <li>Mention the Streams specification in <a data-page="network" href="network.zh.html">网络和通信</a> (#198)</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>Mention the CSS <code>box-sizing</code> property in <a data-page="graphics" href="graphics.zh.html">图形和布局</a> (#179)</li>
+              <li>Move <code>requestIdleCallback</code> to the Well-deployed section in <a data-page="performance" href="performance.zh.html">性能和调优</a> (#190)</li>
+              <li>Update text on WOFF (WOFF 2.0 was recently published as a W3C Recommendation), mention variable fonts in <a data-page="graphics" href="graphics.zh.html">图形和布局</a> (#194)</li>
+              <li>Refine accessibility part in <a data-page="userinput" href="userinput.zh.html">用户交互</a> and rename the category to promote accessibility (#201)</li>
+              <li>Mention the passive flag for event listeners in <a data-page="performance" href="performance.zh.html">性能和调优</a> (#236)</li>
+            </ul></dd>
+
+            <dt>不再进行的工作</dt>
+            <dd><ul>
+              <li>Mark humidity, thermometer, barometer proposals as discontinued in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a> (#187)</li>
+              <li>Mark appcache as discontinued in <a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a> (#193)</li>
+            </ul></dd>
+          </dl>
+
+          <p>The implementation info rendered in tables at the end of each section now embeds information about mobile browsers, and warns when a prefix is required or when a flag must be set to use a feature. Such features are also now consistently flagged as "Experimental" throughout the tables. Implementation information about additional browsers (Baidu, Opera, QQ, Samsung Internet, UC Web) can now be displayed from a dropdown menu. By default, tables will only display information about main browsers (Chrome, Microsoft Edge, Firefox, Safari), because this information is more up-to-date and reliable (information for other browsers may still be outdated or incorrect in some cases).</p>
+
+          <p>This version also features a series of User Interface improvements to improve the readability and accessibility of the pages.</p>
+
+          <p>Under the hoods, the roadmap framework has been almost entirely re-written to ease Roadmap authoring, and the publication of future snapshots. For instance, the extraction of information about W3C, WHATWG, and IETF specifications should now be automatic in most cases. Please refer to the <a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">documentation</a> for details.</p>
+        </section>
+
+        <section>
+          <h3 id="january-2018">January 2018</h3>
+          <p>The <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">January 2018</a> snapshot is a major overhaul of the <a href="https://www.w3.org/2015/08/mobile-web-app-state/">previous mobile roadmap</a>, published until August 2015. Categories have remained vastly intact, but the new version comes with a new lightweight design, and the contents of the pages have been significantly updated to follow the evolution of the Web platform in the past few years.</p>
+          <p>The roadmap is published in <a href="https://www.w3.org/Mobile/roadmap/index.html">English</a> and <a href="https://www.w3.org/Mobile/roadmap/index.zh.html">Chinese</a>.</p>
+          <p>Some content may still be missing or incomplete. Among other things, implementation information only targets desktop browsers and is known not to be perfectly correct.</p>
+        </section>
+      </section></div>
         </section>
         <section class="contribute">
             <div class="container">
-            <h2 id="generatedID-4">发现了缺少的东西？</h2>
+            <h2 id="generatedID-5">发现了缺少的东西？</h2>
                 <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
                  <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
                 </p>
