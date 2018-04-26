@@ -66,6 +66,7 @@ filter: grayscale(1);*/
   margin-bottom: 0;
   font-size: 1em;
   color: #47525d;
+  font-weight: 300;
 }
 
 .call-to-action a.btn {
