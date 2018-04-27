@@ -757,6 +757,39 @@ const applyToc = function (toc, translate, lang, pagetype) {
     $(document, '.translations').forEach(el => el.innerHTML = trtext.join (' | '));
   }
 
+  // Add document's last modified dates to footer
+  // We'll consider that document.lastModified represents the date when the
+  // content of the page was last updated, and that the current date represents
+  // the last date when the implementation data was updated. This is not
+  // perfect but these assumptions should remain reasonable.
+  // As an exception to the rule, we'll use the publishDate if it is set.
+  let queryString = window.location.search;
+  let publishDate = null;
+  if (queryString && queryString.startsWith('?')) {
+    queryString = queryString.slice(1).split('&');
+    queryString = queryString.forEach(paramvalue => {
+      let tokens = paramvalue.split('=');
+      if (tokens[0] === 'publishDate') {
+        publishDate = tokens[1];
+      }
+    });
+  }
+  publishDate = publishDate || toc.publishDate;
+  if (publishDate) {
+    publishDate = new Date(publishDate);
+  }
+
+  let lastModified = new Date(document.lastModified);
+  if (publishDate && (publishDate < lastModified)) {
+    lastModified = publishDate;
+  }
+  document.querySelector('[data-content-lastmodified]').textContent =
+    lastModified.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+  lastModified = publishDate || new Date();
+  document.querySelector('[data-impl-lastmodified]').textContent =
+    lastModified.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
   return toc;
 };
 
