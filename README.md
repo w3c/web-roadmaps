@@ -109,7 +109,7 @@ When this happens, you may use the `other` sub-property to specify implementatio
 * `prefix` (optional): whether the implementation requires the use of a prefix
 * `flag` (optional): whether some flag needs to be set to enable the feature
 
-For instance, let's say that "Can I use" report that a particular feature is in development in Webkit, whereas you know that the feature has not yet been considered there; and that it does not report anything on status in Edge, whereas you know from discussion with the Edge team that it is being considered, you could add:
+For instance, let's say that "Can I use" report that a particular feature is in development in WebKit, whereas you know that the feature has not yet been considered there; and that it does not report anything on status in Edge, whereas you know from discussion with the Edge team that it is being considered, you could add:
 
 ```json
 {
@@ -122,7 +122,7 @@ For instance, let's say that "Can I use" report that a particular feature is in 
         "status": "",
         "source": "feedback",
         "date": "2018-03-19",
-        "comment": "No public signal in Webkit for the feature, information reported by Can I Use is incorrect"
+        "comment": "No public signal in WebKit for the feature, information reported by Can I Use is incorrect"
       },
       {
         "ua": "edge",
