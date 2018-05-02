@@ -237,42 +237,42 @@
 
             <dt>开发中的技术</dt>
             <dd><ul>
-              <li>Fix Proximity sensor implementation status in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a></li>
-              <li>Fix Ambient light API implementation status in Firefox and Edge in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a></li>
-              <li>Fix Presentation API implementation status in Webkit in <a data-page="media" href="media.zh.html">媒体</a></li>
-              <li>Mention the CSS <code>font-display</code> property and update text on downloadable fonts in <a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
-              <li>Mention the Streams specification in <a data-page="network" href="network.zh.html">网络和通信</a></li>
-              <li>Mention Payment Method Identifiers and Payment Method Manifest in <a data-page="payment" href="payment.zh.html">支付与服务</a></li>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中修复接近度传感器的实现状态</li>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中修复 Firefox 和 Edge 对环境光线传感器 API 的实现状态</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中修复 WebKit 对呈现 API 的实现状态</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 的 <code>font-display</code> 属性</li>
+              <li>在<a data-page="network" href="network.zh.html">网络和通信</a>中提及 Streams 标准</li>
+              <li>在<a data-page="payment" href="payment.zh.html">支付与服务</a>中提及支付方式标识符和支付方式清单</li>
             </ul></dd>
 
             <dt>广泛部署的技术</dt>
             <dd><ul>
-              <li>Mention CSS Grid Layout in <a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
-              <li>Mention the CSS <code>box-sizing</code> property in <a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
-              <li>Move <code>requestIdleCallback</code> to the Well-deployed section in <a data-page="performance" href="performance.zh.html">性能和调优</a></li>
-              <li>Update text on WOFF (WOFF 2.0 was recently published as a W3C Recommendation), mention variable fonts in <a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
-              <li>Refine accessibility part in <a data-page="userinput" href="userinput.zh.html">用户交互</a> and rename the category to promote accessibility</li>
-              <li>Mention the <code>passive</code> flag for event listeners in <a data-page="performance" href="performance.zh.html">性能和调优</a></li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 网格布局</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 的 <code>box-sizing</code> 属性</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中把 <code>requestIdleCallback</code> 改为广泛部署的技术</li>
+              <li>更新 WOFF 标准的描述（WOFF 2.0 近期发布了正式推荐标准），同时在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提到可变字体</li>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中细化信息无障碍的内容并重命名该部分</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及事件监听器的 <code>passive</code> 选项</li>
             </ul></dd>
 
             <dt>不再进行的工作</dt>
             <dd><ul>
-              <li>Mark humidity, thermometer, barometer proposals as discontinued in <a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a></li>
-              <li>Mark appcache as discontinued in <a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a></li>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中将环境湿度、温度传感器和气压传感器标为不再进行的工作</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中将应用缓存标为不再进行的工作</li>
             </ul></dd>
           </dl>
 
-          <p>The implementation info rendered in tables at the end of each section now embeds information about mobile browsers, and warns when a prefix is required or when a flag must be set to use a feature. Such features are also now consistently flagged as "Experimental" throughout the tables. Implementation information about additional browsers (Baidu, Opera, QQ, Samsung Internet, UC Web) can now be displayed from a dropdown menu. By default, tables will only display information about main browsers (Chrome, Microsoft Edge, Firefox, Safari), because this information is more up-to-date and reliable (information for other browsers may still be outdated or incorrect in some cases).</p>
+          <p>在每个部分末尾的表格中呈现的实现信息现在嵌入了有关移动浏览器的信息，并在需要浏览器引擎前缀或必须开启浏览器实验性功能以使用某个特性时发出警告。这些特性现在在表格中会被标记为“实验”。现在可以从下拉菜单中显示有关其他浏览器（百度、Opera、QQ、三星、UC）的实现信息。默认情况下，表格只会显示有关主要浏览器（Chrome、Microsoft Edge、Firefox 和 Safari）的信息，因为此信息更新且更可靠（某些情况下其他浏览器的信息可能会过时或不正确）。</p>
 
-          <p>This version also features a series of User Interface improvements to improve the readability and accessibility of the pages.</p>
+          <p>此版本还具有一系列用户界面的改进，以提高页面的可读性和可访问性。</p>
 
-          <p>Under the hoods, the roadmap framework has been almost entirely re-written to ease Roadmap authoring, and the publication of future snapshots. For instance, the extraction of information about W3C, WHATWG, and IETF specifications should now be automatic in most cases. Please refer to the <a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">documentation</a> for details.</p>
+          <p>在这些标准之下，路线图框架几乎完全重新编写，以便简化路线图创作以及发布未来的快照。 例如，在大多数情况下，提取关于W3C，WHATWG和IETF规范的信息现在应该是自动的。 有关详细信息，请参阅<a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">文档</a>。</p>
         </section>
 
         <section>
-          <h3 id="january-2018">January 2018</h3>
-          <p>The <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">January 2018</a> snapshot is a major overhaul of the <a href="https://www.w3.org/2015/08/mobile-web-app-state/">previous mobile roadmap</a>, published until August 2015. Categories have remained vastly intact, but the new version comes with a new lightweight design, and the contents of the pages have been significantly updated to follow the evolution of the Web platform in the past few years.</p>
-          <p>The roadmap is published in <a href="https://www.w3.org/Mobile/roadmap/index.html">English</a> and <a href="https://www.w3.org/Mobile/roadmap/index.zh.html">Chinese</a>.</p>
+          <h3 id="x2018-1">2018年1月</h3>
+          <p><a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">2018年1月</a>的快照是对<a href="https://www.w3.org/2015/08/mobile-web-app-state/">2015年8月</a>以前发布的移动路线图进行的重大修改。路线图的分类没有变化，但新版本包含了新的设计和内容的大幅更新。</p>
+          <p>路线图以<a href="https://www.w3.org/Mobile/roadmap/index.html">英文</a>和<a href="https://www.w3.org/Mobile/roadmap/index.zh.html">中文</a>发布。</p>
           <p>Some content may still be missing or incomplete. Among other things, implementation information only targets desktop browsers and is known not to be perfectly correct.</p>
         </section>
       </section></div>
@@ -304,7 +304,7 @@
             <div class="container">
                 <p>
                     <span class="translations-wrapper">语言: <span class="translations"><a href="about.html" data-nav="">English</a> | <span>中文</span></span><br></span>
-                    Content last updated in <span data-content-lastmodified="">April 2018</span><br>
+                    Content last updated in <span data-content-lastmodified="">May 2018</span><br>
                     © <a href="https://www.w3.org/">W3C</a> (<a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>)
                     <br>
                     Usage policies apply
@@ -312,7 +312,7 @@
                 <p>
                   感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
                   <br>
-                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a> in <span data-impl-lastmodified="">April 2018</span>
+                  有关 API 实现的信息收集自 <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a> in <span data-impl-lastmodified="">May 2018</span>
                 </p>
             </div>
         </footer>

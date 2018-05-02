@@ -3014,13 +3014,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=variable-fonts"
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=variable-fonts"
       },
@@ -3040,9 +3034,6 @@
       {
         "ua": "chrome",
         "status": "shipped",
-        "notes": [
-          "Does not support `format('truetype-variations')`, `format('woff-variations')`, `format('woff2-variations')`"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=variable-fonts"
       },
@@ -3076,9 +3067,6 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
-        "notes": [
-          "Does not support the `font-weight` and `font-stretch` properties."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=variable-fonts"
       },
@@ -3122,7 +3110,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/fontvariationpropertieswithopentypevariablefontsupport/",
         "selected": true
@@ -3135,6 +3123,7 @@
       }
     ],
     "shipped": [
+      "edge",
       "chrome",
       "safari",
       "opera",
@@ -3142,7 +3131,6 @@
       "chrome_android"
     ],
     "experimental": [
-      "edge",
       "firefox"
     ],
     "indevelopment": [],
@@ -3320,26 +3308,6 @@
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints",
         "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Available behind the \"Experimental Web Platform features\" feature flag"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=css-snappoints"
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Available behind the \"Experimental Web Platform features\" feature flag"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=css-snappoints"
       },
       {
         "ua": "safari",
@@ -4258,13 +4226,14 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/passiveeventlisteners/",
         "selected": true
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "safari",
@@ -4275,9 +4244,7 @@
       "uc_android",
       "samsunginternet_android"
     ],
-    "experimental": [
-      "edge"
-    ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -6338,8 +6305,7 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
@@ -6372,10 +6338,11 @@
         "selected": true
       }
     ],
-    "shipped": [],
+    "shipped": [
+      "chrome"
+    ],
     "experimental": [
       "firefox",
-      "chrome",
       "opera",
       "chrome_android",
       "firefox_android"
@@ -8750,16 +8717,10 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload",
         "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=link-rel-preload"
       },
       {
         "ua": "firefox",
@@ -8822,6 +8783,7 @@
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "safari",
@@ -8831,9 +8793,7 @@
       "firefox_android",
       "samsunginternet_android"
     ],
-    "experimental": [
-      "edge"
-    ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -8888,13 +8848,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=push-api"
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api"
       },
@@ -9002,13 +8956,14 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pushapi/",
         "selected": true
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "opera",
@@ -9018,9 +8973,7 @@
       "samsunginternet_android",
       "qq_android"
     ],
-    "experimental": [
-      "edge"
-    ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -9644,17 +9597,17 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/screencapture/",
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
+    "shipped": [
       "edge"
     ],
+    "experimental": [],
+    "indevelopment": [],
     "consideration": []
   },
   "secondscreen": {
@@ -9781,11 +9734,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Available behind the \"Enable service workers\" flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=serviceworkers"
       },
@@ -9904,7 +9853,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/serviceworker/",
         "selected": true
@@ -9917,6 +9866,7 @@
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "safari",
@@ -9929,9 +9879,7 @@
       "qq_android",
       "baidu_android"
     ],
-    "experimental": [
-      "edge"
-    ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -10270,13 +10218,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=subresource-integrity"
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=subresource-integrity"
       },
@@ -10393,13 +10335,14 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/subresourceintegrity/",
         "selected": true
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "safari",
@@ -10412,7 +10355,6 @@
       "baidu_android"
     ],
     "experimental": [
-      "edge",
       "safari_ios"
     ],
     "indevelopment": [],
@@ -11117,9 +11059,9 @@
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "shipped",
         "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/upgradeinsecureresourcerequests/",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cspupgradeinsecurerequestsdirective/",
         "selected": true
       }
     ],
@@ -11127,14 +11069,13 @@
       "chrome",
       "chrome_android",
       "firefox",
+      "edge",
       "safari",
       "opera"
     ],
     "experimental": [],
     "indevelopment": [],
-    "consideration": [
-      "edge"
-    ]
+    "consideration": []
   },
   "uisecurity": {
     "implementations": [],
@@ -12171,13 +12112,14 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/",
         "selected": true
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "chrome",
       "safari",
@@ -12187,7 +12129,6 @@
       "firefox_android"
     ],
     "experimental": [
-      "edge",
       "qq_android"
     ],
     "indevelopment": [],
