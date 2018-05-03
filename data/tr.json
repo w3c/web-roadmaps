@@ -2294,7 +2294,7 @@
     "url": "https://www.w3.org/TR/ttml-imsc1.1/",
     "edDraft": "https://rawgit.com/w3c/imsc/IMSC1.1/imsc1/spec/ttml-ww-profiles.html",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
