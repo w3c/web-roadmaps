@@ -657,7 +657,7 @@ const applyToc = function (toc, translate, lang, pagetype) {
     breadcrumb.parentNode.removeChild(breadcrumb);
   }
   else {
-    breadcrumb.setAttribute('href', ((lang === 'en') ? './' : './index.' + lang + 'html'));
+    breadcrumb.setAttribute('href', ((lang === 'en') ? './' : './index.' + lang + '.html'));
     breadcrumb.textContent = toc.title;
   }
 
