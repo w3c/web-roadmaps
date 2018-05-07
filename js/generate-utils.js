@@ -217,7 +217,7 @@ const browsers = {
  */
 const formatMonthAndYearDate = function (date, lang) {
   if (((lang === 'zh') || lang.startsWith('zh-')) &&
-      window._runScripts && window._virtualConsole && (window.name === 'nodejs')) {
+      window.navigator.userAgent.split(/[\s\/]/).includes('jsdom')) {
     let month = date.getMonth() + 1;
     return '' + date.getFullYear() + '年' + month + '月';
   }
