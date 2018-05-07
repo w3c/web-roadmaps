@@ -624,7 +624,7 @@
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webapplicationmanifest/",
         "selected": true
@@ -646,12 +646,11 @@
       "samsunginternet_android",
       "qq_android",
       "baidu_android",
-      "firefox"
-    ],
-    "experimental": [],
-    "indevelopment": [
+      "firefox",
       "edge"
     ],
+    "experimental": [],
+    "indevelopment": [],
     "consideration": []
   },
   "audio-output": {
@@ -1476,7 +1475,7 @@
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/credentialmanagementapi/",
         "selected": true
@@ -1490,11 +1489,10 @@
     ],
     "experimental": [],
     "indevelopment": [
+      "edge",
       "safari"
     ],
-    "consideration": [
-      "edge"
-    ]
+    "consideration": []
   },
   "crypto": {
     "implementations": [
@@ -1794,9 +1792,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Does not support CSS transforms on SVG elements (transform attribute can be used instead)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=transforms2d",
         "selected": true
@@ -8718,6 +8713,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Partial support in Edge 17+ refers to support for only the HTML `<link rel>` format, not the HTTP header format."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload",
         "selected": true
