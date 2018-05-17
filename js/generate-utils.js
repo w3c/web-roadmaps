@@ -208,6 +208,26 @@ const browsers = {
   secondary: ['baidu', 'opera', 'qq', 'samsunginternet', 'uc']
 };
 
+
+/**
+ * Format a date into a month and year string, using the provided locale.
+ *
+ * Rules for Chinese are hardcoded when code runs in JSDOM, because JSDOM does
+ * not yet seem to support producing dates in Chinese.
+ */
+const formatMonthAndYearDate = function (date, lang) {
+  if (((lang === 'zh') || lang.startsWith('zh-')) &&
+      window.navigator.userAgent.split(/[\s\/]/).includes('jsdom')) {
+    let month = date.getMonth() + 1;
+    return '' + date.getFullYear() + '年' + month + '月';
+  }
+  else {
+    return date.toLocaleDateString(lang, { month: 'long', year: 'numeric' });
+  }
+};
+
+
+
 /**
  * Code to call to create a cell of the given type
  *
@@ -473,7 +493,7 @@ const loadTemplatePage = function (lang, pagetype) {
  * Create the Document Metadata section based on query string parameters and
  * info in the toc.json file.
  */
-const fillDocumentMetadata = function (toc, translate, pagetype) {
+const fillDocumentMetadata = function (toc, translate, lang, pagetype) {
   // Retrieve information from the query string or from the toc.json file
   let params = {};
   let queryString = window.location.search;
@@ -515,8 +535,8 @@ const fillDocumentMetadata = function (toc, translate, pagetype) {
   let container = document.querySelector('.hero .container');
   let publishDate = container.querySelector('[data-publishdate]');
   if (params.publishDate) {
-    publishDate.textContent = (new Date(params.publishDate))
-      .toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    publishDate.textContent = formatMonthAndYearDate(
+      new Date(params.publishDate), lang);
   }
   else {
     publishDate.parentNode.removeChild(publishDate);
@@ -637,7 +657,7 @@ const applyToc = function (toc, translate, lang, pagetype) {
     breadcrumb.parentNode.removeChild(breadcrumb);
   }
   else {
-    breadcrumb.setAttribute('href', ((lang === 'en') ? './' : './index.' + lang + 'html'));
+    breadcrumb.setAttribute('href', ((lang === 'en') ? './' : './index.' + lang + '.html'));
     breadcrumb.textContent = toc.title;
   }
 
@@ -657,7 +677,7 @@ const applyToc = function (toc, translate, lang, pagetype) {
   }
 
   // Fill out document metadata section
-  fillDocumentMetadata(toc, translate, pagetype);
+  fillDocumentMetadata(toc, translate, lang, pagetype);
 
   // Fill out the main menu (in the index page) and the side menu
   let mainNav = document.querySelector('ul.roadmap-list');
@@ -784,11 +804,11 @@ const applyToc = function (toc, translate, lang, pagetype) {
     lastModified = publishDate;
   }
   document.querySelector('[data-content-lastmodified]').textContent =
-    lastModified.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    formatMonthAndYearDate(lastModified, lang);
 
   lastModified = publishDate || new Date();
   document.querySelector('[data-impl-lastmodified]').textContent =
-    lastModified.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    formatMonthAndYearDate(lastModified, lang);
 
   return toc;
 };
