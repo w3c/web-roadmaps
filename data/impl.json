@@ -122,7 +122,8 @@
       },
       {
         "ua": "firefox",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "notes": [
           "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/)."
         ],
@@ -523,6 +524,12 @@
   "appmanifest": {
     "implementations": [
       {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-app-manifest"
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -637,6 +644,7 @@
       }
     ],
     "shipped": [
+      "edge",
       "chrome",
       "safari",
       "opera",
@@ -646,8 +654,7 @@
       "samsunginternet_android",
       "qq_android",
       "baidu_android",
-      "firefox",
-      "edge"
+      "firefox"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -1543,6 +1550,13 @@
         "href": "https://caniuse.com/#feat=cryptography"
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=cryptography",
+        "selected": true
+      },
+      {
         "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
@@ -1624,6 +1638,7 @@
       "opera",
       "safari_ios",
       "chrome_android",
+      "firefox_android",
       "uc_android",
       "samsunginternet_android",
       "qq_android",
@@ -6573,6 +6588,9 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "notes": [
+          "IntersectionObserver does not trigger its callback in a Chrome background tab"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver"
       },
@@ -11752,9 +11770,6 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
-        "notes": [
-          "Partial support in Firefox is detailed in [Are we animated yet?](https://birtles.github.io/areweanimatedyet/)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -11983,14 +11998,20 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5668769141620736",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5668769141620736"
       },
       {
         "ua": "safari",
         "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webshareapi/",
         "selected": true
       },
       {
@@ -12007,6 +12028,7 @@
     "indevelopment": [],
     "consideration": [
       "firefox",
+      "edge",
       "safari"
     ]
   },

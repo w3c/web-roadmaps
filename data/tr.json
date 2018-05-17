@@ -652,7 +652,7 @@
     "url": "https://www.w3.org/TR/pointerevents2/",
     "edDraft": "https://w3c.github.io/pointerevents/",
     "title": "Pointer Events",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -1818,7 +1818,7 @@
     "url": "https://www.w3.org/TR/pointerevents2/",
     "edDraft": "https://w3c.github.io/pointerevents/",
     "title": "Pointer Events",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -2770,7 +2770,7 @@
     "url": "https://www.w3.org/TR/webvtt1/",
     "edDraft": "https://w3c.github.io/webvtt/",
     "title": "WebVTT: The Web Video Text Tracks Format",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
