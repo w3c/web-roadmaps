@@ -530,26 +530,6 @@
         "href": "https://caniuse.com/#feat=web-app-manifest"
       },
       {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-app-manifest"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-app-manifest",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-app-manifest",
-        "selected": true
-      },
-      {
         "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
@@ -561,6 +541,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-app-manifest",
+        "selected": true
       },
       {
         "ua": "uc_android",
@@ -621,13 +608,15 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6488656873259008"
+        "href": "https://www.chromestatus.com/feature/6488656873259008",
+        "selected": true
       },
       {
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6488656873259008"
+        "href": "https://www.chromestatus.com/feature/6488656873259008",
+        "selected": true
       },
       {
         "ua": "edge",
@@ -645,16 +634,16 @@
     ],
     "shipped": [
       "edge",
-      "chrome",
-      "safari",
-      "opera",
       "safari_ios",
       "chrome_android",
+      "firefox_android",
       "uc_android",
       "samsunginternet_android",
       "qq_android",
       "baidu_android",
-      "firefox"
+      "chrome",
+      "firefox",
+      "opera"
     ],
     "experimental": [],
     "indevelopment": [],
@@ -3060,9 +3049,6 @@
       {
         "ua": "opera",
         "status": "shipped",
-        "notes": [
-          "Does not support `format('truetype-variations')`, `format('woff-variations')`, `format('woff2-variations')`"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=variable-fonts",
         "selected": true
@@ -6322,16 +6308,14 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
@@ -6349,12 +6333,12 @@
       }
     ],
     "shipped": [
-      "chrome"
+      "chrome",
+      "opera",
+      "chrome_android"
     ],
     "experimental": [
       "firefox",
-      "opera",
-      "chrome_android",
       "firefox_android"
     ],
     "indevelopment": [],

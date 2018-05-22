@@ -10,7 +10,7 @@
         "label": "Web Real-Time Communications Working Group"
       },
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -23,7 +23,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -36,7 +36,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -169,7 +169,7 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -182,7 +182,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -793,7 +793,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -832,7 +832,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       },
       {
@@ -990,7 +990,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1068,7 +1068,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1119,7 +1119,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1188,7 +1188,7 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1201,7 +1201,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       },
       {
@@ -1379,7 +1379,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1614,7 +1614,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1847,7 +1847,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -1898,7 +1898,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       },
       {
@@ -1980,7 +1980,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       },
       {
@@ -2218,7 +2218,7 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -2425,7 +2425,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
@@ -2452,7 +2452,7 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       },
       {
@@ -2509,7 +2509,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2009/dap/",
+        "url": "https://www.w3.org/das/",
         "label": "Device and Sensors Working Group"
       }
     ],
