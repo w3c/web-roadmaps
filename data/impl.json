@@ -530,6 +530,15 @@
         "href": "https://caniuse.com/#feat=web-app-manifest"
       },
       {
+        "ua": "chrome",
+        "status": "shipped",
+        "notes": [
+          "On Windows, Chrome will read the manifest to generate a desktop icon when selecting the \"Add to desktop...\" option."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-app-manifest"
+      },
+      {
         "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
@@ -634,6 +643,7 @@
     ],
     "shipped": [
       "edge",
+      "chrome",
       "safari_ios",
       "chrome_android",
       "firefox_android",
@@ -641,7 +651,6 @@
       "samsunginternet_android",
       "qq_android",
       "baidu_android",
-      "chrome",
       "firefox",
       "opera"
     ],
@@ -8004,7 +8013,6 @@
       {
         "ua": "chrome",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5160285237149696",
         "selected": true
@@ -8012,7 +8020,6 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5160285237149696",
         "selected": true
@@ -8037,12 +8044,20 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5160285237149696",
         "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5160285237149696",
+        "selected": true
       }
     ],
     "shipped": [],
     "experimental": [
       "chrome",
-      "chrome_android"
+      "chrome_android",
+      "opera"
     ],
     "indevelopment": [],
     "consideration": [
@@ -11887,7 +11902,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5644602711212032",
         "selected": true
@@ -11906,7 +11921,9 @@
       "chrome",
       "chrome_android"
     ],
-    "consideration": []
+    "consideration": [
+      "edge"
+    ]
   },
   "web-share-target": {
     "implementations": [
