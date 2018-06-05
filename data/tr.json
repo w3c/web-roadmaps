@@ -2517,9 +2517,9 @@
   },
   "wcag21": {
     "url": "https://www.w3.org/TR/WCAG21/",
-    "edDraft": "https://w3c.github.io/wcag21/guidelines/",
+    "edDraft": "https://w3c.github.io/wcag/21/guidelines/",
     "title": "Web Content Accessibility Guidelines (WCAG) 2.1",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/WAI/GL/",
