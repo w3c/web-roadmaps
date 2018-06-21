@@ -62,6 +62,8 @@ Depending on the advancement of the underlying specification, the JSON object ca
 * `edDraft`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), or when these APIs do not know the URL of the Editor's Draft for the specification, the `edDraft` property should contain the URL of the Editor's Draft of the specification.
 * `wgs`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `wgs` property should be an array of objects describing the groups that are producing the spec; each such object should have a `url` property with a link to the group's home page, and a `label` property with the name of the group.
 * `publisher`: the organization that published the specification. The framework automatically computes the publisher for W3C, WHATWG, and IETF specifications.
+* `informative`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/), set the `informative` property to `true` to tell the framework that it only contains informative content or that it will be (or has been) published as a Group Note and not as a Recommendation.
+* `evergreen`: from time to time, specifications remain as drafts indefinitely but are continuously updated and can be considered stable whenever a new version is published. Set the `evergreen` property to `true` when the specification can always be used as a reference, no matter where it is on the Recommendation track.
 
 Here is an example of a JSON file that describes the "Intersection Observer" specification:
 ```json

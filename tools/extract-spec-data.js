@@ -262,7 +262,8 @@ async function extractSpecData(files, config) {
         edDraft: latestInfo['editor-draft'],
         title: latestInfo.title,
         status: latestInfo.status,
-        publisher: 'W3C'
+        publisher: 'W3C',
+        informative: latestInfo.informative || !latestInfo['rec-track']
       };
       let deliverersJson = await fetchJson(
         latestInfo._links.deliverers.href + `?embed=1`,
@@ -283,7 +284,8 @@ async function extractSpecData(files, config) {
       title: spec.data.title || trInfo.title || lookupInfo.title,
       status: spec.data.status || trInfo.status || lookupInfo.status || 'ED',
       deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || [],
-      publisher: spec.data.publisher || trInfo.publisher || lookupInfo.publisher
+      publisher: spec.data.publisher || trInfo.publisher || lookupInfo.publisher,
+      informative: spec.data.informative || trInfo.informative
     };
 
     // Spec must have a title, either retrieved from Specref or defined in

@@ -32,5 +32,16 @@
     "qq": "QQ Browser",
     "samsunginternet": "Samsung Internet",
     "uc": "UC Browser"
+  },
+  "maturity": {
+    "ED": "Editor's Draft",
+    "WD": "Working Draft",
+    "LS": "Living Standard",
+    "CR": "Candidate Recommendation",
+    "PR": "Proposed Recommendation",
+    "REC": "Recommendation",
+    "Retired": "Retired",
+    "NOTE": "Group Note",
+    "REF": "Reference"
   }
 }
