@@ -148,14 +148,14 @@
       },
       {
         "ua": "chrome",
-        "status": "shipped",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "shipped",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
@@ -181,7 +181,7 @@
       },
       {
         "ua": "opera",
-        "status": "shipped",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
@@ -223,12 +223,12 @@
         "selected": true
       }
     ],
-    "shipped": [
+    "shipped": [],
+    "experimental": [
       "chrome",
       "chrome_android",
       "opera"
     ],
-    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -11683,13 +11683,14 @@
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accessiblerichinternetapplicationswaiaria11/",
         "selected": true
       }
     ],
     "shipped": [
+      "edge",
       "firefox",
       "safari",
       "opera",
@@ -11701,7 +11702,6 @@
     ],
     "experimental": [],
     "indevelopment": [
-      "edge",
       "chrome",
       "chrome_android"
     ],
@@ -11881,14 +11881,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5644602711212032",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5644602711212032",
         "selected": true
@@ -11913,14 +11913,22 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5644602711212032",
         "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
       }
     ],
     "shipped": [],
-    "experimental": [],
-    "indevelopment": [
+    "experimental": [
       "chrome",
-      "chrome_android"
+      "chrome_android",
+      "opera"
     ],
+    "indevelopment": [],
     "consideration": [
       "edge"
     ]
@@ -12344,7 +12352,6 @@
         "ua": "edge",
         "status": "experimental",
         "prefix": true,
-        "flag": true,
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webauthenticationapi/",
         "selected": true

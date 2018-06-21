@@ -14,7 +14,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "accelerometer": {
     "url": "https://www.w3.org/TR/accelerometer/",
@@ -27,7 +28,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "ambientlight": {
     "url": "https://www.w3.org/TR/ambient-light/",
@@ -40,7 +42,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "animation-frames": {
     "url": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
@@ -54,6 +57,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "requestAnimationFrame"
   },
   "annotation-model": {
@@ -67,7 +71,8 @@
         "label": "Web Annotation Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "appcache": {
     "url": "https://www.w3.org/TR/html51/obsolete.html#application-caches",
@@ -81,6 +86,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "ApplicationCache"
   },
   "appmanifest": {
@@ -94,7 +100,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "atag20": {
     "url": "https://www.w3.org/TR/ATAG20/",
@@ -106,7 +113,8 @@
         "label": "Authoring Tool Accessibility Guidelines Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "audio-output": {
     "url": "https://www.w3.org/TR/audio-output/",
@@ -119,7 +127,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "audio": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
@@ -133,6 +142,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "audio element"
   },
   "autocomplete": {
@@ -147,6 +157,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "autocomplete attribute"
   },
   "background-sync": {
@@ -186,7 +197,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "beacon": {
     "url": "https://www.w3.org/TR/beacon/",
@@ -199,7 +211,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "canvas": {
     "url": "https://www.w3.org/TR/2dcontext/",
@@ -211,7 +224,8 @@
         "label": "HTML Media Extensions Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "cloud-browser-arch": {
     "url": "https://www.w3.org/TR/cloud-browser-arch/",
@@ -224,7 +238,8 @@
         "label": "Media and Entertainment Interest Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "color-canvas": {
     "url": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
@@ -245,6 +260,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "color-gamut media query"
   },
   "contacts-sys": {
@@ -258,7 +274,8 @@
         "label": "System Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "core-aam11": {
     "url": "https://www.w3.org/TR/core-aam-1.1/",
@@ -271,7 +288,8 @@
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "cors": {
     "url": "https://www.w3.org/TR/cors/",
@@ -287,7 +305,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "credential-management": {
     "url": "https://www.w3.org/TR/credential-management-1/",
@@ -300,7 +319,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "crypto": {
     "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -313,7 +333,8 @@
         "label": "Web Cryptography Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "cryptokey": {
     "url": "https://www.w3.org/TR/webcrypto-key-discovery/",
@@ -326,7 +347,8 @@
         "label": "Web Cryptography Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "csp": {
     "url": "https://www.w3.org/TR/CSP2/",
@@ -339,7 +361,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "csp3": {
     "url": "https://www.w3.org/TR/CSP3/",
@@ -352,7 +375,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-2d": {
     "url": "https://www.w3.org/TR/css-transforms-1/",
@@ -366,6 +390,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "2D effects"
   },
   "css-3d": {
@@ -393,7 +418,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-border-background": {
     "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -407,6 +433,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Complex backgrounds"
   },
   "css-border-radius": {
@@ -421,6 +448,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Rounded corners"
   },
   "css-box-shadow": {
@@ -435,6 +463,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Box shadow effects"
   },
   "css-break-3": {
@@ -448,7 +477,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-color-space": {
     "url": "https://drafts.csswg.org/css-color/#icc-colors",
@@ -475,7 +505,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-device-adapt": {
     "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -488,7 +519,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-flexbox": {
     "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -501,7 +533,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-font-display": {
     "url": "https://www.w3.org/TR/css-fonts-4/#font-display-desc",
@@ -515,6 +548,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "font-display"
   },
   "css-font-loading": {
@@ -528,7 +562,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-fonts-4": {
     "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -541,7 +576,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-fonts-variable": {
     "url": "https://www.w3.org/TR/css-fonts-4/#font-variation-props",
@@ -555,6 +591,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Variable fonts"
   },
   "css-gcpm-3": {
@@ -568,7 +605,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-grid-1": {
     "url": "https://www.w3.org/TR/css-grid-1/",
@@ -581,7 +619,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-line-grid-1": {
     "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -594,7 +633,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-page-floats-3": {
     "url": "https://www.w3.org/TR/css-page-floats-3/",
@@ -607,7 +647,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-rhythm-1": {
     "url": "https://www.w3.org/TR/css-rhythm-1/",
@@ -620,7 +661,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-scroll-snap": {
     "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -633,7 +675,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-size-adjust": {
     "url": "https://drafts.csswg.org/css-size-adjust/",
@@ -660,6 +703,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "touch-action"
   },
   "css-transitions": {
@@ -673,13 +717,14 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css-ui-box-sizing": {
     "url": "https://www.w3.org/TR/css-ui-3/#box-sizing",
     "edDraft": "https://drafts.csswg.org/css-ui/",
     "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/Style/CSS/members",
@@ -687,6 +732,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "box-sizing property"
   },
   "css-will-change": {
@@ -700,7 +746,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css2": {
     "url": "https://www.w3.org/TR/CSS2/",
@@ -712,7 +759,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "css3-page": {
     "url": "https://www.w3.org/TR/css3-page/",
@@ -724,7 +772,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "cssom-view": {
     "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -737,7 +786,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "datalist": {
     "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
@@ -751,6 +801,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "datalist element"
   },
   "ddr": {
@@ -763,7 +814,8 @@
         "label": "Mobile Web Initiative Device Description Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "device-memory": {
     "url": "https://w3c.github.io/device-memory/",
@@ -784,7 +836,8 @@
         "label": "Geolocation Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "discovery": {
     "url": "https://www.w3.org/TR/discovery-api/",
@@ -797,7 +850,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "dnt": {
     "url": "https://www.w3.org/TR/tracking-dnt",
@@ -810,7 +864,8 @@
         "label": "Tracking Protection Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "dom-addeventlistener-passive": {
     "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
@@ -840,7 +895,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "dpub-aam10": {
     "url": "https://www.w3.org/TR/dpub-aam-1.0/",
@@ -853,7 +909,8 @@
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "dpub-aria10": {
     "url": "https://www.w3.org/TR/dpub-aria-1.0/",
@@ -866,7 +923,8 @@
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "element-queries": {
     "url": "https://wicg.github.io/cq-usecases/",
@@ -892,7 +950,8 @@
         "label": "HTML Media Extensions Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "epr": {
     "url": "https://www.w3.org/TR/epr/",
@@ -905,7 +964,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "eventsource": {
     "url": "https://www.w3.org/TR/eventsource",
@@ -918,7 +978,8 @@
         "label": "Web Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "feature-policy": {
     "url": "https://wicg.github.io/feature-policy/",
@@ -956,7 +1017,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "frame-timing": {
     "url": "https://www.w3.org/TR/frame-timing/",
@@ -969,7 +1031,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "fullscreen": {
     "url": "https://fullscreen.spec.whatwg.org/",
@@ -994,7 +1057,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "geofencing": {
     "url": "https://www.w3.org/TR/geofencing/",
@@ -1007,7 +1071,8 @@
         "label": "Geolocation Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "geolocation-sensor": {
     "url": "https://wicg.github.io/geolocation-sensor/",
@@ -1032,7 +1097,8 @@
         "label": "Geolocation Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "getusermedia-cap": {
     "url": "https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
@@ -1046,6 +1112,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Source capabilities"
   },
   "getusermedia": {
@@ -1059,7 +1126,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "gyroscope": {
     "url": "https://www.w3.org/TR/gyroscope/",
@@ -1072,7 +1140,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "hbss": {
     "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
@@ -1097,7 +1166,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "html-extensions": {
     "url": "https://w3c.github.io/html-extensions/",
@@ -1123,7 +1193,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "html5-browsing-context": {
     "url": "https://www.w3.org/TR/html52/browsers.html#sec-browsing-contexts",
@@ -1137,6 +1208,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "browsing context"
   },
   "html5-download": {
@@ -1151,6 +1223,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "download attribute"
   },
   "html5-sandbox": {
@@ -1165,6 +1238,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "sandbox iframe attribute"
   },
   "htmlmediaelement": {
@@ -1179,6 +1253,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "HTMLMediaElement interface"
   },
   "humidity": {
@@ -1209,7 +1284,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "ime-api": {
     "url": "https://www.w3.org/TR/ime-api/",
@@ -1222,7 +1298,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "inband": {
     "url": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
@@ -1248,7 +1325,8 @@
         "label": "Web Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "indie-ui-events": {
     "url": "https://www.w3.org/TR/indie-ui-events/",
@@ -1261,7 +1339,8 @@
         "label": "Independent User Interface (Indie UI) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "inputdate": {
     "url": "https://www.w3.org/TR/html52/sec-forms.html#date-state-typedate",
@@ -1275,6 +1354,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Date and time input types"
   },
   "inputdevice": {
@@ -1302,6 +1382,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "input placeholder attribute"
   },
   "inputmode": {
@@ -1316,6 +1397,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "inputmode attribute"
   },
   "inputpattern": {
@@ -1330,6 +1412,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "pattern attribute for input fields"
   },
   "inputtext": {
@@ -1344,6 +1427,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "tel, email, url input types"
   },
   "intersectionobserver": {
@@ -1357,7 +1441,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "longtasks": {
     "url": "https://www.w3.org/TR/longtasks-1/",
@@ -1370,7 +1455,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "magnetometer": {
     "url": "https://www.w3.org/TR/magnetometer/",
@@ -1383,7 +1469,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "media-capabilities": {
     "url": "https://wicg.github.io/media-capabilities/",
@@ -1408,7 +1495,8 @@
         "label": "Media Fragments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "media-playback-quality": {
     "url": "https://wicg.github.io/media-playback-quality/",
@@ -1434,6 +1522,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "MediaController interface"
   },
   "mediakeys": {
@@ -1448,6 +1537,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Media keys"
   },
   "mediaqueries": {
@@ -1460,7 +1550,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "mediaqueries4": {
     "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -1473,7 +1564,8 @@
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "mediaqueries5": {
     "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -1512,7 +1604,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "mobile-accessibility-mapping": {
     "url": "https://www.w3.org/TR/mobile-accessibility-mapping/",
@@ -1529,7 +1622,8 @@
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "mse": {
     "url": "https://www.w3.org/TR/media-source/",
@@ -1542,7 +1636,8 @@
         "label": "HTML Media Extensions Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "mwabp": {
     "url": "https://www.w3.org/TR/mwabp/",
@@ -1554,7 +1649,8 @@
         "label": "Mobile Web Best Practices Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "navigation-timing": {
     "url": "https://www.w3.org/TR/navigation-timing/",
@@ -1566,7 +1662,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "netinfo": {
     "url": "https://wicg.github.io/netinfo/",
@@ -1591,7 +1688,8 @@
         "label": "Web Notification Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "online": {
     "url": "https://www.w3.org/TR/html52/browsers.html#browser-state",
@@ -1605,6 +1703,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "onLine DOM flag"
   },
   "orientation": {
@@ -1618,7 +1717,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "p2p": {
     "url": "https://www.w3.org/TR/webrtc/",
@@ -1631,7 +1731,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "packaging": {
     "url": "https://github.com/WICG/webpackage",
@@ -1656,7 +1757,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "paint-timing": {
     "url": "https://www.w3.org/TR/paint-timing/",
@@ -1669,7 +1771,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "payment-handler": {
     "url": "https://www.w3.org/TR/payment-handler/",
@@ -1682,7 +1785,8 @@
         "label": "Web Payments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "payment-method-basic-card": {
     "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -1695,7 +1799,8 @@
         "label": "Web Payments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "payment-method-id": {
     "url": "https://www.w3.org/TR/payment-method-id/",
@@ -1708,7 +1813,8 @@
         "label": "Web Payments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "payment-method-manifest": {
     "url": "https://www.w3.org/TR/payment-method-manifest/",
@@ -1721,7 +1827,8 @@
         "label": "Web Payments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "payment-request": {
     "url": "https://www.w3.org/TR/payment-request/",
@@ -1734,7 +1841,8 @@
         "label": "Web Payments Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "performance-timeline": {
     "url": "https://www.w3.org/TR/performance-timeline/",
@@ -1746,7 +1854,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "permissions-request": {
     "url": "https://wicg.github.io/permissions-request/",
@@ -1785,7 +1894,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "picture-in-picture": {
     "url": "https://wicg.github.io/picture-in-picture/",
@@ -1812,6 +1922,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "picture element"
   },
   "pointer-events": {
@@ -1825,7 +1936,8 @@
         "label": "Pointer Events Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "preload": {
     "url": "https://www.w3.org/TR/preload/",
@@ -1838,7 +1950,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "proximity": {
     "url": "https://www.w3.org/TR/proximity/",
@@ -1851,7 +1964,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "publishing-linking": {
     "url": "https://www.w3.org/TR/publishing-linking/",
@@ -1863,7 +1977,8 @@
         "label": "Technical Architecture Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "push": {
     "url": "https://www.w3.org/TR/push-api/",
@@ -1876,7 +1991,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "quota": {
     "url": "https://www.w3.org/TR/quota-api/",
@@ -1889,7 +2005,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "recording": {
     "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -1906,7 +2023,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "remote-playback": {
     "url": "https://www.w3.org/TR/remote-playback/",
@@ -1919,7 +2037,8 @@
         "label": "Second Screen Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "requestidlecallback": {
     "url": "https://www.w3.org/TR/requestidlecallback/",
@@ -1932,7 +2051,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "resource-hints": {
     "url": "https://www.w3.org/TR/resource-hints/",
@@ -1945,7 +2065,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "resource-timing": {
     "url": "https://www.w3.org/TR/resource-timing-1/",
@@ -1958,7 +2079,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "screen-orientation": {
     "url": "https://www.w3.org/TR/screen-orientation/",
@@ -1971,7 +2093,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "screencapture": {
     "url": "https://www.w3.org/TR/screen-capture/",
@@ -1988,7 +2111,8 @@
         "label": "Web Real-Time Communications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "secondscreen-openscreen": {
     "url": "https://github.com/webscreens/openscreenprotocol",
@@ -2014,7 +2138,8 @@
         "label": "Second Screen Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "securecontexts": {
     "url": "https://www.w3.org/TR/secure-contexts/",
@@ -2027,7 +2152,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "selectors-states": {
     "url": "https://www.w3.org/TR/selectors-states/",
@@ -2040,7 +2166,8 @@
         "label": "Web Annotation Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "server-timing": {
     "url": "https://www.w3.org/TR/server-timing",
@@ -2053,7 +2180,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "serviceworkers": {
     "url": "https://www.w3.org/TR/service-workers-1/",
@@ -2066,7 +2194,8 @@
         "label": "Service Workers Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "shape-detection": {
     "url": "https://wicg.github.io/shape-detection-api",
@@ -2134,6 +2263,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "srcset attribute"
   },
   "sri": {
@@ -2147,7 +2277,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "storage": {
     "url": "https://storage.spec.whatwg.org/",
@@ -2183,7 +2314,8 @@
         "label": "SVG Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "svg2": {
     "url": "https://www.w3.org/TR/SVG2/",
@@ -2196,7 +2328,8 @@
         "label": "SVG Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "task-scheduler": {
     "url": "https://www.w3.org/TR/task-scheduler/",
@@ -2209,7 +2342,8 @@
         "label": "System Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "thermometer": {
     "url": "https://kenchris.github.io/thermometer/",
@@ -2236,6 +2370,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "timeupdate event"
   },
   "timing": {
@@ -2262,7 +2397,8 @@
         "label": "Web Events Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "transcript": {
     "url": "http://w3c.github.io/html-transcript/html-transcript-src.html",
@@ -2288,7 +2424,8 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "ttml-imsc11": {
     "url": "https://www.w3.org/TR/ttml-imsc1.1/",
@@ -2301,7 +2438,8 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "ttml": {
     "url": "https://www.w3.org/TR/ttml2/",
@@ -2314,7 +2452,8 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "ttml1": {
     "url": "https://www.w3.org/TR/ttml1/",
@@ -2327,7 +2466,8 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "tvtuner": {
     "url": "https://w3c.github.io/tvcontrol-api/",
@@ -2352,7 +2492,8 @@
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "uaag20": {
     "url": "https://www.w3.org/TR/UAAG20/",
@@ -2365,7 +2506,8 @@
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "uir": {
     "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
@@ -2378,7 +2520,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "uisecurity": {
     "url": "https://www.w3.org/TR/UISecurity/",
@@ -2391,7 +2534,8 @@
         "label": "Web Application Security Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "user-timing": {
     "url": "https://www.w3.org/TR/user-timing/",
@@ -2403,7 +2547,8 @@
         "label": "Web Performance Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "vehicle-info": {
     "url": "https://www.w3.org/TR/vehicle-information-api",
@@ -2416,7 +2561,8 @@
         "label": "Automotive Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "vibration": {
     "url": "https://www.w3.org/TR/vibration/",
@@ -2429,7 +2575,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "video": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
@@ -2443,6 +2590,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "video element"
   },
   "videoworker": {
@@ -2474,6 +2622,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "viewport-percentage lengths"
   },
   "viewportapi": {
@@ -2500,7 +2649,8 @@
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "wake-lock": {
     "url": "https://www.w3.org/TR/wake-lock/",
@@ -2513,7 +2663,8 @@
         "label": "Device and Sensors Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "wcag21": {
     "url": "https://www.w3.org/TR/WCAG21/",
@@ -2526,7 +2677,8 @@
         "label": "Accessibility Guidelines Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "web-animations": {
     "url": "https://www.w3.org/TR/web-animations-1/",
@@ -2543,7 +2695,8 @@
         "label": "SVG Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "web-lifecycle": {
     "url": "https://github.com/WICG/web-lifecycle",
@@ -2608,7 +2761,8 @@
         "label": "Audio Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "webauthn": {
     "url": "https://www.w3.org/TR/webauthn/",
@@ -2621,7 +2775,8 @@
         "label": "Web Authentication Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "webbluetooth": {
     "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -2687,6 +2842,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Priority and QoS Model"
   },
   "webrtc-relay": {
@@ -2701,6 +2857,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "feature": "Browser default ICE servers"
   },
   "websockets": {
@@ -2713,7 +2870,8 @@
         "label": "Web Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "websql": {
     "url": "https://www.w3.org/TR/webdatabase/",
@@ -2725,7 +2883,8 @@
         "label": "Web Applications Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": true
   },
   "webstorage": {
     "url": "https://www.w3.org/TR/webstorage/",
@@ -2738,7 +2897,8 @@
         "label": "Web Platform Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "webusb": {
     "url": "https://wicg.github.io/webusb/",
@@ -2777,7 +2937,8 @@
         "label": "Timed Text Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "webworkers": {
     "url": "https://html.spec.whatwg.org/multipage/workers.html",
@@ -2815,7 +2976,8 @@
         "label": "Web Fonts Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "woff2": {
     "url": "https://www.w3.org/TR/WOFF2/",
@@ -2828,7 +2990,8 @@
         "label": "Web Fonts Working Group"
       }
     ],
-    "publisher": "W3C"
+    "publisher": "W3C",
+    "informative": false
   },
   "wot-api": {
     "url": "https://w3c.github.io/wot-scripting-api/",
