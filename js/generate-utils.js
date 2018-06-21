@@ -301,7 +301,7 @@ const createSpecCell = function (column, featureId, featureName, specInfo, implI
 const createMaturityCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
   // Render maturity info
   let cell = document.createElement('td');
-  let maturityInfo = maturityData(specInfo);
+  let maturityInfo = maturityData(specInfo, translate);
   fillCell(cell, maturityInfo.maturity, maturityInfo.maturityIcon);
   cell.classList.add('maturity');
   return cell;
@@ -388,16 +388,29 @@ const fillCell = function (el, data, image) {
 };
 
 
-const maturityData = function (spec) {
+const maturityData = function (spec, translate) {
+  let iconSrc =
+    'https://www.w3.org/2013/09/wpd-rectrack-icons/' +
+    (spec.evergreen ? 'REF' : spec.status).toLowerCase() +
+    (spec.informative ? '-informative' : '') +
+    '.svg';
+  let label =
+    (spec.evergreen ? 'REF' : spec.status) +
+    (spec.informative ? ' - informative' : '');
+  let localizedLabel =
+    translate('maturity', spec.evergreen ? 'REF' : spec.status) +
+    (spec.informative ?
+      translate('maturity', ' - ') + translate('maturity', 'informative') :
+      '');
   return {
     maturity: {
-      label: spec.status,
+      label: label,
+      localizedLabel: localizedLabel,
       level: maturityLevels[spec.status] || 'low'
     },
     maturityIcon: !spec.status ? null : {
-      src: 'https://www.w3.org/2013/09/wpd-rectrack-icons/' +
-        spec.status.toLowerCase() + '.svg',
-      alt: spec.status,
+      src: iconSrc,
+      alt: localizedLabel,
       width: 50,
       height: 50
     }

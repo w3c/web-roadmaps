@@ -63,6 +63,14 @@
         "description": "The organization that published the specification.",
         "type": "string",
         "minLength": 1
+      },
+      "evergreen": {
+        "description": "The spec may be a draft but is continuously updated and suitable for use as reference.",
+        "type": "boolean"
+      },
+      "informative": {
+        "description": "The spec contains only informative content or is/will be published as a Note.",
+        "type": "boolean"
       }
     }
   }

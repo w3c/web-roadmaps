@@ -141,6 +141,14 @@
       "description": "The URL of the Living Standard. Deprecated. Use `url` instead.",
       "type": "string",
       "format": "uri"
+    },
+    "evergreen": {
+      "description": "The spec may be a draft but is continuously updated and suitable for use as reference.",
+      "type": "boolean"
+    },
+    "informative": {
+      "description": "The spec contains only informative content or is/will be published as a Note.",
+      "type": "boolean"
     }
   }
 }
