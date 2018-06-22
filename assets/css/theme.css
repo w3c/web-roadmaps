@@ -145,6 +145,10 @@ th.feature[rowspan] {
 td.maturity { text-align: center; }
 td.maturity img { vertical-align: middle; }
 td.impl { min-width: 220px; }
+td.seeAlso {
+  min-width: 200px;
+  font-size: 90%;
+}
 td img + img { margin-left: 0.25em; }
 td ul {
     list-style-type: none;

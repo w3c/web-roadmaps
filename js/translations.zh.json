@@ -12,7 +12,7 @@
     "maturity": "成熟度",
     "impl": "现有实现",
     "impl-intents": "实现意向",
-    "versions": "Development versions"
+    "seeAlso": "See also"
   },
   "browsers": {
     "chrome": "Chrome",
