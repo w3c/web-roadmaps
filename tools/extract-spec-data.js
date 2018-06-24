@@ -161,6 +161,12 @@ function getRepositoryFromEdDraft(edDraft) {
   else if (edDraft.match(/^https?:\/\/drafts\.csswg\.org\//)) {
     return 'https://github.com/w3c/csswg-drafts';
   }
+  else if (edDraft.match(/^https?:\/\/drafts\.fxtf\.org\//)) {
+    return 'https://github.com/w3c/fxtf-drafts';
+  }
+  else if (edDraft.match(/^https?:\/\/drafts\.css-houdini\.org\//)) {
+    return 'https://github.com/w3c/css-houdini-drafts';
+  }
   else {
     return null;
   }
