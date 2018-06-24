@@ -102,6 +102,11 @@
             }
           }
         }
+      },
+      "milestones": {
+        "title": "Milestones to reach Recommendation",
+        "description": "Describes the current milestones (YYYY-MM-DD) as envisioned by the Working Group",
+        "type": "object"
       }
     }
   }

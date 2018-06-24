@@ -220,7 +220,7 @@ function getUrlForReverseLookup(spec) {
 async function fetchJson(url, options) {
   let response = await fetch(url, options);
   if (response.status !== 200) {
-    throw new Error(`Fetch returned a non OK HTTP status code (url: ${url})`);
+    throw new Error(`Fetch returned a non OK HTTP status code (url: ${url}, status: ${response.status})`);
   }
   return response.json();
 }
@@ -255,6 +255,11 @@ async function extractSpecData(files, config) {
     }
   };
 
+  let githubHttpOptions = {
+    agent: new https.Agent({ maxSockets: 2 }),
+    keepAlive: true
+  };
+
   // Fetch spec info from Specref when spec is not a TR spec.
   // (Proceed in chunks not to end up with a URL that is thousands of bytes
   // long, and only fetch a given lookup URL once)
@@ -274,6 +279,24 @@ async function extractSpecData(files, config) {
     let info = await fetchJson(
       `https://api.specref.org/reverse-lookup?urls=${chunk.join(',')}`);
     specsInfo = Object.assign(specsInfo, info);
+  }
+
+  // In-memory cache for milestones per group
+  // (used to avoid fetching the milestones more than once)
+  let deliverersMilestones = {};
+  async function fetchMilestones(deliverer) {
+    if (!deliverersMilestones[deliverer.id]) {
+      deliverersMilestones[deliverer.id] = fetchJson(
+        `https://w3c.github.io/spec-dashboard/pergroup/${deliverer.id}-milestones.json`,
+        githubHttpOptions
+      ).catch(err => {
+        console.warn(`- ${deliverer.name} (id: ${deliverer.id}): Could not retrieve milestones file`);
+        return null;
+      });
+    }
+
+    let milestonesJson = await deliverersMilestones[deliverer.id];
+    return milestonesJson;
   }
 
   async function fetchSpecInfo(spec) {
@@ -302,6 +325,14 @@ async function extractSpecData(files, config) {
         label: deliverer.name,
         url: deliverer._links.homepage.href
       }));
+
+      // Retrieve milestones info from dashboard repo
+      for (deliverer of deliverersJson._embedded.deliverers) {
+        let milestones = await fetchMilestones(deliverer);
+        if (milestones && milestones[latestInfo.shortlink]) {
+          trInfo.milestones = milestones[latestInfo.shortlink];
+        }
+      }
     }
     else {
       // For other specs, use info returned by Specref
@@ -316,7 +347,8 @@ async function extractSpecData(files, config) {
       status: spec.data.status || trInfo.status || lookupInfo.status || 'ED',
       deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || [],
       publisher: spec.data.publisher || trInfo.publisher || lookupInfo.publisher,
-      informative: spec.data.informative || trInfo.informative
+      informative: spec.data.informative || trInfo.informative,
+      milestones: spec.data.milestones || trInfo.milestones || {}
     };
 
     // Spec must have a title, either retrieved from Specref or defined in
