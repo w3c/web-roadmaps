@@ -51,14 +51,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
@@ -86,18 +86,18 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome",
       "chrome_android",
       "opera"
     ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": [
       "edge"
@@ -148,14 +148,14 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
@@ -181,7 +181,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
@@ -223,12 +223,12 @@
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome",
       "chrome_android",
       "opera"
     ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": []
   },
@@ -1445,6 +1445,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=credential-management",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -1490,7 +1497,8 @@
       "chrome",
       "opera",
       "chrome_android",
-      "uc_android"
+      "uc_android",
+      "samsunginternet_android"
     ],
     "experimental": [],
     "indevelopment": [
@@ -3031,9 +3039,8 @@
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Requires MacOS 10.12+ and the following about:config flags to be enabled:\r\n`layout.css.font-variations.enabled`,\r\n`gfx.downloadable_fonts.keep_variation_tables`",
-          "Does not support the `font-weight` and `font-stretch` properties.",
-          "Does not support `format('truetype-variations')`, `format('woff-variations')`, `format('woff2-variations')`"
+          "Requires MacOS 10.13+",
+          "Does not support the `font-weight` and `font-stretch` properties."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=variable-fonts",
@@ -5280,14 +5287,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
@@ -5315,18 +5322,18 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome",
       "chrome_android",
       "opera"
     ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": [
       "edge"
@@ -6620,9 +6627,6 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
-        "notes": [
-          "`isIntersecting` property of `IntersectionObserverEntry` was not implemented, returning `undefined`"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver",
         "selected": true
@@ -6706,14 +6710,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
@@ -6741,18 +6745,18 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome",
       "chrome_android",
       "opera"
     ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": [
       "edge"
@@ -7609,14 +7613,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
@@ -7644,18 +7648,18 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
     ],
-    "shipped": [],
-    "experimental": [
+    "shipped": [
       "chrome",
       "chrome_android",
       "opera"
     ],
+    "experimental": [],
     "indevelopment": [],
     "consideration": [
       "edge"
@@ -10519,6 +10523,16 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "notes": [
+          "No support for BYOB (\"bring your own buffer\") stream readers."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=streams",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "indevelopment",
         "source": "chromestatus",
@@ -10562,7 +10576,8 @@
       "edge",
       "safari",
       "opera",
-      "safari_ios"
+      "safari_ios",
+      "samsunginternet_android"
     ],
     "experimental": [
       "firefox",
@@ -12097,6 +12112,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
         "ua": "qq_android",
         "status": "experimental",
         "flag": true,
@@ -12155,7 +12177,8 @@
       "opera",
       "safari_ios",
       "chrome_android",
-      "firefox_android"
+      "firefox_android",
+      "samsunginternet_android"
     ],
     "experimental": [
       "qq_android"
