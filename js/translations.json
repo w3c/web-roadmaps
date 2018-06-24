@@ -12,7 +12,7 @@
     "maturity": "Maturity",
     "impl": "Current implementations",
     "impl-intents": "Implementation intents",
-    "versions": "Development versions"
+    "seeAlso": "See also"
   },
   "implstatus": {
     "shipped": "Shipped",

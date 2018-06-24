@@ -140,7 +140,7 @@ const tableColumnsPerType = {
   'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
   'in-progress': ['feature', 'spec', 'maturity', 'impl'],
   'exploratory-work': ['feature', 'spec', 'impl-intents'],
-  'versions': ['feature', 'spec', 'maturity', 'versions']
+  'versions': ['feature', 'spec', 'maturity', 'seeAlso']
 };
 
 /**
@@ -314,16 +314,65 @@ const createImplCell = function (column, featureId, featureName, specInfo, implI
   return cell;
 };
 
-const createVersionsCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createSeeAlsoCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
-  (specInfo.versions || []).forEach((version, pos) => {
-    if (version.url && version.label) {
+  cell.classList.add('seeAlso');
+  if (column.class) {
+    cell.classList.add(column.class);
+  }
+  let renderLink = (link, pos) => {
+    if (link.url && link.label) {
       if (pos > 0) {
         cell.appendChild(document.createElement('br'));
       }
-      fillCell(cell, version);
+      fillCell(cell, link);
+    }
+  };
+  let links = specInfo.seeAlso || [];
+  let kinds = null;
+  if (!column.kinds || (column.kinds === 'all')) {
+    kinds = ['seeAlso', 'edDraft', 'repository'];
+  }
+  else if (isArray(column.kinds)) {
+    kinds = column.kinds;
+  }
+  else {
+    kinds = [column.kinds];
+  }
+  let linkPos = 0;
+  kinds.forEach(kind => {
+    switch (kind) {
+    case 'repository':
+      if (specInfo.repository) {
+        renderLink({
+          label: translate('metadata', 'Repository'),
+          url: specInfo.repository
+        }, linkPos);
+        linkPos += 1;
+      }
+      break;
+
+    case 'edDraft':
+      if (specInfo.edDraft) {
+        renderLink({
+          label: translate('metadata', 'Editor\'s Draft'),
+          url: specInfo.edDraft
+        }, linkPos);
+        linkPos += 1;
+      }
+      break;
+
+    default:
+      links.forEach(link => {
+        if ((kind === 'seeAlso') || (link.kind === kind)) {
+          renderLink(link, linkPos);
+          linkPos += 1;
+        }
+      });
+      break;
     }
   });
+
   return cell;
 };
 
@@ -333,7 +382,7 @@ const tableColumnCreators = {
   'maturity': createMaturityCell,
   'impl': createImplCell,
   'impl-intents': createImplCell,
-  'versions': createVersionsCell
+  'seeAlso': createSeeAlsoCell
 };
 
 

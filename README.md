@@ -17,6 +17,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Creating a new roadmap page or a new single-page roadmap](#creating-a-new-roadmap-page-or-a-new-single-page-roadmap)
 * [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
 * [Creating an About this document page](#creating-an-about-this-document-page)
+* [Customizing summary tables](#customizing-summary-tables)
 * [Repository branches](#repository-branches)
 * [Generate content locally](#generate-content-locally)
 * [Translating a roadmap](#translating-a-roadmap)
@@ -60,10 +61,12 @@ Depending on the advancement of the underlying specification, the JSON object ca
 * `feature`: in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json)).
 * `title`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `title` property should be set to the title of the specification.
 * `edDraft`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), or when these APIs do not know the URL of the Editor's Draft for the specification, the `edDraft` property should contain the URL of the Editor's Draft of the specification.
+* `repository`: when the repository of the specification cannot be determined automatically, the `repository` property should contain the URL of the repository that contains the source of the Editor's Draft of the specification
 * `wgs`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `wgs` property should be an array of objects describing the groups that are producing the spec; each such object should have a `url` property with a link to the group's home page, and a `label` property with the name of the group.
 * `publisher`: the organization that published the specification. The framework automatically computes the publisher for W3C, WHATWG, and IETF specifications.
 * `informative`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/), set the `informative` property to `true` to tell the framework that it only contains informative content or that it will be (or has been) published as a Group Note and not as a Recommendation.
 * `evergreen`: from time to time, specifications remain as drafts indefinitely but are continuously updated and can be considered stable whenever a new version is published. Set the `evergreen` property to `true` when the specification can always be used as a reference, no matter where it is on the Recommendation track.
+* `seeAlso`: a list of other resources that could be worth looking at in relation with the specification. The `seeAlso` property should be an array of objects that have a `url` property set to the URL of the resource, a `label` property set to the title of the resource, and optionally a `kind` property that specifies the kind of resource as a string. The links are rendered in the "See also" column. The whole list is rendered by default, the `kind` value can be used to filter resources in some cases. See [Customizing summary tables](#customizing-summary-tables) for details.
 
 Here is an example of a JSON file that describes the "Intersection Observer" specification:
 ```json
@@ -238,6 +241,7 @@ The following settings may be added to the `toc.json` file to generate the appro
 * `publishedVersion`: The URL of the latest published version. Generates a "Latest Published Version" link.
 * `previousVersion`: The URL of the previous published version. Generates a "Previous Version" link.
 * `publishDate`: The date of the publication, following a `YYYY-MM` format. Generates a subheading under the page's title with the date.
+* `tables`: Custom summary tables, see [Customizing summary tables](#customizing-summary-tables))
 
 The above settings may also be passed to the page as query string parameters, which can be useful to generate specific snapshots (in particular to pass the `publishDate` parameter). For instance, supposing the page can be served over a local HTTP server running at port 8080, you could use the following to view a "complete" Document Metadata section:
 
@@ -310,6 +314,48 @@ Children of the `<main>` element in the about page are automatically appended to
   </body>
 </html>
 ```
+
+
+## Customizing summary tables
+
+The framework automatically generates and renders summary tables at the end of sections that are flagged with a `featureset` class. Summary tables contain one entry per feature mentioned in the prose of the section. The columns rendered in the summary table are also determined by the `class` attribute of the `<section>` tag. Recognized values are:
+
+- `well-deployed`: Typically used to talk about well-deployed technologies. The summary table will be composed of the following columns: Feature, Specification / Group, Maturity, and Current Implementations.
+- `in-progress`: Typically used to talk about technologies that are progressing along the Recommendation track. Same summary table as for well-deployed sections.
+- `exploratory-work`: Typically used to talk about technologies that are being incubated somewhere without any official status. The summary table will be composed of the following columns: Feature, Specification / Group, Implementation intents.
+- `versions`: Typically used to talk about specifications that convey guidelines, requirements, notes. The summary table will be composed of the following columns: Feature, Specification / Group, Maturity, and See also.
+
+Roadmap authors may customize the columns displayed and create new types of tables through the `tables` property of the `toc.json` file. That property must be set to an object indexed by the class identifier that will trigger the use of the table (e.g. `well-deployed` to override the default definition of the `well-deployed` table, or a new name to create a new type). For each type, the list of columns to render must be given in an array of objects that describe the column to render.
+
+That object must contain a `type` property that identifies the type of column. It may also contain a `title` property to override the default column's title, and other parameters (which depend on the type of column).
+
+The framework recognizes the following column types:
+
+- `feature` - Feature: Renders the name of the features that appear in `data-feature` attributes. A feature cell may span multiple rows.
+- `spec` - Specification / Group: Renders the spec title and the name of the group that develops it.
+- `maturity` - Maturity: Renders the maturity status of a spec as an icon. The list of icons is e.g. described in the [About page of the mobile roadmap](https://w3c.github.io/web-roadmaps/mobile/about.html#maturity-levels).
+- `impl` - Implementation status: Renders the implementation status of the specification in main browsers. The icons and info that get represented are e.g. described in the [About page of the mobile rodmap](https://w3c.github.io/web-roadmaps/mobile/about.html#implementation)
+- `seeAlso` - See also: Renders the list of related resources, including a link to the Editor's Draft, and a link to the repository. The exact kinds of resources to render can be specified in a `kinds` property. Default value is `all` to render all links, but the property can be set to an array of strings. Possible string values are:
+  - `edDraft`: renders a link to the Editor's Draft, when known
+  - `repository`: renders a link to the repository that contains the Editor's Draft, when known
+  - `seeAlso`: renders all resources in the `seeAlso` property of the specification
+  - some token: renders all resources in the `seeAlso` property of the specification whose `kind` property is equal to the token
+
+For instance, to add the `seeAlso` column with all possible links to the summary table rendered at the end of well-deployed sections, and to create a new type of section for reference documents that also renders a `seeAlso` column with only the Editor's Draft and links flagged as `ref` in the definition of specifications, you may add the following to your `toc.json` file:
+
+```json
+"tables": {
+  "well-deployed": ["feature", "spec", "maturity", "impl", "seeAlso"],
+  "reference": ["spec", "maturity", {
+    "type": "seeAlso",
+    "title": "Reference documents",
+    "kinds": ["edDraft", "ref"]
+  }]
+}
+```
+
+With these definitions, the `reference` table will be generated at the end of sections that have a `class` attribute set to `featureset reference`.
+
 
 ## Repository branches
 

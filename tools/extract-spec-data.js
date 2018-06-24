@@ -145,6 +145,35 @@ function getSpecUrl(spec) {
 
 
 /**
+ * Construct the URL of the repository from the Editor's Draft URL
+ * (only works for GitHub repositories for now)
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {String} The URL of the repository
+ */
+function getRepositoryFromEdDraft(edDraft) {
+  edDraft = edDraft || '';
+  let tokens = edDraft.match(/^https?:\/\/([^\.]+)\.github\.io\/([^\/$]+)/i);
+  if (tokens) {
+    return 'https://github.com/' + tokens[1] + '/' + tokens[2];
+  }
+  else if (edDraft.match(/^https?:\/\/drafts\.csswg\.org\//)) {
+    return 'https://github.com/w3c/csswg-drafts';
+  }
+  else if (edDraft.match(/^https?:\/\/drafts\.fxtf\.org\//)) {
+    return 'https://github.com/w3c/fxtf-drafts';
+  }
+  else if (edDraft.match(/^https?:\/\/drafts\.css-houdini\.org\//)) {
+    return 'https://github.com/w3c/css-houdini-drafts';
+  }
+  else {
+    return null;
+  }
+}
+
+
+/**
  * Return the URL to use to search for additional info about the given spec in
  * Specref.
  *
@@ -260,6 +289,7 @@ async function extractSpecData(files, config) {
       trInfo = {
         url: latestInfo.shortlink,
         edDraft: latestInfo['editor-draft'],
+        repository: getRepositoryFromEdDraft(latestInfo['editor-draft']),
         title: latestInfo.title,
         status: latestInfo.status,
         publisher: 'W3C',
@@ -281,6 +311,7 @@ async function extractSpecData(files, config) {
     let info = {
       url: getSpecUrl(spec) || trInfo.url || lookupInfo.href,
       edDraft: spec.data.edDraft || spec.data.editors || trInfo.edDraft || lookupInfo.edDraft,
+      repository: spec.data.repository || trInfo.repository || lookupInfo.repository,
       title: spec.data.title || trInfo.title || lookupInfo.title,
       status: spec.data.status || trInfo.status || lookupInfo.status || 'ED',
       deliveredBy: spec.data.wgs || trInfo.deliveredBy || lookupInfo.deliveredBy || [],

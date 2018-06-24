@@ -19,6 +19,12 @@
         "type": "string",
         "format": "uri"
       },
+      "repository": {
+        "title": "URL of the repository",
+        "description": "URL of the repository that contains the Editor’s Draft of the specification.",
+        "type": "string",
+        "format": "uri"
+      },
       "title": {
         "title": "Title of the specification",
         "description": "Title of the specification.",
@@ -71,6 +77,31 @@
       "informative": {
         "description": "The spec contains only informative content or is/will be published as a Note.",
         "type": "boolean"
+      },
+      "seeAlso": {
+        "title": "See also",
+        "description": "Other resources worth looking at in relation to this spec",
+        "type": "array",
+        "additionalItems": false,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "label"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
       }
     }
   }
