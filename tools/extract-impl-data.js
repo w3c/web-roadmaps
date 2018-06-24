@@ -629,6 +629,22 @@ module.exports.extractImplData = extractImplData;
 
 
 if (require.main === module) {
+  let config = {};
+  try {
+    config = requireFromWorkingDirectory('config.json');
+  }
+  catch (err) {}
+
+  if (config.cacheFolder) {
+    fetch.setParameter('cacheFolder', config.cacheFolder);
+  }
+  if (config.cacheRefresh) {
+    fetch.setParameter('refresh', config.cacheRefresh);
+  }
+  if (config.logToConsole) {
+    fetch.setParameter('logToConsole', config.logToConsole);
+  }
+
   const files = process.argv.slice(2).map(file => {
     let stat = fs.statSync(file);
     if (stat.isDirectory()) {

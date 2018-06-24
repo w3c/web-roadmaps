@@ -424,6 +424,16 @@ if (require.main === module) {
   }
   catch (err) {}
 
+  if (config.cacheFolder) {
+    fetch.setParameter('cacheFolder', config.cacheFolder);
+  }
+  if (config.cacheRefresh) {
+    fetch.setParameter('refresh', config.cacheRefresh);
+  }
+  if (config.logToConsole) {
+    fetch.setParameter('logToConsole', config.logToConsole);
+  }
+
   // Read the W3C API key from the environment if defined there
   if (process.env.W3C_API_KEY) {
     config.w3cApiKey = process.env.W3C_API_KEY;
