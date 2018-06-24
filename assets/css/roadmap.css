@@ -127,8 +127,18 @@ filter: grayscale(1);*/
   background-color: transparent;
 }
 
-
 #side-nav {
+  width: 100%;
+  max-width:768px;
+  margin: auto;
+}
+
+.menu #side-nav {
+  display: none;
+}
+
+#side-nav[data-js] {
+  display: block;
   height: 100%;
   width: 80%;
   position: fixed;
@@ -149,7 +159,7 @@ filter: grayscale(1);*/
     transform: translateX(125%);
 }
 @media (min-width: 768px) {
-  #side-nav {
+  #side-nav[data-js] {
     height: 100%;
     width: 80%;
     max-width: 300px;
@@ -164,59 +174,12 @@ filter: grayscale(1);*/
   #side-nav.active {
       transform: translateX(300px);
   }
-
-}
-
-
-#side-nav header {
-  width: 100%;
-  background-color: #EF5350;
-  --border-bottom: 3px solid #D4A525;
-  padding-top: 5px;
-  border-bottom: 0.5px solid rgba(38,38,38,0.05);
-  background-size: cover;
-  background-position: center;
-  display: none;
-}
-
-#side-nav header .container {
-  flex-flow: column;
-  justify-content: space-between;
-  padding: 0px 0px 0px 10px;
-
-}
-
-#side-nav header .side-nav-controls {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-}
-
-#side-nav header .side-nav-controls button {
-  background: none;
-  border: none;
-  display: flex;
-  padding: 10px;
-}
-
-#side-nav header .side-nav-controls button img {
-  width: 15px;
-}
-
-#side-nav header h1 {
-  font-size: 1.4em;
-  color: white;
-  line-height: 1.5em;
-  font-weight: 800;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-family: sans-serif;
 }
 
 #side-nav nav ul {
   padding: 0px;
-  margin-top: 50px;
   padding-left: 10px;
+  max-width: 300px;
 }
 
 #side-nav nav ul li {
@@ -280,45 +243,6 @@ filter: grayscale(1);*/
   display: block;
 }
 
-/* old files */
-.side-nav {
-    --padding-top: 60px;
-}
-
-.side-nav ul {
-    list-style-type: none;
-}
-
-.side-nav > ul {
-}
-
-.side-nav a {
-    text-decoration: none;
-    color: rgba(0,0,0,0.7);
-    font-size: 0.8em;
-}
-
-.side-nav a:hover {
-    text-decoration: underline;
-}
-
-.side-nav ul {
-    padding-left: 30px;
-}
-
-.side-nav ul li h2 {
-    margin-bottom: 5px;
-}
-
-.side-nav ul li h2 a {
-    font-size: 0.9em;
-    color: #547190;
-}
-
-.side-nav ul li h2 a:hover {
-    text-decoration: none;
-    color: #0072ff;
-}
 
 .hero .call-to-action {
     margin-top: 0px;
