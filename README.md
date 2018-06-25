@@ -66,6 +66,7 @@ Depending on the advancement of the underlying specification, the JSON object ca
 * `publisher`: the organization that published the specification. The framework automatically computes the publisher for W3C, WHATWG, and IETF specifications.
 * `informative`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/), set the `informative` property to `true` to tell the framework that it only contains informative content or that it will be (or has been) published as a Group Note and not as a Recommendation.
 * `evergreen`: from time to time, specifications remain as drafts indefinitely but are continuously updated and can be considered stable whenever a new version is published. Set the `evergreen` property to `true` when the specification can always be used as a reference, no matter where it is on the Recommendation track.
+* `milestones`: When the [Milestone tracker](https://github.com/w3c/spec-dashboard/#milestone-tracker) does not know anything about the specification, you may set the `milestones` properties to planned publication milestones. Value must be an object whose keys are the planned maturity level (e.g. `CR`, `REC`) and whose values are the planned publication date under the form `YYYY-MM-DD`. Do not use that property for W3C specs as milestones should rather be entered in the milestone tracker!
 * `seeAlso`: a list of other resources that could be worth looking at in relation with the specification. The `seeAlso` property should be an array of objects that have a `url` property set to the URL of the resource, a `label` property set to the title of the resource, and optionally a `kind` property that specifies the kind of resource as a string. The links are rendered in the "See also" column. The whole list is rendered by default, the `kind` value can be used to filter resources in some cases. See [Customizing summary tables](#customizing-summary-tables) for details.
 
 Here is an example of a JSON file that describes the "Intersection Observer" specification:
@@ -335,6 +336,7 @@ The framework recognizes the following column types:
 - `spec` - Specification / Group: Renders the spec title and the name of the group that develops it.
 - `maturity` - Maturity: Renders the maturity status of a spec as an icon. The list of icons is e.g. described in the [About page of the mobile roadmap](https://w3c.github.io/web-roadmaps/mobile/about.html#maturity-levels).
 - `impl` - Implementation status: Renders the implementation status of the specification in main browsers. The icons and info that get represented are e.g. described in the [About page of the mobile rodmap](https://w3c.github.io/web-roadmaps/mobile/about.html#implementation)
+- `milestones` - Milestones: Renders planned publication milestones for the specification. The information is extracted from the [Milestone tracker](https://github.com/w3c/spec-dashboard/#milestone-tracker) project, or from the specification's description. Beware though, as of June 2018, the tracker does not have nearly enough data for this column to be useful.
 - `seeAlso` - See also: Renders the list of related resources, including a link to the Editor's Draft, and a link to the repository. The exact kinds of resources to render can be specified in a `kinds` property. Default value is `all` to render all links, but the property can be set to an array of strings. Possible string values are:
   - `edDraft`: renders a link to the Editor's Draft, when known
   - `repository`: renders a link to the repository that contains the Editor's Draft, when known
@@ -421,7 +423,8 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
     "maturity": "",
     "impl": "",
     "implintents": "",
-    "versions": ""
+    "seeAlso": "",
+    "milestones": ""
   },
   "implstatus": {
     "shipped": "",
@@ -447,6 +450,17 @@ The `js/translations.xx.json` file, where `xx` is the BCP47 language code, needs
     "audio element": "",
     "picture element": "",
     "...": ""
+  },
+  "maturity": {
+    "ED": "",
+    "WD": "",
+    "LS": "",
+    "CR": "",
+    "PR": "",
+    "REC": "",
+    "Retired": "",
+    "NOTE": "",
+    "REF": ""
   }
 }
 ```
