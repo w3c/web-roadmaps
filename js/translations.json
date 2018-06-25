@@ -12,7 +12,8 @@
     "maturity": "Maturity",
     "impl": "Current implementations",
     "impl-intents": "Implementation intents",
-    "seeAlso": "See also"
+    "seeAlso": "See also",
+    "milestones": "Milestones"
   },
   "implstatus": {
     "shipped": "Shipped",

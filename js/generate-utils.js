@@ -135,6 +135,10 @@ const maturityLevels = {
  * Lists of columns in generated tables per type of table
  *
  * This structure may be completed or overridden in `toc.json` files.
+ *
+ * TODO: Add "milestones" to "in-progress" table, once we have enough data. As
+ * of June 2018, the info from spec dashboard is too scarce:
+ * https://github.com/w3c/spec-dashboard/tree/gh-pages/pergroup
  */
 const tableColumnsPerType = {
   'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
@@ -376,13 +380,55 @@ const createSeeAlsoCell = function (column, featureId, featureName, specInfo, im
   return cell;
 };
 
+const createMilestonesCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+  let cell = document.createElement('td');
+  cell.classList.add('milestones');
+  if (specInfo.milestones) {
+    let milestones = Object.keys(specInfo.milestones).map(maturity => {
+      return {
+        date: specInfo.milestones[maturity],
+        maturity
+      }
+    }).sort((a, b) => {
+      if (a.date < b.date) {
+        return -1;
+      }
+      else if (a.date > b.date) {
+        return 1;
+      }
+      return 0;
+    });
+
+    milestones.forEach((milestone, pos) => {
+      if (pos > 0) {
+        cell.appendChild(document.createElement('br'));
+      }
+      let label = translate('maturity', milestone.maturity);
+      if (label !== milestone.maturity) {
+        let el = document.createElement('abbr');
+        el.setAttribute('title', label);
+        el.appendChild(document.createTextNode(milestone.maturity));
+        cell.appendChild(el);
+      }
+      else {
+        cell.appendChild(document.createTextNode(milestone.maturity));
+      }
+      cell.appendChild(document.createTextNode(
+        ': ' + formatMonthAndYearDate(new Date(milestone.date), lang)));
+    });
+  }
+  return cell;
+};
+
+
 const tableColumnCreators = {
   'feature': createFeatureCell,
   'spec': createSpecCell,
   'maturity': createMaturityCell,
   'impl': createImplCell,
   'impl-intents': createImplCell,
-  'seeAlso': createSeeAlsoCell
+  'seeAlso': createSeeAlsoCell,
+  'milestones': createMilestonesCell
 };
 
 
