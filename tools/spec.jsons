@@ -105,6 +105,12 @@
       "type": "string",
       "minLength": 1
     },
+    "status": {
+      "title": "Maturity status",
+      "description": "The maturity level of the specification",
+      "type": "string",
+      "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE"]
+    },
     "wgs": {
       "title": "Group(s)",
       "description": "When the specification is unknown to the W3C API and to Specref, the wgs property should list the group(s) responsible for the specification.",
