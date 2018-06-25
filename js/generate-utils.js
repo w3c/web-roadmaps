@@ -237,7 +237,7 @@ const formatMonthAndYearDate = function (date, lang) {
  *
  * Creators should be called with an object that has the following properties:
  * - column: The description of the column the cell will belong to
- * - featureId: The ID of the feature for which the cell is being generated
+ * - refId: The ID of the spec/feature for which the cell is being generated
  * - featureName: The name of the wrapping feature
  * - specInfo: The available spec info for that feature ID
  * - implInfo: The available implementation status for that feature ID
@@ -246,33 +246,35 @@ const formatMonthAndYearDate = function (date, lang) {
  * - lang: The language of the underlying document
  * - pos: The zero-based index of the column in the table
  */
-const createFeatureCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createFeatureCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement((pos === 0) ? 'th' : 'td');
   cell.appendChild(document.createTextNode(featureName));
   cell.classList.add('feature');
   return cell;
 };
 
-const createSpecCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createSpecCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
+  let [specId, featureId] = refId.split('/');
   let specUrl = specInfo.url;
   let specTitle = specInfo.title;
   let localizedSpecTitle = translate('specifications', specTitle);
+  let featureTitle = (featureId && specInfo.features && specInfo.features[featureId]) ?
+    specInfo.features[featureId].title : specInfo.feature;
 
   let localizedLabel = localizedSpecTitle;
-  let localizedFeature = (specInfo.feature ?
-    translate('features', specInfo.feature) : null);
+  let localizedFeature = (featureTitle ? translate('features', featureTitle) : null);
   if (localizedFeature) {
     localizedLabel = translate('labels', '%feature in %spec')
       .replace('%feature', localizedFeature)
       .replace('%spec', localizedSpecTitle || specTitle);
   }
   let label = null;
-  if (localizedFeature && (localizedFeature !== specInfo.feature) ||
+  if ((localizedFeature && (localizedFeature !== specInfo.feature)) ||
       (localizedSpecTitle !== specTitle)) {
     label = specTitle;
-    if (specInfo.feature) {
+    if (featureTitle) {
       label = '%feature in %spec'
-        .replace('%feature', specInfo.feature)
+        .replace('%feature', featureTitle)
         .replace('%spec', specTitle);
     }
   }
@@ -302,7 +304,7 @@ const createSpecCell = function (column, featureId, featureName, specInfo, implI
   return cell;
 };
 
-const createMaturityCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createMaturityCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   // Render maturity info
   let cell = document.createElement('td');
   let maturityInfo = maturityData(specInfo, translate);
@@ -311,14 +313,14 @@ const createMaturityCell = function (column, featureId, featureName, specInfo, i
   return cell;
 };
 
-const createImplCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createImplCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
   cell.appendChild(formatImplInfo(implInfo, translate));
   cell.classList.add('impl');
   return cell;
 };
 
-const createSeeAlsoCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createSeeAlsoCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
   cell.classList.add('seeAlso');
   if (column.class) {
@@ -380,7 +382,7 @@ const createSeeAlsoCell = function (column, featureId, featureName, specInfo, im
   return cell;
 };
 
-const createMilestonesCell = function (column, featureId, featureName, specInfo, implInfo, translate, lang, pos) {
+const createMilestonesCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
   cell.classList.add('milestones');
   if (specInfo.milestones) {
@@ -1077,44 +1079,44 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
   // Extract the list of feature IDs referenced in the document and
   // generate the list of sections for which a table needs to be generated
   let sectionsData = [];
-  let referencedFeatureIds = [];
+  let referencedIds = [];
   $(document, 'section').forEach(section => {
-    let features = {};
-    let extractFeatures = featureEl => {
+    let references = {};
+    let extractReferences = featureEl => {
       // Extract all feature IDs referenced under the given element
-      let featureIds = [];
+      let ids = [];
       if (featureEl.dataset['featureid']) {
-        featureIds = [featureEl.dataset['featureid']];
+        ids = [featureEl.dataset['featureid']];
       }
       else {
         let specEls = featureEl.querySelectorAll('[data-featureid]');
         for (let k = 0; k <specEls.length; k++) {
-          if (featureIds.indexOf(specEls[k].dataset['featureid']) < 0) {
-            featureIds.push(specEls[k].dataset['featureid']);
+          if (ids.indexOf(specEls[k].dataset['featureid']) < 0) {
+            ids.push(specEls[k].dataset['featureid']);
           }
         }
       }
-      Array.prototype.push.apply(referencedFeatureIds, featureIds);
+      Array.prototype.push.apply(referencedIds, ids);
 
       // Update the array of features referenced in the underlying section if
       // the element under review has a data-feature attribute.
       let featureName = featureEl.dataset['feature'];
       if (featureName) {
-        if (features[featureName]) {
-          Array.prototype.push.apply(features[featureName], featureIds);
+        if (references[featureName]) {
+          Array.prototype.push.apply(features[featureName], ids);
         }
         else {
-          features[featureName] = featureIds;
+          references[featureName] = ids;
         }
       }
     };
 
     if (section.classList.contains('featureset')) {
       // A table needs to be generated at the end of the section.
-      $(section, '[data-feature]').forEach(extractFeatures);
+      $(section, '[data-feature]').forEach(extractReferences);
       sectionsData.push({
         sectionEl: section,
-        features: features
+        references
       });
     }
 
@@ -1122,37 +1124,46 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
     // them into data-feature. Or no table needs to be generated. In both cases,
     // we'll need to convert these featureids into links (but we don't want
     // them to appear in the generated table if there is one)
-    extractFeatures(section);
+    extractReferences(section);
   });
 
   // Remove duplicates from the list of referenced data files, look them up in
   // tr.json, and update links in the document accordingly
-  referencedFeatureIds = referencedFeatureIds.filter(
-    (fid, idx, self) => self.indexOf(fid) === idx);
-  let referencedFeatures = referencedFeatureIds.map(id => {
-    let info = specInfo[id];
+  referencedIds = referencedIds.filter(
+    (refId, idx, self) => self.indexOf(refId) === idx);
+  let referencedFeatures = referencedIds.map(id => {
+    let [specId, featureId] = id.split('/');
+    let info = specInfo[specId];
     if (!info) {
-      warnings.push('Unknown feature "' + id + '"');
+      warnings.push('Unknown spec "' + id + '"');
       info = { url: '', title: '' };
     }
+    if (featureId && (!info.features || !info.features[featureId])) {
+      warnings.push('Unknown feature in spec "' + id + '"');
+    }
     if (!info.url) {
-      warnings.push('No URL found for feature "' + id + '"');
+      warnings.push('No URL found for spec "' + id + '"');
       info.url = '';
     }
     if (!info.title) {
-      warnings.push('No title found for feature "' + id + '"');
+      warnings.push('No title found for spec "' + id + '"');
       info.title = id + ' (Spec title not found!)';
     }
-    return { id, info };
+    return { id, specId, featureId, info };
   }).map(spec => {
     // Complete links with the right URL and set title if the link is empty
     let info = spec.info;
     $(document, 'a[data-featureid="' + spec.id + '"]').forEach(link => {
       link.setAttribute('href', info.url);
       if (!link.textContent) {
-        link.textContent = (spec.feature ?
-          translate('features', spec.feature) :
-          translate('specifications', info.title));
+        if (featureId && info.features && info.features[featureId]) {
+          link.textContent = translate('features', info.features[feature].title);
+        }
+        else {
+          link.textContent = (info.feature ?
+            translate('features', info.feature) :
+            translate('specifications', info.title));
+        }
       }
     });
     return spec;
@@ -1189,29 +1200,37 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
     // Parse the list of feature names referenced in the section,
     // and the list of feature IDs referenced per feature name,
     // and generate a row per feature ID.
-    let features = sectionData.features;
-    Object.keys(features).forEach(featureName => {
-      let featureIds = features[featureName];
-      featureIds.forEach((featureId, featureIndex) => {
-        let info = referencedFeatures.find(feature => feature.id === featureId).info;
+    let references = sectionData.references;
+    Object.keys(references).forEach(featureName => {
+      let ids = references[featureName];
+      ids.forEach((id, idx) => {
+        let info = referencedFeatures.find(feature => feature.id === id).info;
+
+        // Retrieve implementation info of the underlying feature or spec
+        let [specId, featureId] = id.split('/');
+        let impl = implInfo[specId];
+        if (featureId) {
+          impl = (impl.features ? impl.features[featureId] : {});
+        }
+
         let row = document.createElement('tr');
         tbody.appendChild(row);
         columns.forEach((column, pos) => {
           // Feature name cell will span multiple rows if there are more
           // than one feature ID associated with the feature name
-          if ((column.type === 'feature') && (featureIndex > 0)) {
+          if ((column.type === 'feature') && (idx > 0)) {
             return;
           }
 
           // Create the appropriate cell
           let cell = column.createCell(
-            column, featureId, featureName,
-            info, implInfo[featureId],
+            column, id, featureName,
+            info, impl,
             translate, lang, pos);
 
           // Make feature name span multiple rows as needed
-          if ((column.type === 'feature') && (featureIds.length > 1)) {
-            cell.setAttribute('rowspan', featureIds.length);
+          if ((column.type === 'feature') && (ids.length > 1)) {
+            cell.setAttribute('rowspan', ids.length);
           }
           row.appendChild(cell);
         });
@@ -1305,6 +1324,9 @@ const formatImplInfo = function (data, translate) {
       else if (impl.flag) {
         title += ' ' + translate('labels', 'Feature is behind a flag.');
       }
+      if (impl.partial) {
+        title += ' ' + translate('labels', 'Support may be partial.');
+      }
       title += ' ' + translate('labels', 'Source: %source.')
         .replace('%source', sources[impl.source] || impl.source);
       let link = document.createElement('a');
@@ -1334,6 +1356,11 @@ const formatImplInfo = function (data, translate) {
       if (impl.flag) {
         let i = document.createElement('i');
         i.setAttribute('class', 'flag');
+        abbr.appendChild(i);
+      }
+      if (impl.partial) {
+        let i = document.createElement('i');
+        i.setAttribute('class', 'partial');
         abbr.appendChild(i);
       }
       link.appendChild(abbr);

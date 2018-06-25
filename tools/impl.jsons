@@ -47,6 +47,20 @@
             "selected": {
               "type": "boolean"
             },
+            "guess": {
+              "type": "boolean"
+            },
+            "partial": {
+              "type": "boolean"
+            },
+            "features": {
+              "type": "array",
+              "additionalItems": false,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
             "notes": {
               "type": "array",
               "additionalItems": false,
@@ -58,25 +72,72 @@
           }
         }
       },
-      "shipped": {
-        "type": "array",
-        "additionalItems": false,
-        "items": { "type": "string", "minLengh": 1 }
-      },
-      "experimental": {
-        "type": "array",
-        "additionalItems": false,
-        "items": { "type": "string", "minLengh": 1 }
-      },
-      "indevelopment": {
-        "type": "array",
-        "additionalItems": false,
-        "items": { "type": "string", "minLengh": 1 }
-      },
-      "consideration": {
-        "type": "array",
-        "additionalItems": false,
-        "items": { "type": "string", "minLengh": 1 }
+      "features": {
+        "title": "Features in the specification",
+        "type": "object",
+        "description": "In case the reference to the specification would benefit from being more specific than the specification as a whole, the feature property allows to add the name of the specific feature",
+        "additionalProperties": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["implementations"],
+          "properties": {
+            "implementations": {
+              "type": "array",
+              "additionalItems": false,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["ua", "status"],
+                "properties": {
+                  "ua": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "href": {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "comment": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "prefix": {
+                    "type": "boolean"
+                  },
+                  "flag": {
+                    "type": "boolean"
+                  },
+                  "selected": {
+                    "type": "boolean"
+                  },
+                  "guess": {
+                    "type": "boolean"
+                  },
+                  "notes": {
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       "polyfills": {
         "title": "Polyfills",

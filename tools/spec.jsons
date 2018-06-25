@@ -191,6 +191,81 @@
       "title": "Milestones to reach Recommendation",
       "description": "Describes the current milestones (YYYY-MM-DD) as envisioned by the Working Group",
       "type": "object"
+    },
+    "features": {
+      "title": "Features in the specification",
+      "type": "object",
+      "description": "List of features that compose the spec. Can be used to reference a specific feature as well as to provide partial implementation information at the feature level",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "impl": {
+            "title": "Implementation info",
+            "description": "For specifications for which browser implementations are expected, the impl property explains where to look for implementation info",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "caniuse": { "type": ["string", "null"] },
+              "chromestatus": { "type": ["integer", "null"] },
+              "mozstatus": { "type": ["string", "null"] },
+              "edgestatus": { "type": ["string", "null"] },
+              "webkitstatus": { "type": ["string", "null"] },
+              "other": {
+                "type": "array",
+                "additionalItems": false,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [ "ua", "status" ],
+                  "properties": {
+                    "ua": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
+                    },
+                    "source": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "date": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "comment": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "prefix": {
+                      "type": "boolean"
+                    },
+                    "flag": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "featuresCoverage": {
+      "title": "Whether features cover the entire spec",
+      "type": "string",
+      "enum": ["partial", "full"]
     }
   }
 }

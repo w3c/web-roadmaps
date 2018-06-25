@@ -429,12 +429,24 @@ async function extractSpecData(files, config) {
 
     // Complete spec info with other properties of interest from data file
     Object.keys(result.data).forEach(key => {
-      if (['impl', 'TR', 'editors', 'ls', 'wgs', 'polyfills'].includes(key) ||
+      if (['impl', 'TR', 'editors', 'ls', 'wgs', 'polyfills', 'features', 'featuresCoverage'].includes(key) ||
           results[result.id].hasOwnProperty(key)) {
         return;
       }
       results[result.id][key] = result.data[key];
     });
+    if (result.data.features) {
+      results[result.id].features = {};
+      Object.keys(result.data.features).forEach(key => {
+        let feature = result.data.features[key];
+        results[result.id].features[key] = {
+          title: feature.title
+        };
+        if (feature.url) {
+          results[result.id].features[key].url = feature.url;
+        }
+      });
+    }
   }
   return results;
 }

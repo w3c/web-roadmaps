@@ -7,7 +7,24 @@
       "url": "https://whatwg.org/"
     }
   ],
-  "impl": {
-    "chromestatus": 5630353511284736
+  "features": {
+    "estimate": {
+      "title": "estimate() API",
+      "impl": {
+        "chromestatus": 5630353511284736
+      }
+    },
+    "persist": {
+      "title": "Persistent storage permission",
+      "impl": {
+        "chromestatus": 4931497563783168
+      }
+    },
+    "eviction": {
+      "title": "Storage-eviction opt-out",
+      "impl": {
+        "chromestatus": 5715811364765696
+      }
+    }
   }
 }

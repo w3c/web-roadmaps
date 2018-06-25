@@ -12,6 +12,20 @@ const path = require('path');
 
 
 /**
+ * Possible implementation statuses
+ *
+ * @type {Array}
+ */
+const statuses = [
+  '',
+  'consideration',
+  'indevelopment',
+  'experimental',
+  'shipped'
+];
+
+
+/**
  * Wrapper around the "require" function to require files relative to the
  * current working directory (CWD), instead of relative to the current JS
  * file.
@@ -431,6 +445,223 @@ let sources = {
 };
 
 
+function getImplInfoForFeature(feature) {
+  let implementations = [];
+
+  // Compute implementation status only when we know where to look in the
+  // implementation data
+  if (!feature.impl) {
+    return implementations;
+  }
+
+  let chromeid = feature.impl.chromestatus;
+  if (chromeid && !sources.chromestatus.data.find(f => f.id === chromeid)) {
+    chromeid = null;
+  }
+
+  Object.keys(sources).forEach(source => {
+    // Assemble the implementation info that we expect
+    if (feature.impl[source]) {
+      implementations = implementations.concat(
+        sources[source].getImplStatus(feature.impl[source]));
+    }
+
+    // If we have the id returned by the Chrome status platform, we
+    // can try to look at the Edge status platform, since it uses
+    // that ID as well
+    if (chromeid && (source === 'edgestatus')) {
+      implementations = implementations.concat(
+        sources[source].getImplStatus(chromeid));
+    }
+  });
+
+  // We may have found the implementation status info from the Edge status
+  // platform twice (once with the real feature name, once with a Chrome ID).
+  // Let's remote one instance if that happened.
+  implementations = implementations.filter(impl =>
+    (impl.source !== 'edgestatus') ||
+    (impl === implementations.find(i => i.source === 'edgestatus'))
+  );
+
+  return implementations;
+}
+
+
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+
+function guessImplInfoFromFeatures(implinfo, coverage) {
+  if (!implinfo.features) {
+    return;
+  }
+
+  // List user-agents for which we have some level of implementation info
+  // at the feature level
+  let uas = [];
+  for (let feature of Object.values(implinfo.features)) {
+    uas = uas.concat(feature.implementations.map(impl => impl.ua))
+  }
+  uas = uas.filter(onlyUnique);
+
+  for (let source of Object.keys(sources)) {
+    for (let ua of uas) {
+      let guessed = {
+        ua,
+        status: null,
+        source,
+        guess: true,
+        partial: true,
+        features: []
+      };
+
+      for (let featureName of Object.keys(implinfo.features)) {
+        let impl = implinfo.features[featureName].implementations.find(o =>
+          (o.ua === ua) && (o.source === source));
+        if (!impl) {
+          continue;
+        }
+        if ((guessed.status === null) ||
+            (statuses.indexOf(impl.status) <= statuses.indexOf(guessed.status))) {
+          // Guessed impl status for the whole spec is the lowest status of
+          // individual features
+          guessed.status = impl.status;
+          if (impl.prefix) {
+            guessed.prefix = impl.prefix;
+          }
+          if (impl.flag) {
+            guessed.flag = impl.flag;
+          }
+        }
+        guessed.features.push(featureName);
+      }
+
+      if (guessed.status) {
+        if ((coverage === 'full') &&
+            (guessed.features.length === Object.keys(implinfo.features).length)) {
+          guessed.partial = false;
+        }
+        implinfo.implementations.push(guessed);
+      }
+    }
+  }
+}
+
+
+function guessImplInfoFromSpec(featureName, implinfo) {
+  if (!implinfo.features || !implinfo.features[featureName]) {
+    return;
+  }
+
+  // List user-agents for which we have implementation info at the spec level
+  let uas = implinfo.implementations.map(o => o.ua).filter(onlyUnique);
+
+  for (let source of Object.keys(sources)) {
+    for (let ua of uas) {
+      let impl = implinfo.implementations.find(o =>
+        (o.source === source) && (o.ua === ua));
+      if (!impl || !impl.status) {
+        continue;
+      }
+
+      implinfo.features[featureName].implementations.push({
+        ua,
+        status: impl.status,
+        source,
+        href: impl.href,
+        guess: true
+      });
+    }
+  }
+}
+
+
+function flagBestImplInfo(implementations) {
+  // Compute the final implementation status for each user agent with
+  // the following rules:
+  // 0. Trust the "feedback" source as being authoritative. It should
+  // contain feedback from reviewers about implementation statuses that
+  // are incorrectly reported by other sources.
+  // 1. Trust platform sources to say the right thing about their own
+  // user-agent or rendering engine. For instance, if chromestatus says
+  // that a feature is "in development" in Chrome, consider that the
+  // feature is really "in development" in Chrome, and ignore possible
+  // claims in other sources that the feature is "shipped" in Chrome.
+  // 2. Keep the most optimistic status otherwise, meaning that if
+  // chromestatus says that feature A has shipped in Edge while
+  // caniuse says it is in development, consider that the feature has
+  // shipped in Edge
+  // 3. Due to the close relationship between webkit and Safari, trust
+  // webkitstatus more than any other source about support in Safari.
+  // If webkitstatus says that a feature is in development in webkit,
+  // it means it cannot be at a more advanced level in Safari. In other
+  // words, constrain the implementation status in Safari to the
+  // implementation status in Webkit, when it is known to be lower.
+  // 4. Only select inferred implementation status (flagged with `guess`) when
+  // there is no other better info.
+
+  // Extract the list of user agents that appear in implementation
+  // data, computing the status for "webkit" on the side to be able to
+  // apply rule 3, and apply rules for each user agent.
+  let webkitInfo = implementations.find(impl => impl.source === 'webkitstatus');
+  let webkitStatus = (webkitInfo || {}).status;
+  let uas = implementations
+    .map(impl => (impl.ua !== 'webkit') ? impl.ua : null)
+    .filter(ua => !!ua)
+    .filter(onlyUnique);
+  uas.forEach(ua => {
+    let authoritativeStatusFound = false;
+    let coreStatusFound = false;
+    let selectedImplInfo = null;
+    implementations.filter(impl => impl.ua === ua).forEach(impl => {
+      if (authoritativeStatusFound) return;
+      if (impl.source === 'feedback') {
+        // Rule 0, status comes from reviewer feedback, consider
+        // it as authoritative
+        authoritativeStatusFound = true;
+        selectedImplInfo = impl;
+      }
+      else if (Object.keys(sources).includes(impl.source) &&
+          sources[impl.source].coreua.includes(ua) && !impl.guess) {
+        // Rule 1, status comes from the right platform, we've
+        // found the implementation status unless we got some
+        // feedback from a reviewer that this status is incorrect
+        // which will be handled by Rule 0
+        coreStatusFound = true;
+
+        // Rule 3, constrain safari status to that of webkit
+        // when it is lower
+        if (ua.startsWith('safari') && (typeof webkitstatus === 'string') &&
+            statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
+          selectedImplInfo = webkitInfo;
+        }
+        else {
+          selectedImplInfo = impl;
+        }
+      }
+      else if (!selectedImplInfo || (!coreStatusFound && !impl.guess &&
+          (statuses.indexOf(impl.status) > statuses.indexOf(selectedImplInfo.status)))) {
+        // Rule 2, be optimistic in life... except if Rule 1 was
+        // already applied. Also take rule 3 into account
+        if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
+            statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
+          selectedImplInfo = impl;
+        }
+        else {
+          selectedImplInfo = impl;
+        }
+      }
+    });
+
+    // Flag the selected implementation info
+    if (selectedImplInfo) {
+      selectedImplInfo.selected = true;
+    }
+  });
+}
+
+
 async function fetchImplData() {
   return Promise.all(Object.keys(sources).map(async function (source) {
     if (sources[source].url) {
@@ -456,158 +687,46 @@ async function extractImplData(files) {
   let impldata = {};
   files.forEach(file => {
     let id = file.split(/\/|\\/).pop().split('.')[0];
-    let feature = requireFromWorkingDirectory(file);
-    let implementations = [];
+    let spec = requireFromWorkingDirectory(file);
 
-    // Compute implementation status only when we know where to look in the
-    // implementation data
-    if (!feature.impl) return;
-
-    let chromeid = feature.impl.chromestatus;
-    if (chromeid && !sources.chromestatus.data.find(f => f.id === chromeid)) {
-      chromeid = null;
-    }
-
-    Object.keys(sources).forEach(source => {
-      // Assemble the implementation info that we expect
-      if (feature.impl[source]) {
-        implementations = implementations.concat(
-          sources[source].getImplStatus(feature.impl[source]));
-      }
-
-      // If we have the id returned by the Chrome status platform, we
-      // can try to look at the Edge status platform, since it uses
-      // that ID as well
-      if (chromeid && (source === 'edgestatus')) {
-        implementations = implementations.concat(
-          sources[source].getImplStatus(chromeid));
-      }
-    });
-
-    // We may have found the implementation status info from the Edge status
-    // platform twice (once with the real feature name, once with a Chrome ID).
-    // Let's remote one instance if that happened.
-    implementations = implementations.filter(impl =>
-      (impl.source !== 'edgestatus') ||
-      (impl === implementations.find(i => i.source === 'edgestatus'))
-    );
-
-    // Compute the final implementation status for each user agent with
-    // the following rules:
-    // 0. Trust the "feedback" source as being authoritative. It should
-    // contain feedback from reviewers about implementation statuses that
-    // are incorrectly reported by other sources.
-    // 1. Trust platform sources to say the right thing about their own
-    // user-agent or rendering engine. For instance, if chromestatus says
-    // that a feature is "in development" in Chrome, consider that the
-    // feature is really "in development" in Chrome, and ignore possible
-    // claims in other sources that the feature is "shipped" in Chrome
-    // 2. Keep the most optimistic status otherwise, meaning that if
-    // chromestatus says that feature A has shipped in Edge while
-    // caniuse says it is in development, consider that the feature has
-    // shipped in Edge
-    // 3. Due to the close relationship between webkit and Safari, trust
-    // webkitstatus more than any other source about support in Safari.
-    // If webkitstatus says that a feature is in development in webkit,
-    // it means it cannot be at a more advanced level in Safari. In other
-    // words, constrain the implementation status in Safari to the
-    // implementation status in Webkit, when it is known to be lower.
-    // 4. Also, once 3. is done, drop the Webkit entry when there is also
-    // an entry for Safari. No need to confuse people with the
-    // distinction between Safari and Webkit, unless that is needed
-    // (it's only going to be needed for features that are being
-    // developed in Webkit but for which there has not been any public
-    // signal about support in Safari)
+    // Get implementation status for the whole spec
     impldata[id] = {
-      implementations,
-      shipped: [],
-      experimental: [],
-      indevelopment: [],
-      consideration: []
+      implementations: getImplInfoForFeature(spec)
+    };
+
+    // Get implementation status for individual features in the spec
+    if (spec.features) {
+      impldata[id].features = {};
+      for (let featureName of Object.keys(spec.features)) {
+        let feature = spec.features[featureName];
+        impldata[id].features[featureName] = {
+          implementations: getImplInfoForFeature(feature)
+        };
+      }
+
+      // Merge implementation status at the feature level to guess
+      // implementation status of the whole spec
+      guessImplInfoFromFeatures(impldata[id], spec.featuresCoverage);
     }
 
-    let statuses = ['', 'consideration', 'indevelopment', 'experimental', 'shipped'];
+    // Flag the best implementation info for the whole spec
+    flagBestImplInfo(impldata[id].implementations);
 
-    function onlyUnique(value, index, self) {
-      return self.indexOf(value) === index;
-    }
-
-    // Extract the list of user agents that appear in implementation
-    // data, computing the status for "webkit" on the side to be able to
-    // apply rules 3 and 4, and apply rules for each user agent.
-    let webkitInfo = implementations.find(impl => impl.source === 'webkitstatus');
-    let webkitStatus = (webkitInfo || {}).status;
-    let uas = implementations
-      .map(impl => (impl.ua !== 'webkit') ? impl.ua : null)
-      .filter(ua => !!ua)
-      .filter(onlyUnique);
-    uas.forEach(ua => {
-      let status = '';
-      let authoritativeStatusFound = false;
-      let coreStatusFound = false;
-      let selectedImplInfo = null;
-      implementations.filter(impl => impl.ua === ua).forEach(impl => {
-        if (authoritativeStatusFound) return;
-        if (impl.source === 'feedback') {
-          // Rule 0, status comes from reviewer feedback, consider
-          // it as authoritative
-          authoritativeStatusFound = true;
-          selectedImplInfo = impl;
-        }
-        else if (Object.keys(sources).includes(impl.source) &&
-            sources[impl.source].coreua.includes(ua)) {
-          // Rule 1, status comes from the right platform, we've
-          // found the implementation status unless we got some
-          // feedback from a reviewer that this status is incorrect
-          // which will be handled by Rule 0
-          coreStatusFound = true;
-
-          // Rule 3, constrain safari status to that of webkit
-          // when it is lower
-          if (ua.startsWith('safari') && (typeof webkitstatus === 'string') &&
-              statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
-            selectedImplInfo = webkitInfo;
-          }
-          else {
-            selectedImplInfo = impl;
-          }
-        }
-        else if (!selectedImplInfo || (!coreStatusFound &&
-            (statuses.indexOf(impl.status) > statuses.indexOf(selectedImplInfo.status)))) {
-          // Rule 2, be optimistic in life... except if Rule 1 was
-          // already applied. Also take rule 3 into account
-          if ((ua === 'safari') && (typeof webkitstatus === 'string') &&
-              statuses.indexOf(impl.status) > statuses.indexOf(webkitstatus)) {
-            selectedImplInfo = impl;
-          }
-          else {
-            selectedImplInfo = impl;
-          }
-        }
-      });
-
-      if (selectedImplInfo) {
-        // Flag the selected implementation info:
-        selectedImplInfo.selected = true;
-        status = selectedImplInfo.status;
+    // Guess individual features implementation status from implementation
+    // status of the whole spec and choose the best implementation info for
+    // individual features
+    if (impldata[id].features) {
+      for (let featureName of Object.keys(spec.features)) {
+        guessImplInfoFromSpec(featureName, impldata[id]);
+        flagBestImplInfo(impldata[id].features[featureName].implementations);
       }
-      if (status !== '') {
-        impldata[id][status].push(ua);
-      }
-    });
-
-    // Rule 4, insert Webkit entry if there was no Safari entry
-    if ((typeof webkitstatus === 'string') &&
-        (webkitstatus !== '') &&
-        !uas.includes('safari')) {
-      impldata[id][webkitstatus].push('webkit');
     }
 
     // Copy polyfill information over from the feature data file
     // (we'll just check that the data is correct)
-    if (feature.polyfills) {
+    if (spec.polyfills) {
       impldata[id].polyfills = [];
-      feature.polyfills.forEach(polyfill => {
+      spec.polyfills.forEach(polyfill => {
         if (!polyfill.url) {
           console.error(`Missing URL for polyfill in ${file}`);
         }
