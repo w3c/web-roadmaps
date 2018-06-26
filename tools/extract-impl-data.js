@@ -9,6 +9,7 @@ node tools/extract-impl-data.js data/3dcamera.json data/webvtt.json
 const fetch = require('fetch-filecache-for-crawling');
 const fs = require('fs');
 const path = require('path');
+const bcd = require('mdn-browser-compat-data');
 
 
 /**
@@ -401,6 +402,136 @@ let sources = {
         if (res.status || (res.status === '')) {
           impl.push(res);
         }
+      }
+      return impl;
+    }
+  },
+
+  /**
+   * MDN Browser Compatibility Data:
+   * https://github.com/mdn/browser-compat-data
+   *
+   * Note the data is not retrieved online but rather directly as an NPM
+   * package. The package gets updated whenever there are updates, so make
+   * sure to call `npm install` to update the package as needed before running
+   * the script.
+   *
+   * Key is path whose first part is the initial path, and the remainder links
+   * to sub-features, e.g. "api.StorageManager.estimate" to link to the
+   * "estimate" subfeature of the StorageManager class in the API folder.
+   */
+  mdn: {
+    getImplStatus: function (key) {
+      let source = 'mdn';
+      let now = (new Date()).toISOString();
+      let impl = [];
+      let tokens = key.split('.');
+      let impldata = tokens.reduce((res, token) => { return res[token]; }, bcd);
+      if (!impldata || !impldata.__compat) {
+        return impl;
+      }
+      impldata = impldata.__compat;
+      let href = impldata.mdn_url;
+
+      let uas = Object.keys(impldata.support || {});
+      for (let ua of uas) {
+        let res = { ua };
+        let releases = (bcd.browsers[ua] || {}).releases || {};
+
+        let support = impldata.support[ua];
+        if (Array.isArray(support)) {
+          // Sort support array, most recent info first and take the first one
+          support.sort((a, b) => {
+            let aAdded = a.version_added;
+            let bAdded = b.version_added;
+            if ((aAdded === true) || (aAdded === false)) {
+              return -1;
+            }
+            else if ((bAdded === true) || (bAdded === false)) {
+              return 1;
+            }
+            else if (aAdded === null) {
+              return (bAdded === null) ? 0 : 1;
+            }
+            else if (bAdded === null) {
+              return -1;
+            }
+            else {
+              let aRelease = releases[aAdded];
+              let bRelease = releases[bAdded];
+              if (!aRelease) {
+                return (!bRelease ? 0 : -1);
+              }
+              else if (!bRelease) {
+                return 1;
+              }
+              else if (!aRelease.release_date) {
+                return (!bRelease.release_date ? 0 : -1);
+              }
+              else if (!bRelease.release_date) {
+                return 1;
+              }
+              else if (aRelease.release_date < bRelease.release_date) {
+                return 1;
+              }
+              else if (aRelease.release_date > bRelease.release_date) {
+                return -1;
+              }
+              else {
+                return 0;
+              }
+            }
+          });
+          support = support[0] || {};
+        }
+        if (!support.version_added && (support.version_added !== false)) {
+          continue;
+        }
+
+        if ((support.version_added === false) || support.version_removed) {
+          res.status = '';
+        }
+        else if (support.prefix || support.alternative_name) {
+          res.status = 'experimental';
+          res.prefix = true;
+        }
+        else if (support.flags && (support.flags.length > 0)) {
+          res.status = 'experimental';
+          res.flag = true;
+        }
+        else if (typeof support.version_added === 'string') {
+          let release = bcd.browsers[ua].releases[support.version_added];
+          if (!release) {
+            // Nothing known about release version, consider it does not
+            // exist yet.
+            res.status = 'experimental';
+          }
+          else if ((release.status === 'retired') ||
+              (release.release_date && (release.release_date < now))) {
+            // Version released some time ago
+            res.status = 'shipped';
+          }
+          else {
+            // Version not released yet
+            res.status = 'experimental';
+          }
+        }
+        else {
+          res.status = 'shipped';
+        }
+
+        if (support.partial_implementation) {
+          res.partial = true;
+        }
+        if (support.notes) {
+          res.notes = support.notes;
+        }
+
+        res.source = source;
+        if (impldata.mdn_url) {
+          res.href = impldata.mdn_url;
+        }
+        impl.push(res);
       }
       return impl;
     }

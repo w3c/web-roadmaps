@@ -13,6 +13,7 @@ const sources = {
   'chromestatus': 'Chrome Platform Status',
   'edgestatus': 'Microsoft Edge Platform Status',
   'webkitstatus': 'WebKit Feature Status',
+  'mdn': 'MDN Browser Compatibility Data',
   'feedback': 'User feedback',
   'other': 'Other'
 }

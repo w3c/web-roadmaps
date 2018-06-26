@@ -7,6 +7,9 @@
       "url": "https://whatwg.org/"
     }
   ],
+  "impl": {
+    "mdn": "api.StorageManager"
+  },
   "features": {
     "estimate": {
       "title": "estimate() API",
@@ -18,12 +21,6 @@
       "title": "Persistent storage permission",
       "impl": {
         "chromestatus": 4931497563783168
-      }
-    },
-    "eviction": {
-      "title": "Storage-eviction opt-out",
-      "impl": {
-        "chromestatus": 5715811364765696
       }
     }
   }

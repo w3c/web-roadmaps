@@ -1,3 +1,6 @@
 {
-  "editors": "https://wicg.github.io/picture-in-picture/"
+  "editors": "https://wicg.github.io/picture-in-picture/",
+  "impl": {
+    "mdn": "api.PictureInPicture"
+  }
 }

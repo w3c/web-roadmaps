@@ -33,6 +33,7 @@
         "mozstatus": { "type": ["string", "null"] },
         "edgestatus": { "type": ["string", "null"] },
         "webkitstatus": { "type": ["string", "null"] },
+        "mdn": { "type": ["string", "null"] },
         "other": {
           "type": "array",
           "additionalItems": false,
@@ -220,6 +221,7 @@
               "mozstatus": { "type": ["string", "null"] },
               "edgestatus": { "type": ["string", "null"] },
               "webkitstatus": { "type": ["string", "null"] },
+              "mdn": { "type": ["string", "null"] },
               "other": {
                 "type": "array",
                 "additionalItems": false,

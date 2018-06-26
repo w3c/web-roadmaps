@@ -45,7 +45,7 @@ A **feature** is roughly speaking a piece of technology that the target audience
 
 For the 3 first categories of features described above, a feature comes with one or more specifications that covers it. The process to add a feature to a roadmap or add a specification to an existing feature is as follows:
 * a feature is defined in an encompassing HTML element (typically `<p>` or `<div>`) by adding a `data-feature` attribute to it with the name of the feature as its value. For instance, `<p data-feature='Video capture'></p>` will serve as the container for the prose describing the said feature and the specs that cover it
-* each spec that provides the hook for the said feature needs to be listed in that container element with a `<a>` tag containing a `data-featureid` attribute, whose value is a shortname for the specification that refers to the JSON file described below. For instance, adding `<a data-featureid='getusermedia'>the Media Capture and Streams API</a>` to the paragraph above indicates that the specification described by the `getusermedia.json` file provides a way to implement the "video capture" feature
+* each spec that provides the hook for the said feature needs to be listed in that container element with a `<a>` tag containing a `data-featureid` attribute, whose value is a shortname for the specification that refers to the JSON file described below, possibly completed with a `/` and the name of the feature of interest within that specification. For instance, adding `<a data-featureid='getusermedia'>the Media Capture and Streams API</a>` to the paragraph above indicates that the specification described by the `getusermedia.json` file provides a way to implement the "video capture" feature
 * the [data](data/) directory contains a JSON file that describes the various specifications that provides the hooks relevant to the various features; that JSON file follows a [format described below](#json-format-for-describing-specifications).
 
 ## JSON format for describing specifications
@@ -58,7 +58,11 @@ Depending on the advancement of the underlying specification, the JSON object ca
 * `url`: should point to the URL of the latest version of the specification. This URL will be used to collect additional data about the spec (standardization status, Working Groups that produce it, editors draft, etc) and as target of links that reference the feature. URL may contain a fragment to point to a specific section in a specification. If the `url` property is not specified, the framework assumes that the underlying specification is a W3C specification,  that the filename is its short name, and that the URL of the spec is `https://www.w3.org/TR/[filename]/`.
 * `impl`: for specifications for which browser implementations are expected, the `impl` property explains where to look for implementation info. Described below in [Describing implementation status](#describing-implementation-status).
 * `polyfills`: for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
-* `feature`: in case the reference to the specification would benefit from being more specific than the specification as a whole, the `feature` property allows to add the name of the specific feature (see e.g. the [reference to the HTMLMediaElement interface in the HTML5 specification](data/htmlmediaelement.json)).
+* `features`: in case the reference to the specification would benefit from being more specific than the specification as a whole, and/or in case available implementation information is more fine-grained than the spec level, the `features` property makes it possible to list features in the spec. It must be an array of objects, each object describing a feature through the following properties:
+  * `title`: a label for the feature. Property is mandatory.
+  * `url`: a URL to the feature in the spec. Fragments such as `#my-feature` are allowed. Property is optional.
+  * `impl`: where to look for implementation info. Described below in [Describing implementation status](#describing-implementation-status).
+* `featuresCoverage`: when features are listed in the `features` property, this property asserts whether the list of features covers the whole spec, or whether some additional features need to be specified. This information is used to compute the implementation status of a spec from the implementation status of individual features. Property is optional. Possible values are `partial` and `full`. Default value is `partial`.
 * `status`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `status` property can be used to set the maturity level of the specification. Possible values are one of `ED` (Editor's Draft), `WD` (Working Draft), `LS` (Living Standard), `CR` (Candidate Recommendation), `PR` (Proposed Recommendation), `REC` (Recommendation), `Retired` (retired or obsoleted), or `NOTE` (Group Note).
 * `title`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), the `title` property should be set to the title of the specification.
 * `edDraft`: when the specification is unknown to the [W3C API](https://w3c.github.io/w3c-api/) and to [Specref](https://www.specref.org/), or when these APIs do not know the URL of the Editor's Draft for the specification, the `edDraft` property should contain the URL of the Editor's Draft of the specification.
@@ -78,7 +82,8 @@ Here is an example of a JSON file that describes the "Intersection Observer" spe
     "caniuse": "intersectionobserver",
     "chromestatus": 5695342691483648,
     "webkitstatus": "specification-intersection-observer",
-    "edgestatus": "Intersection Observer"
+    "edgestatus": "Intersection Observer",
+    "mdn": "api/IntersectionObserver"
   },
   "polyfills": [
     {
@@ -93,12 +98,13 @@ Here is an example of a JSON file that describes the "Intersection Observer" spe
 
 *Note (March 2018): implementation status features are still being worked upon in the framework. The implementation description should remain backward compatible, but it may still evolve.*
 
-Provided the description contains relevant information, the framework can automatically retrieve the implementation status in main browsers from the following Web platform status sources: [Can I use](http://caniuse.com/), [Chrome Platform Status](https://www.chromestatus.com/features), [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) and [WebKit Feature Status](https://webkit.org/status/).
+Provided the description contains relevant information, the framework can automatically retrieve the implementation status in main browsers from the following Web platform status sources: [Can I use](http://caniuse.com/), [Chrome Platform Status](https://www.chromestatus.com/features), [MDN Browser Compatibility Data](https://github.com/mdn/browser-compat-data), [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) and [WebKit Feature Status](https://webkit.org/status/).
 
 To enable this, the decription must contain an `impl` property whose value is an object with one or more of the following optional properties:
 * `caniuse`: the name of the feature in [Can I use](http://caniuse.com/) (the one that appears in the URL after `#feat=`)
 * `chromestatus`: the number used to identify features in [Chrome Platform Status](https://www.chromestatus.com/features) (the one that appears in the URL after `features/`)
 * `edgestatus`: the name used to identify features in [Microsoft Edge web platform features status and roadmap](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) (the full feature title that appears in the page)
+* `mdn`: the [hierarchy of strings](https://github.com/mdn/browser-compat-data/blob/master/schemas/compat-data-schema.md#feature-hierarchies) that identifies the feature in the [MDN Browser Compatibility Data](https://github.com/mdn/browser-compat-data)
 * `webkitstatus`: the name used to identify features in [WebKit Feature Status](https://webkit.org/status/) (the one that appears in the URL after `status/#`)
 * `other`: manually entered implementation status. See below for details.
 
