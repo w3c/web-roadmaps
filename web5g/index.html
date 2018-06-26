@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../assets/css/theme.css">
     <link rel="stylesheet" href="../assets/css/roadmap.css">
   </head>
-  <body>
+  <body class=" menu">
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -48,16 +48,17 @@
             </div>
         </section>
       </div>
+    </main>
 
-        </main>
-
-        <aside id="side-nav">
-          <nav>
-            <ul>
-            <li><a href="applications.html" data-nav=""><div class="icon"><img src="" alt=""></div><div class="description">5G Applications</div></a></li><li><a href="network.html" data-nav=""><div class="icon"><img src="" alt=""></div><div class="description">Network Control</div></a></li><li><a href="about.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">About this document</div></a></li></ul>
-          </nav>
-        </aside>
+    <aside id="side-nav">
+      <h2 id="roadmap-pages">Roadmap pages</h2>
+      <nav>
+        <ul>
+        <li><a href="applications.html" data-nav=""><div class="icon"><img src="" alt=""></div><div class="description">5G Applications</div></a></li><li><a href="network.html" data-nav=""><div class="icon"><img src="" alt=""></div><div class="description">Network Control</div></a></li><li><a href="about.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">About this document</div></a></li></ul>
+      </nav>
+    </aside>
     <div id="mask"></div>
+
         <footer>
             <div class="container">
                 <p>
