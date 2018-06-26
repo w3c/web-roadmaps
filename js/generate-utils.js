@@ -746,6 +746,10 @@ const applyToc = function (toc, translate, lang, pagetype) {
     }
   });
 
+  if (pagetype.menu) {
+    document.body.className += ' menu';
+  }
+
   let currentPage = toc.pages.find(page =>
     window.location.pathname.endsWith(page.url) ||
     window.location.pathname.endsWith(page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')));

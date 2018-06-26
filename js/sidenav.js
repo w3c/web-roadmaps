@@ -130,8 +130,8 @@
    */
   function toggleMenu(evt) {
     if (isMenuOpened) {
-      mask.className = mask.className.replace('active', 'hidden');
-      menu.className = menu.className.replace('active', 'hidden');
+      mask.className = 'hidden';
+      menu.className = 'hidden';
       buttonImg.setAttribute('alt', actionLabels.open);
       menuItems.forEach(item => {
         item.setAttribute('tabindex', '-1');
@@ -142,8 +142,8 @@
       }
     }
     else {
-      mask.className += ' active';
-      menu.className += ' active';
+      mask.className = 'active';
+      menu.className = 'active';
       buttonImg.setAttribute('alt', actionLabels.close);
       lastActiveElement = document.activeElement;
       menuItems.forEach(item => item.setAttribute('tabindex', '0'));
@@ -155,6 +155,12 @@
     evt.stopPropagation();
     return false;
   }
+
+  // Render the "open navigation menu" button
+  button.hidden = false;
+
+  // Flag the navigation menu as JS-controlled
+  menu.setAttribute('data-js', 'true');
 
   // React to user actions that toggle the menu
   button.addEventListener('click', toggleMenu);
