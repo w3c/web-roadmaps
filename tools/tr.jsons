@@ -107,6 +107,26 @@
         "title": "Milestones to reach Recommendation",
         "description": "Describes the current milestones (YYYY-MM-DD) as envisioned by the Working Group",
         "type": "object"
+      },
+      "features": {
+        "title": "Features in the specification",
+        "type": "object",
+        "description": "In case the reference to the specification would benefit from being more specific than the specification as a whole, the feature property allows to add the name of the specific feature",
+        "additionalProperties": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
       }
     }
   }

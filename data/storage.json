@@ -8,6 +8,20 @@
     }
   ],
   "impl": {
-    "chromestatus": 5630353511284736
+    "mdn": "api.StorageManager"
+  },
+  "features": {
+    "estimate": {
+      "title": "estimate() API",
+      "impl": {
+        "chromestatus": 5630353511284736
+      }
+    },
+    "persist": {
+      "title": "Persistent storage permission",
+      "impl": {
+        "chromestatus": 4931497563783168
+      }
+    }
   }
 }

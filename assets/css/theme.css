@@ -273,6 +273,16 @@ Styles for the "current implementations" column
 .ua .prefix { background-image: url('../impl/prefix.svg'); }
 .ua .flag { background-image: url('../impl/flag.svg'); }
 
+/* Implementation may be partial */
+.ua .partial {
+  background-image: url('../impl/partial.svg');
+  background-size: 31px 20px !important;
+  bottom: -5px !important;
+  width: 31px !important;
+  right: 9px !important;
+  z-index: 1 !important;
+}
+
 /* UA filtering menu */
 [data-col|=impl] details {
   display: none;
