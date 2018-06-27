@@ -1104,7 +1104,7 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
       let featureName = featureEl.dataset['feature'];
       if (featureName) {
         if (references[featureName]) {
-          Array.prototype.push.apply(features[featureName], ids);
+          Array.prototype.push.apply(references[featureName], ids);
         }
         else {
           references[featureName] = ids;
@@ -1157,8 +1157,8 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
     $(document, 'a[data-featureid="' + spec.id + '"]').forEach(link => {
       link.setAttribute('href', info.url);
       if (!link.textContent) {
-        if (featureId && info.features && info.features[featureId]) {
-          link.textContent = translate('features', info.features[feature].title);
+        if (spec.featureId && info.features && info.features[spec.featureId]) {
+          link.textContent = translate('features', info.features[spec.featureId].title);
         }
         else {
           link.textContent = (info.feature ?
