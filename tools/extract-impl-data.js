@@ -643,7 +643,6 @@ function guessImplInfoFromFeatures(implinfo, coverage) {
         status: null,
         source,
         guess: true,
-        partial: true,
         features: []
       };
 
@@ -664,14 +663,20 @@ function guessImplInfoFromFeatures(implinfo, coverage) {
           if (impl.flag) {
             guessed.flag = impl.flag;
           }
+          if (impl.partial) {
+            guessed.partial = impl.partial;
+          }
         }
         guessed.features.push(featureName);
       }
 
       if (guessed.status) {
-        if ((coverage === 'full') &&
+        if ((coverage === 'full') && !guessed.partial &&
             (guessed.features.length === Object.keys(implinfo.features).length)) {
           guessed.partial = false;
+        }
+        else {
+          guessed.partial = true;
         }
         implinfo.implementations.push(guessed);
       }
@@ -696,13 +701,24 @@ function guessImplInfoFromSpec(featureName, implinfo) {
         continue;
       }
 
-      implinfo.features[featureName].implementations.push({
+      let guessed = {
         ua,
         status: impl.status,
         source,
         href: impl.href,
         guess: true
-      });
+      };
+      if (impl.prefix) {
+        guessed.prefix = impl.prefix;
+      }
+      if (impl.flag) {
+        guessed.flag = impl.flag;
+      }
+      if (impl.partial) {
+        guessed.partial = impl.partial
+      }
+
+      implinfo.features[featureName].implementations.push(guessed);
     }
   }
 }
