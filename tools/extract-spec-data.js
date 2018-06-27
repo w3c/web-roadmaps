@@ -240,7 +240,7 @@ async function fetchJson(url, options) {
 async function extractSpecData(files, config) {
   let specs = (files || []).map(file => Object.assign({
     file,
-    id: file.split(/\/|\\/).pop().split('.')[0],
+    id: file.split(/\/|\\/).pop().split('.').slice(0, -1).join('.'),
     data: requireFromWorkingDirectory(file)
   }));
 
