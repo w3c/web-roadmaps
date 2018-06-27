@@ -117,8 +117,7 @@ loadScript('../js/utils.js')
       translate
     ]);
   }).then(results => {
-    let customTables = results[0]['tables'];
-    fillTables(results[2], results[3], customTables, results[4], lang);
+    fillTables(results[2], results[3], results[0], results[4], lang);
     addFilteringMenus(results[4]);
   }).then(_ => {
     // Remove duplicate warnings and report them
