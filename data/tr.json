@@ -2619,7 +2619,15 @@
       }
     ],
     "publisher": "WHATWG",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "estimate": {
+        "title": "estimate() API"
+      },
+      "persist": {
+        "title": "Persistent storage permission"
+      }
+    }
   },
   "streams": {
     "url": "https://streams.spec.whatwg.org/",
@@ -2758,9 +2766,8 @@
   },
   "ttml-imsc1": {
     "url": "https://www.w3.org/TR/ttml-imsc1/",
-    "edDraft": "https://rawgit.com/w3c/imsc1/master/spec/ttml-ww-profiles.html",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)",
-    "status": "REC",
+    "status": "Retired",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -2768,7 +2775,7 @@
       }
     ],
     "publisher": "W3C",
-    "informative": false,
+    "informative": true,
     "milestones": {}
   },
   "ttml-imsc11": {
@@ -2920,7 +2927,7 @@
     "edDraft": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
     "repository": "https://github.com/w3c/automotive",
     "title": "Vehicle Information API Specification",
-    "status": "WD",
+    "status": "NOTE",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/auto/wg/",
@@ -2928,7 +2935,7 @@
       }
     ],
     "publisher": "W3C",
-    "informative": false,
+    "informative": true,
     "milestones": {}
   },
   "vibration": {

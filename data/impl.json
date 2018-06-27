@@ -36,15 +36,6 @@
         "href": "https://www.chromestatus.com/feature/5713419084759040",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "firefox"
     ]
   },
   "accelerometer": {
@@ -91,16 +82,6 @@
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ],
     "polyfills": [
       {
@@ -222,15 +203,7 @@
         ],
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "animation-frames": {
     "implementations": [
@@ -354,31 +327,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/requestanimationframe/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "annotation-model": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "appcache": {
     "implementations": [
@@ -502,24 +454,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/applicationcache/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "appmanifest": {
     "implementations": [
@@ -640,23 +575,10 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-app-manifest"
       }
-    ],
-    "shipped": [
-      "edge",
-      "chrome",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android",
-      "firefox",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "atag20": {
+    "implementations": []
   },
   "audio-output": {
     "implementations": [
@@ -694,14 +616,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/audiooutputdevicesapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "audio": {
@@ -790,31 +704,10 @@
         "href": "https://caniuse.com/#feat=audio",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "autocomplete": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "background-sync": {
     "implementations": [
@@ -859,17 +752,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/backgroundsyncapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "firefox",
-      "edge"
-    ],
-    "consideration": []
+    ]
+  },
+  "barometer": {
+    "implementations": []
   },
   "battery": {
     "implementations": [
@@ -922,19 +808,7 @@
         "href": "https://caniuse.com/#feat=battery-status",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "beacon": {
     "implementations": [
@@ -1070,24 +944,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-beacon-api"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "canvas": {
     "implementations": [
@@ -1217,31 +1074,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/canvas/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "cloud-browser-arch": {
+    "implementations": []
   },
   "color-canvas": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "color-gamut": {
     "implementations": [
@@ -1287,23 +1126,13 @@
         "href": "https://www.chromestatus.com/feature/5354410980933632",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "safari",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "contacts-sys": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "core-aam11": {
+    "implementations": []
   },
   "cors": {
     "implementations": [
@@ -1397,24 +1226,7 @@
         "href": "https://caniuse.com/#feat=cors",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "credential-management": {
     "implementations": [
@@ -1492,20 +1304,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/credentialmanagementapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera",
-      "chrome_android",
-      "uc_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "edge",
-      "safari"
-    ],
-    "consideration": []
+    ]
   },
   "crypto": {
     "implementations": [
@@ -1636,32 +1435,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webcryptoapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "edge"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "cryptokey": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "csp": {
     "implementations": [
@@ -1790,23 +1567,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/contentsecuritypolicylevel2/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "csp3": {
+    "implementations": []
   },
   "css-2d": {
     "implementations": [
@@ -1894,24 +1658,7 @@
         "href": "https://caniuse.com/#feat=transforms2d",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-3d": {
     "implementations": [
@@ -2005,24 +1752,7 @@
         "href": "https://caniuse.com/#feat=transforms3d",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-animations": {
     "implementations": [
@@ -2111,32 +1841,10 @@
         "href": "https://caniuse.com/#feat=css-animation",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "qq_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-border-background": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "css-border-radius": {
     "implementations": [
@@ -2224,24 +1932,7 @@
         "href": "https://caniuse.com/#feat=border-radius",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-box-shadow": {
     "implementations": [
@@ -2329,24 +2020,7 @@
         "href": "https://caniuse.com/#feat=css-boxshadow",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-break-3": {
     "implementations": [
@@ -2493,31 +2167,13 @@
         "href": "https://caniuse.com/#feat=css-page-break",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-color-space": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "css-content-3": {
+    "implementations": []
   },
   "css-device-adapt": {
     "implementations": [
@@ -2605,18 +2261,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssdeviceadaptation/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "opera"
-    ],
-    "experimental": [
-      "edge",
-      "chrome",
-      "qq_android",
-      "chrome_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-flexbox": {
     "implementations": [
@@ -2740,24 +2385,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/flexbox/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-font-display": {
     "implementations": [
@@ -2868,21 +2496,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-css-font-display"
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android"
-    ],
-    "experimental": [
-      "samsunginternet_android",
-      "qq_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-font-loading": {
     "implementations": [
@@ -3006,25 +2620,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssfontloadingapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
+  },
+  "css-fonts-4": {
+    "implementations": []
   },
   "css-fonts-variable": {
     "implementations": [
@@ -3133,20 +2732,10 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-variation-fonts"
       }
-    ],
-    "shipped": [
-      "edge",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android"
-    ],
-    "experimental": [
-      "firefox"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "css-gcpm-3": {
+    "implementations": []
   },
   "css-grid-1": {
     "implementations": [
@@ -3268,22 +2857,16 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-css-grid-layout-level-1"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "css-line-grid-1": {
+    "implementations": []
+  },
+  "css-page-floats-3": {
+    "implementations": []
+  },
+  "css-rhythm-1": {
+    "implementations": []
   },
   "css-scroll-snap": {
     "implementations": [
@@ -3345,26 +2928,10 @@
         "href": "https://caniuse.com/#feat=css-snappoints",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "safari",
-      "safari_ios",
-      "firefox_android"
-    ],
-    "experimental": [
-      "edge",
-      "chrome"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-size-adjust": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "css-touch-action": {
     "implementations": [
@@ -3448,23 +3015,7 @@
         "href": "https://caniuse.com/#feat=css-touch-action",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-transitions": {
     "implementations": [
@@ -3552,24 +3103,7 @@
         "href": "https://caniuse.com/#feat=css-transitions",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-ui-box-sizing": {
     "implementations": [
@@ -3657,24 +3191,7 @@
         "href": "https://caniuse.com/#feat=css3-boxsizing",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "css-will-change": {
     "implementations": [
@@ -3804,25 +3321,16 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-css-will-change"
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
+  },
+  "css2": {
+    "implementations": []
+  },
+  "css3-page": {
+    "implementations": []
+  },
+  "cssom-view": {
+    "implementations": []
   },
   "datalist": {
     "implementations": [
@@ -3947,28 +3455,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/datalistelement/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "ddr": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "device-memory": {
     "implementations": [
@@ -4014,16 +3504,6 @@
         "href": "https://www.chromestatus.com/feature/5119701235531776",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "deviceorientation": {
@@ -4111,23 +3591,13 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-deviceorientation-events"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "discovery": {
+    "implementations": []
+  },
+  "dnt": {
+    "implementations": []
   },
   "dom-addeventlistener-passive": {
     "implementations": [
@@ -4243,22 +3713,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/passiveeventlisteners/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "domcapture": {
     "implementations": [
@@ -4310,18 +3765,16 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediacapturefromhtmlmediaelement/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
+  },
+  "dpub-aam10": {
+    "implementations": []
+  },
+  "dpub-aria10": {
+    "implementations": []
+  },
+  "element-queries": {
+    "implementations": []
   },
   "eme": {
     "implementations": [
@@ -4373,18 +3826,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/encryptedmediaextensions/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "edge",
-      "safari",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "epr": {
+    "implementations": []
   },
   "eventsource": {
     "implementations": [
@@ -4465,23 +3910,7 @@
         "href": "https://caniuse.com/#feat=eventsource",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "feature-policy": {
     "implementations": [
@@ -4527,17 +3956,6 @@
         "href": "https://www.chromestatus.com/feature/5694225681219584",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "firefox",
-      "edge"
     ]
   },
   "fetch": {
@@ -4674,24 +4092,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-fetch"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "fileapi": {
     "implementations": [
@@ -4782,24 +4183,10 @@
         "href": "https://caniuse.com/#feat=fileapi",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "frame-timing": {
+    "implementations": []
   },
   "fullscreen": {
     "implementations": [
@@ -4973,24 +4360,16 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/fullscreenapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "safari",
-      "opera"
-    ],
-    "experimental": [
-      "edge",
-      "chrome",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "generic-sensor": {
+    "implementations": []
+  },
+  "geofencing": {
+    "implementations": []
+  },
+  "geolocation-sensor": {
+    "implementations": []
   },
   "geolocation": {
     "implementations": [
@@ -5105,31 +4484,10 @@
         "href": "https://caniuse.com/#feat=geolocation",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "getusermedia-cap": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "getusermedia": {
     "implementations": [
@@ -5263,25 +4621,7 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5755699816562688"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "qq_android",
-      "baidu_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "gyroscope": {
     "implementations": [
@@ -5328,22 +4668,15 @@
         "selected": true
       }
     ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
-    ],
     "polyfills": [
       {
         "label": "sensor-polyfills",
         "url": "https://github.com/kenchris/sensor-polyfills"
       }
     ]
+  },
+  "hbss": {
+    "implementations": []
   },
   "hr-time": {
     "implementations": [
@@ -5431,24 +4764,10 @@
         "href": "https://caniuse.com/#feat=high-resolution-time",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "html-extensions": {
+    "implementations": []
   },
   "html-media-capture": {
     "implementations": [
@@ -5493,17 +4812,10 @@
         "href": "https://caniuse.com/#feat=html-media-capture",
         "selected": true
       }
-    ],
-    "shipped": [
-      "safari_ios",
-      "chrome_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "html5-browsing-context": {
+    "implementations": []
   },
   "html5-download": {
     "implementations": [
@@ -5626,23 +4938,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-download-attribute"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "html5-sandbox": {
     "implementations": [
@@ -5730,24 +5026,7 @@
         "href": "https://caniuse.com/#feat=iframe-sandbox",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "htmlmediaelement": {
     "implementations": [
@@ -5841,24 +5120,10 @@
         "href": "https://caniuse.com/#feat=video",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "humidity": {
+    "implementations": []
   },
   "imagecapture": {
     "implementations": [
@@ -5904,17 +5169,7 @@
         "href": "https://www.chromestatus.com/feature/4843864737185792",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "firefox"
-    ],
-    "consideration": []
+    ]
   },
   "ime-api": {
     "implementations": [
@@ -5929,20 +5184,10 @@
         "href": "https://caniuse.com/#feat=ime",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [
-      "edge"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "inband": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "indexeddb": {
     "implementations": [
@@ -6075,24 +5320,10 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-indexed-database"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "indie-ui-events": {
+    "implementations": []
   },
   "inputdate": {
     "implementations": [
@@ -6179,23 +5410,10 @@
         "href": "https://caniuse.com/#feat=input-datetime",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "inputdevice": {
+    "implementations": []
   },
   "inputhint": {
     "implementations": [
@@ -6283,24 +5501,7 @@
         "href": "https://caniuse.com/#feat=input-placeholder",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "inputmode": {
     "implementations": [
@@ -6347,18 +5548,7 @@
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera",
-      "chrome_android"
-    ],
-    "experimental": [
-      "firefox",
-      "firefox_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "inputpattern": {
     "implementations": [
@@ -6446,24 +5636,7 @@
         "href": "https://caniuse.com/#feat=input-pattern",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "inputtext": {
     "implementations": [
@@ -6551,24 +5724,7 @@
         "href": "https://caniuse.com/#feat=input-email-tel-url",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "intersectionobserver": {
     "implementations": [
@@ -6684,27 +5840,15 @@
         "href": "https://webkit.org/status/#specification-intersection-observer"
       }
     ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "safari"
-    ],
-    "consideration": [],
     "polyfills": [
       {
         "label": "Polyfill.io",
         "url": "https://polyfill.io/v2/docs/features/#IntersectionObserver"
       }
     ]
+  },
+  "longtasks": {
+    "implementations": []
   },
   "magnetometer": {
     "implementations": [
@@ -6750,24 +5894,10 @@
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "media-capabilities": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "media-frags": {
     "implementations": [
@@ -6858,43 +5988,16 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediafragments/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "media-playback-quality": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "mediacontroller": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "mediakeys": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "mediaqueries": {
     "implementations": [
@@ -6982,31 +6085,13 @@
         "href": "https://caniuse.com/#feat=css-mediaqueries",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "mediaqueries4": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "mediaqueries5": {
+    "implementations": []
   },
   "mediasession": {
     "implementations": [
@@ -7044,17 +6129,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediasession/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "safari"
-    ],
-    "consideration": [
-      "firefox",
-      "edge"
     ]
   },
   "mixedcontent": {
@@ -7094,16 +6168,10 @@
         "href": "https://www.chromestatus.com/feature/6263395770695680",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "edge"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "mobile-accessibility-mapping": {
+    "implementations": []
   },
   "mse": {
     "implementations": [
@@ -7215,23 +6283,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediasourceextensions/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "safari",
-      "opera",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "chrome",
-      "chrome_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "mwabp": {
+    "implementations": []
   },
   "navigation-timing": {
     "implementations": [
@@ -7319,24 +6374,7 @@
         "href": "https://caniuse.com/#feat=nav-timing",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "netinfo": {
     "implementations": [
@@ -7433,19 +6471,7 @@
         "href": "https://www.chromestatus.com/feature/6338383617982464",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android",
-      "baidu_android",
-      "firefox"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "notifications": {
     "implementations": [
@@ -7491,18 +6517,7 @@
         "href": "https://caniuse.com/#feat=notifications",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "firefox_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "online": {
     "implementations": [
@@ -7590,24 +6605,7 @@
         "href": "https://caniuse.com/#feat=online-status",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "orientation": {
     "implementations": [
@@ -7653,16 +6651,6 @@
         "href": "https://www.chromestatus.com/feature/5698781827825664",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ],
     "polyfills": [
       {
@@ -7795,24 +6783,10 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-webrtc"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android"
-    ],
-    "experimental": [
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "packaging": {
+    "implementations": []
   },
   "page-visibility": {
     "implementations": [
@@ -7936,24 +6910,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pagevisibilityapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "paint-timing": {
     "implementations": [
@@ -7999,17 +6956,6 @@
         "href": "https://www.chromestatus.com/feature/5688621814251520",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge",
-      "safari"
     ]
   },
   "payment-handler": {
@@ -8056,16 +7002,6 @@
         "href": "https://www.chromestatus.com/feature/5160285237149696",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "indevelopment": [],
-    "consideration": [
-      "firefox"
     ]
   },
   "payment-method-basic-card": {
@@ -8098,17 +7034,10 @@
         "href": "https://www.chromestatus.com/feature/5408502604365824",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "edge"
-    ],
-    "consideration": [
-      "firefox"
     ]
+  },
+  "payment-method-id": {
+    "implementations": []
   },
   "payment-method-manifest": {
     "implementations": [
@@ -8140,14 +7069,6 @@
         "href": "https://www.chromestatus.com/feature/5716168929181696",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "firefox"
     ]
   },
   "payment-request": {
@@ -8268,22 +7189,10 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-payment-request"
       }
-    ],
-    "shipped": [
-      "edge",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "firefox",
-      "qq_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "performance-timeline": {
+    "implementations": []
   },
   "permissions-request": {
     "implementations": [
@@ -8322,15 +7231,6 @@
         "href": "https://www.chromestatus.com/feature/5707368532803584",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "firefox"
     ]
   },
   "permissions-revoke": {
@@ -8370,15 +7270,6 @@
         "href": "https://www.chromestatus.com/feature/5707368532803584",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "firefox"
     ]
   },
   "permissions": {
@@ -8463,18 +7354,51 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6376494003650560"
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "picture-in-picture": {
+    "implementations": [
+      {
+        "ua": "webview_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Requires an origin trial token. (<a href='https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/developer-guide.md'>explainer<a>, <a href='http://bit.ly/OriginTrialSignup'>sign-up form</a>)"
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      }
+    ]
   },
   "picture": {
     "implementations": [
@@ -8610,24 +7534,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-picture-element"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "pointer-events": {
     "implementations": [
@@ -8716,18 +7623,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pointerevents/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "preload": {
     "implementations": [
@@ -8800,21 +7696,7 @@
         "href": "https://caniuse.com/#feat=link-rel-preload",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "proximity": {
     "implementations": [
@@ -8850,18 +7732,10 @@
         ],
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "publishing-linking": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "push": {
     "implementations": [
@@ -8980,28 +7854,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pushapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "quota": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "recording": {
     "implementations": [
@@ -9084,18 +7940,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediarecorder/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "remote-playback": {
@@ -9128,16 +7972,6 @@
         "href": "https://www.chromestatus.com/feature/5778318691401728",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "safari"
-    ],
-    "consideration": [
-      "firefox"
     ]
   },
   "requestidlecallback": {
@@ -9236,21 +8070,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/requestidlecallback/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "resource-hints": {
@@ -9370,22 +8189,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/preconnectresourcehints/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "resource-timing": {
@@ -9510,24 +8313,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/resourcetimingapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "screen-orientation": {
     "implementations": [
@@ -9595,22 +8381,7 @@
         "href": "https://caniuse.com/#feat=screen-orientation",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "edge"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "screencapture": {
     "implementations": [
@@ -9621,13 +8392,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/screencapture/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "secondscreen-openscreen": {
+    "implementations": []
   },
   "secondscreen": {
     "implementations": [
@@ -9675,16 +8443,7 @@
           "No public indication that the Presentation API is in development in Webkit, see https://twitter.com/othersight/status/959442416599117824"
         ]
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "firefox"
-    ],
-    "consideration": []
+    ]
   },
   "securecontexts": {
     "implementations": [
@@ -9729,25 +8488,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/securecontexts/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "firefox"
     ]
   },
   "selectors-states": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "server-timing": {
+    "implementations": []
   },
   "serviceworkers": {
     "implementations": [
@@ -9883,31 +8630,13 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-service-workers"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "shape-detection": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "spatial-navigation": {
+    "implementations": []
   },
   "speech-api-recognition": {
     "implementations": [
@@ -10028,20 +8757,6 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webspeechapispeechrecognition/",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "speech-api-synthesis": {
@@ -10154,21 +8869,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webspeechapisynthesis/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "samsunginternet_android",
-      "qq_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "srcset": {
     "implementations": [
@@ -10220,18 +8921,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/imgsrcset/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "edge",
-      "safari",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "sri": {
     "implementations": [
@@ -10359,25 +9049,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/subresourceintegrity/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "safari_ios"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "storage": {
     "implementations": [
@@ -10385,57 +9057,193 @@
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
+        "guess": true,
+        "partial": true,
+        "features": [
+          "estimate",
+          "persist"
+        ],
         "selected": true
       },
       {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
+        "guess": true,
+        "partial": true,
+        "features": [
+          "estimate",
+          "persist"
+        ],
         "selected": true
       },
       {
         "ua": "firefox",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
-        "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
+        "guess": true,
+        "partial": true,
+        "features": [
+          "estimate",
+          "persist"
+        ],
         "selected": true
       },
       {
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5630353511284736",
+        "guess": true,
+        "partial": true,
+        "features": [
+          "estimate",
+          "persist"
+        ],
         "selected": true
       }
     ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "firefox"
-    ],
-    "consideration": [
-      "edge"
-    ]
+    "features": {
+      "estimate": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          }
+        ]
+      },
+      "persist": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4931497563783168",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          }
+        ]
+      }
+    }
   },
   "streams": {
     "implementations": [
@@ -10571,23 +9379,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/streamsapireadablestream/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "safari",
-      "opera",
-      "safari_ios",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "firefox",
-      "firefox_android"
-    ],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": []
+    ]
   },
   "svg11": {
     "implementations": [
@@ -10678,24 +9470,7 @@
         "href": "https://caniuse.com/#feat=svg",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "svg2": {
     "implementations": [
@@ -10740,18 +9515,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/svg2/",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "safari"
-    ],
-    "consideration": [
-      "edge"
     ]
+  },
+  "task-scheduler": {
+    "implementations": []
+  },
+  "thermometer": {
+    "implementations": []
   },
   "timeupdate": {
     "implementations": [
@@ -10845,24 +9615,10 @@
         "href": "https://caniuse.com/#feat=video",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "timing": {
+    "implementations": []
   },
   "touchevent": {
     "implementations": [
@@ -10984,31 +9740,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/touchevents/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android",
-      "safari"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "transcript": {
+    "implementations": []
   },
   "ttml-imsc1": {
     "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [],
     "polyfills": [
       {
         "label": "imscJS",
@@ -11017,32 +9755,22 @@
     ]
   },
   "ttml-imsc11": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "ttml": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "ttml1": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "tvtuner": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
+  },
+  "uaag20-reference": {
+    "implementations": []
+  },
+  "uaag20": {
+    "implementations": []
   },
   "uir": {
     "implementations": [
@@ -11094,25 +9822,10 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cspupgradeinsecurerequestsdirective/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "firefox",
-      "edge",
-      "safari",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "uisecurity": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "user-timing": {
     "implementations": [
@@ -11200,31 +9913,10 @@
         "href": "https://caniuse.com/#feat=user-timing",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "vehicle-info": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "vibration": {
     "implementations": [
@@ -11291,21 +9983,7 @@
         "href": "https://caniuse.com/#feat=vibration",
         "selected": true
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "video": {
     "implementations": [
@@ -11399,31 +10077,10 @@
         "href": "https://caniuse.com/#feat=video",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "videoworker": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "viewport-units": {
     "implementations": [
@@ -11511,24 +10168,7 @@
         "href": "https://caniuse.com/#feat=viewport-units",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "viewportapi": {
     "implementations": [
@@ -11574,18 +10214,6 @@
         "href": "https://www.chromestatus.com/feature/5737866978131968",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "firefox",
-      "edge",
-      "safari"
     ]
   },
   "wai-aria11": {
@@ -11703,24 +10331,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accessiblerichinternetapplicationswaiaria11/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "safari",
-      "opera",
-      "safari_ios",
-      "firefox_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": []
+    ]
+  },
+  "wake-lock": {
+    "implementations": []
+  },
+  "wcag21": {
+    "implementations": []
   },
   "web-animations": {
     "implementations": [
@@ -11869,28 +10486,11 @@
       },
       {
         "ua": "webkit",
-        "status": "consideration",
+        "status": "experimental",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-animations"
       }
-    ],
-    "shipped": [
-      "firefox",
-      "chrome",
-      "opera",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "safari",
-      "safari_ios"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "web-lifecycle": {
     "implementations": [
@@ -11936,16 +10536,6 @@
         "href": "https://www.chromestatus.com/feature/5644602711212032",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
   },
   "web-share-target": {
@@ -11985,15 +10575,6 @@
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "edge"
     ]
   },
   "web-share": {
@@ -12044,16 +10625,6 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-share"
       }
-    ],
-    "shipped": [
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": [
-      "firefox",
-      "edge",
-      "safari"
     ]
   },
   "webassembly": {
@@ -12168,23 +10739,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "qq_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webaudio": {
     "implementations": [
@@ -12324,25 +10879,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-audio"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "safari",
-      "opera",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [
-      "chrome",
-      "safari_ios",
-      "chrome_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webauthn": {
     "implementations": [
@@ -12379,17 +10916,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webauthenticationapi/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera"
-    ],
-    "experimental": [
-      "firefox",
-      "edge"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webbluetooth": {
     "implementations": [
@@ -12487,20 +11014,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webbluetooth/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "opera",
-      "chrome_android",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "qq_android"
-    ],
-    "indevelopment": [],
-    "consideration": [
-      "edge"
     ]
+  },
+  "webmediaapi": {
+    "implementations": []
+  },
+  "webmediaguidelines": {
+    "implementations": []
   },
   "webnfc": {
     "implementations": [
@@ -12545,31 +11065,13 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webnfcapi/",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [
-      "chrome",
-      "chrome_android"
-    ],
-    "consideration": [
-      "firefox",
-      "edge"
     ]
   },
   "webrtc-qos": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "webrtc-relay": {
-    "implementations": [],
-    "shipped": [],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    "implementations": []
   },
   "websockets": {
     "implementations": [
@@ -12693,24 +11195,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/websocket/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "websql": {
     "implementations": [
@@ -12815,21 +11300,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/websqldatabase/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webstorage": {
     "implementations": [
@@ -12959,24 +11430,7 @@
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webstorage/",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webusb": {
     "implementations": [
@@ -13015,14 +11469,7 @@
         "href": "https://www.chromestatus.com/feature/5651917954875392",
         "selected": true
       }
-    ],
-    "shipped": [
-      "chrome",
-      "chrome_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webvr": {
     "implementations": [
@@ -13125,19 +11572,7 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-webvr"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "samsunginternet_android"
-    ],
-    "experimental": [
-      "chrome",
-      "chrome_android",
-      "baidu_android"
-    ],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webvtt": {
     "implementations": [
@@ -13221,23 +11656,7 @@
         "href": "https://caniuse.com/#feat=webvtt",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webworkers": {
     "implementations": [
@@ -13325,24 +11744,7 @@
         "href": "https://caniuse.com/#feat=webworkers",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "webxr": {
     "implementations": [
@@ -13388,17 +11790,6 @@
         "href": "https://www.chromestatus.com/feature/5680169905815552",
         "selected": true
       }
-    ],
-    "shipped": [],
-    "experimental": [
-      "chrome",
-      "chrome_android",
-      "opera"
-    ],
-    "indevelopment": [],
-    "consideration": [
-      "firefox",
-      "edge"
     ],
     "polyfills": [
       {
@@ -13493,24 +11884,7 @@
         "href": "https://caniuse.com/#feat=woff",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   },
   "woff2": {
     "implementations": [
@@ -13642,23 +12016,13 @@
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-woff-file-format-2.0"
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
+  },
+  "wot-api": {
+    "implementations": []
+  },
+  "wot-description": {
+    "implementations": []
   },
   "xhr": {
     "implementations": [
@@ -13746,23 +12110,6 @@
         "href": "https://caniuse.com/#feat=xhr2",
         "selected": true
       }
-    ],
-    "shipped": [
-      "edge",
-      "firefox",
-      "chrome",
-      "safari",
-      "opera",
-      "safari_ios",
-      "chrome_android",
-      "firefox_android",
-      "uc_android",
-      "samsunginternet_android",
-      "qq_android",
-      "baidu_android"
-    ],
-    "experimental": [],
-    "indevelopment": [],
-    "consideration": []
+    ]
   }
 }
