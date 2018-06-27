@@ -9058,11 +9058,11 @@
         "status": "shipped",
         "source": "chromestatus",
         "guess": true,
-        "partial": true,
         "features": [
           "estimate",
           "persist"
         ],
+        "partial": true,
         "selected": true
       },
       {
@@ -9070,11 +9070,11 @@
         "status": "shipped",
         "source": "chromestatus",
         "guess": true,
-        "partial": true,
         "features": [
           "estimate",
           "persist"
         ],
+        "partial": true,
         "selected": true
       },
       {
@@ -9082,11 +9082,11 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "guess": true,
-        "partial": true,
         "features": [
           "estimate",
           "persist"
         ],
+        "partial": true,
         "selected": true
       },
       {
@@ -9094,11 +9094,11 @@
         "status": "shipped",
         "source": "chromestatus",
         "guess": true,
-        "partial": true,
         "features": [
           "estimate",
           "persist"
         ],
+        "partial": true,
         "selected": true
       }
     ],
@@ -9151,25 +9151,29 @@
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       },
@@ -9221,25 +9225,29 @@
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       }
