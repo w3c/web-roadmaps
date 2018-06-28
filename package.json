@@ -9,11 +9,13 @@
     "ncp": "^2.0.0"
   },
   "scripts": {
-    "all": "npm run validate-data && npm run generate-info && npm run validate-html && npm run validate-info && npm run generate-pages",
+    "all": "npm run create-missing-data && npm run validate-data && npm run generate-info && npm run validate-html && npm run validate-info && npm run generate-pages",
     "generate-info": "npm run generate-specinfo && npm run generate-implinfo",
     "generate-specinfo": "mkdirp .out/data && node tools/extract-spec-data.js data > .out/data/tr.json",
     "generate-implinfo": "mkdirp .out/data && node tools/extract-impl-data.js data > .out/data/impl.json",
     "generate-pages": "node tools/generate-roadmaps.js",
+    "create-missing-data": "node tools/create-missing-data.js",
+    "detect-missing-data": "node tools/create-missing-data.js --detect",
     "validate-data": "ajv -s tools/spec.jsons -d data/\\*.json --errors=text",
     "validate-info": "npm run validate-specinfo && npm run validate-implinfo",
     "validate-specinfo": "ajv -s tools/tr.jsons -d .out/data/tr.json --errors=text",

@@ -1137,7 +1137,7 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
     let info = specInfo[specId];
     if (!info) {
       warnings.push('Unknown spec "' + id + '"');
-      info = { url: '', title: '' };
+      info = { url: '', title: '', status: 'ED' };
     }
     if (featureId && (!info.features || !info.features[featureId])) {
       warnings.push('Unknown feature in spec "' + id + '"');

@@ -50,7 +50,7 @@ For the 3 first categories of features described above, a feature comes with one
 
 ## JSON format for describing specifications
 
-Each specification is described by a JSON object that will allow retrieving information about the standardization status of the spec and its level of implementation in browsers.
+Each specification is described by a JSON object that will allow retrieving information about the standardization status of the spec and its level of implementation in browsers. Note the framework will automatically generate an empty data file when it does not exist for W3C specs (see [Generate content locally](#generate-content-locally) for details), allowing authors to reference a W3C spec to start with without having to worry about creating the data file.
 
 That JSON object is stored in a file in the [data](data/) directory, whose name is then used to refer to the said specification from relevant features.
 
@@ -385,8 +385,9 @@ The `npm run all` script can take some time. If you want to have a more interact
 
 1. Create a [W3C account](https://www.w3.org/accounts/request) and a [W3C API key](https://www.w3.org/users/myprofile/apikeys) if not already done.
 2. Create a `config.json` file in the root of the repository that contains a `w3cApiKey` property with a valid W3C API key.
-3. Run `npm run generate-info` to update information and implementation data. This should generate `.out/data/tr.json` and `.out/data/impl.json` files. This step needs to be run again whenever you make changes to information in the `data` folder.
-4. Serve the root folder over HTTP (any simple HTTP server should work), and browse the roadmap files over HTTP in your favorite Web browser. Refresh the content whenever you've made changes to the HTML, JS, or data files.
+3. Run `npm run create-missing-data` to create missing data files. Only needed if you referenced new specs.
+4. Run `npm run generate-info` to update information and implementation data. This should generate `.out/data/tr.json` and `.out/data/impl.json` files. This step needs to be run again whenever you make changes to information in the `data` folder.
+5. Serve the root folder over HTTP (any simple HTTP server should work), and browse the roadmap files over HTTP in your favorite Web browser. Refresh the content whenever you've made changes to the HTML, JS, or data files.
 
 
 ## Translating a roadmap
