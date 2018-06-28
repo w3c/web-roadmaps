@@ -232,6 +232,39 @@ const formatMonthAndYearDate = function (date, lang) {
 };
 
 
+/**
+ * Retrieve the right URL to use to target the requested feature ID in
+ * the given spec, possibly linking to the Editor's Draft when possible
+ *
+ * The function completes the URL with the fragment, when defined.
+ */
+const getSpecFeatureUrl = function (spec, featureId, linkto) {
+  let fragment = null;
+  if (featureId) {
+    let feature = spec.features[featureId] || {};
+    if (feature.url) {
+      if (!feature.url.startsWith('#')) {
+        // We only have the link to the ED at the spec level. If the URL of
+        // individual features are absolute, there's no easy way to tell what
+        // the ED equivalent of that URL would be
+        return feature.url;
+      }
+      fragment = feature.url.substring(1);
+    }
+  }
+  else {
+    [,fragment] = spec.url.split('#');
+  }
+  let [baseUrl] = (((linkto === 'ED') && spec.edDraft) ? spec.edDraft : spec.url).split('#');
+
+  if (fragment) {
+    return baseUrl + '#' + fragment;
+  }
+  else {
+    return baseUrl;
+  }
+};
+
 
 /**
  * Code to call to create a cell of the given type
@@ -256,7 +289,7 @@ const createFeatureCell = function (column, refId, featureName, specInfo, implIn
 
 const createSpecCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let [specId, featureId] = refId.split('/');
-  let specUrl = specInfo.url;
+  let specUrl = getSpecFeatureUrl(specInfo, featureId, column.linkto);
   let specTitle = specInfo.title;
   let localizedSpecTitle = translate('specifications', specTitle);
   let featureTitle = (featureId && specInfo.features && specInfo.features[featureId]) ?
@@ -1065,8 +1098,9 @@ const setSectionTitles = function (translate, lang) {
 /**
  * Generates tables per section based on the information loaded
  */
-const fillTables = function (specInfo, implInfo, customTables, translate, lang) {
+const fillTables = function (specInfo, implInfo, toc, translate, lang) {
   // Build the list of columns that will need to be generated per type of table
+  let customTables = toc.tables;
   let columnsPerType = {};
   Object.keys(customTables || {}).forEach(type => {
     columnsPerType[type] = expandColumns(customTables[type], translate);
@@ -1155,7 +1189,8 @@ const fillTables = function (specInfo, implInfo, customTables, translate, lang) 
     // Complete links with the right URL and set title if the link is empty
     let info = spec.info;
     $(document, 'a[data-featureid="' + spec.id + '"]').forEach(link => {
-      link.setAttribute('href', info.url);
+      let linkto = link.getAttribute('data-linkto') || toc.linkto;
+      link.setAttribute('href', getSpecFeatureUrl(info, spec.featureId, linkto));
       if (!link.textContent) {
         if (spec.featureId && info.features && info.features[spec.featureId]) {
           link.textContent = translate('features', info.features[spec.featureId].title);
