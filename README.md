@@ -45,7 +45,7 @@ A **feature** is roughly speaking a piece of technology that the target audience
 
 For the 3 first categories of features described above, a feature comes with one or more specifications that covers it. The process to add a feature to a roadmap or add a specification to an existing feature is as follows:
 * a feature is defined in an encompassing HTML element (typically `<p>` or `<div>`) by adding a `data-feature` attribute to it with the name of the feature as its value. For instance, `<p data-feature='Video capture'></p>` will serve as the container for the prose describing the said feature and the specs that cover it
-* each spec that provides the hook for the said feature needs to be listed in that container element with a `<a>` tag containing a `data-featureid` attribute, whose value is a shortname for the specification that refers to the JSON file described below, possibly completed with a `/` and the name of the feature of interest within that specification. For instance, adding `<a data-featureid='getusermedia'>the Media Capture and Streams API</a>` to the paragraph above indicates that the specification described by the `getusermedia.json` file provides a way to implement the "video capture" feature
+* each spec that provides the hook for the said feature needs to be listed in that container element with a `<a>` tag containing a `data-featureid` attribute, whose value is a shortname for the specification that refers to the JSON file described below, possibly completed with a `/` and the name of the feature of interest within that specification. For instance, adding `<a data-featureid='getusermedia'>the Media Capture and Streams API</a>` to the paragraph above indicates that the specification described by the `getusermedia.json` file provides a way to implement the "video capture" feature. A `data-linkto` attribute may be added and set to `ED` to tell the framework to link to the Editor's Draft (instead of to the latest published version on /TR/).
 * the [data](data/) directory contains a JSON file that describes the various specifications that provides the hooks relevant to the various features; that JSON file follows a [format described below](#json-format-for-describing-specifications).
 
 ## JSON format for describing specifications
@@ -249,6 +249,7 @@ The following settings may be added to the `toc.json` file to generate the appro
 * `publishedVersion`: The URL of the latest published version. Generates a "Latest Published Version" link.
 * `previousVersion`: The URL of the previous published version. Generates a "Previous Version" link.
 * `publishDate`: The date of the publication, following a `YYYY-MM` format. Generates a subheading under the page's title with the date.
+* `linkto`: By default, specs referenced in the prose link to the latest published version of the spec in /TR/. Set this property to `ED` to force all links in the prose to target the Editor's Draft version instead. Note this setting does not affect summary tables. Use [custom summary tables](#customizing-summary-tables) to change that setting in each table as needed.
 * `tables`: Custom summary tables, see [Customizing summary tables](#customizing-summary-tables))
 
 The above settings may also be passed to the page as query string parameters, which can be useful to generate specific snapshots (in particular to pass the `publishDate` parameter). For instance, supposing the page can be served over a local HTTP server running at port 8080, you could use the following to view a "complete" Document Metadata section:
@@ -340,7 +341,7 @@ That object must contain a `type` property that identifies the type of column. I
 The framework recognizes the following column types:
 
 - `feature` - Feature: Renders the name of the features that appear in `data-feature` attributes. A feature cell may span multiple rows.
-- `spec` - Specification / Group: Renders the spec title and the name of the group that develops it.
+- `spec` - Specification / Group: Renders the spec title and the name of the group that develops it. The `linkto` property may be set to `ED` to force links in the column to target the Editor's Draft versions of the specs, instead of the specs in /TR/.
 - `maturity` - Maturity: Renders the maturity status of a spec as an icon. The list of icons is e.g. described in the [About page of the mobile roadmap](https://w3c.github.io/web-roadmaps/mobile/about.html#maturity-levels).
 - `impl` - Implementation status: Renders the implementation status of the specification in main browsers. The icons and info that get represented are e.g. described in the [About page of the mobile rodmap](https://w3c.github.io/web-roadmaps/mobile/about.html#implementation)
 - `milestones` - Milestones: Renders planned publication milestones for the specification. The information is extracted from the [Milestone tracker](https://github.com/w3c/spec-dashboard/#milestone-tracker) project, or from the specification's description. Beware though, as of June 2018, the tracker does not have nearly enough data for this column to be useful.
