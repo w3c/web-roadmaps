@@ -7639,7 +7639,11 @@
       },
       {
         "ua": "firefox",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Disabled by default behind the `network.preload` flag."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload",
         "selected": true
@@ -7681,9 +7685,10 @@
       },
       {
         "ua": "firefox_android",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "notes": [
-          "Only cachable resources can be preloaded. This includes the following `as` values: script, style, image, video, audio, track, fetch, and font (note font/collection is not supported)."
+          "Disabled by default behind the `network.preload` flag."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload",
