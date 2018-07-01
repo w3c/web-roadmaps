@@ -12,7 +12,8 @@
     "maturity": "成熟度",
     "impl": "现有实现",
     "impl-intents": "实现意向",
-    "seeAlso": "See also"
+    "seeAlso": "另见",
+    "milestones": "里程碑"
   },
   "browsers": {
     "chrome": "Chrome",
@@ -41,6 +42,7 @@
     "Feature requires using a prefix and is behind a flag.": "特性需要使用浏览器引擎前缀并需要开启实验性功能。",
     "Feature requires using a prefix.": "特性需要使用浏览器引擎前缀。",
     "Feature is behind a flag.": "特性需要开启浏览器实验性功能。",
+    "Support may be partial.": "特性支持可能不完整。",
     "Source: %source.": "来源：%source",
     "Select browsers…": "选择浏览器…",
     "%status in %ua (%versions).": "在 %ua（%versions）中%status。",
@@ -58,6 +60,17 @@
     "We are on GitHub": "我们在 GitHub 上",
     "File a bug": "建议与意见",
     "Commit history": "提交历史"
+  },
+  "maturity": {
+    "ED": "编辑草案",
+    "WD": "工作草案",
+    "LS": "持续更新标准",
+    "CR": "候选推荐标准",
+    "PR": "提案推荐标准",
+    "REC": "正式推荐标准",
+    "Retired": "退休",
+    "NOTE": "工作组备忘",
+    "REF": "Reference"
   },
   "features": {
     "2D effects": "2D 效果",
