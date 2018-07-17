@@ -1,9 +1,11 @@
 {
-  "TR": "https://www.w3.org/TR/ambient-light/",
+  "url": "https://www.w3.org/TR/ambient-light/",
   "impl": {
     "caniuse": "ambient-light",
     "edgestatus": "Ambient Light Sensor API",
+    "mdn": "api.ambientlightsensor",
     "chromestatus": 5298357018820608,
+    "edgestatus": "Ambient Light Sensor API",
     "other": [
       {
         "ua": "firefox",

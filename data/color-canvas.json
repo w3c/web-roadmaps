@@ -1,6 +1,8 @@
 {
+  "url": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
+  "title": "Color managing canvas contents",
   "wgs": [],
-  "impl": {},
-  "editors": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
-  "title": "Color managing canvas contents"
+  "impl": {
+    "chromestatus": 5701580166791168
+  }
 }

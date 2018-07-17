@@ -1,6 +1,6 @@
 {
+  "url": "https://fetch.spec.whatwg.org/",
   "title": "Fetch",
-  "ls": "https://fetch.spec.whatwg.org/",
   "wgs": [
     {
       "label": "WHATWG",
@@ -10,6 +10,7 @@
   "impl": {
     "caniuse": "fetch",
     "chromestatus": 6730533392351232,
+    "edgestatus": "Fetch API",
     "webkitstatus": "specification-fetch"
   }
 }

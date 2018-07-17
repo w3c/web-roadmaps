@@ -1,8 +1,9 @@
 {
-  "editors": "https://wicg.github.io/web-share/",
+  "url": "https://wicg.github.io/web-share/",
   "impl": {
     "caniuse": "web-share",
     "chromestatus": 5668769141620736,
+    "edgestatus": "Web Share API",
     "webkitstatus": "feature-web-share"
   }
 }

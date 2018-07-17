@@ -1,7 +1,18 @@
 {
-  "TR": "https://www.w3.org/TR/CSP2/",
+  "url": "https://www.w3.org/TR/CSP2/",
   "impl": {
     "caniuse": "contentsecuritypolicy2",
-    "chromestatus": 4957003285790720
+    "chromestatus": 4957003285790720,
+    "edgestatus": "Content Security Policy Level 2",
+    "webkitstatus": "specification-content-security-policy-level-2"
+  },
+  "features": {
+    "securityPolicyViolation": {
+      "title": "SecurityPolicyViolation event",
+      "url": "#securitypolicyviolationevent-interface",
+      "impl": {
+        "mdn": "api.SecurityPolicyViolationEvent"
+      }
+    }
   }
 }

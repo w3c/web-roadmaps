@@ -1,7 +1,10 @@
 {
-  "TR": "https://www.w3.org/TR/requestidlecallback/",
+  "url": "https://www.w3.org/TR/requestidlecallback/",
   "impl": {
     "caniuse": "requestidlecallback",
-    "chromestatus": 5572795866021888
+    "chromestatus": 5572795866021888,
+    "edgestatus": "requestIdleCallback",
+    "mdn": "api.Window.requestIdleCallback",
+    "webkitstatus": "feature-requestidlecallback"
   }
 }

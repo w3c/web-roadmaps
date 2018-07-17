@@ -1,6 +1,9 @@
 {
-  "TR": "https://www.w3.org/TR/hr-time",
+  "url": "https://www.w3.org/TR/hr-time",
   "impl": {
-    "caniuse": "high-resolution-time"
+    "caniuse": "high-resolution-time",
+    "chromestatus": 5349124069130240,
+    "edgestatus": "High Resolution Time",
+    "mdn": "api.Performance"
   }
 }

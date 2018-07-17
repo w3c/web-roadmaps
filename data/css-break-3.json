@@ -1,6 +1,27 @@
 {
-  "TR": "https://www.w3.org/TR/css-break-3/",
-  "impl": {
-    "caniuse": "css-page-break"
+  "url": "https://www.w3.org/TR/css-break-3/",
+  "features": {
+    "box-decoration-break": {
+      "title": "box-decoration-break property",
+      "url": "#break-decoration",
+      "impl": {
+        "caniuse": "css-boxdecorationbreak"
+      }
+    },
+    "page-break": {
+      "title": "Page break properties",
+      "url": "#break-between",
+      "impl": {
+        "caniuse": "css-page-break",
+        "chromestatus": 5630943616303104
+      }
+    },
+    "widows-orphans": {
+      "title": "Widows and orphans",
+      "url": "#widows-orphans",
+      "impl": {
+        "caniuse": "css-widows-orphans"
+      }
+    }
   }
 }

@@ -1,7 +1,8 @@
 {
-  "TR": "https://www.w3.org/TR/page-visibility/",
+  "url": "https://www.w3.org/TR/page-visibility/",
   "impl": {
     "caniuse": "pagevisibility",
-    "chromestatus": 5689697795833856
+    "chromestatus": 5689697795833856,
+    "edgestatus": "Page Visibility API"
   }
 }

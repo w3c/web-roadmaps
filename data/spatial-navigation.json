@@ -1,10 +1,10 @@
 {
+  "url": "https://github.com/WICG/spatial-navigation",
+  "title": "Spatial Navigation",
   "wgs": [
     {
       "url": "https://www.w3.org/community/wicg/",
       "label": "Web Platform Incubator Community Group"
     }
-  ],
-  "title": "Spatial Navigation",
-  "editors": "https://github.com/WICG/spatial-navigation"
+  ]
 }

@@ -1,6 +1,8 @@
 {
-  "TR": "https://www.w3.org/TR/notifications/",
+  "url": "https://www.w3.org/TR/notifications/",
   "impl": {
-    "caniuse": "notifications"
+    "caniuse": "notifications",
+    "chromestatus": 5064350557536256,
+    "edgestatus": "Web Notifications"
   }
 }

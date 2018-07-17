@@ -1,10 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/encrypted-media/",
   "impl": {
-    "caniuse": null,
+    "caniuse": "eme",
     "chromestatus": 6578378068983808,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
-  "TR": "https://www.w3.org/TR/encrypted-media/"
+    "edgestatus": "Encrypted Media Extensions"
+  }
 }

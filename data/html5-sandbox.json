@@ -1,7 +1,10 @@
 {
-  "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-iframe-sandbox",
+  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-iframe-sandbox",
   "feature": "sandbox iframe attribute",
   "impl": {
-    "caniuse": "iframe-sandbox"
+    "caniuse": "iframe-sandbox",
+    "chromestatus": 5715536319086592,
+    "edgestatus": "iframe[sandbox] attribute",
+    "mdn": "api.HTMLIFrameElement.sandbox"
   }
 }

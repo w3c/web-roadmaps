@@ -1,0 +1,31 @@
+{
+  "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+  "title": "Web Speech API",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/speech-api/",
+      "label": "Speech API Community Group"
+    }
+  ],
+  "features": {
+    "recognition": {
+      "title": "Speech recognition",
+      "url": "#speechreco-section",
+      "impl": {
+        "caniuse": "speech-recognition",
+        "chromestatus": 5908775487668224,
+        "edgestatus": "Web Speech API (Speech Recognition)"
+      }
+    },
+    "synthesis": {
+      "title": "Speech synthesis",
+      "url": "#tts-section",
+      "impl": {
+        "caniuse": "speech-synthesis",
+        "chromestatus": 4782875580825600,
+        "edgestatus": "Web Speech API (synthesis)"
+      }
+    }
+  },
+  "featuresCoverage": "full"
+}

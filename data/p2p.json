@@ -1,10 +1,18 @@
 {
+  "url": "https://www.w3.org/TR/webrtc/",
   "impl": {
     "caniuse": "rtcpeerconnection",
     "chromestatus": 6612462929444864,
-    "mozstatus": null,
-    "edgestatus": null,
+    "edgestatus": "WebRTC – WebRTC v1.0 API",
     "webkitstatus": "specification-webrtc"
   },
-  "TR": "https://www.w3.org/TR/webrtc/"
+  "features": {
+    "rtcdatachannel": {
+      "title": "RTC data channels",
+      "url": "#peer-to-peer-data-api",
+      "impl": {
+        "edgestatus": "RTC Data Channels"
+      }
+    }
+  }
 }

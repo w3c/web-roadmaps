@@ -1,6 +1,7 @@
 {
-  "TR": "https://www.w3.org/TR/paint-timing/",
+  "url": "https://www.w3.org/TR/paint-timing/",
   "impl": {
-    "chromestatus": 5688621814251520
+    "chromestatus": 5688621814251520,
+    "mdn": "api.PerformancePaintTiming"
   }
 }

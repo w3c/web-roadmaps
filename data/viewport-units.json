@@ -1,7 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
+  "feature": "viewport-percentage lengths",
   "impl": {
-    "caniuse": "viewport-units"
-  },
-  "TR": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
-  "feature": "viewport-percentage lengths"
+    "caniuse": "viewport-units",
+    "edgestatus": "CSS vmax unit"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "editors": "https://kenchris.github.io/barometer/",
+  "url": "https://kenchris.github.io/barometer/",
   "title": "Ambient Atmospheric Pressure (Barometric) Sensor",
   "wgs": [
     {

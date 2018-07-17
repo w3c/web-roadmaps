@@ -1,6 +1,9 @@
 {
-  "TR": "https://www.w3.org/TR/preload/",
+  "url": "https://www.w3.org/TR/preload/",
   "impl": {
-    "caniuse": "link-rel-preload"
+    "caniuse": "link-rel-preload",
+    "chromestatus": 5757468554559488,
+    "edgestatus": "Preload",
+    "webkitstatus": "specification-preload"
   }
 }

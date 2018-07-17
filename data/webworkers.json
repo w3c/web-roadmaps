@@ -1,8 +1,8 @@
 {
+  "url": "https://html.spec.whatwg.org/multipage/workers.html",
   "title": "HTML (Living Standard)",
-  "ls": "https://html.spec.whatwg.org/multipage/workers.html",
+  "feature": "Web workers",
   "impl": {
     "caniuse": "webworkers"
-  },
-  "feature": "Web workers"
+  }
 }

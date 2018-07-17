@@ -1,6 +1,10 @@
 {
-  "TR": "https://www.w3.org/TR/battery-status",
+  "url": "https://www.w3.org/TR/battery-status",
   "impl": {
-    "caniuse": "battery-status"
+    "caniuse": "battery-status",
+    "chromestatus": 4537134732017664,
+    "edgestatus": "Battery Status API",
+    "mdn": "api.BatteryManager",
+    "webkitstatus": "specification-battery-status-api"
   }
 }

@@ -1,6 +1,8 @@
 {
-  "editors": "https://wicg.github.io/picture-in-picture/",
+  "url": "https://wicg.github.io/picture-in-picture/",
   "impl": {
+    "chromestatus": 5729206566649856,
+    "edgestatus": "Picture-in-Picture",
     "mdn": "api.PictureInPicture"
   }
 }

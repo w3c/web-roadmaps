@@ -1,7 +1,9 @@
 {
-    "TR": "https://www.w3.org/TR/orientation-event/",
+    "url": "https://www.w3.org/TR/orientation-event/",
     "impl": {
         "caniuse": "deviceorientation",
+        "chromestatus": 5874690627207168,
+        "edgestatus": "Device Orientation",
         "webkitstatus": "specification-deviceorientation-events"
     }
 }

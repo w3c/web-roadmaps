@@ -1,7 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
+  "feature": "audio element",
   "impl": {
-    "caniuse": "audio"
-  },
-  "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
-  "feature": "audio element"
+    "caniuse": "audio",
+    "mdn": "api.HTMLAudioElement"
+  }
 }

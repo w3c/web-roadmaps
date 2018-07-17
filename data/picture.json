@@ -1,9 +1,11 @@
 {
+  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-picture-element",
+  "feature": "picture element",
   "impl": {
     "caniuse": "picture",
     "chromestatus": 5910974510923776,
+    "edgestatus": "<picture> Element",
+    "mdn": "html.elements.picture",
     "webkitstatus": "feature-picture-element"
-  },
-  "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-picture-element",
-  "feature": "picture element"
+  }
 }

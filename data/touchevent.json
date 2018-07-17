@@ -1,7 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/touch-events/",
   "impl": {
     "caniuse": "touch",
-    "chromestatus": 6156165603917824
-  },
-  "TR": "https://www.w3.org/TR/touch-events/"
+    "chromestatus": 6156165603917824,
+    "edgestatus": "Touch Events"
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "url": "https://w3c.github.io/mediacapture-worker/",
+  "title": "Media Capture Stream with Worker",
   "wgs": [
     {
       "url": "https://www.w3.org/das/",
@@ -8,14 +10,5 @@
       "url": "https://www.w3.org/2011/04/webrtc/",
       "label": "Web Real-Time Communications Working Group"
     }
-  ],
-  "impl": {
-    "caniuse": null,
-    "chromestatus": null,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
-  "editors": "https://w3c.github.io/mediacapture-worker/",
-  "title": "Media Capture Stream with Worker"
+  ]
 }

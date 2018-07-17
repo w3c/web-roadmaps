@@ -58,7 +58,7 @@ Depending on the advancement of the underlying specification, the JSON object ca
 * `url`: should point to the URL of the latest version of the specification. This URL will be used to collect additional data about the spec (standardization status, Working Groups that produce it, editors draft, etc) and as target of links that reference the feature. URL may contain a fragment to point to a specific section in a specification. If the `url` property is not specified, the framework assumes that the underlying specification is a W3C specification,  that the filename is its short name, and that the URL of the spec is `https://www.w3.org/TR/[filename]/`.
 * `impl`: for specifications for which browser implementations are expected, the `impl` property explains where to look for implementation info. Described below in [Describing implementation status](#describing-implementation-status).
 * `polyfills`: for specifications for which there are polyfills available that would be worth reporting, the `polyfills` property lists these polyfills. It should be an array of objects that have a `url` property that links to the polyfill's home page on the Web, and a `label` property with the name of polyfill.
-* `features`: in case the reference to the specification would benefit from being more specific than the specification as a whole, and/or in case available implementation information is more fine-grained than the spec level, the `features` property makes it possible to list features in the spec. It must be an array of objects, each object describing a feature through the following properties:
+* `features`: in case the reference to the specification would benefit from being more specific than the specification as a whole, and/or in case available implementation information is more fine-grained than the spec level, the `features` property makes it possible to list features in the spec. It must be an object whose keys are an internal feature ID, and whose values are an object describing the feature with the following properties:
   * `title`: a label for the feature. Property is mandatory.
   * `url`: a URL to the feature in the spec. Fragments such as `#my-feature` are allowed. Property is optional.
   * `impl`: where to look for implementation info. Described below in [Describing implementation status](#describing-implementation-status).
@@ -83,7 +83,7 @@ Here is an example of a JSON file that describes the "Intersection Observer" spe
     "chromestatus": 5695342691483648,
     "webkitstatus": "specification-intersection-observer",
     "edgestatus": "Intersection Observer",
-    "mdn": "api/IntersectionObserver"
+    "mdn": "api.IntersectionObserver"
   },
   "polyfills": [
     {

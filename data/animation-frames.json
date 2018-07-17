@@ -1,9 +1,10 @@
 {
-  "TR": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
+  "url": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
   "impl": {
     "caniuse": "requestanimationframe",
     "chromestatus": 5233400470306816,
-    "edgestatus": "requestAnimationFrame()"
+    "edgestatus": "requestAnimationFrame()",
+    "mdn": "api.Window.requestAnimationFrame"
   },
   "feature": "requestAnimationFrame"
 }

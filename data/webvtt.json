@@ -1,6 +1,6 @@
 {
+  "url": "https://www.w3.org/TR/webvtt1/",
   "impl": {
     "caniuse": "webvtt"
-  },
-  "TR": "https://www.w3.org/TR/webvtt1/"
+  }
 }

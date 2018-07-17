@@ -1,4 +1,6 @@
 {
+  "url": "https://w3c.github.io/webvr/",
+  "title": "WebVR",
   "wgs": [
     {
       "label": "Immersive Web Community Group",
@@ -10,7 +12,5 @@
     "chromestatus": 4532810371039232,
     "edgestatus": "WebVR",
     "webkitstatus": "specification-webvr"
-  },
-  "title": "WebVR",
-  "editors": "https://w3c.github.io/webvr/"
+  }
 }

@@ -1,7 +1,7 @@
 {
+  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
+  "feature": "video element",
   "impl": {
     "caniuse": "video"
-  },
-  "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
-  "feature": "video element"
+  }
 }

@@ -1,12 +1,43 @@
 {
-  "editors": "https://drafts.csswg.org/css-color/#icc-colors",
+  "url": "https://www.w3.org/TR/css-color-4/",
   "wgs": [
     {
       "url": "http://www.w3.org/Style/CSS/members",
       "label": "CSS Working Group"
     }
   ],
-  "impl": {},
+  "impl": {
+    "webkitstatus": "specification-css-color-level-4"
+  },
   "title": "CSS Color Module Level 4",
-  "feature": "profiled device-dependent colors"
+  "features": {
+    "icc-colors": {
+      "title": "profiled device-dependent colors",
+      "url": "#icc-colors"
+    },
+    "hsla": {
+      "title": "hsl/hsla syntax",
+      "url": "#the-hsl-notation",
+      "impl": {
+        "chromestatus": 5656221012983808,
+        "mdn": "css.properties.color.alpha"
+      }
+    },
+    "rgba": {
+      "title": "rgb/rgba syntax",
+      "url": "#rgb-functions",
+      "impl": {
+        "chromestatus": 5124205561511936,
+        "mdn": "css.properties.color.alpha"
+      }
+    },
+    "rgba-hex": {
+      "title": "RGBA hexadecimal notation",
+      "url": "#hex-notation",
+      "impl": {
+        "chromestatus": 5685348285808640,
+        "mdn": "css.properties.color.alpha_hexadecimal_notation"
+      }
+    }
+  }
 }

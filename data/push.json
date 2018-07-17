@@ -1,7 +1,8 @@
 {
-    "TR": "https://www.w3.org/TR/push-api/",
-    "impl": {
-        "caniuse": "push-api",
-        "chromestatus": 5416033485586432
-    }
+  "url": "https://www.w3.org/TR/push-api/",
+  "impl": {
+    "caniuse": "push-api",
+    "chromestatus": 5416033485586432,
+    "edgestatus": "Push API"
+  }
 }

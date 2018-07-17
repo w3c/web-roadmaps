@@ -1,3 +1,15 @@
 {
-  "TR": "https://www.w3.org/TR/css-rhythm-1/"
+  "url": "https://www.w3.org/TR/css-rhythm-1/",
+  "impl": {
+    "webkitstatus": "specification-css-rhythmic-sizing"
+  },
+  "features": {
+    "line-height-step": {
+      "title": "line-height-step property",
+      "url": "#line-height-step",
+      "impl": {
+        "chromestatus": 5734273533345792
+      }
+    }
+  }
 }
