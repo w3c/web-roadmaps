@@ -1,5 +1,5 @@
 {
-  "editors": "https://immersive-web.github.io/webxr/spec/latest/",
+  "url": "https://immersive-web.github.io/webxr/",
   "title": "WebXR Device API",
   "wgs": [
     {
@@ -8,11 +8,7 @@
     }
   ],
   "impl": {
-    "caniuse": null,
-    "chromestatus": 5680169905815552,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
+    "chromestatus": 5680169905815552
   },
   "polyfills": [
     {

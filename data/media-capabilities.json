@@ -1,10 +1,19 @@
 {
-  "impl": {
-    "caniuse": null,
-    "chromestatus": null,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
-  "editors": "https://wicg.github.io/media-capabilities/"
+  "url": "https://wicg.github.io/media-capabilities/",
+  "features": {
+    "encoding": {
+      "title": "Encoding capabilities",
+      "url": "#decoding-encoding-capabilities",
+      "impl": {
+        "chromestatus": 5123719190020096
+      }
+    },
+    "decoding": {
+      "title": "Decoding capabilities",
+      "url": "#decoding-encoding-capabilities",
+      "impl": {
+        "chromestatus": 5869632707624960
+      }
+    }
+  }
 }

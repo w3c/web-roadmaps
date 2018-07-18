@@ -1,6 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/screen-orientation/",
   "impl": {
-    "caniuse": "screen-orientation"
-  },
-  "TR": "https://www.w3.org/TR/screen-orientation/"
+    "caniuse": "screen-orientation",
+    "chromestatus": 6191285283061760,
+    "edgestatus": "Screen Orientation API"
+  }
 }

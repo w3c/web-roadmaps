@@ -1,7 +1,9 @@
 {
-  "TR": "https://www.w3.org/TR/webstorage/",
+  "url": "https://www.w3.org/TR/webstorage/",
   "impl": {
     "caniuse": "namevalue-storage",
-    "chromestatus": 5345825534246912
+    "chromestatus": 5345825534246912,
+    "edgestatus": "Web Storage",
+    "mdn": "api.Storage"
   }
 }

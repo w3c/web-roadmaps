@@ -34,7 +34,7 @@
           <p>在移动设备上进行内容适配的常用方法是让服务器提供适合用户设备的内容。这种方法避免了向客户端发送客户端不需要的内容，节约了网络带宽，避免了在客户端上运行适配逻辑，保留了CPU和内存。<strong>服务器端适配</strong>用于依赖<em>嗅探</em> <code>User-Agent</code> 字符串并将其映射到设备数据库以适配相关功能。这种机制很容易出错，需要对设备数据库进行持续维护。通过由IETF HTTP工作组开发的<a href="http://httpwg.org/http-extensions/client-hints.html">HTTP客户端提示</a>机制，客户端和服务器现在可以选择交换相关功能以实现高效的内容自适应。<a href="https://www.w3.org/webperf/">Web性能工作组</a>已经开始使用<a data-featureid="device-memory">设备内存</a>规范来扩展这些提示，以表示设备上可用的内存。该规范还定义了一个API来将该信息显示给运行在客户端上的Web应用。</p>
         </div>
 
-        <p data-feature="媒体捕获功能"><a data-featureid="getusermedia-cap">媒体捕捉与媒体流</a> API 开放了一些有关摄像头和麦克风功能的信息，以便利用手机上提供的各种媒体捕获设备。</p>
+        <p data-feature="媒体捕获功能"><a data-featureid="getusermedia/capabilities">媒体捕捉与媒体流</a> API 开放了一些有关摄像头和麦克风功能的信息，以便利用手机上提供的各种媒体捕获设备。</p>
       </section>
 
       <section class="featureset exploratory-work">

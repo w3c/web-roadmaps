@@ -1,3 +1,6 @@
 {
-  "editors": "https://wicg.github.io/InputDeviceCapabilities/"
+  "url": "https://wicg.github.io/InputDeviceCapabilities/",
+  "impl": {
+    "chromestatus": 5681847971348480
+  }
 }

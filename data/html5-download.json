@@ -1,9 +1,11 @@
 {
+  "url": "https://www.w3.org/TR/html52/links.html#downloading-resources",
+  "feature" : "download attribute",
   "impl": {
     "caniuse": "download",
     "chromestatus": 6473924464345088,
+    "edgestatus": "a[download] attribute",
+    "mdn": "api.HTMLAnchorElement.download",
     "webkitstatus": "feature-download-attribute"
-  },
-  "TR": "https://www.w3.org/TR/html52/links.html#downloading-resources",
-  "feature" : "download attribute"
+  }
 }

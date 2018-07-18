@@ -1,6 +1,9 @@
 {
-  "TR": "https://www.w3.org/TR/navigation-timing/",
+  "url": "https://www.w3.org/TR/navigation-timing/",
   "impl": {
-    "caniuse": "nav-timing"
+    "caniuse": "nav-timing",
+    "chromestatus": 5584144679567360,
+    "edgestatus": "Navigation Timing API",
+    "webkitstatus": "specification-navigation-timing-level-1"
   }
 }

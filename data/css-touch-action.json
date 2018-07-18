@@ -1,7 +1,10 @@
 {
+  "url": "https://www.w3.org/TR/pointerevents2/",
+  "feature": "touch-action",
   "impl": {
-    "caniuse": "css-touch-action"
-  },
-  "TR": "https://www.w3.org/TR/pointerevents2/",
-  "feature": "touch-action"
+    "caniuse": "css-touch-action",
+    "chromestatus": 5912074022551552,
+    "edgestatus": "CSS touch-action",
+    "mdn": "css.properties.touch-action"
+  }
 }

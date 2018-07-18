@@ -1,5 +1,16 @@
 {
-  "impl": {},
-  "TR": "https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute",
-  "feature": "autocomplete attribute"
+  "url": "https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute",
+  "feature": "autocomplete attribute",
+  "impl": {
+    "chromestatus": 5680387573415936
+  },
+  "features": {
+    "on-off": {
+      "title": "On and Off values",
+      "url": "#autofilling-form-controls-the-autocomplete-attribute",
+      "impl": {
+        "caniuse": "input-autocomplete-onoff"
+      }
+    }
+  }
 }

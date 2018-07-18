@@ -1,5 +1,5 @@
 {
-  "editors": "https://webassembly.github.io/spec/",
+  "url": "https://webassembly.github.io/spec/",
   "title": "WebAssembly",
   "wgs": [
     {

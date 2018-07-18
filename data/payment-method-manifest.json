@@ -1,5 +1,5 @@
 {
-  "TR": "https://www.w3.org/TR/payment-method-manifest/",
+  "url": "https://www.w3.org/TR/payment-method-manifest/",
   "impl": {
     "chromestatus": 5716168929181696
   }

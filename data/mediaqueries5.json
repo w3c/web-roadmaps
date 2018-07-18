@@ -1,10 +1,19 @@
 {
+  "url": "https://drafts.csswg.org/mediaqueries-5/",
   "title": "Media Queries Level 5",
-  "editors": "https://drafts.csswg.org/mediaqueries-5/",
   "wgs": [
     {
       "label": "CSS Working Group",
       "url": "https://www.w3.org/Style/CSS/members"
     }
-  ]
+  ],
+  "features": {
+    "prefers-reduced-motion": {
+      "title": "prefers-reduced-motion feature",
+      "url": "#prefers-reduced-motion",
+      "impl": {
+        "edgestatus": "Media Queries: prefers-reduced-motion"
+      }
+    }
+  }
 }

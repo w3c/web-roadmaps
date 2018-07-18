@@ -1,9 +1,10 @@
 {
-    "impl": {
-        "chromestatus": 5745543795965952,
-        "caniuse": "passive-event-listener",
-        "edgestatus": "Passive Event Listeners"
-    },
-    "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
-    "feature": "Passive event listeners"
+  "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
+  "feature": "Passive event listeners",
+  "impl": {
+    "chromestatus": 5745543795965952,
+    "caniuse": "passive-event-listener",
+    "edgestatus": "Passive Event Listeners",
+    "mdn": "api.EventTarget.passive"
+  }
 }

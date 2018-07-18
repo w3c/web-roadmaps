@@ -1,7 +1,7 @@
 {
-  "TR": "https://www.w3.org/TR/html52/browsers.html#browser-state",
+  "url": "https://www.w3.org/TR/html52/browsers.html#browser-state",
+  "feature": "onLine DOM flag",
   "impl": {
     "caniuse": "online-status"
-  },
-  "feature": "onLine DOM flag"
+  }
 }

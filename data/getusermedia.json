@@ -1,10 +1,18 @@
 {
+  "url": "https://www.w3.org/TR/mediacapture-streams/",
   "impl": {
     "caniuse": "stream",
     "chromestatus": 5755699816562688,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
+    "edgestatus": "Media Capture and Streams",
+    "webkitstatus": "specification-media-capture-and-streams"
   },
-  "TR": "https://www.w3.org/TR/mediacapture-streams/"
+  "features": {
+    "capabilities": {
+      "title": "Source capabilities",
+      "impl": {
+        "chromestatus": 5145556682801152,
+        "mdn": "api.MediaStreamTrack.getCapabilities"
+      }
+    }
+  }
 }

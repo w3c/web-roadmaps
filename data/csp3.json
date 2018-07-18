@@ -1,3 +1,51 @@
 {
-  "TR": "https://www.w3.org/TR/CSP3/"
+  "url": "https://www.w3.org/TR/CSP3/",
+  "impl": {
+    "webkitstatus": "specification-content-security-policy-level-3"
+  },
+  "features": {
+    "report-to": {
+      "title": "report-to directive",
+      "url": "#directive-report-to",
+      "impl": {
+        "chromestatus": 5826576096690176
+      }
+    },
+    "manifest-src": {
+      "title": "manifest-src directive",
+      "url": "#directive-manifest-src",
+      "impl": {
+        "chromestatus": 5679927315660800
+      }
+    },
+    "navigate-to": {
+      "title": "navigate-to directive",
+      "url": "#directive-navigate-to",
+      "impl": {
+        "chromestatus": 6457580339593216
+      }
+    },
+    "strict-dynamic": {
+      "title": "strict-dynamic source expression",
+      "url": "#strict-dynamic-usage",
+      "impl": {
+        "chromestatus": 5633814718054400,
+        "edgestatus": "CSP Level 3 strict-dynamic source expression"
+      }
+    },
+    "unsafe-hashed-attributes": {
+      "title": "unsafe-hashed-attributes source expression",
+      "url": "#unsafe-hashed-attributes-usage",
+      "impl": {
+        "chromestatus": 5867082285580288
+      }
+    },
+    "worker-src": {
+      "title": "worker-src directive",
+      "url": "#worker-src",
+      "impl": {
+        "chromestatus": 5922594955984896
+      }
+    }
+  }
 }

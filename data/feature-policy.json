@@ -1,6 +1,7 @@
 {
-    "editors": "https://wicg.github.io/feature-policy/",
-    "impl": {
-        "chromestatus": 5694225681219584
-    }
+  "url": "https://wicg.github.io/feature-policy/",
+  "impl": {
+    "caniuse": "feature-policy",
+    "chromestatus": 5694225681219584
+  }
 }

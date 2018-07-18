@@ -1,7 +1,8 @@
 {
+  "url": "https://www.w3.org/TR/pointerevents2/",
   "impl": {
     "caniuse": "pointer",
-    "chromestatus": 4504699138998272
-  },
-  "TR": "https://www.w3.org/TR/pointerevents2/"
+    "chromestatus": 4504699138998272,
+    "edgestatus": "Pointer Events"
+  }
 }

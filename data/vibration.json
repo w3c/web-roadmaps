@@ -1,6 +1,9 @@
 {
+  "url": "https://www.w3.org/TR/vibration/",
   "impl": {
-    "caniuse": "vibration"
-  },
-  "TR": "https://www.w3.org/TR/vibration/"
+    "caniuse": "vibration",
+    "chromestatus": 5698768766763008,
+    "edgestatus": "Vibration API",
+    "webkitstatus": "feature-vibration-api"
+  }
 }

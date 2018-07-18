@@ -2,9 +2,25 @@
   "impl": {
     "caniuse": null,
     "chromestatus": 4621603249848320,
-    "mozstatus": null,
-    "edgestatus": null,
+    "edgestatus": "Audio Output Devices API",
     "webkitstatus": null
   },
-  "TR": "https://www.w3.org/TR/audio-output/"
+  "url": "https://www.w3.org/TR/audio-output/",
+  "features": {
+    "sinkId": {
+      "title": "ID of the audio device",
+      "url": "#dom-htmlmediaelement-sinkid",
+      "impl" : {
+        "mdn": "api.HTMLMediaElement.sinkId"
+      }
+    },
+    "setSinkId": {
+      "title": "Method to set the ID of the audio device",
+      "url": "#dom-htmlmediaelement-setsinkid",
+      "impl" : {
+        "mdn": "api.HTMLMediaElement.setSinkId"
+      }
+    }
+  },
+  "featuresCoverage": "full"
 }

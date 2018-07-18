@@ -1,3 +1,6 @@
 {
-  "TR": "https://www.w3.org/TR/css-content-3/"
+  "url": "https://www.w3.org/TR/css-content-3/",
+  "impl": {
+    "mdn": "css.properties.content"
+  }
 }

@@ -1,10 +1,6 @@
 {
+  "url": "https://www.w3.org/TR/image-capture/",
   "impl": {
-    "caniuse": null,
-    "chromestatus": 4843864737185792,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
-  "TR": "https://www.w3.org/TR/image-capture/"
+    "chromestatus": 4843864737185792
+  }
 }

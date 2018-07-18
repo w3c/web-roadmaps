@@ -1,4 +1,6 @@
 {
-  "editors": "https://wicg.github.io/shape-detection-api",
-  "impl": {}
+  "url": "https://wicg.github.io/shape-detection-api",
+  "impl": {
+    "chromestatus": 4757990523535360
+  }
 }

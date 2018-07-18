@@ -1,7 +1,21 @@
 {
+  "url": "https://w3c.github.io/device-memory/",
   "title": "Device Memory 1",
-  "editors": "https://w3c.github.io/device-memory/",
-  "impl": {
-    "chromestatus": 5119701235531776
-  }
+  "features": {
+    "header": {
+      "title": "Header field",
+      "url": "#sec-device-memory-client-hint-header",
+      "impl": {
+        "chromestatus": 5741299856572416
+      }
+    },
+    "jsapi": {
+      "title": "JS API",
+      "url": "#sec-device-memory-js-api",
+      "impl": {
+        "chromestatus": 5119701235531776
+      }
+    }
+  },
+  "featuresCoverage": "full"
 }

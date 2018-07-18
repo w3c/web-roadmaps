@@ -206,6 +206,8 @@ let sources = {
             break;
           case 'No public signals':
           case 'Mixed public signals':
+          case 'No active development':
+          case 'No longer pursuing':
           case 'Public skepticism':
           case 'Opposed':
             res.status = '';
@@ -377,8 +379,12 @@ let sources = {
           case 'Under Consideration':
             res.status = 'consideration';
             break;
+          case 'Removed':
+          case 'Not Considering':
+            res.status = '';
+            break;
           default:
-            console.warn(`- Unknown status ${webkitstatus}`);
+            console.warn(`- Unknown webkit status ${webkitstatus}`);
         }
 
         if (('enabled_by_default' in impldata) &&
@@ -437,6 +443,9 @@ let sources = {
       for (let ua of uas) {
         let res = { ua };
         let releases = (bcd.browsers[ua] || {}).releases || {};
+        if ((ua === 'chrome_android') && !bcd.browsers[ua] && bcd.browsers['chrome']) {
+          releases = bcd.browsers['chrome'].releases || {};
+        }
 
         let support = impldata.support[ua];
         if (Array.isArray(support)) {
@@ -500,7 +509,7 @@ let sources = {
           res.flag = true;
         }
         else if (typeof support.version_added === 'string') {
-          let release = bcd.browsers[ua].releases[support.version_added];
+          let release = releases[support.version_added];
           if (!release) {
             // Nothing known about release version, consider it does not
             // exist yet.
@@ -524,7 +533,8 @@ let sources = {
           res.partial = true;
         }
         if (support.notes) {
-          res.notes = support.notes;
+          res.notes = (Array.isArray(support.notes) ?
+            support.notes : [support.notes]);
         }
 
         res.source = source;

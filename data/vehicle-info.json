@@ -1,6 +1,3 @@
 {
-    "TR": "https://www.w3.org/TR/vehicle-information-api",
-    "impl": {
-        "caniuse": ""
-    }
+  "url": "https://www.w3.org/TR/vehicle-information-api"
 }

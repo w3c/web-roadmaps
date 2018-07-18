@@ -1,7 +1,10 @@
 {
+  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
+  "feature": "srcset attribute",
   "impl": {
-    "chromestatus": 4644337115725824
-  },
-  "TR": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
-  "feature": "srcset attribute"
+    "caniuse": "srcset",
+    "chromestatus": 4644337115725824,
+    "edgestatus": "<img srcset>",
+    "webkitstatus": "feature-srcset-w-descriptor-and-related-sizes-attribute"
+  }
 }

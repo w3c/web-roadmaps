@@ -1,6 +1,9 @@
 {
+  "url": "https://www.w3.org/TR/css-scroll-snap-1/",
   "impl": {
-    "caniuse": "css-snappoints"
-  },
-  "TR": "https://www.w3.org/TR/css-scroll-snap-1/"
+    "caniuse": "css-snappoints",
+    "chromestatus": 5721832506261504,
+    "edgestatus": "CSS Scroll Snap Points",
+    "webkitstatus": "specification-css-scroll-snap-points-module-level-1"
+  }
 }

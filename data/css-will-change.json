@@ -1,8 +1,9 @@
 {
+  "url": "https://www.w3.org/TR/css-will-change-1/",
   "impl": {
     "caniuse": "will-change",
     "chromestatus": 5954199330226176,
+    "edgestatus": "CSS Will Change",
     "webkitstatus": "specification-css-will-change"
-  },
-  "TR": "https://www.w3.org/TR/css-will-change-1/"
+  }
 }

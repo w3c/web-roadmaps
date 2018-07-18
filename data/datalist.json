@@ -1,9 +1,10 @@
 {
+  "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
+  "feature": "datalist element",
   "impl": {
     "caniuse": "datalist",
     "chromestatus": 6090950820495360,
-    "edgestatus": "<datalist> Element"
-  },
-  "TR": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
-  "feature": "datalist element"
+    "edgestatus": "<datalist> Element",
+    "mdn": "html.elements.datalist"
+  }
 }

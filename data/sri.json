@@ -1,7 +1,9 @@
 {
-  "TR": "https://www.w3.org/TR/SRI/",
+  "url": "https://www.w3.org/TR/SRI/",
   "impl": {
     "caniuse": "subresource-integrity",
-    "chromestatus": 6183089948590080
+    "chromestatus": 6183089948590080,
+    "edgestatus": "Subresource Integrity",
+    "webkitstatus": "feature-subresource-integrity"
   }
 }

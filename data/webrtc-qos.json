@@ -1,6 +1,4 @@
 {
-    "TR": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
-    "impl": {
-    },
-    "feature": "Priority and QoS Model"
+  "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
+  "feature": "Priority and QoS Model"
 }

@@ -1,10 +1,9 @@
 {
+  "url": "https://www.w3.org/TR/mediacapture-fromelement/",
   "impl": {
-    "caniuse": null,
+    "caniuse": "mediacapture-fromelement",
     "chromestatus": 5522768674160640,
-    "mozstatus": null,
-    "edgestatus": null,
+    "edgestatus": "Media Capture from HTML Media Element",
     "webkitstatus": null
-  },
-  "TR": "https://www.w3.org/TR/mediacapture-fromelement/"
+  }
 }

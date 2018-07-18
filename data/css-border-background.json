@@ -1,5 +1,8 @@
 {
-  "TR": "https://www.w3.org/TR/css-backgrounds-3/",
+  "url": "https://www.w3.org/TR/css-backgrounds-3/",
   "feature": "Complex backgrounds",
-  "impl": {}
+  "impl": {
+    "caniuse": "multibackgrounds",
+    "mdn": "css.properties.background.multiple_backgrounds"
+  }
 }

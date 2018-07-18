@@ -1,7 +1,10 @@
 {
-  "TR": "https://www.w3.org/TR/WebCryptoAPI/",
+  "url": "https://www.w3.org/TR/WebCryptoAPI/",
   "impl": {
     "caniuse": "cryptography",
-    "chromestatus": 5030265697075200
+    "chromestatus": 5030265697075200,
+    "edgestatus": "Web Crypto API",
+    "mdn": "api.Window.crypto",
+    "webkitstatus": "specification-web-cryptography-api"
   }
 }

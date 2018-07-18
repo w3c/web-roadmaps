@@ -1,7 +1,9 @@
 {
-    "TR": "https://www.w3.org/TR/resource-timing-1/",
-    "impl": {
-        "caniuse": "resource-timing",
-        "chromestatus": 5796350423728128
-    }
+  "url": "https://www.w3.org/TR/resource-timing-1/",
+  "impl": {
+    "caniuse": "resource-timing",
+    "chromestatus": 5796350423728128,
+    "edgestatus": "Resource Timing API",
+    "webkitstatus": "specification-resource-timing-level-2"
+  }
 }

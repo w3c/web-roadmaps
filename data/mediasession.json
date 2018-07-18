@@ -1,10 +1,9 @@
 {
+  "url": "https://wicg.github.io/mediasession/",
   "impl": {
     "caniuse": null,
     "chromestatus": 5639924124483584,
-    "mozstatus": null,
-    "edgestatus": null,
-    "webkitstatus": null
-  },
-  "editors": "https://wicg.github.io/mediasession/"
+    "edgestatus": "Media Session",
+    "mdn": "api.MediaSession"
+  }
 }

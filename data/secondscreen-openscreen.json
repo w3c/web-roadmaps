@@ -1,10 +1,10 @@
 {
+  "url": "https://github.com/webscreens/openscreenprotocol",
+  "title": "Open Screen Protocol",
   "wgs": [
     {
       "url": "https://www.w3.org/community/webscreens/",
       "label": "Second Screen Community Group"
     }
-  ],
-  "title": "Open Screen Protocol",
-  "editors": "https://github.com/webscreens/openscreenprotocol"
+  ]
 }

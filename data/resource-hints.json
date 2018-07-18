@@ -1,7 +1,40 @@
 {
-    "TR": "https://www.w3.org/TR/resource-hints/",
-    "impl": {
+  "url": "https://www.w3.org/TR/resource-hints/",
+  "features": {
+    "dns-prefetch": {
+      "title": "DNS prefetch",
+      "url": "#dns-prefetch",
+      "impl": {
+        "caniuse": "link-rel-dns-prefetch",
+        "edgestatus": "DNS Prefetch Resource Hints"
+      }
+    },
+    "preconnect": {
+      "title": "Preconnect",
+      "url": "#preconnect",
+      "impl": {
         "caniuse": "link-rel-preconnect",
-        "chromestatus": 5560623895150592
+        "chromestatus": 5560623895150592,
+        "edgestatus": "Preconnect Resource Hints"
+      }
+    },
+    "prefetch": {
+      "title": "Prefetch",
+      "url": "#prefetch",
+      "impl": {
+        "caniuse": "link-rel-prefetch",
+        "chromestatus": 5383221353119744,
+        "edgestatus": "Prefetch Resource Hints"
+      }
+    },
+    "prerender": {
+      "title": "Prerender",
+      "url": "#prerender",
+      "impl": {
+        "caniuse": "link-rel-prerender",
+        "edgestatus": "Prerender Resource Hints"
+      }
     }
+  },
+  "featuresCoverage": "full"
 }
