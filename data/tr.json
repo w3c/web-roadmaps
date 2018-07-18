@@ -116,7 +116,29 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "background_color": {
+        "title": "background_color member",
+        "url": "#background_color-member"
+      },
+      "install": {
+        "title": "Installation events",
+        "url": "#installation-events"
+      },
+      "purpose": {
+        "title": "purpose member",
+        "url": "#purpose-member"
+      },
+      "related_applications": {
+        "title": "related_applications member",
+        "url": "#related_applications-member"
+      },
+      "theme_color": {
+        "title": "theme_color member",
+        "url": "#theme_color-member"
+      }
+    }
   },
   "atag20": {
     "url": "https://www.w3.org/TR/ATAG20/",
@@ -146,7 +168,17 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "sinkId": {
+        "title": "ID of the audio device",
+        "url": "#dom-htmlmediaelement-sinkid"
+      },
+      "setSinkId": {
+        "title": "Method to set the ID of the audio device",
+        "url": "#dom-htmlmediaelement-setsinkid"
+      }
+    }
   },
   "audio": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
@@ -180,11 +212,16 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {},
-    "feature": "autocomplete attribute"
+    "feature": "autocomplete attribute",
+    "features": {
+      "on-off": {
+        "title": "On and Off values",
+        "url": "#autofilling-form-controls-the-autocomplete-attribute"
+      }
+    }
   },
   "background-sync": {
     "url": "https://wicg.github.io/BackgroundSync/spec/",
-    "edDraft": "https://wicg.github.io/BackgroundSync/spec/",
     "repository": "https://github.com/wicg/BackgroundSync",
     "title": "Web Background Synchronization",
     "status": "LS",
@@ -199,7 +236,6 @@
   },
   "barometer": {
     "url": "https://kenchris.github.io/barometer/",
-    "edDraft": "https://kenchris.github.io/barometer/",
     "title": "Ambient Atmospheric Pressure (Barometric) Sensor",
     "status": "ED",
     "deliveredBy": [
@@ -277,7 +313,6 @@
   },
   "color-canvas": {
     "url": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
-    "edDraft": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
     "title": "Color managing canvas contents",
     "status": "ED",
     "deliveredBy": [],
@@ -363,7 +398,17 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "Credential": {
+        "title": "The Credential interface",
+        "url": "#the-credential-interface"
+      },
+      "credentials": {
+        "title": "navigator.credentials",
+        "url": "#framework-credential-management"
+      }
+    }
   },
   "crypto": {
     "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -412,7 +457,13 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "securityPolicyViolation": {
+        "title": "SecurityPolicyViolation event",
+        "url": "#securitypolicyviolationevent-interface"
+      }
+    }
   },
   "csp3": {
     "url": "https://www.w3.org/TR/CSP3/",
@@ -430,6 +481,32 @@
     "informative": false,
     "milestones": {
       "PR": "2018-12-30"
+    },
+    "features": {
+      "report-to": {
+        "title": "report-to directive",
+        "url": "#directive-report-to"
+      },
+      "manifest-src": {
+        "title": "manifest-src directive",
+        "url": "#directive-manifest-src"
+      },
+      "navigate-to": {
+        "title": "navigate-to directive",
+        "url": "#directive-navigate-to"
+      },
+      "strict-dynamic": {
+        "title": "strict-dynamic source expression",
+        "url": "#strict-dynamic-usage"
+      },
+      "unsafe-hashed-attributes": {
+        "title": "unsafe-hashed-attributes source expression",
+        "url": "#unsafe-hashed-attributes-usage"
+      },
+      "worker-src": {
+        "title": "worker-src directive",
+        "url": "#worker-src"
+      }
     }
   },
   "css-2d": {
@@ -451,7 +528,6 @@
   },
   "css-3d": {
     "url": "https://drafts.csswg.org/css-transforms-2/",
-    "edDraft": "https://drafts.csswg.org/css-transforms-2/",
     "title": "CSS Transform Module Level 2",
     "status": "ED",
     "deliveredBy": [
@@ -462,7 +538,37 @@
     ],
     "publisher": "W3C",
     "milestones": {},
-    "feature": "3D effects"
+    "feature": "3D effects",
+    "features": {
+      "backface-visibility": {
+        "title": "backface-visibility property",
+        "url": "#propdef-backface-visibility"
+      },
+      "perspective": {
+        "title": "perspective property",
+        "url": "#propdef-perspective"
+      },
+      "perspective-origin": {
+        "title": "perspective-origin property",
+        "url": "#propdef-perspective-origin"
+      },
+      "rotate": {
+        "title": "rotate property",
+        "url": "#propdef-rotate"
+      },
+      "scale": {
+        "title": "scale property",
+        "url": "#propdef-scale"
+      },
+      "transform-style": {
+        "title": "transform-style property",
+        "url": "#transform-style-property"
+      },
+      "translate": {
+        "title": "translate property",
+        "url": "#propdef-translate"
+      }
+    }
   },
   "css-animations": {
     "url": "https://www.w3.org/TR/css-animations-1/",
@@ -545,11 +651,25 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "box-decoration-break": {
+        "title": "box-decoration-break property",
+        "url": "#break-decoration"
+      },
+      "page-break": {
+        "title": "Page break properties",
+        "url": "#break-between"
+      },
+      "widows-orphans": {
+        "title": "Widows and orphans",
+        "url": "#widows-orphans"
+      }
+    }
   },
   "css-color-space": {
-    "url": "https://drafts.csswg.org/css-color/#icc-colors",
-    "edDraft": "https://drafts.csswg.org/css-color/#icc-colors",
+    "url": "https://www.w3.org/TR/css-color-4/",
+    "edDraft": "https://drafts.csswg.org/css-color/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Color Module Level 4",
     "status": "WD",
@@ -560,8 +680,28 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {},
-    "feature": "profiled device-dependent colors"
+    "informative": false,
+    "milestones": {
+      "CR": "2019-09-30"
+    },
+    "features": {
+      "icc-colors": {
+        "title": "profiled device-dependent colors",
+        "url": "#icc-colors"
+      },
+      "hsla": {
+        "title": "hsl/hsla syntax",
+        "url": "#the-hsl-notation"
+      },
+      "rgba": {
+        "title": "rgb/rgba syntax",
+        "url": "#rgb-functions"
+      },
+      "rgba-hex": {
+        "title": "RGBA hexadecimal notation",
+        "url": "#hex-notation"
+      }
+    }
   },
   "css-content-3": {
     "url": "https://www.w3.org/TR/css-content-3/",
@@ -642,7 +782,17 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "FontFace": {
+        "title": "FontFace interface",
+        "url": "#fontface-interface"
+      },
+      "FontFaceSet": {
+        "title": "FontFaceSet interface",
+        "url": "#FontFaceSet-interface"
+      }
+    }
   },
   "css-fonts-4": {
     "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -658,24 +808,29 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
-  },
-  "css-fonts-variable": {
-    "url": "https://www.w3.org/TR/css-fonts-4/#font-variation-props",
-    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
-    "repository": "https://github.com/w3c/csswg-drafts",
-    "title": "CSS Fonts Module Level 4",
-    "status": "WD",
-    "deliveredBy": [
-      {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "Cascading Style Sheets (CSS) Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
     "milestones": {},
-    "feature": "Variable fonts"
+    "features": {
+      "variable": {
+        "title": "Variable fonts",
+        "url": "#font-variation-props"
+      },
+      "font-variant-caps": {
+        "title": "font-variant-caps property",
+        "url": "#font-variant-caps-prop"
+      },
+      "font-variant-numeric": {
+        "title": "font-variant-numeric property",
+        "url": "#font-variant-numeric-prop"
+      },
+      "font-stretch": {
+        "title": "font-stretch property",
+        "url": "#font-stretch-prop"
+      },
+      "font-synthesis": {
+        "title": "font-synthesis property",
+        "url": "#font-synthesis-prop"
+      }
+    }
   },
   "css-gcpm-3": {
     "url": "https://www.w3.org/TR/css-gcpm-3/",
@@ -755,7 +910,13 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "line-height-step": {
+        "title": "line-height-step property",
+        "url": "#line-height-step"
+      }
+    }
   },
   "css-scroll-snap": {
     "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -775,7 +936,6 @@
   },
   "css-size-adjust": {
     "url": "https://drafts.csswg.org/css-size-adjust/",
-    "edDraft": "https://drafts.csswg.org/css-size-adjust/",
     "title": "CSS Mobile Text Size Adjustment Module Level 1",
     "status": "ED",
     "deliveredBy": [
@@ -855,6 +1015,7 @@
   },
   "css2": {
     "url": "https://www.w3.org/TR/CSS2/",
+    "edDraft": "http://dev.w3.org/csswg/css2/",
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
     "status": "REC",
     "deliveredBy": [
@@ -869,6 +1030,8 @@
   },
   "css3-page": {
     "url": "https://www.w3.org/TR/css3-page/",
+    "edDraft": "https://drafts.csswg.org/css-page-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Paged Media Module Level 3",
     "status": "WD",
     "deliveredBy": [
@@ -895,7 +1058,17 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "scroll-behavior": {
+        "title": "scroll-behavior property",
+        "url": "#smooth-scrolling"
+      },
+      "getBoundingClientRect": {
+        "title": "getBoundingClientRect() method",
+        "url": "#dom-element-getboundingclientrect"
+      }
+    }
   },
   "datalist": {
     "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
@@ -930,12 +1103,21 @@
   },
   "device-memory": {
     "url": "https://w3c.github.io/device-memory/",
-    "edDraft": "https://w3c.github.io/device-memory/",
     "title": "Device Memory 1",
     "status": "ED",
     "deliveredBy": [],
     "publisher": "W3C",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "header": {
+        "title": "Header field",
+        "url": "#sec-device-memory-client-hint-header"
+      },
+      "jsapi": {
+        "title": "JS API",
+        "url": "#sec-device-memory-js-api"
+      }
+    }
   },
   "deviceorientation": {
     "url": "https://www.w3.org/TR/orientation-event/",
@@ -1058,7 +1240,6 @@
   },
   "element-queries": {
     "url": "https://wicg.github.io/cq-usecases/",
-    "edDraft": "https://wicg.github.io/cq-usecases/",
     "title": "Element Queries",
     "status": "ED",
     "deliveredBy": [
@@ -1119,7 +1300,6 @@
   },
   "feature-policy": {
     "url": "https://wicg.github.io/feature-policy/",
-    "edDraft": "https://wicg.github.io/feature-policy/",
     "repository": "https://github.com/wicg/feature-policy",
     "title": "Feature Policy",
     "status": "LS",
@@ -1226,7 +1406,6 @@
   },
   "geolocation-sensor": {
     "url": "https://wicg.github.io/geolocation-sensor/",
-    "edDraft": "https://wicg.github.io/geolocation-sensor/",
     "repository": "https://github.com/wicg/geolocation-sensor",
     "title": "Geolocation Sensor",
     "status": "LS",
@@ -1253,23 +1432,6 @@
     "informative": false,
     "milestones": {}
   },
-  "getusermedia-cap": {
-    "url": "https://www.w3.org/TR/mediacapture-streams/#the-model-sources-sinks-constraints-and-settings",
-    "edDraft": "https://w3c.github.io/mediacapture-main/",
-    "repository": "https://github.com/w3c/mediacapture-main",
-    "title": "Media Capture and Streams",
-    "status": "CR",
-    "deliveredBy": [
-      {
-        "url": "http://www.w3.org/2011/04/webrtc/",
-        "label": "Web Real-Time Communications Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {},
-    "feature": "Source capabilities"
-  },
   "getusermedia": {
     "url": "https://www.w3.org/TR/mediacapture-streams/",
     "edDraft": "https://w3c.github.io/mediacapture-main/",
@@ -1284,7 +1446,12 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "capabilities": {
+        "title": "Source capabilities"
+      }
+    }
   },
   "gyroscope": {
     "url": "https://www.w3.org/TR/gyroscope/",
@@ -1304,7 +1471,6 @@
   },
   "hbss": {
     "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
-    "edDraft": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
     "title": "Hardware Based Secure Services features",
     "status": "ED",
     "deliveredBy": [
@@ -1332,7 +1498,6 @@
   },
   "html-extensions": {
     "url": "https://w3c.github.io/html-extensions/",
-    "edDraft": "https://w3c.github.io/html-extensions/",
     "repository": "https://github.com/w3c/html-extensions",
     "title": "HTML Extension Specifications",
     "status": "ED",
@@ -1431,7 +1596,6 @@
   },
   "humidity": {
     "url": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
-    "edDraft": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
     "title": "Ambient Humidity Events",
     "status": "ED",
     "deliveredBy": [
@@ -1483,7 +1647,6 @@
   },
   "inband": {
     "url": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
-    "edDraft": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
     "title": "Sourcing In-band Media Resource Tracks from Media Containers into HTML",
     "status": "ED",
     "deliveredBy": [
@@ -1496,14 +1659,15 @@
     "milestones": {}
   },
   "indexeddb": {
-    "url": "https://www.w3.org/TR/IndexedDB/",
-    "edDraft": "http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html",
-    "title": "Indexed Database API",
+    "url": "https://www.w3.org/TR/IndexedDB-2/",
+    "edDraft": "https://w3c.github.io/IndexedDB/",
+    "repository": "https://github.com/w3c/IndexedDB",
+    "title": "Indexed Database API 2.0",
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group"
+        "url": "http://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
       }
     ],
     "publisher": "W3C",
@@ -1545,7 +1709,6 @@
   },
   "inputdevice": {
     "url": "https://wicg.github.io/InputDeviceCapabilities/",
-    "edDraft": "https://wicg.github.io/InputDeviceCapabilities/",
     "repository": "https://github.com/wicg/InputDeviceCapabilities",
     "title": "Input Device Capabilities",
     "status": "LS",
@@ -1675,7 +1838,6 @@
   },
   "media-capabilities": {
     "url": "https://wicg.github.io/media-capabilities/",
-    "edDraft": "https://wicg.github.io/media-capabilities/",
     "repository": "https://github.com/wicg/media-capabilities",
     "title": "Media Capabilities",
     "status": "LS",
@@ -1686,7 +1848,17 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "encoding": {
+        "title": "Encoding capabilities",
+        "url": "#decoding-encoding-capabilities"
+      },
+      "decoding": {
+        "title": "Decoding capabilities",
+        "url": "#decoding-encoding-capabilities"
+      }
+    }
   },
   "media-frags": {
     "url": "https://www.w3.org/TR/media-frags/",
@@ -1704,7 +1876,6 @@
   },
   "media-playback-quality": {
     "url": "https://wicg.github.io/media-playback-quality/",
-    "edDraft": "https://wicg.github.io/media-playback-quality/",
     "repository": "https://github.com/wicg/media-playback-quality",
     "title": "Media Playback Quality",
     "status": "LS",
@@ -1751,6 +1922,7 @@
   },
   "mediaqueries": {
     "url": "https://www.w3.org/TR/css3-mediaqueries/",
+    "edDraft": "http://dev.w3.org/csswg/css3-mediaqueries/",
     "title": "Media Queries",
     "status": "REC",
     "deliveredBy": [
@@ -1777,11 +1949,16 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "mf-interaction": {
+        "title": "Interaction media features",
+        "url": "#mf-interaction"
+      }
+    }
   },
   "mediaqueries5": {
     "url": "https://drafts.csswg.org/mediaqueries-5/",
-    "edDraft": "https://drafts.csswg.org/mediaqueries-5/",
     "title": "Media Queries Level 5",
     "status": "ED",
     "deliveredBy": [
@@ -1791,11 +1968,16 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "prefers-reduced-motion": {
+        "title": "prefers-reduced-motion feature",
+        "url": "#prefers-reduced-motion"
+      }
+    }
   },
   "mediasession": {
     "url": "https://wicg.github.io/mediasession/",
-    "edDraft": "https://wicg.github.io/mediasession/",
     "repository": "https://github.com/wicg/mediasession",
     "title": "Media Session",
     "status": "LS",
@@ -1892,7 +2074,6 @@
   },
   "netinfo": {
     "url": "https://wicg.github.io/netinfo/",
-    "edDraft": "https://wicg.github.io/netinfo/",
     "repository": "https://github.com/wicg/netinfo",
     "title": "Network Information API",
     "status": "LS",
@@ -1969,11 +2150,16 @@
     "milestones": {
       "CR": "2018-12-30",
       "PR": "2019-09-30"
+    },
+    "features": {
+      "rtcdatachannel": {
+        "title": "RTC data channels",
+        "url": "#peer-to-peer-data-api"
+      }
     }
   },
   "packaging": {
     "url": "https://github.com/WICG/webpackage",
-    "edDraft": "https://github.com/WICG/webpackage",
     "title": "Web Packaging",
     "status": "ED",
     "deliveredBy": [
@@ -2115,11 +2301,19 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "observer": {
+        "title": "PerformanceObserver interface",
+        "url": "#the-performanceobserver-interface"
+      },
+      "worker": {
+        "title": "Available in Workers"
+      }
+    }
   },
   "permissions-request": {
     "url": "https://wicg.github.io/permissions-request/",
-    "edDraft": "https://wicg.github.io/permissions-request/",
     "title": "Requesting Permissions",
     "status": "ED",
     "deliveredBy": [
@@ -2133,7 +2327,6 @@
   },
   "permissions-revoke": {
     "url": "https://wicg.github.io/permissions-revoke/",
-    "edDraft": "https://wicg.github.io/permissions-revoke/",
     "title": "Relinquishing Permissions",
     "status": "ED",
     "deliveredBy": [
@@ -2163,7 +2356,6 @@
   },
   "picture-in-picture": {
     "url": "https://wicg.github.io/picture-in-picture/",
-    "edDraft": "https://wicg.github.io/picture-in-picture/",
     "repository": "https://github.com/wicg/picture-in-picture",
     "title": "Picture-in-Picture",
     "status": "LS",
@@ -2361,6 +2553,24 @@
     "informative": false,
     "milestones": {
       "PR": "2018-12-30"
+    },
+    "features": {
+      "dns-prefetch": {
+        "title": "DNS prefetch",
+        "url": "#dns-prefetch"
+      },
+      "preconnect": {
+        "title": "Preconnect",
+        "url": "#preconnect"
+      },
+      "prefetch": {
+        "title": "Prefetch",
+        "url": "#prefetch"
+      },
+      "prerender": {
+        "title": "Prerender",
+        "url": "#prerender"
+      }
     }
   },
   "resource-timing": {
@@ -2421,7 +2631,6 @@
   },
   "secondscreen-openscreen": {
     "url": "https://github.com/webscreens/openscreenprotocol",
-    "edDraft": "https://github.com/webscreens/openscreenprotocol",
     "title": "Open Screen Protocol",
     "status": "ED",
     "deliveredBy": [
@@ -2517,7 +2726,6 @@
   },
   "shape-detection": {
     "url": "https://wicg.github.io/shape-detection-api",
-    "edDraft": "https://wicg.github.io/shape-detection-api",
     "repository": "https://github.com/wicg/shape-detection-api",
     "title": "Accelerated Shape Detection in Images",
     "status": "LS",
@@ -2532,7 +2740,6 @@
   },
   "spatial-navigation": {
     "url": "https://github.com/WICG/spatial-navigation",
-    "edDraft": "https://github.com/WICG/spatial-navigation",
     "title": "Spatial Navigation",
     "status": "ED",
     "deliveredBy": [
@@ -2546,7 +2753,6 @@
   },
   "speech-api-recognition": {
     "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
-    "edDraft": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [
@@ -2561,7 +2767,6 @@
   },
   "speech-api-synthesis": {
     "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
-    "edDraft": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [
@@ -2573,6 +2778,29 @@
     "publisher": "W3C",
     "milestones": {},
     "feature": "Speech synthesis"
+  },
+  "speech-api": {
+    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "title": "Web Speech API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/speech-api/",
+        "label": "Speech API Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "recognition": {
+        "title": "Speech recognition",
+        "url": "#speechreco-section"
+      },
+      "synthesis": {
+        "title": "Speech synthesis",
+        "url": "#tts-section"
+      }
+    }
   },
   "srcset": {
     "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
@@ -2622,7 +2850,8 @@
     "milestones": {},
     "features": {
       "estimate": {
-        "title": "estimate() API"
+        "title": "estimate() API",
+        "url": "#dom-storagemanager-estimate"
       },
       "persist": {
         "title": "Persistent storage permission"
@@ -2641,7 +2870,21 @@
       }
     ],
     "publisher": "WHATWG",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "ReadableStream": {
+        "title": "ReadableStream interface",
+        "url": "#rs"
+      },
+      "WritableStream": {
+        "title": "WritableStream interface",
+        "url": "#ws"
+      },
+      "TransformStream": {
+        "title": "TransformStream interface",
+        "url": "#ts"
+      }
+    }
   },
   "svg11": {
     "url": "https://www.w3.org/TR/SVG11/",
@@ -2691,7 +2934,6 @@
   },
   "thermometer": {
     "url": "https://kenchris.github.io/thermometer/",
-    "edDraft": "https://kenchris.github.io/thermometer/",
     "title": "Ambient Temperature (Thermometer) sensor",
     "status": "ED",
     "deliveredBy": [
@@ -2722,7 +2964,6 @@
   },
   "timing": {
     "url": "http://webtiming.github.io/timingobject/",
-    "edDraft": "http://webtiming.github.io/timingobject/",
     "title": "Timing Object",
     "status": "ED",
     "deliveredBy": [
@@ -2752,7 +2993,6 @@
   },
   "transcript": {
     "url": "http://w3c.github.io/html-transcript/html-transcript-src.html",
-    "edDraft": "http://w3c.github.io/html-transcript/html-transcript-src.html",
     "title": "A transcript extension for HTML",
     "status": "ED",
     "deliveredBy": [
@@ -2973,7 +3213,6 @@
   },
   "videoworker": {
     "url": "https://w3c.github.io/mediacapture-worker/",
-    "edDraft": "https://w3c.github.io/mediacapture-worker/",
     "title": "Media Capture Stream with Worker",
     "status": "ED",
     "deliveredBy": [
@@ -3010,7 +3249,6 @@
   },
   "viewportapi": {
     "url": "https://wicg.github.io/visual-viewport/",
-    "edDraft": "https://wicg.github.io/visual-viewport/",
     "repository": "https://github.com/wicg/visual-viewport",
     "title": "Visual Viewport API",
     "status": "LS",
@@ -3095,7 +3333,6 @@
   },
   "web-lifecycle": {
     "url": "https://github.com/WICG/web-lifecycle",
-    "edDraft": "https://github.com/WICG/web-lifecycle",
     "title": "A Lifecycle for the Web",
     "status": "ED",
     "deliveredBy": [
@@ -3109,7 +3346,6 @@
   },
   "web-share-target": {
     "url": "https://wicg.github.io/web-share-target/",
-    "edDraft": "https://wicg.github.io/web-share-target/",
     "repository": "https://github.com/wicg/web-share-target",
     "title": "Web Share Target API",
     "status": "LS",
@@ -3124,7 +3360,6 @@
   },
   "web-share": {
     "url": "https://wicg.github.io/web-share/",
-    "edDraft": "https://wicg.github.io/web-share/",
     "repository": "https://github.com/wicg/web-share",
     "title": "Web Share API",
     "status": "LS",
@@ -3139,7 +3374,6 @@
   },
   "webassembly": {
     "url": "https://webassembly.github.io/spec/",
-    "edDraft": "https://webassembly.github.io/spec/",
     "title": "WebAssembly",
     "status": "ED",
     "deliveredBy": [
@@ -3202,7 +3436,6 @@
   },
   "webmediaapi": {
     "url": "https://w3c.github.io/webmediaapi/",
-    "edDraft": "https://w3c.github.io/webmediaapi/",
     "title": "Web Media APIs 2017",
     "status": "ED",
     "deliveredBy": [
@@ -3216,7 +3449,6 @@
   },
   "webmediaguidelines": {
     "url": "https://w3c.github.io/webmediaguidelines/",
-    "edDraft": "https://w3c.github.io/webmediaguidelines/",
     "title": "Web Media Application Developer Guidelines",
     "status": "ED",
     "deliveredBy": [
@@ -3230,7 +3462,6 @@
   },
   "webnfc": {
     "url": "https://w3c.github.io/web-nfc/",
-    "edDraft": "https://w3c.github.io/web-nfc/",
     "repository": "https://github.com/w3c/web-nfc",
     "title": "Web NFC API",
     "status": "ED",
@@ -3329,7 +3560,6 @@
   },
   "webusb": {
     "url": "https://wicg.github.io/webusb/",
-    "edDraft": "https://wicg.github.io/webusb/",
     "repository": "https://github.com/wicg/webusb",
     "title": "WebUSB API",
     "status": "LS",
@@ -3344,7 +3574,6 @@
   },
   "webvr": {
     "url": "https://w3c.github.io/webvr/",
-    "edDraft": "https://w3c.github.io/webvr/",
     "title": "WebVR",
     "status": "ED",
     "deliveredBy": [
@@ -3388,8 +3617,7 @@
     "feature": "Web workers"
   },
   "webxr": {
-    "url": "https://immersive-web.github.io/webxr/spec/latest/",
-    "edDraft": "https://immersive-web.github.io/webxr/spec/latest/",
+    "url": "https://immersive-web.github.io/webxr/",
     "title": "WebXR Device API",
     "status": "ED",
     "deliveredBy": [
@@ -3432,7 +3660,7 @@
     "milestones": {}
   },
   "wot-api": {
-    "url": "https://w3c.github.io/wot-scripting-api/",
+    "url": "https://www.w3.org/TR/wot-scripting-api/",
     "edDraft": "https://w3c.github.io/wot-scripting-api/",
     "repository": "https://github.com/w3c/wot-scripting-api",
     "title": "Web of Things (WoT) Scripting API",
@@ -3444,10 +3672,13 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "informative": false,
+    "milestones": {
+      "PR": "2018-12-30"
+    }
   },
   "wot-description": {
-    "url": "https://w3c.github.io/wot-thing-description/",
+    "url": "https://www.w3.org/TR/wot-thing-description/",
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
@@ -3459,7 +3690,10 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "informative": false,
+    "milestones": {
+      "PR": "2018-12-30"
+    }
   },
   "xhr": {
     "url": "https://xhr.spec.whatwg.org/",
