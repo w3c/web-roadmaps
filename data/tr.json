@@ -3508,7 +3508,7 @@
     "feature": "Priority and QoS Model"
   },
   "webrtc-relay": {
-    "url": "https://www.w3.org/TR/webrtc//#dom-rtcpeerconnection-getdefaulticeservers",
+    "url": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-getdefaulticeservers",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
     "title": "WebRTC 1.0: Real-time Communication Between Browsers",
@@ -3526,6 +3526,25 @@
       "PR": "2019-09-30"
     },
     "feature": "Browser default ICE servers"
+  },
+  "webrtc-stats": {
+    "url": "https://www.w3.org/TR/webrtc-stats/",
+    "edDraft": "https://w3c.github.io/webrtc-stats/",
+    "repository": "https://github.com/w3c/webrtc-stats",
+    "title": "Identifiers for WebRTC's Statistics API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2011/04/webrtc/",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2018-06-30",
+      "PR": "2019-09-30"
+    }
   },
   "websockets": {
     "url": "https://www.w3.org/TR/websockets/",
