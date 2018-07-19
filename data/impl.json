@@ -27722,6 +27722,101 @@
       }
     ]
   },
+  "webdriver": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webdriver/",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "navigator_webdriver"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "navigator_webdriver"
+        ],
+        "partial": true,
+        "selected": true
+      }
+    ],
+    "features": {
+      "navigator_webdriver": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6216034532982784",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6216034532982784",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6216034532982784",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6216034532982784",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6216034532982784",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "edgestatus",
+            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webdriver/",
+            "guess": true
+          }
+        ]
+      }
+    }
+  },
   "webmediaapi": {
     "implementations": []
   },

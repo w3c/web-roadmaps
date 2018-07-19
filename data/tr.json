@@ -3447,6 +3447,28 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "webdriver": {
+    "url": "https://www.w3.org/TR/webdriver1/",
+    "edDraft": "https://w3c.github.io/webdriver/",
+    "repository": "https://github.com/w3c/webdriver",
+    "title": "WebDriver",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/testing/browser/",
+        "label": "Browser Testing and Tools Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "navigator_webdriver": {
+        "title": "navigator.webdriver",
+        "url": "#interface"
+      }
+    }
+  },
   "webmediaapi": {
     "url": "https://w3c.github.io/webmediaapi/",
     "title": "Web Media APIs 2017",
