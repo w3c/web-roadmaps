@@ -2432,6 +2432,20 @@
       "PR": "2019-12-30"
     }
   },
+  "priority-hints": {
+    "url": "https://wicg.github.io/priority-hints/",
+    "repository": "https://github.com/wicg/priority-hints",
+    "title": "Priority Hints",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "proximity": {
     "url": "https://www.w3.org/TR/proximity/",
     "edDraft": "https://w3c.github.io/proximity/",
