@@ -1,0 +1,10 @@
+{
+  "url" : "https://www.w3.org/TR/gamepad/",
+  "title" : "Gamepad",
+  "impl": {
+    "caniuse": "gamepad",
+    "chromestatus": 5118776383111168,
+    "edgestatus": "GamePad API",
+    "webkitstatus": "specification-gamepad"
+  }
+}
