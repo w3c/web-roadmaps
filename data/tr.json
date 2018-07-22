@@ -1385,6 +1385,22 @@
     "publisher": "WHATWG",
     "milestones": {}
   },
+  "gamepad": {
+    "url": "https://www.w3.org/TR/gamepad/",
+    "edDraft": "https://w3c.github.io/gamepad/",
+    "repository": "https://github.com/w3c/gamepad",
+    "title": "Gamepad",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "generic-sensor": {
     "url": "https://www.w3.org/TR/generic-sensor/",
     "edDraft": "https://w3c.github.io/sensors/",

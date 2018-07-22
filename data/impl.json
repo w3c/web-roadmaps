@@ -15841,6 +15841,136 @@
       }
     ]
   },
+  "gamepad": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "baidu_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gamepad",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5118776383111168",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5118776383111168"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5118776383111168"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5118776383111168"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5118776383111168"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/gamepadapi/",
+        "selected": true
+      },
+      {
+        "ua": "webkit",
+        "status": "shipped",
+        "source": "webkitstatus",
+        "href": "https://webkit.org/status/#specification-gamepad"
+      }
+    ]
+  },
   "generic-sensor": {
     "implementations": []
   },
