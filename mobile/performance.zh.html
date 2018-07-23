@@ -45,6 +45,10 @@
           <p>除了优化资源之外，应用程序的感知反应性也是移动用户体验的一个关键方面。通过 <a data-featureid="webworkers">Web Workers</a> 实现的<strong>类似于线程的机制</strong>允许通过将最耗费资源的操作卸载到后台进程来保持用户界面的响应。</p>
         </div>
 
+        <div data-feature="自动化">
+          <p><a data-featureid="webdriver">WebDriver</a>规范定义了一个远程控制接口，可以实现外部对用户代理的控制，通常可用于跨多个浏览器（包括移动浏览器）的自动化测试。</p>
+        </div>
+
         <div data-feature="优化最佳实践">
           <p><a data-featureid="mwabp">移动 Web 应用最佳实践</a>提供有关如何构建可在移动设备上良好运行的 Web 应用的通用建议，并特别考虑优化的需求。</p>
         </div>
@@ -78,13 +82,23 @@
         <div data-feature="无限滚动">
           <p>在移动设备上使用<b>无限滚动</b>列表（在用户滚动时加载和呈现越来越多的内容）非常常见。这样的列表提供比触摸屏上的分页更好的用户体验。不幸的是，应用程序需要不断地<em>同步</em>轮询 DOM 元素的布局信息来实现这个模式，这是一个性能开销的重要来源。<a data-featureid="intersectionobserver">交叉观察器</a>规范定义了一个 API，用于<em>异步</em>观察目标元素与祖先元素或顶层文档视图的交集中的变化，从而提供一种有效的机制来检索实现无限滚动所需的信息。</p>
         </div>
+
+        <div data-feature="实时通讯">
+          <p><a data-featureid="webrtc-stats">WebRTC 统计 API 的标识符</a>定义了一组 Web IDL 对象，允许访问有关 RTCPeerConnection 的统计信息，允许Web应用程序监视底层网络和媒体的性能。</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
         <h2>探索性工作</h2>
 
-        <div data-feature="渲染性能">
+        <div data-feature="计时 API">
           <p><a data-featureid="frame-timing">帧计时 API</a> 的工作旨在提供应用在用户设备上运行时获得的每秒帧数的详细信息。</p>
+
+          <p><a data-featureid="event-timing">事件计时 API</a>上的工作使开发者能够衡量用户交互触发的某些事件的延迟。</p>
+        </div>
+
+        <div data-feature="网络优先级">
+          <p><a data-featureid="priority-hints">优先级提示</a>规范允许开发人员通知用户代理需要下载的每个资源的优先级，与现有的浏览器加载机制（如preload）互补。</p>
         </div>
       </section>
 
