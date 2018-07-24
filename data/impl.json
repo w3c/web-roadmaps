@@ -22018,6 +22018,139 @@
       }
     ]
   },
+  "referrer-policy": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "notes": [
+          "Supports an [older draft](https://wiki.whatwg.org/wiki/Meta_referrer) of the specification with `never`, `always`, `origin` & `default` values.\r\n"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "notes": [
+          "Supports an [older draft](https://wiki.whatwg.org/wiki/Meta_referrer) of the specification with `never`, `always`, `origin` & `default` values.\r\n"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "notes": [
+          "Chrome does not support `same-origin`, `strict-origin`, or `strict-origin-when-cross-origin` values ([issue 627968](https://bugs.chromium.org/p/chromium/issues/detail?id=627968))"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "baidu_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=referrer-policy",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792"
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5639972996513792"
+      }
+    ]
+  },
   "remote-playback": {
     "implementations": [
       {

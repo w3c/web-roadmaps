@@ -2546,6 +2546,24 @@
       "CR": "2018-09-30"
     }
   },
+  "referrer-policy": {
+    "url": "https://www.w3.org/TR/referrer-policy/",
+    "edDraft": "https://w3c.github.io/webappsec-referrer-policy/",
+    "repository": "https://github.com/w3c/webappsec-referrer-policy",
+    "title": "Referrer Policy",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2011/webappsec/",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2018-06-30"
+    }
+  },
   "remote-playback": {
     "url": "https://www.w3.org/TR/remote-playback/",
     "edDraft": "https://w3c.github.io/remote-playback/",
