@@ -1,0 +1,7 @@
+{
+  "url": "https://www.w3.org/TR/referrer-policy/",
+  "impl": {
+    "caniuse": "referrer-policy",
+    "chromestatus": 5639972996513792
+  }
+}
