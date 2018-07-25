@@ -2073,6 +2073,22 @@
     "informative": false,
     "milestones": {}
   },
+  "mst-content-hint": {
+    "url": "https://www.w3.org/TR/mst-content-hint/",
+    "edDraft": "https://w3c.github.io/mst-content-hint/",
+    "repository": "https://github.com/w3c/mst-content-hint",
+    "title": "MediaStreamTrack Content Hints",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2011/04/webrtc/",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "mwabp": {
     "url": "https://www.w3.org/TR/mwabp/",
     "title": "Mobile Web Application Best Practices",
