@@ -1,0 +1,8 @@
+{
+    "url": "https://www.w3.org/TR/css-contain-1/",
+    "impl": {
+      "caniuse": "css-containment",
+      "chromestatus": 6522186978295808,
+      "edgestatus": "CSS Containment"
+    }
+}
