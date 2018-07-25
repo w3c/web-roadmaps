@@ -9664,6 +9664,101 @@
       }
     }
   },
+  "css-contain": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Partially supported in Firefox by enabling \"layout.css.contain.enabled\" in about:config"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808"
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6522186978295808"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/csscontainment/",
+        "selected": true
+      }
+    ]
+  },
   "css-content-3": {
     "implementations": [
       {

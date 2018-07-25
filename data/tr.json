@@ -703,6 +703,22 @@
       }
     }
   },
+  "css-contain": {
+    "url": "https://www.w3.org/TR/css-contain-1/",
+    "edDraft": "https://drafts.csswg.org/css-contain/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Containment Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "css-content-3": {
     "url": "https://www.w3.org/TR/css-content-3/",
     "edDraft": "https://drafts.csswg.org/css-content/",
