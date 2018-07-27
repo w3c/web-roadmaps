@@ -2899,6 +2899,85 @@
       }
     ]
   },
+  "budget-api": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "experimental",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
+        "selected": true
+      }
+    ]
+  },
   "canvas": {
     "implementations": [
       {

@@ -281,6 +281,20 @@
       "PR": "2018-12-30"
     }
   },
+  "budget-api": {
+    "url": "https://wicg.github.io/budget-api/",
+    "repository": "https://github.com/wicg/budget-api",
+    "title": "Web Budget API",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "canvas": {
     "url": "https://www.w3.org/TR/2dcontext/",
     "title": "HTML Canvas 2D Context",
