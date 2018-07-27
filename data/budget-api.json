@@ -1,0 +1,7 @@
+{
+  "url": "https://wicg.github.io/budget-api/",
+  "impl": {
+    "chromestatus": 5691190548627456,
+    "mdn": "api.BudgetService"
+  }
+}
