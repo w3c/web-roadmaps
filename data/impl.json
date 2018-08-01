@@ -20143,6 +20143,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Edge does not support RTCDataChannel. See [API Catalogue](https://developer.microsoft.com/en-us/microsoft-edge/platform/catalog/?q=specName%3Awebrtc)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=rtcpeerconnection"
       },
