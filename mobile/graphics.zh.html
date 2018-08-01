@@ -7,13 +7,14 @@
   <body>
     <header>
       <h1>图形和布局</h1>
-      <p></p>
+      <p>Web上的内容可以使用<a href="https://www.w3.org/Style/CSS/">CSS</a>（层叠样式表）进行样式设置。CSS Level 3（及更高版本）以<a href="https://www.w3.org/TR/CSS/#css">一系列规范</a>的形式存在，逐步覆盖和扩展核心的 CSS 2.1 规范。 除了CSS之外，Web还能够嵌入位图或矢量图，以及绘制或操纵2D或3D图形。</p>
+      <p><b>Note:</b>注意：专门用于优化渲染性能的技术会在<a data-page="performance"></a>中描述。</p>
     </header>
     <main>
       <section class="featureset well-deployed">
         <h2>广泛部署的技术</h2>
 
-        <p>Web上的内容可以使用<a href="https://www.w3.org/standards/techs/css">CSS</a>（层叠样式表）进行样式化。特别是CSS3（CSS规范的第三版）是作为规范的集合而建立的，这些规范定义了简单而强大的特性来创建图形效果，例如<span data-feature="边框和背景效果"><a data-featureid="css-border-radius">圆角</a>、<a data-featureid="css-box-shadow">阴影效果</a></span>和<span data-feature="变换效果"><a data-featureid="css-2d">旋转内容</a></span>等。</p>
+        <p>CSS3及更高版本定义了定义了简单而强大的特性来创建图形效果，例如<span data-feature="边框和背景效果"><a data-featureid="css-border-radius">圆角</a>、<a data-featureid="css-box-shadow">阴影效果</a></span>和<span data-feature="变换效果"><a data-featureid="css-2d">旋转内容</a></span>等。</p>
         <div data-feature="动画">
           <p>动画可以通过<a data-featureid="css-animations">CSS动画</a>和<a data-featureid="css-transitions">CSS过渡</a>声明性地描述。</p>
           <p>使用脚本控制的动画可能需要很多计算资源，特别是在受限制的移动设备上。<a data-featureid="animation-frames">动画帧</a>提供了管理动画更新速率的可能性。</p>
@@ -38,15 +39,12 @@
         <h2>开发中的技术</h2>
         <div data-feature="动画">
           <p>动画也可以通过脚本通过<a data-featureid="web-animations">Web动画</a>中的API进行管理。</p>
-          <p>为了应用的动画部分确保最佳的性能，Web 开发者可以使用<a data-featureid="css-will-change">CSS <code>will-change</code></a>属性让浏览器在动画发生之前计算动画。</p>
         </div>
 
         <div data-feature="可下载字体">
           <p>考虑到通过移动网络下载字体所需的时间，Web 开发者需要调整其内容以适应字体的渐进可用性。<a data-featureid="css-font-loading">CSS 字体加载</a>为开发者提供必要的事件和接口来实现这种适应性。<code>@font-face</code> 和 <code>@font-feature-values</code> 的 <a data-featureid="css-font-display"><code>font-display</code></a> 描述符（descriptor）也可用于控制可下载字体在完全加载之前的呈现方式。</p>
           <p>沿着不同轴（width, weight, optical size）的字体变化可以被编码在单个字体文件中。CSS中的<a data-featureid="css-fonts-4/variable">可变字体属性</a>允许更好地控制可变字体的使用，并且帮助开发人员避免不必要的网络请求来获取字体的其他变体。</p>
         </div>
-
-        <p data-feature="方向锁定"><strong>锁定屏幕的方向</strong>是一个有用的特性；<a data-featureid="screen-orientation">屏幕方向API</a>不仅可以检测方向变化，还可以锁定方向为特定状态。</p>
       </section>
     </main>
     <script src="../js/generate.js"></script>
