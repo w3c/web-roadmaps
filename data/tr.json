@@ -68,6 +68,20 @@
     "milestones": {},
     "feature": "requestAnimationFrame"
   },
+  "animation-worklet": {
+    "url": "https://wicg.github.io/animation-worklet/",
+    "repository": "https://github.com/wicg/animation-worklet",
+    "title": "CSS Animation Worklet API",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "annotation-model": {
     "url": "https://www.w3.org/TR/annotation-model/",
     "edDraft": "http://w3c.github.io/web-annotation/",
@@ -3159,7 +3173,6 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-08-09",
       "PR": "2018-09-25",
       "REC": "2018-10-30"
     }
@@ -3179,7 +3192,6 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-08-09",
       "PR": "2018-09-25",
       "REC": "2018-10-30"
     }
