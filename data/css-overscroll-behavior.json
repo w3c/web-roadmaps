@@ -1,0 +1,8 @@
+{
+  "url": "https://wicg.github.io/overscroll-behavior/",
+  "impl": {
+    "caniuse": "css-overscroll-behavior",
+    "chromestatus": 5734614437986304,
+    "mdn": "css.properties.overscroll-behavior"
+  }
+}
