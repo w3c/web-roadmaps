@@ -924,6 +924,20 @@
     "informative": false,
     "milestones": {}
   },
+  "css-overscroll-behavior": {
+    "url": "https://wicg.github.io/overscroll-behavior/",
+    "repository": "https://github.com/wicg/overscroll-behavior",
+    "title": "CSS Overscroll Behavior Module Level 1",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "css-page-floats-3": {
     "url": "https://www.w3.org/TR/css-page-floats-3/",
     "edDraft": "https://drafts.csswg.org/css-page-floats/",

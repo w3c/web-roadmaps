@@ -12527,6 +12527,157 @@
   "css-line-grid-1": {
     "implementations": []
   },
+  "css-overscroll-behavior": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "notes": [
+          "Supports the precursor version of the property: [`-ms-scroll-chaining`](https://msdn.microsoft.com/en-us/library/hh772034%28v=vs.85%29.aspx), which works similarly. IE support is limited to Windows 8 & above"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304"
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5734614437986304"
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "edge_mobile",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "opera_android",
+        "status": "experimental",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      }
+    ]
+  },
   "css-page-floats-3": {
     "implementations": []
   },
