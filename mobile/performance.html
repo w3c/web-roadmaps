@@ -115,14 +115,6 @@
           <p>User agents may implement default rules for scrolling such as scroll chaining and overscroll affordances that web applications may wish to disable to enhance <b>pull-to-refresh</b> and <b>infinite scrolling</b> interaction paradigms, which are common on mobile devices. This can be achieved through scripting, but negatively affects scrolling performances as the application needs to listen to touch events without setting the <code>passive</code> flag to override the default behavior when needed. The <a data-featureid="css-overscroll-behavior">CSS <code>overscroll-behavior</code></a> property introduces control over the behavior of a scroll container when its scrollport reaches the boundary of its scroll box, allowing web applications to disable default rules for scrolling efficiently.</p>
         </div>
       </section>
-
-      <section>
-        <h2>Features not covered by on-going work</h2>
-        <dl>
-          <dt>More fine-grained network prioritization</dt>
-          <dd>Existing mechanisms to specify priorities for resource fetching, such as the <code>preload</code> link type, are quite coarse. Applications could benefit from a declarative mechanism to specify the relative priorities of resources that the user agent will eventually need to fetch. Current discussions in the Web Platform Incubator Community Group could lead to exploratory work in this space.</dd>
-        </dl>
-      </section>
     </main>
     <script src="../js/generate.js"></script>
   </body>
