@@ -1,0 +1,10 @@
+{
+  "url": "https://maps4html.github.io/MapML/spec/",
+  "title": "Map Markup Language",
+  "wgs": [
+    {
+      "label": "Maps for HTML Community Group",
+      "url": "https://www.w3.org/community/maps4html/"
+    }
+  ]
+}

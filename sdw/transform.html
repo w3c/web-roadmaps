@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Transform spatial data</title>
+  </head>
+  <body>
+    <header>
+      <h1>Transform spatial data</h1>
+      <p>... </p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <!-- partitioning data for the web-->
+        <p data-feature="data cubes">To partition RDF data for the Web, the <a data-featureid="vocab-data-cube">RDF Data Cube Vocabulary</a> is available. An extension for spatial and temporal data exists, but is still exploratory work.</p>
+      </section>
+      <section class="featureset in-progress">
+        <h2>Specifications in progress</h2>
+        <!-- partitioning data for the web-->
+        <p data-feature="3d tiling">For partitioning and streaming massive heterogeneous 3-dimensional geospatial datasets, <a data-featureid="cesium">Cesium 3DTiles</a> is available. It is currently in the process of becoming an OGC community standard.</p>
+      </section>
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+        <!-- partitioning data for the web-->
+        <div data-feature="sdw partitioning">
+          <p><em>Vector tiling</em> is a name for solutions where geographic data is packaged into pre-defined roughly-square shaped tiles for transfer over the web. There are several existing solutions, none yet standardized, described in the <a data-featureid="vector-tiling-er">OGC Testbed-13:  Vector Tiles Engineering Report</a>.</p>
+          <p>To partition raster data, .. [description and ref for 'raster tiling' tbd].</p>
+          <p>To partition RDF data for the web using spatial and/or temporal data elements, <a data-featureid="qb4st">QB4ST: RDF Data Cube extensions for spatio-temporal components</a> is available. The Note <a data-featureid="eo-qb">Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System</a> offers guidance on using RDF Data Cubes on geospatial data.</p>
+        </div>
+      </section>
+      <section class="not-covered">
+        <h2>Features not covered by ongoing work</h2>
+        <!-- many of these are OGC standards we consider not 'webby' -->
+        <dl>
+          <dt data-feature="web processing"><a data-featureid="wps">Web Processing Service (WPS)</a></dt>
+          <dd>An interface standard which provides rules for standardizing inputs and outputs (requests and responses) for invoking spatial processing services, such as polygon overlay, as a Web service.</dd>
+        </dl>
+      </section>
+      <section class="discontinued">
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

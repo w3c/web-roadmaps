@@ -1,0 +1,10 @@
+{
+  "url": "http://www.opengeospatial.org/standards/sfa",
+  "title": "OpenGIS Implementation Specification for Geographic information - Simple Feature Access",
+  "status": "REC",
+  "features": {
+    "wkt": {
+      "title": "Well-known Text Representation for Geometry"
+    }
+  }
+}

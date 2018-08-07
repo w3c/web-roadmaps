@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Capture spatial data</title>
+  </head>
+  <body>
+    <header>
+      <h1>Capture spatial data</h1>
+      <p>When interaction with a web browser or a mobile device concerns a <em>location</em>, for example the current location, the user is in a sense capturing i.e. creating spatial data. Usually this involves a sensor such as a GPS device in some way. </p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+        <!-- Copied this one from the mobile roadmap. Should we include features already mentioned in other roadmaps and if so, what is the best way to reuse? -->
+        <!--to get a device's location-->
+        <div data-feature="Geolocation">
+            <p>The <a data-featureid="geolocation">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
+          </div>
+          <!--relevant parts of SensorThingsAPI-->
+          <div data-feature="STA-Sensing">
+              <p>The <a data-featureid="sta-sensing">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the ISO/OGC Observation and Measurement (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
+          </div>
+          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
+      </section>
+      <section class="featureset in-progress">
+        <h2>Specifications in progress</h2>
+        <div data-feature="Orientation">
+            <p>The <a data-featureid="orientation">Orientation Sensor</a> features allows the monitoring of a device's physical orientation in relation to a stationary 3D Cartesian coordinate system. This feature is part of the Motion Sensors feature described in the <a href="https://w3c.github.io/web-roadmaps/mobile/sensors.html">Roadmap of Web Applications on Mobile</a>.</p>
+        </div>
+        <div data-feature="Geolocation">
+          <!--APIs based on the Generic Sensor API-->
+            <!-- LvdB: Did not include other parts of the motion sensors feature as these are not as clearly related to spatial data. -->
+            <p>The <a data-featureid="geolocation-sensor">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, improves security and privacy, and is extensible.</p>
+        </div>
+        <div data-feature="WoT">
+          <!-- LvdB: Not sure yet if any of WoT fit into Capture -->
+          <p>[<a data-featureid="wot-architecture">Web of Things</a>: Thing Description and/or other parts if fitting into Capture]</p>
+        </div>
+      </section>
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+        <!--to synchronise a device's location with sensor data-->
+        <div data-feature="WebVMT">
+          <p><a data-featureid="webvmt">Web Video Map Tracks (WebVMT)</a> will offer a way to synchronize a device's location with sensor data such as location data. This allows you to combine a video stream, captured while moving, with synchronized data about its position on earth.</p>
+        </div>
+      </section>
+      <section class="not-covered">
+        <h2>Features not covered by ongoing work</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section>
+      <section class="discontinued">
+        <h2>Discontinued features</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

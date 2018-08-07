@@ -1,0 +1,10 @@
+{
+  "url": "https://w3c.github.io/sdw/proposals/geotagging/webvmt/",
+  "title": "WebVMT: The Web Video Map Tracks Format",
+  "wgs": [
+    {
+      "label": "Spatial Data on the Web Interest Group",
+      "url": "https://www.w3.org/2017/sdwig/"
+    }
+  ]
+}
