@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -229,6 +229,48 @@
 <section>
         <h2 id="change-history">Change History</h2>
         <section>
+          <h3 id="july-2018">July 2018</h3>
+          <p>Performance appears to be the main focus of standardization efforts in the past few months, with new exploratory work on mechanisms to optimize performance and/or tune the behavior of web browsers to fit applications needs. Most updates in the <a href="https://www.w3.org/2018/07/web-roadmaps/mobile/">July 2018</a> snapshot affect <a data-page="performance" href="performance.html">Performance and Tuning</a> as a result:</p>
+          <dl>
+            <dt>Exploratory work</dt>
+            <dd><ul>
+              <li>Mention the CSS Animation Worklet API in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention the CSS Overscroll Behavior Module Level 1 in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention the Event Timing Web Perf API in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention Priority Hints in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention the Web Budget API in <a data-page="lifecycle" href="lifecycle.html">Application Lifecycle</a></li>
+            </ul></dd>
+
+            <dt>Technologies in progress</dt>
+            <dd><ul>
+              <li>Mention CSS Containment Module Level 1 in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention Gamepad in <a data-page="userinput" href="userinput.html">User Interaction</a></li>
+              <li>Mention the Identifiers for WebRTC's Statistics API in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention MediaStreamTrack Content Hints in <a data-page="media" href="media.html">Media</a></li>
+              <li>Mention Referrer Policy in <a data-page="security" href="security.html">Security and Privacy</a></li>
+              <li>Move Screen Orientation API from <a data-page="graphics" href="graphics.html">Graphics and Layout</a> to <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a></li>
+            </ul></dd>
+
+            <dt>Well-deployed technologies</dt>
+            <dd><ul>
+              <li>Mention WebDriver in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+            </ul></dd>
+
+            <dt>Features not covered by on-going work</dt>
+            <dd><ul>
+              <li>Add gesture events to <a data-page="userinput" href="userinput.html">User Interaction</a></li>
+              <li>Drop "More fine-grained network prioritization" from <a data-page="performance" href="performance.html">Performance and Tuning</a> as Prioriy Hints now address that gap</li>
+            </ul></dd>
+          </dl>
+
+          <p>The implementation info rendered in tables now also embeds information from the <a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a> project. Implementation data for a given specification can also be described at the feature level. When the framework does not have enough implementation data to assess whether a given implementation supports all features in a specification, it renders a "partial" badge.</p>
+
+          <p>Colors of maturity icons have been updated to use green for evergreen/living standards, and grey for specifications that do not contain normative content (such as group notes and guidelines).</p>
+
+          <p>A few other enhancements were made to the underlying framework e.g. to allow authors to link to the Editor's Draft, set the maturity status of a spec, and create "See also" and "Milestones" columns in summary tables (this roadmap does not use these features for now). Please refer to the <a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">documentation</a> for details.</p>
+        </section>
+
+        <section>
           <h3 id="april-2018">April 2018</h3>
           <p>The <a href="https://www.w3.org/2018/04/web-roadmaps/mobile/">April 2018</a> snapshot introduces a number of features that were missing from the <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">January 2018</a> snapshot. Content-wise, the following changes were made:</p>
           <dl>
@@ -299,7 +341,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>
