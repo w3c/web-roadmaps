@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en" data-generated=""><head>
+    <title>Capture spatial data - Spatial data on the Web Roadmap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
+            <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><div data-beforemetadata="true"><h2><a href="./" data-breadcrumb="">Spatial data on the Web Roadmap</a> &gt;</h2><div class="title"><img src="../assets/img/sdw-capture.png" alt="" data-icon=""><div><h1 data-title="">Capture spatial data</h1></div></div></div><p>When interaction with a web browser or a mobile device concerns a <em>location</em>, for example the current location, the user is in a sense capturing i.e. creating spatial data. Usually this involves a sensor such as a GPS device in some way. </p></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section class="featureset well-deployed">
+        <h2 id="well-deployed-technologies">Well-deployed technologies</h2>
+        <!-- Copied this one from the mobile roadmap. Should we include features already mentioned in other roadmaps and if so, what is the best way to reuse? -->
+        <!--to get a device's location-->
+        <div data-feature="Geolocation" id="geolocation">
+            <p>The <a data-featureid="geolocation" id="geolocation-0" href="https://www.w3.org/TR/geolocation-API/">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
+          </div>
+          <!--relevant parts of SensorThingsAPI-->
+          <div data-feature="STA-Sensing" id="sta-sensing">
+              <p>The <a data-featureid="sta-sensing" id="sta-sensing-0" href="http://docs.opengeospatial.org/is/15-078r6/15-078r6.html">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the ISO/OGC Observation and Measurement (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
+          </div>
+          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
+      <div><table><thead><tr><th data-col="feature">Feature</th><th data-col="spec">Specification / Group</th><th data-col="maturity">Maturity</th><th data-col="impl">Current implementations<details><summary>Select browsers…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / WebKit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">Baidu Browser</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ Browser</label></li><li><label><input type="checkbox" value="samsunginternet">Samsung Internet</label></li><li><label><input type="checkbox" value="uc">UC Browser</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">Geolocation</th><td><a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a><br><span class="group"><a href="http://www.w3.org/2008/geolocation/">Geolocation Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/6348855016685568"><abbr title="Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status."><span>Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="edge" href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/geolocation/"><abbr title="Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status."><span>Shipped in Microsoft Edge (desktop). Source: Microsoft Edge Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="firefox" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in Firefox (desktop, mobile). Source: Can I use."><span>Shipped in Firefox (desktop, mobile). Source: Can I use.</span><i class="firefox"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="safari" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in Safari (desktop, mobile). Source: Can I use."><span>Shipped in Safari (desktop, mobile). Source: Can I use.</span><i class="safari"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="baidu" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in Baidu Browser (mobile). Source: Can I use."><span>Shipped in Baidu Browser (mobile). Source: Can I use.</span><i class="baidu"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in Opera (desktop). Source: Can I use."><span>Shipped in Opera (desktop). Source: Can I use.</span><i class="opera"></i><i class="desktop"></i></abbr></a><a class="ua" data-ua="qq" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in QQ Browser (mobile). Source: Can I use."><span>Shipped in QQ Browser (mobile). Source: Can I use.</span><i class="qq"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="samsunginternet" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in Samsung Internet (mobile). Source: Can I use."><span>Shipped in Samsung Internet (mobile). Source: Can I use.</span><i class="samsunginternet"></i><i class="mobile"></i></abbr></a><a class="ua" data-ua="uc" href="https://caniuse.com/#feat=geolocation"><abbr title="Shipped in UC Browser (mobile). Source: Can I use."><span>Shipped in UC Browser (mobile). Source: Can I use.</span><i class="uc"></i><i class="mobile"></i></abbr></a></p></div></td></tr><tr><th class="feature">STA-Sensing</th><td><a href="http://docs.opengeospatial.org/is/15-078r6/15-078r6.html">OGC SensorThings API Part 1: Sensing</a></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation" width="50" height="50"></td><td class="impl"><div></div></td></tr></tbody></table></div></section><section class="featureset in-progress">
+        <h2 id="specifications-in-progress">Specifications in progress</h2>
+        <div data-feature="Orientation" id="orientation">
+            <p>The <a data-featureid="orientation" id="orientation-0" href="https://www.w3.org/TR/orientation-sensor/">Orientation Sensor</a> features allows the monitoring of a device's physical orientation in relation to a stationary 3D Cartesian coordinate system. This feature is part of the Motion Sensors feature described in the <a href="https://w3c.github.io/web-roadmaps/mobile/sensors.html">Roadmap of Web Applications on Mobile</a>.</p>
+        </div>
+        <div data-feature="Geolocation" id="geolocation-1">
+          <!--APIs based on the Generic Sensor API-->
+            <!-- LvdB: Did not include other parts of the motion sensors feature as these are not as clearly related to spatial data. -->
+            <p>The <a data-featureid="geolocation-sensor" id="geolocation-sensor" href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, improves security and privacy, and is extensible.</p>
+        </div>
+        <div data-feature="WoT" id="wot">
+          <!-- LvdB: Not sure yet if any of WoT fit into Capture -->
+          <p>[<a data-featureid="wot-architecture" id="wot-architecture" href="https://www.w3.org/TR/wot-architecture/">Web of Things</a>: Thing Description and/or other parts if fitting into Capture]</p>
+        </div>
+      <div><table><thead><tr><th data-col="feature">Feature</th><th data-col="spec">Specification / Group</th><th data-col="maturity">Maturity</th><th data-col="impl">Current implementations<details><summary>Select browsers…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / WebKit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">Baidu Browser</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ Browser</label></li><li><label><input type="checkbox" value="samsunginternet">Samsung Internet</label></li><li><label><input type="checkbox" value="uc">UC Browser</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">Orientation</th><td><a href="https://www.w3.org/TR/orientation-sensor/">Orientation Sensor</a><br><span class="group"><a href="https://www.w3.org/das/">Devices and Sensors Working Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="Candidate Recommendation" width="50" height="50"></td><td class="impl"><div><p data-implstatus="shipped">Shipped:<br><a class="ua" data-ua="chrome" href="https://www.chromestatus.com/feature/5698781827825664"><abbr title="Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status."><span>Shipped in Chrome (desktop, mobile). Source: Chrome Platform Status.</span><i class="chrome"></i><i class="desktop mobile"></i></abbr></a><a class="ua" data-ua="opera" href="https://www.chromestatus.com/feature/5698781827825664"><abbr title="Shipped in Opera (desktop). Source: Chrome Platform Status."><span>Shipped in Opera (desktop). Source: Chrome Platform Status.</span><i class="opera"></i><i class="desktop"></i></abbr></a></p><p data-implstatus="consideration">Under consideration:<br><a class="ua" data-ua="edge" href="https://www.chromestatus.com/feature/5698781827825664"><abbr title="Under consideration in Microsoft Edge (desktop). Source: Chrome Platform Status."><span>Under consideration in Microsoft Edge (desktop). Source: Chrome Platform Status.</span><i class="edge"></i><i class="desktop"></i></abbr></a></p><p>Polyfills</p><ul><li><a href="https://github.com/kenchris/sensor-polyfills">sensor-polyfills</a></li></ul></div></td></tr><tr><th class="feature">Geolocation</th><td><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a><br><span class="group"><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></span></td><td class="high maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="Living Standard" width="50" height="50"></td><td class="impl"><div></div></td></tr><tr><th class="feature">WoT</th><td><a href="https://www.w3.org/TR/wot-architecture/">Web of Things (WoT) Architecture</a><br><span class="group"><a href="https://www.w3.org/WoT/WG/">Web of Things Working Group</a></span></td><td class="low maturity"><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="Working Draft" width="50" height="50"></td><td class="impl"><div></div></td></tr></tbody></table></div></section><section class="featureset exploratory-work">
+        <h2 id="exploratory-work">Exploratory work</h2>
+        <!--to synchronise a device's location with sensor data-->
+        <div data-feature="WebVMT" id="webvmt">
+          <p><a data-featureid="webvmt" id="webvmt-0" href="https://w3c.github.io/sdw/proposals/geotagging/webvmt/">Web Video Map Tracks (WebVMT)</a> will offer a way to synchronize a device's location with sensor data such as location data. This allows you to combine a video stream, captured while moving, with synchronized data about its position on earth.</p>
+        </div>
+      <div><table><thead><tr><th data-col="feature">Feature</th><th data-col="spec">Specification / Group</th><th data-col="impl-intents">Implementation intents<details><summary>Select browsers…</summary><div><ul><li><label><input type="checkbox" value="chrome">Chrome</label></li><li><label><input type="checkbox" value="edge">Microsoft Edge</label></li><li><label><input type="checkbox" value="firefox">Firefox</label></li><li><label><input type="checkbox" value="safari|webkit">Safari / WebKit</label></li></ul><ul><li><label><input type="checkbox" value="baidu">Baidu Browser</label></li><li><label><input type="checkbox" value="opera">Opera</label></li><li><label><input type="checkbox" value="qq">QQ Browser</label></li><li><label><input type="checkbox" value="samsunginternet">Samsung Internet</label></li><li><label><input type="checkbox" value="uc">UC Browser</label></li></ul></div></details></th></tr></thead><tbody><tr><th class="feature">WebVMT</th><td><a href="https://w3c.github.io/sdw/proposals/geotagging/webvmt/">WebVMT: The Web Video Map Tracks Format</a><br><span class="group"><a href="https://www.w3.org/2017/sdwig/">Spatial Data on the Web Interest Group</a></span></td><td class="impl"><div></div></td></tr></tbody></table></div></section><section class="not-covered">
+        <h2 id="features-not-covered-by-ongoing-work">Features not covered by ongoing work</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section><section class="discontinued">
+        <h2 id="discontinued-features">Discontinued features</h2>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </section></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="see-anything-missing">See anything missing?</h2>
+                <p>If you know of use cases that cannot be achieved today with Web technologies, please let us know!</p>
+                 <p>To that end, you can start a new topic in the <a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C’s discourse forum</a> or raise an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <aside id="side-nav">
+      <h2 id="roadmap-pages">Roadmap pages</h2>
+      <nav>
+        <ul>
+        <li><a href="./" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">Home</div></a></li><li><a href="capture.html" data-nav=""><div class="icon"><img src="../assets/img/sdw-capture.png" alt=""></div><div class="description">capture spatial/sensor data</div></a></li><li><a href="represent.html" data-nav=""><div class="icon"><img src="../assets/img/sdw-represent.png" alt=""></div><div class="description">represent spatial data</div></a></li><li><a href="publish.html" data-nav=""><div class="icon"><img src="../assets/img/sdw-publish.png" alt=""></div><div class="description">publish spatial data</div></a></li><li><a href="transform.html" data-nav=""><div class="icon"><img src="../assets/img/sdw-transform.png" alt=""></div><div class="description">transform spatial data</div></a></li><li><a href="about.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">About this document</div></a></li></ul>
+      </nav>
+    </aside>
+    <div id="mask"></div>
+
+        <footer>
+            <div class="container">
+                <p>
+                    
+                    Content last updated in <span data-content-lastmodified="">August 2018</span><br>
+                    © <a href="https://www.w3.org/">W3C</a> (<a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                    Information about features (maturity, implementations) have been gathered from the <a href="https://w3c.github.io/w3c-api/">W3C API</a>, <a href="https://www.specref.org/">Specref</a>, <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a> in <span data-impl-lastmodified="">August 2018</span>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>

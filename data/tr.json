@@ -323,6 +323,26 @@
     "informative": false,
     "milestones": {}
   },
+  "cesium": {
+    "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
+    "title": "Cesium 3D Tiles",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "cityjson": {
+    "url": "http://www.cityjson.org/en/0.6/specs/",
+    "title": "CityJSON",
+    "status": "ED",
+    "deliveredBy": [],
+    "milestones": {}
+  },
   "cloud-browser-arch": {
     "url": "https://www.w3.org/TR/cloud-browser-arch/",
     "edDraft": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
@@ -410,6 +430,13 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "covjson": {
+    "url": "https://covjson.org/spec/",
+    "title": "The CoverageJSON Format",
+    "status": "ED",
+    "deliveredBy": [],
     "milestones": {}
   },
   "credential-management": {
@@ -1145,6 +1172,13 @@
     "milestones": {},
     "feature": "datalist element"
   },
+  "dbpedia": {
+    "url": "https://wiki.dbpedia.org/",
+    "title": "DBpedia",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
   "ddr": {
     "url": "https://www.w3.org/TR/DDR-Simple-API/",
     "title": "Device Description Repository Simple API",
@@ -1296,6 +1330,22 @@
     "informative": false,
     "milestones": {}
   },
+  "dwbp": {
+    "url": "https://www.w3.org/TR/dwbp/",
+    "edDraft": "http://w3c.github.io/dwbp/bp.html",
+    "repository": "https://github.com/w3c/dwbp",
+    "title": "Data on the Web Best Practices",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2013/dwbp/",
+        "label": "Data on the Web Best Practices Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "element-queries": {
     "url": "https://wicg.github.io/cq-usecases/",
     "title": "Element Queries",
@@ -1323,6 +1373,22 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "eo-qb": {
+    "url": "https://www.w3.org/TR/eo-qb/",
+    "edDraft": "https://w3c.github.io/sdw/eo-qb/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2015/spatial/",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
     "milestones": {}
   },
   "epr": {
@@ -1475,6 +1541,19 @@
     "informative": false,
     "milestones": {}
   },
+  "geodcat-ap": {
+    "url": "http://data.europa.eu/w21/81fd7288-6929-4b42-8707-2da604490d30",
+    "title": "GeoDCAT-AP: A geospatial extension for the DCAT application profile for data portals in Europe. Version 1.0.1",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "http://data.europa.eu/w21/c9dae5aa-c3d0-43a7-96e3-9f16cd8d5b6d",
+        "label": "European Commission"
+      }
+    ],
+    "publisher": "EC",
+    "milestones": {}
+  },
   "geofencing": {
     "url": "https://www.w3.org/TR/geofencing/",
     "edDraft": "https://w3c.github.io/geofencing-api/",
@@ -1489,6 +1568,13 @@
     ],
     "publisher": "W3C",
     "informative": true,
+    "milestones": {}
+  },
+  "geohash": {
+    "url": "http://geohash.org/",
+    "title": "Geohash",
+    "status": "ED",
+    "deliveredBy": [],
     "milestones": {}
   },
   "geolocation-sensor": {
@@ -1519,6 +1605,26 @@
     "informative": false,
     "milestones": {}
   },
+  "geonames": {
+    "url": "http://www.geonames.org/",
+    "title": "GeoNames",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "geosparql": {
+    "url": "http://www.opengeospatial.org/standards/geosparql",
+    "title": "GeoSPARQL - A Geographic Query Language for RDF Data",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "getusermedia": {
     "url": "https://www.w3.org/TR/mediacapture-streams/",
     "edDraft": "https://w3c.github.io/mediacapture-main/",
@@ -1539,6 +1645,27 @@
         "title": "Source capabilities"
       }
     }
+  },
+  "gml-sf": {
+    "url": "http://portal.opengeospatial.org/files/?artifact_id=42729",
+    "title": "Geography Markup Language (GML) simple features profile (2.0)",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "gml": {
+    "url": "http://www.opengeospatial.org/standards/gml",
+    "title": "Geography Markup Language (GML) Encoding Standard",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org",
+        "label": "Open Geospatial Consortium Inc."
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
   },
   "gyroscope": {
     "url": "https://www.w3.org/TR/gyroscope/",
@@ -1891,6 +2018,40 @@
     "informative": false,
     "milestones": {}
   },
+  "iso-19156-2011": {
+    "url": "https://www.iso.org/standard/32574.html",
+    "title": "Geographic information -- Observations and measurements",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.iso.org/",
+        "label": "International Organization for Standardization (ISO)"
+      }
+    ],
+    "publisher": "ISO",
+    "milestones": {}
+  },
+  "kml": {
+    "url": "http://docs.opengeospatial.org/is/12-007r2/12-007r2.html",
+    "title": "OGC KML 2.3",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "locn": {
+    "url": "http://www.w3.org/ns/locn",
+    "title": "ISA Programme Location Core Vocabulary",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://joinup.ec.europa.eu/asset/core_location",
+        "label": "European Commission"
+      }
+    ],
+    "publisher": "EC",
+    "milestones": {}
+  },
   "longtasks": {
     "url": "https://www.w3.org/TR/longtasks-1/",
     "edDraft": "https://w3c.github.io/longtasks/",
@@ -1921,6 +2082,19 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "mapml": {
+    "url": "https://maps4html.github.io/MapML/spec/",
+    "title": "Map Markup Language",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/maps4html/",
+        "label": "Maps for HTML Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "media-capabilities": {
@@ -2115,6 +2289,14 @@
     "informative": true,
     "milestones": {}
   },
+  "movingfeatures": {
+    "url": "http://docs.opengeospatial.org/is/14-083r2/14-083r2.html",
+    "title": "OGC® Moving Features Encoding Part I: XML Core",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "mse": {
     "url": "https://www.w3.org/TR/media-source/",
     "edDraft": "https://w3c.github.io/media-source/",
@@ -2203,6 +2385,14 @@
     "informative": false,
     "milestones": {}
   },
+  "ogc-georss": {
+    "url": "http://docs.opengeospatial.org/cs/17-002r1/17-002r1.html",
+    "title": "OGC GeoRSS Encoding Standard",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "online": {
     "url": "https://www.w3.org/TR/html52/browsers.html#browser-state",
     "edDraft": "https://w3c.github.io/html/",
@@ -2220,6 +2410,14 @@
     "milestones": {},
     "feature": "onLine DOM flag"
   },
+  "opensearchgeo": {
+    "url": "http://www.opengeospatial.org/standards/opensearchgeo",
+    "title": "OpenSearch Geo and Time Extensions",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "orientation": {
     "url": "https://www.w3.org/TR/orientation-sensor/",
     "edDraft": "https://w3c.github.io/orientation-sensor/",
@@ -2230,6 +2428,22 @@
       {
         "url": "https://www.w3.org/das/",
         "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "owl-time": {
+    "url": "https://www.w3.org/TR/owl-time/",
+    "edDraft": "https://w3c.github.io/sdw/time/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Time Ontology in OWL",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2015/spatial/",
+        "label": "Spatial Data on the Web Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2582,6 +2796,22 @@
     "informative": false,
     "milestones": {}
   },
+  "qb4st": {
+    "url": "https://www.w3.org/TR/qb4st/",
+    "edDraft": "https://w3c.github.io/sdw/qb4st/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2015/spatial/",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
   "quota": {
     "url": "https://www.w3.org/TR/quota-api/",
     "edDraft": "http://w3c.github.io/quota-api/",
@@ -2724,6 +2954,26 @@
     "informative": false,
     "milestones": {}
   },
+  "rfc7946": {
+    "url": "https://tools.ietf.org/html/rfc7946",
+    "title": "The GeoJSON Format",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://ietf.org",
+        "label": "IETF"
+      }
+    ],
+    "publisher": "IETF",
+    "milestones": {}
+  },
+  "schema.org": {
+    "url": "https://schema.org/",
+    "title": "Schema.org",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
   "screen-orientation": {
     "url": "https://www.w3.org/TR/screen-orientation/",
     "edDraft": "https://w3c.github.io/screen-orientation/",
@@ -2763,6 +3013,22 @@
     "milestones": {
       "CR": "2018-12-30"
     }
+  },
+  "sdw-bp": {
+    "url": "https://www.w3.org/TR/sdw-bp/",
+    "edDraft": "https://w3c.github.io/sdw/bp/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Spatial Data on the Web Best Practices",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2015/spatial/",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
   },
   "secondscreen-openscreen": {
     "url": "https://github.com/webscreens/openscreenprotocol",
@@ -2858,6 +3124,19 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {}
+  },
+  "sfa": {
+    "url": "http://www.opengeospatial.org/standards/sfa",
+    "title": "OpenGIS Implementation Specification for Geographic information - Simple Feature Access",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {},
+    "features": {
+      "wkt": {
+        "title": "Well-known Text Representation for Geometry"
+      }
+    }
   },
   "shape-detection": {
     "url": "https://wicg.github.io/shape-detection-api",
@@ -2968,6 +3247,27 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "sta-sensing": {
+    "url": "http://docs.opengeospatial.org/is/15-078r6/15-078r6.html",
+    "title": "OGC SensorThings API Part 1: Sensing",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "stats-bp": {
+    "url": "https://github.com/w3c/sdw/tree/gh-pages/stats-bp",
+    "title": "Statistical Data on the Web Best Practices",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/sdwig",
+        "label": "Spatial Data on the Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "storage": {
@@ -3110,6 +3410,13 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "topojson": {
+    "url": "https://github.com/topojson/topojson#topojson",
+    "title": "TopoJSON",
+    "status": "ED",
+    "deliveredBy": [],
+    "milestones": {}
+  },
   "touchevent": {
     "url": "https://www.w3.org/TR/touch-events/",
     "edDraft": "https://w3c.github.io/touch-events/",
@@ -3137,6 +3444,22 @@
       }
     ],
     "publisher": "W3C",
+    "milestones": {}
+  },
+  "tsml": {
+    "url": "http://docs.opengeospatial.org/is/15-042r3/15-042r3.html",
+    "title": "TimeseriesML 1.0 – XML Encoding of the Timeseries Profile of Observations and Measurements",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "tsprofile": {
+    "url": "http://docs.opengeospatial.org/is/15-043r3/15-043r3.html",
+    "title": "Timeseries Profile of Observations and Measurements",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
     "milestones": {}
   },
   "ttml-imsc1": {
@@ -3302,6 +3625,28 @@
     "informative": false,
     "milestones": {}
   },
+  "vcard-rdf": {
+    "url": "http://www.w3.org/TR/vcard-rdf/",
+    "title": "vCard Ontology - for describing People and Organizations",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2001/sw/interest/",
+        "label": "Semantic Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "vector-tiling-er": {
+    "url": "http://docs.opengeospatial.org/per/17-041.html",
+    "title": "OGC Testbed-13: Vector Tiles Engineering Report",
+    "status": "NOTE",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "vehicle-info": {
     "url": "https://www.w3.org/TR/vehicle-information-api",
     "edDraft": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
@@ -3401,6 +3746,76 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "vocab-data-cube": {
+    "url": "http://www.w3.org/TR/vocab-data-cube/",
+    "title": "The RDF Data Cube Vocabulary",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2011/gld/",
+        "label": "Government Linked Data Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vocab-dcat-2": {
+    "url": "https://www.w3.org/TR/vocab-dcat-2/",
+    "edDraft": "https://w3c.github.io/dxwg/dcat/",
+    "repository": "https://github.com/w3c/dxwg",
+    "title": "Data Catalog Vocabulary (DCAT) - revised edition",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/dxwg/",
+        "label": "Dataset Exchange Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2018-12-30"
+    }
+  },
+  "vocab-dcat": {
+    "url": "http://www.w3.org/TR/vocab-dcat/",
+    "title": "Data Catalog Vocabulary (DCAT)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2011/gld/",
+        "label": "Government Linked Data Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vocab-ssn": {
+    "url": "https://www.w3.org/TR/vocab-ssn/",
+    "edDraft": "https://w3c.github.io/sdw/ssn/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Semantic Sensor Network Ontology",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2015/spatial/",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "w3c-basic-geo": {
+    "url": "https://www.w3.org/2003/01/geo/",
+    "title": "Basic Geo (WGS84 lat/long) Vocabulary",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "wai-aria11": {
     "url": "https://www.w3.org/TR/wai-aria-1.1/",
     "edDraft": "https://w3c.github.io/aria/",
@@ -3450,6 +3865,14 @@
     "milestones": {
       "REC": "2018-06-30"
     }
+  },
+  "wcs": {
+    "url": "http://www.opengeospatial.org/standards/wcs",
+    "title": "Web Coverage Service",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
   },
   "web-animations": {
     "url": "https://www.w3.org/TR/web-animations-1/",
@@ -3753,6 +4176,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "webvmt": {
+    "url": "https://w3c.github.io/sdw/proposals/geotagging/webvmt/",
+    "title": "WebVMT: The Web Video Map Tracks Format",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/sdwig/",
+        "label": "Spatial Data on the Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "webvr": {
     "url": "https://w3c.github.io/webvr/",
     "title": "WebVR",
@@ -3810,6 +4246,52 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "wfs3": {
+    "url": "https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html",
+    "title": "OGC Web Feature Service 3.0",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+    "title": "Wikidata",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "wms": {
+    "url": "http://www.opengeospatial.org/standards/wms",
+    "title": "Web Map Service",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "wmts": {
+    "url": "http://www.opengeospatial.org/standards/wmts",
+    "title": "OpenGIS Web Map Tile Service Implementation Standard",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "woff": {
     "url": "https://www.w3.org/TR/WOFF/",
     "title": "WOFF File Format 1.0",
@@ -3858,6 +4340,24 @@
       "PR": "2018-12-30"
     }
   },
+  "wot-architecture": {
+    "url": "https://www.w3.org/TR/wot-architecture/",
+    "edDraft": "https://w3c.github.io/wot-architecture/",
+    "repository": "https://github.com/w3c/wot-architecture",
+    "title": "Web of Things (WoT) Architecture",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2019-06-30"
+    }
+  },
   "wot-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
     "edDraft": "https://w3c.github.io/wot-thing-description/",
@@ -3875,6 +4375,37 @@
     "milestones": {
       "PR": "2018-12-30"
     }
+  },
+  "wot-thing-description": {
+    "url": "https://www.w3.org/TR/wot-thing-description/",
+    "edDraft": "https://w3c.github.io/wot-thing-description/",
+    "repository": "https://github.com/w3c/wot-thing-description",
+    "title": "Web of Things (WoT) Thing Description",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2018-12-30"
+    }
+  },
+  "wps": {
+    "url": "http://www.opengeospatial.org/standards/wms",
+    "title": "Web Processing Service",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
   },
   "xhr": {
     "url": "https://xhr.spec.whatwg.org/",

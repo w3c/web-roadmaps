@@ -141,14 +141,16 @@
       },
       {
         "ua": "chrome",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
@@ -3210,6 +3212,12 @@
       }
     ]
   },
+  "cesium": {
+    "implementations": []
+  },
+  "cityjson": {
+    "implementations": []
+  },
   "cloud-browser-arch": {
     "implementations": []
   },
@@ -3448,6 +3456,9 @@
         "selected": true
       }
     ]
+  },
+  "covjson": {
+    "implementations": []
   },
   "credential-management": {
     "implementations": [
@@ -14673,6 +14684,9 @@
       }
     ]
   },
+  "dbpedia": {
+    "implementations": []
+  },
   "ddr": {
     "implementations": []
   },
@@ -15330,6 +15344,9 @@
   "dpub-aria10": {
     "implementations": []
   },
+  "dwbp": {
+    "implementations": []
+  },
   "element-queries": {
     "implementations": []
   },
@@ -15438,6 +15455,9 @@
         "selected": true
       }
     ]
+  },
+  "eo-qb": {
+    "implementations": []
   },
   "epr": {
     "implementations": []
@@ -16338,6 +16358,9 @@
   "generic-sensor": {
     "implementations": []
   },
+  "geodcat-ap": {
+    "implementations": []
+  },
   "geofencing": {
     "implementations": [
       {
@@ -16362,6 +16385,9 @@
         "selected": true
       }
     ]
+  },
+  "geohash": {
+    "implementations": []
   },
   "geolocation-sensor": {
     "implementations": []
@@ -16522,6 +16548,12 @@
         "href": "https://webkit.org/status/#specification-geolocation-api"
       }
     ]
+  },
+  "geonames": {
+    "implementations": []
+  },
+  "geosparql": {
+    "implementations": []
   },
   "getusermedia": {
     "implementations": [
@@ -17061,6 +17093,12 @@
         ]
       }
     }
+  },
+  "gml-sf": {
+    "implementations": []
+  },
+  "gml": {
+    "implementations": []
   },
   "gyroscope": {
     "implementations": [
@@ -18729,6 +18767,15 @@
       }
     ]
   },
+  "iso-19156-2011": {
+    "implementations": []
+  },
+  "kml": {
+    "implementations": []
+  },
+  "locn": {
+    "implementations": []
+  },
   "longtasks": {
     "implementations": [
       {
@@ -18848,6 +18895,9 @@
         "selected": true
       }
     ]
+  },
+  "mapml": {
+    "implementations": []
   },
   "media-capabilities": {
     "implementations": [
@@ -19710,6 +19760,9 @@
   "mobile-accessibility-mapping": {
     "implementations": []
   },
+  "movingfeatures": {
+    "implementations": []
+  },
   "mse": {
     "implementations": [
       {
@@ -20169,6 +20222,9 @@
       }
     ]
   },
+  "ogc-georss": {
+    "implementations": []
+  },
   "online": {
     "implementations": [
       {
@@ -20257,6 +20313,9 @@
       }
     ]
   },
+  "opensearchgeo": {
+    "implementations": []
+  },
   "orientation": {
     "implementations": [
       {
@@ -20320,6 +20379,9 @@
         "url": "https://github.com/kenchris/sensor-polyfills"
       }
     ]
+  },
+  "owl-time": {
+    "implementations": []
   },
   "p2p": {
     "implementations": [
@@ -22261,6 +22323,9 @@
       }
     ]
   },
+  "qb4st": {
+    "implementations": []
+  },
   "quota": {
     "implementations": [
       {
@@ -23944,6 +24009,12 @@
       }
     ]
   },
+  "rfc7946": {
+    "implementations": []
+  },
+  "schema": {
+    "implementations": []
+  },
   "screen-orientation": {
     "implementations": [
       {
@@ -24094,6 +24165,9 @@
         "selected": true
       }
     ]
+  },
+  "sdw-bp": {
+    "implementations": []
   },
   "secondscreen-openscreen": {
     "implementations": []
@@ -24427,6 +24501,14 @@
         "href": "https://webkit.org/status/#specification-service-workers"
       }
     ]
+  },
+  "sfa": {
+    "implementations": [],
+    "features": {
+      "wkt": {
+        "implementations": []
+      }
+    }
   },
   "shape-detection": {
     "implementations": [
@@ -25624,6 +25706,12 @@
       }
     ]
   },
+  "sta-sensing": {
+    "implementations": []
+  },
+  "stats-bp": {
+    "implementations": []
+  },
   "storage": {
     "implementations": [
       {
@@ -26800,6 +26888,9 @@
   "timing": {
     "implementations": []
   },
+  "topojson": {
+    "implementations": []
+  },
   "touchevent": {
     "implementations": [
       {
@@ -26923,6 +27014,12 @@
     ]
   },
   "transcript": {
+    "implementations": []
+  },
+  "tsml": {
+    "implementations": []
+  },
+  "tsprofile": {
     "implementations": []
   },
   "ttml-imsc1": {
@@ -27213,6 +27310,12 @@
         "href": "https://webkit.org/status/#specification-user-timing-level-2"
       }
     ]
+  },
+  "vcard-rdf": {
+    "implementations": []
+  },
+  "vector-tiling-er": {
+    "implementations": []
   },
   "vehicle-info": {
     "implementations": []
@@ -27577,6 +27680,21 @@
       }
     ]
   },
+  "vocab-data-cube": {
+    "implementations": []
+  },
+  "vocab-dcat-2": {
+    "implementations": []
+  },
+  "vocab-dcat": {
+    "implementations": []
+  },
+  "vocab-ssn": {
+    "implementations": []
+  },
+  "w3c-basic-geo": {
+    "implementations": []
+  },
   "wai-aria11": {
     "implementations": [
       {
@@ -27698,6 +27816,9 @@
     "implementations": []
   },
   "wcag21": {
+    "implementations": []
+  },
+  "wcs": {
     "implementations": []
   },
   "web-animations": {
@@ -29120,6 +29241,9 @@
       }
     ]
   },
+  "webvmt": {
+    "implementations": []
+  },
   "webvr": {
     "implementations": [
       {
@@ -29447,6 +29571,18 @@
       }
     ]
   },
+  "wfs3": {
+    "implementations": []
+  },
+  "wikidata": {
+    "implementations": []
+  },
+  "wms": {
+    "implementations": []
+  },
+  "wmts": {
+    "implementations": []
+  },
   "woff": {
     "implementations": [
       {
@@ -29676,7 +29812,16 @@
   "wot-api": {
     "implementations": []
   },
+  "wot-architecture": {
+    "implementations": []
+  },
   "wot-description": {
+    "implementations": []
+  },
+  "wot-thing-description": {
+    "implementations": []
+  },
+  "wps": {
     "implementations": []
   },
   "xhr": {
