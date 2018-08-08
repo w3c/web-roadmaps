@@ -9,6 +9,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Roadmap for Security technologies](https://w3c.github.io/web-roadmaps/security/)
 * [Roadmap of Web Applications on Mobile](https://w3c.github.io/web-roadmaps/mobile/)
 * [Roadmap of Technologies Needed for Web Publications](https://w3c.github.io/web-roadmaps/publishing/)
+* [Spatial data on the Web Roadmap](https://w3c.github.io/web-roadmaps/sdw/)
 
 ## Table of contents
 * [Overview of the framework](#overview-of-the-framework)

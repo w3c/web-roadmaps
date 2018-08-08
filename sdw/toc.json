@@ -1,0 +1,37 @@
+{
+    "title": "Spatial data on the Web Roadmap",
+    "discourse": {
+      "category": "W3C’s discourse forum",
+      "url": "https://discourse.wicg.io/"
+    },
+    "github": "https://github.com/w3c/web-roadmaps",
+    "pages": [
+      {
+        "url": "capture.html",
+        "title": "capture spatial/sensor data",
+        "icon": "../assets/img/sdw-capture.png",
+        "description": "Creating spatial data or sensor data in a web context."
+      },
+      {
+        "url": "represent.html",
+        "title": "represent spatial data",
+        "icon": "../assets/img/sdw-represent.png",
+        "description": "Vocabularies, formats, to represent spatial data and geometries and to reference locations."
+      },
+      {
+        "url": "publish.html",
+        "title": "publish spatial data",
+        "icon": "../assets/img/sdw-publish.png",
+        "description": "Guidelines for publishing spatial data, including description of datasets, for viewing, getting and querying the data."
+      },
+      {
+        "url": "transform.html",
+        "title": "transform spatial data",
+        "icon": "../assets/img/sdw-transform.png",
+        "description": "Transforming and partitioning of spatial data before or after publication."
+      }
+    ],
+    "about": {
+      "url": "about.html"
+    }
+  }

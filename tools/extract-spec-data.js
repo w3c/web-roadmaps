@@ -40,7 +40,9 @@ const maturityMapping = {
   'Unofficial Draft': 'ED',
   'Draft Community Group Report': 'ED',
   'Living Standard': 'LS',
-  'Group Note': 'NOTE'
+  'Group Note': 'NOTE',
+  'Proposed Standard': 'CR',
+  'International Standard': 'REC'
 };
 
 /**
@@ -70,7 +72,31 @@ const publishers = {
     url: 'https://www.w3.org/community/wicg/',
     urlPattern: 'w3c.github.io',
     parentPublisher: 'W3C'
+  },
+  'OGC': {
+    label: 'Open Geospatial Consortium',
+    url: 'http://www.opengeospatial.org/',
+    urlPattern: 'opengeospatial.org'
+  },
+  'EC': {
+    label: 'European Commission',
+    url: 'http://data.europa.eu/euodp/en/home',
+    urlPattern: 'data.europa.eu'
+  },
+  'ISO': {
+    label: 'International Organization for Standardization (ISO)',
+    url: 'https://www.iso.org/',
+    urlPattern: 'iso.org'
   }
+};
+
+/**
+ * Well-known aliases for publishers
+ */
+const publisherMapping = {
+  'European Commission': 'EC',
+  'Open Geospatial Consortium': 'OGC',
+  'Open Geospatial Consortium Inc.': 'OGC'
 };
 
 
@@ -145,6 +171,18 @@ function getSpecUrl(spec) {
 
 
 /**
+ * Return true if there is a known URL for the given spec
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {Boolean} True if spec does have a URL
+ */
+function hasUrl(spec) {
+  return !!getSpecUrl(spec);
+}
+
+
+/**
  * Construct the URL of the repository from the Editor's Draft URL
  * (only works for GitHub repositories for now)
  *
@@ -174,17 +212,17 @@ function getRepositoryFromEdDraft(edDraft) {
 
 
 /**
- * Return the URL to use to search for additional info about the given spec in
+ * Return the ID to use to search for additional info about the given spec in
  * Specref.
  *
- * Note the returned URL is not meant to be used to fetch the spec. The logic
- * may "break" the initial URL in particular.
+ * Note the returned ID is not meant to be used to fetch the spec, even when it
+ * is a URL. The logic may "break" the initial URL in particular.
  *
  * @function
  * @param {Object} spec The spec object to parse
- * @return {String} The Specref lookup URL to use
+ * @return {String} The Specref lookup ref to use
  */
-function getUrlForReverseLookup(spec) {
+function getIdForReverseLookup(spec) {
   let data = spec.data;
   if (!data) return;
 
@@ -194,7 +232,7 @@ function getUrlForReverseLookup(spec) {
       return 'https:/' + specUrl.split('/').slice(1, 5).join('/');
     }
     else {
-      return 'https://www.w3.org/TR/' + getShortname(spec);
+      return getShortname(spec);
     }
   }
   else {
@@ -220,6 +258,9 @@ function getUrlForReverseLookup(spec) {
 async function fetchJson(url, options) {
   let response = await fetch(url, options);
   if (response.status !== 200) {
+    if (options && options.try && (response.status === 404)) {
+      return null;
+    }
     throw new Error(`Fetch returned a non OK HTTP status code (url: ${url}, status: ${response.status})`);
   }
   return response.json();
@@ -260,26 +301,36 @@ async function extractSpecData(files, config) {
     keepAlive: true
   };
 
+  let specsInfo = {};
+  async function fetchInfoFromSpecRef(ids, apiUrl) {
+    let lookupChunks = [];
+    let chunkSize = 10;
+    for (let i = 0, j = ids.length; i < j; i += chunkSize) {
+      let chunk = ids.slice(i, i + chunkSize);
+      lookupChunks.push(chunk);
+    }
+    for (let chunk of lookupChunks) {
+      let info = await fetchJson(apiUrl + chunk.join(','));
+      specsInfo = Object.assign(specsInfo, info);
+    }
+  }
+
   // Fetch spec info from Specref when spec is not a TR spec.
   // (Proceed in chunks not to end up with a URL that is thousands of bytes
   // long, and only fetch a given lookup URL once)
   let lookupUrls = specs
     .filter(spec => !isTRSpec(spec))
-    .map(spec => encodeURIComponent(getUrlForReverseLookup(spec)))
+    .map(spec => encodeURIComponent(getIdForReverseLookup(spec)))
     .filter((url, index, self) => self.indexOf(url) === index);
-  let lookupChunks = [];
-  let chunkSize = 10;
-  for (let i = 0, j = lookupUrls.length; i < j; i += chunkSize) {
-    let chunk = lookupUrls.slice(i, i + chunkSize);
-    lookupChunks.push(chunk);
-  }
+  await fetchInfoFromSpecRef(lookupUrls, 'https://api.specref.org/reverse-lookup?urls=');
 
-  let specsInfo = {};
-  for (let chunk of lookupChunks) {
-    let info = await fetchJson(
-      `https://api.specref.org/reverse-lookup?urls=${chunk.join(',')}`);
-    specsInfo = Object.assign(specsInfo, info);
-  }
+  // Fetch spec info from Specref based on the shortname when we do not know
+  // whether the spec is a TR spec or not
+  let lookupRefs = specs
+    .filter(spec => !hasUrl(spec))
+    .map(spec => encodeURIComponent(getIdForReverseLookup(spec)))
+    .filter((url, index, self) => self.indexOf(url) === index);
+  await fetchInfoFromSpecRef(lookupRefs, 'https://api.specref.org/bibrefs?refs=');
 
   // In-memory cache for milestones per group
   // (used to avoid fetching the milestones more than once)
@@ -299,6 +350,7 @@ async function extractSpecData(files, config) {
     return milestonesJson;
   }
 
+  let errors = [];
   async function fetchSpecInfo(spec) {
     let trInfo = {};
     let lookupInfo = {};
@@ -308,35 +360,38 @@ async function extractSpecData(files, config) {
       let shortname = getShortname(spec);
       let latestInfo = await fetchJson(
         `https://api.w3.org/specifications/${shortname}/versions/latest`,
-        w3cHttpOptions);
-      trInfo = {
-        url: latestInfo.shortlink,
-        edDraft: latestInfo['editor-draft'],
-        repository: getRepositoryFromEdDraft(latestInfo['editor-draft']),
-        title: latestInfo.title,
-        status: latestInfo.status,
-        publisher: 'W3C',
-        informative: latestInfo.informative || !latestInfo['rec-track']
-      };
-      let deliverersJson = await fetchJson(
-        latestInfo._links.deliverers.href + `?embed=1`,
-        w3cHttpOptions);
-      trInfo.deliveredBy = deliverersJson._embedded.deliverers.map(deliverer => Object.assign({
-        label: deliverer.name,
-        url: deliverer._links.homepage.href
-      }));
+        Object.assign({ try: true }, w3cHttpOptions));
+      if (latestInfo) {
+        trInfo = {
+          url: latestInfo.shortlink,
+          edDraft: latestInfo['editor-draft'],
+          repository: getRepositoryFromEdDraft(latestInfo['editor-draft']),
+          title: latestInfo.title,
+          status: latestInfo.status,
+          publisher: 'W3C',
+          informative: latestInfo.informative || !latestInfo['rec-track']
+        };
+        let deliverersJson = await fetchJson(
+          latestInfo._links.deliverers.href + `?embed=1`,
+          w3cHttpOptions);
+        trInfo.deliveredBy = deliverersJson._embedded.deliverers.map(deliverer => Object.assign({
+          label: deliverer.name,
+          url: deliverer._links.homepage.href
+        }));
 
-      // Retrieve milestones info from dashboard repo
-      for (deliverer of deliverersJson._embedded.deliverers) {
-        let milestones = await fetchMilestones(deliverer);
-        if (milestones && milestones[latestInfo.shortlink]) {
-          trInfo.milestones = milestones[latestInfo.shortlink];
+        // Retrieve milestones info from dashboard repo
+        for (deliverer of deliverersJson._embedded.deliverers) {
+          let milestones = await fetchMilestones(deliverer);
+          if (milestones && milestones[latestInfo.shortlink]) {
+            trInfo.milestones = milestones[latestInfo.shortlink];
+          }
         }
       }
     }
-    else {
-      // For other specs, use info returned by Specref
-      lookupInfo = specsInfo[getUrlForReverseLookup(spec)] || {};
+    if (!trInfo.url) {
+      // For other specs and specs that ended up not being TR specs, use info
+      // returned by Specref
+      lookupInfo = specsInfo[getIdForReverseLookup(spec)] || {};
     }
 
     let info = {
@@ -351,11 +406,14 @@ async function extractSpecData(files, config) {
       milestones: spec.data.milestones || trInfo.milestones || {}
     };
 
-    // Spec must have a title, either retrieved from Specref or defined in
-    // the data file. Throw an error if that is not the case so that someone
-    // completes the data.
+    // Spec must have a URL, either retrieved or defined in the data file.
+    if (!info.url) {
+      errors.push(`${spec.id}: No URL found`);
+    }
+
+    // Spec must have a title, either retrieved or defined in the data file.
     if (!info.title) {
-      throw new Error(`No title found for ${spec.id}`);
+      errors.push(`${spec.id}: No title found`);
     }
 
     // Maturity status must be a known value. Throw an error if that is not the
@@ -364,7 +422,7 @@ async function extractSpecData(files, config) {
       info.status = maturityMapping[info.status];
     }
     if (!maturities.includes(info.status)) {
-      throw new Error(`- ${spec.id}: Unknown maturity status (status: ${info.status})`);
+      errors.push(`${spec.id}: Unknown maturity status (status: ${info.status})`);
     }
 
     // Groups that deliver the spec should have friendly labels
@@ -390,6 +448,9 @@ async function extractSpecData(files, config) {
 
     // Spec should have a well-known publisher, try to find one
     if (info.publisher) {
+      if (publisherMapping[info.publisher]) {
+        info.publisher = publisherMapping[info.publisher];
+      }
       if (info.publisher.startsWith('W3C ')) {
         info.publisher = 'W3C';
       }
@@ -403,7 +464,7 @@ async function extractSpecData(files, config) {
         info.publisher = Object.keys(publishers)
           .find(id => groupUrl.includes(publishers[id].urlPattern));
       }
-      if (!info.publisher) {
+      if (!info.publisher && info.url) {
         info.publisher = Object.keys(publishers)
           .find(id => info.url.includes(publishers[id].urlPattern));
       }
@@ -423,6 +484,13 @@ async function extractSpecData(files, config) {
 
 
   let resultsArray = await Promise.all(specs.map(fetchSpecInfo));
+  if (errors.length > 0) {
+    for (let err of errors) {
+      console.error(`- [error] ${err}`);
+    }
+    throw new Error(`Data files must be completed, see error(s) reported above.`);
+  }
+
   let results = {};
   for (let result of resultsArray) {
     results[result.id] = result.info;
