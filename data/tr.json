@@ -3463,9 +3463,11 @@
     "milestones": {}
   },
   "ttml-imsc1": {
-    "url": "https://www.w3.org/TR/ttml-imsc1/",
-    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)",
-    "status": "Retired",
+    "url": "https://www.w3.org/TR/ttml-imsc1.0.1/",
+    "edDraft": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+    "repository": "https://github.com/w3c/imsc",
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1)",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
