@@ -1,8 +1,8 @@
 {
     "title": "Spatial data on the Web Roadmap",
     "discourse": {
-      "category": "W3C’s discourse forum",
-      "url": "https://discourse.wicg.io/"
+      "category": "Web mapping category of W3C’s discourse forum",
+      "url": "https://discourse.wicg.io/c/web-mapping"
     },
     "github": "https://github.com/w3c/web-roadmaps",
     "pages": [
