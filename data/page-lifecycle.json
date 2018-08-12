@@ -1,6 +1,6 @@
 {
-  "url": "https://github.com/WICG/web-lifecycle",
-  "title": "A Lifecycle for the Web",
+  "url": "https://wicg.github.io/page-lifecycle/spec.html",
+  "title": "Page Lifecycle",
   "wgs": [
     {
       "url": "https://www.w3.org/community/wicg/",
