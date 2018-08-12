@@ -236,11 +236,7 @@ function getIdForReverseLookup(spec) {
     }
   }
   else {
-    let parts = specUrl.split('#')[0].split('/');
-    if (parts[parts.length - 1].endsWith('.html')) {
-      parts = parts.slice(0, -1);
-    }
-    return parts.join('/');
+    return specUrl.split('#')[0];
   }
 }
 
