@@ -3375,6 +3375,9 @@
       {
         "ua": "firefox",
         "status": "shipped",
+        "notes": [
+          "Does not support CORS for resources which redirect: https://bugzilla.mozilla.org/show_bug.cgi?id=1346749"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cors",
         "selected": true

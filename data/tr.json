@@ -3435,8 +3435,10 @@
   },
   "transcript": {
     "url": "http://w3c.github.io/html-transcript/html-transcript-src.html",
+    "edDraft": "https://w3c.github.io/html-transcript/html-transcript-src.html",
+    "repository": "https://github.com/w3c/html-transcript",
     "title": "A transcript extension for HTML",
-    "status": "ED",
+    "status": "NOTE",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/WAI/PF/html-accessibility-tf",
@@ -4222,16 +4224,17 @@
   },
   "webworkers": {
     "url": "https://html.spec.whatwg.org/multipage/workers.html",
+    "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
     "repository": "https://github.com/whatwg/html",
     "title": "HTML (Living Standard)",
-    "status": "LS",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org",
-        "label": "WHATWG"
+        "url": "https://www.w3.org/2008/webapps/",
+        "label": "W3C"
       }
     ],
-    "publisher": "WHATWG",
+    "publisher": "W3C",
     "milestones": {},
     "feature": "Web workers"
   },
