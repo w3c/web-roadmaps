@@ -18902,6 +18902,9 @@
   "mapml": {
     "implementations": []
   },
+  "me-media-timed-events": {
+    "implementations": []
+  },
   "media-capabilities": {
     "implementations": [
       {
@@ -19765,6 +19768,108 @@
   },
   "movingfeatures": {
     "implementations": []
+  },
+  "mse-v2": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "codec-switching"
+        ],
+        "flag": true,
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "codec-switching"
+        ],
+        "flag": true,
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "codec-switching"
+        ],
+        "partial": false,
+        "selected": true
+      }
+    ],
+    "features": {
+      "codec-switching": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true
+          }
+        ]
+      }
+    }
   },
   "mse": {
     "implementations": [

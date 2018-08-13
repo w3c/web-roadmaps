@@ -2097,6 +2097,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "me-media-timed-events": {
+    "url": "https://w3c.github.io/me-media-timed-events/",
+    "title": "Media Timed Events",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webtv/",
+        "label": "Media & Entertainment Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "media-capabilities": {
     "url": "https://wicg.github.io/media-capabilities/",
     "repository": "https://github.com/wicg/media-capabilities",
@@ -2296,6 +2309,24 @@
     "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
+  },
+  "mse-v2": {
+    "url": "https://wicg.github.io/media-source/",
+    "title": "Media Source Extensions™",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "codec-switching": {
+        "title": "Codec switching"
+      }
+    }
   },
   "mse": {
     "url": "https://www.w3.org/TR/media-source/",
