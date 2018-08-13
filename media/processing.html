@@ -13,7 +13,7 @@
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
         <p data-feature="Image and Video Processing">The <a data-featureid="canvas">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames. One of its limitations is that it operates using the CPU instead of the more optimized operations enabled by modern GPUs.</p>
-        <p data-feature="Video inserts">The <a data-featureid="mse">Media Source Extensions API</a> (MSE) allows application to insert chunks of media (e.g. a video clip) into an existing media stream.</p>
+        <p data-feature="Adaptive streaming">The <a data-featureid="mse">Media Source Extensions API</a> (MSE) allows applications to insert chunks of media (e.g. a video clip) into an existing media stream, and implement adaptive streaming algorithms at the application level.</p>
         <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
       </section>
@@ -22,14 +22,15 @@
         <div data-feature="Video processing">
           <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
         </div>
+        <div data-feature="Adaptive streaming">
+          <p>Some scenarios require the ability to switch to a different codec during media playback. For instance, this need may arise on program boundaries when watching linear content. Also, typical ads are of a very different nature than the media stream that they need to be inserted into. The first version of the Media Source Extensions (MSE) specification does not address such heterogeneous scenarios, forcing content providers to use complex workarounds, e.g. using two <code>&lt;video&gt;</code> elements overlaid one top of the other with no guarantees that transition between streams will be smooth, or transcoding and re-packaging the ad content to be consistent with the program content. The Web Platform Incubator Working Group is incubating a <a data-featureid="mse-v2/codec-switching">codec switching feature for MSE</a>, to be integrated in a second version of MSE.</p>
+        </div>
       </section>
       <section>
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt>JavaScript-based Codecs</dt>
           <dd>The algorithms used to compress and decompress bandwidth-intensive media content are required to be provided by the browsers at this time; a system enabling these algorithms to be written and distributed in JavaScript or Web Assembly and get them integrated in the overall media flow of user agents would provide much greater freedom to specialize and innovate in this space (see <a href="https://discourse.wicg.io/t/custom-image-audio-video-codec-apis/1270">related discussion on W3C’s discourse forum</a>).</dd>
-          <dt>Ad-insertion with MSE</dt>
-          <dd>Typical ads are of a very different nature than the media stream that they need to be inserted into. The Media Source Extensions specification does not address such heterogeneous scenarios, forcing content providers to use more complex workarounds, such as using two different <code>&lt;video&gt;</code> elements. MSE could be extended to support common ad-insertion use cases.</dd>
           <dt>Content Decryption Module API</dt>
           <dd>The capabilities offered by the Encrypted Media Extensions rely on the integration with undefined interfaces for the Content Decryption Modules. Providing a uniform interface for that integration would simplify the addition of new CDMs in the market.</dd>
           <dt>Conditional Access System</dt>
