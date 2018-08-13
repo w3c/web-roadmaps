@@ -1,12 +1,5 @@
 {
   "url": "https://wicg.github.io/page-lifecycle/spec.html",
-  "title": "Page Lifecycle",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ],
   "impl": {
     "chromestatus": 5644602711212032
   }
