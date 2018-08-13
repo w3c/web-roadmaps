@@ -20680,6 +20680,52 @@
   "packaging": {
     "implementations": []
   },
+  "page-lifecycle": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5644602711212032",
+        "selected": true
+      }
+    ]
+  },
   "page-visibility": {
     "implementations": [
       {
@@ -27983,52 +28029,6 @@
         "status": "experimental",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-animations"
-      }
-    ]
-  },
-  "web-lifecycle": {
-    "implementations": [
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5644602711212032",
-        "selected": true
       }
     ]
   },
