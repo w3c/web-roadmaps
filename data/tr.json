@@ -1578,17 +1578,19 @@
     "milestones": {}
   },
   "geolocation-sensor": {
-    "url": "https://wicg.github.io/geolocation-sensor/",
-    "repository": "https://github.com/wicg/geolocation-sensor",
+    "url": "https://www.w3.org/TR/geolocation-sensor/",
+    "edDraft": "https://w3c.github.io/geolocation-sensor/",
+    "repository": "https://github.com/w3c/geolocation-sensor",
     "title": "Geolocation Sensor",
-    "status": "LS",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "geolocation": {
@@ -3764,7 +3766,7 @@
   },
   "viewport-units": {
     "url": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
-    "edDraft": "https://drafts.csswg.org/css-values/",
+    "edDraft": "https://drafts.csswg.org/css-values-3/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Values and Units Module Level 3",
     "status": "CR",

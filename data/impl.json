@@ -47,6 +47,13 @@
         "href": "https://caniuse.com/#feat=accelerometer"
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=accelerometer",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -77,8 +84,7 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
       },
       {
         "ua": "safari",
@@ -91,7 +97,13 @@
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -484,7 +496,8 @@
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps"
+        "href": "https://caniuse.com/#feat=offline-apps",
+        "selected": true
       },
       {
         "ua": "safari",
@@ -550,13 +563,6 @@
         "selected": true
       },
       {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6192449487634432",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
@@ -570,12 +576,6 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6192449487634432"
-      },
-      {
-        "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6192449487634432"
@@ -12898,6 +12898,17 @@
         "selected": true
       },
       {
+        "ua": "opera",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Available behind the \"Experimental Web Platform features\" feature flag"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-snappoints",
+        "selected": true
+      },
+      {
         "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
@@ -12950,8 +12961,7 @@
         "ua": "opera",
         "status": "experimental",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5721832506261504",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5721832506261504"
       },
       {
         "ua": "edge",
@@ -14492,7 +14502,7 @@
         "ua": "edge",
         "status": "shipped",
         "notes": [
-          "Partial support in IE refers to [significantly buggy behavior](http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). "
+          "Partial support in IE refers to [significantly buggy behavior](https://web.archive.org/web/20170121011936/http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). "
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist"
@@ -16393,7 +16403,13 @@
     "implementations": []
   },
   "geolocation-sensor": {
-    "implementations": []
+    "implementations": [],
+    "polyfills": [
+      {
+        "label": "sensor-polyfills",
+        "url": "https://github.com/kenchris/sensor-polyfills"
+      }
+    ]
   },
   "geolocation": {
     "implementations": [
@@ -17112,6 +17128,13 @@
         "href": "https://caniuse.com/#feat=gyroscope"
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gyroscope",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -17142,8 +17165,7 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
       },
       {
         "ua": "safari",
@@ -17156,7 +17178,13 @@
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -18846,6 +18874,13 @@
         "href": "https://caniuse.com/#feat=magnetometer"
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=magnetometer",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "experimental",
         "flag": true,
@@ -18880,8 +18915,7 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
       },
       {
         "ua": "safari",
@@ -18894,7 +18928,13 @@
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ]
@@ -19797,6 +19837,17 @@
       },
       {
         "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "codec-switching"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "safari",
         "status": "indevelopment",
         "source": "chromestatus",
         "guess": true,
@@ -19828,7 +19879,7 @@
           },
           {
             "ua": "firefox",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
@@ -19842,7 +19893,7 @@
           },
           {
             "ua": "safari",
-            "status": "",
+            "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
@@ -19863,6 +19914,12 @@
           },
           {
             "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "safari",
             "status": "indevelopment",
             "source": "chromestatus",
             "guess": true
@@ -20290,6 +20347,16 @@
         "selected": true
       },
       {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "notes": [
+          "Chrome for Android requires the call to be made with a [service worker registration](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API#Service_worker_additions)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=notifications",
+        "selected": true
+      },
+      {
         "ua": "firefox_android",
         "status": "shipped",
         "source": "caniuse",
@@ -20433,6 +20500,13 @@
         "href": "https://caniuse.com/#feat=orientation-sensor"
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=orientation-sensor",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -20463,8 +20537,7 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
       },
       {
         "ua": "safari",
@@ -20477,7 +20550,13 @@
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5698781827825664",
+        "href": "https://www.chromestatus.com/feature/5698781827825664"
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -21261,6 +21340,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request"
       },
@@ -21278,12 +21360,18 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request"
       },
       {
         "ua": "safari",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -21291,6 +21379,9 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -21298,6 +21389,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -21314,6 +21408,9 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
+        "notes": [
+          "Missing support for PaymentResponse.prototype.retry() method"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -22284,14 +22381,16 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "consideration",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5273474901737472",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "consideration",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5273474901737472",
         "selected": true
@@ -22313,6 +22412,13 @@
       {
         "ua": "safari",
         "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5273474901737472",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5273474901737472",
         "selected": true
@@ -28220,7 +28326,7 @@
       },
       {
         "ua": "webkit",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-share"
       }
@@ -28513,6 +28619,13 @@
         "selected": true
       },
       {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5669923372138496",
+        "selected": true
+      },
+      {
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
@@ -28542,7 +28655,7 @@
       },
       {
         "ua": "webkit",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-authentication"
       }
@@ -29367,7 +29480,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS."
+          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS. Work in progress for GNU/Linux."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr",
