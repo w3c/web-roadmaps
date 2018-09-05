@@ -1823,6 +1823,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "i3s": {
+    "url": "http://www.opengeospatial.org/standards/i3s",
+    "title": "Indexed 3D Scene Layers",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "imagecapture": {
     "url": "https://www.w3.org/TR/image-capture/",
     "edDraft": "https://w3c.github.io/mediacapture-image/",

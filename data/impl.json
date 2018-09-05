@@ -17897,6 +17897,9 @@
   "humidity": {
     "implementations": []
   },
+  "i3s": {
+    "implementations": []
+  },
   "imagecapture": {
     "implementations": [
       {
