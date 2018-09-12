@@ -2431,6 +2431,15 @@
     "informative": false,
     "milestones": {}
   },
+  "offscreencanvas": {
+    "url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+    "title": "HTML (Living Standard)",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "OffscreenCanvas"
+  },
   "ogc-georss": {
     "url": "http://docs.opengeospatial.org/cs/17-002r1/17-002r1.html",
     "title": "OGC GeoRSS Encoding Standard",
@@ -3958,6 +3967,20 @@
     "informative": false,
     "milestones": {}
   },
+  "web-locks": {
+    "url": "https://wicg.github.io/web-locks/",
+    "repository": "https://github.com/wicg/web-locks",
+    "title": "Web Locks API",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "web-share-target": {
     "url": "https://wicg.github.io/web-share-target/",
     "repository": "https://github.com/wicg/web-share-target",
@@ -4069,6 +4092,20 @@
         "url": "#interface"
       }
     }
+  },
+  "webgl": {
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+    "repository": "https://github.com/KhronosGroup/WebGL",
+    "title": "WebGL Specification, Version 1.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.khronos.org/",
+        "label": "Khronos Group"
+      }
+    ],
+    "publisher": "Khronos",
+    "milestones": {}
   },
   "webmediaapi": {
     "url": "https://w3c.github.io/webmediaapi/",

@@ -11149,13 +11149,12 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
           "variable"
         ],
-        "flag": true,
         "partial": true,
         "selected": true
       },
@@ -11321,8 +11320,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "notes": [
               "Requires MacOS 10.13+"
             ],
@@ -11426,10 +11424,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -11664,10 +11661,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -11901,10 +11897,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -12081,10 +12076,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -12284,10 +12278,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -12882,11 +12875,7 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Available behind the \"Experimental Web Platform features\" feature flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints"
       },
@@ -12905,8 +12894,7 @@
           "Available behind the \"Experimental Web Platform features\" feature flag"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=css-snappoints",
-        "selected": true
+        "href": "https://caniuse.com/#feat=css-snappoints"
       },
       {
         "ua": "safari_ios",
@@ -12927,14 +12915,14 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5721832506261504",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5721832506261504",
         "selected": true
@@ -12959,9 +12947,10 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5721832506261504"
+        "href": "https://www.chromestatus.com/feature/5721832506261504",
+        "selected": true
       },
       {
         "ua": "edge",
@@ -14520,9 +14509,6 @@
       {
         "ua": "chrome",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to [a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=773041) where long lists of items are unscrollable resulting in unselectable options."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist"
       },
@@ -16612,6 +16598,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "Does not work in installed PWAs, getUserMedia is only available directly in Safari but neither in a UIWebView nor WKWebView. Note: 11.3 seems to work fine."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=stream",
         "selected": true
@@ -19822,7 +19811,6 @@
         "features": [
           "codec-switching"
         ],
-        "flag": true,
         "partial": false,
         "selected": true
       },
@@ -19834,7 +19822,6 @@
         "features": [
           "codec-switching"
         ],
-        "flag": true,
         "partial": false,
         "selected": true
       },
@@ -19859,6 +19846,17 @@
         ],
         "partial": false,
         "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "codec-switching"
+        ],
+        "partial": false,
+        "selected": true
       }
     ],
     "features": {
@@ -19867,7 +19865,6 @@
           {
             "ua": "chrome",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
@@ -19875,7 +19872,6 @@
           {
             "ua": "chrome_android",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
@@ -19902,18 +19898,23 @@
             "selected": true
           },
           {
+            "ua": "opera",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5719220952236032",
+            "selected": true
+          },
+          {
             "ua": "chrome",
             "status": "experimental",
             "source": "chromestatus",
-            "guess": true,
-            "flag": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
             "status": "experimental",
             "source": "chromestatus",
-            "guess": true,
-            "flag": true
+            "guess": true
           },
           {
             "ua": "firefox",
@@ -19924,6 +19925,12 @@
           {
             "ua": "safari",
             "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "opera",
+            "status": "experimental",
             "source": "chromestatus",
             "guess": true
           }
@@ -20396,6 +20403,177 @@
         "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webnotifications/",
+        "selected": true
+      }
+    ]
+  },
+  "offscreencanvas": {
+    "implementations": [
+      {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas"
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the `Experimental canvas features` flag"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5681560598609920",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "opera_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
         "selected": true
       }
     ]
@@ -21874,7 +22052,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5729206566649856",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -21924,8 +22109,7 @@
         "ua": "chrome_android",
         "status": "",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture"
       },
       {
         "ua": "opera",
@@ -28246,6 +28430,52 @@
       }
     ]
   },
+  "web-locks": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712361335816192",
+        "selected": true
+      }
+    ]
+  },
   "web-share-target": {
     "implementations": [
       {
@@ -28862,6 +29092,149 @@
         ]
       }
     }
+  },
+  "webgl": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "notes": [
+          "WebGL context is accessed from \"experimental-webgl\" rather than \"webgl\""
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "notes": [
+          "WebGL context is accessed from \"experimental-webgl\" rather than \"webgl\""
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "baidu_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgl",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552"
+      },
+      {
+        "ua": "safari",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6049512976023552"
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "prefix": true,
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webglcanvas3d/",
+        "selected": true
+      },
+      {
+        "ua": "webkit",
+        "status": "shipped",
+        "source": "webkitstatus",
+        "href": "https://webkit.org/status/#specification-webgl-1"
+      }
+    ]
   },
   "webmediaapi": {
     "implementations": []
