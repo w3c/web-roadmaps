@@ -17,6 +17,10 @@
           <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <a data-featureid="touchevent">Touch Events in the DOM</a> (Document Object Model) enable.</p>
         </div>
 
+        <div data-feature="Media capture">
+          <p>The <a data-featureid="getusermedia">Media Capture and Streams API</a> gives access to cameras and microphones that games may use for various purposes, including as an input controller (e.g. user makes specific sounds to control game actions), an interaction mechanism (e.g. users have to put a specific object/barcode in front of the camera), contextual information (e.g. in Augmented Reality scenarios to render the user's surrounding in the background), or simply for cross-player communication purposes.</p>
+        </div>
+
         <div data-feature="Sensors">
           <p>The <a data-featureid="geolocation">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
 
@@ -66,6 +70,13 @@
           <p>The <a data-featureid="geolocation-sensor">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, improves security and privacy, and is extensible.</p>
         </div>
 
+        <div data-feature="Media capture">
+          <p>As depth-sensing cameras come to the market, the <a data-featureid="3dcamera">Media Capture Depth Stream Extensions</a> allows capturing of the additional dimension in information they produce.</p>
+          <p>Game players enjoy recording and sharing their performance on social networks. The <a data-featureid="domcapture">Media Capture from DOM elements</a> API lets games turn content rendered in the application into a media stream for recording or transmission. More generally, content produced by any other application (or the whole display) can also be turned into such a stream via the <a data-featureid="screencapture">Screen Capture API</a>.</p>
+          <p>Any media content captured, generated or received as a stream can be recorded via the <a data-featureid="recording">Media Recorder API</a>.</p>
+          <p>The <a data-featureid="imagecapture">Mediastream Image Capture</a> specification caters for more advanced usage of cameras that offer still-pictures settings (e.g. to control zoom or white-balance).</p>
+        </div>
+
         <div data-feature="Screen wake lock">
           <p>Whether players are speaking commands to the game or interacting with them through non-haptic mechanisms, they risk seeing the screens turned off automatically by their devices screensaver. The <a data-featureid="wake-lock">Wake Lock API</a> lets developers signal the needs to keep the screen up in these circumstances.</p>
         </div>
@@ -76,6 +87,10 @@
 
         <div data-feature="Interactions with physical objects">
           <p>Games may want the user to interact with physical objects to improve the experience. The <a href="http://w3c.github.io/web-nfc/" data-featureid="webnfc">Web Near-Field Communications (NFC) API</a> enables wireless communication between two devices at close proximity. Similarly, the <a data-featureid="webbluetooth">Web Bluetooth</a> specification describes an API to discover and communicate with devices over the Bluetooth Low Energy (BLE) mode.</p>
+        </div>
+
+        <div data-feature="Object recognition">
+          <p>Detecting specific objects from a video stream is hard and CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
         </div>
 
         <p data-feature="Speech-based interactions">Mobile devices are also in many cases well-suited to be used through voice-interactions; the <a href="https://www.w3.org/community/speech-api/">Speech API Community Group</a> developed a JavaScript API to enable interactions with a Web page through spoken commands. <a data-featureid="speech-api/synthesis">Speech synthesis</a> is well supported across browsers. Support for <a data-featureid="speech-api/recognition">speech recognition</a> is still underway.</p>
