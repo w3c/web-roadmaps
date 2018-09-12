@@ -32,7 +32,7 @@
     },
     {
       "url": "lifecycle.html",
-      "title": "Progressive Web Applications (PWA)",
+      "title": "Platform Integration",
       "icon": "../assets/img/mobile-lifecycle.svg",
       "description": "Mechanisms to integrate the application with the rest of the system and provide a native-like experience."
     },
