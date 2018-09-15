@@ -28822,26 +28822,41 @@
   "webauthn": {
     "implementations": [
       {
-        "ua": "firefox",
+        "ua": "edge",
         "status": "experimental",
+        "prefix": true,
         "flag": true,
         "notes": [
-          "Support can be enabled with the \"security.webauth.u2f\" flag"
+          "Can be enabled at `about:flags`\r\n\r\nEdge 13 used an earlier draft syntax. As of Edge 14 the implementation is prefixed and based on the FIDO 2.0 Web APIs."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=u2f"
+        "href": "https://caniuse.com/#feat=webauthn"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
       },
       {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=u2f"
+        "href": "https://caniuse.com/#feat=webauthn"
       },
       {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=u2f",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
       },
       {
@@ -28862,8 +28877,7 @@
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5669923372138496",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5669923372138496"
       },
       {
         "ua": "edge",
