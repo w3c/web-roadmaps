@@ -3929,6 +3929,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Edge has broken nonce support as it ignores nonces on sourced scripts."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=contentsecuritypolicy2"
       },
@@ -12904,6 +12907,12 @@
         "selected": true
       },
       {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-snappoints"
+      },
+      {
         "ua": "firefox_android",
         "status": "shipped",
         "notes": [
@@ -15372,13 +15381,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Only supports the older event-based specification"
-        ],
+        "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=eme"
+        "href": "https://caniuse.com/#feat=eme",
+        "selected": true
       },
       {
         "ua": "opera",
@@ -15437,8 +15443,7 @@
         "ua": "safari",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6578378068983808",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6578378068983808"
       },
       {
         "ua": "opera",
@@ -20248,18 +20253,12 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
-        "notes": [
-          "Only supports the `type` and `downlinkMax` values."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=netinfo"
       },
       {
         "ua": "firefox_android",
         "status": "shipped",
-        "notes": [
-          "Only supports the `type` value."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=netinfo",
         "selected": true
@@ -20438,11 +20437,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=offscreencanvas"
       },
@@ -25201,7 +25196,7 @@
       },
       {
         "ua": "firefox",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4782875580825600"
       },
@@ -25739,7 +25734,7 @@
           },
           {
             "ua": "firefox",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/4782875580825600"
           },
@@ -30133,6 +30128,66 @@
   "webxr": {
     "implementations": [
       {
+        "ua": "edge",
+        "status": "shipped",
+        "notes": [
+          "[In development](https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/#3lMW05DTZXbXcK46.97) in the latest Edge builds and supports only [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality)."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "notes": [
+          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS. Work in progress for GNU/Linux."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "notes": [
+          "Supports only Google Daydream on [daydream-ready devices](https://vr.google.com/daydream/smartphonevr/phones/) and Google Cardboards"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "notes": [
+          "Supports only Samsung Galaxy devices with the Samgung Gear VR"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr",
+        "selected": true
+      },
+      {
+        "ua": "baidu_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvr",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "experimental",
         "source": "chromestatus",
@@ -30150,15 +30205,13 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5680169905815552"
       },
       {
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5680169905815552"
       },
       {
         "ua": "safari",
@@ -30312,9 +30365,6 @@
       {
         "ua": "safari",
         "status": "shipped",
-        "notes": [
-          "Supported only on Safari for Mac OS Sierra, not El Capitan & older."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=woff2",
         "selected": true

@@ -2636,7 +2636,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-10-15",
+      "PR": "2018-11-15",
       "REC": "2018-12-30"
     }
   },
@@ -2671,7 +2671,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-10-15",
+      "PR": "2018-11-15",
       "REC": "2018-12-30"
     }
   },
@@ -4027,7 +4027,7 @@
     "edDraft": "https://webaudio.github.io/web-audio-api/",
     "repository": "https://github.com/webaudio/web-audio-api",
     "title": "Web Audio API",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2011/audio/",
@@ -4328,8 +4328,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/webvr/",
-        "label": "Immersive Web Community Group"
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
       }
     ],
     "publisher": "W3C",
