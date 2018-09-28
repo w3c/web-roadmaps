@@ -1,0 +1,9 @@
+{
+  "url": "https://www.w3.org/TR/pointerlock",
+  "impl": {
+    "caniuse": "pointerlock",
+    "chromestatus": 6753200417800192,
+    "edgestatus": "Pointer Lock (Mouse Lock)",
+    "webkitstatus": "specification-pointer-lock"
+  }
+}
