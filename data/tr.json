@@ -1195,9 +1195,16 @@
   },
   "device-memory": {
     "url": "https://w3c.github.io/device-memory/",
+    "edDraft": "https://w3c.github.io/device-memory/",
+    "repository": "https://github.com/w3c/device-memory",
     "title": "Device Memory 1",
-    "status": "ED",
-    "deliveredBy": [],
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "W3C"
+      }
+    ],
     "publisher": "W3C",
     "milestones": {},
     "features": {
@@ -2781,6 +2788,22 @@
       {
         "url": "http://www.w3.org/2012/pointerevents/",
         "label": "Pointer Events Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "pointerlock": {
+    "url": "https://www.w3.org/TR/pointerlock",
+    "edDraft": "https://w3c.github.io/pointerlock/",
+    "repository": "https://github.com/w3c/pointerlock",
+    "title": "Pointer Lock",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
       }
     ],
     "publisher": "W3C",

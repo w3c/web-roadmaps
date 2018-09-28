@@ -11325,7 +11325,7 @@
             "ua": "firefox",
             "status": "shipped",
             "notes": [
-              "Requires MacOS 10.13+"
+              "Mac version requires MacOS 10.13+"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=variable-fonts",
@@ -11341,7 +11341,7 @@
             "ua": "safari",
             "status": "shipped",
             "notes": [
-              "Requires MacOS 10.13+"
+              "Mac version requires MacOS 10.13+"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=variable-fonts",
@@ -22433,6 +22433,95 @@
       }
     ]
   },
+  "pointerlock": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "prefix": true,
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6753200417800192",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6753200417800192"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6753200417800192"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6753200417800192"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6753200417800192"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pointerlockmouselock/",
+        "selected": true
+      },
+      {
+        "ua": "webkit",
+        "status": "shipped",
+        "source": "webkitstatus",
+        "href": "https://webkit.org/status/#specification-pointer-lock"
+      }
+    ]
+  },
   "preload": {
     "implementations": [
       {
@@ -26453,21 +26542,21 @@
       },
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6605041225957376",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6605041225957376",
         "selected": true
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6605041225957376"
       },
@@ -26479,7 +26568,13 @@
       },
       {
         "ua": "safari",
-        "status": "consideration",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6605041225957376"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6605041225957376"
       },
@@ -26694,21 +26789,21 @@
           },
           {
             "ua": "firefox",
-            "status": "consideration",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6605041225957376",
-            "guess": true
-          },
-          {
-            "ua": "chrome",
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
           },
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
+          },
+          {
             "ua": "safari",
-            "status": "consideration",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -26717,12 +26812,12 @@
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -26870,21 +26965,21 @@
           },
           {
             "ua": "firefox",
-            "status": "consideration",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6605041225957376",
-            "guess": true
-          },
-          {
-            "ua": "chrome",
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
           },
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
+          },
+          {
             "ua": "safari",
-            "status": "consideration",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -26893,12 +26988,12 @@
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -27040,21 +27135,21 @@
           },
           {
             "ua": "firefox",
-            "status": "consideration",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6605041225957376",
-            "guess": true
-          },
-          {
-            "ua": "chrome",
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
           },
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
+          },
+          {
             "ua": "safari",
-            "status": "consideration",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -27063,12 +27158,12 @@
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
+            "href": "https://www.chromestatus.com/feature/6605041225957376",
+            "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6605041225957376",
             "guess": true
@@ -28540,7 +28635,7 @@
       },
       {
         "ua": "safari",
-        "status": "consideration",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736",
         "selected": true
