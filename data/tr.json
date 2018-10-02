@@ -19,6 +19,19 @@
     "informative": false,
     "milestones": {}
   },
+  "3dtiles": {
+    "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
+    "title": "3D Tiles",
+    "status": "PR",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org/",
+        "label": "Open Geospatial Consortium"
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "accelerometer": {
     "url": "https://www.w3.org/TR/accelerometer/",
     "edDraft": "https://w3c.github.io/accelerometer/",
@@ -323,21 +336,8 @@
     "informative": false,
     "milestones": {}
   },
-  "cesium": {
-    "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
-    "title": "Cesium 3D Tiles",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
-    "publisher": "OGC",
-    "milestones": {}
-  },
   "cityjson": {
-    "url": "http://www.cityjson.org/en/0.6/specs/",
+    "url": "http://www.cityjson.org/",
     "title": "CityJSON",
     "status": "ED",
     "deliveredBy": [],

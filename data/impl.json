@@ -38,6 +38,9 @@
       }
     ]
   },
+  "3dtiles": {
+    "implementations": []
+  },
   "accelerometer": {
     "implementations": [
       {
@@ -3211,9 +3214,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
       }
     ]
-  },
-  "cesium": {
-    "implementations": []
   },
   "cityjson": {
     "implementations": []
@@ -11325,7 +11325,7 @@
             "ua": "firefox",
             "status": "shipped",
             "notes": [
-              "Mac version requires MacOS 10.13+"
+              "Requires MacOS 10.13+"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=variable-fonts",
@@ -11341,7 +11341,7 @@
             "ua": "safari",
             "status": "shipped",
             "notes": [
-              "Mac version requires MacOS 10.13+"
+              "Requires MacOS 10.13+"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=variable-fonts",
@@ -22477,8 +22477,7 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6753200417800192",
         "selected": true
@@ -28570,21 +28569,23 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
       },
       {
         "ua": "firefox",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
