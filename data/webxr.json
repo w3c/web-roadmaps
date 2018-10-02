@@ -3,11 +3,12 @@
   "title": "WebXR Device API",
   "wgs": [
     {
-      "label": "Immersive Web Community Group",
-      "url": "https://www.w3.org/community/webvr/"
+      "label": "Immersive Web Working Group",
+      "url": "https://www.w3.org/immersive-web/"
     }
   ],
   "impl": {
+    "caniuse": "webvr",
     "chromestatus": 5680169905815552
   },
   "polyfills": [

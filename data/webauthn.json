@@ -1,7 +1,7 @@
 {
   "url": "https://www.w3.org/TR/webauthn/",
   "impl": {
-    "caniuse": "u2f",
+    "caniuse": "webauthn",
     "chromestatus": 5669923372138496,
     "edgestatus": "Web Authentication API",
     "webkitstatus": "feature-web-authentication"
