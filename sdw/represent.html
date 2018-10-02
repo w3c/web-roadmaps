@@ -7,13 +7,13 @@
   <body>
     <header>
       <h1>Represent spatial data</h1>
-      <p>There are a lot of formats, encodings, and vocabularies for representing spatial data and geometry on the Web. This roadmap gives an overview of those that are well-deployed on the Web or under development, but also those that are well-deployed in the geospatial community but less so on the Web. These are in the 'Features not covered by ongoing work' section.</p>
+      <p>There are a lot of formats, encodings, and vocabularies for representing spatial data and geometry on the Web. This roadmap gives an overview of those that are well-deployed on the Web or under development, but also those that are well-deployed in the geospatial community but less so on the Web. These are in the "Features not covered by ongoing work" section.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
         <!--to represent spatial data: vocabularies / encodings-->
-        <div data-feature="Encoding any geospatial data">
+        <div data-feature="Encoding any spatial data">
             <p>There are several options for representing spatial data which are established standards: </p>
             <ul>
               <li><a data-featureid="rfc7946">GeoJSON</a> is a widely used format which is serialized in JSON and easy for browser-based Web applications to process, but supporting only one coordinate reference system (CRS84 - i.e., WGS 84 longitude/latitude), and geometries up to 2 dimensions (points, lines, surfaces).</li>
@@ -27,7 +27,7 @@
           <!-- to represent sensor data-->
           <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases.</p>
           <!-- to represent temporal data-->
-          <p data-feature="Temporal data representation">The <a data-featureid="owl-time">Time Ontology</a> contains concepts for describing the temporal properties of resources in the world or described in Web pages, including relations between time instants and intervals, information about durations, and temporal position including date-time information. Not only the conventional (Gregorian) calendar and clock can be used: another temporal reference system is also possible.</p>
+          <p data-feature="Temporal data representation">The <a data-featureid="owl-time">Time Ontology</a> contains concepts for describing the temporal properties of resources in the world or described in Web pages, including relations between time instants and intervals, information about durations, and temporal position including date-time information. Not only the conventional (Gregorian) calendar and clock can be used: other temporal reference systems are also possible.</p>
           <!-- to represent geometry-->
           <p data-feature="Representation of geometry"><a data-featureid="sfa/wkt">Well Known Text (WKT)</a> is a compact format to represent geometry literals, used in GeoSPARQL and other spatial data representation formats, and supported in most triple stores and some web libraries. <a data-featureid="geohash">Geohash</a> is a convenient way to express a location using a short alphanumeric string. It only supports 0-dimensional geometries (points). </p>
           <!-- to reference a location-->
@@ -49,7 +49,7 @@
           <p><a data-featureid="covjson">CoverageJSON (CovJSON)</a> is a data format for describing "coverage" data in JSON: many kinds of data whose properties vary with space, time and other dimensions, including (but not limited to) satellite imagery, weather forecasts and river gauge measurements. </p>
         </div>
         <div data-feature="Encoding data about cities">
-           <p><a data-featureid="cityjson">CityJSON</a> is a JSON-based format for encoding a subset of the CityGML data model, aimed at representing 3D models of cities and landscapes. A CityJSON file represents both the 3D geometry and the semantics of the city features of a given area, eg buildings, roads, rivers, the vegetation, and the city furniture.</p>
+           <p><a data-featureid="cityjson">CityJSON</a> is a JSON-based format for encoding a subset of the <a href="http://www.opengeospatial.org/standards/citygml">CityGML</a> data model, aimed at representing 3D models of cities and landscapes. A CityJSON file represents both the 3D geometry and the semantics of the city features of a given area, such as buildings, roads, rivers, the vegetation, and the city furniture.</p>
         </div>
         <div data-feature="Encoding location">
            <p>The <a data-featureid="locn">ISA Programme Location Core Vocabulary</a> is a common RDF-based  vocabulary to describe the address or location of a spatial thing. It defines a set of general terms for describing location information that can be extended based on domain-specific requirements and covers geographical names, geometries, and postal addresses.</p>
@@ -73,7 +73,7 @@
           <dt data-feature="Representation of time series">Timeseries</dt>
           <dd>An OGC standard for describing measurements of the same thing that occur many times over time. There is a <a data-featureid="tsprofile">Timeseries Profile of Observations and Measurements</a> and a <a data-featureid="tsml">TimeSeriesML XML encoding</a>. </dd>
           <!-- to represent moving features-->
-          <dt data-feature="Representation of moving features" data-featureid="movingfeatures">Moving features</dt>
+          <dt data-feature="Representation of moving features"><a data-featureid="movingfeatures">Moving features</dt>
           <dd>An OGC standard for encoding representations of movement of geographic features. The primary use case is information exchange.</dd>
         </dl>
         <!-- LvdB: want to mention the Building Ontology, which the Linked building data community group (https://www.w3.org/community/lbd/) are proposing to create, here; but there is nothing yet to point at.-->

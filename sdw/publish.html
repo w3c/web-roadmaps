@@ -7,7 +7,7 @@
   <body>
     <header>
       <h1>Publish spatial data</h1>
-      <p>... </p>
+      <p>There are standard patterns and solutions which, when followed, allow one to publish spatial data on the web in a manner that makes use of the full potential of the Web as a data sharing platform. Most of these best practices apply to any data, some are specifically for spatial data, statistical data, dataset descriptions or other types of data. Publishing data in this manner improves discoverability, accessibility and interoperability of spatial data.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
@@ -18,17 +18,16 @@
         <!-- to describe a spatial dataset -->
         <p data-feature="Dataset description">When publishing datasets, it is a good idea to publish a dataset description along with it. In the eGovernment sector, <a data-featureid="vocab-dcat">DCAT vocabulary</a> is a standard for dataset metadata publication and harvesting implemented by data portals.</p>
         <!--to query using spatial operators-->
-        <p data-feature="Spatial query">To query data using spatial operators, the OGC standard <a data-featureid="geosparql">GeoSPARQL</a> offers a query language for RDF data, including the following set of operators: <em>equal, disjoint, touches, within, overlaps, crosses, intersects, contains</em>.</p>
-        <p data-feature="Opensearch geo and time">To use spatial and temporal information with OpenSearch, a collection of simple formats to share search results, the OGC standard <a data-featureid="opensearchgeo">OpenSearch Geo and Time Extensions</a> is available.</p>
+        <p data-feature="Spatial query">To query data using spatial operators, the OGC standard <a data-featureid="geosparql">GeoSPARQL</a> offers a query language for RDF data, including the following set of operators: <em>equal, disjoint, touches, within, overlaps, crosses, intersects, contains</em>.To use spatial and temporal information with OpenSearch, a collection of simple formats to share search results, the OGC standard <a data-featureid="opensearchgeo">OpenSearch Geo and Time Extensions</a> is available.</p>
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
         <!-- guidelines for stats-->
-        <p data-feature="Statistics guidelines">The <a data-featureid="stats-bp">Statistical Data on the Web Best Practices</a> is a Note currently being written by the SDWIG. Like the Spatial Data on the Web Best Practices, this Note will be a specialization of the more general Data on the Web Best Practices Recommendation, offering guidance on sharing statistical data. The aim of the work is to provide guidance on how statistical data can be made to work more effectively as part of the overall Web of Data. While not restricted to the geospatial aspects of statistical data, the relation between statistical and spatial considerations will be given particular emphasis.</p>
+        <p data-feature="Statistics guidelines">The <a data-featureid="stats-bp">Statistical Data on the Web Best Practices</a> is a Note currently being written by the <a href="https://www.w3.org/2017/sdwig/">Spatial data on the Web interest group</a> (SDWIG). Like the Spatial Data on the Web Best Practices, this Note will be a specialization of the more general Data on the Web Best Practices Recommendation, offering guidance on sharing statistical data. The aim of the work is to provide guidance on how statistical data can be made to work more effectively as part of the overall Web of Data. While not restricted to the geospatial aspects of statistical data, the relation between statistical and spatial considerations will be given particular emphasis.</p>
         <!-- to describe a spatial dataset -->
-        <p data-feature="Dataset description"><a data-featureid="vocab-dcat-2">DCAT Revised addition</a> is currently under development by the DXWG and will be an update and expansion of the previous DCAT. </p>
+        <p data-feature="Dataset description"><a data-featureid="vocab-dcat-2">DCAT Revised addition</a> is currently under development by the <a href="https://www.w3.org/2017/dxwg/wiki/Main_Page">Dataset exchange working group</a> (DXWG) and will be an update and expansion of the previous DCAT. </p>
         <!-- to provide access-->
-        <p data-feature="Access to spatial things">A new version of the OGC standard <a data-featureid="wfs3">Web Feature Service (WFS)</a> for querying geospatial information on the web. It is a complete rewrite of previous versions, focusing on a simple RESTful core specified as reusable OpenAPI components with responses in JSON and HTML.</p>
+        <p data-feature="Access to spatial things">A new version of the OGC standard <a data-featureid="wfs3">Web Feature Service (WFS)</a> is being developed at the <a href="http://www.opengeospatial.org">Open Geospatial Consortium</a> (OGC) for querying geospatial information on the web. It is a complete rewrite of previous versions, focusing on a simple RESTful core specified as reusable OpenAPI components with responses in JSON and HTML.</p>
       </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
@@ -38,7 +37,7 @@
         <!-- to describe a spatial dataset -->
         <p data-feature="Spatial dataset description">Because DCAT is lacking in possibilities for describing some specific characteristics spatial datasets, an application profile for spatial data, <a data-featureid="geodcat-ap">GeoDCAT-AP</a> has been developed in the framework of ISA Programme of the European Union, with the primary purpose of enabling the sharing of spatial metadata across domains and catalogue platforms. It defines RDF bindings covering metadata standards from the geospatial domain, enabling the harmonized RDF representation of existing spatial metadata. </p>
         <!-- to present a view -->
-        <p data-feature="Present view"><a data-featureid="mapml">Map Markup Language</a> (MapML) is an HTML- and DOM-compatible hypertext format for declaratively representing 2D map layers with embedded or linked tile, image and vector features, designed after the architectural style of the Web, by <a href="https://www.w3.org/TR/html-design-principles/#pave-the-cowpaths">paving the cowpaths</a> of Web mapping. Map layers may be used individually or stacked using custom elements or other standard Web technologies (browsers), to compose a complete map. MapML uses links and forms to integrate standard OGC technologies into the fabric of the Web 'without programming'.</p>
+        <p data-feature="Present a view"><a data-featureid="mapml">Map Markup Language</a> (MapML) is an HTML- and DOM-compatible hypertext format for declaratively representing 2D map layers with embedded or linked tile, image and vector features, designed after the architectural style of the Web, by <a href="https://www.w3.org/TR/html-design-principles/#pave-the-cowpaths">paving the cowpaths</a> of Web mapping. Map layers may be used individually or stacked using custom elements or other standard Web technologies (browsers), to compose a complete map. MapML uses links and forms to integrate standard OGC technologies into the fabric of the Web 'without programming'.</p>
       </section>
       <section class="not-covered">
         <h2>Features not covered by ongoing work</h2>
@@ -54,13 +53,13 @@
           <dd>An OGC standard for access to multi-dimensional coverage data. The requests are standardized XML messages.</dd>
         </dl>
       </section>
-      <section class="discontinued">
+      <!--<section class="discontinued">
         <h2>Discontinued features</h2>
         <dl>
           <dt></dt>
           <dd></dd>
         </dl>
-      </section>
+      </section>-->
     </main>
     <script src="../js/generate.js"></script>
   </body>

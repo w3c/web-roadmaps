@@ -7,7 +7,7 @@
   <body>
     <header>
       <h1>Capture spatial data</h1>
-      <p>When interaction with a web browser or a mobile device concerns a <em>location</em>, for example the current location, the user is in a sense capturing i.e. creating spatial data. Usually this involves a sensor such as a GPS device in some way. </p>
+      <p>There are different scenarios in which spatial data is captured, i.e. created. When interaction with a web browser or a mobile device concerns a <em>location</em>, for example the current location, the user is in a sense capturing spatial data. Usually this involves a sensor such as a GPS device in some way. Sensor platforms often create spatial data as they capture location along with other measurements of their environment. </p>
     </header>
     <main>
       <section class="featureset well-deployed">
@@ -19,7 +19,7 @@
           </div>
           <!--relevant parts of SensorThingsAPI-->
           <div data-feature="Sensor API">
-              <p>The <a data-featureid="sta-sensing">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the ISO/OGC Observation and Measurement (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
+              <p>The <a data-featureid="sta-sensing">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the <a href="https://www.iso.org/standard/32574.html">ISO/OGC Observations and measurements</a> (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
           </div>
           <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
       </section>
@@ -45,7 +45,7 @@
           <p><a data-featureid="webvmt">Web Video Map Tracks (WebVMT)</a> will offer a way to synchronize a device's location with sensor data such as location data. This allows you to combine a video stream, captured while moving, with synchronized data about its position on earth.</p>
         </div>
       </section>
-      <section class="not-covered">
+      <!--<section class="not-covered">
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt></dt>
@@ -58,7 +58,7 @@
           <dt></dt>
           <dd></dd>
         </dl>
-      </section>
+      </section>-->
     </main>
     <script src="../js/generate.js"></script>
   </body>
