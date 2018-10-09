@@ -713,7 +713,7 @@
       },
       {
         "ua": "chrome",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -726,7 +726,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -902,14 +902,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "consideration",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5674968658477056",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "consideration",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5674968658477056",
             "selected": true
@@ -16604,7 +16604,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Does not work in installed PWAs, getUserMedia is only available directly in Safari but neither in a UIWebView nor WKWebView. Note: 11.3 seems to work fine."
+          "Does not work in standalone running (\"installed\") PWAs, `getUserMedia` returns no video input devices in `UIWebView` or `WKWebView`, but only directly in Safari."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=stream",
@@ -21884,20 +21884,6 @@
   "permissions-request": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5707368532803584",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5707368532803584",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
@@ -21922,20 +21908,6 @@
   },
   "permissions-revoke": {
     "implementations": [
-      {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5707368532803584",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5707368532803584",
-        "selected": true
-      },
       {
         "ua": "firefox",
         "status": "consideration",
@@ -28609,6 +28581,12 @@
   "web-share": {
     "implementations": [
       {
+        "ua": "safari",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-share"
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -28985,8 +28963,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webauthenticationapi/",
         "selected": true

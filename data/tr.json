@@ -3429,7 +3429,6 @@
   },
   "svg2": {
     "url": "https://www.w3.org/TR/SVG2/",
-    "edDraft": "https://svgwg.org/svg2-draft/",
     "title": "Scalable Vector Graphics (SVG) 2",
     "status": "CR",
     "deliveredBy": [
@@ -3577,7 +3576,7 @@
     "edDraft": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
     "repository": "https://github.com/w3c/imsc",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3587,8 +3586,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-09-06",
-      "REC": "2018-10-30"
+      "REC": "2018-11-13"
     }
   },
   "ttml": {
@@ -3596,7 +3594,7 @@
     "edDraft": "https://w3c.github.io/ttml2/index.html",
     "repository": "https://github.com/w3c/ttml2",
     "title": "Timed Text Markup Language 2 (TTML2)",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3606,8 +3604,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-09-25",
-      "REC": "2018-10-30"
+      "REC": "2018-11-13"
     }
   },
   "ttml1": {
@@ -3615,7 +3612,7 @@
     "edDraft": "https://w3c.github.io/ttml1/index.html",
     "repository": "https://github.com/w3c/ttml1",
     "title": "Timed Text Markup Language 1 (TTML1) (Third Edition)",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3625,8 +3622,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-09-25",
-      "REC": "2018-10-30"
+      "REC": "2018-11-13"
     }
   },
   "tvtuner": {
