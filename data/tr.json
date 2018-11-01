@@ -1037,7 +1037,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -2783,7 +2783,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -3429,6 +3429,7 @@
   },
   "svg2": {
     "url": "https://www.w3.org/TR/SVG2/",
+    "edDraft": "https://svgwg.org/svg2-draft/",
     "title": "Scalable Vector Graphics (SVG) 2",
     "status": "CR",
     "deliveredBy": [
@@ -3968,8 +3969,8 @@
   },
   "web-animations": {
     "url": "https://www.w3.org/TR/web-animations-1/",
-    "edDraft": "https://w3c.github.io/web-animations/",
-    "repository": "https://github.com/w3c/web-animations",
+    "edDraft": "https://drafts.csswg.org/web-animations-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Web Animations",
     "status": "WD",
     "deliveredBy": [

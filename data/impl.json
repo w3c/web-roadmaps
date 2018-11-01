@@ -442,14 +442,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5762982487261184",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5762982487261184",
         "selected": true
@@ -471,6 +471,13 @@
       {
         "ua": "safari",
         "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5762982487261184",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5762982487261184",
         "selected": true
@@ -597,6 +604,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest"
       },
@@ -604,7 +614,8 @@
         "ua": "chrome",
         "status": "shipped",
         "notes": [
-          "On Windows, Chrome will read the manifest to generate a desktop icon when selecting the \"Add to desktop...\" option."
+          "On Windows, Chrome will read the manifest to generate a desktop icon when selecting the \"Add to desktop...\" option.",
+          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported on all platforms"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest"
@@ -612,6 +623,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -625,6 +639,9 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
+        "notes": [
+          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -686,7 +703,7 @@
       },
       {
         "ua": "safari",
-        "status": "",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6488656873259008",
         "selected": true
@@ -875,6 +892,13 @@
             "guess": true
           },
           {
+            "ua": "safari",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
@@ -1028,6 +1052,13 @@
           {
             "ua": "firefox",
             "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
             "guess": true
@@ -1191,6 +1222,13 @@
             "guess": true
           },
           {
+            "ua": "safari",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "chromestatus",
@@ -1339,6 +1377,13 @@
           {
             "ua": "firefox",
             "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
             "guess": true
@@ -1497,6 +1542,13 @@
           {
             "ua": "firefox",
             "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
             "guess": true
@@ -5381,7 +5433,8 @@
           },
           {
             "ua": "edge_mobile",
-            "status": "shipped",
+            "status": "experimental",
+            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
@@ -5640,7 +5693,8 @@
           },
           {
             "ua": "edge_mobile",
-            "status": "shipped",
+            "status": "experimental",
+            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
             "selected": true
@@ -5895,7 +5949,8 @@
           },
           {
             "ua": "edge_mobile",
-            "status": "shipped",
+            "status": "experimental",
+            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
@@ -6738,7 +6793,8 @@
           },
           {
             "ua": "edge_mobile",
-            "status": "shipped",
+            "status": "experimental",
+            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
             "selected": true
@@ -7636,7 +7692,8 @@
       },
       {
         "ua": "edge_mobile",
-        "status": "shipped",
+        "status": "experimental",
+        "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
         "selected": true
@@ -13149,6 +13206,9 @@
       {
         "ua": "safari",
         "status": "",
+        "notes": [
+          "Instead of ignoring the <code>-webkit-text-size-adjust</code> property, a bug prevents desktop Safari users from zooming in or out. The bug was fixed after Safari 5."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust"
       },
@@ -13586,7 +13646,8 @@
       },
       {
         "ua": "edge_mobile",
-        "status": "shipped",
+        "status": "experimental",
+        "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing",
         "selected": true
@@ -19299,6 +19360,17 @@
         "selected": true
       },
       {
+        "ua": "firefox",
+        "status": "experimental",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "mf-interaction"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -19447,6 +19519,19 @@
             "href": "https://caniuse.com/#feat=css-media-interaction"
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction"
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -19518,8 +19603,7 @@
             "ua": "firefox",
             "status": "",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6460705494532096",
-            "selected": true
+            "href": "https://www.chromestatus.com/feature/6460705494532096"
           },
           {
             "ua": "edge",
@@ -19549,6 +19633,13 @@
           {
             "ua": "edge",
             "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -19810,7 +19901,7 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -19821,7 +19912,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -19854,7 +19945,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -19869,14 +19960,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
@@ -19904,20 +19995,20 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5719220952236032",
             "selected": true
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           },
@@ -19935,7 +20026,7 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           }
@@ -21315,8 +21406,7 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5160285237149696",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5160285237149696"
       },
       {
         "ua": "safari",
@@ -21330,6 +21420,13 @@
         "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5160285237149696",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/paymenthandlerapi/",
         "selected": true
       },
       {
@@ -22019,14 +22116,7 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5729206566649856",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -22047,6 +22137,13 @@
       {
         "ua": "safari",
         "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5729206566649856",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -22076,7 +22173,8 @@
         "ua": "chrome_android",
         "status": "",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture"
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
       },
       {
         "ua": "opera",
@@ -22086,8 +22184,7 @@
           "Requires an origin trial token. (<a href='https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/developer-guide.md'>explainer<a>, <a href='http://bit.ly/OriginTrialSignup'>sign-up form</a>)"
         ],
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture"
       },
       {
         "ua": "opera_android",
@@ -22660,7 +22757,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5273474901737472",
         "selected": true
@@ -28937,7 +29034,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669923372138496",
         "selected": true
