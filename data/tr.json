@@ -46,7 +46,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "ambientlight": {
     "url": "https://www.w3.org/TR/ambient-light/",
@@ -62,7 +64,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "animation-frames": {
     "url": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
@@ -288,7 +292,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "beacon": {
     "url": "https://www.w3.org/TR/beacon/",
@@ -808,7 +814,7 @@
   },
   "css-flexbox": {
     "url": "https://www.w3.org/TR/css-flexbox-1/",
-    "edDraft": "https://drafts.csswg.org/css-flexbox/",
+    "edDraft": "https://drafts.csswg.org/css-flexbox-1/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Flexible Box Layout Module Level 1",
     "status": "CR",
@@ -1302,7 +1308,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-09-30"
+      "CR": "2019-03-30"
     }
   },
   "dpub-aam10": {
@@ -1546,7 +1552,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "geodcat-ap": {
     "url": "http://data.europa.eu/w21/81fd7288-6929-4b42-8707-2da604490d30",
@@ -1690,7 +1698,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "hbss": {
     "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
@@ -1862,7 +1872,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-06-30"
+      "CR": "2019-03-30"
     }
   },
   "ime-api": {
@@ -2104,7 +2114,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "mapml": {
     "url": "https://maps4html.github.io/MapML/spec/",
@@ -2380,7 +2392,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "WR/LC": "2019-03-30"
+    }
   },
   "mwabp": {
     "url": "https://www.w3.org/TR/mwabp/",
@@ -2494,7 +2508,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "owl-time": {
     "url": "https://www.w3.org/TR/owl-time/",
@@ -2527,7 +2543,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30",
+      "CR": "2019-06-30",
       "PR": "2019-09-30"
     },
     "features": {
@@ -2856,7 +2872,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "publishing-linking": {
     "url": "https://www.w3.org/TR/publishing-linking/",
@@ -2939,7 +2957,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-09-30"
+      "CR": "2019-03-30"
     }
   },
   "referrer-policy": {
@@ -3103,7 +3121,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30"
+      "WR/LC": "2019-03-30",
+      "CR": "2019-06-30"
     }
   },
   "sdw-bp": {
@@ -3577,7 +3596,7 @@
     "edDraft": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
     "repository": "https://github.com/w3c/imsc",
     "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3595,7 +3614,7 @@
     "edDraft": "https://w3c.github.io/ttml2/index.html",
     "repository": "https://github.com/w3c/ttml2",
     "title": "Timed Text Markup Language 2 (TTML2)",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3613,7 +3632,7 @@
     "edDraft": "https://w3c.github.io/ttml1/index.html",
     "repository": "https://github.com/w3c/ttml1",
     "title": "Timed Text Markup Language 1 (TTML1) (Third Edition)",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/AudioVideo/TT/",
@@ -3939,7 +3958,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "wcag21": {
     "url": "https://www.w3.org/TR/WCAG21/",
@@ -4182,7 +4203,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30",
+      "CR": "2019-06-30",
       "PR": "2019-09-30"
     },
     "feature": "Priority and QoS Model"
@@ -4202,7 +4223,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30",
+      "CR": "2019-06-30",
       "PR": "2019-09-30"
     },
     "feature": "Browser default ICE servers"
@@ -4222,7 +4243,6 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-06-30",
       "PR": "2019-09-30"
     }
   },
@@ -4445,9 +4465,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    }
+    "milestones": {}
   },
   "wot-architecture": {
     "url": "https://www.w3.org/TR/wot-architecture/",
@@ -4463,9 +4481,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "wot-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
@@ -4481,9 +4497,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    }
+    "milestones": {}
   },
   "wot-thing-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
@@ -4499,9 +4513,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    }
+    "milestones": {}
   },
   "wps": {
     "url": "http://www.opengeospatial.org/standards/wms",
