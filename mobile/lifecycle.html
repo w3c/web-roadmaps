@@ -56,10 +56,6 @@
           <p>The <em>share action</em> is a common paradigm on mobile devices to pass content across application boundaries, for instance to post a URL or an image to one's favorite social network application. The <a data-featureid="web-share">Web Share API</a> proposal allows a Web application to share text, links and other content to an arbitrary destination of the user's choice. The API is a more focused version of the <a href="https://plus.google.com/116171619992010691739">Web Intents</a> proposal, which was abandoned end of 2012, in part because its genericity triggered user experience issues.</p>
           <p>The <a data-featureid="web-share-target">Web Share Target API</a> proposal allows web applications to declare, in their application manifest, that they can receive content shared from other applications. This allows Web applications, that the user chose to install, to be listed among other native applications in share menus.</p>
         </div>
-
-        <div data-feature="Background execution">
-          <p>User agents will restrict the ability for Web applications to run operations in the background so that users remain in control of what an application can do at all times. The <a data-featureid="budget-api">Web Budget API</a> exposes a mechanism by which applications can determine the cost and budget at their disposal to run operations in the background, allowing them to decide whether to perform or postpone these operations. Various parameters could influence the cost of an operation, including whether the device is on battery power and the type of network the device is connected to.</p>
-        </div>
       </section>
 
       <section>
@@ -74,6 +70,9 @@
 
           <dt>Geofencing API</dt>
           <dd>The <a data-featureid="geofencing">Geofencing API</a> made it possible to wake up a Web app when a device enters a specified geographical area. This work has been discontinued, partly out of struggles to find a good approach to permission needs that such an API triggers to protect users against privacy issues. Work on this specification could resume in the future depending on interest from would-be implementers.</dd>
+
+          <dt>Background execution control</dt>
+          <dd>User agents will restrict the ability for Web applications to run operations in the background so that users remain in control of what an application can do at all times. The <a data-featureid="budget-api">Web Budget API</a> proposed a mechanism by which applications could determine the cost and budget at their disposal to run operations in the background, allowing them to decide whether to perform or postpone these operations. Various parameters could influence the cost of an operation, including whether the device is on battery power and the type of network the device is connected to. This proposal was dropped for <a href="https://github.com/WICG/budget-api/issues/23#issuecomment-413224865">lack of adoption</a> and <a href="https://discourse.wicg.io/t/proposal-budget-api/1717/7">concerns over the design of such an API</a>.</dd>
         </dl>
       </section>
     </main>
