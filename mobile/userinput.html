@@ -15,6 +15,7 @@
         <h2>Well-deployed technologies</h2>
         <div data-feature="Touch-based interactions">
           <p>An increasing share of mobile devices relies on touch-based interactions. While the traditional interactions recognized in the Web platform (keyboard, mouse input) can still be applied in this context, a more specific handling of touch-based input is a critical aspect of creating well-adapted user experiences, which <a data-featureid="touchevent">Touch Events in the DOM</a> (Document Object Model) enable.</p>
+          <p>The <a data-featureid="pointer-events">Pointer Events</a> specification defines a single model for mouse, touch and pen events. It provides a complementary and more unified approach to Touch Events. It includes the <a data-featureid="css-touch-action">CSS property <code>touch-action</code></a> that allows to filter gesture events on elements and that is widely implemented across browsers.</p>
         </div>
 
         <p data-feature="Vibration">The <a data-featureid="vibration">Vibration API</a> lets mobile developers take advantage of haptic feedback to create new forms of interactions (e.g. in games).</p>
@@ -32,12 +33,6 @@
 
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
-
-        <div data-feature="Touch-based interactions">
-          <p>The <a href="https://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has made good progress on an alternative approach to handle user input, <a data-featureid="pointer-events">Pointer Events</a>, that allows to handle mouse, touch and pen events under a single model. It provides a complementary and more unified  approach to the currently more widely deployed Touch Events.</p>
-          <p>In particular, the <a data-featureid="css-touch-action">CSS property <code>touch-action</code></a> that lets filter gesture events on elements is gaining traction beyond implementations of Pointer Events.</p>
-          <p>The early proposal for an <a data-featureid="inputdevice">Input Device capabilities API</a> would provide information about a given “mouse” event comes from a touch-capable device.</p>
-        </div>
 
         <div data-feature="Game controllers">
           <p>The <a data-featureid="gamepad">Gamepad</a> specification defines a low-level interface that exposes gamepad devices attached to the browsing device, such as those paired with a smartphone via Bluetooth.</p>
@@ -60,6 +55,10 @@
         <p data-feature="Speech-based interactions">Mobile devices, and mobile phones in particular, are also in many cases well-suited to be used through voice-interactions; the <a href="https://www.w3.org/community/speech-api/">Speech API Community Group</a> developed a JavaScript API to enable interactions with a Web page through spoken commands. <a data-featureid="speech-api/synthesis">Speech synthesis</a> is well supported across browsers. Support for <a data-featureid="speech-api/recognition">speech recognition</a> is still underway.</p>
 
         <p data-feature="Input method">The <a data-featureid="ime-api">Input Method Editor (IME) API</a> provides Web applications with scripted access to an IME (input-method editor) associated with a hosting user agent. Editorial support is required for this specification to move forward.</p>
+
+        <div data-feature="Touch-based interactions">
+          <p>The proposal for an <a data-featureid="inputdevice">Input Device capabilities API</a> would provide information about whether a given “mouse” event comes from a touch-capable device.</p>
+        </div>
       </section>
 
       <section>
