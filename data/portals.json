@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/WICG/portals/blob/master/explainer.md",
+  "title": "Portals",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "chromestatus": 4828882419056640
+  }
+}
