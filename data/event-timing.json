@@ -1,6 +1,6 @@
 {
-  "url": "https://github.com/WICG/event-timing",
-  "title": "Event Timing Web Perf API",
+  "url": "https://wicg.github.io/event-timing/",
+  "title": "Event Timing API",
   "wgs": [
     {
       "url": "https://www.w3.org/community/wicg/",
