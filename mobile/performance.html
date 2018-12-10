@@ -114,6 +114,10 @@
         <div data-feature="Scrolling Optimization">
           <p>User agents may implement default rules for scrolling such as scroll chaining and overscroll affordances that web applications may wish to disable to enhance <b>pull-to-refresh</b> and <b>infinite scrolling</b> interaction paradigms, which are common on mobile devices. This can be achieved through scripting, but negatively affects scrolling performances as the application needs to listen to touch events without setting the <code>passive</code> flag to override the default behavior when needed. The <a data-featureid="css-overscroll-behavior">CSS <code>overscroll-behavior</code></a> property introduces control over the behavior of a scroll container when its scrollport reaches the boundary of its scroll box, allowing web applications to disable default rules for scrolling efficiently.</p>
         </div>
+
+        <div data-feature="DOM Updates">
+          <p>Web applications are dynamic in essence and need to manipulate the DOM significantly to present rich content. Problem is updates to the DOM can cause <em>jank</em> (noticeable delay in visual updates) because the rendering phase is updated synchronously with user interactions and <code>requestAnimationFrame</code> scripts. The <a data-featureid="display-locking">Display Locking</a> proposal introduces a new concept whereby developers can lock a DOM element and its subtree, preventing visual updates while the DOM gets updated. The developer will then be able to unlock the element, asynchronously, triggering the visual updates of the modified subtree without causing the rest of the page to jank.</p>
+        </div>
       </section>
     </main>
     <script src="../js/generate.js"></script>
