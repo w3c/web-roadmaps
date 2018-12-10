@@ -1,12 +1,6 @@
 {
   "url": "https://fullscreen.spec.whatwg.org/",
   "title": "Fullscreen API",
-  "wgs": [
-    {
-      "label": "WHATWG",
-      "url": "https://whatwg.org/"
-    }
-  ],
   "impl": {
     "caniuse": "fullscreen",
     "chromestatus": 5259513871466496,

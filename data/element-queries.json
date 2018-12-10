@@ -1,10 +1,4 @@
 {
   "url": "https://wicg.github.io/cq-usecases/",
-  "title": "Element Queries",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ]
+  "title": "Element Queries"
 }

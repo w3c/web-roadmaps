@@ -1,12 +1,6 @@
 {
   "url": "https://wicg.github.io/priority-hints/",
   "title": "Priority Hints",
-  "wgs": [
-    {
-      "label": "Web Platform Incubator Community Group",
-      "url": "https://www.w3.org/community/wicg/"
-    }
-  ],
   "impl": {
     "chromestatus": 5273474901737472
   }
