@@ -22156,6 +22156,64 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture"
+      },
+      {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Apple provides an equivalent proprietary API for Picture-in-Picture."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "notes": [
+          "Opera allows users to use Picture-in-Picture for all playing videos (JS API not available)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Apple provides an equivalent proprietary API for Picture-in-Picture."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "notes": [
+          "Automatically plays video in Picture-in-Picture when user hits Home Screen button and video is fullscreen (Android >= Oreo required)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "notes": [
+          "Automatically plays video in Picture-in-Picture when user hits Home Screen button and video is fullscreen (Android >= Oreo required)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -22177,15 +22235,13 @@
         "ua": "safari",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5729206566649856",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5729206566649856"
       },
       {
         "ua": "opera",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5729206566649856",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5729206566649856"
       },
       {
         "ua": "edge",
@@ -22212,8 +22268,7 @@
         "ua": "chrome_android",
         "status": "",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture"
       },
       {
         "ua": "opera",
