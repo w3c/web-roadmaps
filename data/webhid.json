@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/nondebug/webhid/blob/master/EXPLAINER.md",
+  "title": "WebHID",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "chromestatus": 5172464636133376
+  }
+}
