@@ -260,6 +260,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "badging": {
+    "url": "https://wicg.github.io/badging/",
+    "title": "Badging API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "barometer": {
     "url": "https://kenchris.github.io/barometer/",
     "title": "Ambient Atmospheric Pressure (Barometric) Sensor",

@@ -2547,6 +2547,45 @@
       }
     ]
   },
+  "badging": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6068482055602176",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6068482055602176",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6068482055602176",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6068482055602176",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6068482055602176",
+        "selected": true
+      }
+    ]
+  },
   "barometer": {
     "implementations": []
   },
