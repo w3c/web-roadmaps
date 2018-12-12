@@ -1,12 +1,6 @@
 {
   "url": "https://wicg.github.io/media-source/",
   "title": "Media Source Extensions™",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ],
   "features": {
     "codec-switching": {
       "title": "Codec switching",

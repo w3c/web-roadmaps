@@ -41,9 +41,20 @@
           <p>Animations can also be managed via scripting through the API exposed in <a data-featureid="web-animations">Web Animations</a>.</p>
         </div>
 
+        <div data-feature="2D Programmatic API">
+          <p><a data-featureid="css-paint-api">CSS Painting API</a> allows web developers to generate a 2D image for CSS that can respond to style and size changes, without having to create DOM elements and without blocking the main thread during repaint, thus preserving memory, CPU, and responsiveness.</p>
+        </div>
+
         <div data-feature="Downloadable fonts">
           <p>Given the time required for downloading fonts over mobile networks, authors need to adapt their content to the progressive availability of fonts. <a data-featureid="css-font-loading">CSS Font Loading</a> gives the necessary events and interfaces to developers to enable that adaptation. The <a data-featureid="css-font-display"><code>font-display</code></a> descriptor for <code>@font-face</code> and <code>@font-feature-values</code> rules can also be used to control how a downloadable font renders before it is fully loaded.</p>
           <p>Font variations along different axes (width, weight, optical size) can be encoded in a single font file. The <a data-featureid="css-fonts-4/variable">font variation properties</a> in CSS allow finer control over usage of font variants and can further help developers avoid unnecessary network requests to fetch additional variants of a font.</p>
+        </div>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
+        <div data-feature="Animations">
+          <p>Content rarely fits on screen on mobile devices, requiring users to scroll down. Applications may want to adjust their user interface based on the current scroll position, for example to shrink the top navigation menu as the user starts scrolling or to display a progress bar. This requires scripting for now. The <a data-featureid="scroll-animations">Scroll-linked Animations</a> specification proposes a declarative mechanism based on CSS properties.</p>
         </div>
       </section>
     </main>
