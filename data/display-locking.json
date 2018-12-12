@@ -1,12 +1,6 @@
 {
   "url": "https://github.com/WICG/display-locking/blob/master/explainer.md",
   "title": "Display Locking",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ],
   "impl": {
     "chromestatus": 4613920211861504
   }
