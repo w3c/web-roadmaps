@@ -23,12 +23,7 @@
     "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
     "title": "3D Tiles",
     "status": "PR",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -1043,7 +1038,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "PR",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -1469,7 +1464,7 @@
     "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org/",
+        "url": "https://whatwg.org",
         "label": "WHATWG"
       }
     ],
@@ -1515,7 +1510,7 @@
     "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org/",
+        "url": "https://whatwg.org",
         "label": "WHATWG"
       }
     ],
@@ -1633,12 +1628,7 @@
     "url": "http://www.opengeospatial.org/standards/geosparql",
     "title": "GeoSPARQL - A Geographic Query Language for RDF Data",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -1844,12 +1834,7 @@
     "url": "http://www.opengeospatial.org/standards/i3s",
     "title": "Indexed 3D Scene Layers",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -2054,12 +2039,7 @@
     "url": "https://www.iso.org/standard/32574.html",
     "title": "Geographic information -- Observations and measurements",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "https://www.iso.org/",
-        "label": "International Organization for Standardization (ISO)"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "ISO",
     "milestones": {}
   },
@@ -2456,7 +2436,12 @@
     "url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
     "title": "HTML (Living Standard)",
     "status": "ED",
-    "deliveredBy": [],
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
     "publisher": "WHATWG",
     "milestones": {},
     "feature": "OffscreenCanvas"
@@ -2799,7 +2784,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "PR",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -3068,12 +3053,7 @@
     "url": "https://tools.ietf.org/html/rfc7946",
     "title": "The GeoJSON Format",
     "status": "CR",
-    "deliveredBy": [
-      {
-        "url": "https://ietf.org",
-        "label": "IETF"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "IETF",
     "milestones": {}
   },
@@ -3388,7 +3368,7 @@
     "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org/",
+        "url": "https://whatwg.org",
         "label": "WHATWG"
       }
     ],
@@ -3411,7 +3391,7 @@
     "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org/",
+        "url": "https://whatwg.org",
         "label": "WHATWG"
       }
     ],
@@ -4379,12 +4359,7 @@
     "url": "https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html",
     "title": "OGC Web Feature Service 3.0",
     "status": "WD",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -4399,12 +4374,7 @@
     "url": "http://www.opengeospatial.org/standards/wms",
     "title": "Web Map Service",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -4412,12 +4382,7 @@
     "url": "http://www.opengeospatial.org/standards/wmts",
     "title": "OpenGIS Web Map Tile Service Implementation Standard",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -4519,12 +4484,7 @@
     "url": "http://www.opengeospatial.org/standards/wms",
     "title": "Web Processing Service",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.opengeospatial.org/",
-        "label": "Open Geospatial Consortium"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
   },
@@ -4535,7 +4495,7 @@
     "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://whatwg.org/",
+        "url": "https://whatwg.org",
         "label": "WHATWG"
       }
     ],
