@@ -52,58 +52,45 @@ const publishers = {
   'W3C': {
     label: 'W3C',
     url: 'https://www.w3.org/',
-    urlPattern: '.w3.org'
-  },
-  'W3C-ED': {
-    label: 'W3C',
-    url: 'https://www.w3.org/',
-    urlPattern: 'w3c.github.io',
-    parentPublisher: 'W3C'
+    urlPattern: /\.w3\.org|w3c\.github\.io/i
   },
   'WHATWG': {
     label: 'WHATWG',
     url: 'https://whatwg.org',
-    urlPattern: '.spec.whatwg.org',
+    urlPattern: /\.spec\.whatwg\.org/i,
     isGroup: true
   },
   'IETF': {
     label: 'IETF',
     url: 'https://ietf.org',
-    urlPattern: '.ietf.org'
+    urlPattern: /\.ietf\.org/i
   },
   'WICG': {
     label: 'Web Platform Incubator Community Group',
     url: 'https://www.w3.org/community/wicg/',
-    urlPattern: 'wicg.github.io',
-    parentPublisher: 'W3C',
-    isGroup: true
-  },
-  'WICG-EXPLAINER': {
-    label: 'Web Platform Incubator Community Group',
-    url: 'https://www.w3.org/community/wicg/',
-    urlPattern: 'github.com/WICG/',
+    urlPattern: /wicg\.github\.io|github\.com\/wicg\//i,
     parentPublisher: 'W3C',
     isGroup: true
   },
   'OGC': {
     label: 'Open Geospatial Consortium',
     url: 'http://www.opengeospatial.org/',
-    urlPattern: 'opengeospatial.org'
+    urlPattern: /opengeospatial\.org/i
   },
   'EC': {
     label: 'European Commission',
     url: 'http://data.europa.eu/euodp/en/home',
-    urlPattern: 'data.europa.eu'
+    urlPattern: /data\.europa\.eu/i
   },
   'ISO': {
     label: 'International Organization for Standardization (ISO)',
     url: 'https://www.iso.org/',
-    urlPattern: 'iso.org'
+    urlPattern: /iso\.org/i
   },
   'Khronos': {
     label: 'Khronos Group',
     url: 'https://www.khronos.org/',
-    urlPattern: 'www.khronos.org/registry/',
+    urlPattern: /www\.khronos\.org\/registry\//i,
     isGroup: true
   }
 };
@@ -472,11 +459,11 @@ async function extractSpecData(files, config) {
       if (info.deliveredBy && (info.deliveredBy.length > 0)) {
         let groupUrl = info.deliveredBy[0].url || '';
         info.publisher = Object.keys(publishers)
-          .find(id => groupUrl.includes(publishers[id].urlPattern));
+          .find(id => !!groupUrl.match(publishers[id].urlPattern));
       }
       if (!info.publisher && info.url) {
         info.publisher = Object.keys(publishers)
-          .find(id => info.url.includes(publishers[id].urlPattern));
+          .find(id => !!info.url.match(publishers[id].urlPattern));
       }
       if (!info.publisher) {
         console.warn(`- ${spec.id}: No publisher found`);
