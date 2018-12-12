@@ -12774,6 +12774,70 @@
   "css-page-floats-3": {
     "implementations": []
   },
+  "css-paint-api": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paint-api"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paint-api",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paint-api"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685444318593024",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685444318593024",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685444318593024",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685444318593024",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685444318593024",
+        "selected": true
+      },
+      {
+        "ua": "webkit",
+        "status": "indevelopment",
+        "source": "webkitstatus",
+        "href": "https://webkit.org/status/#specification-css-painting-api-level-1"
+      }
+    ]
+  },
   "css-rhythm-1": {
     "implementations": [
       {
