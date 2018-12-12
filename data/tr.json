@@ -3105,6 +3105,20 @@
       "CR": "2019-06-30"
     }
   },
+  "scroll-animations": {
+    "url": "https://wicg.github.io/scroll-animations/",
+    "repository": "https://github.com/wicg/scroll-animations",
+    "title": "Scroll-linked Animations",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "sdw-bp": {
     "url": "https://www.w3.org/TR/sdw-bp/",
     "edDraft": "https://w3c.github.io/sdw/bp/",

@@ -24859,6 +24859,9 @@
       }
     ]
   },
+  "scroll-animations": {
+    "implementations": []
+  },
   "sdw-bp": {
     "implementations": []
   },
