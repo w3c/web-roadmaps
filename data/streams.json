@@ -1,12 +1,6 @@
 {
   "url": "https://streams.spec.whatwg.org/",
   "title": "Streams",
-  "wgs": [
-    {
-      "label": "WHATWG",
-      "url": "https://whatwg.org/"
-    }
-  ],
   "impl": {
     "caniuse": "streams",
     "chromestatus": 6605041225957376,

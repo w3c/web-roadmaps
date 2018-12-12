@@ -1,12 +1,6 @@
 {
   "url": "https://wicg.github.io/event-timing/",
   "title": "Event Timing API",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ],
   "impl": {
     "chromestatus": 5167290693713920
   }

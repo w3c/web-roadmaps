@@ -47,9 +47,6 @@ const maturityMapping = {
 
 /**
  * Well-known publishers and URL pattern of the specs they publish
- * (Note the w3c.github.io is not restricted to WICG in practice, but the
- * code associates a WICG spec with W3C in any case, so that's good enough
- * for now and avoids having to handle arrays of patterns)
  */
 const publishers = {
   'W3C': {
@@ -57,10 +54,17 @@ const publishers = {
     url: 'https://www.w3.org/',
     urlPattern: '.w3.org'
   },
+  'W3C-ED': {
+    label: 'W3C',
+    url: 'https://www.w3.org/',
+    urlPattern: 'w3c.github.io',
+    parentPublisher: 'W3C'
+  },
   'WHATWG': {
     label: 'WHATWG',
     url: 'https://whatwg.org',
-    urlPattern: '.spec.whatwg.org'
+    urlPattern: '.spec.whatwg.org',
+    isGroup: true
   },
   'IETF': {
     label: 'IETF',
@@ -70,8 +74,9 @@ const publishers = {
   'WICG': {
     label: 'Web Platform Incubator Community Group',
     url: 'https://www.w3.org/community/wicg/',
-    urlPattern: 'w3c.github.io',
-    parentPublisher: 'W3C'
+    urlPattern: 'wicg.github.io',
+    parentPublisher: 'W3C',
+    isGroup: true
   },
   'OGC': {
     label: 'Open Geospatial Consortium',
@@ -91,7 +96,8 @@ const publishers = {
   'Khronos': {
     label: 'Khronos Group',
     url: 'https://www.khronos.org/',
-    urlPattern: 'www.khronos.org/registry/'
+    urlPattern: 'www.khronos.org/registry/',
+    isGroup: true
   }
 };
 
@@ -439,10 +445,6 @@ async function extractSpecData(files, config) {
         return { url: group.url, label };
       });
     }
-    else if (info.publisher && (info.publisher in publishers)) {
-      let publisher = publishers[info.publisher];
-      info.deliveredBy = [{ url: publisher.url, label: publisher.label }];
-    }
     if (!info.deliveredBy) {
       info.deliveredBy = [];
     }
@@ -471,6 +473,15 @@ async function extractSpecData(files, config) {
       }
       if (!info.publisher) {
         console.warn(`- ${spec.id}: No publisher found`);
+      }
+    }
+
+    // Some publishers are the actual groups that delivered the spec
+    if (info.publisher && (info.publisher in publishers) &&
+        (info.deliveredBy.length === 0)) {
+      let publisher = publishers[info.publisher];
+      if (publisher.isGroup) {
+        info.deliveredBy = [{ url: publisher.url, label: publisher.label}];
       }
     }
 
