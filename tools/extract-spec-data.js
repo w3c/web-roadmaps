@@ -78,6 +78,13 @@ const publishers = {
     parentPublisher: 'W3C',
     isGroup: true
   },
+  'WICG-EXPLAINER': {
+    label: 'Web Platform Incubator Community Group',
+    url: 'https://www.w3.org/community/wicg/',
+    urlPattern: 'github.com/WICG/',
+    parentPublisher: 'W3C',
+    isGroup: true
+  },
   'OGC': {
     label: 'Open Geospatial Consortium',
     url: 'http://www.opengeospatial.org/',

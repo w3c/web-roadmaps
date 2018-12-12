@@ -1,10 +1,4 @@
 {
   "url": "https://github.com/WICG/webpackage",
-  "title": "Web Packaging",
-  "wgs": [
-    {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
-    }
-  ]
+  "title": "Web Packaging"
 }
