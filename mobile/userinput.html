@@ -60,6 +60,10 @@
           <p>The proposal for an <a data-featureid="inputdevice">Input Device capabilities API</a> would provide information about whether a given “mouse” event comes from a touch-capable device.</p>
         </div>
 
+        <div data-feature="Game controllers">
+          <p>Gamepads exist in a variety of flavours, from <em>usual</em> console gamepads to custom devices such as guitars, pedals, dance pads, scratching gamepads, magic wands, or VR/AR controllers. Each of these devices has its own inputs that need to be mapped into native input APIs for them to appear to Web applications, and outputs (LEDs, vibration, etc.) that are mostly unavailable on the Web. <a data-featureid="webhid">WebHID</a> proposes to expose the <abbr title="Human Interface Device">HID</abbr> protocol that most of these devices use under the hoods to Web applications, allowing them to support the long tail of HID devices through JavaScript-based logic when the browser lacks support. Looking forward, this proposal could also ease integration between smartphones and all sorts of tangible user interfaces.</p>
+        </div>
+
         <div data-feature="Notification">
           <p>The <a data-featureid="badging">Badging API</a> defines a more subtle notification mechanism than <a href="https://www.w3.org/TR/notifications/">Web Notifications</a>, allowing Web applications that have been installed on the device (e.g. through a manifest file) to set an application-wide badge, typically shown next to the application's icon on the home screen, to notify the user when the state of the application has changed and might require their attention (e.g. a new message has arrived).</p>
         </div>
