@@ -2840,6 +2840,19 @@
     "informative": false,
     "milestones": {}
   },
+  "portals": {
+    "url": "https://github.com/WICG/portals/blob/master/explainer.md",
+    "title": "Portals",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "preload": {
     "url": "https://www.w3.org/TR/preload/",
     "edDraft": "https://w3c.github.io/preload/",
