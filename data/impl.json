@@ -15210,6 +15210,45 @@
   "discovery": {
     "implementations": []
   },
+  "display-locking": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4613920211861504",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4613920211861504",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4613920211861504",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4613920211861504",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4613920211861504",
+        "selected": true
+      }
+    ]
+  },
   "dnt": {
     "implementations": [
       {
@@ -29652,6 +29691,45 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-webgl-1"
+      }
+    ]
+  },
+  "webhid": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
       }
     ]
   },

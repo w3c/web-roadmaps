@@ -1282,6 +1282,19 @@
     "informative": true,
     "milestones": {}
   },
+  "display-locking": {
+    "url": "https://github.com/WICG/display-locking/blob/master/explainer.md",
+    "title": "Display Locking",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "dnt": {
     "url": "https://www.w3.org/TR/tracking-dnt",
     "edDraft": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
@@ -4182,6 +4195,19 @@
       }
     ],
     "publisher": "Khronos",
+    "milestones": {}
+  },
+  "webhid": {
+    "url": "https://github.com/nondebug/webhid/blob/master/EXPLAINER.md",
+    "title": "WebHID",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "webmediaapi": {
