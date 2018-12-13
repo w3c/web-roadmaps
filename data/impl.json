@@ -25427,7 +25427,13 @@
     ]
   },
   "spatial-navigation": {
-    "implementations": []
+    "implementations": [],
+    "polyfills": [
+      {
+        "label": "Spatial Navigation Polyfill",
+        "url": "https://github.com/WICG/spatial-navigation/tree/master/polyfill"
+      }
+    ]
   },
   "speech-api-recognition": {
     "implementations": [
