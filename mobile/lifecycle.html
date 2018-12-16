@@ -35,10 +35,6 @@
         <div data-feature="Remote Notifications">
           <p>The <a data-featureid="push">Push API</a> enables Web applications to subscribe to remote notifications that, upon reception, wake them up. Native applications have long enjoyed the benefits of greater user engagement that these notifications bring.</p>
         </div>
-
-        <div data-feature="Background execution">
-          <p>The <a data-featureid="background-sync">Web Background Synchronization</a> specification builds on top of Service Workers to enable Web applications to keep their user data up to date seamlessly, by running network operations in the background, adjusting to possibly unreliable connections that users often experience on mobile devices.</p>
-        </div>
       </section>
 
       <section class="featureset exploratory-work">
@@ -60,6 +56,12 @@
 
         <div data-feature="Seamless navigation">
           <p>Various sites embed content from a third party origin (e.g. news content) within their own user interface, or load third party content into an iframe to provide a faster, reliable loading experience, which is particularly crucial on mobile devices. One main drawback of this approach is that the third party's origin is not preserved: only the first party's origin appears in the address bar, which makes it difficult for users to identify the provenance and trustworthiness of the content they are browsing. Another drawback is that the third party page cannot leverage client-side resources and permissions that are attached to their origin. <a data-featureid="portals">Portals</a> is a proposal for enabling seamless navigations between sites or pages. In particular, it enables a page to show another page as an inset and perform a seamless transition between an inset state and a navigated state, thus solving the origin issues mentioned above.</p>
+        </div>
+
+        <div data-feature="Background execution">
+          <p>The <a data-featureid="background-sync">Web Background Synchronization</a> specification builds on top of Service Workers to enable Web applications to keep their user data up to date seamlessly, by running network operations in the background, adjusting to possibly unreliable connections that users often experience on mobile devices.</p>
+
+          <p><a data-featureid="background-fetch">Background Fetch</a> defines a similar service worker based download and upload mechanism in the background, but allows the background operation to continue, with user visibility, even if the user closes all windows and workers. The specification is specifically tailored to enable downloads/uploads of large assets (podcasts, movies, textures).</p>
         </div>
       </section>
 

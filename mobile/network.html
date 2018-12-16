@@ -58,7 +58,12 @@
 
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
-        <p>Early work on a <a data-featureid="background-sync">Web Background Synchronization API</a> would provide a robust Service Worker-based mechanism to enable Web applications to download and upload content in the background, even in the absence of a running browser.</p>
+
+        <div data-feature="Background execution">
+          <p>The <a data-featureid="background-sync">Web Background Synchronization</a> specification builds on top of Service Workers to enable Web applications to keep their user data up to date seamlessly, by running network operations in the background, adjusting to possibly unreliable connections that users often experience on mobile devices.</p>
+
+          <p><a data-featureid="background-fetch">Background Fetch</a> defines a similar service worker based download and upload mechanism in the background, but allows the background operation to continue, with user visibility, even if the user closes all windows and workers. The specification is specifically tailored to enable downloads/uploads of large assets (podcasts, movies, textures).</p>
+        </div>
 
         <div data-feature="Network Characteristics">
           <p>Discontinued work on the <a data-featureid="netinfo">Network Information API</a> to address discovery of the network characteristics has now been resumed in the Web Platform Incubator Community Group.</p>
