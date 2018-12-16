@@ -477,7 +477,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5762982487261184",
         "selected": true
@@ -2377,6 +2377,52 @@
         ]
       }
     }
+  },
+  "background-fetch": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5712608971718656",
+        "selected": true
+      }
+    ]
   },
   "background-sync": {
     "implementations": [
@@ -16304,24 +16350,14 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to supporting an earlier draft of the spec.",
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec.",
-          "Unprefixed support is available behind the `full-screen-api.unprefix.enabled` flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=fullscreen"
+        "href": "https://caniuse.com/#feat=fullscreen",
+        "selected": true
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to not supporting `::backdrop`, and supporting the old `:full-screen` syntax rather than the standard `:fullscreen`.",
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen"
       },
@@ -16432,8 +16468,7 @@
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5259513871466496",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5259513871466496"
       },
       {
         "ua": "edge",
@@ -19542,7 +19577,7 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -19701,16 +19736,10 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=css-media-interaction",
             "selected": true
-          },
-          {
-            "ua": "firefox",
-            "status": "experimental",
-            "source": "caniuse",
-            "href": "https://caniuse.com/#feat=css-media-interaction"
           },
           {
             "ua": "chrome",
@@ -19820,7 +19849,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -28921,17 +28950,8 @@
   "web-share-target": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5662315307335680",
-        "selected": true
-      },
-      {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
