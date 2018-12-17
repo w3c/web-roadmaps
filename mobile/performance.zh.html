@@ -113,6 +113,10 @@
         <div data-feature="滚动优化">
             <p>用户代理可以实现滚动的默认规则，例如滚动链和过度滚动，而 Web 应用可能希望禁用该规则以增强在移动设备上常见的<b>拉动刷新</b>和<b>无限滚动</b>等交互范例。这可以通过脚本来实现，但是由于应用需要监听触摸事件而不设置 <code>passive</code> 标志以在需要时覆盖默认行为，因此会对滚动性能产生负面影响。CSS 的 <a data-featureid="css-overscroll-behavior">overscroll-behavior</a> 属性在滚动到达边界时引入了对滚动容器行为的控制，允许 Web 应用禁用滚动的默认规则。</p>
         </div>
+
+        <div data-feature="DOM更新">
+          <p>Web应用本质上是动态的，需要大量的DOM操作以呈现丰富的内容，而DOM的更新可能导致jank（页面重绘时的明显延迟），因为渲染时用户交互和<code>requestAnimationFrame</code>造成的更新是同步。<a data-featureid="display-locking">显示锁</a>提议引入了一个新概念，使开发人员能锁定DOM元素及其子树，从而在DOM更新时阻止重绘。然后，开发者将能够以异步方式解锁元素，触发修改后子树的重绘，而不会导致页面的其余部分出现jank。</p>
+        </div>
       </section>
     </main>
     <script src="../js/generate.js"></script>
