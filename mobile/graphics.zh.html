@@ -41,9 +41,20 @@
           <p>动画也可以通过脚本通过<a data-featureid="web-animations">Web动画</a>中的API进行管理。</p>
         </div>
 
+        <div data-feature="2D 可编程 API">
+          <p><a data-featureid="css-paint-api">CSS绘图API</a>允许Web开发者为CSS生成可以响应样式和大小更改的2D图像，而且无需创建DOM元素，也不必在重绘期间阻塞主线程，从而能够减少内存和CPU的使用，提高性能。</p>
+        </div>
+
         <div data-feature="可下载字体">
           <p>考虑到通过移动网络下载字体所需的时间，Web 开发者需要调整其内容以适应字体的渐进可用性。<a data-featureid="css-font-loading">CSS 字体加载</a>为开发者提供必要的事件和接口来实现这种适应性。<code>@font-face</code> 和 <code>@font-feature-values</code> 的 <a data-featureid="css-font-display"><code>font-display</code></a> 描述符（descriptor）也可用于控制可下载字体在完全加载之前的呈现方式。</p>
           <p>沿着不同轴（width, weight, optical size）的字体变化可以被编码在单个字体文件中。CSS中的<a data-featureid="css-fonts-4/variable">可变字体属性</a>允许更好地控制可变字体的使用，并且帮助开发人员避免不必要的网络请求来获取字体的其他变体。</p>
+        </div>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>探索性工作</h2>
+        <div data-feature="动画">
+          <p>网页内容很少能够完整显示在移动设备的首屏，所以需要用户向下滚动。Web应用可能希望根据当前滚动位置调整其用户界面，比如在用户滚动时缩小顶部导航菜单或显示进度条。这项功能需要现在编写脚本，而<a data-featureid="scroll-animations">滚动关联动画</a>规范提出了一种基于CSS属性的声明性机制。</p>
         </div>
       </section>
     </main>

@@ -56,10 +56,6 @@
             <p><em>分享操作</em>是移动设备上通过跨应用边界传递内容的常见范例，例如将URL或图像发布到自己最喜欢的社交网络应用中。<a data-featureid="web-share">Web分享API</a>建议允许Web应用将文本、链接和其他内容分享到用户选择的任意目的地。API是<a href="https://plus.google.com/116171619992010691739">Web Intents</a>提案的一个更有针对性的版本，它在2012年被放弃，部分原因是它的一般性引发了用户体验问题。</p>
             <p><a data-featureid="web-share-target">Web分享目标API</a>建议允许Web应用在其应用清单中声明其可接收来自其他应用的内容。这允许用户选择安装的Web应用在分享菜单中被其他本地应用列出。</p>
         </div>
-
-        <div data-feature="后台执行">
-            <p>用户代理会限制 Web 应用在后台执行操作的能力，使应用可以执行的操作的控制权掌握在用户手中。<a data-featureid="budget-api">Web预算API</a>开发了一种机制，通过该机制，应用可以确定可在后台运行操作的成本和预算，从而允许他们决定是执行还是推迟这些操作。各种参数可能影响操作的成本，包括设备是否使用电池电源以及设备所连接的网络类型等。</p>
-        </div>
       </section>
 
       <section>
@@ -74,6 +70,10 @@
 
           <dt>地理围栏 API</dt>
           <dd><a data-featureid="geofencing">地理围栏 API</a> 可以在设备进入指定的地理区域时唤醒Web应用。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。该规范的工作可能会在未来继续，这取决于潜在的实现者的兴趣。</dd>
+
+          <dt>后台执行控制</dt>
+          <dd>用户代理会限制 Web 应用在后台执行操作的能力，使应用可以执行的操作的控制权掌握在用户手中。<a data-featureid="budget-api">Web预算API</a>开发了一种机制，通过该机制，应用可以确定可在后台运行操作的成本和预算，从而允许他们决定是执行还是推迟这些操作。各种参数可能影响操作的成本，包括设备是否使用电池电源以及设备所连接的网络类型等。由于<a href="https://github.com/WICG/budget-api/issues/23#issuecomment-413224865">使用过少</a>以及<a href="https://discourse.wicg.io/t/proposal-budget-api/1717/7">此API设计的问题</a>，该提案被撤销。</dd>
+        </div>
         </dl>
       </section>
     </main>
