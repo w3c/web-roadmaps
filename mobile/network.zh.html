@@ -13,19 +13,19 @@
     <main>
       <section class="featureset well-deployed">
         <h2>广泛部署的技术</h2>
-            
+
         <div data-feature="HTTP 网络 API">
           <p><a data-featureid="xhr">XMLHttpRequest</a>（Ajax开发的基础）是一个广泛部署的API，用于使用 HTTP 和 HTTPs 协议从Web服务器加载内容：W3C 规范（以前称为XMLHttpRequest Level 2）旨在记录现有的已部署的 API（能够在不同域中的服务器上提出请求，对网络操作进度进行程序化反馈，以及更有效地处理二进制内容），这项工作现在已经在<a href="https://whatwg.org/">WHATWG</a>中完成了。WHATWG 的 <a data-featureid="fetch">Fetch API</a>还提供了一个更强大的基于 Promise 的替代方案。</p>
         </div>
-            
+
         <div data-feature="跨域请求">
           <p>默认情况下，浏览器不允许在单个网页上的不同域名（或者更具体地说，不同源，包括协议、域名和端口的组合）之间进行请求；这个规则保护用户，使用户们不会被一个网站滥用他们的证书并窃取他们在另一个网站上的数据。站点可以通过使用<a data-featureid="cors">跨源资源共享</a>（Cross-Origin Resource Sharing，CORS）机制来选择退出该规则，从而在 Web 应用和服务之间开展更广泛的合作。请注意 CORS 规范的 W3C 版本并不能反映现有的实现，并将被废弃。CORS 机制现在是 WHATWG <a href="https://fetch.spec.whatwg.org/">Fetch 规范</a>的核心部分。</p>
         </div>
-            
+
         <div data-feature="服务器推送请求">
           <p>XMLHttpRequest 对于客户端发起的网络请求很有用，但是移动设备的网络能力有限，网络请求在其电池电量上（以及有时在用户账单上）引起的开销通常可以更好地利用服务器发起的请求。<a data-featureid="eventsource">Server-Sent Events API</a>允许基于推送通知触发 DOM 事件（通过 HTTP 和其他协议）。</p>
         </div>
-            
+
         <div data-feature="双向连接">
           <p><a data-featureid="websockets">WebSocket API</a> 构建在<a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket协议</a>（RFC6455）之上，与 XMLHttpRequest 相比，提供了双向、更灵活、消耗资源更少的网络连接。</p>
         </div>
@@ -58,12 +58,16 @@
 
       <section class="featureset exploratory-work">
         <h2>探索性工作</h2>
-        <p><a data-featureid="background-sync">Web 后台同步 API</a> 的早期工作将提供一个强大的基于 Service Worker 的机制，使 Web 应用可以在后台下载和上传内容，即使没有正在运行的浏览器。</p>
+        <div data-feature="后台执行">
+          <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
+
+          <p><a data-featureid="background-fetch">Background Fetch</a> 定义了一个类似的基于 service worker 的后台下载和上传机制，但允许以用户可见的方式让操作在后台继续进行，即使是在用户关闭了所有浏览器窗口和 worker 的情况下。该规范专门用于支持下载和上传大型资源（如播客、电影、纹理）。</p>
+        </div>
 
         <div data-feature="网络特性">
           <p>Web 平台孵化社区组重新恢复了之前停止的可以解决网络特性的发现问题的<a data-featureid="netinfo">网络信息 API</a> 的工作。</p>
         </div>
-      </section>   
+      </section>
     </main>
     <script src="../js/generate.js"></script>
   </body>

@@ -35,10 +35,6 @@
         <div data-feature="远程通知">
           <p><a data-featureid="push">推送 API</a> 使 Web 应用能够订阅远程通知，并在接收到后唤醒应用。长期以来，原生应用受益于这些通知带来的更多的用户参与。</p>
         </div>
-
-        <div data-feature="后台执行">
-          <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
-        </div>
       </section>
 
       <section class="featureset exploratory-work">
@@ -60,6 +56,12 @@
 
         <div data-feature="无缝切换">
           <p>很多网站会在其自己的用户界面内嵌入来自第三方来源的内容（例如新闻内容），或者将第三方内容加载到 iframe 中以提供更快、可靠的加载体验，这对于移动设备尤其重要。这种方法的一个主要缺点是不保留第三方的来源：只有第一方的来源出现在地址栏中，这使得用户难以识别他们正在浏览的内容的出处和可信度。另一个缺点是第三方页面无法利用附加到其源的客户端资源和权限。<a data-featureid="portals">Portals</a>是一个在网站或网页之间实现无缝切换的提案，它使一个页面能够嵌入另一个页面，并在嵌入状态和切换后的全屏状态之间无缝转换，从而解决上述源的问题。</p>
+        </div>
+
+        <div data-feature="后台执行">
+          <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
+
+          <p><a data-featureid="background-fetch">Background Fetch</a> 定义了一个类似的基于 service worker 的后台下载和上传机制，但允许以用户可见的方式让操作在后台继续进行，即使是在用户关闭了所有浏览器窗口和 worker 的情况下。该规范专门用于支持下载和上传大型资源（如播客、电影、纹理）。</p>
         </div>
       </section>
 
