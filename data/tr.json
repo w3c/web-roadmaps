@@ -4584,6 +4584,19 @@
     "publisher": "OGC",
     "milestones": {}
   },
+  "writable-files": {
+    "url": "https://wicg.github.io/writable-files/",
+    "title": "Writable Files",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "xhr": {
     "url": "https://xhr.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/xhr",
