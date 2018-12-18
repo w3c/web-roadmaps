@@ -35,6 +35,10 @@
         <div data-feature="Remote Notifications">
           <p>The <a data-featureid="push">Push API</a> enables Web applications to subscribe to remote notifications that, upon reception, wake them up. Native applications have long enjoyed the benefits of greater user engagement that these notifications bring.</p>
         </div>
+
+        <div data-feature="Geofencing">
+          <p>Through support for background operations, the <a data-featureid="geolocation-sensor">Geolocation Sensor</a> specification allows Web applications to be woken up when a device enters a specified geographical area, also known as geofencing.</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
@@ -76,7 +80,7 @@
           <dd>The <a data-featureid="task-scheduler">Task Scheduler API</a> made it possible to trigger a task at a specified time via the service worker associated with a Web app. This specification was in scope of the now-closed System Applications Working Group and was shelved as a result.</dd>
 
           <dt>Geofencing API</dt>
-          <dd>The <a data-featureid="geofencing">Geofencing API</a> made it possible to wake up a Web app when a device enters a specified geographical area. This work has been discontinued, partly out of struggles to find a good approach to permission needs that such an API triggers to protect users against privacy issues. Work on this specification could resume in the future depending on interest from would-be implementers.</dd>
+          <dd>The <a data-featureid="geofencing">Geofencing API</a> made it possible to wake up a Web app when a device enters a specified geographical area. This work has been discontinued, partly out of struggles to find a good approach to permission needs that such an API triggers to protect users against privacy issues. Through support for background operations, the <a href="https://www.w3.org/TR/geolocation-sensor/">Geolocation Sensor</a> specification now provides similar functionalities.</dd>
 
           <dt>Background execution control</dt>
           <dd>User agents will restrict the ability for Web applications to run operations in the background so that users remain in control of what an application can do at all times. The <a data-featureid="budget-api">Web Budget API</a> proposed a mechanism by which applications could determine the cost and budget at their disposal to run operations in the background, allowing them to decide whether to perform or postpone these operations. Various parameters could influence the cost of an operation, including whether the device is on battery power and the type of network the device is connected to. This proposal was dropped for <a href="https://github.com/WICG/budget-api/issues/23#issuecomment-413224865">lack of adoption</a> and <a href="https://discourse.wicg.io/t/proposal-budget-api/1717/7">concerns over the design of such an API</a>.</dd>
