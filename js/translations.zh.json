@@ -133,6 +133,7 @@
     "Ambient Light Sensor": "环境光线传感器",
     "Audio Output Devices API": "音频输出设备 API",
     "Authoring Tool Accessibility Guidelines (ATAG) 2.0": "编辑工具可访问性指南（ATAG）2.0",
+    "Autoplay Policy": "自动播放政策",
     "Badging API": "徽章 API",
     "Battery Status API": "电池状态 API",
     "Color managing canvas contents": "canvas 的色彩管理",
@@ -263,6 +264,7 @@
     "WebXR Device API": "WebXR 设备 API",
     "WOFF File Format 1.0": "Web 字体文件格式 1.0",
     "WOFF File Format 2.0": "Web 字体文件格式 2.0",
+    "Writable Files": "Writable Files",
     "XMLHttpRequest": "XMLHttpRequest"
   }
 }

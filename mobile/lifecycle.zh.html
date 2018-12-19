@@ -35,6 +35,10 @@
         <div data-feature="远程通知">
           <p><a data-featureid="push">推送 API</a> 使 Web 应用能够订阅远程通知，并在接收到后唤醒应用。长期以来，原生应用受益于这些通知带来的更多的用户参与。</p>
         </div>
+
+        <div data-feature="地理围栏">
+          <p>通过对后台操作的支持，<a data-featureid="geolocation-sensor">地理位置传感器</a>规范允许在设备进入指定的地理区域（也称为地理围栏）时唤醒Web应用。</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
@@ -76,7 +80,7 @@
           <dd><a data-featureid="task-scheduler">任务调度 API</a> 可以通过与 Web 应用关联的 service worker 在指定的时间触发任务。该规范属于现在已经关闭的系统应用工作组（System Applications Working Group）的范围，因此被搁置了。</dd>
 
           <dt>地理围栏 API</dt>
-          <dd><a data-featureid="geofencing">地理围栏 API</a> 可以在设备进入指定的地理区域时唤醒Web应用。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。该规范的工作可能会在未来继续，这取决于潜在的实现者的兴趣。</dd>
+          <dd><a data-featureid="geofencing">地理围栏 API</a> 可以在设备进入指定的地理区域时唤醒Web应用。这项工作已经停止，部分原因在于未能找到一种很好的方法来解决有关隐私的权限问题，还因为该 API 依赖于当时还不稳定的 <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>。通过对后台操作的支持，<a href="https://www.w3.org/TR/geolocation-sensor/">地理位置传感器</a>规范现在提供了类似的功能。</dd>
 
           <dt>后台执行控制</dt>
           <dd>用户代理会限制 Web 应用在后台执行操作的能力，使应用可以执行的操作的控制权掌握在用户手中。<a data-featureid="budget-api">Web预算API</a>开发了一种机制，通过该机制，应用可以确定可在后台运行操作的成本和预算，从而允许他们决定是执行还是推迟这些操作。各种参数可能影响操作的成本，包括设备是否使用电池电源以及设备所连接的网络类型等。由于<a href="https://github.com/WICG/budget-api/issues/23#issuecomment-413224865">使用过少</a>以及<a href="https://discourse.wicg.io/t/proposal-budget-api/1717/7">此API设计的问题</a>，该提案被撤销。</dd>
