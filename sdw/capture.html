@@ -18,10 +18,11 @@
             <p>The <a data-featureid="geolocation">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
           </div>
           <!--relevant parts of SensorThingsAPI-->
+          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
           <div data-feature="Sensor API">
               <p>The <a data-featureid="sta-sensing">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the <a href="https://www.iso.org/standard/32574.html">ISO/OGC Observations and measurements</a> (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
           </div>
-          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
+          <div data-feature="Data cubes">To publish multi-dimensional data on the Web as linked data, the <a data-featureid="vocab-data-cube">RDF Data Cube Vocabulary</a> is available. An extension for spatial and temporal data exists, but that part is still exploratory work.</div>
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>

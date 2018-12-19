@@ -13,8 +13,8 @@
         "description": "Creating spatial data or sensor data in a web context."
       },
       {
-        "url": "represent.html",
-        "title": "represent spatial data",
+        "url": "write.html",
+        "title": "write spatial data",
         "icon": "../assets/img/sdw-represent.png",
         "description": "Vocabularies, formats, to represent spatial data and geometries and to reference locations."
       },
@@ -23,12 +23,6 @@
         "title": "publish spatial data",
         "icon": "../assets/img/sdw-publish.png",
         "description": "Guidelines for publishing spatial data, including description of datasets, for viewing, getting and querying the data."
-      },
-      {
-        "url": "transform.html",
-        "title": "transform spatial data",
-        "icon": "../assets/img/sdw-transform.png",
-        "description": "Transforming and partitioning of spatial data before or after publication."
       }
     ],
     "about": {
