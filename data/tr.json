@@ -246,6 +246,19 @@
       }
     }
   },
+  "autoplay": {
+    "url": "https://github.com/wicg/autoplay",
+    "title": "Autoplay Policy",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "background-fetch": {
     "url": "https://wicg.github.io/background-fetch/",
     "repository": "https://github.com/wicg/background-fetch",

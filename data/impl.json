@@ -2378,6 +2378,9 @@
       }
     }
   },
+  "autoplay": {
+    "implementations": []
+  },
   "background-fetch": {
     "implementations": [
       {
