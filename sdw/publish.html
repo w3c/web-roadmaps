@@ -43,9 +43,9 @@
         <!-- partitioning data for the web-->
         <p data-feature="Geospatial data partitioning"><em>Vector tiling</em> is a name for solutions where geographic data is packaged into pre-defined roughly-square shaped tiles for transfer over the web. There are several existing solutions, none yet standardized, described in the <a data-featureid="vector-tiling-er">OGC Testbed-13:  Vector Tiles Engineering Report</a>.</p>
       </section>
-      <section class="not-covered">
-        <h2>Features not covered by ongoing work</h2>
-        <!-- many of these are OGC standards we consider not 'webby' -->
+      <section class="not-webby">
+        <h2>Features not considered Web friendly</h2>
+        <p>These features are established standards in the geospatial domain, and of possible interest to the Web community, but are not compliant to modern Web architecture.</p>
         <dl>
           <!-- to present a view -->
           <dt data-feature="Present view"><a data-featureid="wms">Web Map Service (WMS)</a></dt>
@@ -55,6 +55,8 @@
           <!-- to provide access-->
           <dt data-feature="Access coverage data"><a data-featureid="wcs">Web Coverage Service (WCS)</a></dt>
           <dd>An OGC standard for access to multi-dimensional coverage data. The requests are standardized XML messages.</dd>
+          <dt data-feature="Web processing of geospatial data"><a data-featureid="wps">Web Processing Service (WPS)</a></dt>
+          <dd>An interface standard which provides rules for standardizing inputs and outputs (requests and responses) for invoking spatial processing services, such as polygon overlay, as a Web service.</dd>
         </dl>
       </section>
       <!--<section class="discontinued">

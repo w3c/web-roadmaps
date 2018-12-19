@@ -25,7 +25,7 @@
             </ul>
           </div>
           <!-- to represent sensor data-->
-          <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases.</p>
+          <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases. SSN is underpinned by <a data-featureid="iso-19156-2011">Observations &amp; Measurements</a>, an ISO and OGC standard for describing observations and measurements made by sensors.</p>
           <!-- to represent temporal data-->
           <p data-feature="Temporal data representation">The <a data-featureid="owl-time">Time Ontology</a> contains concepts for describing the temporal properties of resources in the world or described in Web pages, including relations between time instants and intervals, information about durations, and temporal position including date-time information. Not only the conventional (Gregorian) calendar and clock can be used: other temporal reference systems are also possible.</p>
           <!-- to represent geometry-->
@@ -61,17 +61,20 @@
         </div>
         <!--<p>To partition raster data, .. [description and ref for 'raster tiling' tbd].</p>-->
         <div data-feature="Spatio-temporal data cubes">To partition RDF data for the web using spatial and/or temporal data elements, <a data-featureid="qb4st">QB4ST: RDF Data Cube extensions for spatio-temporal components</a> is available. The Note <a data-featureid="eo-qb">Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System</a> offers guidance on using RDF Data Cubes on geospatial data.</div>
+        <!-- LvdB: want to mention the Building Ontology, which the Linked building data community group (https://www.w3.org/community/lbd/) are proposing to create, here; but there is nothing yet to point at.-->
       </section>
       <section class="not-covered">
         <h2>Features not covered by ongoing work</h2>
-        <!-- many of these are OGC standards we consider not 'webby' -->
         <dl>
           <!--to represent spatial data: vocabularies / encodings-->
           <dt data-feature="Compact spatial data representation"><a data-featureid="topojson">TopoJSON</a></dt>
           <dd>A community-defined extension of GeoJSON which reduces redundancy in the description of a geometry, by splitting it into segments (referred to as "arcs") that can be re-used.</dd>
-          <!-- to represent sensor data-->
-          <dt data-feature="Representation of observations"><a data-featureid="iso-19156-2011">Observations &amp; Measurements</a></dt>
-          <dd>An ISO and OGC standard for describing observations and measurements made by sensors. The format is based on XML.</dd>
+        </dl>
+      </section>
+      <section class="not-webby">
+        <h2>Features not considered Web friendly</h2>
+        <p>These features are established standards in the geospatial domain, and of possible interest to the Web community, but are not compliant to modern Web architecture.</p>
+        <dl>
           <!-- to represent temporal data-->
           <dt data-feature="Representation of time series">Timeseries</dt>
           <dd>An OGC standard for describing measurements of the same thing that occur many times over time. There is a <a data-featureid="tsprofile">Timeseries Profile of Observations and Measurements</a> and a <a data-featureid="tsml">TimeSeriesML XML encoding</a>. </dd>
@@ -79,7 +82,6 @@
           <dt data-feature="Representation of moving features"><a data-featureid="movingfeatures">Moving features</a></dt>
           <dd>An OGC standard for encoding representations of movement of geographic features. The primary use case is information exchange.</dd>
         </dl>
-        <!-- LvdB: want to mention the Building Ontology, which the Linked building data community group (https://www.w3.org/community/lbd/) are proposing to create, here; but there is nothing yet to point at.-->
       </section>
       <section class="discontinued">
         <h2>Discontinued features</h2>
