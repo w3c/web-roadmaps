@@ -15,7 +15,7 @@
       {
         "url": "write.html",
         "title": "write spatial data",
-        "icon": "../assets/img/sdw-represent.png",
+        "icon": "../assets/img/sdw-write.png",
         "description": "Vocabularies, formats, to represent spatial data and geometries and to reference locations."
       },
       {
