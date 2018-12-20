@@ -12871,6 +12871,17 @@
         "href": "https://caniuse.com/#feat=css-paint-api"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Develop > Experimental Features menu."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paint-api",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -12915,8 +12926,7 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5685444318593024",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5685444318593024"
       },
       {
         "ua": "webkit",
@@ -23286,6 +23296,17 @@
         "href": "https://caniuse.com/#feat=mediarecorder"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Develop > Experimental Features menu."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=mediarecorder",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -23335,8 +23356,7 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5929649028726784",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5929649028726784"
       },
       {
         "ua": "opera",
@@ -29314,6 +29334,17 @@
         "href": "https://caniuse.com/#feat=webauthn"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Develop > Experimental Features menu. Currently supports USB-based CTAP2 devices."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -29363,8 +29394,7 @@
         "ua": "safari",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5669923372138496",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5669923372138496"
       },
       {
         "ua": "edge",
