@@ -11399,7 +11399,7 @@
       },
       {
         "ua": "webkit",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "webkitstatus",
         "guess": true,
         "features": [
@@ -11551,7 +11551,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#feature-variation-fonts"
           },
@@ -11648,7 +11648,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "guess": true,
             "partial": true
@@ -11891,7 +11891,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "guess": true,
             "partial": true
@@ -12134,7 +12134,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "guess": true,
             "partial": true
@@ -12322,7 +12322,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "guess": true,
             "partial": true
@@ -12529,7 +12529,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "guess": true,
             "partial": true
@@ -19019,12 +19019,6 @@
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/intersectionobserver/",
         "selected": true
-      },
-      {
-        "ua": "webkit",
-        "status": "indevelopment",
-        "source": "webkitstatus",
-        "href": "https://webkit.org/status/#specification-intersection-observer"
       },
       {
         "ua": "webview_android",
@@ -26544,11 +26538,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the \"Experimental Features\" developer menu"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=subresource-integrity",
         "selected": true
@@ -29049,12 +29039,6 @@
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webshareapi/",
         "selected": true
-      },
-      {
-        "ua": "webkit",
-        "status": "indevelopment",
-        "source": "webkitstatus",
-        "href": "https://webkit.org/status/#feature-web-share"
       }
     ]
   },
@@ -29338,7 +29322,7 @@
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Can be enabled using the Develop > Experimental Features menu. Currently supports USB-based CTAP2 devices."
+          "Can be enabled using the Develop > Experimental Features menu. Currently supports USB-based CTAP & CTAP2 HID devices."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
