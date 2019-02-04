@@ -51,5 +51,15 @@
   ],
   "about": {
     "url": "about.html"
-  }
+  },
+  "translations": [
+    {
+      "title": "English",
+      "lang": "en"
+    },
+    {
+      "title": "日本語",
+      "lang": "ja"
+    }
+  ]
 }

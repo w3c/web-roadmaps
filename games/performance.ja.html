@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>パフォーマンス</title>
+  </head>
+  <body>
+    <header>
+      <h1>パフォーマンス</h1>
+      <p>多くのゲームは利用者の感嘆を引き出すために、メモリ・画面・計算能力などという面でプラットフォームの限界まで利用しようとします。初期のころ、インタプリタ言語(JavaScript)がCPUの１スレッドでしか動かないことやGPUを活用できないなどといった点で、ウェブプラットフォームはネイティブプラットフォームに比べて明らかに劣っていました。時代は流れ、ウェブの基盤はパフォーマンスの面でおいても劇的に改善され、ウェブアプリケーションが利用可能な計算資源を十分に活用できるようになり、リアルタイムに動作を修正するためのパフォーマンス測定も可能になりました。</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>実装されている仕様</h2>
+
+        <div data-feature="Multithreading">
+          <p>たとえどんな手を使ってもスムースな体験を保証し、また利用可能な計算資源を活用しきるために、ゲームは通常複数のスレッドで動作しています。<a data-featureid="webworkers">Web Workers</a> を利用することで JavaScript のコードをバックグラウンドで動作させられます。これはリソースを大きく利用する操作をバックグラウンドに回すことでユーザインターフェースの応答性を確保するために有用です。
+          </p>
+          <p><strong>注:</strong> <a href="https://meltdownattack.com/">Spectre</a> の影響により、メモリをスレッド間で共有するための <code>SharedArrayBuffer</code> オブジェクトはほとんどのウェブブラウザから一時的に削除されています。ワーカー同士の通信についてもさしあたりメッセージだけに制限されています。</p>
+        </div>
+
+        <div data-feature="Timing hooks">
+          <p><a href="https://www.w3.org/webperf/">Web Performance Working Group</a> では計測にかかわるフックをウェブアプリケーションに提供するいくつかの仕様を作成しています。<a data-featureid="hr-time">High-Resolution Time</a> 仕様ではウェブアプリケーションが２つのイベント間で経過した時間を高精度に測定できるようにサブミリ秒精度の計時を公開しています。<a data-featureid="performance-timeline">Performance Timeline</a> はパフォーマンスメトリクスデータを保存・取得するための統一された方法を定義しています。また、個別のパフォーマンス測定用のインターフェースはそれぞれ別の仕様で定義されています:</p>
+
+          <ul>
+            <li><a data-featureid="navigation-timing">Navigation Timing</a> はページ読み込みやエレメントについての時間測定仕様です</li>
+            <li><a data-featureid="resource-timing">Resource Timing</a> はドキュメント内のリソースについての時間測定仕様です</li>
+            <li><a data-featureid="user-timing">User Timing</a> では高精度タイムスタンプによりアプリケーションのパフォーマンスを測定するための仕様です</li>
+          </ul>
+        </div>
+
+        <div data-feature="Priority handling">
+          <p><a data-featureid="requestidlecallback">バックグラウンドタスクの協調スケジューリング仕様 (Cooperative Scheduling of Background Tasks specification)</a> は<code>requestIdleCallback</code> メソッドを定義し、アプリケーションが他の動作を行っていないなどの機会に実行をスケジュールできるようになります。</p>
+        </div>
+
+        <div data-feature="Animation optimization">
+          <p><a data-featureid="animation-frames">スクリプトベースアニメーションの時系列制御 API (Timing control for script-based animations API)</a> はアニメーション動作に必要なリソース利用量の削減につながるものです。</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>仕様化が進行中の仕様</h2>
+
+        <div data-feature="Low-level bytecode format">
+          <p>緊密なメモリと計算資源制御を必要とするゲームは通常 C++ (か同等の言語) で記述されます。<a data-featureid="webassembly">WebAssembly</a> (Wasm) はウェブブラウザでほぼネイティブの速度で実行可能な低レベルバイトコード形式で、C, C++ やその他の言語からコンパイルで生成可能です。ほとんどの 3D ゲームエンジンは WebAssembly をコンパイルターゲットとしてサポートするようになりました。また、プラットフォーム間での効率的なコードの再利用も可能になります。</p>
+        </div>
+
+        <div data-feature="Network prioritization">
+          <p><a data-featureid="resource-hints">Resource Hints</a> および <a data-featureid="preload">Preload</a> 仕様は開発者がリソースのダウンロードの最適化を、ダウンロード自体やダウンロードしたリソースの実行を遅らせる操作を実現することにより可能にしています。</p>
+        </div>
+
+        <div data-feature="Caching">
+          <p><a data-featureid="serviceworkers">Service Workers</a> 仕様により外部へのネットワーク要求に介入したり要求に直接応答するような機構を実現します。アプリケーションはこれにより弾力的なキャッシュ制御を実装可能になり、サーバへの無駄なリクエストを防ぐことができます。</p>
+        </div>
+
+        <div data-feature="Timing hooks">
+          <p><a data-featureid="server-timing">Server Timing</a> はユーザエージェントとの要求・応答に係るパフォーマンス情報をサーバで取得するためのもので、アプリケーションが配送の際にそれらの情報を活用可能になります。</p>
+          <p><a data-featureid="longtasks">Long Tasks API</a> はユーザインターフェースにかかわるメインのスレッドの稼働時間を食っている、長時間かかっている動作を検出するための機構です。</p>
+          <p><a data-featureid="paint-timing">Paint Timing</a> 仕様によりアプリケーションがページロード中の最初の描画開始やコンテンツがすべて描画された最初の時点などの主要なタイミングを取得可能になります。</p>
+        </div>
+
+        <div data-feature="Rendering performance">
+          <p>アプリケーションの一部をアニメーション化する際のパフォーマンス最適化のために、<a data-featureid="css-will-change">CSS <code>will-change</code></a> を指定することでブラウザがアニメーションを開始する前にその影響を算出することが可能になります。</p>
+          <p>CSS <a data-featureid="css-contain">contain</a> プロパティーによりエレメントの下をその他のページ全体から独立したものと宣言できます。これを指定することでユーザエージェントが多大な最適化を実行することができるようになり、特に指定部分がスクリーンから外れた場合に他の部分のレンダリングに影響しないことをユーザエージェントが認識可能になります。</p>
+        </div>
+
+        <div data-feature="Real-time communications">
+          <p><a data-featureid="webrtc-stats">WebRTC の統計値取得 API (Identifiers for WebRTC's Statistics API)</a> は RTCPeerConnection に関する統計情報にアクセスするための Web IDL オブジェクトを定義し、ウェブアプリケーションがそのネットワークやメディア処理のパフォーマンスを検証できるようになります。</p>
+        </div>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>調査中の項目</h2>
+
+        <div data-feature="GPU computation">
+          <p>画面表示のために、負荷の高い計算を行うために GPU を活用したいと思うゲームもあるでしょう。一部分ですがこれは <a data-featureid="webgl">WebGL</a> により実現されています。<a href="https://www.w3.org/community/gpu">ウェブのための GPU CG (GPU for the Web Community Group)</a> では現代的な 3D グラフィックス (一番初めに) や計算能力 (次に) を効率的、効果的、かつ安全に利用可能なウェブ向け API を Direct3D、Metal、Vulkan といった既存のネイティブの機構にとらわれずかつ互換性のある形で検討中です。</p>
+        </div>
+
+        <div data-feature="Multithreading">
+          <p>スレッド間同期のためにはロックを利用する必要があります。<a data-featureid="web-locks">Web Locks API</a> の提案は、リソースをロックし作業中の間保持してリリースする、という操作によりスクリプトが非同期で動作する機構を実現するものです。</p>
+        </div>
+
+        <div data-feature="Timing hooks">
+          <p><a data-featureid="frame-timing">Frame Timing API</a> ではユーザデバイスで動作するアプリケーションが利用可能な秒間フレーム数の詳細な情報を取得できるようになります。</p>
+
+          <p><a data-featureid="event-timing">Event Timing Web Perf API</a> ではユーザ入力によるイベントのいくつかについて遅延を測定するための機構を検討しています。</p>
+        </div>
+
+        <div data-feature="Network prioritization">
+          <p><a data-featureid="priority-hints">Priority Hints</a> 仕様は、既存のプリロードなどのブラウザの読み込み機構を補完するため、ダウンロードすべきリソース間の優先順位を指定できるようにするものです。</p>
+        </div>
+
+        <div data-feature="Animation optimization">
+          <p><a data-featureid="animation-worklet">CSS Animation Worklet API</a> は複数のアニメーション効果をまとめて制御しスクリプトによるアニメーションを実現するための機構を提供します。この API はユーザエージェントがアニメーションをメインスレッドから分離したスレッドで実行できるようにすることでパフォーマンス確保の自由度を持たせるためのものです。</p>
+        </div>
+
+        <div data-feature="Scrolling optimization">
+          <p>ユーザエージェントはスクロール連鎖やオーバースクロール動作などといったスクロールについての既定の動作を実装していることがありますが、ウェブアプリケーションでは <b>pull-to-refresh</b> や <b>infinite scrolling</b> といったモバイル環境で一般的な操作を実現するためにそれらを無効化したい場面があります。これらはスクリプトでも実現可能ですが、アプリケーションが既定の動作を必要な時に上書きするために <code>passive</code> フラグを付けずにタッチイベントの監視が必要になるといったスクロールのパフォーマンスへの悪影響があります。<a data-featureid="css-overscroll-behavior">CSS <code>overscroll-behavior</code></a> プロパティーを利用することでスクロールの現在地がスクロール限界に到達した場合のコンテナの動作を制御することができ、ウェブアプリケーションが効率的に既定のスクロール動作を無効化できるようになります。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>進行中の項目で対応していない項目</h2>
+        <dl>
+          <dt>人工知能 (AI)</dt>
+          <dd>いくつものゲームではゲーム AI という名前で現実のプレイヤーが操作していないゲームキャラクターに高度な振る舞いをさせる機能を実装しています。ゲームにおける AI のコンセプトは他の分野での概念とは異なりますが、ゲーム AI は機械学習、ニューラルネットワークやその他のデータマイニングのアルゴリズムを元とした似たような技術を活用可能です。ウェブブラウザにおけるそのようなアルゴリズムの実装の次善最適解は <a data-featureid="webassembly">WebAssembly</a> と <a data-featureid="webgl">WebGL</a> を利用するものです。2017年10月に公表された <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> 提言はウェブアプリケーションに適した機構を公開するためのものですが、W3C における標準化活動までは至っていません。</dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

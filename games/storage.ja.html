@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>データストレージ</title>
+  </head>
+  <body>
+    <header>
+      <h1>データストレージ</h1>
+      <p>さまざまなゲームでの重要な要素として、リソースの読み込み時間の短縮やオフラインでのゲーム利用時の連続性を担保するために、ゲーム状態やリソースを保存する機能が挙げられます。</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>実装されている仕様</h2>
+        <p data-feature="Simple data storage">単純なデータストレージとしては <a data-featureid="webstorage">Web Storage</a> が <code>localStorage</code> と <code>sessionStorage</code> の二つの基本的な機能を提供しており、それぞれデータを無期限もしくはブラウザセッション間において保存可能です。</p>
+
+        <p data-feature="Database query/update"><a data-featureid="indexeddb">Indexed Database API</a> (IndexedDB) は JavaCsript で自然に利用可能な値・構造的オブジェクトのためのデータベースを規定し、効率的に照会・更新できます。現在は <a href="https://w3c.github.io/IndexedDB/">仕様の第３版</a>が開発中です。</p>
+
+        <p data-feature="Encrypted storage">データを暗号化する必要がある場面がありますが、<a data-featureid="crypto">Web Cryptography API</a> によりウェブアプリケーションは強力な暗号化機能が利用可能になり、また <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API を利用することで事前配布鍵と紐づけることが可能になります。</p>
+
+        <p data-feature="File download"><a data-featureid="html5-download">HTML5 <code>download</code> 属性</a> は、ユーザに分かりやすいファイル名を付ける機能を持った (ページナビゲーションでなく) ファイルダウンロードを開始する簡単な機構を提供します。</p>
+      </section>
+      <section class="featureset in-progress">
+        <h2>仕様化が進行中の仕様</h2>
+
+        <div data-feature="File operations">
+          <p><a data-featureid="fileapi">File API</a> はファイルシステムとのより高度な統合のためにファイルの内容を読みこむ機能を提供します。しかしながら、サンドボックス化されたファイルシステムにファイルを書き込むための sandboxed filesystem API 仕様についての議論は興味を集められなかったため停止されました。</p>
+        </div>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>調査中の項目</h2>
+
+        <p data-feature="Quota for storage">オフライン動作のためのようにブラウザにより保存されるデータが大きくなるにつれ、開発者が必要とするストレージ領域を確保可能かどうかが重要になってきました。提案されている <a data-featureid="storage">Storage</a> 仕様はウェブアプリケーションがストレージ領域の制約を取得するとともに、アプリケーションが保存したデータを永続的に扱いユーザの明示的な指示がない限り削除されないようにする機能を提供します。</p>
+      </section>
+
+      <section>
+        <h2>中止された項目</h2>
+        <dl>
+          <dt>割当管理 (Quota management) API</dt>
+          <dd><a data-featureid="quota">Quota Management API</a> はウェブプラットフォーム WG によりローカルのストレージ容量の利用量・利用可能量管理の API のために議論されていましたが、新しい <a data-featureid="storage">Storage</a> 提案により中断しました。</dd>
+
+          <dt>クライアントでの SQL 型データベース (Client-side SQL-based database</dt>
+          <dd><a data-featureid="websql">client-side SQL-based database</a> の開発は 2009 年に開始しましたが、IndexedDB の開発に伴い放棄されました。</dd>
+
+          <dt>アドレス帳データ (Address book data)</dt>
+          <dd>コミュニケーション用アプリケーションではユーザの既存のデータと連携することは有益で、モバイルデバイスではアドレス帳はその情報として特に有用です。ブラウザ外のウェブアプリケーション向けには <a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a> にて純粋な技術的検討が行われていましたが、WG は閉鎖され <a data-featureid="contacts-sys">Contacts Manager API</a> についての作業は予定されていません。HTML ではウェブブラウザがアドレス帳のデータを再利用可能になる<a data-featureid="autocomplete">コンタクト情報に関する自動補完フィールド</a>を提供しています。</dd>
+        </dl>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>
