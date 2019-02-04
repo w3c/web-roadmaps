@@ -1,3 +1,11 @@
+# このレポジトリについて
+
+このレポジトリは[Web technology roadmaps](https://w3c.github.io/web-roadmaps/)の非公式日本語仮訳の
+ためのレポジトリです。
+
+* 将来的に日本語訳版として大元にpushする可能性はあります。
+* masterブランチはアップデートしていません。gh-pagesブランチのみ追随していく予定です。
+
 # Framework for Web technology roadmaps
 
 This repository hosts a framework to present roadmaps of ongoing and future Web technologies.
