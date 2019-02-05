@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "well-deployed": "実装されている仕様",
+    "in-progress": "仕様化が進行中の仕様",
+    "exploratory-work": "調査中の項目",
+    "not-covered": "進行中の項目で対応していない項目",
+    "discontinued": "中止された項目"
+  },
+  "columns": {
+    "feature": "機能",
+    "spec": "仕様・グループ",
+    "maturity": "標準化段階",
+    "impl": "現在の実装状況",
+    "impl-intents": "実装意向の状況",
+    "seeAlso": "追加情報",
+    "milestones": "マイルストーン"
+  },
+  "implstatus": {
+    "shipped": "Shipped",
+    "experimental": "Experimental",
+    "indevelopment": "In development",
+    "consideration": "Under consideration"
+  },
+  "browsers": {
+    "chrome": "Chrome",
+    "edge": "Microsoft Edge",
+    "firefox": "Firefox",
+    "safari|webkit": "Safari / WebKit",
+    "safari": "Safari",
+    "webkit": "WebKit",
+    "baidu": "Baidu Browser",
+    "opera": "Opera",
+    "qq": "QQ Browser",
+    "samsunginternet": "Samsung Internet",
+    "uc": "UC Browser"
+  },
+  "maturity": {
+    "ED": "Editor's Draft",
+    "WD": "Working Draft",
+    "LS": "Living Standard",
+    "CR": "Candidate Recommendation",
+    "PR": "Proposed Recommendation",
+    "REC": "Recommendation",
+    "Retired": "Retired",
+    "NOTE": "Group Note",
+    "REF": "Reference"
+  }
+}
