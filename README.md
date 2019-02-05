@@ -13,12 +13,12 @@ This repository hosts a framework to present roadmaps of ongoing and future Web 
 It aims at simplifying the creation and maintenance of such roadmaps by collecting automatically information about standardization and implementation status of features described in W3C specifications and others.
 
 ## Available roadmaps
-* [Overview of Media Technologies for the Web](https://w3c.github.io/web-roadmaps/media/)
-* [Roadmap for Security technologies](https://w3c.github.io/web-roadmaps/security/)
-* [Roadmap of Web Applications on Mobile](https://w3c.github.io/web-roadmaps/mobile/)
-* [Roadmap of Technologies Needed for Web Publications](https://w3c.github.io/web-roadmaps/publishing/)
-* [Spatial data on the Web Roadmap](https://w3c.github.io/web-roadmaps/sdw/)
-* [Games on the Web Roadmap](https://w3c.github.io/web-roadmaps/games/) (日本語訳中)
+* [Overview of Media Technologies for the Web](./media/)
+* [Roadmap for Security technologies](./security/)
+* [Roadmap of Web Applications on Mobile](./mobile/)
+* [Roadmap of Technologies Needed for Web Publications](./publishing/)
+* [Spatial data on the Web Roadmap](./sdw/)
+* [Games on the Web Roadmap](./games/) (日本語訳中)
 
 ## Table of contents
 * [Overview of the framework](#overview-of-the-framework)
