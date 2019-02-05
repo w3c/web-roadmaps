@@ -18,7 +18,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Roadmap of Web Applications on Mobile](./mobile/)
 * [Roadmap of Technologies Needed for Web Publications](./publishing/)
 * [Spatial data on the Web Roadmap](./sdw/)
-* [Games on the Web Roadmap](./games/) (日本語訳中)
+* [Games on the Web Roadmap](./games/) ([日本語訳中](./games/index.ja.html))
 
 ## Table of contents
 * [Overview of the framework](#overview-of-the-framework)
