@@ -4,7 +4,8 @@
 ためのレポジトリです。
 
 * 将来的に日本語訳版として大元にpushする可能性はあります。基本的には [翻訳手順](#Translating-a-roadmap) 準拠です。
-* masterブランチに日本語訳を追加しています。公開用gh-pagesブランチは [処理結果](#Generate-content-locally) でアップデートしています。
+* master-jaブランチに非公式日本語仮訳を追加しています。公開用gh-pagesブランチは [処理結果](#Generate-content-locally) でアップデートしています。
+* [master](https://github.com/himorin/web-roadmaps/tree/master)ブランチはmaster-jaの非公式日本語仮訳版が参照している[本家 Web technology roadmaps](https://w3c.github.io/web-roadmaps/)のバージョンになっています。
 
 # Framework for Web technology roadmaps
 
