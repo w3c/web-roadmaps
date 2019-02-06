@@ -35,14 +35,14 @@
     "uc": "UC Browser"
   },
   "maturity": {
-    "ED": "Editor's Draft",
-    "WD": "Working Draft",
+    "ED": "編集者草案",
+    "WD": "草案",
     "LS": "Living Standard",
-    "CR": "Candidate Recommendation",
-    "PR": "Proposed Recommendation",
-    "REC": "Recommendation",
-    "Retired": "Retired",
-    "NOTE": "Group Note",
-    "REF": "Reference"
+    "CR": "勧告候補",
+    "PR": "勧告案",
+    "REC": "勧告",
+    "Retired": "廃止",
+    "NOTE": "技術ノート",
+    "REF": "参考文献"
   }
 }
