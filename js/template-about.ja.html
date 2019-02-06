@@ -8,93 +8,93 @@
   </p>
 </section>
 <section id="audience">
-  <h2>Audience</h2>
+  <h2>対象者</h2>
   <p>
-    This document is mainly targeted at developers of Web applications willing to understand the status of the Web platform for particular vertical needs (e.g. publishing) or on particular devices (e.g. mobiles). Device manufacturers may also find valuable information about features that their products should support.
+    この文書はウェブアプリケーションの開発者で特定の軸 (出版など) についてや特定のデバイス (モバイルなど) についてのウェブプラットフォームの状況を知りたいような方を主な対象としています。デバイス開発者にとっても、製品がどのような機能をサポートしているべきかについての有益な情報があるかもしれません。
   </p>
   <p>
-    This document answers questions such as:
+    この文書では以下のような疑問に答えています：
   </p>
   <ul>
-    <li>Which technologies are available today across browsers?</li>
-    <li>Which technologies should be available tomorrow?</li>
-    <li>What are the features that being explored and that could lead to new technologies later on?</li>
-    <li>Are there technical gaps in a given field for which there are no active standardization work today?</li>
+    <li>ブラウザ間でどの機能が現在サポートされているか</li>
+    <li>どの機能がもうすぐ使えるようになるか</li>
+    <li>どのような機能が検討されていて将来的に仕様化されるのか</li>
+    <li>標準化活動が現状行われていないある分野でどのような技術的なギャップがあるのか</li>
   </ul>
 </section>
 <section id="legend">
-  <h2>Understanding tables</h2>
+  <h2>表について</h2>
   <p>
-    Tables at the end of sections summarize information about individual features. Columns displayed may depend on the table. Features of interest come with a name, one or more specifications (or individual features within specifications) that enable this feature, and details about each specification.
+    各部分の最後の表では個別機能についての情報をまとめています。列は表によって異なることがあります。関連する機能について、名前、それを実現するための一つ以上の仕様 (もしくは仕様の中の個別機能) 、そしてその詳細が記載されています。
   </p>
   <section id="maturity">
-    <h3>Maturity levels</h3>
+    <h3>成熟度レベル</h3>
     <p>
-      The maturity of a feature refers to its standardization status.
+      機能の成熟度レベルはその標準化の状況となります。
     </p>
     <table>
       <thead>
-        <th>Maturity</th>
-        <th>Meaning</th>
+        <th>成熟度</th>
+        <th>意味</th>
       </thead>
       <tbody>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="Editor's Draft"></td>
-          <td>Defined in an Editor's Draft, not yet published officially anywhere. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+          <td>"Editor's draft" として規定されており、どこにもまだ正式に公表されていません。機能は安定しておらず、機能が安定化するまで実装は大きく変化する可能性が残されています。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="Working Draft"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C Working Draft</a>. Feature should not be considered stable and possible implementations can still change substantively before the feature stabilizes.</td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C Working Draft</a>として規定されています。機能は安定しておらず、機能が安定するまで実装は大きく変化する可能性が残されています。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="Candidate Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C Candidate Recommendation</a>. Feature may be considered stable but could still change based on implementation experience. Implementations may not be fully interoperable.</td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C Candidate Recommendation</a>として規定されています。機能は安定しているものと考えてよいですが、実装での状況次第で変更される可能性が残されています。実装は完全に相互互換性が担保されているわけではありません。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="Proposed Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C Proposed Recommendation</a>. Feature is undergoing a final review by W3C Members. It is stable and existing implementations should be mostly interoperable.</td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C Proposed Recommendation</a>として規定されています。機能は W3C メンバーによる最終レビューにかけられています。昨日は安定しており、実装も相互互換性がほぼ担保されています。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C Recommendation</a>. Feature is stable and existing implementations should be mostly interoperable.</td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C Recommendation</a>として規定されています。機能は安定しており、存在する実装はほぼ相互互換性があります。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="Living Standard"></td>
-          <td>Defined in a <a href="https://whatwg.org/working-mode">WHATWG Living Standard</a>. Stability and interoperability depend on the feature being considered and are usually noted in the specification itself.</td>
+          <td><a href="https://whatwg.org/working-mode">WHATWG Living Standard</a>として規定されています。安定性や相互互換性はそれぞれの機能に依存し、通常は仕様書に記載されています。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="Note"></td>
-          <td>Defined in a <a href="https://www.w3.org/Consortium/Process/#WGNote">W3C Note</a>. Publication as a Note either indicates that the feature is informational in nature (e.g. guidelines, techniques, best practices), or that work on the feature has been discontinued for some reason.</td>
+          <td><a href="https://www.w3.org/Consortium/Process/#WGNote">W3C Note</a>として規定されています。"Note" としての公表は、機能がそれ自体参考情報である (ガイドライン、テクニック、最良実践例など) であるか、機能の開発が何らかの理由で停止されたものであることを示します。</td>
         </tr>
         <tr>
           <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/retired.svg" alt="Retired"></td>
-          <td>Feature was part of a Web standard, but implementation and usage are no longer recommended for some reason (e.g. privacy concerns, security issues, better mechanism available).</td>
+          <td>機能はウェブ標準でありましたが、実装や利用は何らかの理由 (プライバシー問題、セキュリティー問題、より良い機能が利用可能、など) で推奨されなくなりました。</td>
         </tr>
       </tbody>
     </table>
   </section>
   <section id="implementation">
-    <h3>Implementation info</h3>
+    <h3>実装状況</h3>
     <p>
-      For features that target Web browsers, the "Current implementations" and "Implementation intents" columns display known implementation status in main browsers. The information is structured per implementation status, which can be one of:
+      ウェブブラウザ向けの機能について、"現在の実装状況" と "実装意向の状況" は主要ブラウザでの実装状況を示しています。表示は実装状況により分類されており、以下のいずれかになります：
     </p>
     <ul>
-      <li><strong>Shipped:</strong> the feature is supported in the browser and can be used right away.</li>
-      <li><strong>Experimental:</strong> the feature is planned for an upcoming version of the browser, and can be tried out in nightly builds of the browser. The feature may also be behind a flag, or it may require the use of a prefix.</li>
-      <li><strong>In development:</strong> the feature is being developed but is not yet available.</li>
-      <li><strong>Under consideration:</strong> the feature is not yet in development but is being considered for a future version of the browser.</li>
+      <li><strong>出荷済:</strong> 機能はブラウザにより実装され、正常に利用できます。</li>
+      <li><strong>実験的:</strong> 機能はブラウザの将来のバージョン向けに計画され、開発版で試験可能です。また、有効化やプレフィックスが必要な場合があります。</li>
+      <li><strong>開発中:</strong> 機能は開発されてはいますが、利用可能ではありません。</li>
+      <li><strong>検討中:</strong> 機能はまだ開発段階にはありませんが、将来のバージョンに向けて検討されています。</li>
     </ul>
     <p>
-      The tables may contain implementation information about the following browsers:
+      表には以下のブラウザについての実装状況が含まれます：
     </p>
     <table>
       <thead>
-        <th>Icon</th>
-        <th>Browser name</th>
+        <th>アイコン</th>
+        <th>ブラウザ名</th>
       </thead>
       <tbody>
         <tr>
-          <th colspan="2">Main browser engines</th>
+          <th colspan="2">主要ブラウザエンジン</th>
         </tr>
         <tr>
           <td><img src="../assets/impl/chrome.png" alt="Chrome"></td>
@@ -115,7 +115,7 @@
       </tbody>
       <tbody>
         <tr>
-          <th colspan="2">Based on the main browser engines</th>
+          <th colspan="2">その他のブラウザエンジン</th>
         </tr>
         <tr>
           <td><img src="../assets/impl/baidu.png" alt="Baidu Browser"></td>
@@ -140,45 +140,45 @@
       </tbody>
     </table>
     <p>
-      Badges overlaid on top of browser icons convey additional implementation information:
+      ブラウザエンジンのアイコンの上部に表示されるバッジは以下の追加の実装状況の情報を示します：
     </p>
     <table>
       <thead>
-        <th>Badge</th>
-        <th>Meaning</th>
+        <th>バッジ</th>
+        <th>意味</th>
       </thead>
       <tbody>
         <tr>
           <td><img src="../assets/impl/desktop.svg" alt="Desktop only"></td>
-          <td>Implementation information applies to the desktop version of the browser.</td>
+          <td>実装状況の情報はブラウザのデスクトップ版のものです。</td>
         </tr>
         <tr>
           <td><img src="../assets/impl/mobile.svg" alt="Mobile only"></td>
-          <td>Implementation information applies to the mobile version of the browser.<br/>Note that the implementation info only applies to mobile versions where the browser uses <i>its own layout engine</i> (e.g. "Firefox for Android", or "Safari for iOS"), not to mobile versions where the browser uses <i>another layout engine</i> (e.g. "Firefox for iOS"). In other words, given the implementation information available today, the mobile badge means "iOS" for Safari, and "Android" for all other browsers.</td>
+          <td>実装状況の情報はブラウザのモバイル版のものです。<br/>注: 実装状況の情報はブラウザが<i>そのレイアウトエンジン</i>を利用している場合 (例えば、"Firefox for Android" や "Safari for iOS") にのみ該当し、モバイル版が<i>他のレイアウトエンジン</i>を利用している場合 (例えば、"Firefox for iOS") には該当しません。言い換えると、現在の実装状況の情報においては、モバイルバッジは "iOS" では Safari、"Android" ではすべてのブラウザを示すことになります。</td>
         </tr>
         <tr>
           <td><img src="../assets/impl/desktop-mobile.svg" alt="Desktop and mobile"></td>
-          <td>Implementation information applies both to the desktop and mobile versions of the browser.</td>
+          <td>実装状況はブラウザのデスクトップ版・モバイル版の両方のものです。</td>
         </tr>
         <tr>
           <td><img src="../assets/impl/flag.svg" alt="Behind a flag"></td>
-          <td>Some flag needs to be set in order to enable the feature in the browser. That flag may be a <i>preference flag</i> that the user may set in parameters, a <i>compile flag</i> that must be set before compiling the browser, or a <i>runtime flag</i> that must be set before starting the browser.</td>
+          <td>ブラウザで機能を利用するには何らかのフラグを設定する必要があります。フラグはユーザがパラメータとして設定できる<i>設定フラグ</i>による場合や、ブラウザをコンパイルする際に設定が必要な<i>コンパイルフラグ</i>による場合、ブラウザを起動する前に設定する必要がある<i>ランタイムフラグ</i>による場合などがあります。</td>
         </tr>
         <tr>
           <td><img src="../assets/impl/prefix.svg" alt="Prefix required"></td>
-          <td>A prefix must be used to access the feature. For instance, in Firefox, this usually means adding something like a <code>-moz-</code> prefix for CSS properties and a <code>moz</code> prefix to API functions.</td>
+          <td>プリフィックスが機能を利用するために必要です。例えば、Firefox ではよく CSS プロパティーでは<code>-moz-</code>を、API 関数では<code>moz</code>プリフィックスを追加するといったものです。</td>
         </tr>
         <tr>
           <td><img src="../assets/impl/partial.svg" alt="Partial implementation"></td>
-          <td>Implementation info is not complete and support may be partial.</td>
+          <td>実装状況の情報は完全ではなく、実装は部分的である可能性があります。</td>
         </tr>
       </tbody>
     </table>
     <p>
-      On devices that support hovering, a tooltip that summarizes the implementation information is displayed when the user moves over a browser icon.
+      マウスオーバーがサポートされているデバイスでは、ブラウザアイコン上にカーソルを乗せた際に実装状況のまとめがツールチップとして表示されます。
     </p>
     <p>
-      Under the hoods, the implementation information is being gathered from the following platform status sources:
+      また、実装状況の情報は以下のプラットフォーム状況の情報から収集されています:
     </p>
     <ul>
       <li><a href="http://caniuse.com/">Can I Use?</a></li>
@@ -188,10 +188,10 @@
       <li><a href="https://webkit.org/status/">WebKit Feature Status</a></li>
     </ul>
     <p>
-      Clicking on a browser icon in an implementation should take you to the right page on the platform status Web site that provided the implementation information.
+      実装状況のブラウザアイコンをクリックすると、該当のプラットフォームについて実装状況を提供しているウェブサイト内のページに遷移します。
     </p>
     <p>
-      The absence of implementation information for a given browser usually means that the feature is not supported at all, and that it is not being developed for now in that browser. However, it may also mean that the implementation information is not yet available. If you notice missing or incorrect implementation info, please create an <a href="https://github.com/w3c/web-roadmaps/issues/new">issue on the GitHub repository of this document</a>.
+      特定のブラウザでの実装状況の情報が存在しないというのは、機能が全く実装されておらず、実装予定も今のところ存在しないことを意味します。しかしながら、実装状況の情報が収集できていないという場合もあります。もし、見当たらないか間違った実装状況の項目があれば、<a href="https://github.com/w3c/web-roadmaps/issues/new">web-roadmap の GitHub レポジトリに issue を立てていただけるようお願いします</a>。
     </p>
   </section>
 </section>

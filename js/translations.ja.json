@@ -16,10 +16,10 @@
     "milestones": "マイルストーン"
   },
   "implstatus": {
-    "shipped": "Shipped",
-    "experimental": "Experimental",
-    "indevelopment": "In development",
-    "consideration": "Under consideration"
+    "shipped": "出荷済",
+    "experimental": "実験的",
+    "indevelopment": "開発中",
+    "consideration": "検討中"
   },
   "browsers": {
     "chrome": "Chrome",
