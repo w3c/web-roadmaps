@@ -14,71 +14,71 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+        <h2>実装されている仕様</h2>
 
         <div data-feature="Foreground detection">
-          <p>The <a data-featureid="page-visibility">Page Visibility</a> specification lets developers detect when their application is in the foreground, and thus adapt their operations and resource consumption accordingly.</p>
+          <p><a data-featureid="page-visibility">画面表示状態 (Page Visivility)</a> の仕様により、開発者はアプリケーションが表示中であるかを検出可能になり、動作や計算資源消費を最適化できるようになります。</p>
         </div>
 
-        <p data-feature="Notification">Mobile devices follow their users everywhere, and many mobile users rely on them to remind them or notify them of events, such as messages: the <a data-featureid="notifications">Web Notifications</a> specification enables that feature in the Web environment.</p>
+        <p data-feature="Notification">ユーザはどこにでもモバイルデバイスを持ち歩くようになり、リマインダや、メッセージなどのイベント通知などに利用するようになりました。<a data-featureid="notifications">Web 通知 (Web Notifications)</a> 仕様によりウェブ環境でも機能を利用可能になりました。</p>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
+        <h2>仕様化が進行中の仕様</h2>
 
         <div data-feature="Screen wake lock">
-          <p>Games may want to engage their users for a relatively long period of time. The <a data-featureid="wake-lock">Wake Lock API</a> lets developers signal the needs to keep the screen up in these circumstances, avoiding situations where the screen gets turned off by mistake to save battery.</p>
+          <p>ゲームは比較的長い時間にわたるユーザによる利用を想定しがちです。<a data-featureid="wake-lock">Wake Lock API</a> を利用することで開発者が画面表示状態が必要であることを示すことが可能になり、バッテリを温存するために画面が消されることがないようにできます。</p>
         </div>
 
         <div data-feature="Packing">
-          <p>Whether packaged or not, users rely on a variety of metadata (name, icons) to identify the apps they want to use among their list of regularly used applications. The <a data-featureid="appmanifest">Web App Manifest</a> specification lets developers group all these metadata into a single JSON file.</p>
+          <p>パッケージ化されているかどうかにかかわらず、通常利用しているアプリケーションのリスト中からアプリケーションを探す際にはさまざまなメタデータ (名前、アイコン) を利用します。<a data-featureid="appmanifest">ウェブアプリケーションマニフェスト (Web App Manifest)</a> によりそれらのメタデータを一つの JSON ファイルで指定できます。</p>
         </div>
 
         <div data-feature="Offline Web apps">
-          <p>The <a data-featureid="serviceworkers">Service Workers</a> specification describes a method that enables applications to take advantage of persistent background processing, opening the door to running applications offline.</p>
-          <p>Not only does Service Workers enables Web applications to work seamlessly offline or in poor network conditions, it also creates a model for Web applications to operate when they have not been opened in a browser window, or even if the browser itself is not running. That ability opens the door for Web applications that run in the background and can react to remotely triggered events.</p>
+          <p><a data-featureid="serviceworkers">Service Workers</a> 仕様によりバックグラウンドで動作し続けるアプリケーションを作成することが可能になり、オフライン動作もできるようになりました。</p>
+          <p>Service Workers によりウェブアプリケーションはオフラインや細い回線状況でも気にせず動作できるようになりましたが、それ以外にもブラウザウィンドウで開かれていない間やブラウザ自体が動作していない間にもウェブアプリケーションを動作させることが可能になりました。これにより、ウェブアプリケーションをバックグラウンドで動作させ、外部からのイベントに反応させることができるようになります。</p>
         </div>
 
         <div data-feature="Notifications">
-          <p>The <a data-featureid="push">Push API</a> enables Web applications to subscribe to remote notifications that, upon reception, wake them up. Native applications have long enjoyed the benefits of greater user engagement that these notifications bring.</p>
+          <p><a data-featureid="push">Push API</a> によりリモート通知を受け取ることができるようになり、受信時に起動させることが可能になります。これまで長い間、ネイティブアプリケーションではそういった通知を利用することでユーザ体験を向上させています。</p>
         </div>
 
         <div data-feature="Background execution">
-          <p>The <a data-featureid="background-sync">Web Background Synchronization</a> specification builds on top of Service Workers to enable Web applications to keep their user data up to date seamlessly, by running network operations in the background, adjusting to possibly unreliable connections that users often experience on mobile devices.</p>
+          <p><a data-featureid="background-sync">ウェブバックグラウンド同期 (Web Background Synchronization)</a> 仕様により Service Worker を利用してウェブアプリケーションはネットワーク通信をバックグラウンドで行うことでデータ更新を途切れなく行えるようになり、またモバイルデバイスでよく発生する安定しない通信環境でも対応できるようになります。</p>
         </div>
 
         <div data-feature="Geofencing">
-          <p>Through support for background operations, the <a data-featureid="geolocation-sensor">Geolocation Sensor</a> specification allows Web applications to be woken up when a device enters a specified geographical area, also known as geofencing.</p>
+          <p>バックグラウンド動作に加え、<a data-featureid="geolocation-sensor">位置情報取得 (Geolocation Sensor)</a> 仕様により、ウェブアプリケーションでもデバイスが特定の地理的領域に入った場合に起動する動作が可能になります。これは geofencing としても知られています。</p>
         </div>
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
+        <h2>調査中の項目</h2>
 
         <div data-feature="Packing">
-          <p>The <a data-featureid="packaging">Web Packaging</a> document describes use cases for a new package format for web sites and applications and outlines such a format.</p>
+          <p><a data-featureid="packaging">ウェブパッケージ (Web Packaging)</a> はウェブサイトやアプリケーションをパッケージ化する形式についてまとめています。</p>
         </div>
 
         <div data-feature="State transition">
-          <p>Applications, notably those running on mobile devices, can go through different application states, from running to being idle, paused, stopped, discarded, or terminated. Transitions between these states are triggered by the underlying operating system, and hidden from web applications. The <a data-featureid="page-lifecycle">Page Lifecycle</a> proposal seeks to expose application state transitions to applications so that these applications can persist/restore state, enable/disable use of network, etc.</p>
+          <p>特にモバイルデバイスで動作しているアプリケーションは、動作中からアイドル、停止、中止、破棄、終了などのステートをとることがあります。それらのステート間の遷移はオペレーティングシステムによって開始され、ウェブアプリケーションからでは判断できません。<a data-featureid="page-lifecycle">ページライフサイクル (Page Lifecycle)</a> の提案はアプリケーションのステート遷移を取得し、遷移を戻したりネットワークの有効・無効を切り替えたりなどの動作ができるようにするものです。</p>
         </div>
       </section>
 
       <section>
-        <h2>Discontinued features</h2>
+        <h2>中止された項目</h2>
 
         <dl>
-          <dt>Application caches</dt>
-          <dd>The <a data-featureid="appcache">application cache</a> mechanism was introduced in HTML5 to enable access to Web applications offline through the definition of a manifest of files that the browser is expected to keep in its cache. The feature is well deployed but raises security issues and is extremely limited in terms of how much developers can control what gets cached when. The feature was obsoleted in HTML 5.1, and dropped from HTML 5.2, in favor of the <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> specification, which defines a much more powerful approach.</dd>
+          <dt>アプリケーションキャッシュ (Application caches)</dt>
+          <dd><a data-featureid="appcache">アプリケーションキャッシュ (application cache)</a> の機構はウェブアプリケーションがオフラインでも、ブラウザがキャッシュしているマニフェストの定義により読み込めるようにするため HTML5 に導入されました。この機能はセキュリティー問題を惹起し、また開発者がどの程度キャッシュされるかを制御できるかに非常に依存していました。このため、HTML 5.1 では廃止され HTML 5.2 で削除され、より高機能な <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> 仕様に替わりました。</dd>
 
-          <dt>Task Scheduling</dt>
-          <dd>The <a data-featureid="task-scheduler">Task Scheduler API</a> made it possible to trigger a task at a specified time via the service worker associated with a Web app. This specification was in scope of the now-closed System Applications Working Group and was shelved as a result.</dd>
+          <dt>タスクスケジュール (Task Scheduling)</dt>
+          <dd><a data-featureid="task-scheduler">タスクスケジューラー (Task Scheduler) API</a> はウェブアプリケーションに紐づいたサービスワーカー経由で特定の時刻にタスクを起動するために考案されました。この仕様は現在は閉じられた System Applications Working Group で検討されており、結果的に見送りとなりました。</dd>
 
           <dt>Geofencing API</dt>
-          <dd>The <a data-featureid="geofencing">Geofencing API</a> made it possible to wake up a Web app when a device enters a specified geographical area. This work has been discontinued, partly out of struggles to find a good approach to permission needs that such an API triggers to protect users against privacy issues. Through support for background operations, the <a href="https://www.w3.org/TR/geolocation-sensor/">Geolocation Sensor</a> specification now provides similar functionalities.</dd>
+          <dd><a data-featureid="geofencing">Geofencing API</a> は特定の地理的領域にデバイスが入ったときにウェブアプリケーションを起動するために検討されました。API によるトリガーに必要な権限についてユーザのプライバシー問題との兼ね合いについてよい方策が見つからなかったことにより、今では廃止されています。バックグラウンド動作が可能になったことにより、<a href="https://www.w3.org/TR/geolocation-sensor/">位置情報取得</a>の仕様を利用することで近いことが実現可能になっています。</dd>
 
-          <dt>Background execution budget</dt>
-          <dd>User agents will restrict the ability for Web applications to run operations in the background so that users remain in control of what an application can do at all times. The <a data-featureid="budget-api">Web Budget API</a> proposed a mechanism by which applications could determine the cost and budget at their disposal to run operations in the background, allowing them to decide whether to perform or postpone these operations. The proposal was shelved for lack of support.</dd>
+          <dt>バックグラウンド動作予約 (Background execution budget)</dt>
+          <dd>ユーザエージェントはウェブアプリケーションがバックグラウンドで動作し常にユーザが操作できる状態にしておくことを制限することがあります。<a data-featureid="budget-api">Web Budget API</a> はアプリケーションが消費量を見積り、動作をそのまま行うかどうかの判断をするためのバックグラウンド動作を停止する条件を提示する機構を提案していました。この提案は支持がなかったため廃止されています。</dd>
         </dl>
       </section>
     </main>
