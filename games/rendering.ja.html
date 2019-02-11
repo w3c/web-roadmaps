@@ -11,61 +11,62 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>Well-deployed technologies</h2>
+        <h2>実装されている仕様</h2>
 
         <div data-feature="2D/3D graphics">
-          <p>The HTML <strong><code>&lt;canvas&gt;</code></strong> element can be used to draw graphics via scripting. The element may be used to render 2D graphics through the <a data-featureid="canvas">2D programmatic API</a>, and 3D graphics through <a data-featureid="webgl">WebGL</a>, a technology developed outside of W3C by the <a href="https://www.khronos.org/">Khronos Group</a>.</p>
+          <p>HTML <strong><code>&lt;canvas&gt;</code></strong> エレメントはスクリプトから画像を描画するために利用できます。<a data-featureid="canvas">2D 描画 API</a> により 2D 画像を、W3C でなく <a href="https://www.khronos.org/">Khronos Group</a> により開発されている <a data-featureid="webgl">WebGL</a> により 3D 画像を描画できます。</p>
 
-          <p>Vector graphics can also be rendered using <a data-featureid="svg11">SVG</a> (Scalable Vector Graphics), an XML-based markup language to describe two-dimensions vector graphics. Since these graphics are described as a set of geometric shapes, they are well-suited to create interfaces that can be zoomed in/out. SVG objects can also easily be animated, enabling the creation of very advanced and slick user interfaces.</p>
+          <p>ベクタ方式も XML 形式の 2D ベクタ画像を記述するための  <a data-featureid="svg11">SVG</a> (Scalable Vector Graphics) により利用できます。この形式では画像は幾何学形状の集合で記述されるため、ズームイン・アウト可能なインターフェースを作成するのに向いています。 SVG オブジェクトは簡単にアニメーション化でき、高度かつ滑らかなユーザインターフェースを作成可能です。</p>
         </div>
 
         <div data-feature="Viewport control">
-          <p>Another important aspect for games is the possibility to use the entire screen to display the user interface; the <a data-featureid="fullscreen">Fullscreen API</a> allows to request and detect full screen display.</p>
+          <p>ゲームでの重要な点としてユーザインターフェースを全画面表示可能かどうかがあり、<a data-featureid="fullscreen">Fullscreen API</a> によりフルスクリーン表示を要求・検出可能です。</p>
         </div>
         
         <div data-feature="Audio rendering">
-          <p>The <a data-featureid="webaudio">Web Audio API</a> provides a low latency audio processing and synthesizing API that games can use to render audio precisely. The API supports a number of features, including spatialized audio mechanisms and a convolution engine for a wide range of linear effects. A declarative approach, based on the HTML <code>&lt;audio&gt;</code> element may be used for scenarios that do not require tight controls over audio rendering, e.g. for background music.</p>
+          <p><a data-featureid="webaudio">Web Audio API</a> は低遅延の音声処理・合成 API を定義し、ゲームが音声を精密に制御できるようになります。この API は、空間音響機構、幅広いリニアエフェクトなどの合成エンジンといった様々な機能を提供します。HTML <code>&lt;audio&gt;</code> エレメントによる宣言的方法も、バックグラウンド音楽のような精密な操作が必要とならない音声処理においては有用です。</p>
         </div>
 
         <div data-feature="Animations">
-          <p>Animations can be described declaratively via <a data-featureid="css-animations">CSS Animations</a> and <a data-featureid="css-transitions">CSS Transitions</a>.</p>
-          <p>Scripted animations can be resource intensive, especially on constrained devices. The possibility offered by the <a data-featureid="animation-frames">Animation Frames</a> to manage the rate of updates to animations can help to keep them under control.</p>
+          <p>アニメーションを <a data-featureid="css-animations">CSS Animations</a> と <a data-featureid="css-transitions">CSS Transitions</a> により宣言的に記述することができます。</p>
+          <p>スクリプトによるアニメーションは制約のあるデバイスではリソースを食う場合があります。<a data-featureid="animation-frames">Animation Frames</a> によりアニメーションの更新頻度を操作でき、リソース消費を制御できます。</p>
         </div>
 
         <div data-feature="Graphical effects">
-          <p>Features in CSS 3 and beyond define simple yet powerful features to create graphical effects, such as <a data-featureid="css-border-radius">rounded corners</a>, <a data-featureid="css-box-shadow">shadow effects</a>, and <a data-featureid="css-2d">rotated content</a>.</p>
-          <p>Various layout modes may also be used to create user interfaces that adapt to the user's device, including <a data-featureid="css-flexbox">CSS Flexbox</a> and <a data-featureid="css-grid-1">CSS Grid</a>, that make it possible to preserve a clear separation between the content itself (HTML, SVG) and its layout by allowing re-ordering of elements on screen, without having to change the underlying HTML.</p>
+          <p>CSS 3 とそれ以降では <a data-featureid="css-border-radius">rounded corners</a>、<a data-featureid="css-box-shadow">shadow effects</a> や、<a data-featureid="css-2d">rotated content</a> といった簡単ながら高機能な画像エフェクトを実現する機能が実装されています。</p>
+          <p><a data-featureid="css-flexbox">CSS Flexbox</a> や <a data-featureid="css-grid-1">CSS Grid</a> などのいくつかのレイアウトモードを利用することでユーザのデバイスに合わせたインターフェースを作成することが可能になり、中に含まれる HTML コードを変更することなくコンテンツそのもの (HTML, SVG) と画面上の要素の並べ替えを可能にするレイアウトの間に明確な区別をつけることが可能になります。</p>
         </div>
 
         <div data-feature="Downloadable fonts">
-          <p>Fonts play also an important role in building appealing graphical interfaces. <a data-featureid="woff2">WOFF</a> (Web Open Font Format) makes it easy to use fonts that are automatically downloaded through style sheets, while keeping the size of the downloaded fonts limited to what the game actually needs.</p>
+          <p>効果的な画面表示を考えるうえでフォントも重要な要素となります。<a data-featureid="woff2">WOFF</a> (Web Open Font Format) により、ゲームが実際に必要とする部分に限定したサイズの小さなフォントをスタイルシート経由で自動ダウンロードされるフォントを簡単に利用することが可能になります。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Technologies in progress</h2>
+        <h2>仕様化が進行中の仕様</h2>
         <div data-feature="VR/AR rendering">
-          <p>The <a data-featureid="webxr">WebXR Device API</a> specification is a low-level API that allows applications to access and control head-mounted displays (HMD) using JavaScript to create compelling Virtual Reality (VR) / Augmented Reality (AR) experiences. While the API should still be considered unstable at this stage, note main browsers implement at least a subset of it, or of the previous <a data-featureid="webvr">WebVR specification</a>, making it possible to develop Web-based VR/AR games today.</p>
+          <p><a data-featureid="webxr">WebXR Device API</a> 仕様ではアプリケーションがヘッドマウントディスプレイ (HMD) に JavaScript から接続・制御するための低レベル API を定義し、有用な仮想現実 (VR) や拡張現実 (AR) 体験を実現することが可能になります。現時点ではこれらの API はまだ安定しておらず、主要ブラウザではこれか古い <a data-featureid="webvr">WebVR 仕様</a>の一部分を実装していますが、現時点でもウェブベースの VR/AR ゲームの開発は可能です。</p>
         </div>
 
         <div data-feature="Viewport control">
-          <p>Games will often want to impose the orientation of the screen, so that it does not change accidently while the user plays. The <a data-featureid="screen-orientation">Screen Orientation API</a> provides the ability to read the screen orientation type and angle, to be informed when the screen orientation state changes, and be able to lock the screen orientation to a specific state.</p>
+          <p>ゲームではプレイ中に何らかの操作で変更されないようにスクリーンの方向を固定することが必要になる場合がよくあります。<a data-featureid="screen-orientation">Screen Orientation API</a> ではスクリーン方向の種別や角度を検出でき、変化した場合に認識でき、特定の方向に固定することができる機能を提供しています。
+          </p>
         </div>
         
         <div data-feature="Animations">
-          <p>Animations can also be managed via scripting through the API exposed in <a data-featureid="web-animations">Web Animations</a>.</p>
+          <p>アニメーションは <a data-featureid="web-animations">Web Animations</a> で公開されている API 経由でスクリプトにより操作可能です。</p>
         </div>
       </section>
 
       <section class="featureset in-progress">
-        <h2>Exploratory work</h2>
+        <h2>調査中の項目</h2>
 
         <div data-feature="3D graphics">
-          <p>Within W3C, the <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a> is designing a new Web API to expose modern 3D graphics capabilities in a performant, powerful and safe manner, with a view to being agnostic of and compatible with existing native system platforms such as Direct3D, Metal, or Vulkan. Longer term, this proposal should also expose GPU computation capabilities to Web applications.</p>
+          <p>W3C では <a href="https://www.w3.org/community/gpu/">ウェブにおける GPU CG (GPU for the Web Community Group)</a> において、効率的、効果的、かつ安全に利用可能な現代的な 3D グラフィック機能を利用可能にするウェブ API を Direct3D、Metal、Vulkan といった既存のネイティブの機構にとらわれずかつ互換性のある形で検討しています。長期的には、この提案はウェブアプリケーションで GPU 計算能力を利用可能にするものになるでしょう。</p>
         </div>
 
         <div data-feature="Rendering in workers">
-          <p>Web workers do not have access to the DOM and cannot directly render content on screen. The <a data-featureid="offscreencanvas"><code>OffscreenCanvas</code> interface</a> in HTML makes it possible to create rendering context with no connection to the DOM, and in particular to do that in workers.</p>
+          <p>Web workers は DOM へのアクセスができず、直接画面表示ができません。HTML の <a data-featureid="offscreencanvas"><code>OffscreenCanvas</code> インターフェース</a> は特にワーカー内でDOM と独立して画面表示要素を作成できるようにするものです。</p>
         </div>
       </section>
     </main>
