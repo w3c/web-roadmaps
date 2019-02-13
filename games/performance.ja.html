@@ -14,7 +14,7 @@
         <h2>実装されている仕様</h2>
 
         <div data-feature="Multithreading">
-          <p>たとえどんな手を使ってもスムースな体験を保証し利用可能な計算資源を活用しきるために、ゲームは通常複数のスレッドで動作しています。<a data-featureid="webworkers">Web Workers</a> を利用することで JavaScript のコードをバックグラウンドで動作させられます。これはリソースを大きく利用する操作をバックグラウンドに回すことでユーザインターフェースの応答性を確保するために有用です。
+          <p>たとえどんな手を使ってもスムースな体験を保証し、また利用可能な計算資源を活用しきるために、ゲームは通常複数のスレッドで動作しています。<a data-featureid="webworkers">Web Workers</a> を利用することで JavaScript のコードをバックグラウンドで動作させられます。これはリソースを大きく利用する操作をバックグラウンドに回すことでユーザインターフェースの応答性を確保するために有用です。
           </p>
           <p><strong>注:</strong> <a href="https://meltdownattack.com/">Spectre</a> の影響により、メモリをスレッド間で共有するための <code>SharedArrayBuffer</code> オブジェクトはほとんどのウェブブラウザから一時的に削除されています。ワーカー同士の通信についてもさしあたりメッセージだけに制限されています。</p>
         </div>
@@ -55,7 +55,7 @@
 
         <div data-feature="Timing hooks">
           <p><a data-featureid="server-timing">Server Timing</a> はユーザエージェントとの要求・応答に係るパフォーマンス情報をサーバで取得するためのもので、アプリケーションが配送の際にそれらの情報を活用可能になります。</p>
-          <p><a data-featureid="longtasks">Long Tasks API</a> はユーザインターフェースにかかわるメインのスレッドの稼働時間を食っている長時間かかっている動作を検出するための機構です。</p>
+          <p><a data-featureid="longtasks">Long Tasks API</a> はユーザインターフェースにかかわるメインのスレッドの稼働時間を食っている、長時間かかっている動作を検出するための機構です。</p>
           <p><a data-featureid="paint-timing">Paint Timing</a> 仕様によりアプリケーションがページロード中の最初の描画開始やコンテンツがすべて描画された最初の時点などの主要なタイミングを取得可能になります。</p>
         </div>
 
@@ -77,7 +77,7 @@
         </div>
 
         <div data-feature="Multithreading">
-          <p>スレッド間同期のためにはロックを利用する必要があります。<a data-featureid="web-locks">Web Locks API</a> の提案は、リソースをロックし作業中の間保持し手リリースする操作によりスクリプトが非同期で動作する機構を実現するものです。</p>
+          <p>スレッド間同期のためにはロックを利用する必要があります。<a data-featureid="web-locks">Web Locks API</a> の提案は、リソースをロックし作業中の間保持してリリースする、という操作によりスクリプトが非同期で動作する機構を実現するものです。</p>
         </div>
 
         <div data-feature="Timing hooks">
@@ -95,7 +95,7 @@
         </div>
 
         <div data-feature="Scrolling optimization">
-          <p>ユーザエージェントはスクロール連鎖やオーバースクロール動作などといったスクロールについての既定の動作を実装していることがありますが、ウェブアプリケーションは <b>pull-to-refresh</b> や <b>infinite scrolling</b> といったモバイル環境で一般的な操作を実現するためにそれらを無効化したい場面があります。これらはスクリプトでも実現可能ですが、アプリケーションが既定の動作を必要な時に上書きするために <code>passive</code> フラグを付けないタッチイベントの監視が必要になるといったスクロールのパフォーマンスへの悪影響があります。<a data-featureid="css-overscroll-behavior">CSS <code>overscroll-behavior</code></a> プロパティーを利用することでスクロールの現在地がスクロール限界に到達した場合のコンテナの動作を制御することができ、ウェブアプリケーションが効率的に既定のスクロール動作を無効化できるようになります。</p>
+          <p>ユーザエージェントはスクロール連鎖やオーバースクロール動作などといったスクロールについての既定の動作を実装していることがありますが、ウェブアプリケーションでは <b>pull-to-refresh</b> や <b>infinite scrolling</b> といったモバイル環境で一般的な操作を実現するためにそれらを無効化したい場面があります。これらはスクリプトでも実現可能ですが、アプリケーションが既定の動作を必要な時に上書きするために <code>passive</code> フラグを付けずにタッチイベントの監視が必要になるといったスクロールのパフォーマンスへの悪影響があります。<a data-featureid="css-overscroll-behavior">CSS <code>overscroll-behavior</code></a> プロパティーを利用することでスクロールの現在地がスクロール限界に到達した場合のコンテナの動作を制御することができ、ウェブアプリケーションが効率的に既定のスクロール動作を無効化できるようになります。</p>
         </div>
       </section>
 

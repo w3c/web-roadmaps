@@ -6,6 +6,9 @@
 * 将来的に日本語訳版として大元にpushする可能性はあります。基本的には [翻訳手順](#Translating-a-roadmap) 準拠です。
 * master-jaブランチに非公式日本語仮訳を追加しています。公開用gh-pagesブランチは [処理結果](#Generate-content-locally) でアップデートしています。
 * [master](https://github.com/himorin/web-roadmaps/tree/master)ブランチはmaster-jaの非公式日本語仮訳版が参照している[本家 Web technology roadmaps](https://w3c.github.io/web-roadmaps/)のバージョンになっています。
+* 修正点を見つけられた方は[このレポジトリにチケットを登録](https://github.com/himorin/web-roadmaps/issues)していただくかPRいただくと助かります。
+
+Contributors:
 
 # Framework for Web technology roadmaps
 
@@ -19,7 +22,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Roadmap of Web Applications on Mobile](./mobile/)
 * [Roadmap of Technologies Needed for Web Publications](./publishing/)
 * [Spatial data on the Web Roadmap](./sdw/)
-* [Games on the Web Roadmap](./games/) ([日本語訳中](./games/index.ja.html))
+* [Games on the Web Roadmap](./games/) ([日本語訳](./games/index.ja.html))
 
 ## Table of contents
 * [Overview of the framework](#overview-of-the-framework)
