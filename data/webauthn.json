@@ -1,5 +1,5 @@
 {
-  "url": "https://www.w3.org/TR/webauthn/",
+  "url": "https://www.w3.org/TR/webauthn-1/",
   "impl": {
     "caniuse": "webauthn",
     "chromestatus": 5669923372138496,
