@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ネットワーク通信</title>
+  </head>
+  <body>
+    <header>
+      <h1>ネットワーク通信</h1>
+      <p>次のレベル用のリソースを取得する、ゲームサーバとの双方向のデータ転送、リアルタイムでの多ユーザ間通信など、ゲームは様々な理由でネットワークにアクセスする必要があります。ウェブプラットフォームではさまざまな文脈でネットワーク接続を実現するためのAPIを整備し続けています。</p>
+    </header>
+    <main>　
+      <section class="featureset well-deployed">
+        <h2>実装されている仕様</h2>
+            
+        <div data-feature="HTTP network API">
+          <p><a data-featureid="fetch">Fetch API</a> は強力な Promise ベースの API で HTTP や HTTPS プロトコル経由でウェブサーバからコンテンツをダウンロードできます。これは Ajax 開発の心臓部であった以前の <a data-featureid="xhr">XMLHttpRequest</a> API (まだ利用されていると思われますが) を置き換えるものです。</p>
+        </div>
+            
+        <div data-feature="Cross-domain requests">
+          <p>既定では、ブラウザはドメイン間 (正確にはオリジン、プロトコル・ドメイン・ポートの異なる組み合わせです) にわたるリクエストを一つのウェブページから行うことはできず、この規則によりユーザはあるウェブサイトから他のサイトの認証情報を悪用したりデータを盗んだりという危険から保護されます。サイトは <a data-featureid="cors">Cross-Origin Resource Sharing</a> (CORS) の機構を利用してこの規則の除外規定を行うことができ、より広い範囲のウェブアプリケーションやサービスに開放することができます。注: W3C 版の CORS 仕様は現在の実装を反映しておらず廃止予定です。CORS 仕様は、WHATWG の <a href="https://fetch.spec.whatwg.org/">Fetch 仕様</a> のコアに入りました。</p>
+        </div>
+            
+        <div data-feature="Server-pushed requests">
+          <p>XMLHttpRequest はクライアントからのネットワーク通信では有用でしたが、モバイルデバイスでのネットワーク利用の制約やネットワークアクセスによるバッテリ (や時にはユーザへの課金) への負荷を考慮するとサーバから始めるリクエストを利用した方がよい場合があります。<a data-featureid="eventsource">Server-Sent Events API</a> を利用すると (HTTP もしくはほかのプロトコル経由での) プッシュ通知から DOM イベントを発火させることができます。</p>
+        </div>
+            
+        <div data-feature="Bidirectional connections">
+          <p><a href="https://tools.ietf.org/html/rfc6455">IETF WebSocket protocol</a> (RFC6455) を基とする <a data-featureid="websockets">WebSocket API</a> は双方向で柔軟かつ、fetch や XMLHttpRequest よりも低負荷なネットワーク接続を実現します。</p>
+        </div>
+
+        <div data-feature="Offline detection">
+          <p>もちろん、ネットワーク接続を利用するうえで重要な点は、接続性が確保されているかと利用可能なネットワークの種類に依存しているという点です。<a data-featureid="online">HTML5 <code>onLine</code> DOM flag</a> とその状態変更による <code>online</code> イベントは、ウェブ環境にとってネットワーク接続が利用不能な場合 (注: フラグはウェブ環境がオンラインになっているかどうかを判定するには信頼性に欠けます) に通知します。</p>
+        </div>
+
+        <div data-feature="Network characteristics">
+          <p><a data-featureid="resource-timing">Resource Timing API</a> により、利用可能なネットワーク環境がさまざまなリソースを読み込むのにかかる時間にどのような影響があるかを計測できるようになり、ウェブアプリケーションにとってネットワーク環境に合わせて他の方法を取れるようになります。</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>仕様化が進行中の仕様</h2>
+        <div data-feature="Peer-to-peer communications">
+          <p><a data-featureid="p2p">ウェブにおけるリアルタイム通信 (WebRTC)</a> によりブラウザ間でリアルタイム性を持った直接の P2P 通信が実現されており、複数プレイヤーのゲームでのゲーム内通信を実現するのに最適です。送信されるのはデータ、音声、ビデオトラックなどです。WebRTC はゲームサーバとの通信においても WebSocket API の効率的な代替となりえます。</p>
+        </div>
+
+        <div data-feature="Low-level I/O">
+          <p><a data-featureid="streams">Streams</a> 仕様はデータストリームを効率的に作成、構成、利用するための API です。モバイル環境ではネットワーク通信状況は変動し、帯域も制限を受けます。低レベル IO に直接アクセスできるとウェブアプリケーション内でデータを利用する部分 (メディアプレイヤーなど) へのネットワーク経由のデータの送信の通信制御が可能になり、Service Worker が以前にオンラインの際に取得してキャッシュしたデータからストリームを生成し画面の初期表示の高速化を行うなどといった、画面表示のパフォーマンス改善にもつながります。ストリームをキャンセルしダウンロードをいつでも止められる機構は他の部分でネットワーク帯域が今すぐ必要になったときに対応するといったことにも利用可能です。</p>
+        </div>
+
+        <p data-feature="HTTP network API"><a data-featureid="beacon">Beacon API</a> は未管理の HTTP リクエストのキューを作成可能にすることを目的とし、必お湯な時にブラウザが実行することでよりよいネットワーク最適化を実現可能にするためのものです。</p>
+
+        <div data-feature="Server-pushed requests">
+          <p><a data-featureid="push">プッシュ通知 (Push API)</a> によりウェブアプリケーションはブラウザウィンドウの中で動作中かどうかによらずサーバからの通信を受信可能になります。<a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF のウェブベースプッシュ通知 WG (Web-Based Push Notifications Working Group)</a> はユーザエージェントにプッシュ通知を配信依頼する、新規プッシュ通知受信登録する、新規プッシュ通知を監視する (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>) ためのプロトコルを開発しています。</p>
+        </div>
+      </section>
+
+      <section class="featureset exploratory-work">
+        <h2>調査中の項目</h2>
+        <p><a data-featureid="background-sync">ウェブバックグラウンド同期 API (Web Background Synchronization API)</a> の初期の目的は Service Worker ベースで、ブラウザが起動しているかどうかによらないバックグラウンドでのウェブアプリケーションによるコンテンツの送受信を目的としています。</p>
+
+        <div data-feature="Network characteristics">
+          <p><a data-featureid="netinfo">ネットワーク情報 API (Network Information API)</a> ではネットワーク状況の取得を目標としていましたが作業が中断し、いまは Web Platform Incubator Community Group (WICG) で議論が行われています。</p>
+        </div>
+      </section>   
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

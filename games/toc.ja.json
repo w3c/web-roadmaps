@@ -1,0 +1,55 @@
+{
+  "title": "ウェブにおけるゲームのロードマップ",
+  "discourse": {
+    "category": "W3C の discourse フォーラム",
+    "url": "https://discourse.wicg.io/"
+  },
+  "github": "https://github.com/w3c/web-roadmaps",
+  "pages": [
+    {
+      "url": "performance.html",
+      "title": "パフォーマンス",
+      "icon": "../assets/img/media-processing.svg",
+      "description": "計算資源の有効活用の方法 (メモリ、計算能力、描画)"
+    },
+    {
+      "url": "rendering.html",
+      "title": "画面描画・表示",
+      "icon": "../assets/img/mobile-graphics.svg",
+      "description": "ゲームのユーザインターフェースの描画や音声出力のために必要な機能"
+    },
+    {
+      "url": "userinput.html",
+      "title": "ユーザ制御",
+      "icon": "../assets/img/mobile-userinput.svg",
+      "description": "デバイス固有の入力形式でのユーザ入力やそれらにおけるアクセシビリティ対応に必要な機能"
+    },
+    {
+      "url": "network.html",
+      "title": "ネットワーク通信",
+      "icon": "../assets/img/mobile-network.svg",
+      "description": "リソース取得や、多ユーザ環境対応のためのピア間通信などのネットワーク利用"
+    },
+    {
+      "url": "lifecycle.html",
+      "title": "プラットフォームとの統合",
+      "icon": "../assets/img/mobile-lifecycle.svg",
+      "description": "アプリケーションをシステム全体と連携させたりネイティブかのような動作にするための機能"
+    },
+    {
+      "url": "storage.html",
+      "title": "データストレージ",
+      "icon": "../assets/img/mobile-storage.svg",
+      "description": "ステートやリソースを保存するための機能"
+    },
+    {
+      "url": "payment.html",
+      "title": "決済サービス",
+      "icon": "../assets/img/mobile-payment.svg",
+      "description": "簡単に利用可能なアプリ内課金などのゲームのマネタイズに必要な機能"
+    }
+  ],
+  "about": {
+    "url": "about.html"
+  }
+}
