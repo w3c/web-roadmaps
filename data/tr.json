@@ -32,7 +32,7 @@
     "edDraft": "https://w3c.github.io/accelerometer/",
     "repository": "https://github.com/w3c/accelerometer",
     "title": "Accelerometer",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -50,7 +50,7 @@
     "edDraft": "https://w3c.github.io/ambient-light/",
     "repository": "https://github.com/w3c/ambient-light",
     "title": "Ambient Light Sensor",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -142,7 +142,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {},
+    "milestones": {
+      "PR": "2020-12-30"
+    },
     "features": {
       "background_color": {
         "title": "background_color member",
@@ -576,7 +578,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-12-30"
+      "PR": "2019-06-30"
     },
     "features": {
       "report-to": {
@@ -610,7 +612,7 @@
     "edDraft": "https://drafts.csswg.org/css-transforms/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Transforms Module Level 1",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/Style/CSS/members",
@@ -777,9 +779,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-09-30"
-    },
+    "milestones": {},
     "features": {
       "icc-colors": {
         "title": "profiled device-dependent colors",
@@ -1006,6 +1006,22 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "css-page-3": {
+    "url": "https://www.w3.org/TR/css-page-3/",
+    "edDraft": "https://drafts.csswg.org/css-page-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Paged Media Module Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "css-page-floats-3": {
     "url": "https://www.w3.org/TR/css-page-floats-3/",
     "edDraft": "https://drafts.csswg.org/css-page-floats/",
@@ -1094,7 +1110,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -1160,22 +1176,6 @@
     "edDraft": "http://dev.w3.org/csswg/css2/",
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
     "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "Cascading Style Sheets (CSS) Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {}
-  },
-  "css3-page": {
-    "url": "https://www.w3.org/TR/css3-page/",
-    "edDraft": "https://drafts.csswg.org/css-page-3/",
-    "repository": "https://github.com/w3c/csswg-drafts",
-    "title": "CSS Paged Media Module Level 3",
-    "status": "WD",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/Style/CSS/members",
@@ -1327,7 +1327,7 @@
     "edDraft": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
     "repository": "https://github.com/w3c/dnt",
     "title": "Tracking Preference Expression (DNT)",
-    "status": "CR",
+    "status": "Retired",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2011/tracking-protection/",
@@ -1335,7 +1335,7 @@
       }
     ],
     "publisher": "W3C",
-    "informative": false,
+    "informative": true,
     "milestones": {}
   },
   "dom-addeventlistener-passive": {
@@ -1372,7 +1372,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-03-30"
+      "CR": "2019-06-30"
     }
   },
   "dpub-aam10": {
@@ -1598,14 +1598,16 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "generic-sensor": {
     "url": "https://www.w3.org/TR/generic-sensor/",
     "edDraft": "https://w3c.github.io/sensors/",
     "repository": "https://github.com/w3c/sensors",
     "title": "Generic Sensor API",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -1746,7 +1748,7 @@
     "edDraft": "https://w3c.github.io/gyroscope/",
     "repository": "https://github.com/w3c/gyroscope",
     "title": "Gyroscope",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -1924,7 +1926,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-03-30"
+      "CR": "2019-06-30"
     }
   },
   "ime-api": {
@@ -2100,7 +2102,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "iso-19156-2011": {
     "url": "https://www.iso.org/standard/32574.html",
@@ -2152,7 +2156,7 @@
     "edDraft": "https://w3c.github.io/magnetometer/",
     "repository": "https://github.com/w3c/magnetometer",
     "title": "Magnetometer",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -2272,7 +2276,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {},
+    "milestones": {
+      "PR": "2020-12-30"
+    },
     "feature": "Media keys"
   },
   "mediaqueries": {
@@ -2360,7 +2366,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-09-30"
+      "PR": "2019-03-30"
     }
   },
   "mobile-accessibility-mapping": {
@@ -2551,7 +2557,7 @@
     "edDraft": "https://w3c.github.io/orientation-sensor/",
     "repository": "https://github.com/w3c/orientation-sensor",
     "title": "Orientation Sensor",
-    "status": "CR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -2677,7 +2683,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-12-30"
+      "CR": "2019-06-30"
     }
   },
   "payment-method-basic-card": {
@@ -2711,8 +2717,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-11-15",
-      "REC": "2018-12-30"
+      "PR": "2019-04-02",
+      "REC": "2019-12-30"
     }
   },
   "payment-method-manifest": {
@@ -2746,8 +2752,9 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-11-15",
-      "REC": "2018-12-30"
+      "CR": "2019-03-30",
+      "PR": "2019-09-30",
+      "REC": "2019-12-30"
     }
   },
   "performance-timeline": {
@@ -2851,7 +2858,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -2937,9 +2944,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "publishing-linking": {
     "url": "https://www.w3.org/TR/publishing-linking/",
@@ -3022,7 +3027,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-03-30"
+      "CR": "2019-06-30"
     }
   },
   "referrer-policy": {
@@ -3040,7 +3045,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-06-30"
+      "PR": "2019-03-30"
     }
   },
   "remote-playback": {
@@ -3159,7 +3164,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30"
+      "PR": "2019-12-30"
     }
   },
   "screencapture": {
@@ -3259,7 +3264,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-06-30"
+      "PR": "2019-03-30"
     }
   },
   "selectors-states": {
@@ -3534,7 +3539,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-06-30"
+      "PR": "2019-12-30"
     }
   },
   "task-scheduler": {
@@ -3778,7 +3783,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-06-30"
+      "PR": "2019-03-30"
     }
   },
   "uisecurity": {
@@ -3798,8 +3803,10 @@
     "milestones": {}
   },
   "user-timing": {
-    "url": "https://www.w3.org/TR/user-timing/",
-    "title": "User Timing",
+    "url": "https://www.w3.org/TR/user-timing-2/",
+    "edDraft": "https://w3c.github.io/user-timing/",
+    "repository": "https://github.com/w3c/user-timing",
+    "title": "User Timing Level 2",
     "status": "REC",
     "deliveredBy": [
       {
@@ -3809,7 +3816,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2018-12-30"
+    }
   },
   "vcard-rdf": {
     "url": "http://www.w3.org/TR/vcard-rdf/",
@@ -3914,7 +3923,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-12-30"
+      "PR": "2019-06-30"
     },
     "feature": "viewport-percentage lengths"
   },
@@ -3961,7 +3970,9 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2018-12-30"
+      "WR/LC": "2019-06-30",
+      "CR": "2019-06-30",
+      "PR": "2019-06-30"
     }
   },
   "vocab-dcat": {
@@ -4154,11 +4165,11 @@
     "milestones": {}
   },
   "webauthn": {
-    "url": "https://www.w3.org/TR/webauthn/",
+    "url": "https://www.w3.org/TR/webauthn-1/",
     "edDraft": "https://w3c.github.io/webauthn/",
     "repository": "https://github.com/w3c/webauthn",
-    "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-    "status": "CR",
+    "title": "Web Authentication:An API for accessing Public Key Credentials Level 1",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webauthn/",
@@ -4167,9 +4178,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    }
+    "milestones": {}
   },
   "webbluetooth": {
     "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -4393,6 +4402,7 @@
   },
   "webvmt": {
     "url": "https://w3c.github.io/sdw/proposals/geotagging/webvmt/",
+    "repository": "https://github.com/w3c/sdw",
     "title": "WebVMT: The Web Video Map Tracks Format",
     "status": "ED",
     "deliveredBy": [
@@ -4451,8 +4461,10 @@
   },
   "webxr": {
     "url": "https://immersive-web.github.io/webxr/",
+    "edDraft": "https://immersive-web.github.io/webxr/",
+    "repository": "https://github.com/immersive-web/webxr",
     "title": "WebXR Device API",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/immersive-web/",
