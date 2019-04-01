@@ -200,6 +200,7 @@
     "Mixed Content": "混合内容",
     "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile": "移动无障碍性：WCAG 2.0和其他 W3C 无障碍计划如何应用到移动设备",
     "Mobile Web Application Best Practices": "移动 Web 应用最佳实践",
+    "Native File System": "本地文件系统",
     "Navigation Timing": "导航计时",
     "Open Screen Protocol": "开放屏幕协议",
     "Orientation Sensor": "方向传感器",
@@ -269,7 +270,6 @@
     "WebXR Device API": "WebXR 设备 API",
     "WOFF File Format 1.0": "Web 字体文件格式 1.0",
     "WOFF File Format 2.0": "Web 字体文件格式 2.0",
-    "Writable Files": "Writable Files",
     "XMLHttpRequest": "XMLHttpRequest"
   }
 }
