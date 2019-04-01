@@ -2463,6 +2463,19 @@
     "informative": true,
     "milestones": {}
   },
+  "native-file-system": {
+    "url": "https://wicg.github.io/native-file-system/",
+    "title": "Native File System",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "navigation-timing": {
     "url": "https://www.w3.org/TR/navigation-timing/",
     "title": "Navigation Timing",
@@ -4605,19 +4618,6 @@
     "status": "REC",
     "deliveredBy": [],
     "publisher": "OGC",
-    "milestones": {}
-  },
-  "writable-files": {
-    "url": "https://wicg.github.io/writable-files/",
-    "title": "Writable Files",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ],
-    "publisher": "W3C",
     "milestones": {}
   },
   "xhr": {

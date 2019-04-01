@@ -18738,6 +18738,18 @@
   "media-capabilities": {
     "implementations": [
       {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "encoding",
+          "decoding"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -18765,7 +18777,7 @@
         "implementations": [
           {
             "ua": "firefox",
-            "status": "",
+            "status": "consideration",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5123719190020096",
             "selected": true
@@ -18783,6 +18795,13 @@
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5123719190020096",
             "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "chrome",
@@ -18838,6 +18857,13 @@
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5869632707624960",
             "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "chrome",
@@ -19853,6 +19879,45 @@
   },
   "mwabp": {
     "implementations": []
+  },
+  "native-file-system": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      }
+    ]
   },
   "navigation-timing": {
     "implementations": [
@@ -29999,45 +30064,6 @@
   },
   "wps": {
     "implementations": []
-  },
-  "writable-files": {
-    "implementations": [
-      {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      }
-    ]
   },
   "xhr": {
     "implementations": [
