@@ -22,7 +22,7 @@
   "3dtiles": {
     "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
     "title": "3D Tiles",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [],
     "publisher": "OGC",
     "milestones": {}
@@ -384,6 +384,7 @@
     "title": "CityJSON",
     "status": "ED",
     "deliveredBy": [],
+    "publisher": "3D geoinformation group at TU Delft",
     "milestones": {}
   },
   "cloud-browser-arch": {
@@ -480,6 +481,7 @@
     "title": "The CoverageJSON Format",
     "status": "ED",
     "deliveredBy": [],
+    "publisher": "University of Reading",
     "milestones": {}
   },
   "credential-management": {
@@ -1234,6 +1236,7 @@
     "title": "DBpedia",
     "status": "LS",
     "deliveredBy": [],
+    "publisher": "DBpedia",
     "milestones": {}
   },
   "ddr": {
@@ -1652,7 +1655,7 @@
   "geohash": {
     "url": "http://geohash.org/",
     "title": "Geohash",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [],
     "milestones": {}
   },
@@ -2168,6 +2171,14 @@
     "milestones": {
       "PR": "2019-12-30"
     }
+  },
+  "mapbox-vector-tiles": {
+    "url": "https://docs.mapbox.com/vector-tiles/specification/",
+    "title": "Mapbox Vector Tiles",
+    "status": "LS",
+    "deliveredBy": [],
+    "publisher": "Mapbox",
+    "milestones": {}
   },
   "mapml": {
     "url": "https://maps4html.github.io/MapML/spec/",
@@ -3160,6 +3171,7 @@
     "title": "Schema.org",
     "status": "LS",
     "deliveredBy": [],
+    "publisher": "Schema.org Community Group",
     "milestones": {}
   },
   "screen-orientation": {
@@ -3845,14 +3857,6 @@
     ],
     "publisher": "W3C",
     "informative": true,
-    "milestones": {}
-  },
-  "vector-tiling-er": {
-    "url": "http://docs.opengeospatial.org/per/17-041.html",
-    "title": "OGC Testbed-13: Vector Tiles Engineering Report",
-    "status": "NOTE",
-    "deliveredBy": [],
-    "publisher": "OGC",
     "milestones": {}
   },
   "vehicle-info": {

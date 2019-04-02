@@ -18729,6 +18729,9 @@
       }
     ]
   },
+  "mapbox-vector-tiles": {
+    "implementations": []
+  },
   "mapml": {
     "implementations": []
   },
@@ -27376,9 +27379,6 @@
     ]
   },
   "vcard-rdf": {
-    "implementations": []
-  },
-  "vector-tiling-er": {
     "implementations": []
   },
   "vehicle-info": {
