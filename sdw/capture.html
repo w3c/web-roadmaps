@@ -18,10 +18,10 @@
             <p>The <a data-featureid="geolocation">Geolocation API</a> provides a common interface for locating the device, independently of the underlying technology (GPS, Wi-Fi networks identification, triangulation in cellular networks, etc.).</p>
           </div>
           <!--relevant parts of SensorThingsAPI-->
+          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
           <div data-feature="Sensor API">
               <p>The <a data-featureid="sta-sensing">Sensing</a> feature of the OGC SensorThings API allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) Internet of Things (IoT) data and metadata in a SensorThings service. It is designed based on the <a href="https://www.iso.org/standard/32574.html">ISO/OGC Observations and measurements</a> (O&amp;M) model. The geographical Locations of Things are useful in almost every application and as a result are included as well.</p>
           </div>
-          <!-- LvdB: did not include STA-Tasking because in this part, no spatial data is created or captured. It is only about creating tasks and sending them to sensors or other devices. -->
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
@@ -30,8 +30,7 @@
         </div>
         <div data-feature="Geolocation">
           <!--APIs based on the Generic Sensor API-->
-            <!-- LvdB: Did not include other parts of the motion sensors feature as these are not as clearly related to spatial data. -->
-            <p>The <a data-featureid="geolocation-sensor">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, improves security and privacy, and is extensible.</p>
+            <p>The <a data-featureid="geolocation-sensor">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, allows continuous geotracking and geofencing (one-time alerts when a user crosses a specific area) operations in the background, improves security and privacy, and is extensible.</p>
         </div>
       </section>
       <section class="featureset exploratory-work">
@@ -41,8 +40,10 @@
           <p><a data-featureid="webvmt">Web Video Map Tracks (WebVMT)</a> will offer a way to synchronize a device's location with sensor data such as location data. This allows you to combine a video stream, captured while moving, with synchronized data about its position on earth.</p>
         </div>
       </section>
-      <!--<section class="not-covered">
-        <h2>Features not covered by ongoing work</h2>
+      <!--
+      <section class="not-webby">
+        <h2>Features not considered Web friendly</h2>
+        <p>These features are established standards in the geospatial domain, and of possible interest to the Web community, but are not compliant to modern Web architecture.</p>
         <dl>
           <dt></dt>
           <dd></dd>

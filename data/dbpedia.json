@@ -1,5 +1,6 @@
 {
   "url": "https://wiki.dbpedia.org/",
   "title": "DBpedia",
-  "status": "LS"
+  "status": "LS",
+  "publisher": "DBpedia"
 }

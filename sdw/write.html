@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Represent spatial data</title>
+    <title>Write spatial data</title>
   </head>
   <body>
     <header>
-      <h1>Represent spatial data</h1>
-      <p>There are a lot of formats, encodings, and vocabularies for representing spatial data and geometry on the Web. This roadmap gives an overview of those that are well-deployed on the Web or under development, but also those that are well-deployed in the geospatial community but less so on the Web. These are in the "Features not covered by ongoing work" section.</p>
+      <h1>Write spatial data</h1>
+      <p>There are a lot of formats, encodings, and vocabularies for writing and representing spatial data and geometry on the Web. This roadmap gives an overview of those that are well-deployed on the Web or under development, but also those that are well-deployed in the geospatial community but less so on the Web. These are in the "Features not covered by ongoing work" section.</p>
     </header>
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
         <!--to represent spatial data: vocabularies / encodings-->
+        <h3>Generic options for writing spatial data</h3>
         <div data-feature="Encoding any spatial data">
-            <p>There are several generic options for representing spatial data which are established standards: </p>
+            <p>There are several generic options for writing spatial data which are established standards: </p>
             <ul>
               <li><a data-featureid="rfc7946">GeoJSON</a> is a widely used format which is serialized in JSON and easy for browser-based Web applications to process, but supporting only one coordinate reference system (CRS84 - i.e., WGS 84 longitude/latitude), and geometries up to 2 dimensions (points, lines, surfaces).</li>
               <li><a data-featureid="gml">Geography Markup Language (GML)</a> provides the ability to express any type of geometry, in any coordinate reference system, and up to 3 dimensions (from points to solids) but is typically serialized in XML.</li>
@@ -25,12 +26,17 @@
             </ul>
           </div>
           <!-- to represent sensor data-->
-          <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases.</p>
+          <h3>Semantic standards: vocabularies</h3>
+          <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases. SSN is underpinned by <a data-featureid="iso-19156-2011">Observations &amp; Measurements</a>, an ISO and OGC standard for describing observations and measurements made by sensors.</p>
           <!-- to represent temporal data-->
           <p data-feature="Temporal data representation">The <a data-featureid="owl-time">Time Ontology</a> contains concepts for describing the temporal properties of resources in the world or described in Web pages, including relations between time instants and intervals, information about durations, and temporal position including date-time information. Not only the conventional (Gregorian) calendar and clock can be used: other temporal reference systems are also possible.</p>
+          <!-- to represent multi-dimensional data -->          
+          <div data-feature="Data cubes">To represent multi-dimensional data on the Web as linked data, the <a data-featureid="vocab-data-cube">RDF Data Cube Vocabulary</a> is available. An extension for spatial and temporal data exists, but that part is still exploratory work.</div>
           <!-- to represent geometry-->
+          <h3>Geometry</h3>
           <p data-feature="Representation of geometry"><a data-featureid="sfa/wkt">Well Known Text (WKT)</a> is a compact format to represent geometry literals, used in GeoSPARQL and other spatial data representation formats, and supported in most triple stores and some web libraries. <a data-featureid="geohash">Geohash</a> is a convenient way to express a location using a short alphanumeric string. It only supports 0-dimensional geometries (points). </p>
           <!-- to reference a location-->
+          <h3>Reference locations</h3>
           <p data-feature="Reference a location by name">There are different ways to reference a location. One is by providing coordinates as can be done using any spatial data representation in which geometry can be represented. If the location is a spatial thing with a name and an identifier, it can be referenced instead of having to provide its coordinates. There are many popular repositories containing sets of identifiers for Spatial Things such as <a data-featureid="geonames">Geonames</a>, <a data-featureid="dbpedia">DBpedia</a>, and <a data-featureid="wikidata">Wikidata</a>.</p>
       </section>
       <section class="featureset in-progress">
@@ -57,18 +63,22 @@
         <div data-feature="Encoding location of people and organizations">
            <p><a data-featureid="vcard-rdf">The vCard Ontology</a> is an RDF-based ontology for describing people and organizations. It includes terms for describing postal addresses and 0D geometries (points, WGS 84 only).</p>
         </div>
-            <!-- omitted WebVMT here, as it is already listed in the Capture group -->
+        <!--<p>To partition raster data, .. [description and ref for 'raster tiling' tbd].</p>-->
+        <div data-feature="Spatio-temporal data cubes">To partition RDF data for the web using spatial and/or temporal data elements, <a data-featureid="qb4st">QB4ST: RDF Data Cube extensions for spatio-temporal components</a> is available. The Note <a data-featureid="eo-qb">Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System</a> offers guidance on using RDF Data Cubes on geospatial data.</div>
+        <!-- LvdB: want to mention the Building Ontology, which the Linked building data community group (https://www.w3.org/community/lbd/) are proposing to create, here; but there is nothing yet to point at.-->
       </section>
       <section class="not-covered">
         <h2>Features not covered by ongoing work</h2>
-        <!-- many of these are OGC standards we consider not 'webby' -->
         <dl>
           <!--to represent spatial data: vocabularies / encodings-->
           <dt data-feature="Compact spatial data representation"><a data-featureid="topojson">TopoJSON</a></dt>
           <dd>A community-defined extension of GeoJSON which reduces redundancy in the description of a geometry, by splitting it into segments (referred to as "arcs") that can be re-used.</dd>
-          <!-- to represent sensor data-->
-          <dt data-feature="Representation of observations"><a data-featureid="iso-19156-2011">Observations &amp; Measurements</a></dt>
-          <dd>An ISO and OGC standard for describing observations and measurements made by sensors. The format is based on XML.</dd>
+        </dl>
+      </section>
+      <section class="not-webby">
+        <h2>Features not considered Web friendly</h2>
+        <p>These features are established standards in the geospatial domain, and of possible interest to the Web community, but are not compliant to modern Web architecture.</p>
+        <dl>
           <!-- to represent temporal data-->
           <dt data-feature="Representation of time series">Timeseries</dt>
           <dd>An OGC standard for describing measurements of the same thing that occur many times over time. There is a <a data-featureid="tsprofile">Timeseries Profile of Observations and Measurements</a> and a <a data-featureid="tsml">TimeSeriesML XML encoding</a>. </dd>
@@ -76,7 +86,6 @@
           <dt data-feature="Representation of moving features"><a data-featureid="movingfeatures">Moving features</a></dt>
           <dd>An OGC standard for encoding representations of movement of geographic features. The primary use case is information exchange.</dd>
         </dl>
-        <!-- LvdB: want to mention the Building Ontology, which the Linked building data community group (https://www.w3.org/community/lbd/) are proposing to create, here; but there is nothing yet to point at.-->
       </section>
       <section class="discontinued">
         <h2>Discontinued features</h2>
