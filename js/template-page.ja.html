@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden>
+            <img src="../assets/img/menu.svg" height="15" alt="メニュー開く" data-altclose="メニュー閉じる" />
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"></div>
+        </section>
+        <section class="features" data-pagetype="menu">
+            <div class="container">
+                <ul class="roadmap-list"></ul>
+            </div>
+        </section>
+        <section class="main-content" data-pagetype="page">
+            <div class="container"></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2>見つからない機能がありますか？</h2>
+                <p>現状のウェブ技術で実現できないユースケースがあればご連絡ください！</p>
+                <p>新しい議論を<a class="discourse discoursecat" href=""></a>で始めるか、<a href="https://github.com/w3c/web-roadmaps/issues/new">このドキュメントの GitHub レポジトリに issue を立てる</a>ことをお願いします。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <aside id="side-nav">
+      <h2>ロードマップページ</h2>
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+    </aside>
+    <div id="mask"></div>
+
+        <footer>
+            <div class="container">
+                <p>
+                    <span class="translations-wrapper">翻訳: <span class="translations"></span><br/></span>
+                    最終更新 <span data-content-lastmodified></span><br/>
+                    © <a href="https://www.w3.org/">W3C</a> (<a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+                    <br>
+                    サイト利用ポリシーが適用されます
+                </p>
+                <p>
+                    機能についての情報 (状況、実装) は次のサービスから収集しています: <a href="https://w3c.github.io/w3c-api/">W3C API</a>, <a href="https://www.specref.org/">Specref</a>, <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a> in <span data-impl-lastmodified></span>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

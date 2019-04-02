@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>画面描画・表示</title>
+  </head>
+  <body>
+    <header>
+      <h1>画面描画・表示</h1>
+      <p>画像表現がゲームの主要要素となり、スクリーンや音声など出力先を問わず、その内容全体についての細かい制御が必須となります。ウェブプラットフォームでは、2D/3D画像の描画・制御の機能を提供するようになり、また空間的な音声出力も可能になりました。もちろん、ユーザインターフェースのレイアウト制御についても、<a href="https://www.w3.org/html/">HTML</a> や <a href="https://www.w3.org/Style/CSS/">CSS</a> (Cascading Style Sheets)の機能を活用することも可能です。</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>実装されている仕様</h2>
+
+        <div data-feature="2D/3D graphics">
+          <p>HTML <strong><code>&lt;canvas&gt;</code></strong> エレメントはスクリプトから画像を描画するために利用できます。<a data-featureid="canvas">2D 描画 API</a> により 2D 画像を、W3C でなく <a href="https://www.khronos.org/">Khronos Group</a> により開発されている <a data-featureid="webgl">WebGL</a> により 3D 画像を描画できます。</p>
+
+          <p>ベクタ方式も XML 形式の 2D ベクタ画像を記述するための  <a data-featureid="svg11">SVG</a> (Scalable Vector Graphics) により利用できます。この形式では画像は幾何学形状の集合で記述されるため、ズームイン・アウト可能なインターフェースを作成するのに向いています。 SVG オブジェクトは簡単にアニメーション化でき、高度かつ滑らかなユーザインターフェースを作成可能です。</p>
+        </div>
+
+        <div data-feature="Viewport control">
+          <p>ゲームでの重要な点としてユーザインターフェースを全画面表示可能かどうかがあり、<a data-featureid="fullscreen">Fullscreen API</a> によりフルスクリーン表示を要求・検出可能です。</p>
+        </div>
+        
+        <div data-feature="Audio rendering">
+          <p><a data-featureid="webaudio">Web Audio API</a> は低遅延の音声処理・合成 API を定義し、ゲームが音声を精密に制御できるようになります。この API は、空間音響機構、幅広いリニアエフェクトなどの合成エンジンといった様々な機能を提供します。HTML <code>&lt;audio&gt;</code> エレメントによる宣言的方法も、バックグラウンド音楽のような精密な操作が必要とならない音声処理においては有用です。</p>
+        </div>
+
+        <div data-feature="Animations">
+          <p>アニメーションを <a data-featureid="css-animations">CSS Animations</a> と <a data-featureid="css-transitions">CSS Transitions</a> により宣言的に記述することができます。</p>
+          <p>スクリプトによるアニメーションは制約のあるデバイスではリソースを食う場合があります。<a data-featureid="animation-frames">Animation Frames</a> によりアニメーションの更新頻度を操作でき、リソース消費を制御できます。</p>
+        </div>
+
+        <div data-feature="Graphical effects">
+          <p>CSS 3 とそれ以降では <a data-featureid="css-border-radius">rounded corners</a>、<a data-featureid="css-box-shadow">shadow effects</a> や、<a data-featureid="css-2d">rotated content</a> といった簡単ながら高機能な画像エフェクトを実現する機能が実装されています。</p>
+          <p><a data-featureid="css-flexbox">CSS Flexbox</a> や <a data-featureid="css-grid-1">CSS Grid</a> などのいくつかのレイアウトモードを利用することでユーザのデバイスに合わせたインターフェースを作成することが可能になり、中に含まれる HTML コードを変更することなくコンテンツそのもの (HTML, SVG) と画面上の要素の並べ替えを可能にするレイアウトの間に明確な区別をつけることが可能になります。</p>
+        </div>
+
+        <div data-feature="Downloadable fonts">
+          <p>効果的な画面表示を考えるうえでフォントも重要な要素となります。<a data-featureid="woff2">WOFF</a> (Web Open Font Format) により、ゲームが実際に必要とする部分に限定したサイズの小さなフォントセットをスタイルシート経由で自動ダウンロードされるフォントとして簡単に利用できるようになります。</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>仕様化が進行中の仕様</h2>
+        <div data-feature="VR/AR rendering">
+          <p><a data-featureid="webxr">WebXR Device API</a> 仕様ではアプリケーションがヘッドマウントディスプレイ (HMD) に JavaScript から接続・制御するための低レベル API を定義し、有用な仮想現実 (VR) や拡張現実 (AR) 体験を実現することが可能になります。現時点ではこれらの API はまだ安定しておらず、主要ブラウザではこれか古い <a data-featureid="webvr">WebVR 仕様</a>の一部分を実装していますが、現時点でもウェブベースの VR/AR ゲームの開発は可能です。</p>
+        </div>
+
+        <div data-feature="Viewport control">
+          <p>ゲームではプレイ中に何らかの操作で変更されないようにスクリーンの方向を固定することが必要になる場合がよくあります。<a data-featureid="screen-orientation">Screen Orientation API</a> ではスクリーン方向の種別や角度を検出でき、変化した場合に認識でき、特定の方向に固定することができる機能を提供しています。
+          </p>
+        </div>
+        
+        <div data-feature="Animations">
+          <p>アニメーションは <a data-featureid="web-animations">Web Animations</a> で公開されている API 経由でスクリプトにより操作可能です。</p>
+        </div>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>調査中の項目</h2>
+
+        <div data-feature="3D graphics">
+          <p>W3C では <a href="https://www.w3.org/community/gpu/">ウェブにおける GPU CG (GPU for the Web Community Group)</a> において、効率的、効果的、かつ安全に利用可能な現代的な 3D グラフィック機能を利用可能にするウェブ API を Direct3D、Metal、Vulkan といった既存のネイティブの機構にとらわれずかつ互換性のある形で検討しています。長期的には、この提案はウェブアプリケーションで GPU 計算能力を利用可能にするものになるでしょう。</p>
+        </div>
+
+        <div data-feature="Rendering in workers">
+          <p>Web workers は DOM へのアクセスができず、直接画面表示ができません。HTML の <a data-featureid="offscreencanvas"><code>OffscreenCanvas</code> インターフェース</a> は特にワーカー内でDOM と独立して画面表示要素を作成できるようにするものです。</p>
+        </div>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

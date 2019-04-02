@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>決済サービス</title>
+  </head>
+  <body>
+    <header>
+      <h1>決済サービス</h1>
+      <p>ネイティブのモバイルアプリストアを利用すると開発者は簡単にアプリの販売やアプリ内での課金に対応できます。これはユーザの課金がまずはアプリストアに入るという部分でのコストをとることによります。</p>
+      <p>ウェブでの決済は昔から可能でしたがうんざりするような作業が必要でした。これに対してウェブでは新しい技術が実装されつつあります。これにより、アプリストアはウェブ向けでは必要なくなり、決済はアプリストアのような中間機構に頼らなくても行えるようになります。</p>
+    </header>
+    <main>
+      <section class="featureset well-deployed">
+        <h2>実装されている仕様</h2>
+
+        <p data-feature="Autocomplete">HTML は (<code>cc-<em>xxx</em></code> 自動補完識別子による) <a data-featureid="autocomplete">クレジットカード情報の自動補完</a>に対応しており、既に入力したことがあるクレジットカード情報を簡単に入力可能になっています。</p>
+      </section>
+
+      <section class="featureset in-progress">
+        <h2>仕様化が進行中の仕様</h2>
+
+        <p>2014 年に成功裏に開催された<a href="https://www.w3.org/2013/10/payments/">ウェブ決済に関するワークショップ</a>と<a href="https://www.w3.org/Payments/IG/">ウェブ決済 IG (Web Payment Interest Group)</a> における<a href="https://www.w3.org/TR/web-payments-use-cases/">ウェブ決済のユースケースと優先順位</a>の議論を受け、W3C ではウェブアプリケーション向けの決済操作を補佐するブラウザ API を開発するための<a href="https://www.w3.org/Payments/WG/charter-201510.html">ウェブ決済 WG を立ち上げました</a> :</p>
+
+        <ul data-feature="Web Payment">
+          <li><a data-featureid="payment-request">Payment Request API</a> は (物理的・電子的なものを販売するウェブサイトなどの) 販売者が最低限の実装で一つ以上の決済方式に対応できる API を定義します。この方式では、ブラウザは販売者とユーザ間の決済フローを扱います。</li>
+          <li><a data-featureid="payment-method-id">Payment Method Identifiers</a> 仕様は決済方式 ID の定義と検証方法を定義し、適用可能な領域では W3C での発見と公式登録を行います。</li>
+          <li><a data-featureid="payment-method-manifest">Payment Method Manifest</a> 仕様は、ある決済方式についての規定の決済アプリケーション定義と該当の決済方式で利用が許可された決済アプリケーションの提供元リストについての機械可読形式なマニフェストを定義します。</li>
+          <li><a data-featureid="payment-method-basic-card">Payment Method: Basic Card</a> 仕様では "Payment Request API" におけるデビット、クレジット、プリペイドカードの利用についてのデータ構造を定義します。</li>
+          <li><a data-featureid="payment-handler">Payment Handler API</a> はウェブページやアプリケーションで決済要求を行う標準的な手順を定義します。</li>
+        </ul>
+      </section>
+    </main>
+    <script src="../js/generate.js"></script>
+  </body>
+</html>

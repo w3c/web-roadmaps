@@ -1,0 +1,197 @@
+<section id="goals">
+  <h2>目標</h2>
+  <p>
+    この文書は W3C やその他の団体により開発された・開発中のそれぞれの領域(メディア向け、ゲーム、など)のアプリケーションのための技術や、アプリケーション開発の中の特定の項目(セキュリティーなど)を推進するためのまとめになります。各ページは実装状況ごとにカテゴライズされた機能リストと、それらがそれぞれの項目にどう関係するのかの解説という構成になっています。各部分の最後にはそれらの機能に関係する仕様の標準化段階と実装状況がまとめられています。
+  </p>
+  <p>
+    機能リストは短い文章で書かれていることが多いです。これは、標準化状況や実装が進んだ際に対応する機能をより進んだ実装段階の項目に移動させるためです。
+  </p>
+</section>
+<section id="audience">
+  <h2>対象者</h2>
+  <p>
+    この文書はウェブアプリケーションの開発者で特定の軸 (出版など) についてや特定のデバイス (モバイルなど) についてのウェブプラットフォームの状況を知りたいような方を主な対象としています。デバイス開発者にとっても、製品がどのような機能をサポートしているべきかについての有益な情報があるかもしれません。
+  </p>
+  <p>
+    この文書では以下のような疑問に答えています：
+  </p>
+  <ul>
+    <li>ブラウザ間でどの機能が現在サポートされているか</li>
+    <li>どの機能がもうすぐ使えるようになるか</li>
+    <li>どのような機能が検討されていて将来的に仕様化されるのか</li>
+    <li>標準化活動が現状行われていないある分野でどのような技術的なギャップがあるのか</li>
+  </ul>
+</section>
+<section id="legend">
+  <h2>表について</h2>
+  <p>
+    各部分の最後の表では個別機能についての情報をまとめています。列は表によって異なることがあります。関連する機能について、名前、それを実現するための一つ以上の仕様 (もしくは仕様の中の個別機能) 、そしてその詳細が記載されています。
+  </p>
+  <section id="maturity">
+    <h3>成熟度レベル</h3>
+    <p>
+      機能の成熟度レベルはその標準化の状況となります。
+    </p>
+    <table>
+      <thead>
+        <th>成熟度</th>
+        <th>意味</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="Editor's Draft"></td>
+          <td>"Editor's draft" として規定されており、どこにもまだ正式に公表されていません。機能は安定しておらず、機能が安定化するまで実装は大きく変化する可能性が残されています。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="Working Draft"></td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C Working Draft</a>として規定されています。機能は安定しておらず、機能が安定するまで実装は大きく変化する可能性が残されています。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="Candidate Recommendation"></td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C Candidate Recommendation</a>として規定されています。機能は安定しているものと考えてよいですが、実装での状況次第で変更される可能性が残されています。実装は完全に相互互換性が担保されているわけではありません。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="Proposed Recommendation"></td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C Proposed Recommendation</a>として規定されています。機能は W3C メンバーによる最終レビューにかけられています。昨日は安定しており、実装も相互互換性がほぼ担保されています。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="Recommendation"></td>
+          <td><a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C Recommendation</a>として規定されています。機能は安定しており、存在する実装はほぼ相互互換性があります。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="Living Standard"></td>
+          <td><a href="https://whatwg.org/working-mode">WHATWG Living Standard</a>として規定されています。安定性や相互互換性はそれぞれの機能に依存し、通常は仕様書に記載されています。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="Note"></td>
+          <td><a href="https://www.w3.org/Consortium/Process/#WGNote">W3C Note</a>として規定されています。"Note" としての公表は、機能がそれ自体参考情報である (ガイドライン、テクニック、最良実践例など) であるか、機能の開発が何らかの理由で停止されたものであることを示します。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/retired.svg" alt="Retired"></td>
+          <td>機能はウェブ標準でありましたが、実装や利用は何らかの理由 (プライバシー問題、セキュリティー問題、より良い機能が利用可能、など) で推奨されなくなりました。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="implementation">
+    <h3>実装状況</h3>
+    <p>
+      ウェブブラウザ向けの機能について、"現在の実装状況" と "実装意向の状況" は主要ブラウザでの実装状況を示しています。表示は実装状況により分類されており、以下のいずれかになります：
+    </p>
+    <ul>
+      <li><strong>出荷済:</strong> 機能はブラウザにより実装され、正常に利用できます。</li>
+      <li><strong>実験的:</strong> 機能はブラウザの将来のバージョン向けに計画され、開発版で試験可能です。また、有効化やプレフィックスが必要な場合があります。</li>
+      <li><strong>開発中:</strong> 機能は開発されてはいますが、利用可能ではありません。</li>
+      <li><strong>検討中:</strong> 機能はまだ開発段階にはありませんが、将来のバージョンに向けて検討されています。</li>
+    </ul>
+    <p>
+      表には以下のブラウザについての実装状況が含まれます：
+    </p>
+    <table>
+      <thead>
+        <th>アイコン</th>
+        <th>ブラウザ名</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="2">主要ブラウザエンジン</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/chrome.png" alt="Chrome"></td>
+          <td>Chrome</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/edge.png" alt="Edge"></td>
+          <td>Microsoft Edge</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/firefox.png" alt="Firefox"></td>
+          <td>Firefox</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/safari.png" alt="Safari"></td>
+          <td>Safari</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th colspan="2">その他のブラウザエンジン</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/baidu.png" alt="Baidu Browser"></td>
+          <td>Baidu Browser</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/opera.png" alt="Opera"></td>
+          <td>Opera</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/qq.png" alt="QQ Browser"></td>
+          <td>QQ Browser</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/samsunginternet.png" alt="Samsung Internet"></td>
+          <td>Samsung Internet</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/uc.png" alt="UC Browser"></td>
+          <td>UC Browser</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      ブラウザエンジンのアイコンの上部に表示されるバッジは以下の追加の実装状況の情報を示します：
+    </p>
+    <table>
+      <thead>
+        <th>バッジ</th>
+        <th>意味</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="../assets/impl/desktop.svg" alt="Desktop only"></td>
+          <td>実装状況の情報はブラウザのデスクトップ版のものです。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/mobile.svg" alt="Mobile only"></td>
+          <td>実装状況の情報はブラウザのモバイル版のものです。<br/>注: 実装状況の情報はブラウザが<i>そのレイアウトエンジン</i>を利用している場合 (例えば、"Firefox for Android" や "Safari for iOS") にのみ該当し、モバイル版が<i>他のレイアウトエンジン</i>を利用している場合 (例えば、"Firefox for iOS") には該当しません。言い換えると、現在の実装状況の情報においては、モバイルバッジは "iOS" では Safari、"Android" ではすべてのブラウザを示すことになります。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/desktop-mobile.svg" alt="Desktop and mobile"></td>
+          <td>実装状況はブラウザのデスクトップ版・モバイル版の両方のものです。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/flag.svg" alt="Behind a flag"></td>
+          <td>ブラウザで機能を利用するには何らかのフラグを設定する必要があります。フラグはユーザがパラメータとして設定できる<i>設定フラグ</i>による場合や、ブラウザをコンパイルする際に設定が必要な<i>コンパイルフラグ</i>による場合、ブラウザを起動する前に設定する必要がある<i>ランタイムフラグ</i>による場合などがあります。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/prefix.svg" alt="Prefix required"></td>
+          <td>プリフィックスが機能を利用するために必要です。例えば、Firefox ではよく CSS プロパティーでは<code>-moz-</code>を、API 関数では<code>moz</code>プリフィックスを追加するといったものです。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/partial.svg" alt="Partial implementation"></td>
+          <td>実装状況の情報は完全ではなく、実装は部分的である可能性があります。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      マウスオーバーがサポートされているデバイスでは、ブラウザアイコン上にカーソルを乗せた際に実装状況のまとめがツールチップとして表示されます。
+    </p>
+    <p>
+      また、実装状況の情報は以下のプラットフォーム状況の情報から収集されています:
+    </p>
+    <ul>
+      <li><a href="http://caniuse.com/">Can I Use?</a></li>
+      <li><a href="https://www.chromestatus.com/features">Chrome Platform Status</a></li>
+      <li><a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a></li>
+      <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a></li>
+      <li><a href="https://webkit.org/status/">WebKit Feature Status</a></li>
+    </ul>
+    <p>
+      実装状況のブラウザアイコンをクリックすると、該当のプラットフォームについて実装状況を提供しているウェブサイト内のページに遷移します。
+    </p>
+    <p>
+      特定のブラウザでの実装状況の情報が存在しないというのは、機能が全く実装されておらず、実装予定も今のところ存在しないことを意味します。しかしながら、実装状況の情報が収集できていないという場合もあります。もし、見当たらないか間違った実装状況の項目があれば、<a href="https://github.com/w3c/web-roadmaps/issues/new">web-roadmap の GitHub レポジトリに issue を立てていただけるようお願いします</a>。
+    </p>
+  </section>
+</section>
