@@ -13,6 +13,7 @@
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
         <!--to represent spatial data: vocabularies / encodings-->
+        <h3>Generic options for writing spatial data</h3>
         <div data-feature="Encoding any spatial data">
             <p>There are several generic options for writing spatial data which are established standards: </p>
             <ul>
@@ -25,14 +26,17 @@
             </ul>
           </div>
           <!-- to represent sensor data-->
+          <h3>Semantic standards: vocabularies</h3>
           <p data-feature="Sensor description">The <a data-featureid="vocab-ssn">Semantic Sensor Network Ontology (SSN)</a> is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN includes a lightweight core ontology called SOSA (Sensor, Observation, Sample and Actuator) that is able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things. SOSA can be used without any reference to the full SSN ontology, which adds numerous classes, properties and axioms to SOSA and can be used for advanced linked data use cases. SSN is underpinned by <a data-featureid="iso-19156-2011">Observations &amp; Measurements</a>, an ISO and OGC standard for describing observations and measurements made by sensors.</p>
           <!-- to represent temporal data-->
           <p data-feature="Temporal data representation">The <a data-featureid="owl-time">Time Ontology</a> contains concepts for describing the temporal properties of resources in the world or described in Web pages, including relations between time instants and intervals, information about durations, and temporal position including date-time information. Not only the conventional (Gregorian) calendar and clock can be used: other temporal reference systems are also possible.</p>
-          <!-- to represent geometry-->
-          <p data-feature="Representation of geometry"><a data-featureid="sfa/wkt">Well Known Text (WKT)</a> is a compact format to represent geometry literals, used in GeoSPARQL and other spatial data representation formats, and supported in most triple stores and some web libraries. <a data-featureid="geohash">Geohash</a> is a convenient way to express a location using a short alphanumeric string. It only supports 0-dimensional geometries (points). </p>
           <!-- to represent multi-dimensional data -->          
           <div data-feature="Data cubes">To represent multi-dimensional data on the Web as linked data, the <a data-featureid="vocab-data-cube">RDF Data Cube Vocabulary</a> is available. An extension for spatial and temporal data exists, but that part is still exploratory work.</div>
+          <!-- to represent geometry-->
+          <h3>Geometry</h3>
+          <p data-feature="Representation of geometry"><a data-featureid="sfa/wkt">Well Known Text (WKT)</a> is a compact format to represent geometry literals, used in GeoSPARQL and other spatial data representation formats, and supported in most triple stores and some web libraries. <a data-featureid="geohash">Geohash</a> is a convenient way to express a location using a short alphanumeric string. It only supports 0-dimensional geometries (points). </p>
           <!-- to reference a location-->
+          <h3>Reference locations</h3>
           <p data-feature="Reference a location by name">There are different ways to reference a location. One is by providing coordinates as can be done using any spatial data representation in which geometry can be represented. If the location is a spatial thing with a name and an identifier, it can be referenced instead of having to provide its coordinates. There are many popular repositories containing sets of identifiers for Spatial Things such as <a data-featureid="geonames">Geonames</a>, <a data-featureid="dbpedia">DBpedia</a>, and <a data-featureid="wikidata">Wikidata</a>.</p>
       </section>
       <section class="featureset in-progress">
