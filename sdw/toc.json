@@ -9,7 +9,7 @@
       {
         "url": "capture.html",
         "title": "capture spatial/sensor data",
-        "icon": "../assets/img/sdw-capture.png",
+        "icon": "../assets/img/media-capture.svg",
         "description": "Creating spatial data or sensor data in a web context."
       },
       {
