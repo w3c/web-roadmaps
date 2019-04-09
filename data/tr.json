@@ -1112,7 +1112,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -1426,19 +1426,6 @@
     "informative": false,
     "milestones": {}
   },
-  "element-queries": {
-    "url": "https://wicg.github.io/cq-usecases/",
-    "title": "Element Queries",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ],
-    "publisher": "W3C",
-    "milestones": {}
-  },
   "eme": {
     "url": "https://www.w3.org/TR/encrypted-media/",
     "edDraft": "https://w3c.github.io/encrypted-media/",
@@ -1624,12 +1611,12 @@
     }
   },
   "geodcat-ap": {
-    "url": "http://data.europa.eu/w21/81fd7288-6929-4b42-8707-2da604490d30",
+    "url": "https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe",
     "title": "GeoDCAT-AP: A geospatial extension for the DCAT application profile for data portals in Europe. Version 1.0.1",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "http://data.europa.eu/w21/c9dae5aa-c3d0-43a7-96e3-9f16cd8d5b6d",
+        "url": "https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe",
         "label": "European Commission"
       }
     ],
@@ -2882,7 +2869,7 @@
     "edDraft": "https://w3c.github.io/pointerevents/",
     "repository": "https://github.com/w3c/pointerevents",
     "title": "Pointer Events",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/2012/pointerevents/",
@@ -3105,6 +3092,13 @@
     "milestones": {
       "REC": "2018-09-30"
     }
+  },
+  "resize-observer": {
+    "url": "https://drafts.csswg.org/resize-observer-1/",
+    "title": "Resize Observer",
+    "status": "ED",
+    "deliveredBy": [],
+    "milestones": {}
   },
   "resource-hints": {
     "url": "https://www.w3.org/TR/resource-hints/",

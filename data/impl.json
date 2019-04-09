@@ -3775,6 +3775,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "In Edge, Web Crypto is not supported in Web Workers or Service Workers."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cryptography"
       },
@@ -12626,16 +12629,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=css-paint-api"
-      },
-      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -14409,16 +14402,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=datalist"
       },
       {
         "ua": "opera",
@@ -14936,13 +14923,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=do-not-track",
-        "selected": true
-      },
-      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -15236,9 +15216,6 @@
     "implementations": []
   },
   "dwbp": {
-    "implementations": []
-  },
-  "element-queries": {
     "implementations": []
   },
   "eme": {
@@ -15967,6 +15944,16 @@
         "notes": [
           "Partial support refers to not supporting `::backdrop`, and supporting the old `:full-screen` syntax rather than the standard `:fullscreen`.",
           "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=fullscreen",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "notes": [
+          "Partial support refers to supporting only iPad, not iPhone. Shows an overlay button which can not be disabled."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen",
@@ -18441,16 +18428,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=intersectionobserver"
       },
       {
         "ua": "opera",
@@ -18741,6 +18722,32 @@
   "media-capabilities": {
     "implementations": [
       {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "encoding",
+          "decoding"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "encoding",
+          "decoding"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
@@ -18751,33 +18758,27 @@
         ],
         "partial": true,
         "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "guess": true,
-        "features": [
-          "decoding"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "chromestatus",
-        "guess": true,
-        "features": [
-          "decoding"
-        ],
-        "partial": true,
-        "selected": true
       }
     ],
     "features": {
       "encoding": {
         "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5123719190020096",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5123719190020096",
+            "selected": true
+          },
           {
             "ua": "firefox",
             "status": "consideration",
@@ -18800,27 +18801,27 @@
             "selected": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "consideration",
             "source": "chromestatus",
             "guess": true,
             "partial": true
-          },
-          {
-            "ua": "chrome",
-            "status": "shipped",
-            "source": "chromestatus",
-            "guess": true,
-            "partial": true,
-            "selected": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "guess": true,
-            "partial": true,
-            "selected": true
           }
         ]
       },
@@ -18862,22 +18863,24 @@
             "selected": true
           },
           {
-            "ua": "firefox",
-            "status": "consideration",
-            "source": "chromestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "chrome",
-            "status": "shipped",
+            "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "consideration",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -21315,9 +21318,6 @@
       {
         "ua": "safari",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -22674,16 +22674,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=mediarecorder"
-      },
-      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -23123,6 +23113,70 @@
         "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
+        "selected": true
+      }
+    ]
+  },
+  "resize-observer": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5705346022637568",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5705346022637568",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5705346022637568",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5705346022637568"
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5705346022637568",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/resizeobserver/",
         "selected": true
       }
     ]
@@ -27895,11 +27949,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the \"Experimental Features\" developer menu"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -28103,15 +28153,10 @@
     "implementations": [
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-share"
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-share"
+        "href": "https://caniuse.com/#feat=web-share",
+        "selected": true
       },
       {
         "ua": "safari_ios",
@@ -28150,8 +28195,7 @@
         "ua": "safari",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5668769141620736",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5668769141620736"
       },
       {
         "ua": "edge",
@@ -28441,16 +28485,6 @@
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu. Currently supports USB-based CTAP & CTAP2 HID devices."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webauthn"
       },
       {
         "ua": "opera",
