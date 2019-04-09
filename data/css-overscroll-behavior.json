@@ -1,5 +1,6 @@
 {
   "url": "https://drafts.csswg.org/css-overscroll-behavior/",
+  "title": "CSS Overscroll Behavior Module Level 1",
   "impl": {
     "caniuse": "css-overscroll-behavior",
     "chromestatus": 5734614437986304,
