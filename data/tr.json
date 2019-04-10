@@ -995,17 +995,10 @@
     "milestones": {}
   },
   "css-overscroll-behavior": {
-    "url": "https://wicg.github.io/overscroll-behavior/",
-    "repository": "https://github.com/wicg/overscroll-behavior",
+    "url": "https://drafts.csswg.org/css-overscroll-behavior/",
     "title": "CSS Overscroll Behavior Module Level 1",
-    "status": "LS",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ],
-    "publisher": "W3C",
+    "status": "ED",
+    "deliveredBy": [],
     "milestones": {}
   },
   "css-page-3": {
