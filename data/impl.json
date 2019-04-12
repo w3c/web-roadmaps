@@ -22681,6 +22681,17 @@
         "selected": true
       },
       {
+        "ua": "safari_ios",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Advanced > Experimental Features menu."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=mediarecorder",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
