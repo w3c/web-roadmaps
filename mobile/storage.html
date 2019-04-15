@@ -36,6 +36,10 @@
         <div data-feature="File operations">
           <p>The <a data-featureid="native-file-system">Native File System</a> specification is an early API proposal that lets Websites gain write access to the native file system. It builds on top of the <a href="#fileapi">File API</a>.</p>
         </div>
+
+        <div data-feature="Simple data storage">
+          <p>The <code>localStorage</code> mechanism is a simple data storage mechanism but has one problem: the API is synchronous. This leads to performance and cross-window synchronization issues. IndexedDB is asynchronous but is hard to use for simple get/set operations. The <a data-featureid="kv-storage">KV Storage</a> specification describes a simple asynchronous key/value storage API, proposed as a successor to <code>localStorage</code>. The API is modeled on top of IndexedDB, allowing applications to transition to IndexedDB should the application need to use advanced features (such as transactions, indices, or cursors). Plan is to integrate this API in IndexedDB after incubation.</p>
+        </div>
       </section>
 
       <section>
