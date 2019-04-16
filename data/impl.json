@@ -18185,6 +18185,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=input-inputmode",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -18580,6 +18587,45 @@
   },
   "kml": {
     "implementations": []
+  },
+  "kv-storage": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      }
+    ]
   },
   "locn": {
     "implementations": []
@@ -21742,6 +21788,17 @@
   "picture-in-picture": {
     "implementations": [
       {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Firefox Nightly only via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -21749,10 +21806,9 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Apple provides an equivalent proprietary API for Picture-in-Picture."
+          "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -21762,7 +21818,7 @@
         "ua": "opera",
         "status": "shipped",
         "notes": [
-          "Opera allows users to use Picture-in-Picture for all playing videos (JS API not available)"
+          "Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -21770,10 +21826,9 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Apple provides an equivalent proprietary API for Picture-in-Picture."
+          "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -21782,9 +21837,6 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
-        "notes": [
-          "Automatically plays video in Picture-in-Picture when user hits Home Screen button and video is fullscreen (Android >= Oreo required)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
         "selected": true
@@ -21793,7 +21845,7 @@
         "ua": "firefox_android",
         "status": "shipped",
         "notes": [
-          "Automatically plays video in Picture-in-Picture when user hits Home Screen button and video is fullscreen (Android >= Oreo required)"
+          "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -21810,8 +21862,7 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5729206566649856",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5729206566649856"
       },
       {
         "ua": "edge",
@@ -23148,6 +23199,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
       },
       {
         "ua": "chrome",

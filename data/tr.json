@@ -2105,6 +2105,19 @@
     "publisher": "OGC",
     "milestones": {}
   },
+  "kv-storage": {
+    "url": "https://wicg.github.io/kv-storage/",
+    "title": "KV Storage",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "locn": {
     "url": "http://www.w3.org/ns/locn",
     "title": "ISA Programme Location Core Vocabulary",
