@@ -3210,6 +3210,45 @@
   "cityjson": {
     "implementations": []
   },
+  "clipboard-apis": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5861289330999296",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5861289330999296",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5861289330999296",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5861289330999296",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5861289330999296",
+        "selected": true
+      }
+    ]
+  },
   "cloud-browser-arch": {
     "implementations": []
   },
@@ -21837,6 +21876,9 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
+        "notes": [
+          "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
         "selected": true

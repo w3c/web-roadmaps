@@ -387,6 +387,22 @@
     "publisher": "3D geoinformation group at TU Delft",
     "milestones": {}
   },
+  "clipboard-apis": {
+    "url": "https://www.w3.org/TR/clipboard-apis/",
+    "edDraft": "https://w3c.github.io/clipboard-apis/",
+    "repository": "https://github.com/w3c/clipboard-apis",
+    "title": "Clipboard API and events",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "cloud-browser-arch": {
     "url": "https://www.w3.org/TR/cloud-browser-arch/",
     "edDraft": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
@@ -1276,19 +1292,16 @@
     "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
     "repository": "https://github.com/w3c/deviceorientation",
     "title": "DeviceOrientation Event Specification",
-    "status": "Retired",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/geolocation/",
-        "label": "Geolocation Working Group"
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
       }
     ],
     "publisher": "W3C",
-    "informative": true,
-    "milestones": {
-      "CR": "2017-03-30",
-      "PR/PER": "2017-06-30"
-    }
+    "informative": false,
+    "milestones": {}
   },
   "discovery": {
     "url": "https://www.w3.org/TR/discovery-api/",
