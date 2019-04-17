@@ -118,6 +118,10 @@
         <div data-feature="DOM Updates">
           <p>Web applications are dynamic in essence and need to manipulate the DOM significantly to present rich content. Problem is updates to the DOM can cause <em>jank</em> (noticeable delay in visual updates) because the rendering phase is updated synchronously with user interactions and <code>requestAnimationFrame</code> scripts. The <a data-featureid="display-locking">Display Locking</a> proposal introduces a new concept whereby developers can lock a DOM element and its subtree, preventing visual updates while the DOM gets updated. The developer will then be able to unlock the element, asynchronously, triggering the visual updates of the modified subtree without causing the rest of the page to jank.</p>
         </div>
+
+        <div data-feature="JS performance">
+          <p>Web applications have limited visibility into where JavaScript execution time is spent on clients. Without the ability to efficiently collect stack samples, applications are forced to instrument their code with profiling hooks that are imprecise and can significantly slow down execution. The <a data-featureid="js-self-profiling">JS Self-Profiling API</a> proposal describes an API to manipulate a sampling profiler that would allow applications to gather rich execution data for aggregation and analysis of real end-user environments with minimal overhead.</p>
+        </div>
       </section>
     </main>
     <script src="../js/generate.js"></script>
