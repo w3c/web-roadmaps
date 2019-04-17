@@ -33,10 +33,6 @@
         <div data-feature="Encryption">
           <p>The <a data-featureid="crypto">Web Cryptography API</a> provides the necessary tools to encrypt data for storage and transmission from within Web applications, with access to pre-provisioned keys via the <a data-featureid="cryptokey">WebCrypto Key Discovery</a> API.</p>
         </div>
-
-        <div data-feature="Tracking Protection">
-          <p>For users that wish to indicate their preferences not to be tracked across Web applications and sites, the <a data-featureid="dnt">Tracking Preference Expression (also known as Do No Track)</a> enables browsers to communicate explicitly their wish to content providers, and to determine whether a given content provider asserts fulfilling that wish. Not all content providers honor users' expressed preferences though.</p>
-        </div>
       </section>
 
       <section class="featureset in-progress">
@@ -80,6 +76,9 @@
         <dl>
           <dt>HTTP request filtering</dt>
           <dd>The <a data-featureid="epr">Entry Point Regulation</a> specification provided another layer of strengthening security. It defined a mechanism to filter the type of HTTP requests that can be made from external sites, reducing risks of cross-site script and cross-site request forgery. Work on this specification has been discontinued for the time being.</dd>
+
+          <dt>Tracking preference expression</dt>
+          <dd>For users that wish to indicate their preferences not to be tracked across Web applications and sites, the <a data-featureid="dnt">Tracking Preference Expression (also known as Do No Track)</a> enabled browsers to communicate explicitly their wish to content providers, and for servers to communicate their own tracking behavior, request consent and store user-granted exceptions. Not all content providers honor users' expressed preferences though, and lack of deployment of these extensions (as defined) led the Tracking Protection Working Group to stop work on the specification.</dd>
         </dl>
       </section>
     </main>
