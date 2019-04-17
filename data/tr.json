@@ -2110,6 +2110,19 @@
     "publisher": "ISO",
     "milestones": {}
   },
+  "js-self-profiling": {
+    "url": "https://wicg.github.io/js-self-profiling/",
+    "title": "JS Self-Profiling API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "kml": {
     "url": "http://docs.opengeospatial.org/is/12-007r2/12-007r2.html",
     "title": "OGC KML 2.3",

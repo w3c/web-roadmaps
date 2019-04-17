@@ -18624,6 +18624,9 @@
   "iso-19156-2011": {
     "implementations": []
   },
+  "js-self-profiling": {
+    "implementations": []
+  },
   "kml": {
     "implementations": []
   },
