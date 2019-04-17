@@ -55,15 +55,16 @@
         <p data-feature="Referrer Policy"><a data-featureid="referrer-policy">Referrer Policy</a> helps web developers control the amount of information present in the <code>Referer</code> HTTP header or even whether the header is sent at all.</p>
 
         <p data-feature="Sandboxing">The <a data-featureid="uisecurity">User Interface Security and the Visibility API</a> document proposes to eliminate clickjacking by assuring element visibility at the graphics rendering level. For instance, a developer deploying it can assure that users clicking their site's "pay" button aren't being tricked into transferring their bank balances to an imposter instead.</p>
+
+        <div data-feature="Feature policy">
+          <p>As more powerful features keep being exposed to applications, site authors need more fine-grained control over features that are enabled/disabled in their application as well as in own or third-party content that their application may embed (in iframes), to reinforce security. The <a data-featureid="feature-policy">Feature Policy</a> defines mechanisms (the <code>Feature-Policy</code> HTTP header and the <code>allow</code> attribute on an <code>iframe</code> element) to selectively enable and disable use of various browser features and APIs. Developers may also use the policy to assert a promise to a client or an embedder about the use — or lack of thereof — of certain features and APIs.</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <div data-feature="Strengthened security">
           <p>Cross-site scripting (XSS) is considered to be one of the major attack vectors on the Web. <a data-featureid="trusted-types">Trusted Types</a> allows applications to lock down DOM-based XSS injection sinks  (e.g. <code>Element.innerHTML</code>, or <code>Location.href</code> setters) to only accept non-spoofable, typed values in place of strings.</p>
-        </div>
-        <div data-feature="Feature policy">
-          <p>As more powerful features keep being exposed to applications, site authors need more fine-grained control over features that are enabled/disabled in their application as well as in own or third-party content that their application may embed (in iframes), to reinforce security. The <a data-featureid="feature-policy">Feature Policy</a> defines mechanisms (the <code>Feature-Policy</code> HTTP header and the <code>allow</code> attribute on an <code>iframe</code> element) to selectively enable and disable use of various browser features and APIs. Developers may also use the policy to assert a promise to a client or an embedder about the use — or lack of thereof — of certain features and APIs.</p>
         </div>
         <div data-feature="Permissions">
           <p>Different APIs use different mechanisms to grant permission to use or access an underlying powerful feature. To ease design of permission-related code, the <a data-featureid="permissions-request">Requesting permissions</a> and <a data-featureid="permissions-revoke">Relinquishing permissions</a> proposals extend the <a href="https://www.w3.org/TR/permissions/">Permissions API</a> to provide a uniform function for requesting and revoking permission to use powerful features.</p>
