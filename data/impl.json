@@ -21892,8 +21892,7 @@
           "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture",
-        "selected": true
+        "href": "https://caniuse.com/#feat=picture-in-picture"
       },
       {
         "ua": "opera",
@@ -21902,8 +21901,7 @@
           "Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture",
-        "selected": true
+        "href": "https://caniuse.com/#feat=picture-in-picture"
       },
       {
         "ua": "safari_ios",
@@ -21912,8 +21910,7 @@
           "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture",
-        "selected": true
+        "href": "https://caniuse.com/#feat=picture-in-picture"
       },
       {
         "ua": "chrome_android",
@@ -21932,8 +21929,7 @@
           "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture",
-        "selected": true
+        "href": "https://caniuse.com/#feat=picture-in-picture"
       },
       {
         "ua": "chrome",
@@ -22002,6 +21998,46 @@
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "consideration",
+        "source": "feedback",
+        "date": "2019-04-17",
+        "notes": [
+          "Safari ships an equivalent proprietary API for Picture-in-Picture, but not the actual Picture-in-Picture API for now"
+        ],
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "consideration",
+        "source": "feedback",
+        "date": "2019-04-17",
+        "notes": [
+          "Safari ships an equivalent proprietary API for Picture-in-Picture, but not the actual Picture-in-Picture API for now"
+        ],
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "consideration",
+        "source": "feedback",
+        "date": "2019-04-17",
+        "notes": [
+          "Firefox for Android plays fullscreen in Picture-in-Picture when the home button is pressed, but does not implement the actual Picture-in-Picture API for now"
+        ],
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "consideration",
+        "source": "feedback",
+        "date": "2019-04-17",
+        "notes": [
+          "Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos, but does not implement the actual Picture-in-Picture API for now"
+        ],
         "selected": true
       }
     ]
