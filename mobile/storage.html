@@ -36,6 +36,10 @@
         <div data-feature="File operations">
           <p>The <a data-featureid="native-file-system">Native File System</a> specification is an early API proposal that lets Websites gain write access to the native file system. It builds on top of the <a href="#fileapi">File API</a>.</p>
         </div>
+
+        <div data-feature="State management">
+          <p>HTTP cookies provide a valuable state-management mechanism for the Web. However, the synchronous nature of the <code>document.cookie</code> interface has been a source of performance issue, especially now that browsers use multiple processes and threads to improve perceived performances and responsiveness where ever possible, including on mobile platforms where processing powers may be more limited. Cookies are also unavailable to workers, which do not have access to the DOM. The <a data-featureid="cookie-store">Cookie Store API</a> defines an asynchronous cookies API for documents and workers.</p>
+        </div>
       </section>
 
       <section>
