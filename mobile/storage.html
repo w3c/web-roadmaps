@@ -40,6 +40,10 @@
         <div data-feature="Simple data storage">
           <p>The <code>localStorage</code> mechanism is a simple data storage mechanism but has one problem: the API is synchronous. This leads to performance and cross-window synchronization issues. IndexedDB is asynchronous but is hard to use for simple get/set operations. The <a data-featureid="kv-storage">KV Storage</a> specification describes a simple asynchronous key/value storage API, proposed as a successor to <code>localStorage</code>. The API is modeled on top of IndexedDB, allowing applications to transition to IndexedDB should the application need to use advanced features (such as transactions, indices, or cursors). Plan is to integrate this API in IndexedDB after incubation.</p>
         </div>
+
+        <div data-feature="State management">
+          <p>HTTP cookies provide a valuable state-management mechanism for the Web. However, the synchronous nature of the <code>document.cookie</code> interface has been a source of performance issue, especially now that browsers use multiple processes and threads to improve perceived performances and responsiveness where ever possible, including on mobile platforms where processing powers may be more limited. Cookies are also unavailable to workers, which do not have access to the DOM. The <a data-featureid="cookie-store">Cookie Store API</a> defines an asynchronous cookies API for documents and workers.</p>
+        </div>
       </section>
 
       <section>
