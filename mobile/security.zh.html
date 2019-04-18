@@ -34,10 +34,6 @@
         <div data-feature="加密">
           <p>通过<a data-featureid="cryptokey">WebCrypto密钥发现</a>API访问预先配置的密钥，<a data-featureid="crypto">Web密码学API</a>提供必要的工具来加密数据，以便在Web应用中进行存储和传输。</p>
         </div>
-
-        <div data-feature="跟踪保护">
-          <p>对于希望表明其偏好不被跨 Web 应用和站点追踪的用户，<a data-featureid="dnt">跟踪偏好表达式（Tracking Preference Expression，也被称为Do No Track）</a>使浏览器能够明确地向内容提供者传达用户的愿望，并确定给定的内容提供者是否声明满足该愿望。尽管如此，并不是所有的内容提供者都会尊重用户表达的偏好。</p>
-        </div>
       </section>
 
       <section class="featureset in-progress">
@@ -48,7 +44,7 @@
         </div>
 
         <div data-feature="身份管理">
-          <p>为了方便用户对在线服务的认证，Web应用安全工作组提出了<a data-featureid="credential-management">凭证管理API</a>，使开发人员能够与用户代理管理的凭证更加无缝地交互。</p>
+          <p>为了方便用户对在线服务的认证，Web应用安全工作组提出了<a data-featureid="credential-management">信任证管理 API</a>，使开发人员能够与用户代理管理的凭证更加无缝地交互。</p>
         </div>
 
         <p data-feature="认证">基于 FIDO 联盟的免密和多因素认证工作，<a data-featureid="webauthn">Web认证</a>的目标是使 Web 的强认证技术标准化，使用“你拥有的东西”（如身份验证器）、“你知道的东西”（如PIN码）和“你是谁”（如指纹）的任意组合，让黑客即使窃取密码数据库也不足以劫持用户帐户。</p>
@@ -68,7 +64,7 @@
 
       <section class="featureset exploratory-work">
         <h2>探索性工作</h2>
-        <div data-feature="Strengthened security">
+        <div data-feature="安全加强">
           <p>跨站脚本（XSS）是Web上的主要攻击方式之一。<a data-featureid="trusted-types">可信任类型</a>允许应用锁定基于 DOM 的 XSS 注入接收器（例如，<code>Element.innerHTML</code> 或 <code>Location.href</code> 设置器），以仅接受不可欺骗的、含有类型的值来代替字符串。</p>
         </div>
         <div data-feature="权限">
@@ -82,6 +78,9 @@
         <dl>
           <dt>HTTP请求过滤</dt>
           <dd><a data-featureid="epr">入口监管</a>规范提供了另一个加强安全的层面。它定义了一种机制来过滤可以从外部站点发起的 HTTP 请求的类型，降低了跨站点脚本和跨站点请求伪造的风险。这个规范的工作暂时停止了。</dd>
+
+          <dt>追踪偏好表达</dt>
+          <dd>对于希望表明其偏好不被跨 Web 应用和站点追踪的用户，<a data-featureid="dnt">跟踪偏好表达式（Tracking Preference Expression，也被称为Do No Track）</a>使浏览器能够明确地向内容提供者传达用户的愿望，并使服务器能够传达他们自己的跟踪行为 ，请求同意并存储用户授予的例外。并非所有内容提供商都尊重用户的偏好，并且缺乏这些扩展的部署导致了追踪保护工作组停止对该规范的工作。</dd>
         </dl>
       </section>
     </main>

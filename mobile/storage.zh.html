@@ -36,6 +36,14 @@
         <div data-feature="文件操作">
           <p><a data-featureid="native-file-system">本地文件系统</a>规范是一个早期的API提议，建立在<a href="#fileapi">文件API</a>之上，允许网站获得对文件系统的写访问权。</p>
         </div>
+
+        <div data-feature="简单数据存储">
+          <p><code>localStorage</code>机制是一种简单的数据存储机制，但有一个问题：API是同步的，而这会导致性能和跨窗口同步问题。索引数据库（IndexedDB）虽然是异步的，但很难用于简单的get/set操作。<a data-featureid="kv-storage">KV存储</a>规范描述了一个简单的异步键值存储API，作为<code>localStorage</code>的后续版本。该API基于IndexedDB之上，如果应用需要使用高级特性（例如事务、索引或游标），则可以转换到索引数据库。该标准在孵化后计划集成到索引数据库标准中。</p>
+        </div>
+
+        <div data-feature="状态管理">
+          <p>HTTP cookies 为 Web 提供了有效的状态管理机制，然而 <code>document.cookie</code> 接口的同步性一直是性能问题的来源之一，尤其是在浏览器使用多个进程和线程来尽可能地改善感知性能和响应度的情况下，这也包括处理能力通常比较有限的移动平台上。Worker因为无法访问DOM，也无法使用Cookies。<a data-featureid="cookie-store">Cookie 存储 API</a> 为文档和 Worker 定义了一个异步的 Cookie API。</p>
+        </div>
       </section>
 
       <section>
