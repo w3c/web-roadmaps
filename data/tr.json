@@ -7,7 +7,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       },
       {
@@ -71,7 +71,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -119,7 +119,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -136,7 +136,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -174,7 +174,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/AU/",
+        "url": "https://www.w3.org/WAI/AU/",
         "label": "Authoring Tool Accessibility Guidelines Working Group"
       }
     ],
@@ -190,7 +190,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -216,7 +216,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -233,7 +233,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -371,7 +371,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/html/wg/",
+        "url": "https://www.w3.org/html/wg/",
         "label": "HTML Media Extensions Working Group"
       }
     ],
@@ -395,7 +395,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -411,7 +411,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webtv/",
+        "url": "https://www.w3.org/2011/webtv/",
         "label": "Media and Entertainment Interest Group"
       }
     ],
@@ -434,7 +434,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -450,7 +450,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/sysapps/",
+        "url": "https://www.w3.org/2012/sysapps/",
         "label": "System Applications Working Group"
       }
     ],
@@ -480,7 +480,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/ARIA/",
+        "url": "https://www.w3.org/WAI/ARIA/",
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
@@ -494,11 +494,11 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/webapps/",
+        "url": "https://www.w3.org/2008/webapps/",
         "label": "Web Applications Working Group"
       },
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -522,7 +522,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -548,7 +548,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/webcrypto/",
+        "url": "https://www.w3.org/2012/webcrypto/",
         "label": "Web Cryptography Working Group"
       }
     ],
@@ -565,7 +565,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/webcrypto/",
+        "url": "https://www.w3.org/2012/webcrypto/",
         "label": "Web Cryptography Working Group"
       }
     ],
@@ -581,7 +581,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -603,7 +603,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -647,7 +647,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -708,7 +708,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -724,7 +724,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -741,7 +741,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -758,7 +758,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -775,7 +775,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -839,7 +839,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -855,7 +855,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -871,7 +871,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -887,7 +887,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -903,7 +903,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -920,7 +920,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -946,7 +946,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -984,7 +984,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1000,7 +1000,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1016,7 +1016,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1039,7 +1039,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1055,7 +1055,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1071,7 +1071,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1087,7 +1087,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1109,7 +1109,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1138,7 +1138,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/pointerevents/",
+        "url": "https://www.w3.org/2012/pointerevents/",
         "label": "Pointer Events Working Group"
       }
     ],
@@ -1155,7 +1155,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1171,7 +1171,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1188,7 +1188,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1203,7 +1203,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1219,7 +1219,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1245,7 +1245,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1268,7 +1268,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2005/MWI/DDWG/",
+        "url": "https://www.w3.org/2005/MWI/DDWG/",
         "label": "Mobile Web Initiative Device Description Working Group"
       }
     ],
@@ -1353,7 +1353,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/tracking-protection/",
+        "url": "https://www.w3.org/2011/tracking-protection/",
         "label": "Tracking Protection Working Group"
       }
     ],
@@ -1388,7 +1388,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -1406,7 +1406,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/ARIA/",
+        "url": "https://www.w3.org/WAI/ARIA/",
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
@@ -1422,7 +1422,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/ARIA/",
+        "url": "https://www.w3.org/WAI/ARIA/",
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
@@ -1438,7 +1438,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2013/dwbp/",
+        "url": "https://www.w3.org/2013/dwbp/",
         "label": "Data on the Web Best Practices Working Group"
       }
     ],
@@ -1454,7 +1454,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/html/wg/",
+        "url": "https://www.w3.org/html/wg/",
         "label": "HTML Media Extensions Working Group"
       }
     ],
@@ -1470,7 +1470,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2015/spatial/",
+        "url": "https://www.w3.org/2015/spatial/",
         "label": "Spatial Data on the Web Working Group"
       }
     ],
@@ -1486,7 +1486,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -1514,7 +1514,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/webapps/",
+        "url": "https://www.w3.org/2008/webapps/",
         "label": "Web Applications Working Group"
       }
     ],
@@ -1530,7 +1530,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -1560,7 +1560,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1604,7 +1604,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1653,7 +1653,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/geolocation/",
+        "url": "https://www.w3.org/2008/geolocation/",
         "label": "Geolocation Working Group"
       }
     ],
@@ -1690,7 +1690,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/geolocation/",
+        "url": "https://www.w3.org/2008/geolocation/",
         "label": "Geolocation Working Group"
       }
     ],
@@ -1721,7 +1721,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -1838,7 +1838,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1855,7 +1855,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1872,7 +1872,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1889,7 +1889,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1931,7 +1931,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -1949,7 +1949,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1978,7 +1978,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -1994,7 +1994,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/IndieUI/",
+        "url": "https://www.w3.org/WAI/IndieUI/",
         "label": "Independent User Interface (Indie UI) Working Group"
       }
     ],
@@ -2010,7 +2010,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2041,7 +2041,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2057,7 +2057,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2074,7 +2074,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2091,7 +2091,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2108,7 +2108,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2271,7 +2271,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/WebVideo/Fragments/",
+        "url": "https://www.w3.org/2008/WebVideo/Fragments/",
         "label": "Media Fragments Working Group"
       }
     ],
@@ -2299,7 +2299,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/html/wg/",
+        "url": "https://www.w3.org/html/wg/",
         "label": "HTML Media Extensions Working Group"
       }
     ],
@@ -2316,7 +2316,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2334,7 +2334,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -2350,7 +2350,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -2405,7 +2405,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -2423,11 +2423,11 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/GL/",
+        "url": "https://www.w3.org/WAI/GL/",
         "label": "Accessibility Guidelines Working Group"
       },
       {
-        "url": "http://www.w3.org/WAI/UA/",
+        "url": "https://www.w3.org/WAI/UA/",
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
@@ -2469,7 +2469,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/html/wg/",
+        "url": "https://www.w3.org/html/wg/",
         "label": "HTML Media Extensions Working Group"
       }
     ],
@@ -2485,7 +2485,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -2501,7 +2501,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2005/MWI/BPWG/",
+        "url": "https://www.w3.org/2005/MWI/BPWG/",
         "label": "Mobile Web Best Practices Working Group"
       }
     ],
@@ -2556,7 +2556,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2010/web-notifications/",
+        "url": "https://www.w3.org/2010/web-notifications/",
         "label": "Web Notification Working Group"
       }
     ],
@@ -2594,7 +2594,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2637,7 +2637,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2015/spatial/",
+        "url": "https://www.w3.org/2015/spatial/",
         "label": "Spatial Data on the Web Working Group"
       }
     ],
@@ -2653,7 +2653,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -2873,7 +2873,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -2903,7 +2903,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -2920,7 +2920,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/pointerevents/",
+        "url": "https://www.w3.org/2012/pointerevents/",
         "label": "Pointer Events Working Group"
       }
     ],
@@ -2936,7 +2936,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3027,7 +3027,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3043,7 +3043,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2015/spatial/",
+        "url": "https://www.w3.org/2015/spatial/",
         "label": "Spatial Data on the Web Working Group"
       }
     ],
@@ -3059,7 +3059,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3079,7 +3079,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -3097,7 +3097,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -3115,7 +3115,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2014/secondscreen/",
+        "url": "https://www.w3.org/2014/secondscreen/",
         "label": "Second Screen Working Group"
       }
     ],
@@ -3224,7 +3224,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3246,7 +3246,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -3279,7 +3279,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2015/spatial/",
+        "url": "https://www.w3.org/2015/spatial/",
         "label": "Spatial Data on the Web Working Group"
       }
     ],
@@ -3308,7 +3308,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2014/secondscreen/",
+        "url": "https://www.w3.org/2014/secondscreen/",
         "label": "Second Screen Working Group"
       }
     ],
@@ -3324,7 +3324,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -3481,7 +3481,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3498,7 +3498,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -3584,7 +3584,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Graphics/SVG/WG/",
+        "url": "https://www.w3.org/Graphics/SVG/WG/",
         "label": "SVG Working Group"
       }
     ],
@@ -3599,7 +3599,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Graphics/SVG/WG/",
+        "url": "https://www.w3.org/Graphics/SVG/WG/",
         "label": "SVG Working Group"
       }
     ],
@@ -3616,7 +3616,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2012/sysapps/",
+        "url": "https://www.w3.org/2012/sysapps/",
         "label": "System Applications Working Group"
       }
     ],
@@ -3645,7 +3645,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3682,7 +3682,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2010/webevents/",
+        "url": "https://www.w3.org/2010/webevents/",
         "label": "Web Events Working Group"
       }
     ],
@@ -3742,7 +3742,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/AudioVideo/TT/",
+        "url": "https://www.w3.org/AudioVideo/TT/",
         "label": "Timed Text Working Group"
       }
     ],
@@ -3758,7 +3758,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/AudioVideo/TT/",
+        "url": "https://www.w3.org/AudioVideo/TT/",
         "label": "Timed Text Working Group"
       }
     ],
@@ -3776,7 +3776,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/AudioVideo/TT/",
+        "url": "https://www.w3.org/AudioVideo/TT/",
         "label": "Timed Text Working Group"
       }
     ],
@@ -3794,7 +3794,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/AudioVideo/TT/",
+        "url": "https://www.w3.org/AudioVideo/TT/",
         "label": "Timed Text Working Group"
       }
     ],
@@ -3825,7 +3825,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/UA/",
+        "url": "https://www.w3.org/WAI/UA/",
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
@@ -3840,7 +3840,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/UA/",
+        "url": "https://www.w3.org/WAI/UA/",
         "label": "User Agent Accessibility Guidelines Working Group"
       }
     ],
@@ -3856,7 +3856,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -3874,7 +3874,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/webappsec/",
+        "url": "https://www.w3.org/2011/webappsec/",
         "label": "Web Application Security Working Group"
       }
     ],
@@ -3906,7 +3906,7 @@
     "status": "NOTE",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2001/sw/interest/",
+        "url": "https://www.w3.org/2001/sw/interest/",
         "label": "Semantic Web Interest Group"
       }
     ],
@@ -3954,7 +3954,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -3988,7 +3988,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -4019,7 +4019,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/gld/",
+        "url": "https://www.w3.org/2011/gld/",
         "label": "Government Linked Data Working Group"
       }
     ],
@@ -4053,7 +4053,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/gld/",
+        "url": "https://www.w3.org/2011/gld/",
         "label": "Government Linked Data Working Group"
       }
     ],
@@ -4069,7 +4069,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2015/spatial/",
+        "url": "https://www.w3.org/2015/spatial/",
         "label": "Spatial Data on the Web Working Group"
       }
     ],
@@ -4093,7 +4093,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/ARIA/",
+        "url": "https://www.w3.org/WAI/ARIA/",
         "label": "Accessible Rich Internet Applications Working Group"
       }
     ],
@@ -4127,7 +4127,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WAI/GL/",
+        "url": "https://www.w3.org/WAI/GL/",
         "label": "Accessibility Guidelines Working Group"
       }
     ],
@@ -4153,11 +4153,11 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/members",
         "label": "Cascading Style Sheets (CSS) Working Group"
       },
       {
-        "url": "http://www.w3.org/Graphics/SVG/WG/",
+        "url": "https://www.w3.org/Graphics/SVG/WG/",
         "label": "SVG Working Group"
       }
     ],
@@ -4228,7 +4228,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/audio/",
+        "url": "https://www.w3.org/2011/audio/",
         "label": "Audio Working Group"
       }
     ],
@@ -4275,7 +4275,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/testing/browser/",
+        "url": "https://www.w3.org/testing/browser/",
         "label": "Browser Testing and Tools Working Group"
       }
     ],
@@ -4364,7 +4364,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4384,7 +4384,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4404,7 +4404,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4420,7 +4420,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/webapps/",
+        "url": "https://www.w3.org/2008/webapps/",
         "label": "Web Applications Working Group"
       }
     ],
@@ -4434,7 +4434,7 @@
     "status": "Retired",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/2008/webapps/",
+        "url": "https://www.w3.org/2008/webapps/",
         "label": "Web Applications Working Group"
       }
     ],
@@ -4450,7 +4450,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/WebPlatform/WG/",
+        "url": "https://www.w3.org/WebPlatform/WG/",
         "label": "Web Platform Working Group"
       }
     ],
@@ -4507,7 +4507,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/AudioVideo/TT/",
+        "url": "https://www.w3.org/AudioVideo/TT/",
         "label": "Timed Text Working Group"
       }
     ],
@@ -4583,7 +4583,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Fonts/WG/",
+        "url": "https://www.w3.org/Fonts/WG/",
         "label": "Web Fonts Working Group"
       }
     ],
@@ -4599,7 +4599,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Fonts/WG/",
+        "url": "https://www.w3.org/Fonts/WG/",
         "label": "Web Fonts Working Group"
       }
     ],
