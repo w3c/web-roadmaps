@@ -1,5 +1,5 @@
 {
-  "url": "https://wicg.github.io/feature-policy/",
+  "url": "https://w3.org/TR/feature-policy-1/",
   "impl": {
     "caniuse": "feature-policy",
     "chromestatus": 5694225681219584

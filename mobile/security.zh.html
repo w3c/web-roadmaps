@@ -60,15 +60,16 @@
         <p data-feature="Referrer Policy"><a data-featureid="referrer-policy">Referrer Policy</a> 可帮助 Web 开发者控制 <code>Referer</code> HTTP header 中包含的信息，或者是否发送该 header。</p>
 
         <p data-feature="沙盒"><a data-featureid="uisecurity">用户界面安全性和可见性 API</a> 文档建议通过确保图形渲染级别的元素可见性来消除点击劫持。例如，一个开发者部署它可以确保用户点击他们的网站的“支付”按钮不被欺骗，而不会把他们的银行余额转移给冒名顶替者。</p>
+
+        <div data-feature="特性策略">
+            <p>随着更强大的特性不断地暴露在应用中，站点作者需要更加细化地控制应用中启用/禁用的特性，以及应用可以嵌入（在 iframe 中）的自己或第三方的内容，以增强安全性。<a data-featureid="feature-policy">特性策略</a>定义了一种选择性地启用和禁用各种浏览器特性和API的机制（<code>Feature-Policy</code> HTTP头和 <code>iframe</code> 元素的 <code>allow</code> 属性）。开发者还可以使用该策略对客户端或嵌入者的某些特性和 API 的使用（或缺乏）作出承诺。</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
         <h2>探索性工作</h2>
         <div data-feature="Strengthened security">
           <p>跨站脚本（XSS）是Web上的主要攻击方式之一。<a data-featureid="trusted-types">可信任类型</a>允许应用锁定基于 DOM 的 XSS 注入接收器（例如，<code>Element.innerHTML</code> 或 <code>Location.href</code> 设置器），以仅接受不可欺骗的、含有类型的值来代替字符串。</p>
-        </div>
-        <div data-feature="特性策略">
-            <p>随着更强大的特性不断地暴露在应用中，站点作者需要更加细化地控制应用中启用/禁用的特性，以及应用可以嵌入（在 iframe 中）的自己或第三方的内容，以增强安全性。<a data-featureid="feature-policy">特性策略</a>定义了一种选择性地启用和禁用各种浏览器特性和API的机制（<code>Feature-Policy</code> HTTP头和 <code>iframe</code> 元素的 <code>allow</code> 属性）。开发者还可以使用该策略对客户端或嵌入者的某些特性和 API 的使用（或缺乏）作出承诺。</p>
         </div>
         <div data-feature="权限">
             <p>不同的API使用不同的机制来授予使用或访问潜在强大功能的权限。为了简化与权限相关的代码的设计，<a data-featureid="permissions-request">请求权限</a>和<a data-featureid="permissions-revoke">放弃权限</a>两个标准提议扩展<a href="https://www.w3.org/TR/permissions/">权限API</a>，以提供一个统一的方法请求和撤销权限。</p>
