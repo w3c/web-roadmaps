@@ -1523,17 +1523,19 @@
     "milestones": {}
   },
   "feature-policy": {
-    "url": "https://wicg.github.io/feature-policy/",
-    "repository": "https://github.com/wicg/feature-policy",
+    "url": "https://w3.org/TR/feature-policy-1/",
+    "edDraft": "https://w3c.github.io/webappsec-feature-policy/",
+    "repository": "https://github.com/w3c/webappsec-feature-policy",
     "title": "Feature Policy",
-    "status": "LS",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "http://www.w3.org/2011/webappsec/",
+        "label": "Web Application Security Working Group"
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "fetch": {
