@@ -14457,7 +14457,7 @@
         "status": "shipped",
         "notes": [
           "Partial support in IE refers to [significantly buggy behavior](https://web.archive.org/web/20170121011936/http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). ",
-          "Partial support in EDGE refers [to disappearing option elements on focusing the input element via tab](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/20066595/)."
+          "Partial support in Edge refers [to disappearing option elements on focusing the input element via tab](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/20066595/)."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist"
@@ -14497,7 +14497,10 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
+        "notes": [
+          "Supported through WKWebView and Safari but not through UIWebView"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist",
         "selected": true
@@ -15002,13 +15005,6 @@
       },
       {
         "ua": "opera",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=do-not-track",
-        "selected": true
-      },
-      {
-        "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=do-not-track",
@@ -18240,7 +18236,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
@@ -18527,7 +18523,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver",
         "selected": true
@@ -21462,9 +21458,6 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -23308,6 +23301,13 @@
         "href": "https://caniuse.com/#feat=resizeobserver"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -23358,8 +23358,7 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5705346022637568",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5705346022637568"
       },
       {
         "ua": "edge",
@@ -28194,11 +28193,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the \"Experimental Features\" developer menu"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -28388,7 +28383,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-share",
         "selected": true
