@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -229,6 +229,50 @@
 <section>
         <h2 id="change-history">Change History</h2>
         <section>
+          <h3 id="april-2019">April 2019</h3>
+          <p>The <a href="https://www.w3.org/2019/04/web-roadmaps/mobile/">April 2019</a> snapshot introduces a few additional technologies under incubation in the Web Platform Incubator Community Group and refreshes the status of other specifications. Changes made since the December 2018 snapshot:</p>
+          <dl>
+            <dt>Exploratory work</dt>
+            <dd><ul>
+              <li>Mention Cookie Store API in <a data-page="storage" href="storage.html">Data Storage</a></li>
+              <li>Mention KV Storage in <a data-page="storage" href="storage.html">Data Storage</a></li>
+              <li>Mention JS Self-Profiling API in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Mention Trusted Types in <a data-page="security" href="security.html">Security and Privacy</a></li>
+              <li>Rename Writable Files to Natife File System in <a data-page="storage" href="storage.html">Data Storage</a></li>
+            </ul></dd>
+
+            <dt>Technologies in progress</dt>
+            <dd><ul>
+              <li>Mention Clipboard API and Events in <a data-page="forms" href="forms.html">Forms</a></li>
+              <li>Mention Resize Observer in <a data-page="adaptation" href="adaptation.html">Device Adaptation</a></li>
+              <li>Move CSS Mobile Text Size to technologies in progress in <a data-page="adaptation" href="adaptation.html">Device Adaptation</a></li>
+              <li>Move CSS Overscroll Behavior to technologies in progress in <a data-page="performance" href="performance.html">Performance and Tuning</a></li>
+              <li>Move Feature Policy to technologies in progress in <a data-page="security" href="security.html">Security and Privacy</a></li>
+              <li>Move DeviceOrientation Event Specification to technologies in progress and update description in <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a></li>
+            </ul></dd>
+
+            <dt>Well-deployed technologies</dt>
+            <dd><ul>
+              <li>Move Media Capture and Streams to well-deployed technologies in <a data-page="sensors" href="sensors.html">Sensors and Local Interactions</a></li>
+            </ul></dd>
+
+            <dt>Discontinued features</dt>
+            <dd><ul>
+              <li>Mark Hardware Based Security Services as discontinued in <a data-page="security" href="security.html">Security and Privacy</a></li>
+              <li>Mark Tracking Preference Expression (also known as Do Not Track) as discontinued in <a data-page="security" href="security.html">Security and Privacy</a></li>
+            </ul></dd>
+
+          </dl>
+          <p>The implementation info has also been updated to reflect known implementation status in April 2019. Some of these updates may have been triggered by updates to underlying platform status sites. Main updates are:</p>
+          <ul>
+            <li>Accessible Rich Internet Applications (WAI-ARIA) 1.1 shipped in Chrome, see <a data-page="userinput" href="userinput.html">User Interaction</a></li>
+            <li>Source capabilities in Media Capture and Streams shipped in Chrome, see <a data-page="adaptation" href="adaptation.html">Device Adaptation</a></li>
+            <li>Streams shipped in Firefox (desktop only), see <a data-page="network" href="network.html">Network and Communications</a></li>
+            <li>Subresource Integrity shipped on all main browsers, see <a data-page="security" href="security.html">Security and Privacy</a></li>
+            <li>Web Animations shipped in Safari (desktop only), see <a data-page="graphics" href="graphics.html">Graphics and Layout</a></li>
+          </ul>
+        </section>
+        <section>
           <h3 id="december-2018">December 2018</h3>
           <p>The <a href="https://www.w3.org/2018/12/web-roadmaps/mobile/">December 2018</a> snapshot focuses on new incubation efforts recently started in the Web Platform Incubator Community Group (WICG) to close the gap with native. Changes made since the July 2018 snapshot:</p>
           <dl>
@@ -385,7 +429,7 @@
       </div>
     </main>
 
-    <aside id="side-nav">
+    <aside id="side-nav" data-js="true">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>
