@@ -291,8 +291,9 @@
   },
   "badging": {
     "url": "https://wicg.github.io/badging/",
+    "repository": "https://github.com/wicg/badging",
     "title": "Badging API",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -1496,8 +1497,9 @@
   },
   "event-timing": {
     "url": "https://wicg.github.io/event-timing/",
+    "repository": "https://github.com/wicg/event-timing",
     "title": "Event Timing API",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2128,8 +2130,9 @@
   },
   "js-self-profiling": {
     "url": "https://wicg.github.io/js-self-profiling/",
+    "repository": "https://github.com/wicg/js-self-profiling",
     "title": "JS Self-Profiling API",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2149,8 +2152,9 @@
   },
   "kv-storage": {
     "url": "https://wicg.github.io/kv-storage/",
+    "repository": "https://github.com/wicg/kv-storage",
     "title": "KV Storage",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2511,8 +2515,9 @@
   },
   "native-file-system": {
     "url": "https://wicg.github.io/native-file-system/",
+    "repository": "https://github.com/wicg/native-file-system",
     "title": "Native File System",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2841,8 +2846,9 @@
   },
   "permissions-request": {
     "url": "https://wicg.github.io/permissions-request/",
+    "repository": "https://github.com/wicg/permissions-request",
     "title": "Requesting Permissions",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2854,8 +2860,9 @@
   },
   "permissions-revoke": {
     "url": "https://wicg.github.io/permissions-revoke/",
+    "repository": "https://github.com/wicg/permissions-revoke",
     "title": "Relinquishing Permissions",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -3707,8 +3714,9 @@
   },
   "trusted-types": {
     "url": "https://wicg.github.io/trusted-types/dist/spec/",
+    "repository": "https://github.com/wicg/trusted-types",
     "title": "Trusted Types",
-    "status": "ED",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
