@@ -14,7 +14,7 @@
         <h2>广泛部署的技术</h2>
         <p data-feature="简单数据存储">对于简单的数据存储，<a data-featureid="webstorage">Web存储</a>规范提供了两个基本机制，<code>localStorage</code> 和 <code>sessionStorage</code>，前者可以无限期地保存数据，后者基于浏览器会话。</p>
 
-        <p data-feature="数据库查询/更新">在基于文件的访问之上，<a data-featureid="indexeddb">索引数据库 API</a>（IndexedDB）定义了一个与 JavaScript 集成的值和分层对象的数据库，并且可以非常有效地进行查询和更新 - <a href="https://w3c.github.io/IndexedDB/">第三版规范</a>正在开发中。</p>
+        <p data-feature="数据库查询/更新">在基于文件的访问之上，<a data-featureid="indexeddb">索引数据库 API</a>（IndexedDB）定义了一个与 JavaScript 集成的值和分层对象的数据库，并且可以非常有效地进行查询和更新 - <a href="https://w3c.github.io/IndexedDB/">3.0版</a>正在开发中。</p>
 
         <p data-feature="加密存储">对于需要加密的数据，<a href="https://www.w3.org/2012/webcrypto/">Web密码学工作组</a>提出的<a data-featureid="crypto">Web密码学API</a>为Web应用程序提供了强有力的加密原语，并且可以通过<a data-featureid="cryptokey">Web秘钥发现</a>API绑定到预先提供的密钥。</p>
 
@@ -35,6 +35,14 @@
 
         <div data-feature="文件操作">
           <p><a data-featureid="native-file-system">本地文件系统</a>规范是一个早期的API提议，建立在<a href="#fileapi">文件API</a>之上，允许网站获得对文件系统的写访问权。</p>
+        </div>
+
+        <div data-feature="简单数据存储">
+          <p><code>localStorage</code> 机制是一种简单的数据存储机制，但有一个问题：API 是同步的，而这会导致性能和跨窗口同步问题。索引数据库（IndexedDB）虽然是异步的，但很难用于简单的 get/set 操作。<a data-featureid="kv-storage">KV存储</a>规范描述了一个简单的异步键值存储API，作为 <code>localStorage</code> 的后续版本。该 API 基于 IndexedDB 之上，如果应用需要使用高级特性（例如事务、索引或游标），则可以转换到索引数据库。该标准在孵化后计划集成到索引数据库标准中。</p>
+        </div>
+
+        <div data-feature="状态管理">
+          <p>HTTP cookies 为 Web 提供了有效的状态管理机制，然而 <code>document.cookie</code> 接口的同步性一直是性能问题的来源之一，尤其是在浏览器使用多个进程和线程来尽可能地改善感知性能和响应度的情况下，这也包括处理能力通常比较有限的移动平台上。Worker因为无法访问DOM，也无法使用cookies。<a data-featureid="cookie-store">Cookie 存储 API</a> 为文档和 Worker 定义了一个异步的 Cookie API。</p>
         </div>
       </section>
 

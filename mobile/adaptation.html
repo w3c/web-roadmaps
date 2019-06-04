@@ -27,7 +27,12 @@
         <h2>Technologies in progress</h2>
         <div data-feature="CSS-based adaptation">
           <p><a data-featureid="css-device-adapt">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
+          <p><a data-featureid="css-size-adjust">CSS Mobile Text Size Adjustment</a> lets text adapt to zoomed parts of a page.</p>
           <p><a data-featureid="mediaqueries4">Media Queries Level 4</a> adds the availability and type of a pointing device, as well as the ability to hover over elements, to the list of capabilities that may be used to adapt the layout and behavior of a Web page. Moreover, <a data-featureid="mediaqueries5">Media Queries Level 5</a> lets developers specify media queries that react to the ambient luminosity and to <a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">script-defined variables</a>, making it easier to cater for more complex adaptation rules in the overall logic of the application.</p>
+        </div>
+
+        <div data-feature="JS-based adaptation">
+          <p>As described in <a href="https://wicg.github.io/cq-usecases/">Use Cases and Requirements for Element Queries</a>, developers need to control the layout of an individual element relative to the size of its container to create complex responsive applications that adapt to a wide variety of devices and contexts. Media queries and the <code>resize</code> event on the <code>window</code> element only allow developers to adjust the layout of a component relative to the viewport size. <a data-featureid="resize-observer">Resize Observer</a> defines an interface for observing changes to an element's size and responding to these changes, allowing to design responsive Web components that can be used across applications and devices.</p>
         </div>
 
         <div data-feature="Server-side adaptation">
@@ -39,10 +44,6 @@
 
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
-        <div data-feature="CSS-based adaptation">
-          <p>To create complex responsive applications that adapt to a wide variety of devices and contexts, developers typically require some control over the layout of an individual component relative to the size of its container. Media queries only allow developers to adjust the layout of a component relative to the viewport size. The <a data-featureid="element-queries">Element queries</a> (also known as <em>Container queries</em>) proposal explores a method to control styling based on the size of a containing element.</p>
-          <p><a data-featureid="css-size-adjust">CSS Mobile Text Size Adjustment</a> lets text adapt to zoomed parts of a page.</p>
-        </div>
         <div data-feature="JS-based adaptation">
           <p>Most mobile devices feature on-screen keyboards for user input. They also commonly let the user pinch-zoom into a page. Both of these features preserve the <em>layout viewport</em> (what the web page uses when laying out its user interface), so as not to clutter the screen with <code>position: fixed</code> elements. The <a data-featureid="viewportapi">Visual Viewport API</a> provides developers with a way to query and interact with the properties of the <em>visual viewport</em> (the box on the page that the user can currently see), and to be notified when these properties change.</p>
         </div>
