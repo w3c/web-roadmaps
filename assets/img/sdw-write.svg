@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FC4F08;}
+	.st1{fill:none;stroke:#FC4F08;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FC4F08;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FDC9B6;}
+	.st4{fill:#FDC9B6;stroke:#FC4F08;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:#60B530;}
+	.st7{fill:none;stroke:#60B530;stroke-width:5.1121;stroke-miterlimit:10;}
+	.st8{fill:none;}
+	.st9{font-family:'MyriadPro-Regular';}
+	.st10{font-size:57px;}
+	.st11{fill:#FFFFFF;stroke:#60B530;stroke-width:6.0574;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<polygon class="st5" points="75,147 75,51 120.8,51 147,77.2 147,147 		"/>
+		<path class="st6" d="M119.5,54L144,78.5V144H78V54H119.5 M122,48H72v102h78V76L122,48L122,48z"/>
+	</g>
+	<g>
+		<polygon class="st5" points="14.6,69 3,69 3,3 100,3 100,69 23.5,69 14.8,80.3 		"/>
+		<g>
+			<path class="st6" d="M97,6v60H25h-3l-1.8,2.4l-2.5,3.3L17.6,66h-5.9H6V6H97 M103,0H0v72h11.7L12,89l13-17h78V0L103,0z"/>
+		</g>
+	</g>
+	<g>
+		<path class="st6" d="M81.7,107.8l16.8-8.2v3.6l-12.3,5.7v0.1l12.3,5.7v3.5L81.7,110V107.8z"/>
+		<path class="st6" d="M105.3,119.6l8.2-25.3h3l-8.2,25.3H105.3z"/>
+		<path class="st6" d="M140.3,110.5l-16.8,7.8v-3.5L137,109v-0.1l-13.4-5.8v-3.5l16.8,7.8V110.5z"/>
+	</g>
+	<g>
+		<polygon class="st5" points="125,73 125,55.2 142.8,73 		"/>
+		<path class="st6" d="M128,62.5l7.5,7.5H128V62.5 M122,48v28h28L122,48L122,48z"/>
+	</g>
+	<g>
+		<path class="st6" d="M57,112.7c0,10.1-18.3,37.3-18.3,37.3s-18.3-27.2-18.3-37.3s8.2-18.3,18.3-18.3S57,102.6,57,112.7z"/>
+		<circle class="st5" cx="38.7" cy="112.7" r="8.3"/>
+	</g>
+</g>
+<rect x="9.3" y="12.9" class="st8" width="84.4" height="45.2"/>
+<text transform="matrix(1 0 0 1 17.3299 53.321)" class="st6 st9 st10">{ ; }</text>
+</svg>
