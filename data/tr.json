@@ -136,15 +136,13 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2020-12-30"
-    },
+    "milestones": {},
     "features": {
       "background_color": {
         "title": "background_color member",
@@ -396,8 +394,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -496,7 +494,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group"
+        "label": "Web Applications Working Group (historical)"
       },
       {
         "url": "https://www.w3.org/2011/webappsec/",
@@ -1517,7 +1515,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group"
+        "label": "Web Applications Working Group (historical)"
       }
     ],
     "publisher": "W3C",
@@ -1562,8 +1560,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -1606,15 +1604,13 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "generic-sensor": {
     "url": "https://www.w3.org/TR/generic-sensor/",
@@ -2110,15 +2106,13 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "iso-19156-2011": {
     "url": "https://www.iso.org/standard/32574.html",
@@ -2234,8 +2228,10 @@
   },
   "me-media-timed-events": {
     "url": "https://w3c.github.io/me-media-timed-events/",
+    "edDraft": "https://w3c.github.io/me-media-timed-events/",
+    "repository": "https://github.com/w3c/me-media-timed-events",
     "title": "Media Timed Events",
-    "status": "ED",
+    "status": "NOTE",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2011/webtv/",
@@ -3034,8 +3030,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3231,15 +3227,13 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "screencapture": {
     "url": "https://www.w3.org/TR/screen-capture/",
@@ -4039,7 +4033,7 @@
     "url": "https://www.w3.org/TR/vocab-dcat-2/",
     "edDraft": "https://w3c.github.io/dxwg/dcat/",
     "repository": "https://github.com/w3c/dxwg",
-    "title": "Data Catalog Vocabulary (DCAT) - revised edition",
+    "title": "Data Catalog Vocabulary (DCAT) - Version 2",
     "status": "WD",
     "deliveredBy": [
       {
@@ -4429,7 +4423,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group"
+        "label": "Web Applications Working Group (historical)"
       }
     ],
     "publisher": "W3C",
@@ -4443,7 +4437,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group"
+        "label": "Web Applications Working Group (historical)"
       }
     ],
     "publisher": "W3C",
@@ -4636,7 +4630,7 @@
     "edDraft": "https://w3c.github.io/wot-architecture/",
     "repository": "https://github.com/w3c/wot-architecture",
     "title": "Web of Things (WoT) Architecture",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -4652,7 +4646,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -4668,7 +4662,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
