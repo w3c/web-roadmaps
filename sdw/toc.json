@@ -15,13 +15,13 @@
       {
         "url": "write.html",
         "title": "write spatial data",
-        "icon": "../assets/img/sdw-write.png",
+        "icon": "../assets/img/sdw-write.svg",
         "description": "Vocabularies, formats, to represent spatial data and geometries and to reference locations."
       },
       {
         "url": "publish.html",
         "title": "publish spatial data",
-        "icon": "../assets/img/sdw-publish.png",
+        "icon": "../assets/img/sdw-publish.svg",
         "description": "Guidelines for publishing spatial data, including description of datasets, for viewing, getting and querying the data."
       }
     ],
