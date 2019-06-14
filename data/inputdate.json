@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/sec-forms.html#date-state-typedate",
+  "url": "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)",
+  "title": "HTML (Living Standard)",
   "feature": "Date and time input types",
   "impl": {
     "caniuse": "input-datetime",

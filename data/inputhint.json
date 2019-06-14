@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/sec-forms.html#the-placeholder-attribute",
+  "url": "https://html.spec.whatwg.org/multipage/input.html#the-placeholder-attribute",
+  "title": "HTML (Living Standard)",
   "feature": "input placeholder attribute",
   "impl": {
     "caniuse": "input-placeholder"

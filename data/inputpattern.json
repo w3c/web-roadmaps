@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/sec-forms.html#the-pattern-attribute",
+  "url": "https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute",
+  "title": "HTML (Living Standard)",
   "feature": "pattern attribute for input fields",
   "impl": {
     "caniuse": "input-pattern"
