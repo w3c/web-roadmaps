@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#eventdef-media-timeupdate",
+  "url": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
+  "title": "HTML (Living Standard)",
   "feature": "timeupdate event",
   "impl": {
     "caniuse": "video"

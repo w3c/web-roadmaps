@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
+  "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+  "title": "HTML (Living Standard)",
   "feature": "video element",
   "impl": {
     "caniuse": "video"

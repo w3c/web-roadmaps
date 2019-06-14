@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
+  "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+  "title": "HTML (Living Standard)",
   "feature": "srcset attribute",
   "impl": {
     "caniuse": "srcset",

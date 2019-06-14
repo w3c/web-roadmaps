@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
+  "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+  "title": "HTML (Living Standard)",
   "feature": "datalist element",
   "impl": {
     "caniuse": "datalist",

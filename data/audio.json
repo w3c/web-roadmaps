@@ -1,5 +1,6 @@
 {
-  "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
+  "url": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
+  "title": "HTML (Living Standard)",
   "feature": "audio element",
   "impl": {
     "caniuse": "audio",

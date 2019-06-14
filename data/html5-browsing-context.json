@@ -1,4 +1,5 @@
 {
-  "url": "https://www.w3.org/TR/html52/browsers.html#sec-browsing-contexts",
+  "url": "https://html.spec.whatwg.org/multipage/browsers.html#windows",
+  "title": "HTML (Living Standard)",
   "feature" : "browsing context"
 }
