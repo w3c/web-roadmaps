@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
-  "title": "HTML (Living Standard)",
   "feature": "OffscreenCanvas",
   "impl": {
     "caniuse": "offscreencanvas",

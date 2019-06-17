@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
-  "title": "HTML (Living Standard)",
   "feature": "timeupdate event",
   "impl": {
     "caniuse": "video"

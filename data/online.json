@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/offline.html#navigator.online",
-  "title": "HTML (Living Standard)",
   "feature": "onLine DOM flag",
   "impl": {
     "caniuse": "online-status"

@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/links.html#downloading-resources",
-  "title": "HTML (Living Standard)",
   "feature" : "download attribute",
   "impl": {
     "caniuse": "download",

@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
-  "title": "HTML (Living Standard)",
   "impl": {
     "caniuse": "requestanimationframe",
     "chromestatus": 5233400470306816,

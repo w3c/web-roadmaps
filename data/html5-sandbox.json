@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
-  "title": "HTML (Living Standard)",
   "feature": "sandbox iframe attribute",
   "impl": {
     "caniuse": "iframe-sandbox",
