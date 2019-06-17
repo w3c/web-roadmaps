@@ -241,7 +241,13 @@ function getIdForReverseLookup(spec) {
     }
   }
   else {
-    return specUrl.split('#')[0];
+    let url = specUrl.split('#')[0];
+    if (url.includes('/multipage/') && url.endsWith('.html')) {
+      // Specref needs the URL without the final page for multipage specs
+      // (typical use case is references to HTML LS features)
+      url = url.split('/').slice(0, -1).join('/');
+    }
+    return url;
   }
 }
 

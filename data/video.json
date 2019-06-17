@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
-  "title": "HTML (Living Standard)",
   "feature": "video element",
   "impl": {
     "caniuse": "video"

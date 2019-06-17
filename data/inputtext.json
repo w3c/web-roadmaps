@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/input.html#e-mail-state-(type=email)",
-  "title": "HTML (Living Standard)",
   "feature": "tel, email, url input types",
   "impl": {
     "caniuse": "input-email-tel-url"

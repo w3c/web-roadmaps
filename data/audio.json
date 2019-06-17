@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
-  "title": "HTML (Living Standard)",
   "feature": "audio element",
   "impl": {
     "caniuse": "audio",

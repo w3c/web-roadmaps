@@ -1,6 +1,5 @@
 {
   "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
-  "title": "HTML (Living Standard)",
   "feature": "picture element",
   "impl": {
     "caniuse": "picture",
