@@ -64,19 +64,17 @@
     }
   },
   "animation-frames": {
-    "url": "https://www.w3.org/TR/html52/webappapis.html#animation-frames",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "requestAnimationFrame"
   },
@@ -207,19 +205,17 @@
     }
   },
   "audio": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "audio element"
   },
@@ -347,7 +343,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2018-12-30"
+      "PR": "2019-09-30"
     }
   },
   "budget-api": {
@@ -1237,19 +1233,17 @@
     }
   },
   "datalist": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-datalist-element",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "datalist element"
   },
@@ -1829,70 +1823,62 @@
     "milestones": {}
   },
   "html5-browsing-context": {
-    "url": "https://www.w3.org/TR/html52/browsers.html#sec-browsing-contexts",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/browsers.html#windows",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "browsing context"
   },
   "html5-download": {
-    "url": "https://www.w3.org/TR/html52/links.html#downloading-resources",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/links.html#downloading-resources",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "download attribute"
   },
   "html5-sandbox": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-iframe-sandbox",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "sandbox iframe attribute"
   },
   "htmlmediaelement": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-media-elements",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/media.html#media-elements",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "HTMLMediaElement interface"
   },
@@ -2001,19 +1987,17 @@
     "milestones": {}
   },
   "inputdate": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#date-state-typedate",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "Date and time input types"
   },
@@ -2032,19 +2016,17 @@
     "milestones": {}
   },
   "inputhint": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-placeholder-attribute",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/input.html#the-placeholder-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "input placeholder attribute"
   },
@@ -2065,36 +2047,32 @@
     "feature": "inputmode attribute"
   },
   "inputpattern": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#the-pattern-attribute",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "pattern attribute for input fields"
   },
   "inputtext": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#email-state-typeemail",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/input.html#e-mail-state-(type=email)",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "tel, email, url input types"
   },
@@ -2567,8 +2545,9 @@
   },
   "offscreencanvas": {
     "url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
-    "title": "HTML (Living Standard)",
-    "status": "ED",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
         "url": "https://whatwg.org",
@@ -2588,19 +2567,17 @@
     "milestones": {}
   },
   "online": {
-    "url": "https://www.w3.org/TR/html52/browsers.html#browser-state",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/offline.html#navigator.online",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "onLine DOM flag"
   },
@@ -2899,19 +2876,17 @@
     "milestones": {}
   },
   "picture": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-picture-element",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "picture element"
   },
@@ -3475,19 +3450,17 @@
     }
   },
   "srcset": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-img-srcset",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "srcset attribute"
   },
@@ -3639,19 +3612,17 @@
     "milestones": {}
   },
   "timeupdate": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#eventdef-media-timeupdate",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "timeupdate event"
   },
@@ -3949,19 +3920,17 @@
     "milestones": {}
   },
   "video": {
-    "url": "https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "video element"
   },
@@ -4519,17 +4488,16 @@
   },
   "webworkers": {
     "url": "https://html.spec.whatwg.org/multipage/workers.html",
-    "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
     "repository": "https://github.com/whatwg/html",
-    "title": "HTML (Living Standard)",
-    "status": "WD",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2008/webapps/",
-        "label": "W3C"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "Web workers"
   },

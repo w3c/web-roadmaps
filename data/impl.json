@@ -2343,14 +2343,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5712608971718656",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5712608971718656",
         "selected": true
@@ -17452,6 +17452,13 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=download",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "experimental",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=download",
         "selected": true
