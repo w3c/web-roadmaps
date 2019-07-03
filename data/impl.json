@@ -450,7 +450,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5762982487261184",
         "selected": true

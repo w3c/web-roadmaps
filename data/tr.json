@@ -82,7 +82,7 @@
     "url": "https://wicg.github.io/animation-worklet/",
     "repository": "https://github.com/wicg/animation-worklet",
     "title": "CSS Animation Worklet API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -259,7 +259,7 @@
     "url": "https://wicg.github.io/background-fetch/",
     "repository": "https://github.com/wicg/background-fetch",
     "title": "Background Fetch",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -273,7 +273,7 @@
     "url": "https://wicg.github.io/BackgroundSync/spec/",
     "repository": "https://github.com/wicg/BackgroundSync",
     "title": "Web Background Synchronization",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -287,7 +287,7 @@
     "url": "https://wicg.github.io/badging/",
     "repository": "https://github.com/wicg/badging",
     "title": "Badging API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -350,7 +350,7 @@
     "url": "https://wicg.github.io/budget-api/",
     "repository": "https://github.com/wicg/budget-api",
     "title": "Web Budget API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -457,7 +457,7 @@
     "url": "https://wicg.github.io/cookie-store/",
     "repository": "https://github.com/wicg/cookie-store",
     "title": "Cookie Store API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -1491,7 +1491,7 @@
     "url": "https://wicg.github.io/event-timing/",
     "repository": "https://github.com/wicg/event-timing",
     "title": "Event Timing API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -1566,7 +1566,7 @@
     "url": "https://wicg.github.io/frame-timing/",
     "repository": "https://github.com/wicg/frame-timing",
     "title": "Frame Timing",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2005,7 +2005,7 @@
     "url": "https://wicg.github.io/InputDeviceCapabilities/",
     "repository": "https://github.com/wicg/InputDeviceCapabilities",
     "title": "Input Device Capabilities",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2104,7 +2104,7 @@
     "url": "https://wicg.github.io/js-self-profiling/",
     "repository": "https://github.com/wicg/js-self-profiling",
     "title": "JS Self-Profiling API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2126,7 +2126,7 @@
     "url": "https://wicg.github.io/kv-storage/",
     "repository": "https://github.com/wicg/kv-storage",
     "title": "KV Storage",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2223,7 +2223,7 @@
     "url": "https://wicg.github.io/media-capabilities/",
     "repository": "https://github.com/wicg/media-capabilities",
     "title": "Media Capabilities",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2261,7 +2261,7 @@
     "url": "https://wicg.github.io/media-playback-quality/",
     "repository": "https://github.com/wicg/media-playback-quality",
     "title": "Media Playback Quality",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2365,7 +2365,7 @@
     "url": "https://wicg.github.io/mediasession/",
     "repository": "https://github.com/wicg/mediasession",
     "title": "Media Session",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2491,7 +2491,7 @@
     "url": "https://wicg.github.io/native-file-system/",
     "repository": "https://github.com/wicg/native-file-system",
     "title": "Native File System",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2519,7 +2519,7 @@
     "url": "https://wicg.github.io/netinfo/",
     "repository": "https://github.com/wicg/netinfo",
     "title": "Network Information API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2665,7 +2665,7 @@
     "url": "https://wicg.github.io/page-lifecycle/spec.html",
     "repository": "https://github.com/wicg/page-lifecycle",
     "title": "Page Lifecycle",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2719,9 +2719,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "payment-method-basic-card": {
     "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -2754,7 +2752,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-04-02",
+      "CR": "2019-06-30",
+      "PR": "2019-09-30",
       "REC": "2019-12-30"
     }
   },
@@ -2789,7 +2788,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-03-30",
+      "CR": "2019-06-30",
       "PR": "2019-09-30",
       "REC": "2019-12-30"
     }
@@ -2821,7 +2820,7 @@
     "url": "https://wicg.github.io/permissions-request/",
     "repository": "https://github.com/wicg/permissions-request",
     "title": "Requesting Permissions",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2835,7 +2834,7 @@
     "url": "https://wicg.github.io/permissions-revoke/",
     "repository": "https://github.com/wicg/permissions-revoke",
     "title": "Relinquishing Permissions",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2865,7 +2864,7 @@
     "url": "https://wicg.github.io/picture-in-picture/",
     "repository": "https://github.com/wicg/picture-in-picture",
     "title": "Picture-in-Picture",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -2957,7 +2956,7 @@
     "url": "https://wicg.github.io/priority-hints/",
     "repository": "https://github.com/wicg/priority-hints",
     "title": "Priority Hints",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -3237,7 +3236,7 @@
     "url": "https://wicg.github.io/scroll-animations/",
     "repository": "https://github.com/wicg/scroll-animations",
     "title": "Scroll-linked Animations",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -3375,7 +3374,7 @@
     "url": "https://wicg.github.io/shape-detection-api",
     "repository": "https://github.com/wicg/shape-detection-api",
     "title": "Accelerated Shape Detection in Images",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -3681,7 +3680,7 @@
     "url": "https://wicg.github.io/trusted-types/dist/spec/",
     "repository": "https://github.com/wicg/trusted-types",
     "title": "Trusted Types",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -3974,7 +3973,7 @@
     "url": "https://wicg.github.io/visual-viewport/",
     "repository": "https://github.com/wicg/visual-viewport",
     "title": "Visual Viewport API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -4140,7 +4139,7 @@
     "url": "https://wicg.github.io/web-locks/",
     "repository": "https://github.com/wicg/web-locks",
     "title": "Web Locks API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -4154,7 +4153,7 @@
     "url": "https://wicg.github.io/web-share-target/",
     "repository": "https://github.com/wicg/web-share-target",
     "title": "Web Share Target API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -4168,7 +4167,7 @@
     "url": "https://wicg.github.io/web-share/",
     "repository": "https://github.com/wicg/web-share",
     "title": "Web Share API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
@@ -4433,7 +4432,7 @@
     "url": "https://wicg.github.io/webusb/",
     "repository": "https://github.com/wicg/webusb",
     "title": "WebUSB API",
-    "status": "LS",
+    "status": "ED",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/wicg/",
