@@ -1243,6 +1243,14 @@
       }
     }
   },
+  "csw": {
+    "url": "http://www.opengeospatial.org/standards/cat",
+    "title": "OGC® Catalogue Services 3.0 - General Model",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
   "datalist": {
     "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
     "repository": "https://github.com/whatwg/html",
