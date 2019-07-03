@@ -80,6 +80,10 @@
             <p>CSS 的 <a data-featureid="css-contain">contain</a> 属性可以指示某个元素的子树独立于页面的其余部分。这让用户代理能够进行大量优化，尤其是跳过屏幕外已知不会影响屏幕上内容呈现的部分。</p>
         </div>
 
+        <div data-feature="动画优化">
+          <p><a data-featureid="animation-worklet">CSS Animation Worklet API</a>提供了一种使用 JavaScript 创建动画的方法。该API使用户代理可以在专用的线程中运行动画，降低主线程的压力。</p>
+        </div>
+
         <div data-feature="底层字节码格式">
             <p><a data-featureid="webassembly">Web 汇编</a>是一种低级别的字节码格式，它在网络浏览器中可以以接近本机的速度运行，并支持从C/C++和其他语言进行编译。它还定义了一个试图最大限度地提高性能的执行环境，并与 JavaScript 和 Web 进行良性合作，确保各种实现的安全性和行为一致性。</p>
         </div>
@@ -108,10 +112,6 @@
 
         <div data-feature="网络优先级">
           <p><a data-featureid="priority-hints">优先级提示</a>规范允许开发人员通知用户代理需要下载的每个资源的优先级，与现有的浏览器加载机制（如preload）互补。</p>
-        </div>
-
-        <div data-feature="动画优化">
-            <p><a data-featureid="animation-worklet">CSS Animation Worklet API</a>提供了一种使用 JavaScript 创建动画的方法。该API使用户代理可以在专用的线程中运行动画，降低主线程的压力。</p>
         </div>
 
         <div data-feature="DOM更新">
