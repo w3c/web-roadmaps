@@ -39,6 +39,7 @@ const maturityMapping = {
   'LastCall': 'WD',
   'Unofficial Draft': 'ED',
   'Draft Community Group Report': 'ED',
+  'cg-draft': 'ED',
   'Living Standard': 'LS',
   'Group Note': 'NOTE',
   'Proposed Standard': 'CR',
