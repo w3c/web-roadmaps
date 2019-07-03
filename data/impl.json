@@ -12583,7 +12583,7 @@
   "css-line-grid-1": {
     "implementations": []
   },
-  "css-overscroll-behavior": {
+  "css-overscroll": {
     "implementations": [
       {
         "ua": "edge",

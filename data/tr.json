@@ -79,17 +79,19 @@
     "feature": "requestAnimationFrame"
   },
   "animation-worklet": {
-    "url": "https://wicg.github.io/animation-worklet/",
-    "repository": "https://github.com/wicg/animation-worklet",
+    "url": "https://www.w3.org/TR/css-animation-worklet-1/",
+    "edDraft": "https://drafts.css-houdini.org/css-animationworklet-1/",
+    "repository": "https://github.com/w3c/css-houdini-drafts",
     "title": "CSS Animation Worklet API",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "annotation-model": {
@@ -1019,11 +1021,20 @@
     "informative": false,
     "milestones": {}
   },
-  "css-overscroll-behavior": {
-    "url": "https://drafts.csswg.org/css-overscroll-behavior/",
+  "css-overscroll": {
+    "url": "https://www.w3.org/TR/css-overscroll-1/",
+    "edDraft": "https://drafts.csswg.org/css-overscroll-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Overscroll Behavior Module Level 1",
-    "status": "ED",
-    "deliveredBy": [],
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "css-page-3": {
