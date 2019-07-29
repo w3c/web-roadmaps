@@ -210,6 +210,8 @@ let sources = {
           case 'No longer pursuing':
           case 'Public skepticism':
           case 'Opposed':
+          case 'Removed':
+          case 'Deprecated':
             res.status = '';
             break;
           default:
