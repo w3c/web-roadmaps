@@ -846,7 +846,7 @@
   },
   "css-content-3": {
     "url": "https://www.w3.org/TR/css-content-3/",
-    "edDraft": "https://drafts.csswg.org/css-content/",
+    "edDraft": "https://drafts.csswg.org/css-content-3/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Generated Content Module Level 3",
     "status": "WD",
@@ -3417,7 +3417,7 @@
     "milestones": {}
   },
   "speech-api-recognition": {
-    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "url": "https://w3c.github.io/speech-api/",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [
@@ -3431,7 +3431,7 @@
     "feature": "Speech recognition"
   },
   "speech-api-synthesis": {
-    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "url": "https://w3c.github.io/speech-api/",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [
@@ -3445,7 +3445,7 @@
     "feature": "Speech synthesis"
   },
   "speech-api": {
-    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/9a0075d25326/speechapi.html",
+    "url": "https://w3c.github.io/speech-api/",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [

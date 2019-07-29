@@ -13046,9 +13046,6 @@
       {
         "ua": "firefox",
         "status": "shipped",
-        "notes": [
-          "Supports properties from an [older version](https://www.w3.org/TR/2015/WD-css-snappoints-1-20150326/) of the spec."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints",
         "selected": true
@@ -14013,6 +14010,18 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "scroll-behavior",
+          "getBoundingClientRect"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -14050,17 +14059,6 @@
       },
       {
         "ua": "safari_ios",
-        "status": "shipped",
-        "source": "caniuse",
-        "guess": true,
-        "features": [
-          "getBoundingClientRect"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "guess": true,
@@ -14174,6 +14172,16 @@
           {
             "ua": "firefox_android",
             "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-scroll-behavior",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "notes": [
+              "Partial support refers to support everything except of `Element.scrollIntoView()` and not together with pinch viewport."
+            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=css-scroll-behavior",
             "selected": true
@@ -14314,6 +14322,13 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -14341,14 +14356,6 @@
             "source": "caniuse",
             "guess": true,
             "partial": true
-          },
-          {
-            "ua": "uc_android",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
-            "partial": true,
-            "selected": true
           },
           {
             "ua": "baidu_android",
@@ -14522,6 +14529,13 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -14545,13 +14559,6 @@
           },
           {
             "ua": "safari_ios",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
@@ -15494,6 +15501,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=eme",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=eme",
@@ -18888,7 +18902,7 @@
       },
       {
         "ua": "firefox",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6428344899862528",
         "selected": true
@@ -20117,6 +20131,16 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=mediasource",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "experimental",
+        "notes": [
+          "Fully supported only in iPadOS 13 and later."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediasource",
         "selected": true
@@ -22132,16 +22156,6 @@
         "selected": true
       },
       {
-        "ua": "firefox",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in Firefox Nightly only via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture"
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -23306,9 +23320,6 @@
       {
         "ua": "uc_android",
         "status": "shipped",
-        "notes": [
-          "Chrome does not support `same-origin`, `strict-origin`, or `strict-origin-when-cross-origin` values ([issue 627968](https://bugs.chromium.org/p/chromium/issues/detail?id=627968))"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -30131,8 +30142,7 @@
           "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr",
-        "selected": true
+        "href": "https://caniuse.com/#feat=webvr"
       },
       {
         "ua": "chrome_android",
@@ -30165,8 +30175,15 @@
         "selected": true
       },
       {
+        "ua": "chrome",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4532810371039232",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4532810371039232",
         "selected": true
@@ -30636,6 +30653,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=woff2",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=woff2",
