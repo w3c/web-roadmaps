@@ -17,14 +17,14 @@
       </section>
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
-        <p data-feature="Realtime distribution">When broadcasting popular live events on an IP network, content distribution should introduce as little latency as possible. <a data-featureid="p2p">WebRTC</a> technologies may be used to reach sub-second latency. Additionally, these technologies may also be used to create a peer-to-peer content delivery network and spread the load of video distribution among watchers.</p>
-      </section>
-      <section class="featureset exploratory-work">
-        <h2>Exploratory work</h2>
         <div data-feature="Capabilities and quality">
           <p>To improve the user experience and take advantage of advanced device capabilities when they are available, media providers need to know the decoding (and encoding) capabilities of the user's device. Can the device decode a particular codec at a given resolution, bitrate and framerate? Will the playback be smooth and power efficient? Can the display render high dynamic range (HDR) and wide color gamut content? The <a data-featureid="media-capabilities">Media Capabilities</a> specification defines an API to expose that information, with a view to replacing the more basic and vague <code>canPlayType()</code> and <code>isTypeSupported()</code> functions defined in HTML and MSE.</p>
           <p>Media providers also need some mechanism to assess the user's perceived playback quality to alter the quality of content transmitted using adaptive streaming. The <a data-featureid="media-playback-quality">Media Playback Quality</a> specification, initially part of MSE, exposes metrics on the number of frames that were displayed or dropped.</p>
         </div>
+        <p data-feature="Realtime distribution">When broadcasting popular live events on an IP network, content distribution should introduce as little latency as possible. <a data-featureid="p2p">WebRTC</a> technologies may be used to reach sub-second latency. Additionally, these technologies may also be used to create a peer-to-peer content delivery network and spread the load of video distribution among watchers.</p>
+      </section>
+      <section class="featureset exploratory-work">
+        <h2>Exploratory work</h2>
         <div data-feature="Adaptive streaming">
           <p>A media stream may be composed of different programs that use different encodings, or may need to embed ads that have different characteristics. Applications cannot easily and smoothly merge these heterogeneous sub-streams back into one stream using Media Source Extensions (MSE), as it does not support this use case. Content providers need to work around this limitation, e.g. transcoding and re-packaging the ad content to be consistent with the program content prior to distribution where possible. Work on a <a data-featureid="mse-v2/codec-switching">codec switching feature for MSE</a> has started to address this issue.</p>
         </div>

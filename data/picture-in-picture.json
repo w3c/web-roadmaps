@@ -1,5 +1,5 @@
 {
-  "url": "https://wicg.github.io/picture-in-picture/",
+  "url": "https://w3c.github.io/picture-in-picture/",
   "impl": {
     "caniuse": "picture-in-picture",
     "chromestatus": 5729206566649856,
