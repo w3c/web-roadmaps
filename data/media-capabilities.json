@@ -15,5 +15,11 @@
         "chromestatus": 5869632707624960
       }
     }
-  }
+  },
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ]
 }
