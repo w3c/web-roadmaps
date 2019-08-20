@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="メニュー開く" data-altclose="メニュー閉じる">
         </button>
         <div class="brand">
@@ -58,7 +58,7 @@
           <dd><a data-featureid="websql" id="websql" href="https://www.w3.org/TR/webdatabase/">client-side SQL-based database</a> の開発は 2009 年に開始しましたが、IndexedDB の開発に伴い放棄されました。</dd>
 
           <dt>アドレス帳データ (Address book data)</dt>
-          <dd>コミュニケーション用アプリケーションではユーザの既存のデータと連携することは有益で、モバイルデバイスではアドレス帳はその情報として特に有用です。ブラウザ外のウェブアプリケーション向けには <a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a> にて純粋な技術的検討が行われていましたが、WG は閉鎖され <a data-featureid="contacts-sys" id="contacts-sys" href="https://www.w3.org/TR/contacts-manager-api/">Contacts Manager API</a> についての作業は予定されていません。HTML ではウェブブラウザがアドレス帳のデータを再利用可能になる<a data-featureid="autocomplete" id="autocomplete" href="https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute">コンタクト情報に関する自動補完フィールド</a>を提供しています。</dd>
+          <dd>コミュニケーション用アプリケーションではユーザの既存のデータと連携することは有益で、モバイルデバイスではアドレス帳はその情報として特に有用です。ブラウザ外のウェブアプリケーション向けには <a href="https://www.w3.org/2012/05/sysapps-wg-charter.html">System Applications Working Group</a> にて純粋な技術的検討が行われていましたが、WG は閉鎖され <a data-featureid="contacts-sys" id="contacts-sys" href="https://www.w3.org/TR/contacts-manager-api/">Contacts Manager API</a> についての作業は予定されていません。HTML ではウェブブラウザがアドレス帳のデータを再利用可能になる<a data-featureid="autocomplete" id="autocomplete" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute">コンタクト情報に関する自動補完フィールド</a>を提供しています。</dd>
         </dl>
       </section></div>
         </section>
@@ -77,7 +77,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="generatedID-4">ロードマップページ</h2>
       <nav>
         <ul>

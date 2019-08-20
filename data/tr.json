@@ -222,19 +222,17 @@
     "feature": "audio element"
   },
   "autocomplete": {
-    "url": "https://www.w3.org/TR/html52/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute",
-    "edDraft": "https://w3c.github.io/html/",
-    "repository": "https://github.com/w3c/html",
-    "title": "HTML 5.2",
-    "status": "REC",
+    "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {},
     "feature": "autocomplete attribute",
     "features": {
