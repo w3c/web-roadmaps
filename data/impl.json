@@ -708,7 +708,7 @@
       },
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -721,7 +721,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -731,6 +731,7 @@
           "related_applications",
           "theme_color"
         ],
+        "flag": true,
         "partial": true
       }
     ],
@@ -1053,14 +1054,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6690807302062080",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6690807302062080",
             "selected": true

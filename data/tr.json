@@ -245,13 +245,13 @@
     }
   },
   "autoplay": {
-    "url": "https://github.com/wicg/autoplay",
-    "title": "Autoplay Policy",
+    "url": "https://github.com/w3c/autoplay",
+    "title": "Autoplay Policy Detection",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2239,14 +2239,14 @@
     "milestones": {}
   },
   "media-capabilities": {
-    "url": "https://wicg.github.io/media-capabilities/",
-    "repository": "https://github.com/wicg/media-capabilities",
+    "url": "https://w3c.github.io/media-capabilities/",
+    "repository": "https://github.com/w3c/media-capabilities",
     "title": "Media Capabilities",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2277,14 +2277,14 @@
     "milestones": {}
   },
   "media-playback-quality": {
-    "url": "https://wicg.github.io/media-playback-quality/",
-    "repository": "https://github.com/wicg/media-playback-quality",
+    "url": "https://w3c.github.io/media-playback-quality/",
+    "repository": "https://github.com/w3c/media-playback-quality",
     "title": "Media Playback Quality",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2381,14 +2381,14 @@
     }
   },
   "mediasession": {
-    "url": "https://wicg.github.io/mediasession/",
-    "repository": "https://github.com/wicg/mediasession",
+    "url": "https://w3c.github.io/mediasession/",
+    "repository": "https://github.com/w3c/mediasession",
     "title": "Media Session",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2681,7 +2681,7 @@
     "milestones": {}
   },
   "page-lifecycle": {
-    "url": "https://wicg.github.io/page-lifecycle/spec.html",
+    "url": "https://wicg.github.io/page-lifecycle/",
     "repository": "https://github.com/wicg/page-lifecycle",
     "title": "Page Lifecycle",
     "status": "ED",
@@ -2880,14 +2880,14 @@
     "milestones": {}
   },
   "picture-in-picture": {
-    "url": "https://wicg.github.io/picture-in-picture/",
-    "repository": "https://github.com/wicg/picture-in-picture",
+    "url": "https://w3c.github.io/picture-in-picture/",
+    "repository": "https://github.com/w3c/picture-in-picture",
     "title": "Picture-in-Picture",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
