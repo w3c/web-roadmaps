@@ -17,13 +17,16 @@
         <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
       </section>
+      <section class="featureset in-progress">
+        <h2>Specifications in progress</h2>
+        <div data-feature="Adaptive streaming">
+          <p>Some scenarios require the ability to switch to a different codec during media playback. For instance, this need may arise on program boundaries when watching linear content. Also, typical ads are of a very different nature than the media stream that they need to be inserted into. The first version of the Media Source Extensions (MSE) specification does not address such heterogeneous scenarios, forcing content providers to use complex workarounds, e.g. using two <code>&lt;video&gt;</code> elements overlaid one top of the other with no guarantees that transition between streams will be smooth, or transcoding and re-packaging the ad content to be consistent with the program content. The Media Working Group is integrating a <a data-featureid="mse-v2/codec-switching">codec switching feature</a> in a second version of MSE.</p>
+        </div>
+      </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <div data-feature="Video processing">
           <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
-        </div>
-        <div data-feature="Adaptive streaming">
-          <p>Some scenarios require the ability to switch to a different codec during media playback. For instance, this need may arise on program boundaries when watching linear content. Also, typical ads are of a very different nature than the media stream that they need to be inserted into. The first version of the Media Source Extensions (MSE) specification does not address such heterogeneous scenarios, forcing content providers to use complex workarounds, e.g. using two <code>&lt;video&gt;</code> elements overlaid one top of the other with no guarantees that transition between streams will be smooth, or transcoding and re-packaging the ad content to be consistent with the program content. The Web Platform Incubator Working Group is incubating a <a data-featureid="mse-v2/codec-switching">codec switching feature for MSE</a>, to be integrated in a second version of MSE.</p>
         </div>
       </section>
       <section>

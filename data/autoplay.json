@@ -1,4 +1,10 @@
 {
-  "url": "https://github.com/wicg/autoplay",
-  "title": "Autoplay Policy"
+  "url": "https://github.com/w3c/autoplay",
+  "title": "Autoplay Policy Detection",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ]
 }

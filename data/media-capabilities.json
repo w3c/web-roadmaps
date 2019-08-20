@@ -1,5 +1,5 @@
 {
-  "url": "https://wicg.github.io/media-capabilities/",
+  "url": "https://w3c.github.io/media-capabilities/",
   "features": {
     "encoding": {
       "title": "Encoding capabilities",
@@ -15,5 +15,11 @@
         "chromestatus": 5869632707624960
       }
     }
-  }
+  },
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ]
 }

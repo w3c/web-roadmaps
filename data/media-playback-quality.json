@@ -1,3 +1,9 @@
 {
-  "url": "https://wicg.github.io/media-playback-quality/"
+  "url": "https://w3c.github.io/media-playback-quality/",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ]
 }
