@@ -1695,6 +1695,8 @@
   },
   "geolocation": {
     "url": "https://www.w3.org/TR/geolocation-API/",
+    "edDraft": "https://w3c.github.io/geolocation-api/",
+    "repository": "https://github.com/w3c/geolocation-api",
     "title": "Geolocation API Specification 2nd Edition",
     "status": "REC",
     "deliveredBy": [
@@ -3402,16 +3404,19 @@
     "milestones": {}
   },
   "spatial-navigation": {
-    "url": "https://github.com/WICG/spatial-navigation",
-    "title": "Spatial Navigation",
-    "status": "ED",
+    "url": "https://www.w3.org/TR/css-nav-1/",
+    "edDraft": "https://drafts.csswg.org/css-nav-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Spatial Navigation Level 1",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "speech-api-recognition": {
