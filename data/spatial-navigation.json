@@ -1,6 +1,5 @@
 {
-  "url": "https://github.com/WICG/spatial-navigation",
-  "title": "Spatial Navigation",
+  "url": "https://www.w3.org/TR/css-nav-1/",
   "polyfills": [
     {
       "label": "Spatial Navigation Polyfill",
