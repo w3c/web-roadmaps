@@ -33,8 +33,20 @@
           <ul>
             <li>The <a data-featureid="secondscreen">Presentation API</a> offers the possibility for a Web page to open and control a page located on another screen from a mobile device, opening the road for multi-screen Web applications.</li>
             <li>The <a data-featureid="remote-playback">Remote Playback API</a> focuses more specifically on controlling the rendering of media on a separate device.</li>
+            <li>The <a data-featureid="picture-in-picture">Picture-in-Picture</a> specification allows applications to initiate and control the rendering of a video in a separate miniature window that is viewable above all other activities.</li>
             <li>The <a data-featureid="audio-output">Audio Output Devices API</a> offers similar functionality for audio streams, enabling a Web application to pick on which audio output devices a given sound should be played on.</li>
           </ul>
+        </div>
+
+        <div data-feature="Capabilities and quality">
+          <p>Mobile devices have widely heterogeneous decoding (and encoding) capabilities. To improve the user experience and take advantage of advanced device capabilities when they are available, media providers e.g. need to know whether the user's device can decode a particular codec at a given resolution, bitrate and framerate. Will the playback be smooth and power efficient? Can the display render HDR and wide color gamut content? The <a data-featureid="media-capabilities">Media Capabilities</a> specification defines an API to expose that information, with a view to replacing the more basic and vague <code>isTypeSupported()</code> and <code>canPlayType()</code> functions defined in HTML.</p>
+          <p>Media providers also need some mechanism to assess the user's perceived playback quality to alter the quality of content transmitted using adaptive streaming. The <a data-featureid="media-playback-quality">Media Playback Quality</a> specification, initially part of Media Source Extensions, exposes metrics on the number of frames that were displayed or dropped.</p>
+        </div>
+
+        <p data-feature="Media focus">Mobile devices often expose shortcuts to handle the audio output of a main application (e.g. a music player) from a lock screen or the notification areas. The underlying operating system is in charge of determining which of these applications should have the media focus. The <a data-featureid="mediasession">Media session</a> specification exposes these changes of focus to Web applications.</p>
+
+        <div data-feature="Autoplay">
+          <p>To preserve bandwidth, memory and battery on mobile, and prevent possibly unwanted media playback, browsers have put autoplay policies into place and may deny automated playback of media content. The <a data-featureid="autoplay">Autoplay Policy Detection</a> specification is an early proposal to let applications know whether autoplay will succeed for a given media element.</p>
         </div>
 
         <div data-feature="Rendering in VR/AR headsets">
@@ -53,11 +65,8 @@
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
 
-        <p data-feature="Media focus">Mobile devices often expose shortcuts to handle the audio output of a main application (e.g. a music player) from a lock screen or the notification areas. The underlying operating system is in charge of determining which of these applications should have the media focus. The <a data-featureid="mediasession">Media session</a> specification would expose these changes of focus to Web applications.</p>
-
         <div data-feature="Distributed rendering">
           <p>The Multi-Device Timing Community Group is exploring another aspect of multi-device media rendering: its <a data-featureid="timing">Timing Object</a> specification enables to keep video, audio and other data streams in close synchrony, across devices and independently of the network topology. This effort needs support from interested parties to progress.</p>
-          <p>The <a data-featureid="picture-in-picture">Picture-in-Picture</a> proposal would allow applications to initiate and control the rendering of a video in a separate miniature window that is viewable above all other activities.</p>
           <p>To improve the interoperability of implementations of the Presentation API and Remote Playback API, in particular between the first and second screen, the Second Screen Community Group is discussing requirements for an <a data-featureid="secondscreen-openscreen">Open Screen Protocol</a>.</p>
         </div>
 
@@ -65,17 +74,8 @@
           <p>New mobile screens can render content in high resolution using a broader color space beyond the classical sRGB color space. To adapt to wide-gamut displays, all the graphical systems of the Web will need to adapt to these broader color spaces. <a data-featureid="css-color-space/icc-colors">CSS Colors Level 4</a> is proposing to define CSS colors in color spaces beyond the classical sRGB. Similarly, work on <a data-featureid="color-canvas">making canvas color-managed</a> should enhance the support for colors in HTML Canvas.</p>
         </div>
 
-        <div data-feature="Capabilities and quality">
-          <p>Mobile devices have widely heterogeneous decoding (and encoding) capabilities. To improve the user experience and take advantage of advanced device capabilities when they are available, media providers e.g. need to know whether the user's device can decode a particular codec at a given resolution, bitrate and framerate. Will the playback be smooth and power efficient? Can the display render HDR and wide color gamut content? The <a data-featureid="media-capabilities">Media Capabilities</a> specification defines an API to expose that information, with a view to replacing the more basic and vague <code>isTypeSupported()</code> and <code>canPlayType()</code> functions defined in HTML.</p>
-          <p>Media providers also need some mechanism to assess the user's perceived playback quality to alter the quality of content transmitted using adaptive streaming. The <a data-featureid="media-playback-quality">Media Playback Quality</a> specification, initially part of Media Source Extensions, exposes metrics on the number of frames that were displayed or dropped.</p>
-        </div>
-
         <div data-feature="Video processing">
           <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
-        </div>
-
-        <div data-feature="Autoplay">
-          <p>To preserve bandwidth, memory and battery on mobile, and prevent possibly unwanted media playback, browsers have put autoplay policies into place and may deny automated playback of media content. The <a data-featureid="autoplay">Autoplay Policy</a> is an early proposal to let applications know whether autoplay will succeed for a given media element.</p>
         </div>
       </section>
       <section>
