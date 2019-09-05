@@ -8,8 +8,9 @@
     }
   ],
   "impl": {
-    "caniuse": "webvr",
-    "chromestatus": 5680169905815552
+    "caniuse": "webxr",
+    "chromestatus": 5680169905815552,
+    "mdn": "api.XR"
   },
   "polyfills": [
     {
