@@ -16,7 +16,7 @@
         <div data-feature="Timing Hooks">
           <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> developed a number of specifications that expose timing hooks to Web applications, to analyze time spent doing various tasks.</p>
 
-          <p>The <a data-featureid="hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. The <a data-featureid="performance-timeline">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are defined in separate specifications:</p>
+          <p>The <a data-featureid="hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. The <a data-featureid="performance-timeline">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are enumerated in the <a data-featureid="timing-entrytypes-registry">Timing Entry Names Registry</a> and defined in separate specifications:</p>
 
           <ul>
             <li><a data-featureid="navigation-timing">Navigation Timing</a> exposes timing information related to navigation and elements;</li>
@@ -106,9 +106,13 @@
         <h2>Exploratory work</h2>
 
         <div data-feature="Timing hooks">
-          <p>The work on the <a data-featureid="frame-timing">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</p>
+          <p>The <a data-featureid="frame-timing">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</p>
 
-          <p>The work on the <a data-featureid="event-timing">Event Timing API</a> exposes a mechanism to measure the latency of some events triggered by user interaction.</p>
+          <p>The <a data-featureid="event-timing">Event Timing API</a> exposes a mechanism to measure the latency of some events triggered by user interaction.</p>
+
+          <p>The <a data-featureid="element-timing">Element Timing API</a> enables monitoring when large or developer-specified image elements and text nodes are displayed on screen.</p>
+
+          <p>The <a data-featureid="layout-instability">Layout Instability API</a> provides web page authors with insights into the stability of their pages based on movements of the elements on the page that detract from the user's experience.</p>
         </div>
 
         <div data-feature="Network Prioritization">
