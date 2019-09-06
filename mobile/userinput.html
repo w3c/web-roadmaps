@@ -71,6 +71,10 @@
         <div data-feature="Responsiveness">
           <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending">Early  detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yiedling to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
         </div>
+
+        <div data-feature="Input latency">
+          <p>Today, all DOM events need to go through the main thread, which is the only one who has access to DOM elements. The <a data-featureid="input-for-workers">Input for Workers and Worklets</a> specification proposes an event delegation scheme to workers that assumes no DOM access. This mechanism would enable latency sensitive event dependent logic like drawing on an off-screen canvas, which would no longer be blocked by the main thread. Use cases include cloud scenarios (e.g. cloud gaming) where input events need to be forwarded to a server with minimal latency for processing.</p>
+        </div>
       </section>
 
       <section>
