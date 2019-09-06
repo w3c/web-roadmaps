@@ -1313,7 +1313,7 @@
   },
   "deviceorientation": {
     "url": "https://www.w3.org/TR/orientation-event/",
-    "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
+    "edDraft": "https://w3c.github.io/deviceorientation/",
     "repository": "https://github.com/w3c/deviceorientation",
     "title": "DeviceOrientation Event Specification",
     "status": "WD",
@@ -2109,6 +2109,19 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "is-input-pending": {
+    "url": "https://wicg.github.io/is-input-pending/",
+    "title": "Early detection of input events",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "iso-19156-2011": {

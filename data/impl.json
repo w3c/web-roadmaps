@@ -9826,6 +9826,13 @@
         "href": "https://caniuse.com/#feat=css-containment"
       },
       {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -9887,8 +9894,7 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6522186978295808",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6522186978295808"
       },
       {
         "ua": "edge",
@@ -18876,6 +18882,45 @@
       }
     ]
   },
+  "is-input-pending": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5719830432841728",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5719830432841728",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5719830432841728",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5719830432841728",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5719830432841728",
+        "selected": true
+      }
+    ]
+  },
   "iso-19156-2011": {
     "implementations": []
   },
@@ -23614,16 +23659,10 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver",
         "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=resizeobserver"
       },
       {
         "ua": "chrome",
@@ -30129,7 +30168,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS. Work in progress for GNU/Linux."
+          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr",
@@ -30411,7 +30450,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS. Work in progress for GNU/Linux."
+          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr",
