@@ -362,17 +362,10 @@
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Callback parameter is a <code>DOMHighResTimestamp</code>. This means ten microsecond precision and zero time as <code>performace.now()</code>."
+          "Callback parameter is a <code>DOMHighResTimestamp</code>. This means ten microsecond precision and zero time as <code>performance.now()</code>."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
@@ -392,14 +385,13 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "prefix": true,
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
         "selected": true
@@ -412,6 +404,12 @@
       },
       {
         "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
@@ -1569,18 +1567,6 @@
         "partial": false
       },
       {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "sinkId",
-          "setSinkId"
-        ],
-        "partial": false,
-        "selected": true
-      },
-      {
         "ua": "edge",
         "status": "shipped",
         "source": "mdn",
@@ -1592,7 +1578,7 @@
         "partial": false
       },
       {
-        "ua": "edge_mobile",
+        "ua": "opera",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
@@ -1604,15 +1590,37 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
+        "ua": "firefox",
         "status": "experimental",
         "source": "mdn",
         "guess": true,
         "features": [
-          "sinkId",
           "setSinkId"
         ],
-        "partial": false,
+        "flag": true,
+        "partial": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "setSinkId"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "setSinkId"
+        ],
+        "partial": true,
         "selected": true
       }
     ],
@@ -1641,7 +1649,7 @@
             "selected": true
           },
           {
-            "ua": "edge_mobile",
+            "ua": "opera",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId",
@@ -1649,7 +1657,7 @@
           },
           {
             "ua": "webview_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId",
             "selected": true
@@ -1675,28 +1683,42 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "edge",
             "status": "shipped",
             "source": "mdn",
             "guess": true
           },
           {
-            "ua": "chrome_android",
+            "ua": "opera",
             "status": "shipped",
             "source": "mdn",
             "guess": true
           },
           {
-            "ua": "edge_mobile",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true
-          },
-          {
-            "ua": "webview_android",
+            "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
-            "guess": true
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
           }
         ]
       },
@@ -1711,7 +1733,10 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
+            "status": "",
+            "notes": [
+              "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
             "selected": true
@@ -1724,7 +1749,37 @@
             "selected": true
           },
           {
-            "ua": "edge_mobile",
+            "ua": "firefox",
+            "status": "experimental",
+            "flag": true,
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
@@ -1732,7 +1787,10 @@
           },
           {
             "ua": "webview_android",
-            "status": "experimental",
+            "status": "",
+            "notes": [
+              "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
             "selected": true
@@ -1758,28 +1816,39 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "edge",
             "status": "shipped",
             "source": "mdn",
             "guess": true
           },
           {
-            "ua": "chrome_android",
+            "ua": "opera",
             "status": "shipped",
             "source": "mdn",
             "guess": true
           },
           {
-            "ua": "edge_mobile",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true
-          },
-          {
-            "ua": "webview_android",
+            "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
-            "guess": true
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
           }
         ]
       }
@@ -1878,6 +1947,12 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
       },
       {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
+      },
+      {
         "ua": "edge",
         "status": "shipped",
         "source": "mdn",
@@ -1885,6 +1960,12 @@
       },
       {
         "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
+      },
+      {
+        "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
@@ -1903,43 +1984,17 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
       },
       {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
-      },
-      {
-        "ua": "webview_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement",
-        "selected": true
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
-      },
-      {
         "ua": "opera_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement",
         "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
       },
       {
         "ua": "safari_ios",
@@ -1952,6 +2007,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAudioElement",
+        "selected": true
       }
     ]
   },
@@ -2487,13 +2549,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/SyncManager"
       },
       {
-        "ua": "edge_mobile",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/SyncManager",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "",
         "source": "mdn",
@@ -2547,7 +2602,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/SyncManager",
         "selected": true
@@ -2697,15 +2752,39 @@
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
       },
       {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "notes": [
+          "Values for <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/chargingTime'><code>BatteryManager.chargingTime</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/dischargingTime'><code>BatteryManager.dischargingTime</code></a> are always equal to <code>Infinity</code>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
+      },
+      {
         "ua": "firefox",
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Disabled by default in Firefox 10, but can be enabled setting the preference <code>dom.battery.enabled</code> to <code>true</code>. Starting with Firefox 11, <code>mozBattery</code> is enabled by default. The Battery API is currently supported on Android, Windows, and Linux with UPower installed. Support for MacOS is available starting with Firefox 18. Firefox also provide support for the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/battery' title='The battery read-only property returns a BatteryManager provides information about the system's battery charge level; provides also some new events you can handle to monitor the battery status. This implements the Battery Status API; see that documentation for additional details, a guide to using the API, and sample code.'><code>navigator.battery</code></a>."
+          "Disabled by default in Firefox 10, but can be enabled setting the preference <code>dom.battery.enabled</code> to <code>true</code>. Starting with Firefox 11, <code>mozBattery</code> is enabled by default. The Battery API is currently supported on Android, Windows, and Linux with UPower installed. Support for MacOS is available starting with Firefox 18. Firefox also provide support for the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/battery'><code>navigator.battery</code></a>."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
         "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "notes": [
+          "From this version onwards, the Battery Status API is only available in chrome/privileged code."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
       },
       {
         "ua": "ie",
@@ -2721,40 +2800,17 @@
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
-      },
-      {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
-        "selected": true
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "notes": [
-          "From this version onwards, the Battery Status API is only available in chrome/privileged code."
-        ],
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
-        "selected": true
-      },
-      {
-        "ua": "opera_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
-        "selected": true
       },
       {
         "ua": "safari_ios",
@@ -2764,19 +2820,17 @@
         "selected": true
       },
       {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "notes": [
-          "Values for <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/chargingTime' title='Indicates the amount of time, in seconds, that remain until the battery is fully charged.'><code>BatteryManager.chargingTime</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/dischargingTime' title='Indicates the amount of time, in seconds, that remains until the battery is fully discharged.'><code>BatteryManager.dischargingTime</code></a> are always equal to <code>Infinity</code>."
-        ],
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
-      },
-      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
+        "selected": true
       }
     ]
   },
@@ -2909,16 +2963,6 @@
         "href": "https://webkit.org/status/#specification-beacon-api"
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "notes": [
-          "Starting in Chrome 59, this method cannot send a <code>Blob</code> whose type is not CORS safelisted. This is a temporary change until a mitigation can be found for the security issues that this creates. For more information see <a href='https://crbug.com/720283'>Chrome bug 720283</a>."
-        ],
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "notes": [
@@ -2941,13 +2985,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -2979,7 +3016,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Starting in Opera 46, this method cannot send a <code>Blob</code> whose type is not CORS safelisted. This is a temporary change until a mitigation can be found for the security issues that this creates. For more information see <a href='https://crbug.com/720283'>Chrome bug 720283</a>."
         ],
@@ -2995,9 +3032,25 @@
       },
       {
         "ua": "safari_ios",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "notes": [
+          "Starting in Chrome 59, this method cannot send a <code>Blob</code> whose type is not CORS safelisted. This is a temporary change until a mitigation can be found for the security issues that this creates. For more information see <a href='https://crbug.com/720283'>Chrome bug 720283</a>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon",
+        "selected": true
       }
     ]
   },
@@ -3039,13 +3092,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -3066,13 +3112,20 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
       },
       {
         "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
@@ -3203,13 +3256,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -3228,14 +3274,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
       },
       {
-        "ua": "edge_mobile",
+        "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
       },
       {
-        "ua": "firefox",
+        "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
@@ -3254,7 +3299,20 @@
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
+        "selected": true
+      },
+      {
         "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+      },
+      {
+        "ua": "safari_ios",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
@@ -3264,6 +3322,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
+        "selected": true
       }
     ]
   },
@@ -3401,6 +3466,12 @@
         "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut"
       },
       {
+        "ua": "edge",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut"
+      },
+      {
         "ua": "firefox",
         "status": "",
         "source": "mdn",
@@ -3429,7 +3500,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut",
         "selected": true
@@ -3439,6 +3510,27 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut",
+        "selected": true
       }
     ]
   },
@@ -3670,25 +3762,15 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "Credential"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
-          "Credential"
+          "Credential",
+          "credentials"
         ],
-        "partial": true
+        "partial": false
       },
       {
         "ua": "chrome_android",
@@ -3696,22 +3778,83 @@
         "source": "mdn",
         "guess": true,
         "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
           "Credential"
         ],
         "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false,
+        "selected": true
       }
     ],
     "features": {
       "Credential": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -3727,11 +3870,52 @@
           },
           {
             "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "edge",
             "status": "experimental",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome",
@@ -3745,8 +3929,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
@@ -3768,8 +3951,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome",
@@ -3801,61 +3983,134 @@
             "guess": true
           },
           {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
             "guess": true,
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
+            "ua": "firefox",
+            "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
           }
         ]
       },
       "credentials": {
         "implementations": [
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
             "ua": "edge",
             "status": "experimental",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "opera",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "uc_android",
@@ -3903,26 +4158,53 @@
             "guess": true
           },
           {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
             "guess": true,
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
+            "ua": "firefox",
+            "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
           }
         ]
       }
@@ -4059,6 +4341,82 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-cryptography-api"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "ie",
+        "status": "experimental",
+        "prefix": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/crypto",
+        "selected": true
       }
     ]
   },
@@ -4196,17 +4554,6 @@
         "href": "https://webkit.org/status/#specification-content-security-policy-level-2"
       },
       {
-        "ua": "webview_android",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "securityPolicyViolation"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -4237,36 +4584,23 @@
         "partial": true
       },
       {
-        "ua": "edge_mobile",
+        "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "securityPolicyViolation"
         ],
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "securityPolicyViolation"
-        ],
-        "flag": true,
         "partial": true
       },
       {
         "ua": "firefox_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "securityPolicyViolation"
         ],
-        "flag": true,
         "partial": true
       },
       {
@@ -4319,18 +4653,22 @@
           "securityPolicyViolation"
         ],
         "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "securityPolicyViolation"
+        ],
+        "partial": true,
+        "selected": true
       }
     ],
     "features": {
       "securityPolicyViolation": {
         "implementations": [
-          {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
-            "selected": true
-          },
           {
             "ua": "chrome",
             "status": "shipped",
@@ -4353,24 +4691,15 @@
             "selected": true
           },
           {
-            "ua": "edge_mobile",
+            "ua": "firefox",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
             "selected": true
           },
           {
-            "ua": "firefox",
-            "status": "experimental",
-            "flag": true,
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
-            "selected": true
-          },
-          {
             "ua": "firefox_android",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
             "selected": true
@@ -4412,6 +4741,13 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent",
@@ -4554,10 +4890,9 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -4597,10 +4932,9 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -4611,21 +4945,14 @@
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -5303,55 +5630,6 @@
         "partial": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "backface-visibility",
-          "perspective",
-          "perspective-origin",
-          "rotate",
-          "scale",
-          "transform-style",
-          "translate"
-        ],
-        "prefix": true,
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "backface-visibility",
-          "perspective",
-          "perspective-origin",
-          "rotate",
-          "scale",
-          "transform-style",
-          "translate"
-        ],
-        "prefix": true,
-        "partial": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "backface-visibility",
-          "rotate",
-          "scale",
-          "translate"
-        ],
-        "prefix": true,
-        "partial": true
-      },
-      {
         "ua": "firefox",
         "status": "experimental",
         "source": "mdn",
@@ -5386,44 +5664,21 @@
         "prefix": true,
         "flag": true,
         "partial": true
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "backface-visibility",
-          "rotate",
-          "scale",
-          "translate"
-        ],
-        "partial": true
       }
     ],
     "features": {
       "backface-visibility": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "prefix": true,
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
-            "selected": true
-          },
-          {
             "ua": "chrome",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
@@ -5431,14 +5686,6 @@
           {
             "ua": "edge",
             "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "experimental",
-            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
@@ -5468,16 +5715,14 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
           },
           {
             "ua": "opera_android",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
             "selected": true
@@ -5500,6 +5745,13 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility",
@@ -5630,43 +5882,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -5674,15 +5895,14 @@
       "perspective": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "prefix": true,
+            "ua": "chrome",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
             "selected": true
           },
           {
-            "ua": "chrome",
+            "ua": "chrome_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
@@ -5691,14 +5911,6 @@
           {
             "ua": "edge",
             "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "experimental",
-            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
             "selected": true
@@ -5744,16 +5956,21 @@
           },
           {
             "ua": "safari",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
             "selected": true
           },
           {
             "ua": "safari_ios",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
             "selected": true
@@ -5805,8 +6022,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "firefox_android",
@@ -5885,43 +6101,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -5929,17 +6114,15 @@
       "perspective-origin": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "prefix": true,
+            "ua": "chrome",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "prefix": true,
+            "ua": "chrome_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
@@ -5947,14 +6130,6 @@
           {
             "ua": "edge",
             "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "experimental",
-            "prefix": true,
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
@@ -6000,16 +6175,21 @@
           },
           {
             "ua": "safari",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
           },
           {
             "ua": "safari_ios",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
             "selected": true
@@ -6061,8 +6241,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "firefox_android",
@@ -6141,43 +6320,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -6219,21 +6367,14 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
-            "selected": true
-          },
-          {
             "ua": "chrome",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
           },
@@ -6242,13 +6383,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -6302,7 +6436,14 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "shipped",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
             "selected": true
@@ -6432,43 +6573,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -6510,21 +6620,14 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
-            "selected": true
-          },
-          {
             "ua": "chrome",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
           },
@@ -6533,13 +6636,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -6593,7 +6689,14 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "shipped",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
             "selected": true
@@ -6723,43 +6826,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -6774,17 +6846,15 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "prefix": true,
+            "ua": "chrome",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
             "selected": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "prefix": true,
+            "ua": "chrome_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
             "selected": true
@@ -6794,14 +6864,6 @@
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "experimental",
-            "prefix": true,
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -6844,16 +6906,21 @@
           },
           {
             "ua": "safari",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
             "selected": true
           },
           {
             "ua": "safari_ios",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
             "selected": true
@@ -6905,8 +6972,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "firefox_android",
@@ -6985,43 +7051,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -7063,21 +7098,14 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
-            "selected": true
-          },
-          {
             "ua": "chrome",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
           },
@@ -7086,13 +7114,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -7146,7 +7167,14 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "shipped",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
             "selected": true
@@ -7276,43 +7304,12 @@
             "partial": true
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
             "prefix": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "guess": true,
-            "prefix": true,
             "partial": true
           }
         ]
@@ -7525,13 +7522,12 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "selected": true
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn"
       },
       {
-        "ua": "chrome",
+        "ua": "chrome_android",
         "status": "shipped",
         "source": "mdn"
       },
@@ -7539,12 +7535,6 @@
         "ua": "edge",
         "status": "shipped",
         "source": "mdn"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -7576,6 +7566,17 @@
         "ua": "safari_ios",
         "status": "shipped",
         "source": "mdn"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "selected": true
       }
     ]
   },
@@ -7666,19 +7667,17 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "prefix": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "notes": [
-          "Current Chrome and Safari versions ignore border-radius on <code>&lt;select&gt;</code> elements unless <code>-webkit-appearance</code> is overridden to an appropriate value."
+          "Chrome ignores <code>border-radius</code> on <code>&lt;select&gt;</code> elements unless <code>-webkit-appearance</code> is overridden to an appropriate value."
         ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
       },
@@ -7687,14 +7686,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "experimental",
-        "prefix": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -7726,16 +7717,23 @@
         "ua": "opera",
         "status": "shipped",
         "notes": [
-          "In Opera prior to version 11.60, replaced elements with <code>border-radius</code> will not have rounded corners."
+          "Before Opera 11.60, replaced elements with <code>border-radius</code> do not have rounded corners."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "notes": [
-          "Current Chrome and Safari versions ignore border-radius on <code>&lt;select&gt;</code> elements unless <code>-webkit-appearance</code> is overridden to an appropriate value."
+          "Safari ignores <code>border-radius</code> on <code>&lt;select&gt;</code> elements unless <code>-webkit-appearance</code> is overridden to an appropriate value."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
@@ -7743,8 +7741,25 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "Safari ignores <code>border-radius</code> on <code>&lt;select&gt;</code> elements unless <code>-webkit-appearance</code> is overridden to an appropriate value."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "prefix": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
+        "selected": true
       }
     ]
   },
@@ -7835,18 +7850,16 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "prefix": true,
+        "ua": "chrome",
+        "status": "shipped",
         "notes": [
           "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
         ],
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
       },
       {
-        "ua": "chrome",
+        "ua": "chrome_android",
         "status": "shipped",
         "notes": [
           "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
@@ -7861,14 +7874,14 @@
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
+        "ua": "firefox",
+        "status": "experimental",
+        "prefix": true,
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
       },
       {
-        "ua": "firefox",
+        "ua": "firefox_android",
         "status": "experimental",
         "prefix": true,
         "source": "mdn",
@@ -7915,10 +7928,22 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
+        "notes": [
+          "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "notes": [
+          "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow",
+        "selected": true
       }
     ]
   },
@@ -8967,7 +8992,8 @@
         "guess": true,
         "features": [
           "hsla",
-          "rgba"
+          "rgba",
+          "rgba-hex"
         ],
         "partial": true
       },
@@ -8997,37 +9023,14 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "hsla",
-          "rgba"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
         "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "hsla",
-          "rgba"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "ie",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "hsla",
-          "rgba"
+          "rgba",
+          "rgba-hex"
         ],
         "partial": true,
         "selected": true
@@ -9053,7 +9056,8 @@
         "guess": true,
         "features": [
           "hsla",
-          "rgba"
+          "rgba",
+          "rgba-hex"
         ],
         "partial": true,
         "selected": true
@@ -9066,6 +9070,19 @@
         "features": [
           "hsla",
           "rgba"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hsla",
+          "rgba",
+          "rgba-hex"
         ],
         "partial": true,
         "selected": true
@@ -9135,23 +9152,7 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
-          },
-          {
             "ua": "firefox_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
-          },
-          {
-            "ua": "ie",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -9178,6 +9179,14 @@
           {
             "ua": "samsunginternet_android",
             "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "experimental",
             "source": "mdn",
             "guess": true,
             "partial": true,
@@ -9221,13 +9230,6 @@
             "href": "https://www.chromestatus.com/feature/5656221012983808"
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -9241,13 +9243,6 @@
           },
           {
             "ua": "edge",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
@@ -9309,6 +9304,13 @@
             "selected": true
           },
           {
+            "ua": "webview_android",
+            "status": "experimental",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
+            "selected": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -9365,21 +9367,7 @@
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "ie",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -9403,6 +9391,13 @@
           {
             "ua": "samsunginternet_android",
             "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "experimental",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -9445,13 +9440,6 @@
             "href": "https://www.chromestatus.com/feature/5124205561511936"
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -9465,13 +9453,6 @@
           },
           {
             "ua": "edge",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
@@ -9533,6 +9514,13 @@
             "selected": true
           },
           {
+            "ua": "webview_android",
+            "status": "experimental",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/color_value#rgba()",
+            "selected": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -9589,21 +9577,7 @@
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "firefox_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "ie",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -9627,6 +9601,13 @@
           {
             "ua": "samsunginternet_android",
             "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "experimental",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -9676,20 +9657,31 @@
             "source": "mdn"
           },
           {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
             "ua": "edge",
             "status": "",
             "source": "mdn"
           },
           {
-            "ua": "edge_mobile",
-            "status": "",
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
             "source": "mdn",
             "selected": true
           },
           {
-            "ua": "firefox",
-            "status": "shipped",
-            "source": "mdn"
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "selected": true
           },
           {
             "ua": "opera",
@@ -9708,6 +9700,18 @@
             "ua": "safari",
             "status": "shipped",
             "source": "mdn"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "selected": true
           },
           {
             "ua": "chrome",
@@ -9766,28 +9770,11 @@
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
-          },
-          {
             "ua": "firefox_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "partial": true,
-            "selected": true
-          },
-          {
-            "ua": "ie",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "opera",
@@ -9802,8 +9789,7 @@
             "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "samsunginternet_android",
@@ -9812,6 +9798,13 @@
             "guess": true,
             "partial": true,
             "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
           }
         ]
       }
@@ -9921,13 +9914,6 @@
   "css-content-3": {
     "implementations": [
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/content",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -9943,13 +9929,6 @@
       },
       {
         "ua": "edge",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/content",
-        "selected": true
-      },
-      {
-        "ua": "edge_mobile",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/content",
@@ -9985,7 +9964,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/content",
         "selected": true
@@ -10006,6 +9985,13 @@
       },
       {
         "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/content",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/content",
@@ -10094,13 +10080,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "experimental",
         "flag": true,
@@ -10122,14 +10101,6 @@
         "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "experimental",
-        "prefix": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -10166,10 +10137,18 @@
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport"
       },
       {
+        "ua": "opera_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "",
         "notes": [
-          "See WebKit <a href='https://bugs.webkit.org/show_bug.cgi?id=95959'>bug 95959</a>."
+          "See WebKit <a href='https://webkit.org/b/95959'>bug 95959</a>."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport"
@@ -10178,7 +10157,7 @@
         "ua": "safari_ios",
         "status": "",
         "notes": [
-          "See WebKit <a href='https://bugs.webkit.org/show_bug.cgi?id=95959'>bug 95959</a>."
+          "See WebKit <a href='https://webkit.org/b/95959'>bug 95959</a>."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
@@ -10186,6 +10165,13 @@
       },
       {
         "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
@@ -10417,13 +10403,6 @@
         "href": "https://webkit.org/status/#specification-css-font-display"
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -10440,13 +10419,6 @@
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -10476,7 +10448,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display",
         "selected": true
@@ -10498,6 +10470,13 @@
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display",
+        "selected": true
       }
     ]
   },
@@ -10624,18 +10603,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "FontFace",
-          "FontFaceSet"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -10680,11 +10647,35 @@
         "partial": true
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "FontFace",
+          "FontFaceSet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "FontFace",
+          "FontFaceSet"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
+          "FontFace",
           "FontFaceSet"
         ],
         "partial": true
@@ -10695,21 +10686,27 @@
         "source": "mdn",
         "guess": true,
         "features": [
+          "FontFace",
           "FontFaceSet"
         ],
         "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "FontFace",
+          "FontFaceSet"
+        ],
+        "partial": true,
+        "selected": true
       }
     ],
     "features": {
       "FontFace": {
         "implementations": [
-          {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
-            "selected": true
-          },
           {
             "ua": "chrome",
             "status": "shipped",
@@ -10733,6 +10730,41 @@
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
@@ -10765,24 +10797,21 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "opera",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
@@ -10887,6 +10916,13 @@
             "partial": true
           },
           {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
@@ -10908,8 +10944,15 @@
             "partial": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "webview_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -10919,13 +10962,6 @@
       "FontFaceSet": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -10954,6 +10990,20 @@
             "selected": true
           },
           {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
+            "selected": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "mdn",
@@ -10962,6 +11012,13 @@
           },
           {
             "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
@@ -11001,8 +11058,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "safari_ios",
@@ -11114,6 +11170,13 @@
             "partial": true
           },
           {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
@@ -11135,8 +11198,15 @@
             "partial": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "webview_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -11606,13 +11676,6 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -11629,13 +11692,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -11666,7 +11722,7 @@
           },
           {
             "ua": "opera_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps",
             "selected": true
@@ -11686,6 +11742,13 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps",
@@ -11842,13 +11905,6 @@
             "href": "https://www.chromestatus.com/feature/5716551491649536"
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -11865,13 +11921,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -11902,7 +11951,7 @@
           },
           {
             "ua": "opera_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric",
             "selected": true
@@ -11923,6 +11972,13 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric",
@@ -12045,28 +12101,27 @@
       "font-stretch": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "",
+            "ua": "chrome",
+            "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
             "selected": true
           },
           {
-            "ua": "chrome",
+            "ua": "chrome_android",
             "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
             "selected": true
           },
           {
             "ua": "edge",
-            "status": "shipped",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
@@ -12096,13 +12151,19 @@
           {
             "ua": "opera",
             "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
             "selected": true
           },
           {
             "ua": "opera_android",
-            "status": "",
+            "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
             "selected": true
@@ -12110,6 +12171,33 @@
           {
             "ua": "safari",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "notes": [
+              "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-stretch",
             "selected": true
@@ -12154,16 +12242,14 @@
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "firefox_android",
@@ -12177,8 +12263,7 @@
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "chrome",
@@ -12234,13 +12319,6 @@
       "font-synthesis": {
         "implementations": [
           {
-            "ua": "webview_android",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "",
             "source": "mdn",
@@ -12256,13 +12334,6 @@
           },
           {
             "ua": "edge",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis",
-            "selected": true
-          },
-          {
-            "ua": "edge_mobile",
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis",
@@ -12319,6 +12390,13 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis",
@@ -12669,13 +12747,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -12689,16 +12760,13 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
+        "partial": true,
+        "notes": [
+          "Currently the <code>none</code> value incorrectly behaves as <code>contain</code> (allowing for the elastic bounce effect)."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -12728,7 +12796,20 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
         "selected": true
@@ -12738,6 +12819,13 @@
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
+        "selected": true
       }
     ]
   },
@@ -13246,13 +13334,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "",
         "notes": [
@@ -13273,14 +13354,6 @@
         "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "experimental",
-        "prefix": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -13310,7 +13383,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust",
         "selected": true
@@ -13336,6 +13409,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust",
+        "selected": true
       }
     ]
   },
@@ -13448,21 +13528,13 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5912074022551552",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5912074022551552"
       },
       {
         "ua": "edge",
         "status": "shipped",
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/csstouchaction/",
-        "selected": true
-      },
-      {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action",
         "selected": true
       },
       {
@@ -13482,13 +13554,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -13527,19 +13592,14 @@
       },
       {
         "ua": "safari",
-        "status": "",
-        "notes": [
-          "See <a href='https://bugs.webkit.org/show_bug.cgi?id=133112'>WebKit bug 133112</a>."
-        ],
+        "status": "experimental",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action"
+        "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action",
+        "selected": true
       },
       {
         "ua": "safari_ios",
-        "status": "",
-        "notes": [
-          "See <a href='https://bugs.webkit.org/show_bug.cgi?id=133112'>WebKit bug 133112</a>."
-        ],
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action"
       },
@@ -13548,6 +13608,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action",
+        "selected": true
       }
     ]
   },
@@ -13726,17 +13793,16 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
+        "ua": "chrome",
+        "status": "shipped",
         "notes": [
           "<code>box-sizing</code> is not respected when the height is calculated from <a href='https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle'><code>window.getComputedStyle()</code></a>."
         ],
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
       },
       {
-        "ua": "chrome",
+        "ua": "chrome_android",
         "status": "shipped",
         "notes": [
           "<code>box-sizing</code> is not respected when the height is calculated from <a href='https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle'><code>window.getComputedStyle()</code></a>."
@@ -13749,14 +13815,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "experimental",
-        "prefix": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -13806,6 +13864,16 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "notes": [
+          "<code>box-sizing</code> is not respected when the height is calculated from <a href='https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle'><code>window.getComputedStyle()</code></a>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing",
+        "selected": true
       }
     ]
   },
@@ -14098,24 +14166,32 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "scroll-behavior"
         ],
-        "flag": true,
         "partial": true
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "scroll-behavior"
         ],
-        "flag": true,
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
         "partial": true
       },
       {
@@ -14127,6 +14203,38 @@
           "scroll-behavior"
         ],
         "partial": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true,
+        "selected": true
       }
     ],
     "features": {
@@ -14213,16 +14321,14 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "",
+            "ua": "chrome",
+            "status": "shipped",
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
           },
           {
-            "ua": "chrome",
-            "status": "experimental",
-            "flag": true,
+            "ua": "chrome_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
           },
@@ -14231,13 +14337,6 @@
             "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
-          },
-          {
-            "ua": "edge_mobile",
-            "status": "",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
-            "selected": true
           },
           {
             "ua": "firefox",
@@ -14260,14 +14359,13 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
           },
           {
             "ua": "opera_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
             "selected": true
@@ -14282,6 +14380,19 @@
           {
             "ua": "safari_ios",
             "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
             "selected": true
@@ -14381,22 +14492,48 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -14587,18 +14724,23 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true
           },
           {
@@ -14607,6 +14749,29 @@
             "source": "mdn",
             "guess": true,
             "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
           }
         ]
       }
@@ -14747,13 +14912,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -14770,13 +14928,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -14805,13 +14956,13 @@
       },
       {
         "ua": "safari",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
       },
       {
         "ua": "safari_ios",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
       },
@@ -14820,6 +14971,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
+      },
+      {
+        "ua": "webview_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
+        "selected": true
       }
     ]
   },
@@ -16092,17 +16250,7 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "",
-        "notes": [
-          "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
-        ],
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
+        "ua": "chrome",
         "status": "",
         "notes": [
           "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
@@ -16111,28 +16259,7 @@
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming"
       },
       {
-        "ua": "firefox_android",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
-        "selected": true
-      },
-      {
-        "ua": "opera_android",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
-        "selected": true
-      },
-      {
-        "ua": "safari_ios",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
+        "ua": "chrome_android",
         "status": "",
         "notes": [
           "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
@@ -16150,6 +16277,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming"
       },
       {
+        "ua": "firefox_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
+        "selected": true
+      },
+      {
         "ua": "ie",
         "status": "",
         "source": "mdn",
@@ -16164,10 +16298,34 @@
         "selected": true
       },
       {
+        "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "",
+        "notes": [
+          "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
+        "selected": true
       }
     ]
   },
@@ -16878,15 +17036,14 @@
         "partial": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
+        "ua": "safari",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
           "capabilities"
         ],
-        "partial": true,
-        "selected": true
+        "partial": true
       },
       {
         "ua": "opera",
@@ -16900,7 +17057,28 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "capabilities"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "capabilities"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
@@ -16949,13 +17127,6 @@
             "selected": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
-            "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "mdn",
@@ -16987,6 +17158,13 @@
             "selected": true
           },
           {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
+            "selected": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -16995,7 +17173,20 @@
           },
           {
             "ua": "opera_android",
-            "status": "experimental",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
             "selected": true
@@ -17003,6 +17194,13 @@
           {
             "ua": "samsunginternet_android",
             "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
             "selected": true
@@ -17047,8 +17245,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=stream",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
@@ -17154,7 +17351,21 @@
             "partial": true
           },
           {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -17168,15 +17379,15 @@
             "partial": true
           },
           {
-            "ua": "webview_android",
-            "status": "experimental",
+            "ua": "opera_android",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
           },
           {
-            "ua": "opera_android",
-            "status": "experimental",
+            "ua": "webview_android",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -17391,6 +17602,75 @@
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/highresolutiontime/",
         "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "ie",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance",
+        "selected": true
       }
     ]
   },
@@ -17568,13 +17848,6 @@
         "href": "https://webkit.org/status/#feature-download-attribute"
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -17593,14 +17866,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
       },
       {
-        "ua": "edge_mobile",
+        "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
       },
       {
-        "ua": "firefox",
+        "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
@@ -17612,10 +17884,30 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
+        "selected": true
       }
     ]
   },
@@ -17738,23 +18030,23 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "notes": [
+          "Before Chrome 50, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
         "source": "mdn"
       },
       {
         "ua": "chrome_android",
         "status": "shipped",
+        "notes": [
+          "Before Chrome 50, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
         "source": "mdn"
       },
       {
         "ua": "edge",
         "status": "shipped",
         "source": "mdn"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -17773,13 +18065,38 @@
         "source": "mdn"
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "notes": [
+          "Before Opera 37, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
+        "source": "mdn"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "notes": [
+          "Before Opera 37, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
+        "source": "mdn",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "mdn"
       },
       {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn"
+      },
+      {
         "ua": "webview_android",
-        "status": "experimental",
+        "status": "shipped",
+        "notes": [
+          "Before Chrome 50, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
         "source": "mdn",
         "selected": true
       }
@@ -17896,13 +18213,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement"
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
@@ -17948,7 +18258,8 @@
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "experimental",
+        "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement",
         "selected": true
@@ -18824,13 +19135,6 @@
         "href": "https://webkit.org/status/#specification-intersection-observer"
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -18849,13 +19153,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
@@ -18869,10 +19166,35 @@
         "selected": true
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver",
+        "selected": true
       }
     ],
     "polyfills": [
@@ -19010,13 +19332,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -19027,6 +19342,34 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
       }
     ]
   },
@@ -19948,15 +20291,8 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
-        "selected": true
-      },
-      {
         "ua": "chrome",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaSession"
       },
@@ -19975,6 +20311,13 @@
       },
       {
         "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
@@ -20685,8 +21028,7 @@
           "Can be enabled via the `Experimental canvas features` flag"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offscreencanvas",
-        "selected": true
+        "href": "https://caniuse.com/#feat=offscreencanvas"
       },
       {
         "ua": "chrome_android",
@@ -20739,24 +21081,14 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "flag": true,
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
-        "selected": true
-      },
-      {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
@@ -20764,6 +21096,10 @@
         "ua": "firefox",
         "status": "experimental",
         "flag": true,
+        "partial": true,
+        "notes": [
+          "See <a href='https://bugzil.la/1390089'>bug 1390089</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
@@ -20771,6 +21107,10 @@
         "ua": "firefox_android",
         "status": "experimental",
         "flag": true,
+        "partial": true,
+        "notes": [
+          "See <a href='https://bugzil.la/1390089'>bug 1390089</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
@@ -20783,15 +21123,14 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
         "selected": true
@@ -20812,6 +21151,14 @@
       {
         "ua": "samsunginternet_android",
         "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "experimental",
+        "flag": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
         "selected": true
@@ -21467,13 +21814,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -21494,7 +21834,21 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
         "selected": true
@@ -21559,6 +21913,19 @@
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
       },
       {
+        "ua": "firefox",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "",
         "source": "mdn",
@@ -21610,13 +21977,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "",
         "source": "mdn",
@@ -21637,16 +21997,12 @@
         "selected": true
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "experimental",
         "flag": true,
+        "notes": [
+          "Available only in nightly builds."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
         "selected": true
@@ -21655,6 +22011,9 @@
         "ua": "firefox_android",
         "status": "experimental",
         "flag": true,
+        "notes": [
+          "Available only in nightly builds."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
         "selected": true
@@ -21683,6 +22042,13 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BasicCardRequest",
         "selected": true
@@ -22292,13 +22658,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "experimental",
         "flag": true,
@@ -22313,16 +22672,19 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Requires an origin trial token. (<a href='https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/developer-guide.md'>explainer<a>, <a href='http://bit.ly/OriginTrialSignup'>sign-up form</a>)"
-        ],
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture"
       },
       {
         "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
@@ -22499,13 +22861,6 @@
         "href": "https://webkit.org/status/#feature-picture-element"
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -22522,13 +22877,6 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture"
-      },
-      {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -22557,7 +22905,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture",
         "selected": true
@@ -22579,6 +22927,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/picture",
+        "selected": true
       }
     ]
   },
@@ -23262,13 +23617,6 @@
         "selected": true
       },
       {
-        "ua": "webview_android",
-        "status": "experimental",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -23277,6 +23625,12 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
+      },
+      {
+        "ua": "edge",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
       },
@@ -23300,10 +23654,30 @@
         "selected": true
       },
       {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
+        "selected": true
       }
     ]
   },
@@ -23590,13 +23964,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback"
       },
       {
-        "ua": "edge_mobile",
-        "status": "",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "notes": [
@@ -23628,6 +23995,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "",
         "source": "mdn",
@@ -23641,8 +24015,14 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback"
+      },
+      {
         "ua": "webview_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
         "selected": true
@@ -25196,14 +25576,21 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming",
         "selected": true
       },
       {
         "ua": "webview_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming",
         "selected": true
@@ -26556,14 +26943,73 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "See <a href='https://bugzil.la/1304966'>bug 1304966</a> and <a href='https://bugzil.la/1399038'>bug 1399038</a>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
           "estimate",
           "persist"
         ],
-        "partial": true,
-        "selected": true
+        "partial": true
       },
       {
         "ua": "chrome_android",
@@ -26574,8 +27020,7 @@
           "estimate",
           "persist"
         ],
-        "partial": true,
-        "selected": true
+        "partial": true
       },
       {
         "ua": "firefox",
@@ -26586,8 +27031,87 @@
           "estimate",
           "persist"
         ],
-        "partial": true,
-        "selected": true
+        "partial": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "estimate"
+        ],
+        "partial": true
       }
     ],
     "features": {
@@ -26611,8 +27135,7 @@
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/5630353511284736",
-            "selected": true
+            "href": "https://www.chromestatus.com/feature/5630353511284736"
           },
           {
             "ua": "edge",
@@ -26626,6 +27149,60 @@
             "status": "",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5630353511284736",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
             "selected": true
           },
           {
@@ -26648,6 +27225,63 @@
             "source": "chromestatus",
             "guess": true,
             "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "flag": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
           }
         ]
       },
@@ -26708,6 +27342,68 @@
             "source": "chromestatus",
             "guess": true,
             "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "flag": true,
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+            "guess": true,
+            "selected": true
           }
         ]
       }
@@ -28769,6 +29465,39 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5712361335816192",
         "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
       }
     ]
   },
@@ -30021,13 +30750,6 @@
         "href": "https://developer.mozilla.org/docs/Web/API/Storage"
       },
       {
-        "ua": "edge_mobile",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Storage",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
@@ -30054,7 +30776,7 @@
       },
       {
         "ua": "opera_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Storage",
         "selected": true
@@ -30073,7 +30795,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Storage",
         "selected": true
@@ -30437,64 +31159,14 @@
   "webxr": {
     "implementations": [
       {
-        "ua": "edge",
-        "status": "shipped",
-        "notes": [
-          "[In development](https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/#3lMW05DTZXbXcK46.97) in the latest Edge builds and supports only [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality)."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "notes": [
-          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
+          "Only available when registering an [origin trial](https://developers.chrome.com/origintrials/#/view_trial/-5670031930859454463)."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr"
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "notes": [
-          "Supports only Google Daydream on [daydream-ready devices](https://vr.google.com/daydream/smartphonevr/phones/) and Google Cardboards"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr"
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "notes": [
-          "Supports only Samsung Galaxy devices with the Samsung Gear VR"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr",
-        "selected": true
-      },
-      {
-        "ua": "baidu_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr",
-        "selected": true
+        "href": "https://caniuse.com/#feat=webxr"
       },
       {
         "ua": "chrome",
@@ -30514,19 +31186,100 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552"
+        "href": "https://www.chromestatus.com/feature/5680169905815552",
+        "selected": true
       },
       {
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552"
+        "href": "https://www.chromestatus.com/feature/5680169905815552",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5680169905815552",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR"
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR"
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
+        "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/XR",
         "selected": true
       }
     ],
