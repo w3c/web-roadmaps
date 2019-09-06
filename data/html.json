@@ -1,0 +1,32 @@
+{
+  "url": "https://html.spec.whatwg.org/multipage/",
+  "title": "HTML",
+  "features": {
+    "template": {
+      "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+      "title": "The template element",
+      "impl": {
+        "caniuse": "template-literals",
+        "chromestatus": 5207287069147136,
+        "mdn": "html.elements.template"
+      }
+    },
+
+    "custom-elements": {
+      "url": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements",
+      "title": "Custom elements",
+      "impl": {
+        "caniuse": "custom-elementsv1",
+        "chromestatus": 4696261944934400
+      }
+    },
+
+    "js-module": {
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system",
+      "title": "Integration with the JavaScript module system",
+      "impl": {
+        "mdn": "html.elements.script.module"
+      }
+    }
+  }
+}
