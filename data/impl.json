@@ -15623,6 +15623,138 @@
   "dwbp": {
     "implementations": []
   },
+  "element-timing": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "img",
+          "text"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "img",
+          "text"
+        ],
+        "partial": false,
+        "selected": true
+      }
+    ],
+    "features": {
+      "img": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6727079454310400",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6727079454310400",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6727079454310400",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6727079454310400",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6727079454310400",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true
+          }
+        ]
+      },
+      "text": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6230814637424640",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6230814637424640",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6230814637424640",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6230814637424640",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6230814637424640",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true
+          }
+        ]
+      }
+    }
+  },
   "eme": {
     "implementations": [
       {
@@ -19287,6 +19419,45 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6428344899862528",
+        "selected": true
+      }
+    ]
+  },
+  "layout-instability": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5110682739539968",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5110682739539968",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5110682739539968",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5110682739539968",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5110682739539968",
         "selected": true
       }
     ]
@@ -28324,6 +28495,9 @@
         "selected": true
       }
     ]
+  },
+  "timing-entrytypes-registry": {
+    "implementations": []
   },
   "timing": {
     "implementations": []

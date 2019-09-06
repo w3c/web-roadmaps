@@ -1456,6 +1456,30 @@
     "informative": false,
     "milestones": {}
   },
+  "element-timing": {
+    "url": "https://wicg.github.io/element-timing/",
+    "repository": "https://github.com/wicg/element-timing",
+    "title": "Element Timing API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "img": {
+        "title": "Support for images",
+        "url": "#sec-report-image-element"
+      },
+      "text": {
+        "title": "Support for text",
+        "url": "#sec-report-text"
+      }
+    }
+  },
   "eme": {
     "url": "https://www.w3.org/TR/encrypted-media/",
     "edDraft": "https://w3c.github.io/encrypted-media/",
@@ -2158,6 +2182,20 @@
     "url": "https://wicg.github.io/kv-storage/",
     "repository": "https://github.com/wicg/kv-storage",
     "title": "KV Storage",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "layout-instability": {
+    "url": "https://wicg.github.io/layout-instability/",
+    "repository": "https://github.com/wicg/layout-instability",
+    "title": "Layout Instability API",
     "status": "ED",
     "deliveredBy": [
       {
@@ -3659,6 +3697,22 @@
     "publisher": "WHATWG",
     "milestones": {},
     "feature": "timeupdate event"
+  },
+  "timing-entrytypes-registry": {
+    "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+    "edDraft": "https://w3c.github.io/timing-entrytypes-registry/",
+    "repository": "https://github.com/w3c/timing-entrytypes-registry",
+    "title": "Timing Entry Names Registry",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
   },
   "timing": {
     "url": "http://webtiming.github.io/timingobject/",
