@@ -1,0 +1,15 @@
+{
+  "url": "https://dom.spec.whatwg.org/",
+  "title": "DOM",
+  "features": {
+    "shadow": {
+      "url": "#shadow-trees",
+      "title": "Shadow tree",
+      "impl": {
+        "chromestatus": 4667415417847808,
+        "caniuse": "shadowdomv1",
+        "webkitstatus": "feature-shadow-dom"
+      }
+    }
+  }
+}

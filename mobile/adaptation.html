@@ -32,6 +32,16 @@
         </div>
 
         <div data-feature="JS-based adaptation">
+          <p><strong>Web components</strong> are a set of features that together allow applications to encapsulate their logic in re-usable components. Primary technologies used to create Web components:</p>
+          <ul>
+            <li>The <a data-featureid="html/template"><code>&lt;template&gt;</code> element</a> allows to declare fragments of HTML that can be cloned and inserted in the document by script.</li>
+            <li><a data-featureid="html/custom-elements">Custom elements</a> provides a way for authors to build their own fully-featured DOM elements.</li>
+            <li><a data-featureid="html/js-module">Integration with the JavaScript module system</a> lets authors leverage JavaScript modules in components.</li>
+            <li>The <a data-featureid="dom/shadow">shadow DOM</a> allows the web browser to render DOM elements without putting them into the main DOM document tree.</li>
+            <li><a data-featureid="css-scoping">CSS Scoping</a> lets authors define default styles for custom elements.</li>
+            <li><a data-featureid="css-shadow-parts">CSS Shadow Parts</a> enables flagging elements in a shadow tree and styling them in the outside page, thus providing an easy-to-use mechanism to customize styles of custom elements as needed.</li>
+          </ul>
+
           <p>As described in <a href="https://wicg.github.io/cq-usecases/">Use Cases and Requirements for Element Queries</a>, developers need to control the layout of an individual element relative to the size of its container to create complex responsive applications that adapt to a wide variety of devices and contexts. Media queries and the <code>resize</code> event on the <code>window</code> element only allow developers to adjust the layout of a component relative to the viewport size. <a data-featureid="resize-observer">Resize Observer</a> defines an interface for observing changes to an element's size and responding to these changes, allowing to design responsive Web components that can be used across applications and devices.</p>
         </div>
 

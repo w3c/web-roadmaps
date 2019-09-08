@@ -1,0 +1,34 @@
+{
+  "url": "https://www.w3.org/TR/css-scoping-1/",
+  "features": {
+    "host": {
+      "url": "#selectordef-host",
+      "title": "The :host pseudo-class",
+      "impl": {
+        "mdn": "css.selectors.host"
+      }
+    },
+    "hostfunction": {
+      "url": "#selectordef-host-function",
+      "title": "The :host() pseudo-class",
+      "impl": {
+        "mdn": "css.selectors.hostfunction"
+      }
+    },
+    "host-context": {
+      "url": "#selectordef-host-context",
+      "title": "The :host-context pseudo-class",
+      "impl": {
+        "mdn": "css.selectors.host-context"
+      }
+    },
+    "slotted": {
+      "url": "#selectordef-slotted",
+      "title": "The ::slotted() pseudo-element",
+      "impl": {
+        "mdn": "css.selectors.slotted"
+      }
+    }
+  },
+  "featuresCoverage": "full"
+}
