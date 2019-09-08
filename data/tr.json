@@ -1118,12 +1118,62 @@
       }
     }
   },
+  "css-scoping": {
+    "url": "https://www.w3.org/TR/css-scoping-1/",
+    "edDraft": "https://drafts.csswg.org/css-scoping/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Scoping Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "host": {
+        "title": "The :host pseudo-class",
+        "url": "#selectordef-host"
+      },
+      "hostfunction": {
+        "title": "The :host() pseudo-class",
+        "url": "#selectordef-host-function"
+      },
+      "host-context": {
+        "title": "The :host-context pseudo-class",
+        "url": "#selectordef-host-context"
+      },
+      "slotted": {
+        "title": "The ::slotted() pseudo-element",
+        "url": "#selectordef-slotted"
+      }
+    }
+  },
   "css-scroll-snap": {
     "url": "https://www.w3.org/TR/css-scroll-snap-1/",
     "edDraft": "https://drafts.csswg.org/css-scroll-snap-1/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Scroll Snap Module Level 1",
     "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-shadow-parts": {
+    "url": "https://www.w3.org/TR/css-shadow-parts-1/",
+    "edDraft": "http://drafts.csswg.org/css-shadow-parts/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Shadow Parts",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Style/CSS/members",
@@ -1398,6 +1448,26 @@
     "publisher": "WHATWG",
     "milestones": {},
     "feature": "Passive event listeners"
+  },
+  "dom": {
+    "url": "https://dom.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/dom",
+    "title": "DOM",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "shadow": {
+        "title": "Shadow tree",
+        "url": "#shadow-trees"
+      }
+    }
   },
   "domcapture": {
     "url": "https://www.w3.org/TR/mediacapture-fromelement/",
@@ -1877,6 +1947,34 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {}
+  },
+  "html": {
+    "url": "https://html.spec.whatwg.org/multipage/",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "template": {
+        "title": "The template element",
+        "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+      },
+      "custom-elements": {
+        "title": "Custom elements",
+        "url": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements"
+      },
+      "js-module": {
+        "title": "Integration with the JavaScript module system",
+        "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system"
+      }
+    }
   },
   "html5-browsing-context": {
     "url": "https://html.spec.whatwg.org/multipage/browsers.html#windows",
