@@ -77,6 +77,10 @@
         <div data-feature="Video processing">
           <p>Video processing using the Canvas API is very CPU-intensive. Beyond traditional video processing, modern GPUs often provide advanced vision processing capabilities (e.g. face and objects recognition) that would have direct applicability e.g. in augmented reality applications. The <a data-featureid="shape-detection">Shape Detection API</a> is exploring this space.</p>
         </div>
+
+        <div data-feature="Audio playback">
+          <p>Even with the introduction of <a href="https://www.w3.org/TR/webaudio/#audioworklet">audio worklets</a>, low-level audio processing remains confined by the boundary or the Web Audio API's graph rendering mechanism. The <a data-featureid="audio-device-client">Audio Device Client</a> proposal, which functions as an intermediate layer between Web Audio API and actual audio devices used by the browser, provides closer access to audio hardware with configurable parameters such as sample rate, callback buffer size and channel count, while allowing processing to take place in dedicated thread.</p>
+        </div>
       </section>
       <section>
         <h2>Features not covered by ongoing work</h2>
