@@ -130,6 +130,10 @@
         <div data-feature="Responsiveness">
           <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending">Early  detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yiedling to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
         </div>
+
+        <div data-feature="Infinite scrolling">
+          <p>The creation of a <a data-featureid="virtual-scroller">built-in <code>&lt;virtual-scroller&gt;</code> element</a> in HTML is under exploration in the Web Platform Incubator Community Group to avoid having to implement infinite scrolling purely in JavaScript. The browser would prioritize rendering children of that element that are in the viewport and not render children that are far away, thus improving performances while still allowing features such as "find in page", accessibility features, navigation focus, fragment URL navigation, etc. to work out of the box.</p>
+        </div>
       </section>
     </main>
     <script src="../js/generate.js"></script>
