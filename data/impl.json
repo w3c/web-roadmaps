@@ -29305,6 +29305,45 @@
       }
     ]
   },
+  "virtual-scroller": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5673195159945216",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5673195159945216",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5673195159945216",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5673195159945216",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5673195159945216",
+        "selected": true
+      }
+    ]
+  },
   "vocab-data-cube": {
     "implementations": []
   },

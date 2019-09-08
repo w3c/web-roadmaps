@@ -4072,6 +4072,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "virtual-scroller": {
+    "url": "https://github.com/WICG/virtual-scroller#a-built-in-virtual-scroller-for-the-web-platform",
+    "title": "A built-in virtual scroller for the web platform",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "vocab-data-cube": {
     "url": "http://www.w3.org/TR/vocab-data-cube/",
     "title": "The RDF Data Cube Vocabulary",
