@@ -1519,6 +1519,9 @@
   "atag20": {
     "implementations": []
   },
+  "audio-device-client": {
+    "implementations": []
+  },
   "audio-output": {
     "implementations": [
       {

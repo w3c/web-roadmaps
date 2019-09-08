@@ -180,6 +180,19 @@
     "informative": false,
     "milestones": {}
   },
+  "audio-device-client": {
+    "url": "https://github.com/WebAudio/web-audio-cg/blob/master/audio-device-client/explainer.md",
+    "title": "Audio Device Client",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/audio-comgp/",
+        "label": "Audio Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "audio-output": {
     "url": "https://www.w3.org/TR/audio-output/",
     "edDraft": "https://w3c.github.io/mediacapture-output/",
