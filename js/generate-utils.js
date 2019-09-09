@@ -1111,44 +1111,61 @@ const fillTables = function (specInfo, implInfo, toc, translate, lang) {
     }
   });
 
+  // Helper function to extract all specs referenced with a data-featureid.
+  // Fills out referencedIds and complete the optional references table
+  // (indexed by feature name) with ids of specs to list in the table.
+  let referencedIds = [];
+  let extractReferences = (featureEl, references) => {
+    // Extract all feature IDs referenced under the given element
+    let ids = [];
+    if (featureEl.dataset['featureid']) {
+      ids = [{
+        id: featureEl.dataset['featureid'],
+        linkonly: (featureEl.dataset['linkonly'] !== undefined) &&
+          (featureEl.dataset['linkonly'] !== 'false')
+      }];
+    }
+    else {
+      let specEls = featureEl.querySelectorAll('[data-featureid]');
+      for (let k = 0; k <specEls.length; k++) {
+        ids.push({
+          id: specEls[k].dataset['featureid'],
+          linkonly: (specEls[k].dataset['linkonly'] !== undefined) &&
+            (specEls[k].dataset['linkonly'] !== 'false')
+        });
+      }
+    }
+
+    // Update the list of IDs referenced by the section
+    Array.prototype.push.apply(referencedIds, ids.map(item => item.id));
+
+    // Update the array of features to reference in the section table if
+    // the element under review has a data-feature attribute.
+    // (note specifications flagged as "linkonly" won't appear)
+    if (references) {
+      let featureName = featureEl.dataset['feature'];
+      if (featureName) {
+        let refIds = ids.filter(item => !item.linkonly)
+          .map(item => item.id)
+          .filter((id, idx, self) => self.indexOf(id) === idx);
+        if (references[featureName]) {
+          Array.prototype.push.apply(references[featureName], refIds);
+        }
+        else {
+          references[featureName] = refIds;
+        }
+      }
+    }
+  };
+
   // Extract the list of feature IDs referenced in the document and
   // generate the list of sections for which a table needs to be generated
   let sectionsData = [];
-  let referencedIds = [];
   $(document, 'section').forEach(section => {
-    let references = {};
-    let extractReferences = featureEl => {
-      // Extract all feature IDs referenced under the given element
-      let ids = [];
-      if (featureEl.dataset['featureid']) {
-        ids = [featureEl.dataset['featureid']];
-      }
-      else {
-        let specEls = featureEl.querySelectorAll('[data-featureid]');
-        for (let k = 0; k <specEls.length; k++) {
-          if (ids.indexOf(specEls[k].dataset['featureid']) < 0) {
-            ids.push(specEls[k].dataset['featureid']);
-          }
-        }
-      }
-      Array.prototype.push.apply(referencedIds, ids);
-
-      // Update the array of features referenced in the underlying section if
-      // the element under review has a data-feature attribute.
-      let featureName = featureEl.dataset['feature'];
-      if (featureName) {
-        if (references[featureName]) {
-          Array.prototype.push.apply(references[featureName], ids);
-        }
-        else {
-          references[featureName] = ids;
-        }
-      }
-    };
-
     if (section.classList.contains('featureset')) {
       // A table needs to be generated at the end of the section.
-      $(section, '[data-feature]').forEach(extractReferences);
+      let references = {};
+      $(section, '[data-feature]').forEach(el => extractReferences(el, references));
       sectionsData.push({
         sectionEl: section,
         references
