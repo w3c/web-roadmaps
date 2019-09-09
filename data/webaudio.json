@@ -5,5 +5,15 @@
     "chromestatus": 6261718720184320,
     "edgestatus": "Web Audio API",
     "webkitstatus": "feature-web-audio"
+  },
+  "features": {
+    "worklet": {
+      "url": "#audioworklet",
+      "title": "The AudioWorklet interface",
+      "impl": {
+        "chromestatus": 4588498229133312,
+        "mdn": "api.AudioWorklet"
+      }
+    }
   }
 }
