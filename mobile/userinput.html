@@ -73,7 +73,7 @@
         </div>
 
         <div data-feature="Input latency">
-          <p>Today, all DOM events need to go through the main thread, which is the only one who has access to DOM elements. The <a data-featureid="input-for-workers">Input for Workers and Worklets</a> specification proposes an event delegation scheme to workers that assumes no DOM access. This mechanism would enable latency sensitive event dependent logic like drawing on an off-screen canvas, which would no longer be blocked by the main thread. Use cases include cloud scenarios (e.g. cloud gaming) where input events need to be forwarded to a server with minimal latency for processing.</p>
+          <p>Today, all DOM events need to go through the main thread, which is the only one who has access to DOM elements. The <a data-featureid="input-for-workers">Input for Workers and Worklets</a> specification proposes an event delegation scheme to workers that assumes no DOM access. This mechanism would enable latency sensitive event dependent logic, which would no longer be blocked by the main thread. Use cases include drawing on an <a data-featureid="offscreencanvas" data-linkonly><code>OffscreenCanvas</code></a>, cloud scenarios (e.g. cloud gaming) where input events need to be forwarded to a server with minimal latency for processing, interactive animations in conjunction with <a data-featureid="animation-worklet" data-linkonly>CSS Animation Worklet</a> where animation is driven by user input, and interactive audio in conjunction with <a data-featureid="webaudio/worklet" data-linkonly><code>AudioWorklet</code></a>.</p>
         </div>
       </section>
 
