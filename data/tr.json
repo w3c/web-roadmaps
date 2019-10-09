@@ -42,7 +42,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "ambientlight": {
@@ -60,7 +60,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "animation-frames": {
@@ -338,7 +338,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "beacon": {
@@ -356,7 +356,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-09-30"
+      "PR": "2020-06-30"
     }
   },
   "budget-api": {
@@ -617,9 +617,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-06-30"
-    },
+    "milestones": {},
     "features": {
       "report-to": {
         "title": "report-to directive",
@@ -853,7 +851,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "css-content-3": {
     "url": "https://www.w3.org/TR/css-content-3/",
@@ -1487,9 +1487,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "dpub-aam10": {
     "url": "https://www.w3.org/TR/dpub-aam-1.0/",
@@ -1745,7 +1743,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "geodcat-ap": {
@@ -1887,9 +1885,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "hbss": {
     "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
@@ -2075,9 +2071,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "ime-api": {
     "url": "https://www.w3.org/TR/ime-api/",
@@ -2138,6 +2132,19 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "input-for-workers": {
+    "url": "https://wicg.github.io/input-for-workers/",
+    "title": "Input for Workers and Worklets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "inputdate": {
@@ -2361,7 +2368,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "mapbox-vector-tiles": {
@@ -2481,9 +2488,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2020-12-30"
-    },
+    "milestones": {},
     "feature": "Media keys"
   },
   "mediaqueries": {
@@ -2570,9 +2575,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-03-30"
-    }
+    "milestones": {}
   },
   "mobile-accessibility-mapping": {
     "url": "https://www.w3.org/TR/mobile-accessibility-mapping/",
@@ -2650,9 +2653,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "WR/LC": "2019-03-30"
-    }
+    "milestones": {}
   },
   "mwabp": {
     "url": "https://www.w3.org/TR/mwabp/",
@@ -2785,7 +2786,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "owl-time": {
@@ -2819,8 +2820,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-06-30",
-      "PR": "2019-09-30"
+      "PR": "2019-12-30"
     },
     "features": {
       "rtcdatachannel": {
@@ -2933,9 +2933,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-06-30",
-      "PR": "2019-09-30",
-      "REC": "2019-12-30"
+      "PR": "2020-06-30",
+      "REC": "2020-06-30"
     }
   },
   "payment-method-manifest": {
@@ -2969,9 +2968,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-06-30",
-      "PR": "2019-09-30",
-      "REC": "2019-12-30"
+      "PR": "2020-06-30",
+      "REC": "2020-06-30"
     }
   },
   "performance-timeline": {
@@ -3130,7 +3128,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "PR": "2020-06-30"
     }
   },
   "priority-hints": {
@@ -3243,9 +3241,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "referrer-policy": {
     "url": "https://www.w3.org/TR/referrer-policy/",
@@ -3261,9 +3257,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-03-30"
-    }
+    "milestones": {}
   },
   "remote-playback": {
     "url": "https://www.w3.org/TR/remote-playback/",
@@ -3279,7 +3273,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2020-12-30"
+    }
   },
   "requestidlecallback": {
     "url": "https://www.w3.org/TR/requestidlecallback/",
@@ -3295,9 +3291,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "REC": "2018-09-30"
-    }
+    "milestones": {}
   },
   "resize-observer": {
     "url": "https://drafts.csswg.org/resize-observer-1/",
@@ -3320,9 +3314,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    },
+    "milestones": {},
     "features": {
       "dns-prefetch": {
         "title": "DNS prefetch",
@@ -3408,10 +3400,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "WR/LC": "2019-03-30",
-      "CR": "2019-06-30"
-    }
+    "milestones": {}
   },
   "scroll-animations": {
     "url": "https://wicg.github.io/scroll-animations/",
@@ -3470,7 +3459,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2021-12-30"
+    }
   },
   "securecontexts": {
     "url": "https://www.w3.org/TR/secure-contexts/",
@@ -3486,9 +3477,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-03-30"
-    }
+    "milestones": {}
   },
   "selectors-states": {
     "url": "https://www.w3.org/TR/selectors-states/",
@@ -3536,7 +3525,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2019-12-30"
+    }
   },
   "sfa": {
     "url": "http://www.opengeospatial.org/standards/sfa",
@@ -3762,9 +3754,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "task-scheduler": {
     "url": "https://www.w3.org/TR/task-scheduler/",
@@ -3936,9 +3926,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "REC": "2018-11-13"
-    }
+    "milestones": {}
   },
   "ttml": {
     "url": "https://www.w3.org/TR/ttml2/",
@@ -3954,9 +3942,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "REC": "2018-11-13"
-    }
+    "milestones": {}
   },
   "ttml1": {
     "url": "https://www.w3.org/TR/ttml1/",
@@ -3972,9 +3958,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "REC": "2018-11-13"
-    }
+    "milestones": {}
   },
   "tvtuner": {
     "url": "https://w3c.github.io/tvcontrol-api/",
@@ -4034,9 +4018,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-03-30"
-    }
+    "milestones": {}
   },
   "uisecurity": {
     "url": "https://www.w3.org/TR/UISecurity/",
@@ -4068,9 +4050,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2018-12-30"
-    }
+    "milestones": {}
   },
   "vcard-rdf": {
     "url": "http://www.w3.org/TR/vcard-rdf/",
@@ -4165,7 +4145,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-06-30"
+      "PR": "2020-06-30"
     },
     "feature": "viewport-percentage lengths"
   },
@@ -4215,7 +4195,7 @@
     "edDraft": "https://w3c.github.io/dxwg/dcat/",
     "repository": "https://github.com/w3c/dxwg",
     "title": "Data Catalog Vocabulary (DCAT) - Version 2",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2017/dxwg/",
@@ -4225,9 +4205,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "WR/LC": "2019-06-30",
-      "CR": "2019-06-30",
-      "PR": "2019-06-30"
+      "PR": "2019-12-30"
     }
   },
   "vocab-dcat": {
@@ -4299,7 +4277,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30"
     }
   },
   "wcag21": {
@@ -4316,9 +4294,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "REC": "2018-06-30"
-    }
+    "milestones": {}
   },
   "wcs": {
     "url": "http://www.opengeospatial.org/standards/wcs",
@@ -4417,7 +4393,13 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "worklet": {
+        "title": "The AudioWorklet interface",
+        "url": "#audioworklet"
+      }
+    }
   },
   "webauthn": {
     "url": "https://www.w3.org/TR/webauthn-1/",
@@ -4554,8 +4536,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-06-30",
-      "PR": "2019-09-30"
+      "PR": "2019-12-30"
     },
     "feature": "Priority and QoS Model"
   },
@@ -4574,8 +4555,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-06-30",
-      "PR": "2019-09-30"
+      "PR": "2019-12-30"
     },
     "feature": "Browser default ICE servers"
   },
@@ -4593,9 +4573,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-09-30"
-    }
+    "milestones": {}
   },
   "websockets": {
     "url": "https://www.w3.org/TR/websockets/",
@@ -4819,7 +4797,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "wot-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
@@ -4835,7 +4815,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "wot-thing-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
@@ -4851,7 +4833,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "wps": {
     "url": "http://www.opengeospatial.org/standards/wms",

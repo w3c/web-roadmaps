@@ -484,8 +484,7 @@
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps",
-        "selected": true
+        "href": "https://caniuse.com/#feat=offline-apps"
       },
       {
         "ua": "safari",
@@ -512,8 +511,7 @@
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps",
-        "selected": true
+        "href": "https://caniuse.com/#feat=offline-apps"
       },
       {
         "ua": "firefox_android",
@@ -551,6 +549,20 @@
         "selected": true
       },
       {
+        "ua": "chrome",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6192449487634432",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6192449487634432",
+        "selected": true
+      },
+      {
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
@@ -558,13 +570,13 @@
       },
       {
         "ua": "edge",
-        "status": "shipped",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6192449487634432"
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6192449487634432"
       },
@@ -712,7 +724,6 @@
         "features": [
           "background_color",
           "install",
-          "purpose",
           "theme_color"
         ],
         "partial": true
@@ -725,7 +736,6 @@
         "features": [
           "background_color",
           "install",
-          "purpose",
           "related_applications",
           "theme_color"
         ],
@@ -1051,20 +1061,6 @@
       "purpose": {
         "implementations": [
           {
-            "ua": "chrome",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6690807302062080",
-            "selected": true
-          },
-          {
-            "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6690807302062080",
-            "selected": true
-          },
-          {
             "ua": "firefox",
             "status": "",
             "source": "chromestatus",
@@ -1097,7 +1093,8 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
-            "guess": true
+            "guess": true,
+            "selected": true
           },
           {
             "ua": "safari_ios",
@@ -1112,7 +1109,8 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
-            "guess": true
+            "guess": true,
+            "selected": true
           },
           {
             "ua": "firefox_android",
@@ -4979,6 +4977,7 @@
         "source": "chromestatus",
         "guess": true,
         "features": [
+          "report-to",
           "navigate-to",
           "strict-dynamic",
           "unsafe-hashed-attributes",
@@ -4993,6 +4992,7 @@
         "source": "chromestatus",
         "guess": true,
         "features": [
+          "report-to",
           "navigate-to",
           "strict-dynamic",
           "unsafe-hashed-attributes",
@@ -5016,6 +5016,20 @@
     "features": {
       "report-to": {
         "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5826576096690176",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5826576096690176",
+            "selected": true
+          },
           {
             "ua": "firefox",
             "status": "",
@@ -5042,16 +5056,14 @@
             "status": "indevelopment",
             "source": "chromestatus",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "chrome_android",
             "status": "indevelopment",
             "source": "chromestatus",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "edge",
@@ -13800,6 +13812,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-snappoints",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -13885,7 +13904,7 @@
       },
       {
         "ua": "webkit",
-        "status": "consideration",
+        "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-css-shadow-parts"
       },
@@ -16016,7 +16035,7 @@
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4613920211861504",
         "selected": true
@@ -16804,7 +16823,7 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -16816,7 +16835,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -16832,14 +16851,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6727079454310400",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6727079454310400",
             "selected": true
@@ -16867,13 +16886,13 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           }
@@ -16883,14 +16902,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6230814637424640",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6230814637424640",
             "selected": true
@@ -16918,13 +16937,13 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true
           }
@@ -17728,12 +17747,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to not supporting `::backdrop`, and supporting the old `:full-screen` syntax rather than the standard `:fullscreen`.",
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen",
         "selected": true
@@ -20274,7 +20288,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=download",
         "selected": true
@@ -20992,6 +21006,9 @@
     ]
   },
   "indie-ui-events": {
+    "implementations": []
+  },
+  "input-for-workers": {
     "implementations": []
   },
   "inputdate": {
@@ -21807,14 +21824,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5110682739539968",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5110682739539968",
         "selected": true
@@ -23077,7 +23094,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Fully supported only in iPadOS 13 and later."
         ],
@@ -23203,14 +23220,7 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6284708426022912",
         "selected": true
@@ -23599,6 +23609,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -23703,8 +23720,7 @@
         "ua": "samsunginternet_android",
         "status": "",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
       {
         "ua": "webview_android",
@@ -25511,16 +25527,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=pointer",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=pointer"
       },
       {
         "ua": "opera",
@@ -25531,7 +25541,11 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
+        "notes": [
+          "element.releasePointerCapture(pointerID) is only partially implemented. Calling it after pointerdown does not result in boundary events (pointerover pointerleave) being dispatched during pointer movements.",
+          "Value of pointerevent.buttons is incorrect on pointermove events generated by touches. Is 0 but should be 1."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=pointer",
         "selected": true
@@ -26088,11 +26102,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder",
         "selected": true
@@ -26603,16 +26613,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=resizeobserver"
       },
       {
         "ua": "opera",
@@ -31897,7 +31901,11 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the \"Experimental Features\" developer menu"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -32434,8 +32442,375 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-audio"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true,
+        "selected": true
       }
-    ]
+    ],
+    "features": {
+      "worklet": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4588498229133312",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4588498229133312",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "consideration",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4588498229133312",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4588498229133312",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/4588498229133312",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet"
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "prefix": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "prefix": true,
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=audio-api",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6261718720184320",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6261718720184320",
+            "guess": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6261718720184320",
+            "guess": true,
+            "prefix": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6261718720184320",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6261718720184320",
+            "guess": true,
+            "prefix": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "edgestatus",
+            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webaudioapi/",
+            "guess": true
+          },
+          {
+            "ua": "webkit",
+            "status": "shipped",
+            "source": "webkitstatus",
+            "href": "https://webkit.org/status/#feature-web-audio",
+            "guess": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          }
+        ]
+      }
+    }
   },
   "webauthn": {
     "implementations": [
@@ -32460,11 +32835,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu. Currently supports USB-based CTAP & CTAP2 HID devices."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
@@ -33112,21 +33483,7 @@
         "href": "https://caniuse.com/#feat=sql-storage"
       },
       {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=sql-storage",
-        "selected": true
-      },
-      {
         "ua": "opera",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=sql-storage",
-        "selected": true
-      },
-      {
-        "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage",
@@ -33189,9 +33546,10 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6330987952734208"
+        "href": "https://www.chromestatus.com/feature/6330987952734208",
+        "selected": true
       },
       {
         "ua": "edge",
