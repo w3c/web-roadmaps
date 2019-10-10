@@ -32197,6 +32197,9 @@
       }
     ]
   },
+  "web-transport": {
+    "implementations": []
+  },
   "webassembly": {
     "implementations": [
       {

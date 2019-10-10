@@ -4366,6 +4366,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "web-transport": {
+    "url": "https://wicg.github.io/web-transport/",
+    "title": "WebTransport",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "webassembly": {
     "url": "https://webassembly.github.io/spec/",
     "title": "WebAssembly",
