@@ -13779,11 +13779,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Available behind the \"Experimental Web Platform features\" feature flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints",
         "selected": true
@@ -14194,9 +14190,6 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
-        "notes": [
-          "iOS Safari only supports `auto` and `manipulation`."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-touch-action",
         "selected": true
@@ -15562,9 +15555,6 @@
       {
         "ua": "opera",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to [a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=773041) where long lists of items are unscrollable resulting in unselectable options."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist",
         "selected": true
@@ -17694,12 +17684,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to not supporting `::backdrop`, and supporting the old `:full-screen` syntax rather than the standard `:fullscreen`.",
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen",
         "selected": true
@@ -19756,9 +19741,6 @@
           {
             "ua": "opera",
             "status": "shipped",
-            "notes": [
-              "Supports \"Autonomous custom elements\" but not \"Customized built-in elements\"."
-            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=custom-elementsv1",
             "selected": true
@@ -21577,6 +21559,9 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "notes": [
+          "IntersectionObserver does not trigger its callback in a Chrome background tab"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver",
         "selected": true
@@ -23583,13 +23568,10 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the `Experimental canvas features` flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offscreencanvas"
+        "href": "https://caniuse.com/#feat=offscreencanvas",
+        "selected": true
       },
       {
         "ua": "chrome_android",
@@ -23693,8 +23675,7 @@
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
       {
         "ua": "opera_android",
@@ -25125,10 +25106,11 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Can be enabled in Firefox Nightly only via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`."
+          "Partial support in Firefox 68–70 refers to being enabled by default in Firefox pre-release channels for Windows users only.",
+          "Partial support in Firefox refers to the fact that Mozilla provides an equivalent proprietary feature, which allows users to use Picture-in-Picture mode for all playing videos.",
+          "Can be enabled in Firefox via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -25144,7 +25126,7 @@
         "ua": "safari",
         "status": "shipped",
         "notes": [
-          "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
+          "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
@@ -25153,7 +25135,7 @@
         "ua": "opera",
         "status": "shipped",
         "notes": [
-          "Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos."
+          "Partial support in Opera refers to the fact that Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
@@ -25162,7 +25144,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Apple provides an equivalent proprietary API for Picture-in-Picture. Only macOS 10.12 Sierra & iOS 9 and newer support this API."
+          "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
@@ -25194,7 +25176,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -28494,6 +28476,9 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "notes": [
+          "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=speech-synthesis",
         "selected": true
@@ -29035,6 +29020,9 @@
           {
             "ua": "opera",
             "status": "shipped",
+            "notes": [
+              "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=speech-synthesis",
             "selected": true
@@ -34117,7 +34105,19 @@
         "status": "experimental",
         "flag": true,
         "notes": [
-          "Only available when registering an [origin trial](https://developers.chrome.com/origintrials/#/view_trial/-5670031930859454463)."
+          "Part of an origin trial",
+          "Part of the spec can be enabled with the [webxr](chrome://flags/#webxr) and [webxr-hit-test](chrome://flags/#webxr-hit-test) flags."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webxr"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Part of an origin trial",
+          "Part of the spec can be enabled with the [webxr](chrome://flags/#webxr) and [webxr-hit-test](chrome://flags/#webxr-hit-test) flags."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webxr"

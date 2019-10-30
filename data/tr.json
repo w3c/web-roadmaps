@@ -842,7 +842,7 @@
     "edDraft": "https://drafts.csswg.org/css-contain/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Containment Module Level 1",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Style/CSS/members",
@@ -4811,7 +4811,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "PR": "2020-03-30"
     }
   },
   "wot-description": {
