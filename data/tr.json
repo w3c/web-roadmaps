@@ -86,7 +86,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -442,7 +442,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -653,7 +653,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -714,7 +714,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -730,7 +730,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -747,7 +747,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -764,7 +764,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -781,7 +781,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -842,10 +842,10 @@
     "edDraft": "https://drafts.csswg.org/css-contain/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Containment Module Level 1",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -863,7 +863,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -879,7 +879,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -895,7 +895,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -911,7 +911,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -928,7 +928,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -954,7 +954,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -992,7 +992,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1008,7 +1008,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1024,7 +1024,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1040,7 +1040,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1056,7 +1056,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1072,7 +1072,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1088,7 +1088,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1104,7 +1104,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1126,7 +1126,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1160,7 +1160,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1176,7 +1176,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1222,7 +1222,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1238,7 +1238,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1255,7 +1255,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1270,7 +1270,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1286,7 +1286,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -1903,7 +1903,7 @@
   "hr-time": {
     "url": "https://www.w3.org/TR/hr-time",
     "title": "High Resolution Time",
-    "status": "REC",
+    "status": "Retired",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -2498,7 +2498,7 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -2514,7 +2514,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -3390,10 +3390,6 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/das/",
-        "label": "Devices and Sensors Working Group"
-      },
-      {
         "url": "https://www.w3.org/2011/04/webrtc/",
         "label": "Web Real-Time Communications Working Group"
       }
@@ -3516,7 +3512,7 @@
     "edDraft": "https://w3c.github.io/ServiceWorker/v1/",
     "repository": "https://github.com/w3c/ServiceWorker",
     "title": "Service Workers 1",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/sw/",
@@ -3565,7 +3561,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -4138,7 +4134,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
@@ -4195,7 +4191,7 @@
     "edDraft": "https://w3c.github.io/dxwg/dcat/",
     "repository": "https://github.com/w3c/dxwg",
     "title": "Data Catalog Vocabulary (DCAT) - Version 2",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2017/dxwg/",
@@ -4312,7 +4308,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
+        "url": "https://www.w3.org/Style/CSS/",
         "label": "Cascading Style Sheets (CSS) Working Group"
       },
       {
