@@ -30636,7 +30636,7 @@
         "ua": "edge",
         "status": "shipped",
         "notes": [
-          "IE9-11 desktop & mobile don't properly scale SVG files.  [Adding height, width, viewBox, and CSS rules](https://codepen.io/tomByrer/pen/qEBbzw?editors=110) seem to be the best workaround."
+          "IE9-11 & Edge don't properly scale SVG files. [Adding height, width, viewBox, and CSS rules](https://codepen.io/tomByrer/pen/qEBbzw?editors=110) seems to be the best workaround."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=svg",
@@ -33346,6 +33346,45 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5665052275245056",
+        "selected": true
+      }
+    ]
+  },
+  "webrtc-svc": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5769626174619648",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5769626174619648",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5769626174619648",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5769626174619648",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5769626174619648",
         "selected": true
       }
     ]

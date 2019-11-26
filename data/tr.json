@@ -4584,6 +4584,22 @@
     "informative": false,
     "milestones": {}
   },
+  "webrtc-svc": {
+    "url": "https://www.w3.org/TR/webrtc-svc/",
+    "edDraft": "https://w3c.github.io/webrtc-svc/",
+    "repository": "https://github.com/w3c/webrtc-svc",
+    "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/04/webrtc/",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "websockets": {
     "url": "https://www.w3.org/TR/websockets/",
     "title": "The WebSocket API",
