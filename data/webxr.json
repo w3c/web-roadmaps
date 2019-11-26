@@ -1,12 +1,5 @@
 {
-  "url": "https://immersive-web.github.io/webxr/",
-  "title": "WebXR Device API",
-  "wgs": [
-    {
-      "label": "Immersive Web Working Group",
-      "url": "https://www.w3.org/immersive-web/"
-    }
-  ],
+  "url": "https://www.w3.org/TR/webxr/",
   "impl": {
     "caniuse": "webxr",
     "chromestatus": 5680169905815552,
