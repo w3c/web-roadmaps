@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -146,7 +146,7 @@
         </div>
 
         <div data-feature="Responsiveness" id="responsiveness">
-          <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending" id="is-input-pending" href="https://wicg.github.io/is-input-pending/">Early  detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yiedling to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
+          <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending" id="is-input-pending" href="https://wicg.github.io/is-input-pending/">Early detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yielding to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
         </div>
 
         <div data-feature="Infinite scrolling" id="infinite-scrolling-0">
@@ -169,7 +169,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>

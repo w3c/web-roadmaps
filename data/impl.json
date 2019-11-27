@@ -34146,6 +34146,48 @@
       }
     ]
   },
+  "webxr-ar-module": {
+    "implementations": []
+  },
+  "webxr-gamepads-module": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5659025263820800",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5659025263820800",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5659025263820800",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5659025263820800",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5659025263820800",
+        "selected": true
+      }
+    ]
+  },
   "webxr": {
     "implementations": [
       {

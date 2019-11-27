@@ -4716,8 +4716,40 @@
     "milestones": {},
     "feature": "Web workers"
   },
+  "webxr-ar-module": {
+    "url": "https://www.w3.org/TR/webxr-ar-module/",
+    "edDraft": "https://immersive-web.github.io/webxr-ar-module/",
+    "repository": "https://github.com/immersive-web/webxr-ar-module",
+    "title": "WebXR Augmented Reality Module - Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webxr-gamepads-module": {
+    "url": "https://www.w3.org/TR/webxr-gamepads-module/",
+    "edDraft": "https://immersive-web.github.io/webxr-gamepads-module/",
+    "repository": "https://github.com/immersive-web/webxr-gamepads-module",
+    "title": "WebXR Gamepads Module - Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "webxr": {
-    "url": "https://immersive-web.github.io/webxr/",
+    "url": "https://www.w3.org/TR/webxr/",
     "edDraft": "https://immersive-web.github.io/webxr/",
     "repository": "https://github.com/immersive-web/webxr",
     "title": "WebXR Device API",
@@ -4729,7 +4761,10 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
   },
   "wfs3": {
     "url": "https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html",
