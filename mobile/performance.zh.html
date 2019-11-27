@@ -16,7 +16,7 @@
         <div data-feature="计时 API">
           <p><a href="https://www.w3.org/webperf/">Web 性能工作组</a>开发了一些规范，它们向 Web 应用提供计时 API，用于分析各任务耗费的时间。</p>
 
-          <p><a data-featureid="hr-time">高解析度时间</a>将单调的亚毫秒级解析度时钟 API 提供给Web应用，以便 Web 应用可以精确地测量两个事件之间的时间间隔。<a data-featureid="performance-timeline">性能时间线</a>定义了一个统一的界面来存储和检索性能指标数据。单独的性能指标接口在不同的规范中定义：</p>
+          <p><a data-featureid="hr-time">高解析度时间</a>将单调的亚毫秒级解析度时钟 API 提供给Web应用，以便 Web 应用可以精确地测量两个事件之间的时间间隔。<a data-featureid="performance-timeline">性能时间线</a>定义了一个统一的界面来存储和检索性能指标数据。单独的性能指标接口在<a data-featureid="timing-entrytypes-registry">Timing Entry Names Registry</a>中列出并在不同的规范中定义：</p>
 
           <ul>
             <li><a data-featureid="navigation-timing">导航计时</a>提供导航和元素相关的计时信息；</li>
@@ -31,6 +31,10 @@
 
         <div data-feature="本地优先级处理">
           <p><a data-featureid="requestidlecallback">后台任务协同调度</a>规范定义了 <code>requestIdleCallback</code> 方法，该方法允许在应用未处理其他操作的下一个机会中调度操作。</p>
+        </div>
+
+        <div data-feature="渲染性能">
+          <p>CSS 的 <a data-featureid="css-contain">contain</a> 属性可以指示某个元素的子树独立于页面的其余部分。这让用户代理能够进行大量优化，尤其是跳过屏幕外已知不会影响屏幕上内容呈现的部分。</p>
         </div>
 
         <div data-feature="动画优化">
@@ -77,7 +81,6 @@
 
         <div data-feature="渲染性能">
             <p>为了应用的动画部分确保最佳的性能，Web 开发者可以使用 CSS 的 <a data-featureid="css-will-change"><code>will-change</code></a> 属性让浏览器在动画发生之前计算动画。</p>
-            <p>CSS 的 <a data-featureid="css-contain">contain</a> 属性可以指示某个元素的子树独立于页面的其余部分。这让用户代理能够进行大量优化，尤其是跳过屏幕外已知不会影响屏幕上内容呈现的部分。</p>
         </div>
 
         <div data-feature="动画优化">
@@ -105,9 +108,13 @@
         <h2>探索性工作</h2>
 
         <div data-feature="计时 API">
-          <p><a data-featureid="frame-timing">帧计时 API</a> 的工作旨在提供应用在用户设备上运行时获得的每秒帧数的详细信息。</p>
+          <p><a data-featureid="frame-timing">帧计时 API</a> 旨在提供应用在用户设备上运行时获得的每秒帧数的详细信息。</p>
 
-          <p><a data-featureid="event-timing">事件计时 API</a>上的工作使开发者能够衡量用户交互触发的某些事件的延迟。</p>
+          <p><a data-featureid="event-timing">事件计时 API</a>使开发者能够衡量用户交互触发的某些事件的延迟。</p>
+
+          <p><a data-featureid="element-timing">元素计时 API</a> 支持监视屏幕上显示大图片或开发者指定的图像元素和文本节点何时显示。</p>
+
+          <p><a data-featureid="layout-instability">排版不稳定性 API</a> 基于页面上降低用户体验的 HTML 元素的移动让 Web 开发者深入了解其网页的稳定性。</p>
         </div>
 
         <div data-feature="网络优先级">
@@ -120,6 +127,15 @@
 
         <div data-feature="JS 性能">
           <p>Web 应用对 JavaScript 在客户端上的执行时间知道的的有限，而如果没有有效收集堆栈样本的能力，应用将被迫使用不精确的分析钩子来检测代码，并可能会显著减慢代码执行速度。<a data-featureid="js-self-profiling">JS Self-Profiling API</a> 提议描述了一个用于操作抽样性能分析器的API，该分析器允许应用收集丰富的执行数据，以便以最小的开销收集和分析真实的最终用户环境。</p>
+        </div>
+
+        <div data-feature="反应性">
+          <p>需要运行长任务的应用（例如在加载页面时）需要在快速加载页面（或减少任务执行时间）与快速响应输入之间进行权衡。<a data-featureid="is-input-pending">输入事件的早期检测</a>规范提出了 <code>isInputPending</code> 方法，长时间运行的脚本可以同步调用，而不会浪费时间在其他脚本和事件处理上，以检测是否有未处理的输入事件，这些事件的执行可能会延迟触发。
+          </p>
+        </div>
+
+        <div data-feature="无限滚动">
+            <p>Web 平台孵化器社区组正在探索添加一个新的  <a data-featureid="virtual-scroller"><code>&lt;virtual-scroller&gt;</code> 元素</a>，以避免使用纯 JavaScript 实现无限滚动。浏览器将优先渲染在视口（viewport）中的元素，而不是其他元素。这样能够提高性能，同时仍允许诸如查找、无障碍、导航焦点、片段 URL 导航等特性开箱即用。</p>
         </div>
       </section>
     </main>

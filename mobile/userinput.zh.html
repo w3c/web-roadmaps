@@ -67,6 +67,15 @@
         <div data-feature="通知">
           <p>除了<a href="https://www.w3.org/TR/notifications/">Web通知</a>以外，<a data-featureid="badging">标记 API</a>定义了另一种通知机制，允许已经安装在设备上的 Web 应用（例如通过清单文件）设置一个标记，通常显示在主屏幕上应用程序的图标旁边，在应用程序的状态发生变化时通知用户可能需要注意的信息（如新消息）。</p>
         </div>
+
+        <div data-feature="反应性">
+          <p>需要运行长任务的应用（例如在加载页面时）需要在快速加载页面（或减少任务执行时间）与快速响应输入之间进行权衡。<a data-featureid="is-input-pending">输入事件的早期检测</a>规范提出了 <code>isInputPending</code> 方法，长时间运行的脚本可以同步调用，而不会浪费时间在其他脚本和事件处理上，以检测是否有未处理的输入事件，这些事件的执行可能会延迟触发。
+          </p>
+        </div>
+
+        <div data-feature="输入延迟">
+            <p>目前，所有的 DOM 事件都需要通过主线程，因为主线程是唯一可以访问 DOM 元素的线程。<a data-featureid="input-for-workers">Input for Workers and Worklets</a> 规范为 worker 提供了一个没有 DOM 访问权限的 event delegation scheme。这种机制将启用对延迟敏感的事件逻辑，该逻辑将不被主线程阻止。这个特性的用例包括在 <a data-featureid="offscreencanvas" data-linkonly><code>OffscreenCanvas</code></a> 上绘制、需要将输入事件转发到服务器以最小延迟进行处理的云场景（如云游戏）、与 <a data-featureid="animation-worklet" data-linkonly>CSS Animation Worklet</a> 结合的交互式动画（其中动画由用户输入驱动）和与 <a data-featureid="webaudio/worklet" data-linkonly><code>AudioWorklet</code></a> 结合使用的交互式音频。</p>
+          </div>
       </section>
 
       <section>
