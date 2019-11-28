@@ -1,0 +1,13 @@
+{
+  "url": "https://gpuweb.github.io/gpuweb/",
+  "title": "WebGPU",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "chromestatus": 6213121689518080
+  }
+}
