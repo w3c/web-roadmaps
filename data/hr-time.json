@@ -1,5 +1,5 @@
 {
-  "url": "https://www.w3.org/TR/hr-time",
+  "url": "https://www.w3.org/TR/hr-time-2",
   "impl": {
     "caniuse": "high-resolution-time",
     "chromestatus": 5349124069130240,
