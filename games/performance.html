@@ -42,7 +42,7 @@
         <h2>Technologies in progress</h2>
 
         <div data-feature="Low-level bytecode format">
-          <p>Games that require tight memory and processing controls are typically written in C++ (or equivalent). <a data-featureid="webassembly">WebAssembly</a> (Wasm) is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages.  Most 3D game engines now support WebAssembly as a compilation target. Wasm makes it possible to reuse the same efficient codebase across platforms.</p>
+          <p>Games that require tight memory and processing controls are typically written in C++ (or equivalent). <a data-featureid="wasm-core">WebAssembly</a> (Wasm) is a low-level bytecode format that runs with near-native speed in web browsers and supports compilation from C, C++, and other languages.  Most 3D game engines now support WebAssembly as a compilation target. Wasm makes it possible to reuse the same efficient codebase across platforms.</p>
         </div>
 
         <div data-feature="Network prioritization">
@@ -103,7 +103,7 @@
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt>Artificial Intelligence (AI)</dt>
-          <dd>Many games implement a so-called game AI to generate intelligent behaviors for game characters that are not under the control of a real player. While the concept of AI in games is different from the notion of AI in other fields, a game AI may reuse similar techniques, e.g. based on machine learning, neural networks and other data mining algorithms. A sub-ideal solution to implement such algorithms in Web browsers is to use <a data-featureid="webassembly">WebAssembly</a> and <a data-featureid="webgl">WebGL</a>. An early proposal for a <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> was made in October 2017 to expose more suitable primitives to Web applications, but has not yet led to standardization work in that field at W3C.</dd>
+          <dd>Many games implement a so-called game AI to generate intelligent behaviors for game characters that are not under the control of a real player. While the concept of AI in games is different from the notion of AI in other fields, a game AI may reuse similar techniques, e.g. based on machine learning, neural networks and other data mining algorithms. A sub-ideal solution to implement such algorithms in Web browsers is to use <a data-featureid="wasm-core">WebAssembly</a> and <a data-featureid="webgl">WebGL</a>. An early proposal for a <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> was made in October 2017 to expose more suitable primitives to Web applications, but has not yet led to standardization work in that field at W3C.</dd>
         </dl>
       </section>
     </main>
