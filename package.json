@@ -4,7 +4,7 @@
     "ajv-cli": "^3.0.0",
     "fetch-filecache-for-crawling": "^3.0.2",
     "jsdom": "^11.8.0",
-    "mdn-browser-compat-data": "^0.0.92",
+    "mdn-browser-compat-data": "^1.0.0",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0"
   },
