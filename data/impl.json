@@ -6404,6 +6404,9 @@
             "ua": "firefox",
             "status": "experimental",
             "flag": true,
+            "notes": [
+              "Enabled by default in Firefox Nightly 71."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
             "selected": true
@@ -6657,6 +6660,9 @@
             "ua": "firefox",
             "status": "experimental",
             "flag": true,
+            "notes": [
+              "Enabled by default in Firefox Nightly 71."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
             "selected": true
@@ -7135,6 +7141,9 @@
             "ua": "firefox",
             "status": "experimental",
             "flag": true,
+            "notes": [
+              "Enabled by default in Firefox Nightly 71."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
             "selected": true
@@ -9053,7 +9062,7 @@
       },
       {
         "ua": "opera",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
@@ -9061,7 +9070,19 @@
           "rgba",
           "rgba-hex"
         ],
-        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hsla",
+          "rgba",
+          "rgba-hex"
+        ],
         "partial": true,
         "selected": true
       },
@@ -9177,10 +9198,17 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true,
             "selected": true
           },
@@ -9391,10 +9419,16 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true
           },
           {
@@ -9601,10 +9635,16 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true
           },
           {
@@ -9701,14 +9741,13 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "mdn",
             "selected": true
           },
           {
             "ua": "opera_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "selected": true
           },
@@ -9794,10 +9833,16 @@
           },
           {
             "ua": "opera",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
             "partial": true
           },
           {
@@ -14330,7 +14375,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/touch-action",
         "selected": true
@@ -15690,6 +15735,17 @@
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "partial": true,
+        "notes": [
+          "The dropdown menu containing available options does not appear in Opera for Android."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "mdn",
@@ -15709,7 +15765,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
         "selected": true
@@ -18948,6 +19004,18 @@
         "selected": true
       },
       {
+        "ua": "nodejs",
+        "status": "shipped",
+        "partial": true,
+        "notes": [
+          "Stability: Experimental",
+          "Exported from the <code>perf_hooks</code> module"
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -21896,6 +21964,25 @@
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming"
       },
       {
+        "ua": "firefox",
+        "status": "",
+        "notes": [
+          "See <a href='https://bugzil.la/1348405'>bug 1348405</a>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "",
+        "notes": [
+          "See <a href='https://bugzil.la/1348405'>bug 1348405</a>."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -23704,8 +23791,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
         "selected": true
@@ -34249,13 +34335,13 @@
       },
       {
         "ua": "chrome",
-        "status": "",
+        "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/XR"
       },
       {
         "ua": "chrome_android",
-        "status": "",
+        "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/XR"
       },
