@@ -4484,6 +4484,19 @@
     "publisher": "Khronos",
     "milestones": {}
   },
+  "webgpu": {
+    "url": "https://gpuweb.github.io/gpuweb/",
+    "title": "WebGPU",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "webhid": {
     "url": "https://github.com/nondebug/webhid/blob/master/EXPLAINER.md",
     "title": "WebHID",

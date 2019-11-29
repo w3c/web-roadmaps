@@ -33395,6 +33395,45 @@
       }
     ]
   },
+  "webgpu": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
+      }
+    ]
+  },
   "webhid": {
     "implementations": [
       {
