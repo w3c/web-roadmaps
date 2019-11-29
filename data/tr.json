@@ -4340,6 +4340,19 @@
     "informative": false,
     "milestones": {}
   },
+  "web-codecs": {
+    "url": "https://github.com/WICG/web-codecs/blob/master/explainer.md",
+    "title": "WebCodecs",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "web-locks": {
     "url": "https://wicg.github.io/web-locks/",
     "repository": "https://github.com/wicg/web-locks",
