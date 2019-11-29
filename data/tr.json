@@ -1901,9 +1901,11 @@
     "milestones": {}
   },
   "hr-time": {
-    "url": "https://www.w3.org/TR/hr-time",
-    "title": "High Resolution Time",
-    "status": "Retired",
+    "url": "https://www.w3.org/TR/hr-time-2",
+    "edDraft": "https://w3c.github.io/hr-time/",
+    "repository": "https://github.com/w3c/hr-time",
+    "title": "High Resolution Time Level 2",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -1912,7 +1914,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30"
+    }
   },
   "html-extensions": {
     "url": "https://w3c.github.io/html-extensions/",
