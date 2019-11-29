@@ -1,0 +1,8 @@
+{
+  "url": "https://www.w3.org/TR/wasm-core-1/",
+  "impl": {
+    "caniuse": "wasm",
+    "chromestatus": 5453022515691520,
+    "mdn": "javascript.builtins.WebAssembly"
+  }
+}
