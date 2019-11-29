@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/WICG/web-codecs/blob/master/explainer.md",
+  "title": "WebCodecs",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/wicg/",
+      "label": "Web Platform Incubator Community Group"
+    }
+  ],
+  "impl": {
+    "chromestatus": 5669293909868544
+  }
+}
