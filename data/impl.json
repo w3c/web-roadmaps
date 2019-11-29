@@ -31935,6 +31935,208 @@
   "wake-lock": {
     "implementations": []
   },
+  "wasm-core": {
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the `#enable-webassembly` flag"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5453022515691520",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5453022515691520",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5453022515691520"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5453022515691520"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5453022515691520"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "notes": [
+          "Disabled in the Firefox 52 Extended Support Release (ESR)."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "notes": [
+          "Disabled in the Firefox 52 Extended Support Release (ESR)."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly",
+        "selected": true
+      },
+      {
+        "ua": "nodejs",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly"
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly",
+        "selected": true
+      }
+    ]
+  },
   "wcag21": {
     "implementations": []
   },
@@ -32271,120 +32473,6 @@
   },
   "web-transport": {
     "implementations": []
-  },
-  "webassembly": {
-    "implementations": [
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm"
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "safari_ios",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm"
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "qq_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the `#enable-webassembly` flag"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=wasm",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5453022515691520",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5453022515691520",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5453022515691520"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5453022515691520"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5453022515691520"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/",
-        "selected": true
-      }
-    ]
   },
   "webaudio": {
     "implementations": [

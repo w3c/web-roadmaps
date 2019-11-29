@@ -4280,6 +4280,22 @@
       "CR": "2019-12-30"
     }
   },
+  "wasm-core": {
+    "url": "https://www.w3.org/TR/wasm-core-1/",
+    "edDraft": "https://webassembly.github.io/spec/core/bikeshed/",
+    "repository": "https://github.com/webassembly/spec",
+    "title": "WebAssembly Core Specification",
+    "status": "PR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/wasm/",
+        "label": "WebAssembly Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
   "wcag21": {
     "url": "https://www.w3.org/TR/WCAG21/",
     "edDraft": "https://w3c.github.io/wcag/21/guidelines/",
@@ -4374,19 +4390,6 @@
       {
         "url": "https://www.w3.org/community/wicg/",
         "label": "Web Platform Incubator Community Group"
-      }
-    ],
-    "publisher": "W3C",
-    "milestones": {}
-  },
-  "webassembly": {
-    "url": "https://webassembly.github.io/spec/",
-    "title": "WebAssembly",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/wasm/",
-        "label": "WebAssembly Working Group"
       }
     ],
     "publisher": "W3C",
