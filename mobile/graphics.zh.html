@@ -31,9 +31,11 @@
           <p><a data-featureid="svg11">SVG</a>（可扩展矢量图形）提供了一种基于 XML 的标记语言来描述二维矢量图形。由于这些图形被描述为一组几何形状，因此可以根据用户的请求进行缩放，这使得 SVG 非常适合在屏幕空间有限的移动设备上创建图形。SVG也很容易制作动画，以及复杂和平滑的用户界面。</p>
           <p>SVG 在 HTML5 中的整合开辟了新的可能性，例如将高级图形过滤器（通过SVG过滤器）应用于多媒体内容（包括视频）。<a data-featureid="svg2">SVG 2</a> 完善了上述整合和 SVG 的特性集合。</p>
         </div>
-        <p data-feature="2D 可编程 API">作为 SVG 提供的声明性方法的补充，HTML5中添加的<strong><code>&lt;canvas&gt;</code></strong>元素使<a data-featureid="canvas">2D编程API</a>非常适合以较少内存占用的方式处理图形。</p>
+        <div data-feature="图形 API">
+          <p>作为 SVG 提供的声明性方法的补充，HTML5 中添加的 <strong><code>&lt;canvas&gt;</code></strong> 元素使<a data-featureid="canvas">2D编程API</a>非常适合以较少内存占用的方式处理图形。</p>
+          <p>作为 Khronos Group 的一部分在 W3C 之外开发的 <a data-featureid="webgl">WebGL</a> 为 Web 提供了底层3D图形API。该 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，适用于嵌入式系统，并可在移动设备上运行。基于 OpenGL ES 2.0 的 WebGL v1.0 有很好的跨设备支持，而基于 OpenGL ES 3.0 的 WebGL v2.0 的支持则较少。W3C 正在进行更新的 WebGPU API 的工作，请参阅下面的<a href="#exploratory-work">探索性工作</a>部分。</p>
+        </div>
         <p>图形密集型应用（例如游戏）中的另一个重要的特性是使用整个屏幕来显示图形；在<a data-featureid="fullscreen">全屏API</a>上的工作可以请求和检测全屏显示，现在在 <a href="https://whatwg.org/">Web 超文本应用技术工作小组</a>中完成。</p>
-        <p><a href="https://www.khronos.org/">Khronos Group</a> 在 W3C 之外开发了一个名为 <a href="https://www.khronos.org/webgl/">WebGL</a> 的用于 HTML5 画布的 3D 图形API；这个 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，可用于嵌入式系统和移动设备。<a href="https://www.w3.org/community/gpu/">GPU for the Web 社区组</a>也开始设计一个新的 Web API，以高性能、强大和安全的方式展示现代 3D 图形和计算能力，目标是跨平台（例如 Direct3D 、Metal 或 Vulkan）。</p>
       </section>
       <section class="featureset in-progress">
         <h2>开发中的技术</h2>
@@ -55,6 +57,10 @@
         <h2>探索性工作</h2>
         <div data-feature="动画">
           <p>网页内容很少能够完整显示在移动设备的首屏，所以需要用户向下滚动。Web应用可能希望根据当前滚动位置调整其用户界面，比如在用户滚动时缩小顶部导航菜单或显示进度条。这项功能需要现在编写脚本，而<a data-featureid="scroll-animations">滚动关联动画</a>规范提出了一种基于CSS属性的声明性机制。</p>
+        </div>
+
+        <div data-feature="图形 API">
+          <p>GPU for the Web Community Group 已开始设计 <a data-featureid="webgpu">WebGPU</a> API，这是一个新的Web API，以高性能、强大和安全的方式使用现代3D图形和计算功能，并与设备的系统平台（例如 Direct3D、Metal或Vulkan）无关。</p>
         </div>
       </section>
     </main>
