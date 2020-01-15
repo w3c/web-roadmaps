@@ -1657,6 +1657,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -1782,6 +1789,16 @@
           {
             "ua": "opera_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "notes": [
+              "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+            ],
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId",
             "selected": true
@@ -2597,7 +2614,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/SyncManager"
       },
@@ -2770,10 +2787,9 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Disabled by default in Firefox 10, but can be enabled setting the preference <code>dom.battery.enabled</code> to <code>true</code>. Starting with Firefox 11, <code>mozBattery</code> is enabled by default. The Battery API is currently supported on Android, Windows, and Linux with UPower installed. Support for MacOS is available starting with Firefox 18. Firefox also provide support for the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/battery'><code>navigator.battery</code></a>."
+          "From this version onwards, <code>BatteryManager</code> is only available in chrome/privileged code."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager",
@@ -2781,9 +2797,9 @@
       },
       {
         "ua": "firefox_android",
-        "status": "shipped",
+        "status": "",
         "notes": [
-          "From this version onwards, the Battery Status API is only available in chrome/privileged code."
+          "Disabled by default in Firefox 10.0, but can be enabled setting the preference <code>dom.battery.enabled</code> to <code>true</code>. Starting with Firefox 11.0, <code>mozBattery</code> is enabled by default. The Battery API is currently supported on Android, Windows, and Linux with UPower installed. Support for MacOS is available starting with Gecko 18.0 (Firefox 18.0 / Thunderbird 18.0 / SeaMonkey 2.15). Firefox also provides support for the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/battery'><code>navigator.battery</code></a>."
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
@@ -2824,6 +2840,9 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
+        "notes": [
+          "Values for <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/chargingTime'><code>BatteryManager.chargingTime</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/BatteryManager/dischargingTime'><code>BatteryManager.dischargingTime</code></a> are always equal to <code>Infinity</code>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BatteryManager"
       },
@@ -3041,6 +3060,9 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
+        "notes": [
+          "Starting in Samsung Internet 7.0, this method cannot send a <code>Blob</code> whose type is not CORS safelisted. This is a temporary change until a mitigation can be found for the security issues that this creates. For more information see <a href='https://crbug.com/720283'>Chrome bug 720283</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon"
       },
@@ -3593,9 +3615,6 @@
       {
         "ua": "firefox",
         "status": "shipped",
-        "notes": [
-          "Does not support CORS for resources which redirect: https://bugzilla.mozilla.org/show_bug.cgi?id=1346749"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cors",
         "selected": true
@@ -3836,9 +3855,10 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "Credential"
+          "Credential",
+          "credentials"
         ],
-        "partial": true
+        "partial": false
       },
       {
         "ua": "webview_android",
@@ -4012,8 +4032,7 @@
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
           },
           {
             "ua": "firefox",
@@ -4080,6 +4099,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -4127,8 +4153,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "chrome",
@@ -4187,8 +4212,7 @@
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
           },
           {
             "ua": "firefox",
@@ -5660,7 +5684,6 @@
           "translate"
         ],
         "prefix": true,
-        "flag": true,
         "partial": true
       },
       {
@@ -5894,7 +5917,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5985,6 +6007,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -6060,8 +6089,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "qq_android",
@@ -6113,7 +6141,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6204,6 +6231,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -6279,8 +6313,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "qq_android",
@@ -6332,7 +6365,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6402,11 +6434,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
-            "flag": true,
-            "notes": [
-              "Enabled by default in Firefox Nightly 71."
-            ],
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
             "selected": true
@@ -6588,7 +6616,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6658,11 +6685,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
-            "flag": true,
-            "notes": [
-              "Enabled by default in Firefox Nightly 71."
-            ],
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
             "selected": true
@@ -6844,7 +6867,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6941,6 +6963,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -7016,8 +7045,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=transforms3d",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "qq_android",
@@ -7069,7 +7097,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -7139,11 +7166,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
-            "flag": true,
-            "notes": [
-              "Enabled by default in Firefox Nightly 71."
-            ],
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
             "selected": true
@@ -7325,7 +7348,6 @@
             "source": "mdn",
             "guess": true,
             "prefix": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -7953,6 +7975,15 @@
       },
       {
         "ua": "safari_ios",
+        "status": "shipped",
+        "notes": [
+          "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "shipped",
         "notes": [
           "Shadows affect layout in this browser. For example, if you cast an outer shadow to a box with a <code>width</code> of <code>100%</code>, then you'll see a scrollbar."
@@ -9106,7 +9137,8 @@
         "guess": true,
         "features": [
           "hsla",
-          "rgba"
+          "rgba",
+          "rgba-hex"
         ],
         "partial": true,
         "selected": true
@@ -9763,6 +9795,12 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -9857,8 +9895,7 @@
             "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "webview_android",
@@ -10753,6 +10790,17 @@
         "partial": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "FontFace",
+          "FontFaceSet"
+        ],
+        "partial": true
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
@@ -10819,6 +10867,13 @@
           },
           {
             "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
@@ -10901,8 +10956,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "qq_android",
@@ -10999,6 +11053,13 @@
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -11079,6 +11140,13 @@
             "selected": true
           },
           {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
+            "selected": true
+          },
+          {
             "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
@@ -11155,8 +11223,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "qq_android",
@@ -11253,6 +11320,13 @@
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -12877,7 +12951,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
       },
@@ -13970,8 +14044,7 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/::part",
         "selected": true
@@ -14645,6 +14718,15 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "notes": [
+          "<code>box-sizing</code> is not respected when the height is calculated from <a href='https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle'><code>window.getComputedStyle()</code></a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
       },
@@ -17626,7 +17708,7 @@
         "ua": "chrome",
         "status": "",
         "notes": [
-          "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
+          "See <a href='https://crbug.com/120796'>Chrome bug 120796</a>"
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming"
@@ -17635,7 +17717,7 @@
         "ua": "chrome_android",
         "status": "",
         "notes": [
-          "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
+          "See <a href='https://crbug.com/120796'>Chrome bug 120796</a>"
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming"
@@ -17691,10 +17773,20 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "",
+        "notes": [
+          "See <a href='https://crbug.com/120796'>Chrome bug 120796</a>"
+        ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
+        "selected": true
+      },
+      {
         "ua": "webview_android",
         "status": "",
         "notes": [
-          "See <a href='https://code.google.com/p/chromium/issues/detail?id=120796'>Chrome bug 120796</a>"
+          "See <a href='https://crbug.com/120796'>Chrome bug 120796</a>"
         ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceFrameTiming",
@@ -18440,6 +18532,16 @@
         "partial": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "capabilities"
+        ],
+        "partial": true
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
@@ -18556,7 +18658,7 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getCapabilities",
             "selected": true
@@ -18736,6 +18838,13 @@
           },
           {
             "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -19036,6 +19145,12 @@
       },
       {
         "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Performance"
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Performance"
@@ -20667,6 +20782,14 @@
         "source": "mdn"
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "notes": [
+          "Before Samsung Internet 5.0, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+        ],
+        "source": "mdn"
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "notes": [
@@ -20827,6 +20950,12 @@
       },
       {
         "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement"
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement"
@@ -22906,8 +23035,7 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5639924124483584",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5639924124483584"
       },
       {
         "ua": "edge",
@@ -22942,6 +23070,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/MediaSession"
       },
       {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "",
         "source": "mdn",
@@ -22951,6 +23086,13 @@
       {
         "ua": "opera_android",
         "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
         "selected": true
@@ -23785,7 +23927,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas"
       },
@@ -24573,6 +24715,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
+        "selected": true
+      },
+      {
         "ua": "webview_android",
         "status": "",
         "source": "mdn",
@@ -25193,9 +25342,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Partial support in Firefox 68–70 refers to being enabled by default in Firefox pre-release channels for Windows users only.",
-          "Partial support in Firefox refers to the fact that Mozilla provides an equivalent proprietary feature, which allows users to use Picture-in-Picture mode for all playing videos.",
-          "Can be enabled in Firefox via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`."
+          "Partial support in Firefox refers to the fact that Mozilla provides an equivalent proprietary feature, which allows users to use Picture-in-Picture mode for all playing videos."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture",
@@ -25312,6 +25459,13 @@
       },
       {
         "ua": "opera_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PictureInPicture",
@@ -25642,7 +25796,7 @@
       },
       {
         "ua": "firefox",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4504699138998272"
       },
@@ -25654,7 +25808,7 @@
       },
       {
         "ua": "safari",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4504699138998272"
       },
@@ -26165,7 +26319,11 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Develop > Experimental Features menu."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder",
         "selected": true
@@ -26676,7 +26834,8 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver",
         "selected": true
@@ -32407,6 +32566,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
@@ -32602,16 +32768,14 @@
         "status": "experimental",
         "prefix": true,
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261718720184320",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6261718720184320"
       },
       {
         "ua": "chrome_android",
         "status": "experimental",
         "prefix": true,
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261718720184320",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6261718720184320"
       },
       {
         "ua": "firefox",
@@ -32644,6 +32808,26 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-audio"
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "feedback",
+        "date": "2019-12-02",
+        "notes": [
+          "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
+        ],
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "feedback",
+        "date": "2019-12-02",
+        "notes": [
+          "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
+        ],
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -33515,22 +33699,15 @@
   "webnfc": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261030015467520",
-        "selected": true
-      },
-      {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6261030015467520",
         "selected": true
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6261030015467520",
         "selected": true
@@ -34036,6 +34213,12 @@
         "href": "https://developer.mozilla.org/docs/Web/API/Storage"
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Storage"
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
@@ -34405,14 +34588,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5659025263820800",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5659025263820800",
         "selected": true
@@ -34443,12 +34626,20 @@
   "webxr": {
     "implementations": [
       {
-        "ua": "chrome",
+        "ua": "edge",
         "status": "experimental",
-        "flag": true,
         "notes": [
-          "Part of an origin trial.",
-          "Chrome 66-78 has had intermittent support behind the #webxr and other #webxr-* flags."
+          "This API is very extensive. Many of its features are still in development and/or don't have finalised specs yet."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webxr",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "notes": [
+          "This API is very extensive. Many of its features are still in development and/or don't have finalised specs yet."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webxr"
@@ -34466,14 +34657,14 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5680169905815552",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5680169905815552",
         "selected": true
@@ -34489,8 +34680,7 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5680169905815552"
       },
       {
         "ua": "safari",
@@ -34501,13 +34691,13 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/XR"
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/XR"
       },

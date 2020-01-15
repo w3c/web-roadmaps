@@ -32,7 +32,7 @@
     "edDraft": "https://w3c.github.io/accelerometer/",
     "repository": "https://github.com/w3c/accelerometer",
     "title": "Accelerometer",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -851,9 +851,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "css-content-3": {
     "url": "https://www.w3.org/TR/css-content-3/",
@@ -1733,7 +1731,7 @@
     "edDraft": "https://w3c.github.io/sensors/",
     "repository": "https://github.com/w3c/sensors",
     "title": "Generic Sensor API",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -1876,7 +1874,7 @@
     "edDraft": "https://w3c.github.io/gyroscope/",
     "repository": "https://github.com/w3c/gyroscope",
     "title": "Gyroscope",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -2780,7 +2778,7 @@
     "edDraft": "https://w3c.github.io/orientation-sensor/",
     "repository": "https://github.com/w3c/orientation-sensor",
     "title": "Orientation Sensor",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/das/",
@@ -2824,7 +2822,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30",
+      "PR": "2020-03-30"
     },
     "features": {
       "rtcdatachannel": {
@@ -4285,7 +4284,7 @@
     "edDraft": "https://webassembly.github.io/spec/core/bikeshed/",
     "repository": "https://github.com/webassembly/spec",
     "title": "WebAssembly Core Specification",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/wasm/",
@@ -4578,7 +4577,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30",
+      "PR": "2020-03-30"
     },
     "feature": "Priority and QoS Model"
   },
@@ -4597,7 +4597,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "CR": "2019-12-30",
+      "PR": "2020-03-30"
     },
     "feature": "Browser default ICE servers"
   },
