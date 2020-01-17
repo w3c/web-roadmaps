@@ -45,6 +45,19 @@
       "CR": "2019-12-30"
     }
   },
+  "adpt": {
+    "url": "https://w3c.github.io/adpt/",
+    "title": "Proposal for an Exchange Format to support Audio Description",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "ambientlight": {
     "url": "https://www.w3.org/TR/ambient-light/",
     "edDraft": "https://w3c.github.io/ambient-light/",
@@ -233,6 +246,25 @@
     "publisher": "WHATWG",
     "milestones": {},
     "feature": "audio element"
+  },
+  "audiobooks": {
+    "url": "https://www.w3.org/TR/audiobooks/",
+    "edDraft": "https://w3c.github.io/audiobooks/",
+    "repository": "https://github.com/w3c/audiobooks",
+    "title": "Audiobooks",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/publishing/groups/publ-wg/",
+        "label": "Publishing Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2020-06-30"
+    }
   },
   "autocomplete": {
     "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute",
@@ -1310,6 +1342,32 @@
     "publisher": "OGC",
     "milestones": {}
   },
+  "danmaku": {
+    "url": "https://w3c.github.io/danmaku/",
+    "title": "Bullet Chatting Proposal",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webtv/",
+        "label": "Media and Entertainment Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "datacue": {
+    "url": "https://github.com/WICG/datacue/blob/master/explainer.md",
+    "title": "DataCue",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "datalist": {
     "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
     "repository": "https://github.com/whatwg/html",
@@ -1559,6 +1617,39 @@
       }
     }
   },
+  "eme-v2": {
+    "url": "https://w3c.github.io/encrypted-media/",
+    "edDraft": "https://w3c.github.io/encrypted-media/",
+    "repository": "https://github.com/w3c/encrypted-media",
+    "title": "Encrypted Media Extensions",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "persistent-usage-record": {
+        "title": "Persistent usage record session",
+        "url": "#dom-mediakeysessiontype-persistent-usage-record"
+      },
+      "hdcp-detection": {
+        "title": "HDCP detection",
+        "url": "https://github.com/WICG/hdcp-detection/blob/master/explainer.md"
+      },
+      "encryption-scheme": {
+        "title": "Encryption scheme detection",
+        "url": "https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md"
+      },
+      "find-existing-sessions": {
+        "title": "API to find existing sessions",
+        "url": "https://github.com/joeyparrish/encrypted-media-find-session"
+      }
+    }
+  },
   "eme": {
     "url": "https://www.w3.org/TR/encrypted-media/",
     "edDraft": "https://w3c.github.io/encrypted-media/",
@@ -1605,6 +1696,19 @@
     ],
     "publisher": "W3C",
     "informative": true,
+    "milestones": {}
+  },
+  "epub": {
+    "url": "https://www.w3.org/publishing/epub3/",
+    "title": "EPUB 3.2",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/epub3/",
+        "label": "EPUB 3 Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "event-timing": {
@@ -2608,13 +2712,15 @@
     "milestones": {}
   },
   "mse-v2": {
-    "url": "https://wicg.github.io/media-source/",
+    "url": "https://w3c.github.io/media-source/",
+    "edDraft": "https://w3c.github.io/media-source/",
+    "repository": "https://github.com/w3c/media-source",
     "title": "Media Source Extensions™",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3163,6 +3269,25 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {}
+  },
+  "pub-manifest": {
+    "url": "https://www.w3.org/TR/pub-manifest/",
+    "edDraft": "https://w3c.github.io/pub-manifest/",
+    "repository": "https://github.com/w3c/pub-manifest",
+    "title": "Publication Manifest",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/publishing/groups/publ-wg/",
+        "label": "Publishing Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2020-06-30"
+    }
   },
   "publishing-linking": {
     "url": "https://www.w3.org/TR/publishing-linking/",
@@ -4502,8 +4627,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/community/gpu/",
+        "label": "GPU for the Web Community Group"
       }
     ],
     "publisher": "W3C",
@@ -4524,7 +4649,7 @@
   },
   "webmediaapi": {
     "url": "https://w3c.github.io/webmediaapi/",
-    "title": "Web Media APIs 2017",
+    "title": "Web Media API Snapshot 2019",
     "status": "ED",
     "deliveredBy": [
       {
@@ -4557,6 +4682,19 @@
       {
         "url": "https://www.w3.org/community/web-nfc/",
         "label": "Web NFC Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webnn": {
+    "url": "https://webmachinelearning.github.io/webnn/",
+    "title": "Web Neural Network API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/webmachinelearning/",
+        "label": "Machine Learning for the Web Community Group"
       }
     ],
     "publisher": "W3C",

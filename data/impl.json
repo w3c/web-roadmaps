@@ -45,7 +45,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=accelerometer"
       },
@@ -117,13 +117,17 @@
       }
     ]
   },
+  "adpt": {
+    "implementations": []
+  },
   "ambientlight": {
     "implementations": [
       {
         "ua": "edge",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "notes": [
-          "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/)."
+          "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=ambient-light"
@@ -593,7 +597,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest"
       },
@@ -783,7 +787,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
             "guess": true
@@ -940,7 +944,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
             "guess": true
@@ -1083,7 +1087,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
             "guess": true
@@ -1236,7 +1240,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
             "guess": true
@@ -1394,7 +1398,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=web-app-manifest",
             "guess": true
@@ -2035,6 +2039,9 @@
       }
     ]
   },
+  "audiobooks": {
+    "implementations": []
+  },
   "autocomplete": {
     "implementations": [
       {
@@ -2207,7 +2214,7 @@
             "ua": "edge",
             "status": "shipped",
             "notes": [
-              "Partial support refers to ignoring the `off` value for password fields. [see related blog post](http://blogs.msdn.com/b/ieinternals/archive/2009/09/10/troubleshooting-stored-login-problems-in-ie.aspx)"
+              "Partial support in Chrome refers to the browser intentionally ignoring `autocomplete=\"off\"` when the user uses the browser's autofill functionality. [see bug](https://code.google.com/p/chromium/issues/detail?id=468153#c29)"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=input-autocomplete-onoff",
@@ -2463,7 +2470,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=background-sync"
       },
@@ -2667,7 +2674,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=battery-status"
       },
@@ -3704,7 +3711,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=credential-management"
       },
@@ -3934,7 +3941,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
             "guess": true
@@ -4114,7 +4121,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=credential-management",
             "guess": true
@@ -4241,9 +4248,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "In Edge, Web Crypto is not supported in Web Workers or Service Workers."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=cryptography"
       },
@@ -4454,9 +4458,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Edge has broken nonce support as it ignores nonces on sourced scripts."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=contentsecuritypolicy2"
       },
@@ -8479,7 +8480,8 @@
             "status": "shipped",
             "notes": [
               "Supports the `page-break-*` alias from the CSS 2.1 specification, but not the `break-*` properties from the latest spec.",
-              "Does not support `avoid` for `page-break-before` & `page-break-after` (only `page-break-inside`)."
+              "Does not support `avoid` for `page-break-before` & `page-break-after` (only `page-break-inside`).",
+              "Treats the `left` and `right` values like `always`."
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=css-page-break",
@@ -9912,7 +9914,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-containment"
       },
@@ -10102,10 +10104,7 @@
       {
         "ua": "edge",
         "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "IE only supports the 'width' and 'height' properties."
-        ],
+        "flag": true,
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-deviceadaptation"
       },
@@ -10399,7 +10398,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-font-rendering-controls",
         "selected": true
@@ -10582,7 +10581,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=font-loading"
       },
@@ -10888,7 +10887,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
             "guess": true,
@@ -11155,7 +11154,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=font-loading",
             "guess": true,
@@ -12808,9 +12807,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Incorrectly treats `none` as `contain` see [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior#Browser_compatibility) and [Edge 18 changelog](https://aka.ms/devguide_edgehtml_18)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-overscroll-behavior",
         "selected": true
@@ -12969,9 +12965,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Does not support the `size` property"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-paged-media",
         "selected": true
@@ -13047,7 +13040,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-paint-api",
         "selected": true
@@ -13867,13 +13860,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support in IE11 [documented here](https://web.archive.org/web/20160616212557/https://dl.dropboxusercontent.com/u/444684/openwebref/CSS/scroll-snap-points/support.html)",
-          "Supports properties from an [older version](https://www.w3.org/TR/2015/WD-css-snappoints-1-20150326/) of the spec.",
-          "Partial support in IE & Edge refers to not supporting `scroll-snap-coordinate` and `scroll-snap-destination`."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints"
       },
@@ -14103,10 +14090,10 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=text-size-adjust"
+        "href": "https://caniuse.com/#feat=text-size-adjust",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -14182,8 +14169,7 @@
         "ua": "edge",
         "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5730156303876096",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5730156303876096"
       },
       {
         "ua": "safari",
@@ -14746,7 +14732,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=will-change"
       },
@@ -14879,7 +14865,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -15107,7 +15093,7 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "notes": [
               "Partial support refers to support everything except of `Element.scrollIntoView()` and not together with pinch viewport."
             ],
@@ -15264,7 +15250,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -15411,9 +15397,6 @@
           {
             "ua": "edge",
             "status": "shipped",
-            "notes": [
-              "The returned object lacks `x` & `y` values, though existing `top` & `left` values can be used instead."
-            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=getboundingclientrect",
             "selected": true
@@ -15497,7 +15480,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -15645,15 +15628,17 @@
   "csw": {
     "implementations": []
   },
+  "danmaku": {
+    "implementations": []
+  },
+  "datacue": {
+    "implementations": []
+  },
   "datalist": {
     "implementations": [
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Partial support in IE refers to [significantly buggy behavior](https://web.archive.org/web/20170121011936/http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). ",
-          "Partial support in Edge refers [to disappearing option elements on focusing the input element via tab](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/20066595/)."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist"
       },
@@ -16364,7 +16349,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -16559,7 +16544,7 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=shadowdomv1"
           },
@@ -16684,7 +16669,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -16816,7 +16801,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediacapture-fromelement"
       },
@@ -17078,6 +17063,194 @@
       }
     }
   },
+  "eme-v2": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "hdcp-detection",
+          "encryption-scheme"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "hdcp-detection",
+          "encryption-scheme"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      }
+    ],
+    "features": {
+      "persistent-usage-record": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          }
+        ]
+      },
+      "hdcp-detection": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5652917147140096",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5652917147140096",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5652917147140096",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5652917147140096",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5652917147140096",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
+      "encryption-scheme": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5184416120832000",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5184416120832000",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5184416120832000",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5184416120832000",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "consideration",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5184416120832000",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
+      "find-existing-sessions": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true,
+            "selected": true
+          }
+        ]
+      }
+    }
+  },
   "eme": {
     "implementations": [
       {
@@ -17187,6 +17360,9 @@
   "epr": {
     "implementations": []
   },
+  "epub": {
+    "implementations": []
+  },
   "event-timing": {
     "implementations": [
       {
@@ -17230,7 +17406,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=eventsource"
       },
@@ -17348,7 +17524,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
         ],
@@ -17575,9 +17751,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Does not support the `File` constructor"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fileapi",
         "selected": true
@@ -17799,9 +17972,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen"
       },
@@ -18117,6 +18287,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Only works on secure (https) servers"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=geolocation"
       },
@@ -18878,7 +19051,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=gyroscope"
       },
@@ -19216,7 +19389,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -19700,7 +19873,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -19893,7 +20066,7 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=custom-elementsv1"
           },
@@ -20015,7 +20188,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true
@@ -20209,7 +20382,7 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true,
             "partial": true,
@@ -21018,16 +21191,6 @@
   "ime-api": {
     "implementations": [
       {
-        "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Prefixed implementation uses `msGetInputContext()` method from an earlier version of the spec to get the `InputMethodContext`, rather than the `inputMethodContext` attribute. Also includes support for `getCompositionAlternatives()` from the latest Editor'"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=ime"
-      },
-      {
         "ua": "chrome",
         "status": "indevelopment",
         "source": "chromestatus",
@@ -21078,7 +21241,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=indexeddb2"
       },
@@ -21444,7 +21607,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode"
       },
@@ -21726,6 +21889,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "IntersectionObserver does not trigger its callback in a Chrome background tab"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver"
       },
@@ -22145,7 +22311,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=magnetometer"
       },
@@ -22398,7 +22564,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Only appears to support the `#t=n,n` control for selecting a range of video, and possibly `track=(name)` & `id=(name)` (not yet tested)"
         ],
@@ -23589,7 +23755,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Only supports the `downlink`, `effectiveType` & `rtt` values."
         ],
@@ -23772,7 +23938,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=offscreencanvas",
         "selected": true
@@ -24038,7 +24204,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=orientation-sensor"
       },
@@ -24118,9 +24284,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Edge does not support RTCDataChannel. See [API Catalogue](https://developer.microsoft.com/en-us/microsoft-edge/platform/catalog/?q=specName%3Awebrtc)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=rtcpeerconnection"
       },
@@ -24877,9 +25040,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request"
       },
@@ -25250,7 +25410,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=permissions-api",
         "selected": true
@@ -25334,7 +25494,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
       },
@@ -25947,9 +26107,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Partial support in Edge 17+ refers to support for only the HTML `<link rel>` format, not the HTTP header format."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload"
       },
@@ -26139,6 +26296,9 @@
       }
     ]
   },
+  "pub-manifest": {
+    "implementations": []
+  },
   "publishing-linking": {
     "implementations": []
   },
@@ -26147,6 +26307,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Requires full browser to be running to receive messages"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api"
       },
@@ -26300,7 +26463,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder"
       },
@@ -26468,9 +26631,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Supports an [older draft](https://wiki.whatwg.org/wiki/Meta_referrer) of the specification with `never`, `always`, `origin` & `default` values.\r\n"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -26623,7 +26783,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=requestidlecallback"
       },
@@ -26815,7 +26975,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver"
       },
@@ -26905,7 +27065,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -27190,7 +27350,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true
           },
@@ -27302,9 +27462,6 @@
           {
             "ua": "edge",
             "status": "shipped",
-            "notes": [
-              "Partial support in Edge 15+ refers to support for only the HTTP header format, not the `<link rel>` format."
-            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=link-rel-preconnect"
           },
@@ -27410,7 +27567,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true
           },
@@ -27628,7 +27785,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true
           },
@@ -27738,7 +27895,7 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=link-rel-prerender"
           },
@@ -27786,7 +27943,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "caniuse",
             "guess": true
           },
@@ -28033,8 +28190,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=screen-orientation"
       },
@@ -28690,6 +28846,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=speech-synthesis"
       },
@@ -29234,6 +29393,9 @@
           {
             "ua": "edge",
             "status": "shipped",
+            "notes": [
+              "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=speech-synthesis"
           },
@@ -30201,8 +30363,7 @@
         "ua": "edge",
         "status": "shipped",
         "notes": [
-          "No support for BYOB (\"bring your own buffer\") stream readers.",
-          "No support for the `pipeTo` or `pipeThrough` methods"
+          "No support for BYOB (\"bring your own buffer\") stream readers."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=streams"
@@ -30880,9 +31041,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "IE9-11 & Edge don't properly scale SVG files. [Adding height, width, viewBox, and CSS rules](https://codepen.io/tomByrer/pen/qEBbzw?editors=110) seems to be the best workaround."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=svg",
         "selected": true
@@ -31124,11 +31282,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in Edge using the \"Enable touch events\" flag under `about:flags`"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=touch"
       },
@@ -31571,7 +31725,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=vibration"
       },
@@ -32306,7 +32460,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
         ],
@@ -33308,7 +33462,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
         ],
@@ -33486,9 +33640,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "WebGL context is accessed from \"experimental-webgl\" rather than \"webgl\""
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webgl"
       },
@@ -33734,6 +33885,9 @@
       }
     ]
   },
+  "webnn": {
+    "implementations": []
+  },
   "webrtc-qos": {
     "implementations": []
   },
@@ -33940,7 +34094,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage"
       },
@@ -34231,7 +34385,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webusb",
         "selected": true
@@ -34304,9 +34458,10 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
         "notes": [
-          "[In development](https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/#3lMW05DTZXbXcK46.97) in the latest Edge builds and supports only [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality)."
+          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr"
@@ -34627,7 +34782,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "This API is very extensive. Many of its features are still in development and/or don't have finalised specs yet."
         ],
