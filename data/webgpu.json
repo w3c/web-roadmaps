@@ -3,8 +3,8 @@
   "title": "WebGPU",
   "wgs": [
     {
-      "url": "https://www.w3.org/community/wicg/",
-      "label": "Web Platform Incubator Community Group"
+      "url": "https://www.w3.org/community/gpu/",
+      "label": "GPU for the Web Community Group"
     }
   ],
   "impl": {
