@@ -1,11 +1,5 @@
 {
-  "url": "https://w3c.github.io/picture-in-picture/",
-  "wgs": [
-    {
-      "label": "Media Working Group",
-      "url": "https://www.w3.org/media-wg/"
-    }
-  ],
+  "url": "https://www.w3.org/TR/picture-in-picture/",
   "impl": {
     "caniuse": "picture-in-picture",
     "chromestatus": 5729206566649856,

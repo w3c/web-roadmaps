@@ -1,11 +1,5 @@
 {
-  "url": "https://w3c.github.io/mediasession/",
-  "wgs": [
-    {
-      "label": "Media Working Group",
-      "url": "https://www.w3.org/media-wg/"
-    }
-  ],
+  "url": "https://www.w3.org/TR/mediasession/",
   "impl": {
     "caniuse": null,
     "chromestatus": 5639924124483584,
