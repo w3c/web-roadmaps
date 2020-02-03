@@ -10,7 +10,6 @@
   "impl": {
     "caniuse": "webvr",
     "chromestatus": 4532810371039232,
-    "edgestatus": "WebVR",
-    "webkitstatus": "specification-webvr"
+    "edgestatus": "WebVR"
   }
 }
