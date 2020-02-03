@@ -1,0 +1,10 @@
+{
+  "url": "https://w3c.github.io/adpt/",
+  "title": "Proposal for an Exchange Format to support Audio Description",
+  "wgs": [
+    {
+      "label": "Timed Text Working Group",
+      "url": "https://www.w3.org/AudioVideo/TT/"
+    }
+  ]
+}

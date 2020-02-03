@@ -1,6 +1,13 @@
 {
-  "url": "https://wicg.github.io/media-source/",
+  "url": "https://w3c.github.io/media-source/",
   "title": "Media Source Extensions™",
+  "status": "ED",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ],
   "features": {
     "codec-switching": {
       "title": "Codec switching",

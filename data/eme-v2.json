@@ -1,0 +1,36 @@
+{
+  "url": "https://w3c.github.io/encrypted-media/",
+  "title": "Encrypted Media Extensions",
+  "status": "ED",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ],
+  "features": {
+    "persistent-usage-record": {
+      "title": "Persistent usage record session",
+      "url": "#dom-mediakeysessiontype-persistent-usage-record"
+    },
+    "hdcp-detection": {
+      "title": "HDCP detection",
+      "url": "https://github.com/WICG/hdcp-detection/blob/master/explainer.md",
+      "impl": {
+        "chromestatus": 5652917147140096
+      }
+    },
+    "encryption-scheme": {
+      "title": "Encryption scheme detection",
+      "url": "https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md",
+      "impl": {
+        "chromestatus": 5184416120832000
+      }
+    },
+    "find-existing-sessions": {
+      "title": "API to find existing sessions",
+      "url": "https://github.com/joeyparrish/encrypted-media-find-session"
+    }
+  },
+  "featuresCoverage": "full"
+}
