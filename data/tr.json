@@ -2513,10 +2513,11 @@
     "milestones": {}
   },
   "media-capabilities": {
-    "url": "https://w3c.github.io/media-capabilities/",
+    "url": "https://www.w3.org/TR/media-capabilities/",
+    "edDraft": "https://w3c.github.io/media-capabilities/",
     "repository": "https://github.com/w3c/media-capabilities",
     "title": "Media Capabilities",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/media-wg/",
@@ -2524,7 +2525,12 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {},
+    "informative": false,
+    "milestones": {
+      "FPWD": "2019-12-30",
+      "CR": "2020-06-30",
+      "PR": "2021-03-30"
+    },
     "features": {
       "encoding": {
         "title": "Encoding capabilities",
@@ -2653,10 +2659,11 @@
     }
   },
   "mediasession": {
-    "url": "https://w3c.github.io/mediasession/",
+    "url": "https://www.w3.org/TR/mediasession/",
+    "edDraft": "https://w3c.github.io/mediasession/",
     "repository": "https://github.com/w3c/mediasession",
-    "title": "Media Session",
-    "status": "ED",
+    "title": "Media Session Standard",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/media-wg/",
@@ -2664,7 +2671,12 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "informative": false,
+    "milestones": {
+      "FPWD": "2019-12-30",
+      "CR": "2020-12-30",
+      "PR": "2021-06-30"
+    }
   },
   "mixedcontent": {
     "url": "https://www.w3.org/TR/mixed-content/",
@@ -3148,10 +3160,11 @@
     "milestones": {}
   },
   "picture-in-picture": {
-    "url": "https://w3c.github.io/picture-in-picture/",
+    "url": "https://www.w3.org/TR/picture-in-picture/",
+    "edDraft": "https://w3c.github.io/picture-in-picture/",
     "repository": "https://github.com/w3c/picture-in-picture",
     "title": "Picture-in-Picture",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/media-wg/",
@@ -3159,7 +3172,12 @@
       }
     ],
     "publisher": "W3C",
-    "milestones": {}
+    "informative": false,
+    "milestones": {
+      "FPWD": "2019-12-30",
+      "CR": "2020-12-30",
+      "PR": "2021-06-30"
+    }
   },
   "picture": {
     "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
