@@ -262,7 +262,6 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-12-30",
       "PR": "2020-06-30"
     }
   },
@@ -3285,7 +3284,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-12-30",
+      "CR": "2020-06-30",
       "PR": "2020-06-30"
     }
   },
@@ -4056,8 +4055,8 @@
     "url": "https://www.w3.org/TR/ttml2/",
     "edDraft": "https://w3c.github.io/ttml2/index.html",
     "repository": "https://github.com/w3c/ttml2",
-    "title": "Timed Text Markup Language 2 (TTML2)",
-    "status": "REC",
+    "title": "Timed Text Markup Language 2 (TTML2) (2nd Edition)",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/AudioVideo/TT/",
@@ -4329,7 +4328,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2019-12-30"
+      "REC": "2020-03-30"
     }
   },
   "vocab-dcat": {
@@ -5020,7 +5019,7 @@
     "edDraft": "https://w3c.github.io/wot-architecture/",
     "repository": "https://github.com/w3c/wot-architecture",
     "title": "Web of Things (WoT) Architecture",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -5038,7 +5037,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -5056,7 +5055,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",

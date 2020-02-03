@@ -17533,6 +17533,25 @@
         "selected": true
       },
       {
+        "ua": "firefox",
+        "status": "experimental",
+        "notes": [
+          "Only supports the `allow` attribute on iframes"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=feature-policy",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "experimental",
+        "notes": [
+          "Only supports the `allow` attribute on iframes"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=feature-policy"
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "notes": [
@@ -17599,8 +17618,7 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5694225681219584"
       },
       {
         "ua": "edge",
@@ -25057,9 +25075,6 @@
       {
         "ua": "chrome",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request"
       },
@@ -34555,12 +34570,6 @@
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webvr/",
         "selected": true
-      },
-      {
-        "ua": "webkit",
-        "status": "indevelopment",
-        "source": "webkitstatus",
-        "href": "https://webkit.org/status/#specification-webvr"
       }
     ]
   },
@@ -34801,11 +34810,9 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Part of an origin trial.",
-          "Chrome 66-78 has had intermittent support behind the #webxr and other #webxr-* flags."
+          "This API is very extensive. Many of its features are still in development and/or don't have finalised specs yet."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webxr"
