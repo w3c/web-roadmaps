@@ -2,23 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Media application development</title>
+    <title>Device interoperability</title>
   </head>
   <body>
     <header>
-      <h1>Media application development</h1>
+      <h1>Device interoperability</h1>
       <p>
-        The Web platform is under constant evolution. Device implementations and application developers need to share a common understanding of the functionalities that the platform offers at any given point in time, and of recommended guidance to use these powerful features.
+        Televisions, set-top boxes and other media devices typically ship with hardware architectures that are both extremely powerful to decode and render audio and video, and fairly constrained when it comes to running &mdash;and updating&mdash; applications. Web browser code bases need to be ported to these devices, and integrators need to answer a number of practical questions to adapt the code to practical device constraints. That process also usually happens early in the production cycle. As such, final products may run a code base release that is a few years old with varying degrees of APIs support and quality of implementations. In constrast, personal computers and mobile devices are tailored to run applications and follow the <a href="https://www.w3.org/2001/tag/doc/evergreen-web/">constant evolution</a> of the Web platform, with always up-to-date Web browsers. This creates interoperability issues within media devices as well as between media devices and other types of devices.
+      </p>
+      <p>
+        Media device manufacturers and integrators need to share a common understanding of the functionalities that their platforms need to offer at any given point in time, and of recommended guidance to implement these features, given hardware constraints, to guarantee a suitable user experience. Application developers need ways to identify specific features and constraints of the platform on which their application runs, and mechanisms to measure code performance.
       </p>
     </header>
     <main>
+      <section class="featureset well-deployed">
+        <h2>Well-deployed technologies</h2>
+
+        <div data-feature="Measuring the Quality of Experience">
+          <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> developed a number of specifications that expose timing hooks to Web applications, to analyze the time spent doing various tasks. Although not specifically targeted at media scenarios, these specifications make it possible to monitor the performance of running applications. <a data-featureid="hr-time">High-Resolution Time</a> exposes a monotonic sub-millisecond resolution clock to Web applications so that they can precisely measure time elapsed between two events. <a data-featureid="performance-timeline">Performance Timeline</a> defines a unified interface to store and retrieve performance metric data. Individual performance metric interfaces are enumerated in the <a data-featureid="timing-entrytypes-registry">Timing Entry Names Registry</a> and defined in separate specifications. Well-deployed interfaces include:</p>
+          <ul>
+            <li><a data-featureid="navigation-timing">Navigation Timing</a> exposes timing information related to navigation and elements;</li>
+            <li><a data-featureid="resource-timing">Resource Timing</a> exposes timing information for resources in a document;</li>
+            <li><a data-featureid="user-timing">User Timing</a> help applications measure the performance of their applications using high precision timestamps.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="featureset in-progress">
+        <h2>Technologies in progress</h2>
+        <div data-feature="Detecting Capabilities">
+          <p>To improve the user experience and take advantage of advanced device capabilities when they are available, media providers need to know the decoding (and encoding) capabilities of the user's device. Can the device decode a particular codec at a given resolution, bitrate and framerate? Will the playback be smooth and power efficient? Can the display render high dynamic range (HDR) and wide color gamut content? The <a data-featureid="media-capabilities">Media Capabilities</a> specification defines an API that helps application developers determine device capabilities. The API aims at replacing the more basic and vague <code>canPlayType()</code> and <code>isTypeSupported()</code> functions defined in HTML and Media Source Extensions (MSE).</p>
+          <p>On top of getting answers to <em>"Can"</em> questions, media providers also want answers to "<em>Should</em>" questions, such as "Should I sent HDR content if I have both HDR and SDR variants?". The Media Capabilities specification does not answer these questions, which rather fall within the realm of CSS extensions describing the capability of the display. Notably, <a data-featureid="color-gamut">CSS Media Queries Level 4</a> includes means to detect wide-gamut displays and adapt the rendering of the application to them. <a data-featureid="mediaqueries5">CSS Media Queries Level 5</a>, to be published after Level 4, will introduce a <code>video-</code> prefix to some features to detect differences between the video plane and the graphics plane on devices that render video separately from the rest of an HTML document, and that e.g. may support High Dynamic Range (HDR) for video and only Standard Dynamic Range (SDR) for other types of content.</p>
+        </div>
+        <div data-feature="Measuring the Quality of Experience">
+          <p>The <a data-featureid="media-playback-quality">Media Playback Quality</a> exposes metrics on the number of frames that have been displayed or dropped, giving some mechanisms to application developers to assess the user's perceived playback quality and alter the quality of content transmitted using adaptive streaming accordingly.</p>
+
+          <p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> develops additional generic timing hooks for Web applications, to analyze the time spent doing various tasks:</p>
+          <ul>
+            <li><a data-featureid="server-timing">Server Timing</a> enables a server to communicate performance metrics about the request-response cycle to the user agent, and allows applications to act on these metrics to optimize application delivery.</li>
+            <li>The <a data-featureid="longtasks">Long Tasks API</a> exposes a mechanism to detect long running tasks that monopolize the user interface's main thread for extended periods of time.</li>
+            <li><a data-featureid="paint-timing">Paint Timing</a> allows the application to capture a series of key moments such as first paint and first contentful paint during page load.</li>
+          </ul>
+        </div>
+      </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
-        <p data-feature="Common baseline of the Web platform">The Web Media API Community Group, created under the aegis of the <a href="https://standards.cta.tech/kwspub/wave/">CTA WAVE project</a>, develops the <a data-featureid="webmediaapi">Web Media APIs</a> document, that defines a common baseline of Web technologies that should be included in device implementations to support media Web applications. This document provides an annual snapshot of the Web platform that developers can rely on being supported across devices when they develop media applications.</p>
+        <p data-feature="Common baseline of the Web platform">The <a href="https://www.w3.org/community/webmediaapi/">Web Media API Community Group</a>, created under the aegis of the <a href="https://standards.cta.tech/kwspub/wave/">CTA WAVE project</a>, develops the <a data-featureid="webmediaapi">Web Media APIs</a> document, that defines a common baseline of Web technologies that should be included in device implementations to support media Web applications. This document provides an annual snapshot of the Web platform that developers can rely on being supported across devices when they develop media applications.</p>
         <p data-feature="Media Web applications Best Practices">The Community Group also develops the <a data-featureid="webmediaguidelines">Web Media Application Developer Guidelines</a> document, a companion guide to the Web Media APIs specification that outlines best practices and developer guidance for implementing Web media applications.</p>
         <div data-feature="Media production on the Web">
           <p>Professional media assets, including audio-visual masters for television and motion pictures, are increasingly being stored in the cloud. There is a corresponding growing interest in building web applications that allow end-users to manipulate these assets, e.g., quality checking, versioning, timed text authoring, etc. While the web platform has evolved to support consumer media applications, professional applications require additional capabilities, including precise timing, wider color gamut and high-dynamic range, high-fidelity timed text, etc. The Media and Entertainment Interest Group has started to <a href="https://w3c.github.io/media-and-entertainment/media-production/problem-statement">explore the problem space</a>, notably to identify possible technical gaps.</p>
         </div>
+        <div data-feature="Measuring the Quality of Experience">
+          <p>Some specifications are under incubation in the <a href="https://wicg.io/">Web Platform Incubator Community Group</a> to expose additional timing hooks for Web applications:</p>
+          <ul>
+            <li>The <a data-featureid="frame-timing">Frame Timing API</a> aims at providing detailed information on the frame-per-second obtained when an application is running on the user device.</li>
+            <li>The <a data-featureid="event-timing">Event Timing API</a> exposes a mechanism to measure the latency of some events triggered by user interaction.</li>
+            <li>The <a data-featureid="element-timing">Element Timing API</a> enables monitoring when large or developer-specified image elements and text nodes are displayed on screen.</li>
+            <li>The <a data-featureid="layout-instability">Layout Instability API</a> provides web page authors with insights into the stability of their pages based on movements of the elements on the page that detract from the user's experience.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Features not covered by ongoing work</h2>
+        <dl>
+          <dt>Guidelines on integration of Web media APIs with hardware-based media decoders</dt>
+          <dd>A number of practical questions arise when a browser code base needs to be ported to the specific hardware architecture of a media device, notably for integration of Web media APIs with hardware video and audio decoders. This includes questions such as: At which steps does the latency of hardware setup impact the various media algorithms? How should implementations handle cases where the application attempts to render a video while decoders are already in use? The Web Media API Community Group <a href="https://github.com/w3c/webmediaporting/issues/30">discusses the development of guidelines for integrators in that space</a>.</dd>
+
+          <dt>Performance requirements in existing technologies</dt>
+          <dd>Web technologies are designed with performance in mind, but they typically do not mandate measurable metrics on that front. For instance, it is common to talk in terms of frame rate in the video world but there is no requirement to playback video content at 30-60 frames per second, or to process events at any given rate on the Web. There are good reasons not to restrict implementations in that domain (e.g. so that they can reduce battery consumption when needed). There may be good reasons to specify minimum levels of support to guarantee user experiences too.</dd>
+        </dl>
       </section>
     </main>
     <script src="../js/generate.js"></script>
