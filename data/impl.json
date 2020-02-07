@@ -17543,15 +17543,6 @@
         "selected": true
       },
       {
-        "ua": "firefox",
-        "status": "experimental",
-        "notes": [
-          "Only supports the `allow` attribute on iframes"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy"
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "notes": [
@@ -25563,7 +25554,8 @@
           "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture"
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
       },
       {
         "ua": "firefox_android",
@@ -25576,13 +25568,6 @@
       },
       {
         "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5729206566649856",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
         "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",

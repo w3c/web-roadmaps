@@ -2527,7 +2527,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "FPWD": "2019-12-30",
+      "FPWD": "2020-03-30",
       "CR": "2020-06-30",
       "PR": "2021-03-30"
     },
@@ -2673,7 +2673,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "FPWD": "2019-12-30",
+      "FPWD": "2020-03-30",
       "CR": "2020-12-30",
       "PR": "2021-06-30"
     }
@@ -3174,7 +3174,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "FPWD": "2019-12-30",
+      "FPWD": "2020-03-30",
       "CR": "2020-12-30",
       "PR": "2021-06-30"
     }
@@ -4336,7 +4336,7 @@
     "edDraft": "https://w3c.github.io/dxwg/dcat/",
     "repository": "https://github.com/w3c/dxwg",
     "title": "Data Catalog Vocabulary (DCAT) - Version 2",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2017/dxwg/",
@@ -4350,9 +4350,9 @@
     }
   },
   "vocab-dcat": {
-    "url": "http://www.w3.org/TR/vocab-dcat/",
+    "url": "https://www.w3.org/TR/vocab-dcat/",
     "title": "Data Catalog Vocabulary (DCAT)",
-    "status": "REC",
+    "status": "Retired",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2011/gld/",
