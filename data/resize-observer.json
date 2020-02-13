@@ -1,6 +1,5 @@
 {
-    "url": "https://drafts.csswg.org/resize-observer-1/",
-    "title": "Resize Observer",
+    "url": "https://www.w3.org/TR/resize-observer/",
     "impl": {
         "caniuse": "resizeobserver",
         "chromestatus": 5705346022637568
