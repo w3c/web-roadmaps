@@ -1,5 +1,5 @@
 {
-    "url": "https://www.w3.org/TR/resize-observer/",
+    "url": "https://www.w3.org/TR/resize-observer-1/",
     "impl": {
         "caniuse": "resizeobserver",
         "chromestatus": 5705346022637568
