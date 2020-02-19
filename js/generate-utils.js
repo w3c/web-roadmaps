@@ -615,10 +615,6 @@ const loadTemplatePage = function (lang, pagetype) {
           s.src = script;
           document.querySelector('body').appendChild(s);
         });
-
-        // Add IDs to all headers, data-feature paragraphs and data-featureid elements
-        $(document, 'h2:not([id]), h3:not([id]), h4:not([id]), h5:not([id]), h6:not([id]), *[data-feature]:not([id]), *[data-featureid]:not([id])')
-          .forEach(el => makeID(el));
       };
 
       // Complete the new doc with the content saved above
@@ -958,6 +954,17 @@ const applyToc = function (toc, translate, lang, pagetype) {
   document.querySelector('[data-impl-lastmodified]').textContent =
     formatMonthAndYearDate(lastModified, lang);
 
+  // Automatically create feature sections if so requested
+  if (toc.createFeatureSections) {
+    $(document, 'div[data-feature],p[data-feature],ul[data-feature]').forEach(el => {
+      let section = document.createElement('section');
+      section.setAttribute('data-feature', el.getAttribute('data-feature'));
+      el.removeAttribute('data-feature');
+      el.parentNode.insertBefore(section, el);
+      section.appendChild(el);
+    });
+  }
+
   return toc;
 };
 
@@ -1059,10 +1066,7 @@ const loadImplementationInfo = function () {
  * an harcoded list of section titles and possible translations of these titles.
  */
 const setSectionTitles = function (translate, lang) {
-  const sections = $(document, 'section');
-  sections.forEach(section => {
-    // Search for section's title, defined as the first title found that has
-    // the current section as first section ancestor.
+  const getTitleElement = section => {
     let titleEl = section.querySelector('h1,h2,h3,h4,h5,h6');
     if (titleEl) {
       let parentSection = titleEl.parentNode;
@@ -1072,9 +1076,17 @@ const setSectionTitles = function (translate, lang) {
         }
         parentSection = parentSection.parentNode;
       }
-      if (parentSection === section) {
-        return;
-      }
+      return (parentSection === section) ? titleEl : null;
+    }
+  };
+
+  const sections = $(document, 'section');
+  sections.forEach(section => {
+    // Search for section's title, defined as the first title found that has
+    // the current section as first section ancestor.
+    let titleEl = getTitleElement(section);
+    if (titleEl) {
+      return;
     }
 
     // No title found, set the title if the section is a well-known one
@@ -1085,11 +1097,26 @@ const setSectionTitles = function (translate, lang) {
       titleEl.appendChild(document.createTextNode(translate('sections', type)));
       section.insertBefore(titleEl, section.firstChild);
     }
+    else if (section.getAttribute('data-feature')) {
+      titleEl = document.createElement('h3');
+      titleEl.appendChild(document.createTextNode(translate('features', section.getAttribute('data-feature'))));
+      section.insertBefore(titleEl, section.firstChild);
+    }
     else if (section.className && (section.className !== 'main-content')) {
       console.warn('Found a titleless section with class attribute ' +
         '"' + section.className + '" for which no title could be found in ' +
         '"' + lang + '". Is it normal? If not, title needs to be added to ' +
         'the `translations.' + lang + '.json` file');
+    }
+  });
+
+  // Add IDs to all headers, data-feature paragraphs and data-featureid elements
+  $(document, 'h2:not([id]), h3:not([id]), h4:not([id]), h5:not([id]), h6:not([id]), *[data-featureid]:not([id])')
+    .forEach(el => makeID(el));
+  $(document, '*[data-feature]:not([id])').forEach(el => {
+    let titleEl = getTitleElement(el);
+    if (!titleEl || !titleEl.getAttribute('id')) {
+      makeID(el);
     }
   });
 };

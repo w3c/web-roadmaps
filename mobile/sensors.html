@@ -25,24 +25,30 @@
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
 
-        <div data-feature="Motion sensors">
-          <p>The <a data-featureid="deviceorientation">DeviceOrientation Event Specification</a> defines several DOM events that provide information about the physical orientation and motion of a hosting device. Most browsers support this specification, but various interoperability issues have arised (which are not well reflected in the implementation info on this page) and work on this specification had been discontinued. Work has now resumed in the <a href="https://www.w3.org/das/">Devices and Sensors Working Group</a> to reduce inconsistencies across implementations and finalizing the specification, while the group develops the more powerful <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> specification in parallel.</p>
+        <div data-feature="Generic sensors">
+          <p>The <a data-featureid="generic-sensor">Generic Sensor API</a> defines a framework for exposing sensor data to the Web platform in a consistent way. In particular, the specification defines a blueprint for writing specifications of concrete sensors along with an abstract <code>Sensor</code> interface that can be extended to accommodate different sensor types. A number of sensor APIs are being built on top of the Generic Sensor API.</p>
         </div>
 
-        <p>The <a data-feature="Generic Sensors" data-featureid="generic-sensor">Generic Sensor API</a> defines a framework for exposing sensor data to the Web platform in a consistent way. In particular, the specification defines a blueprint for writing specifications of concrete sensors along with an abstract <code>Sensor</code> interface that can be extended to accommodate different sensor types.</p>
+        <p data-feature="Proximity sensors">The <a data-featureid="proximity">Proximity Sensor</a> specification defines an API to monitor the presence of nearby objects without physical contact.</p>
 
-        <p>A number of sensor APIs are being built on top of the Generic Sensor API. The <a data-feature="Proximity sensors" data-featureid="proximity">Proximity Sensor</a> specification defines an API to monitor the presence of nearby objects without physical contact. The <a data-feature="Ambient Light sensor" data-featureid="ambientlight">Ambient Light Sensor</a> specification defines an API to monitor the ambient light level or illuminance of the device's environment. The <a data-feature="Battery Status" data-featureid="battery">Battery Status API</a> exposes information about the battery status of the hosting service (however, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API).</p>
+        <p data-feature="Ambient light sensors">The <a data-featureid="ambientlight">Ambient Light Sensor</a> specification defines an API to monitor the ambient light level or illuminance of the device's environment.</p>
 
-        <p>The detection of motion is made possible by a combination of low-level and high-level motion sensor specifications, also built on top of the Generic Sensor API:</p>
+        <p data-feature="Battery status">The <a data-featureid="battery">Battery Status API</a> exposes information about the battery status of the hosting service (however, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API).</p>
 
-        <ul data-feature="Motion sensors">
-          <li>the <a data-featureid="accelerometer">Accelerometer</a> to obtain information about acceleration applied to the device's local three primary axes;</li>
-          <li>the <a data-featureid="gyroscope">Gyroscope</a> to monitor the rate of rotation around the device's local three primary axes;</li>
-          <li>the <a data-featureid="magnetometer">Magnetometer</a> to measure magnetic field around the device's local three primary axes;</li>
-          <li>the <a data-featureid="orientation">Orientation Sensor</a> to monitor the device's physical orientation in relation to a stationary 3D Cartesian coordinate system.</li>
-        </ul>
+        <div data-feature="Motion sensors">
+          <p>The detection of motion is made possible by a combination of low-level and high-level motion sensor specifications, also built on top of the Generic Sensor API:</p>
 
-        <p>The <a href="https://www.w3.org/TR/motion-sensors/">Motion Sensors Explainer</a> document is an introduction to low-level and high-level motion sensors, their relationship, inner workings and common use-cases.</p>
+          <ul>
+            <li>the <a data-featureid="accelerometer">Accelerometer</a> to obtain information about acceleration applied to the device's local three primary axes;</li>
+            <li>the <a data-featureid="gyroscope">Gyroscope</a> to monitor the rate of rotation around the device's local three primary axes;</li>
+            <li>the <a data-featureid="magnetometer">Magnetometer</a> to measure magnetic field around the device's local three primary axes;</li>
+            <li>the <a data-featureid="orientation">Orientation Sensor</a> to monitor the device's physical orientation in relation to a stationary 3D Cartesian coordinate system.</li>
+          </ul>
+
+          <p>The <a href="https://www.w3.org/TR/motion-sensors/">Motion Sensors Explainer</a> document is an introduction to low-level and high-level motion sensors, their relationship, inner workings and common use-cases.</p>
+
+          <p>The <a data-featureid="deviceorientation">DeviceOrientation Event Specification</a> defines several DOM events that provide information about the physical orientation and motion of a hosting device. Most browsers support this specification, but various interoperability issues have arised (which are not well reflected in the implementation info on this page) and work on this specification had been discontinued. Work has now resumed in the <a href="https://www.w3.org/das/">Devices and Sensors Working Group</a> to reduce inconsistencies across implementations and finalizing the specification, while the group develops the more powerful <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> specification in parallel.</p>
+        </div>
 
         <p data-feature="Geolocation">The <a data-featureid="geolocation-sensor">Geolocation Sensor</a> is an API for obtaining geolocation reading from the hosting device. The feature set of the Geolocation Sensor is similar to that of the Geolocation API, but it is surfaced through the Generic Sensor API, allows continuous geotracking and geofencing (one-time alerts when a user crosses a specific area) operations in the background, improves security and privacy, and is extensible.</p>
 
