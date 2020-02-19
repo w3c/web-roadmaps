@@ -2015,9 +2015,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "html-extensions": {
     "url": "https://w3c.github.io/html-extensions/",
@@ -3439,10 +3437,19 @@
     "milestones": {}
   },
   "resize-observer": {
-    "url": "https://drafts.csswg.org/resize-observer-1/",
+    "url": "https://www.w3.org/TR/resize-observer-1/",
+    "edDraft": "https://drafts.csswg.org/resize-observer/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Resize Observer",
-    "status": "ED",
-    "deliveredBy": [],
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
     "milestones": {}
   },
   "resource-hints": {

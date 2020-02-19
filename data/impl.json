@@ -22140,20 +22140,6 @@
   "kv-storage": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "experimental",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6428344899862528",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "experimental",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6428344899862528",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
@@ -25079,9 +25065,6 @@
       {
         "ua": "opera",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -34475,16 +34458,6 @@
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr",
         "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Enabled behind the WebVR & \"Gamepad Extensions\" flags under `chrome://flags`. Currently builds use an older version of the (still changing) specification and supports only the Oculus Rift and the HTC vive on Windows VR-ready computers."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webvr"
       },
       {
         "ua": "chrome_android",
