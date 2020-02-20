@@ -5,6 +5,7 @@
     "url": "https://discourse.wicg.io/c/mediartc"
   },
   "github": "https://github.com/w3c/web-roadmaps",
+  "createFeatureSections": true,
   "pages": [
     {
       "url": "rendering.html",
