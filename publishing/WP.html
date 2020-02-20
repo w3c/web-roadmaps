@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -25,7 +25,7 @@
     <main>
       <div class="content-wrapper">
         <section class="hero">
-            <div class="container"><div data-beforemetadata="true"><h2><a href="./" data-breadcrumb="">Roadmap of Technologies Needed for Web Publications</a> &gt;</h2><div class="title"><img src="../assets/img/mobile-network.svg" alt="" data-icon=""><div><h1 data-title="">Core Techonologies for Web Publications</h1></div></div></div></div>
+            <div class="container"><div data-beforemetadata="true"><h2 id="roadmap-of-technologies-needed-for-web-publications"><a href="./" data-breadcrumb="">Roadmap of Technologies Needed for Web Publications</a> &gt;</h2><div class="title"><img src="../assets/img/mobile-network.svg" alt="" data-icon=""><div><h1 data-title="">Core Techonologies for Web Publications</h1></div></div></div></div>
         </section>
         
         <section class="main-content" data-pagetype="page">
@@ -49,9 +49,9 @@
             <ul>
                 <li data-feature="Web Application Manifest" id="web-application-manifest"><a data-featureid="appmanifest" id="appmanifest" href="https://www.w3.org/TR/appmanifest/">Web Application Manifest</a> could serve as the basis for the serialization of <a href="https://w3c.github.io/wpub/#infoset">Web Publications Informations Sets</a>.</li>
 
-                <li data-feature="Resource Hints" id="resource-hints">Web Publications may contain a large number of resources; as an optimization step user agents may rely on various prefetch strategies to load those content if the right information is provided by the Web Publication itself. Such optimizations may rely on the <a data-featureid="resource-hints" id="resource-hints-0" href="https://www.w3.org/TR/resource-hints/">Resource Hints</a> specification.</li>
+                <li data-feature="Resource Hints" id="resource-hints-0">Web Publications may contain a large number of resources; as an optimization step user agents may rely on various prefetch strategies to load those content if the right information is provided by the Web Publication itself. Such optimizations may rely on the <a data-featureid="resource-hints" id="resource-hints" href="https://www.w3.org/TR/resource-hints/">Resource Hints</a> specification.</li>
 
-                <li data-feature="HTML Extensions" id="html-extensions">User Agents for Web Publications may have to propose some extensions to HTML (e.g., additional attributes for accessibility). The <a data-featureid="html-extensions" id="html-extensions-0" href="https://w3c.github.io/html-extensions/">HTML Extension Specifications</a> provides a good starting point for the roadmap to such extensions.</li>
+                <li data-feature="HTML Extensions" id="html-extensions-0">User Agents for Web Publications may have to propose some extensions to HTML (e.g., additional attributes for accessibility). The <a data-featureid="html-extensions" id="html-extensions" href="https://w3c.github.io/html-extensions/">HTML Extension Specifications</a> provides a good starting point for the roadmap to such extensions.</li>
 
                 <li data-feature="Service Workers" id="service-workers"><a data-featureid="serviceworkers" id="serviceworkers" href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> may become the basis for the implementation of Browser based Web Publication User agents in providing offline use.</li>
                 
@@ -76,7 +76,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>

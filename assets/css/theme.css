@@ -25,18 +25,24 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 300;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: #47525d;
-  text-decoration: underline;
+  color: #333;
+}
+
+h3::before {
+  content: "– ";
+}
+h3::after {
+  content: " –";
 }
 
 h4 {
   font-size: 1em;
   font-weight: 800;
-  color: #47525d;
+  color: #333;
 }
 
 p {
@@ -114,7 +120,67 @@ footer {
 }
 
 
-section.featureset { margin-bottom: 2em; }
+section.featureset {
+  margin-bottom: 2em;
+}
+
+section[data-feature] {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  section[data-feature]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(100% - 0.3em);
+    width: 0.5em;
+    border-left: thin dashed #333;
+  }
+
+  section[data-feature] > h3 {
+    position: absolute;
+    right: 100%;
+    width: 120px;
+    transform-origin: top right;
+    transform: rotate(-15deg);
+    color: #333;
+    padding-right: 1.5em;
+    margin-right: 0.2em;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 0;
+    border-top: thin dashed #333;
+  }
+
+  section[data-feature] > h3::before {
+    content: none;
+  }
+  section[data-feature] > h3::after {
+    content: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  section[data-feature] > h3 {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section[data-feature] > h3 {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1380px) {
+  section[data-feature] > h3 {
+    width: 270px;
+  }
+}
 
 table {
   border-collapse: collapse;

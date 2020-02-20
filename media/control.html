@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -25,7 +25,7 @@
     <main>
       <div class="content-wrapper">
         <section class="hero">
-            <div class="container"><div data-beforemetadata="true"><h2><a href="./" data-breadcrumb="">Overview of Media Technologies for the Web</a> &gt;</h2><div class="title"><img src="../assets/img/media-control.svg" alt="" data-icon=""><div><h1 data-title="">Playback controls</h1></div></div></div><p>Media content provides many opportunities for rich interactions with users, either on- or off-device.</p></div>
+            <div class="container"><div data-beforemetadata="true"><h2 id="overview-of-media-technologies-for-the-web"><a href="./" data-breadcrumb="">Overview of Media Technologies for the Web</a> &gt;</h2><div class="title"><img src="../assets/img/media-control.svg" alt="" data-icon=""><div><h1 data-title="">Playback controls</h1></div></div></div><p>Media content provides many opportunities for rich interactions with users, either on- or off-device.</p></div>
         </section>
         
         <section class="main-content" data-pagetype="page">
@@ -38,8 +38,8 @@
         <h2 id="specifications-in-progress">Specifications in progress</h2>
         <p data-feature="Key-based control" id="key-based-control">A number of media-capable devices expose specific hardware keys and buttons to facilitate control of playing media; the <a data-featureid="mediakeys" id="mediakeys" href="https://www.w3.org/TR/uievents-key/#keys-multimedia">Media Keys in DOM Level 3 events</a> specification exposes these interactions to Web-based players.</p>
         <p data-feature="OS-wide media control" id="os-wide-media-control">In any given Web application, media playback can be in competition with media playback from other applications, and the underlying operating system is in charge of determining which of these applications should have the media focus. The <a data-featureid="mediasession" id="mediasession" href="https://www.w3.org/TR/mediasession/">Media Session</a> specification exposes these changes of focus to Web applications.</p>
-        <div data-feature="Autoplay" id="autoplay">
-          <p>To preserve bandwidth, memory and battery on mobile, and prevent possibly unwanted media playback, browsers have put autoplay policies into place and may deny automated playback of media content. The <a data-featureid="autoplay" id="autoplay-0" href="https://github.com/w3c/autoplay">Autoplay Policy Detection</a> specification lets applications know whether autoplay will succeed for a given media element.</p>
+        <div data-feature="Autoplay" id="autoplay-0">
+          <p>To preserve bandwidth, memory and battery on mobile, and prevent possibly unwanted media playback, browsers have put autoplay policies into place and may deny automated playback of media content. The <a data-featureid="autoplay" id="autoplay" href="https://github.com/w3c/autoplay">Autoplay Policy Detection</a> specification lets applications know whether autoplay will succeed for a given media element.</p>
         </div>
         <p data-feature="User Interface" id="user-interface">Remote controllers and gamepads are commonly used to navigate <i>ten-foot user interfaces</i> on televisions. They usually feature 4-way keys, which make them particularly suitable for 2D navigation, where focus moves between focusable elements based on their position on the screen. This behavior can be achieved through JavaScript to some extent, but cannot cater for all cases and negatively impacts performance due to the need to access the DOM repeatedly. The <a data-featureid="spatial-navigation" id="spatial-navigation" href="https://www.w3.org/TR/css-nav-1/">Spatial navigation</a> specification defines extensions to CSS and an API for this navigation paradigm to be supported across browsers.</p>
         <p data-feature="Virtual reality control" id="virtual-reality-control">For immersive media experiences enabled by Virtual Reality headsets, media content needs to be adjusted based on the viewer’s head position, orientation and velocity. The work on the <a data-featureid="webxr" id="webxr" href="https://www.w3.org/TR/webxr/">WebXR Device API</a> (formerly <em>WebVR</em>) and its companion <a data-featureid="webxr-gamepads-module" id="webxr-gamepads-module" href="https://www.w3.org/TR/webxr-gamepads-module/">WebXR Gamepads Module</a> specification for user inputs addresses this need.</p>
@@ -73,7 +73,7 @@
       </div>
     </main>
 
-    <aside id="side-nav">
+    <aside id="side-nav" data-js="true">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>
