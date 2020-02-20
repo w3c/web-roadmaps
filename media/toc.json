@@ -44,9 +44,9 @@
     },
     {
       "url": "apps.html",
-      "title": "Media application development",
+      "title": "Device interoperability",
       "icon": "../assets/img/media-app.svg",
-      "description": "Platform features and best practices to develop media applications on the Web"
+      "description": "Technologies and guidelines to reduce fragmentation across media devices."
     }
   ],
   "about": {
