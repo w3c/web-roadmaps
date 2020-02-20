@@ -13,7 +13,9 @@
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
-        <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong data-feature="Video playback" ><a data-featureid="video">&lt;video&gt;</a></strong></code> and <code><strong data-feature="Audio playback"><a data-featureid="audio">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
+        <div data-feature="Audio/Video playback">
+          <p>HTML5 adds two tags that dramatically improve the integration of multimedia content on the Web: the <code><strong><a data-featureid="video">&lt;video&gt;</a></strong></code> and <code><strong><a data-featureid="audio">&lt;audio&gt;</a></strong></code> tags. Respectively, these tags allow embedding video and audio content, and make it possible for Web developers to interact much more freely with that content than they would through plug-ins. They make multimedia content first-class citizens of the Web, the same way images have been for the past 20 years.</p>
+        </div>
 
         <p data-feature="Generation of media content">The playback content can be streamed, augmented and completed via <a data-featureid="mse">Media Source Extensions</a> that lets developers buffer and generate media content in JavaScript, thus allowing Web application developers to create libraries that can handle adaptive streaming formats and protocols.</p>
 
@@ -21,7 +23,7 @@
 
         <p data-feature="Capturing audio/video">While the new HTML5 tags allow to play multimedia content, the <a data-featureid="html-media-capture">HTML Media Capture</a> defines a <strong>markup-based mechanism to access captured multimedia content</strong> using attached camera and microphones, a very common feature on mobile devices. Direct manipulation of <strong>streams from camera and microphones</strong> is possible through the <a data-featureid="getusermedia">Media Capture and Streams API</a>.</p>
 
-        <p data-feature="Image &amp; Video analysis, modification">The <a data-featureid="canvas">Canvas 2D Context</a> API enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>, thus bringing multimedia manipulation capabilities to the Web platform.</p>
+        <p data-feature="Image/Video edition">The <a data-featureid="canvas">Canvas 2D Context</a> API enables modifying images, which in turn opens up the possibility of <strong>video editing</strong>, thus bringing multimedia manipulation capabilities to the Web platform.</p>
       </section>
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
@@ -55,13 +57,15 @@
 
         <p data-feature="Capturing audio/video">The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> is building an <a data-featureid="recording">API to record streams from camera and microphones</a> into files, and another API to use access to cameras to <a data-featureid="imagecapture">take photos programatically</a>.</p>
 
-        <p>The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> is the host of specifications for a wider set of communication opportunities:</p>
-        <ul data-feature="P2P connections and audio/video streams">
-          <li><a data-featureid="p2p">Peer-to-peer connection</a> across devices,</li>
-          <li><a data-featureid="mst-content-hint">Content Hints</a> allowing Web applications to advertise the type of media content that is being consumed (e.g. speech or music, movie or screencast) so that user agents may optimize encoding or processing parameters,</li>
-          <li><a data-featureid="webrtc-svc">Scalable Video Coding</a> (SVC) allowing Web applications to configure encoding parameters to leverage SVC (whereby subset video streams can be derived from the larger video stream by dropping packets to reduce bandwidth consumption), making providing video at different qualities to multiple destinations with the same initial video stream easier,</li>
-          <li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
-        </ul>
+        <div data-feature="P2P and audio/video streams">
+          <p>The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> is the host of specifications for a wider set of communication opportunities:</p>
+          <ul>
+            <li><a data-featureid="p2p">Peer-to-peer connection</a> across devices,</li>
+            <li><a data-featureid="mst-content-hint">Content Hints</a> allowing Web applications to advertise the type of media content that is being consumed (e.g. speech or music, movie or screencast) so that user agents may optimize encoding or processing parameters,</li>
+            <li><a data-featureid="webrtc-svc">Scalable Video Coding</a> (SVC) allowing Web applications to configure encoding parameters to leverage SVC (whereby subset video streams can be derived from the larger video stream by dropping packets to reduce bandwidth consumption), making providing video at different qualities to multiple destinations with the same initial video stream easier,</li>
+            <li><strong>P2P Audio and video streams</strong> allowing for real-time communications between users.</li>
+          </ul>
+        </div>
       </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>

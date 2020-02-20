@@ -6,6 +6,7 @@
   },
   "github": "https://github.com/w3c/web-roadmaps",
   "publishedVersion": "https://www.w3.org/Mobile/roadmap/",
+  "createFeatureSections": true,
   "pages": [
     {
       "url": "graphics.html",

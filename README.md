@@ -19,6 +19,7 @@ It aims at simplifying the creation and maintenance of such roadmaps by collecti
 * [Creating a new roadmap page or a new single-page roadmap](#creating-a-new-roadmap-page-or-a-new-single-page-roadmap)
 * [Creating the index of a new multi-page roadmap](#creating-the-index-of-a-new-multi-page-roadmap)
 * [Creating an About this document page](#creating-an-about-this-document-page)
+* [Creating feature sections](#creating-feature-sections)
 * [Customizing summary tables](#customizing-summary-tables)
 * [Repository branches](#repository-branches)
 * [Generate content locally](#generate-content-locally)
@@ -327,6 +328,12 @@ Children of the `<main>` element in the about page are automatically appended to
   </body>
 </html>
 ```
+
+## Creating feature sections
+
+As explained above, individual features are grouped by an overall feature name described in a `data-feature` attribute. This grouping is not shown to readers in the prose by default (it merely appears in summary tables). To make pages more readable when the number of individual features they reference grows, roadmap authors may want to create sections for the overall feature names.
+
+The framework will do that automatically if the `toc.json` file contains a `createFeatureSections` property set to `true`.
 
 
 ## Customizing summary tables
