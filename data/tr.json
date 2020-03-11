@@ -534,7 +534,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group (historical)"
+        "label": "(historical) Web Applications Working Group"
       },
       {
         "url": "https://www.w3.org/2011/webappsec/",
@@ -695,8 +695,10 @@
   },
   "css-3d": {
     "url": "https://drafts.csswg.org/css-transforms-2/",
+    "edDraft": "https://drafts.csswg.org/css-transforms-2/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Transform Module Level 2",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "http://www.w3.org/Style/CSS/members",
@@ -1732,7 +1734,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group (historical)"
+        "label": "(historical) Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2639,8 +2641,10 @@
   },
   "mediaqueries5": {
     "url": "https://drafts.csswg.org/mediaqueries-5/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-5/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Media Queries Level 5",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Style/CSS/members",
@@ -3512,6 +3516,7 @@
   },
   "schema.org": {
     "url": "https://schema.org/",
+    "repository": "https://github.com/schemaorg/schemaorg",
     "title": "Schema.org",
     "status": "LS",
     "deliveredBy": [],
@@ -4659,8 +4664,8 @@
     "milestones": {}
   },
   "webhid": {
-    "url": "https://github.com/nondebug/webhid/blob/master/EXPLAINER.md",
-    "title": "WebHID",
+    "url": "https://wicg.github.io/webhid/",
+    "title": "WebHID API",
     "status": "ED",
     "deliveredBy": [
       {
@@ -4803,7 +4808,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group (historical)"
+        "label": "(historical) Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -4817,7 +4822,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2008/webapps/",
-        "label": "Web Applications Working Group (historical)"
+        "label": "(historical) Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
