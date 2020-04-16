@@ -10967,7 +10967,6 @@
             "ua": "safari",
             "status": "shipped",
             "notes": [
-              "Requires MacOS 10.13+",
               "Does not support OpenType-CFF2 fonts"
             ],
             "source": "caniuse",
@@ -16034,9 +16033,6 @@
           {
             "ua": "safari",
             "status": "shipped",
-            "notes": [
-              "Certain CSS selectors do not work (`:host > .local-child`) and styling slotted content (`::slotted`) is buggy."
-            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=shadowdomv1",
             "selected": true
@@ -17004,22 +17000,13 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Only supports the `allow` attribute on iframes"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=feature-policy",
         "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "experimental",
-        "notes": [
-          "Only supports the `allow` attribute on iframes"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy"
       },
       {
         "ua": "chrome",
@@ -26525,6 +26512,13 @@
         "selected": true
       },
       {
+        "ua": "safari_ios",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -28199,7 +28193,6 @@
       {
         "ua": "chrome",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4757990523535360",
         "selected": true
@@ -28207,7 +28200,6 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4757990523535360",
         "selected": true
@@ -31398,6 +31390,47 @@
       }
     ]
   },
+  "video-rvfc": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6335927192387584",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6335927192387584",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6335927192387584",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6335927192387584",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6335927192387584",
+        "selected": true
+      }
+    ]
+  },
   "video": {
     "implementations": [
       {
@@ -31636,20 +31669,6 @@
   },
   "virtual-scroller": {
     "implementations": [
-      {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5673195159945216",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5673195159945216",
-        "selected": true
-      },
       {
         "ua": "firefox",
         "status": "",
@@ -32069,7 +32088,11 @@
       },
       {
         "ua": "safari_ios",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled via the \"Experimental Features\" developer menu"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -32171,7 +32194,7 @@
       },
       {
         "ua": "webkit",
-        "status": "experimental",
+        "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-animations"
       }
@@ -33397,8 +33420,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5172464636133376",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5172464636133376",
         "selected": true
@@ -34055,7 +34084,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS."
+          "Available and enabled by default only in Firefox Windows. Enabled in Nightly for iOS. Firefox 73+ [requires a secure context using HTTPS](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API#API_availability)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvr",

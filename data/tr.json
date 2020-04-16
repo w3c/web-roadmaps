@@ -2915,7 +2915,7 @@
     "edDraft": "https://w3c.github.io/sdw/time/",
     "repository": "https://github.com/w3c/sdw",
     "title": "Time Ontology in OWL",
-    "status": "REC",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2015/spatial/",
@@ -4251,6 +4251,19 @@
     "informative": false,
     "milestones": {}
   },
+  "video-rvfc": {
+    "url": "https://wicg.github.io/video-rvfc/",
+    "title": "HTMLVideoElement.requestVideoFrameCallback()",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "video": {
     "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
     "repository": "https://github.com/whatwg/html",
@@ -5049,7 +5062,7 @@
     "edDraft": "https://w3c.github.io/wot-architecture/",
     "repository": "https://github.com/w3c/wot-architecture",
     "title": "Web of Things (WoT) Architecture",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -5067,7 +5080,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -5085,7 +5098,7 @@
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
