@@ -145,7 +145,12 @@ const tableColumnsPerType = {
   'well-deployed': ['feature', 'spec', 'maturity', 'impl'],
   'in-progress': ['feature', 'spec', 'maturity', 'impl'],
   'exploratory-work': ['feature', 'spec', 'impl-intents'],
-  'versions': ['feature', 'spec', 'maturity', 'seeAlso']
+  'versions': ['feature', 'spec', 'maturity', 'seeAlso'],
+  'groups': [
+    'group',
+    { type: 'spec', title: 'Specification', hideGroup: true },
+    'mention'
+  ]
 };
 
 /**
@@ -282,6 +287,7 @@ const getSpecFeatureUrl = function (spec, featureId, linkto) {
  */
 const createFeatureCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement((pos === 0) ? 'th' : 'td');
+  cell.setAttribute('data-col', column.type);
   cell.appendChild(document.createTextNode(featureName));
   cell.classList.add('feature');
   return cell;
@@ -314,26 +320,29 @@ const createSpecCell = function (column, refId, featureName, specInfo, implInfo,
   }
 
   let cell = document.createElement('td');
+  cell.setAttribute('data-col', column.type);
   fillCell(cell, {
     localizedLabel: localizedLabel,
     label: label,
     url: specUrl
   });
 
-  specInfo.deliveredBy = specInfo.deliveredBy || [];
-  specInfo.deliveredBy.forEach((wg, w) => {
-    wg.label = wg.label || '';
-    wg.label = wg.label
-      .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
-      .replace(/Technical Architecture Group/, 'TAG')
-      .replace(/Web Real-Time Communications/, 'WebRTC');
-    wg.localizedLabel = translate('groups', wg.label);
-    cell.appendChild(document.createElement('br'));
-    let span = document.createElement('span');
-    span.classList.add('group');
-    fillCell(span, wg);
-    cell.appendChild(span);
-  });
+  if (!column.hideGroup) {
+    specInfo.deliveredBy = specInfo.deliveredBy || [];
+    specInfo.deliveredBy.forEach((wg, w) => {
+      wg.label = wg.label || '';
+      wg.label = wg.label
+        .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
+        .replace(/Technical Architecture Group/, 'TAG')
+        .replace(/Web Real-Time Communications/, 'WebRTC');
+      wg.localizedLabel = translate('groups', wg.label);
+      cell.appendChild(document.createElement('br'));
+      let span = document.createElement('span');
+      span.classList.add('group');
+      fillCell(span, wg);
+      cell.appendChild(span);
+    });
+  }
 
   return cell;
 };
@@ -341,6 +350,7 @@ const createSpecCell = function (column, refId, featureName, specInfo, implInfo,
 const createMaturityCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   // Render maturity info
   let cell = document.createElement('td');
+  cell.setAttribute('data-col', column.type);
   let maturityInfo = maturityData(specInfo, translate);
   fillCell(cell, maturityInfo.maturity, maturityInfo.maturityIcon);
   cell.classList.add('maturity');
@@ -349,6 +359,7 @@ const createMaturityCell = function (column, refId, featureName, specInfo, implI
 
 const createImplCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
+  cell.setAttribute('data-col', column.type);
   cell.appendChild(formatImplInfo(implInfo, translate));
   cell.classList.add('impl');
   return cell;
@@ -356,6 +367,7 @@ const createImplCell = function (column, refId, featureName, specInfo, implInfo,
 
 const createSeeAlsoCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
+  cell.setAttribute('data-col', column.type);
   cell.classList.add('seeAlso');
   if (column.class) {
     cell.classList.add(column.class);
@@ -418,6 +430,7 @@ const createSeeAlsoCell = function (column, refId, featureName, specInfo, implIn
 
 const createMilestonesCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
   let cell = document.createElement('td');
+  cell.setAttribute('data-col', column.type);
   cell.classList.add('milestones');
   if (specInfo.milestones) {
     let milestones = Object.keys(specInfo.milestones).map(maturity => {
@@ -457,6 +470,40 @@ const createMilestonesCell = function (column, refId, featureName, specInfo, imp
 };
 
 
+const createGroupCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
+  let cell = document.createElement((pos === 0) ? 'th' : 'td');
+  cell.setAttribute('data-col', column.type);
+
+  specInfo.deliveredBy = specInfo.deliveredBy || [];
+  specInfo.deliveredBy.forEach((wg, w) => {
+    wg.label = wg.label || '';
+    wg.label = wg.label
+      .replace(/Cascading Style Sheets \(CSS\)/, 'CSS')
+      .replace(/Technical Architecture Group/, 'TAG')
+      .replace(/Web Real-Time Communications/, 'WebRTC');
+    wg.localizedLabel = translate('groups', wg.label);
+    fillCell(cell, wg);
+  });
+  return cell;
+};
+
+const createMentionCell = function (column, refId, featureName, specInfo, implInfo, translate, lang, pos) {
+  let cell = document.createElement((pos === 0) ? 'th' : 'td');
+  cell.setAttribute('data-col', column.type);
+  const pages = implInfo || [];
+  const seeLabel = translate('labels', 'in %page');
+  if (featureName) {
+    cell.innerHTML = featureName;
+  }
+  pages.forEach((page, pos) => {
+    cell.innerHTML += ((pos > 0 || featureName) ? '<br/>' : '') +
+      seeLabel.replace('%page',
+        '<a href="' + page.url + '">' + page.title + '</a>');
+  });
+  cell.classList.add('mention');
+  return cell;
+};
+
 const tableColumnCreators = {
   'feature': createFeatureCell,
   'spec': createSpecCell,
@@ -464,7 +511,9 @@ const tableColumnCreators = {
   'impl': createImplCell,
   'impl-intents': createImplCell,
   'seeAlso': createSeeAlsoCell,
-  'milestones': createMilestonesCell
+  'milestones': createMilestonesCell,
+  'group': createGroupCell,
+  'mention': createMentionCell
 };
 
 
@@ -566,6 +615,7 @@ const loadTemplatePage = function (lang, pagetype) {
       const hero = $(document, 'header > *');
       const sections = $(document, 'main > *');
       const aboutContents = !!document.querySelector('[data-contents=about]');
+      const groupsContents = !!document.querySelector('[data-contents=groups]');
 
       // Replace doc by template doc
       document.documentElement.innerHTML = responseText;
@@ -578,9 +628,9 @@ const loadTemplatePage = function (lang, pagetype) {
           $(document, '[data-pagetype="' + type + '"]').forEach(el =>
             el.parentNode.removeChild(el)));
 
-      const completeContents = function (aboutHTML) {
-        if (aboutContents) {
-          document.querySelector('.main-content .container').innerHTML = aboutHTML;
+      const completeContents = function (html) {
+        if (aboutContents || groupsContents) {
+          document.querySelector('.main-content .container').innerHTML = html;
         }
 
         headElements.forEach(el => document.querySelector('head').appendChild(el));
@@ -620,6 +670,10 @@ const loadTemplatePage = function (lang, pagetype) {
       // Complete the new doc with the content saved above
       if (aboutContents) {
         return loadLocalizedUrl('../js/template-about.html', lang)
+          .then(responseText => completeContents(responseText));
+      }
+      else if (groupsContents) {
+        return loadLocalizedUrl('../js/template-groups.html', lang)
           .then(responseText => completeContents(responseText));
       }
       else {
@@ -769,6 +823,9 @@ const applyToc = function (toc, translate, lang, pagetype) {
   if (!title && pagetype.about) {
     title = toc.about.title || translate('labels', 'About this document');
   }
+  else if (!title && pagetype.groups) {
+    title = toc.groups.title || translate('labels', 'List of relevant groups');
+  }
   document.querySelector('title').textContent =
     (pagetype.menu ? '' : title + ' - ') + toc.title;
   $(document, 'section.contribute .discourse').forEach(link => {
@@ -782,6 +839,10 @@ const applyToc = function (toc, translate, lang, pagetype) {
     document.body.className += ' menu';
   }
 
+  if (pagetype.groups) {
+    document.body.setAttribute('data-groups', 'data-groups');
+  }
+
   let currentPage = toc.pages.find(page =>
     window.location.pathname.endsWith(page.url) ||
     window.location.pathname.endsWith(page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')));
@@ -790,6 +851,11 @@ const applyToc = function (toc, translate, lang, pagetype) {
       (window.location.pathname.endsWith(toc.about.url) ||
       window.location.pathname.endsWith(toc.about.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')))) {
     iconUrl = toc.about.icon || '../assets/img/about.svg';
+  }
+  else if (!currentPage && toc.groups && toc.groups.url &&
+      (window.location.pathname.endsWith(toc.groups.url) ||
+      window.location.pathname.endsWith(toc.groups.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1')))) {
+    iconUrl = toc.groups.icon || '../assets/img/groups.svg';
   }
   let titleContainer = document.createElement('div');
   titleContainer.setAttribute('data-beforemetadata', 'true');
@@ -832,6 +898,13 @@ const applyToc = function (toc, translate, lang, pagetype) {
     icon: '../assets/img/home.svg'
   }];
   pages = pages.concat(toc.pages);
+  if (toc.groups) {
+    pages.push({
+      title: toc.groups.title || translate('labels', 'List of relevant groups'),
+      url: toc.groups.url,
+      icon: toc.groups.icon || '../assets/img/groups.svg'
+    });
+  }
   if (toc.about) {
     pages.push({
       title: toc.about.title || translate('labels', 'About this document'),
@@ -843,7 +916,8 @@ const applyToc = function (toc, translate, lang, pagetype) {
     const localizedUrl = ((lang === 'en') ? page.url :
       page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));
 
-    if (mainNav && (!toc.about || (page.url !== toc.about.url))) {
+    if (mainNav && (!toc.about || (page.url !== toc.about.url)) &&
+        (!toc.groups || (page.url !== toc.groups.url))) {
       let mainNavItem = document.createElement('li');
       mainNavItem.innerHTML = templateItem;
       mainNavItem.querySelector('a').href = localizedUrl;
@@ -1137,6 +1211,12 @@ const fillTables = function (specInfo, implInfo, toc, translate, lang) {
       columnsPerType[type] = expandColumns(tableColumnsPerType[type], translate);
     }
   });
+
+  // If we're on the groups page, we should rather be building the list of
+  // relevant groups
+  if (!!document.body.getAttribute('data-groups')) {
+    return fillGroupsTable(specInfo, implInfo, toc, translate, lang, columnsPerType.groups);
+  }
 
   // Helper function to extract all specs referenced with a data-featureid.
   // Fills out referencedIds and complete the optional references table
@@ -1509,5 +1589,194 @@ const addFilteringMenus = function (translate) {
     });
     menu.appendChild(container);
     th.appendChild(menu);
+  });
+};
+
+
+/**
+ * Generates the list of groups mentioned across pages
+ * (may take a while as the document starts by loading each page in turn!)
+ */
+const fillGroupsTable = function (specInfo, implInfo, toc, translate, lang, columns) {
+  return Promise.all(toc.pages.map(page => new Promise((resolve, reject) => {
+    // Load page in the background and extract all referenced feature ids
+    const iframe = document.createElement('iframe');
+    iframe.hidden = true;
+    iframe.src = page.url;
+    iframe.addEventListener('load', () => {
+      iframe.contentWindow.document.addEventListener('generate', _ => {
+        const featureids = $(iframe.contentWindow.document, '[data-featureid]')
+          .map(el => {
+            const featureEl = el.closest('[data-feature]');
+            return {
+              id: el.dataset['featureid'],
+              feature: featureEl ? featureEl.dataset['feature'] : null,
+              linkonly: (el.dataset['linkonly'] !== undefined) &&
+                (el.dataset['linkonly'] !== 'false'),
+              page: page
+            };
+          })
+          .filter((feature, idx, self) =>
+            self.findIndex(f => (f.id === feature.id) &&
+              (f.feature === feature.feature)) === idx)
+          .filter(feature => !feature.linkonly);
+        resolve(featureids);
+      });
+    });
+    document.body.appendChild(iframe);
+  }))).then(res => {
+    // Drop hidden iframes and flatten the list of feature ids
+    $(document, 'iframe').forEach(el => el.parentNode.removeChild(el));
+    return res.reduce((acc, featureids) => acc.concat(featureids), []);
+  }).then(res => res.map(feature => {
+    // Retrieve information about each feature
+    const [specId, featureId] = feature.id.split('/');
+    feature.info = specInfo[specId];
+    return feature;
+  })).then(res => {
+    // Group things by groups, feature ids, feature names and pages
+    const groups = [];
+    res.forEach(ref => {
+      if (!ref.info || !ref.info.deliveredBy) {
+        return;
+      }
+
+      ref.info.deliveredBy.forEach(deliveredBy => {
+        let group = groups.find(g => g.deliveredBy.label === deliveredBy.label);
+        if (!group) {
+          group = {
+            deliveredBy: deliveredBy,
+            features: []
+          };
+          groups.push(group);
+        }
+
+        // Override delivered by info (we're grouping by groups and specs may
+        // be developed by more than one group)
+        const info = Object.assign({}, ref.info, { deliveredBy: [deliveredBy]});
+
+        let spec = group.features.find(f => f.id === ref.id);
+        if (!spec) {
+          spec = {
+            id: ref.id,
+            info: info,
+            features: []
+          }
+          group.features.push(spec);
+        }
+
+        let feature = spec.features.find(f => f.name === ref.feature);
+        if (!feature) {
+          feature = {
+            name: ref.feature,
+            pages: []
+          };
+          spec.features.push(feature);
+        }
+
+        let page = feature.pages.find(f => f.url === ref.page.url);
+        if (!page) {
+          page = ref.page;
+          feature.pages.push(page);
+        }
+      });
+    });
+
+    groups.forEach(group => {
+      group.features.forEach(spec => {
+        // Only keep entries with no feature names if pages do not already
+        // appear elsewhere
+        const nofeature = spec.features.find(f => !f.name);
+        if (nofeature) {
+          nofeature.pages = nofeature.pages.filter(page =>
+            !spec.features.find(f => f.name && f.pages.find(p => p.url === page.url)));
+          if (nofeature.pages.length === 0) {
+            spec.features = spec.features.filter(f => f.name);
+          }
+        }
+      });
+    });
+    return groups;
+  }).then(groups => groups.sort((g1, g2) => {
+    return translate('groups', g1.deliveredBy.label)
+      .localeCompare(translate('groups', g2.deliveredBy.label));
+  })).then(groups => groups.map(group => {
+    group.features.sort((s1, s2) => {
+      return translate('specifications', s1.info.title)
+        .localeCompare(translate('specifications', s2.info.title));
+    });
+    return group;
+  })).then(groups => {
+    const tableWrapper = document.getElementById('table');
+    const table = document.createElement('table');
+
+    // Fill the table headers
+    const row = document.createElement('tr');
+    columns.forEach(column => {
+      const cell = document.createElement('th');
+      cell.setAttribute('data-col', column.type);
+      cell.appendChild(document.createTextNode(column.title));
+      row.appendChild(cell);
+    });
+
+    let thead = document.createElement('thead');
+    thead.appendChild(row);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    table.appendChild(tbody);
+
+    groups.forEach((group, groupidx) => {
+      group.features.forEach((spec, specidx) => {
+        spec.features.forEach((feature, featureidx) => {
+          const row = document.createElement('tr');
+          tbody.appendChild(row);
+          columns.forEach((column, columnidx) => {
+            // Group name cell and spec cell may span multiple rows
+            if ((column.type === 'group') &&
+                ((specidx > 0) || (featureidx > 0))) {
+              return;
+            }
+            else if ((column.type === 'spec') && (featureidx > 0)) {
+              return;
+            }
+
+            // Find implementation info if needed, or use that field to
+            // pass page info
+            const [specId, featureId] = spec.id.split('/');
+            let impl = implInfo[specId];
+            if (featureId) {
+              impl = (impl.features ? impl.features[featureId] : {});
+            }
+            if (column.type === 'mention') {
+              impl = feature.pages;
+            }
+
+            // Create the appropriate cell
+            const cell = column.createCell(
+              column, spec.id, feature.name,
+              spec.info, impl,
+              translate, lang, columnidx);
+            row.appendChild(cell);
+
+            // Make cells span multiple rows when needed
+            if (column.type === 'group') {
+              const rowspan = group.features.reduce(
+                (tot, spec) => tot + spec.features.length, 0);
+              if (rowspan > 1) {
+                cell.setAttribute('rowspan', rowspan);
+              }
+            }
+            else if (column.type === 'spec') {
+              if (spec.features.length > 1) {
+                cell.setAttribute('rowspan', spec.features.length);
+              }
+            }
+          });
+        });
+      });
+    });
+
+    tableWrapper.appendChild(table);
   });
 };

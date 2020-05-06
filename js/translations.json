@@ -13,7 +13,9 @@
     "impl": "Current implementations",
     "impl-intents": "Implementation intents",
     "seeAlso": "See also",
-    "milestones": "Milestones"
+    "milestones": "Milestones",
+    "group": "Group",
+    "mention": "Mention"
   },
   "implstatus": {
     "shipped": "Shipped",
