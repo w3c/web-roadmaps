@@ -701,8 +701,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
@@ -844,8 +844,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
@@ -1221,8 +1221,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "http://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2506,7 +2506,7 @@
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2011/webtv/",
-        "label": "Media & Entertainment Interest Group"
+        "label": "Media and Entertainment Interest Group"
       }
     ],
     "publisher": "W3C",
@@ -2647,8 +2647,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/members",
-        "label": "CSS Working Group"
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
@@ -4944,7 +4944,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2020-09-30"
+    }
   },
   "webxr-gamepads-module": {
     "url": "https://www.w3.org/TR/webxr-gamepads-module/",
@@ -4977,7 +4979,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "CR": "2019-12-30"
+      "PR": "2020-09-30"
     }
   },
   "wfs3": {

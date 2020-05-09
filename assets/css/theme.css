@@ -204,7 +204,7 @@ tbody th, tbody td { padding-left: 0.5em;}
 th.feature {
   max-width: 150px;
 }
-th.feature[rowspan] {
+th[rowspan], td[rowspan] {
   vertical-align: top;
   padding-top: 1.5em;
 }
@@ -225,6 +225,10 @@ td.milestones {
   font-size: 90%;
   min-width: 150px;
 }
+[data-col=spec] {
+  max-width: 250px;
+}
+
 
 
 /************************************************************
@@ -350,7 +354,7 @@ Styles for the "current implementations" column
 }
 
 /* UA filtering menu */
-[data-col|=impl] details {
+th[data-col|=impl] details {
   display: none;
   position: relative;
   padding: 0 0.1em;
@@ -358,18 +362,18 @@ Styles for the "current implementations" column
   font-weight: 400;
 }
 
-[data-col|=impl] details.active {
+th[data-col|=impl] details.active {
   display: block;
 }
 
-[data-col|=impl] summary {
+th[data-col|=impl] summary {
   font-size: smaller;
   padding-left: 1em;
   outline: none;
   cursor: pointer;
 }
 
-[data-col|=impl] div {
+th[data-col|=impl] div {
   position: absolute;
   left: 0;
   right: 0;
@@ -378,13 +382,13 @@ Styles for the "current implementations" column
   z-index: 10;
 }
 
-[data-col|=impl] ul {
+th[data-col|=impl] ul {
   list-style: none;
   padding-left: 0;
   margin: 0.6em;
 }
 
-[data-col|=impl] li {
+th[data-col|=impl] li {
   color: inherit;
 }
 

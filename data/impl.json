@@ -389,13 +389,13 @@
       },
       {
         "ua": "opera",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame"
       },
       {
         "ua": "opera_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
         "selected": true
@@ -420,7 +420,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
         "selected": true
@@ -568,7 +568,7 @@
       },
       {
         "ua": "firefox",
-        "status": "shipped",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6192449487634432"
       },
@@ -10209,7 +10209,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
             "selected": true
@@ -13436,8 +13436,7 @@
         "ua": "safari",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5763933658939392",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5763933658939392"
       },
       {
         "ua": "webkit",
@@ -13501,13 +13500,14 @@
       },
       {
         "ua": "safari",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/::part"
+        "href": "https://developer.mozilla.org/docs/Web/CSS/::part",
+        "selected": true
       },
       {
         "ua": "safari_ios",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/::part",
         "selected": true
@@ -20619,8 +20619,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement",
         "selected": true
@@ -21530,6 +21529,13 @@
         "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver"
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver",
+        "selected": true
       },
       {
         "ua": "safari",
@@ -24280,6 +24286,19 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
@@ -25020,9 +25039,6 @@
       {
         "ua": "safari",
         "status": "shipped",
-        "notes": [
-          "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
       },
@@ -25986,11 +26002,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled using the Develop > Experimental Features menu."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder",
         "selected": true
@@ -26103,6 +26115,13 @@
         "selected": true
       },
       {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -26114,6 +26133,18 @@
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
         "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaRecorder"
       },
       {
         "ua": "samsunginternet_android",
@@ -26169,9 +26200,6 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
-        "notes": [
-          "Supports an [older draft](https://wiki.whatwg.org/wiki/Meta_referrer) of the specification with `never`, `always`, `origin` & `default` values.\r\n"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -26498,8 +26526,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver",
         "selected": true
@@ -26513,7 +26540,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver",
         "selected": true
@@ -28206,7 +28233,7 @@
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4757990523535360",
         "selected": true
@@ -31410,7 +31437,7 @@
       },
       {
         "ua": "firefox",
-        "status": "",
+        "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6335927192387584",
         "selected": true
@@ -32067,10 +32094,9 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Can be enabled via the \"Experimental Features\" developer menu"
+          "Does not support [composite modes](https://drafts.csswg.org/web-animations-1/#effect-composition)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
@@ -32088,10 +32114,9 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Can be enabled via the \"Experimental Features\" developer menu"
+          "Does not support [composite modes](https://drafts.csswg.org/web-animations-1/#effect-composition)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
@@ -32633,6 +32658,16 @@
         "partial": true
       },
       {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
         "ua": "edge",
         "status": "experimental",
         "source": "mdn",
@@ -32706,8 +32741,7 @@
             "ua": "firefox",
             "status": "consideration",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/4588498229133312",
-            "selected": true
+            "href": "https://www.chromestatus.com/feature/4588498229133312"
           },
           {
             "ua": "edge",
@@ -32737,6 +32771,20 @@
           {
             "ua": "edge",
             "status": "experimental",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
             "selected": true
@@ -32826,8 +32874,7 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=audio-api",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "uc_android",
@@ -32914,6 +32961,13 @@
           {
             "ua": "edge",
             "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -33988,7 +34042,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Storage",
         "selected": true
