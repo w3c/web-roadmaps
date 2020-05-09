@@ -4,8 +4,8 @@
   "feature": "3D effects",
   "wgs": [
     {
-      "url": "http://www.w3.org/Style/CSS/members",
-      "label": "CSS Working Group"
+      "url": "https://www.w3.org/Style/CSS/",
+      "label": "Cascading Style Sheets (CSS) Working Group"
     }
   ],
   "impl": {

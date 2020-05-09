@@ -53,7 +53,8 @@ why not).
 let pagetype = {
   menu: !!document.querySelector('*[data-pagetype="menu"]'),
   page: !!document.querySelector('*[data-pagetype="page"]'),
-  about: !!document.querySelector('*[data-contents="about"]')
+  about: !!document.querySelector('*[data-contents="about"]'),
+  groups: !!document.querySelector('*[data-contents="groups"]')
 };
 
 if (!pagetype.menu && !pagetype.page) {
@@ -117,8 +118,9 @@ loadScript('../js/utils.js')
       translate
     ]);
   }).then(results => {
-    fillTables(results[2], results[3], results[0], results[4], lang);
+    let promise = fillTables(results[2], results[3], results[0], results[4], lang);
     addFilteringMenus(results[4]);
+    return promise;
   }).then(_ => {
     // Remove duplicate warnings and report them
     warnings = warnings.filter((warning, idx, self) => self.indexOf(warning) === idx);
