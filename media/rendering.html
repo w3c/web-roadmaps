@@ -53,6 +53,7 @@
         </div>
         <div data-feature="Rendering in different color spaces">
           <p>To adapt to wide-gamut displays, all the graphical systems of the Web will need to adapt to these broader color spaces. This includes the need to <a data-featureid="color-canvas">make HTML canvas color-managed</a>.</p>
+          <p>More generally, the <a data-featureid="colorweb">High Dynamic Range and Wide Gamut Color on the Web</a> note, developed by the <a href="https://www.w3.org/community/colorweb/">Color on the Web Community Group</a>, analyzes gaps and candidate next steps for enabling support for High Dynamic Range (HDR) and Wide Color Gamut (WCG) on the Web, such as mechanisms to allow color and luminance matching between HDR video content and surrounding or overlaid graphic and textual content in Web pages.</p>
         </div>
         <div data-feature="Rendering of captions">
           <p>Providing an alternative transcript to media content is a well-known best practice; a <a data-featureid="transcript">transcript extension</a> to HTML has been proposed to make an explicit link between media content and their transcript and thus facilitate discovery and consumption.</p>
@@ -67,9 +68,6 @@
       <section>
         <h2>Features not covered by ongoing work</h2>
         <dl>
-          <dt>Color Management</dt>
-          <dd>To ensure the proper rendering of videos with high-dynamic range (HDR), on top of means to target color spaces and determine whether the underlying device and browser support them (respectively addressed in <a data-featureid="css-color-space/icc-colors">CSS Colors</a> and <a data-featureid="mediaqueries5">Media Queries</a>), content providers also need a mechanism to match colors to mix HDR content and Standard Dynamic Range (SDR) content. The <a href="https://www.w3.org/community/colorweb/">Color on the Web Community Group</a> allows color experts from various fields to share ideas and discuss technical solutions to improve the state of Color on the Web.</dd>
-
           <dt>Native support for 360° video rendering</dt>
           <dd>While it is already possible to render 360° videos within a <code>&lt;video&gt;</code> element, integrated support for the rendering of 360° videos would allow to hide the complexity of the underlying adaptive streaming logic to applications, letting Web browsers optimize streaming and rendering on their own.</dd>
 
