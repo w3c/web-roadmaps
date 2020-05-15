@@ -482,6 +482,19 @@
     "milestones": {},
     "feature": "color-gamut media query"
   },
+  "colorweb": {
+    "url": "https://w3c.github.io/ColorWeb-CG/",
+    "title": "High Dynamic Range and Wide Gamut Color on the Web",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/colorweb/",
+        "label": "Color on the Web Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "contacts-sys": {
     "url": "https://www.w3.org/TR/contacts-manager-api/",
     "edDraft": "http://www.w3.org/2012/sysapps/contacts-manager-api/",

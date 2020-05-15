@@ -3571,6 +3571,9 @@
       }
     ]
   },
+  "colorweb": {
+    "implementations": []
+  },
   "contacts-sys": {
     "implementations": []
   },
@@ -16753,6 +16756,13 @@
         "selected": true
       },
       {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=eme",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
@@ -28266,16 +28276,6 @@
   "speech-api-recognition": {
     "implementations": [
       {
-        "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to some attributes missing."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=speech-recognition"
-      },
-      {
         "ua": "firefox",
         "status": "experimental",
         "flag": true,
@@ -28505,19 +28505,6 @@
   "speech-api": {
     "implementations": [
       {
-        "ua": "edge",
-        "status": "experimental",
-        "source": "caniuse",
-        "guess": true,
-        "features": [
-          "recognition",
-          "synthesis"
-        ],
-        "prefix": true,
-        "partial": false,
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "experimental",
         "source": "caniuse",
@@ -28595,6 +28582,17 @@
         "selected": true
       },
       {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "synthesis"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "caniuse",
@@ -28639,17 +28637,6 @@
         "selected": true
       },
       {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "chromestatus",
-        "guess": true,
-        "features": [
-          "recognition",
-          "synthesis"
-        ],
-        "partial": false
-      },
-      {
         "ua": "firefox",
         "status": "indevelopment",
         "source": "chromestatus",
@@ -28687,6 +28674,17 @@
       {
         "ua": "edge",
         "status": "consideration",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "recognition",
+          "synthesis"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
         "source": "edgestatus",
         "guess": true,
         "features": [
@@ -28699,16 +28697,6 @@
     "features": {
       "recognition": {
         "implementations": [
-          {
-            "ua": "edge",
-            "status": "experimental",
-            "prefix": true,
-            "notes": [
-              "Partial support refers to some attributes missing."
-            ],
-            "source": "caniuse",
-            "href": "https://caniuse.com/#feat=speech-recognition"
-          },
           {
             "ua": "firefox",
             "status": "experimental",
@@ -28816,13 +28804,6 @@
             "selected": true
           },
           {
-            "ua": "edge",
-            "status": "experimental",
-            "source": "caniuse",
-            "guess": true,
-            "prefix": true
-          },
-          {
             "ua": "firefox",
             "status": "experimental",
             "source": "caniuse",
@@ -28866,6 +28847,13 @@
             "partial": true
           },
           {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "caniuse",
@@ -28897,12 +28885,6 @@
             "selected": true
           },
           {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "chromestatus",
-            "guess": true
-          },
-          {
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
@@ -28921,6 +28903,12 @@
             "source": "chromestatus",
             "guess": true,
             "prefix": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true
           },
           {
             "ua": "edge",
@@ -29048,13 +29036,6 @@
             "selected": true
           },
           {
-            "ua": "edge",
-            "status": "experimental",
-            "source": "caniuse",
-            "guess": true,
-            "prefix": true
-          },
-          {
             "ua": "firefox",
             "status": "experimental",
             "source": "caniuse",
@@ -29099,6 +29080,13 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "caniuse",
@@ -29127,12 +29115,6 @@
             "partial": true
           },
           {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "chromestatus",
-            "guess": true
-          },
-          {
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
@@ -29151,6 +29133,12 @@
             "source": "chromestatus",
             "guess": true,
             "prefix": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true
           },
           {
             "ua": "edge",
@@ -34076,6 +34064,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webusb"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webusb",
+        "selected": true
       },
       {
         "ua": "chrome",
