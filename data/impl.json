@@ -3170,205 +3170,6 @@
       }
     ]
   },
-  "canvas": {
-    "implementations": [
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas"
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "safari_ios",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas"
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "uc_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "qq_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "baidu_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=canvas",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5100084685438976",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5100084685438976",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5100084685438976"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5100084685438976"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5100084685438976"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/canvas/",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "ie",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "opera_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
-        "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "safari_ios",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
-      },
-      {
-        "ua": "webview_android",
-        "status": "shipped",
-        "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
-        "selected": true
-      }
-    ]
-  },
   "cityjson": {
     "implementations": []
   },
@@ -18888,7 +18689,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18900,7 +18702,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18912,7 +18715,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18924,7 +18728,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18936,7 +18741,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18948,7 +18754,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18960,7 +18767,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18972,7 +18780,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18984,7 +18793,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -18996,7 +18806,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -19008,7 +18819,19 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -19020,7 +18843,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19031,7 +18855,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19042,7 +18867,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19053,7 +18879,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19064,7 +18891,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19075,7 +18903,8 @@
         "guess": true,
         "features": [
           "template",
-          "custom-elements"
+          "custom-elements",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19085,7 +18914,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19095,7 +18925,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19105,7 +18936,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19115,7 +18947,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19125,7 +18958,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19135,7 +18969,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19145,7 +18980,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19155,7 +18991,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19165,7 +19002,8 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
         ],
         "partial": true
       },
@@ -19175,7 +19013,19 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "template"
+          "template",
+          "2dcontext"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "2dcontext"
         ],
         "partial": true,
         "selected": true
@@ -19443,6 +19293,14 @@
             "partial": true
           },
           {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
@@ -19553,6 +19411,14 @@
             "source": "mdn",
             "guess": true,
             "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
           }
         ]
       },
@@ -19758,6 +19624,14 @@
             "partial": true
           },
           {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
@@ -19864,6 +19738,14 @@
           },
           {
             "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -19963,6 +19845,14 @@
             "selected": true
           },
           {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
@@ -20074,6 +19964,416 @@
             "guess": true,
             "partial": true,
             "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          }
+        ]
+      },
+      "2dcontext": {
+        "implementations": [
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas"
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=canvas",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5100084685438976",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5100084685438976",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5100084685438976"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5100084685438976"
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5100084685438976"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "edgestatus",
+            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/canvas/",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "ie",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "indevelopment",
+            "source": "edgestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
           }
         ]
       }

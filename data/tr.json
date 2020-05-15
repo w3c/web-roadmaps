@@ -404,20 +404,6 @@
     "publisher": "W3C",
     "milestones": {}
   },
-  "canvas": {
-    "url": "https://www.w3.org/TR/2dcontext/",
-    "title": "HTML Canvas 2D Context",
-    "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/html/wg/",
-        "label": "HTML Media Extensions Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {}
-  },
   "cityjson": {
     "url": "http://www.cityjson.org/",
     "title": "CityJSON",
@@ -1672,8 +1658,8 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/html/wg/",
-        "label": "HTML Media Extensions Working Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2087,6 +2073,10 @@
       "js-module": {
         "title": "Integration with the JavaScript module system",
         "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system"
+      },
+      "2dcontext": {
+        "title": "The 2D rendering context",
+        "url": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
       }
     }
   },
@@ -2606,8 +2596,8 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2765,8 +2755,8 @@
     "status": "REC",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/html/wg/",
-        "label": "HTML Media Extensions Working Group"
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3604,8 +3594,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/webscreens/",
-        "label": "Second Screen Community Group"
+        "url": "https://www.w3.org/2014/secondscreen/",
+        "label": "Second Screen Working Group"
       }
     ],
     "publisher": "W3C",
