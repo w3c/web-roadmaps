@@ -185,7 +185,8 @@ section[data-feature] {
 table {
   border-collapse: collapse;
   border-bottom: 5px solid #0070cc;
-  width: 100%
+  width: 100%;
+  overflow-wrap: break-word;
 }
 th { font-weight: 800; }
 tbody th { text-align:left; }

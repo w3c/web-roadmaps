@@ -1,4 +1,10 @@
 {
   "url": "https://www.w3.org/TR/uievents-key/#keys-multimedia",
-  "feature": "Media keys"
+  "feature": "Media keys",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/2019/webapps/",
+      "label": "Web Applications Working Group"
+    }
+  ]
 }

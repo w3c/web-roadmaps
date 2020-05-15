@@ -1,5 +1,11 @@
 {
   "url": "https://www.w3.org/TR/encrypted-media/",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ],
   "impl": {
     "caniuse": "eme",
     "chromestatus": 6578378068983808,
