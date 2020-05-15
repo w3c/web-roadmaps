@@ -16,7 +16,7 @@
         <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
         <div data-feature="Image and Video Processing">
-          <p>The <a data-featureid="canvas">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames when coupled with <a data-featureid="animation-frames"><code>requestAnimationFrame</code></a> method. However, <code>requestAnimationFrame</code> was not designed to signal when a video frame has been presented for composition and this approach essentially restricts Web applications to processing code that runs on the CPU and in the main thread.</p>
+          <p>The <a data-featureid="html/2dcontext">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames when coupled with <a data-featureid="animation-frames"><code>requestAnimationFrame</code></a> method. However, <code>requestAnimationFrame</code> was not designed to signal when a video frame has been presented for composition and this approach essentially restricts Web applications to processing code that runs on the CPU and in the main thread.</p>
           <p>Within these constraints, <a data-featureid="wasm-core">WebAssembly</a>, a safe, portable, and low-level code format can be used to improve the performance of the processing code.</p>
           <p>Beyond the canvas approach, a number of directions are being explored to enable and optimize media processing, including means to process media streams on the GPU, hardware APIs to run shape detection algorithms or neural network inferences, hooks on media streams that get the user agent the ability to further optimize processing workflows, etc.</p>
         </div>
@@ -30,7 +30,7 @@
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <div data-feature="Video processing">
-          <p>A number of directions are being explored to go beyond simple video processing through the <a data-featureid="canvas" data-linkonly>Canvas API</a> and <a data-featureid="animation-frames" data-linkonly><code>requestAnimationFrame</code></a>:</p>
+          <p>A number of directions are being explored to go beyond simple video processing through the <a data-featureid="html/2dcontext" data-linkonly>Canvas API</a> and <a data-featureid="animation-frames" data-linkonly><code>requestAnimationFrame</code></a>:</p>
           <ul>
             <li><a data-featureid="webgpu">WebGPU</a> allows Web applications to perform operations such as rendering and computation on a Graphics Processing Unit (GPU).</li>
             <li>The <a data-featureid="webnn">Web Neural Network API</a> describes a dedicated low-level API for neural network inference hardware acceleration.</li>

@@ -1,5 +1,11 @@
 {
   "url": "https://www.w3.org/TR/media-source/",
+  "wgs": [
+    {
+      "label": "Media Working Group",
+      "url": "https://www.w3.org/media-wg/"
+    }
+  ],
   "impl": {
     "caniuse": "mediasource",
     "chromestatus": 4563797888991232,

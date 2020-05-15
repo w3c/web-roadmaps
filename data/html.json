@@ -27,6 +27,18 @@
       "impl": {
         "mdn": "html.elements.script.module"
       }
+    },
+
+    "2dcontext": {
+      "url": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+      "title": "The 2D rendering context",
+      "impl": {
+        "caniuse": "canvas",
+        "chromestatus": 5100084685438976,
+        "edgestatus": "Canvas",
+        "mdn": "api.CanvasRenderingContext2D",
+        "webkitstatus": null
+      }
     }
   }
 }
