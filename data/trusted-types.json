@@ -4,5 +4,11 @@
     "impl": {
         "caniuse": "trusted-types",
         "chromestatus": 5650088592408576
-    }
+    },
+    "polyfills": [
+        {
+          "label": "trusted-types",
+          "url": "https://github.com/w3c/webappsec-trusted-types#polyfill"
+        }
+    ]
 }
