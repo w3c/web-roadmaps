@@ -42,6 +42,10 @@
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
 
+        <div data-feature="Strengthened security">
+          <p>Cross-site scripting (XSS) is considered to be one of the major attack vectors on the Web. <a data-featureid="trusted-types">Trusted Types</a> allows applications to lock down DOM-based XSS injection sinks  (e.g. <code>Element.innerHTML</code>, or <code>Location.href</code> setters) to only accept non-spoofable, typed values in place of strings.</p>
+        </div>
+
         <div data-feature="Permissions">
           <p>Many sensitive APIs, e.g. those that expose mobile device sensors, are gated by a request for user consent; while these requests give control to the user, they can be sometimes hard to integrate in the overall user experience without visibility on which permission has been granted or denied. The <a data-featureid="permissions">Permissions API</a> aims at fixing this.</p>
         </div>
@@ -65,9 +69,6 @@
 
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
-        <div data-feature="Strengthened security">
-          <p>Cross-site scripting (XSS) is considered to be one of the major attack vectors on the Web. <a data-featureid="trusted-types">Trusted Types</a> allows applications to lock down DOM-based XSS injection sinks  (e.g. <code>Element.innerHTML</code>, or <code>Location.href</code> setters) to only accept non-spoofable, typed values in place of strings.</p>
-        </div>
         <div data-feature="Permissions">
           <p>Different APIs use different mechanisms to grant permission to use or access an underlying powerful feature. To ease design of permission-related code, the <a data-featureid="permissions-request">Requesting permissions</a> and <a data-featureid="permissions-revoke">Relinquishing permissions</a> proposals extend the <a href="https://www.w3.org/TR/permissions/">Permissions API</a> to provide a uniform function for requesting and revoking permission to use powerful features.</p>
         </div>

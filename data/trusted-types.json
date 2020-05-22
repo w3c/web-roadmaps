@@ -1,7 +1,8 @@
 {
-    "url": "https://wicg.github.io/trusted-types/dist/spec/",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
     "title": "Trusted Types",
     "impl": {
+        "caniuse": "trusted-types",
         "chromestatus": 5650088592408576
     }
 }
