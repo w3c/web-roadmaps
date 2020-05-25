@@ -1,5 +1,5 @@
 {
-  "url": "https://wicg.github.io/web-share/",
+  "url": "https://www.w3.org/TR/web-share/",
   "impl": {
     "caniuse": "web-share",
     "chromestatus": 5668769141620736,
