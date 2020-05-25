@@ -47,7 +47,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=accelerometer"
+        "href": "https://caniuse.com/#feat=accelerometer",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -100,13 +101,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -192,12 +186,6 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608",
         "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/ambientlightsensorapi/"
       },
       {
         "ua": "firefox",
@@ -1544,20 +1532,14 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/4621603249848320"
+        "href": "https://www.chromestatus.com/feature/4621603249848320",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4621603249848320",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/audiooutputdevicesapi/",
         "selected": true
       },
       {
@@ -1679,13 +1661,6 @@
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/4621603249848320",
-            "guess": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/audiooutputdevicesapi/",
             "guess": true
           },
           {
@@ -1822,13 +1797,6 @@
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/4621603249848320",
-            "guess": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/audiooutputdevicesapi/",
             "guess": true
           },
           {
@@ -2472,7 +2440,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=background-sync"
+        "href": "https://caniuse.com/#feat=background-sync",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -2546,13 +2515,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6170807885627392",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/backgroundsyncapi/",
         "selected": true
       },
       {
@@ -2676,7 +2638,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=battery-status"
+        "href": "https://caniuse.com/#feat=battery-status",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -2756,13 +2719,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4537134732017664",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/batterystatusapi/",
         "selected": true
       },
       {
@@ -3523,7 +3479,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=credential-management"
+        "href": "https://caniuse.com/#feat=credential-management",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -3590,13 +3547,6 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5026422640869376",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/credentialmanagementapi/",
         "selected": true
       },
       {
@@ -3816,13 +3766,6 @@
           },
           {
             "ua": "edge",
-            "status": "indevelopment",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/credentialmanagementapi/",
-            "guess": true
-          },
-          {
-            "ua": "edge",
             "status": "shipped",
             "source": "mdn",
             "guess": true
@@ -3993,13 +3936,6 @@
             "href": "https://www.chromestatus.com/feature/5026422640869376",
             "guess": true,
             "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "indevelopment",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/credentialmanagementapi/",
-            "guess": true
           },
           {
             "ua": "edge",
@@ -4836,17 +4772,6 @@
         ],
         "partial": true,
         "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "guess": true,
-        "features": [
-          "strict-dynamic"
-        ],
-        "partial": true,
-        "selected": true
       }
     ],
     "features": {
@@ -4902,13 +4827,6 @@
             "partial": true
           },
           {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "webkit",
             "status": "shipped",
             "source": "webkitstatus",
@@ -4955,13 +4873,6 @@
             "guess": true,
             "partial": true,
             "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
           },
           {
             "ua": "webkit",
@@ -5024,13 +4935,6 @@
             "partial": true
           },
           {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "webkit",
             "status": "shipped",
             "source": "webkitstatus",
@@ -5066,20 +4970,14 @@
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/5633814718054400"
+            "href": "https://www.chromestatus.com/feature/5633814718054400",
+            "selected": true
           },
           {
             "ua": "safari",
             "status": "",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5633814718054400",
-            "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/csplevel3strictdynamicsourceexpression/",
             "selected": true
           },
           {
@@ -5093,13 +4991,6 @@
             "ua": "chrome_android",
             "status": "indevelopment",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
             "guess": true,
             "partial": true
           },
@@ -5164,13 +5055,6 @@
             "partial": true
           },
           {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "webkit",
             "status": "shipped",
             "source": "webkitstatus",
@@ -5227,13 +5111,6 @@
             "ua": "chrome_android",
             "status": "indevelopment",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
             "guess": true,
             "partial": true
           },
@@ -5369,7 +5246,7 @@
         "ua": "safari",
         "status": "shipped",
         "notes": [
-          "Safari 9, 10, 11, & 12 are reported to still require a prefix for the related `backface-visibility` property."
+          "Safari 9 - 13 still require a prefix for the related `backface-visibility` property. [WebKit Bug 170983](https://bugs.webkit.org/show_bug.cgi?id=170983) requests prefix removal."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=transforms3d",
@@ -5386,7 +5263,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Safari 9, 10, 11, & 12 are reported to still require a prefix for the related `backface-visibility` property."
+          "Safari 9 - 13 still require a prefix for the related `backface-visibility` property. [WebKit Bug 170983](https://bugs.webkit.org/show_bug.cgi?id=170983) requests prefix removal."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=transforms3d",
@@ -9087,7 +8964,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=css-containment"
+        "href": "https://caniuse.com/#feat=css-containment",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -9171,13 +9049,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6522186978295808",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/csscontainment/",
         "selected": true
       }
     ]
@@ -9754,7 +9625,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=font-loading"
+        "href": "https://caniuse.com/#feat=font-loading",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -9862,13 +9734,6 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6244676289953792"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssfontloadingapi/",
-        "selected": true
       },
       {
         "ua": "chrome",
@@ -10191,13 +10056,6 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssfontloadingapi/",
-            "guess": true
-          },
-          {
-            "ua": "edge",
             "status": "experimental",
             "source": "mdn",
             "guess": true,
@@ -10467,13 +10325,6 @@
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6244676289953792",
-            "guess": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssfontloadingapi/",
             "guess": true
           },
           {
@@ -11872,20 +11723,14 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5400251359821824"
+        "href": "https://www.chromestatus.com/feature/5400251359821824",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5400251359821824",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/generatedcontentforpagedmedia/",
         "selected": true
       }
     ]
@@ -13982,7 +13827,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=will-change"
+        "href": "https://caniuse.com/#feat=will-change",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -14090,13 +13936,6 @@
         "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5954199330226176"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/csswillchange/",
-        "selected": true
       },
       {
         "ua": "webkit",
@@ -15792,16 +15631,6 @@
         "partial": true
       },
       {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "edgestatus",
-        "guess": true,
-        "features": [
-          "shadow"
-        ],
-        "partial": true
-      },
-      {
         "ua": "webkit",
         "status": "shipped",
         "source": "webkitstatus",
@@ -15819,7 +15648,8 @@
             "ua": "edge",
             "status": "shipped",
             "source": "caniuse",
-            "href": "https://caniuse.com/#feat=shadowdomv1"
+            "href": "https://caniuse.com/#feat=shadowdomv1",
+            "selected": true
           },
           {
             "ua": "firefox",
@@ -15923,13 +15753,6 @@
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/4667415417847808"
-          },
-          {
-            "ua": "edge",
-            "status": "indevelopment",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shadowdom/",
-            "selected": true
           },
           {
             "ua": "webkit",
@@ -16050,13 +15873,6 @@
             "partial": true
           },
           {
-            "ua": "edge",
-            "status": "indevelopment",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "webkit",
             "status": "shipped",
             "source": "webkitstatus",
@@ -16073,7 +15889,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=mediacapture-fromelement"
+        "href": "https://caniuse.com/#feat=mediacapture-fromelement",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -16182,13 +15999,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5522768674160640"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediacapturefromhtmlmediaelement/",
-        "selected": true
       }
     ]
   },
@@ -16644,14 +16454,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5167290693713920",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5167290693713920",
         "selected": true
@@ -17147,20 +16957,14 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5558926443544576"
+        "href": "https://www.chromestatus.com/feature/5558926443544576",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5558926443544576",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/frametiming/",
         "selected": true
       },
       {
@@ -18348,7 +18152,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=gyroscope"
+        "href": "https://caniuse.com/#feat=gyroscope",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -18401,13 +18206,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -18898,12 +18696,11 @@
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "edgestatus",
         "guess": true,
         "features": [
           "template",
-          "custom-elements",
           "2dcontext"
         ],
         "partial": true
@@ -19337,7 +19134,7 @@
           },
           {
             "ua": "edge",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "edgestatus",
             "guess": true,
             "partial": true
@@ -19428,7 +19225,8 @@
             "ua": "edge",
             "status": "shipped",
             "source": "caniuse",
-            "href": "https://caniuse.com/#feat=custom-elementsv1"
+            "href": "https://caniuse.com/#feat=custom-elementsv1",
+            "selected": true
           },
           {
             "ua": "firefox",
@@ -19538,13 +19336,6 @@
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/4696261944934400"
-          },
-          {
-            "ua": "edge",
-            "status": "indevelopment",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/customelements/",
-            "selected": true
           },
           {
             "ua": "edge",
@@ -19668,7 +19459,7 @@
           },
           {
             "ua": "edge",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "edgestatus",
             "guess": true,
             "partial": true
@@ -19889,7 +19680,7 @@
           },
           {
             "ua": "edge",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "edgestatus",
             "guess": true,
             "partial": true
@@ -20293,7 +20084,7 @@
           },
           {
             "ua": "edge",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "edgestatus",
             "guess": true,
             "partial": true
@@ -21402,7 +21193,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=input-inputmode"
+        "href": "https://caniuse.com/#feat=input-inputmode",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -21490,13 +21282,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6225984592281600",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/inputmode/",
         "selected": true
       }
     ]
@@ -22105,7 +21890,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=magnetometer"
+        "href": "https://caniuse.com/#feat=magnetometer",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -22162,13 +21948,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ]
@@ -22361,7 +22140,8 @@
           "Only appears to support the `#t=n,n` control for selecting a range of video, and possibly `track=(name)` & `id=(name)` (not yet tested)"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=media-fragments"
+        "href": "https://caniuse.com/#feat=media-fragments",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -22441,13 +22221,6 @@
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=media-fragments",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediafragments/",
         "selected": true
       }
     ]
@@ -22939,37 +22712,10 @@
     }
   },
   "mediaqueries5": {
-    "implementations": [
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "guess": true,
-        "features": [
-          "prefers-reduced-motion"
-        ],
-        "partial": true,
-        "selected": true
-      }
-    ],
+    "implementations": [],
     "features": {
       "prefers-reduced-motion": {
-        "implementations": [
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediaqueriesprefersreducedmotion/",
-            "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "guess": true,
-            "partial": true
-          }
-        ]
+        "implementations": []
       }
     }
   },
@@ -23009,13 +22755,6 @@
         "selected": true
       },
       {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediasession/",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -23031,7 +22770,8 @@
         "ua": "edge",
         "status": "experimental",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession"
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -24018,7 +23758,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=orientation-sensor"
+        "href": "https://caniuse.com/#feat=orientation-sensor",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -24071,13 +23812,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698781827825664",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/accelerometer/",
         "selected": true
       }
     ],
@@ -24208,16 +23942,6 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-webrtc"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "guess": true,
-        "features": [
-          "rtcdatachannel"
-        ],
-        "partial": true
       }
     ],
     "features": {
@@ -24225,17 +23949,11 @@
         "implementations": [
           {
             "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/rtcdatachannels/",
-            "selected": true
-          },
-          {
-            "ua": "edge",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=rtcpeerconnection",
-            "guess": true
+            "guess": true,
+            "selected": true
           },
           {
             "ua": "firefox",
@@ -24661,13 +24379,6 @@
         "selected": true
       },
       {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/paymenthandlerapi/",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "experimental",
         "flag": true,
@@ -24686,7 +24397,8 @@
         "status": "experimental",
         "flag": true,
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -25033,16 +24745,6 @@
         ],
         "partial": true,
         "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "guess": true,
-        "features": [
-          "observer"
-        ],
-        "partial": true
       }
     ],
     "features": {
@@ -25073,20 +24775,14 @@
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/5945504202489856"
+            "href": "https://www.chromestatus.com/feature/5945504202489856",
+            "selected": true
           },
           {
             "ua": "safari",
             "status": "",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5945504202489856",
-            "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/performanceobserver/",
             "selected": true
           },
           {
@@ -25107,13 +24803,6 @@
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
             "guess": true,
             "partial": true
           }
@@ -25174,13 +24863,6 @@
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
             "guess": true,
             "partial": true
           }
@@ -25328,7 +25010,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture"
+        "href": "https://caniuse.com/#feat=picture-in-picture",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -25413,13 +25096,6 @@
         "status": "consideration",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pictureinpicture/",
-        "selected": true
       },
       {
         "ua": "chrome",
@@ -25938,7 +25614,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=link-rel-preload"
+        "href": "https://caniuse.com/#feat=link-rel-preload",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -26033,13 +25710,6 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5757468554559488"
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/preload/",
-        "selected": true
       },
       {
         "ua": "webkit",
@@ -26295,7 +25965,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=mediarecorder"
+        "href": "https://caniuse.com/#feat=mediarecorder",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -26379,13 +26050,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5929649028726784"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediarecorder/",
-        "selected": true
       },
       {
         "ua": "chrome",
@@ -26627,7 +26291,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=requestidlecallback"
+        "href": "https://caniuse.com/#feat=requestidlecallback",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -26714,13 +26379,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5572795866021888",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/requestidlecallback/",
         "selected": true
       },
       {
@@ -26819,7 +26477,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=resizeobserver"
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -26899,13 +26558,6 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5705346022637568"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/resizeobserver/",
-        "selected": true
       }
     ]
   },
@@ -27102,16 +26754,15 @@
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "shipped",
         "source": "edgestatus",
         "guess": true,
         "features": [
           "dns-prefetch",
-          "preconnect",
           "prefetch",
           "prerender"
         ],
-        "partial": false
+        "partial": true
       }
     ],
     "features": {
@@ -27299,9 +26950,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       },
@@ -27311,7 +26963,8 @@
             "ua": "edge",
             "status": "shipped",
             "source": "caniuse",
-            "href": "https://caniuse.com/#feat=link-rel-preconnect"
+            "href": "https://caniuse.com/#feat=link-rel-preconnect",
+            "selected": true
           },
           {
             "ua": "firefox",
@@ -27405,13 +27058,6 @@
             "status": "",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5560623895150592"
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/preconnectresourcehints/",
-            "selected": true
           },
           {
             "ua": "edge",
@@ -27516,9 +27162,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       },
@@ -27733,9 +27380,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       },
@@ -27896,9 +27544,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       }
@@ -28313,13 +27962,6 @@
         "selected": true
       },
       {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/servertiming/",
-        "selected": true
-      },
-      {
         "ua": "chrome",
         "status": "shipped",
         "source": "mdn",
@@ -28335,7 +27977,8 @@
         "ua": "edge",
         "status": "experimental",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming"
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -28665,20 +28308,14 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5908775487668224"
+        "href": "https://www.chromestatus.com/feature/5908775487668224",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5908775487668224",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webspeechapispeechrecognition/",
         "selected": true
       }
     ]
@@ -28984,14 +28621,13 @@
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "shipped",
         "source": "edgestatus",
         "guess": true,
         "features": [
-          "recognition",
           "synthesis"
         ],
-        "partial": false
+        "partial": true
       }
     ],
     "features": {
@@ -29087,20 +28723,14 @@
             "ua": "edge",
             "status": "consideration",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/5908775487668224"
+            "href": "https://www.chromestatus.com/feature/5908775487668224",
+            "selected": true
           },
           {
             "ua": "safari",
             "status": "",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5908775487668224",
-            "selected": true
-          },
-          {
-            "ua": "edge",
-            "status": "consideration",
-            "source": "edgestatus",
-            "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webspeechapispeechrecognition/",
             "selected": true
           },
           {
@@ -29212,9 +28842,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       },
@@ -29442,9 +29073,10 @@
           },
           {
             "ua": "edge",
-            "status": "consideration",
+            "status": "shipped",
             "source": "edgestatus",
-            "guess": true
+            "guess": true,
+            "partial": true
           }
         ]
       }
@@ -31018,20 +30650,14 @@
         "ua": "edge",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5760616295825408"
+        "href": "https://www.chromestatus.com/feature/5760616295825408",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5760616295825408",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/svg2/",
         "selected": true
       }
     ]
@@ -31594,7 +31220,8 @@
         "ua": "edge",
         "status": "shipped",
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=vibration"
+        "href": "https://caniuse.com/#feat=vibration",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -31688,13 +31315,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5698768766763008",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/vibrationapi/",
         "selected": true
       },
       {
@@ -32359,7 +31979,8 @@
           "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-animation"
+        "href": "https://caniuse.com/#feat=web-animation",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -32497,13 +32118,6 @@
         "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5650817352728576"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi/",
-        "selected": true
       },
       {
         "ua": "webkit",
@@ -32709,20 +32323,14 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5668769141620736"
+        "href": "https://www.chromestatus.com/feature/5668769141620736",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webshareapi/",
-        "selected": true
       },
       {
         "ua": "webkit",
@@ -33417,7 +33025,8 @@
           "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-bluetooth"
+        "href": "https://caniuse.com/#feat=web-bluetooth",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -33498,13 +33107,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5264933985976320",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webbluetooth/",
         "selected": true
       },
       {
@@ -33823,20 +33425,14 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261030015467520"
+        "href": "https://www.chromestatus.com/feature/6261030015467520",
+        "selected": true
       },
       {
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6261030015467520",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "edgestatus",
-        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webnfcapi/",
         "selected": true
       }
     ]
