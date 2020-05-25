@@ -4023,15 +4023,11 @@
     "milestones": {}
   },
   "trusted-types": {
-    "url": "https://wicg.github.io/trusted-types/dist/spec/",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+    "repository": "https://github.com/w3c/webappsec-trusted-types/",
     "title": "Trusted Types",
     "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ],
+    "deliveredBy": [],
     "publisher": "W3C",
     "milestones": {}
   },

@@ -30891,6 +30891,24 @@
       {
         "ua": "chrome",
         "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types"
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types"
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types"
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5650088592408576",
         "selected": true
@@ -30922,6 +30940,12 @@
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5650088592408576",
         "selected": true
+      }
+    ],
+    "polyfills": [
+      {
+        "label": "trusted-types",
+        "url": "https://github.com/w3c/webappsec-trusted-types#polyfill"
       }
     ]
   },
