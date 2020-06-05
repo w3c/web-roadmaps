@@ -1,6 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/cors/",
-  "impl": {
-    "caniuse": "cors"
-  }
-}

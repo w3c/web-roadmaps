@@ -1,5 +1,12 @@
 {
-  "url": "https://wicg.github.io/web-share-target/",
+  "url": "https://w3c.github.io/web-share-target/",
+  "title": "Web Share Target API",
+  "wgs": [
+    {
+      "label": "Web Applications Working Group",
+      "url": "https://www.w3.org/2019/webapps/"
+    }
+  ],
   "impl": {
     "chromestatus": 5662315307335680
   }

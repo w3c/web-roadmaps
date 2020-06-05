@@ -1,6 +1,5 @@
 {
-  "url": "https://wicg.github.io/BackgroundSync/spec/",
-  "title": "Web Background Synchronization",
+  "url": "https://wicg.github.io/background-sync/spec/",
   "impl": {
     "caniuse": "background-sync",
     "chromestatus": 6170807885627392,

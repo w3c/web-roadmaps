@@ -1,6 +1,12 @@
 {
-  "url": "https://wicg.github.io/badging/",
+  "url": "https://w3c.github.io/badging/",
   "title": "Badging API",
+  "wgs": [
+    {
+      "label": "Web Applications Working Group",
+      "url": "https://www.w3.org/2019/webapps/"
+    }
+  ],
   "impl": {
     "chromestatus": 6068482055602176
   }

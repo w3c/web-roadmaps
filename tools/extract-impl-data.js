@@ -302,19 +302,23 @@ let sources = {
         let res = { ua };
         switch (edgestatus) {
           case 'Shipped':
+          case 'Supported':
             res.status = 'shipped';
             break;
           case 'Preview Release':
           case 'Prefixed':
+          case 'Partial Support':
             res.status = 'experimental';
             break;
           case 'In Development':
+          case 'In Development (Windows & Mac backend services)':
             res.status = 'indevelopment';
             break;
           case 'Under Consideration':
             res.status = 'consideration';
             break;
           case 'Not currently planned':
+          case 'Not Supported':
             res.status = '';
             break;
           default:
