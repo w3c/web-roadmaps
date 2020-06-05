@@ -109,7 +109,7 @@
   },
   "annotation-model": {
     "url": "https://www.w3.org/TR/annotation-model/",
-    "edDraft": "http://w3c.github.io/web-annotation/",
+    "edDraft": "https://w3c.github.io/web-annotation/",
     "repository": "https://github.com/w3c/web-annotation",
     "title": "Web Annotation Data Model",
     "status": "REC",
@@ -314,8 +314,8 @@
     "milestones": {}
   },
   "background-sync": {
-    "url": "https://wicg.github.io/BackgroundSync/spec/",
-    "repository": "https://github.com/wicg/BackgroundSync",
+    "url": "https://wicg.github.io/background-sync/spec/",
+    "repository": "https://github.com/wicg/background-sync",
     "title": "Web Background Synchronization",
     "status": "ED",
     "deliveredBy": [
@@ -328,14 +328,13 @@
     "milestones": {}
   },
   "badging": {
-    "url": "https://wicg.github.io/badging/",
-    "repository": "https://github.com/wicg/badging",
+    "url": "https://w3c.github.io/badging/",
     "title": "Badging API",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -483,7 +482,7 @@
   },
   "contacts-sys": {
     "url": "https://www.w3.org/TR/contacts-manager-api/",
-    "edDraft": "http://www.w3.org/2012/sysapps/contacts-manager-api/",
+    "edDraft": "https://www.w3.org/2012/sysapps/contacts-manager-api/",
     "title": "Contacts Manager API",
     "status": "Retired",
     "deliveredBy": [
@@ -520,24 +519,6 @@
       {
         "url": "https://www.w3.org/WAI/ARIA/",
         "label": "Accessible Rich Internet Applications Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {}
-  },
-  "cors": {
-    "url": "https://www.w3.org/TR/cors/",
-    "title": "Cross-Origin Resource Sharing",
-    "status": "REC",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/2008/webapps/",
-        "label": "(historical) Web Applications Working Group"
-      },
-      {
-        "url": "https://www.w3.org/2011/webappsec/",
-        "label": "Web Application Security Working Group"
       }
     ],
     "publisher": "W3C",
@@ -598,7 +579,7 @@
   },
   "cryptokey": {
     "url": "https://www.w3.org/TR/webcrypto-key-discovery/",
-    "edDraft": "http://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
+    "edDraft": "https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
     "title": "WebCrypto Key Discovery",
     "status": "NOTE",
     "deliveredBy": [
@@ -1200,7 +1181,7 @@
   },
   "css-shadow-parts": {
     "url": "https://www.w3.org/TR/css-shadow-parts-1/",
-    "edDraft": "http://drafts.csswg.org/css-shadow-parts/",
+    "edDraft": "https://drafts.csswg.org/css-shadow-parts/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Shadow Parts",
     "status": "WD",
@@ -1295,7 +1276,8 @@
   },
   "css2": {
     "url": "https://www.w3.org/TR/CSS2/",
-    "edDraft": "http://dev.w3.org/csswg/css2/",
+    "edDraft": "https://drafts.csswg.org/css2/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
     "status": "REC",
     "deliveredBy": [
@@ -1448,7 +1430,7 @@
   },
   "discovery": {
     "url": "https://www.w3.org/TR/discovery-api/",
-    "edDraft": "http://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
+    "edDraft": "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
     "title": "Network Service Discovery",
     "status": "Retired",
     "deliveredBy": [
@@ -1579,7 +1561,7 @@
   },
   "dwbp": {
     "url": "https://www.w3.org/TR/dwbp/",
-    "edDraft": "http://w3c.github.io/dwbp/bp.html",
+    "edDraft": "https://w3c.github.io/dwbp/bp.html",
     "repository": "https://github.com/w3c/dwbp",
     "title": "Data on the Web Best Practices",
     "status": "REC",
@@ -1727,7 +1709,7 @@
   },
   "eventsource": {
     "url": "https://www.w3.org/TR/eventsource",
-    "edDraft": "http://dev.w3.org/html5/eventsource/",
+    "edDraft": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
     "title": "Server-Sent Events",
     "status": "REC",
     "deliveredBy": [
@@ -1768,7 +1750,13 @@
       }
     ],
     "publisher": "WHATWG",
-    "milestones": {}
+    "milestones": {},
+    "features": {
+      "cors": {
+        "title": "CORS protocol",
+        "url": "#http-cors-protocol"
+      }
+    }
   },
   "fileapi": {
     "url": "https://www.w3.org/TR/FileAPI/",
@@ -2183,7 +2171,7 @@
   },
   "ime-api": {
     "url": "https://www.w3.org/TR/ime-api/",
-    "edDraft": "http://w3c.github.io/ime-api/",
+    "edDraft": "https://w3c.github.io/ime-api/",
     "repository": "https://github.com/w3c/ime-api",
     "title": "Input Method Editor API",
     "status": "Retired",
@@ -2271,8 +2259,8 @@
     "feature": "Date and time input types"
   },
   "inputdevice": {
-    "url": "https://wicg.github.io/InputDeviceCapabilities/",
-    "repository": "https://github.com/wicg/InputDeviceCapabilities",
+    "url": "https://wicg.github.io/input-device-capabilities/",
+    "repository": "https://github.com/wicg/input-device-capabilities",
     "title": "Input Device Capabilities",
     "status": "ED",
     "deliveredBy": [
@@ -2607,7 +2595,8 @@
   },
   "mediaqueries": {
     "url": "https://www.w3.org/TR/css3-mediaqueries/",
-    "edDraft": "http://dev.w3.org/csswg/css3-mediaqueries/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Media Queries",
     "status": "REC",
     "deliveredBy": [
@@ -2701,7 +2690,7 @@
   },
   "mobile-accessibility-mapping": {
     "url": "https://www.w3.org/TR/mobile-accessibility-mapping/",
-    "edDraft": "http://w3c.github.io/Mobile-A11y-TF-Note/",
+    "edDraft": "https://w3c.github.io/Mobile-A11y-TF-Note/",
     "repository": "https://github.com/w3c/Mobile-A11y-TF-Note",
     "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile",
     "status": "WD",
@@ -2836,17 +2825,17 @@
     "milestones": {}
   },
   "notifications": {
-    "url": "https://www.w3.org/TR/notifications/",
-    "title": "Web Notifications",
-    "status": "REC",
+    "url": "https://notifications.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/notifications",
+    "title": "Notifications API",
+    "status": "LS",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2010/web-notifications/",
-        "label": "Web Notification Working Group"
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
       }
     ],
-    "publisher": "W3C",
-    "informative": false,
+    "publisher": "WHATWG",
     "milestones": {}
   },
   "offscreencanvas": {
@@ -3359,7 +3348,7 @@
   },
   "quota": {
     "url": "https://www.w3.org/TR/quota-api/",
-    "edDraft": "http://w3c.github.io/quota-api/",
+    "edDraft": "https://w3c.github.io/quota-api/",
     "repository": "https://github.com/w3c/quota-api",
     "title": "Quota Management API",
     "status": "Retired",
@@ -3637,7 +3626,7 @@
   },
   "selectors-states": {
     "url": "https://www.w3.org/TR/selectors-states/",
-    "edDraft": "http://w3c.github.io/web-annotation/selector-note/",
+    "edDraft": "https://w3c.github.io/web-annotation/selector-note/",
     "repository": "https://github.com/w3c/web-annotation",
     "title": "Selectors and States",
     "status": "NOTE",
@@ -3914,7 +3903,7 @@
   },
   "task-scheduler": {
     "url": "https://www.w3.org/TR/task-scheduler/",
-    "edDraft": "http://www.w3.org/2012/sysapps/web-alarms/",
+    "edDraft": "https://www.w3.org/2012/sysapps/web-alarms/",
     "title": "Task Scheduler API Specification",
     "status": "Retired",
     "deliveredBy": [
@@ -4142,7 +4131,7 @@
   },
   "uaag20": {
     "url": "https://www.w3.org/TR/UAAG20/",
-    "edDraft": "http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/",
+    "edDraft": "https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/",
     "title": "User Agent Accessibility Guidelines (UAAG) 2.0",
     "status": "NOTE",
     "deliveredBy": [
@@ -4173,7 +4162,7 @@
   },
   "uisecurity": {
     "url": "https://www.w3.org/TR/UISecurity/",
-    "edDraft": "http://w3c.github.io/webappsec-uisecurity/index.html",
+    "edDraft": "https://w3c.github.io/webappsec-uisecurity/index.html",
     "repository": "https://github.com/w3c/webappsec-uisecurity",
     "title": "User Interface Security and the Visibility API",
     "status": "WD",
@@ -4532,14 +4521,14 @@
     "milestones": {}
   },
   "web-share-target": {
-    "url": "https://wicg.github.io/web-share-target/",
-    "repository": "https://github.com/wicg/web-share-target",
+    "url": "https://w3c.github.io/web-share-target/",
+    "repository": "https://github.com/w3c/web-share-target",
     "title": "Web Share Target API",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
