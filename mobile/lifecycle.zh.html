@@ -25,6 +25,7 @@
         <h2>开发中的技术</h2>
         <div data-feature="打包">
           <p>无论是否打包，用户都依靠各种元数据（名称、图标）在常用应用列表中来识别他们想要使用的应用。<a data-featureid="appmanifest">Web应用清单</a>规范允许开发人员将所有这些元数据放在一个 JSON 文件中。</p>
+          <p>除了<a href="https://www.w3.org/TR/notifications/">Web通知</a>以外，<a data-featureid="badging">标记 API</a>定义了另一种通知机制，允许已经安装在设备上的 Web 应用（例如通过清单文件）设置一个标记，通常显示在主屏幕上应用程序的图标旁边，在应用程序的状态发生变化时通知用户可能需要注意的信息（如新消息）。</p>
         </div>
 
         <div data-feature="离线 Web 应用">
@@ -38,6 +39,7 @@
 
         <div data-feature="内容分享">
           <p><em>分享操作</em>是移动设备上通过跨应用边界传递内容的常见范例，例如将 URL 或图像发布到自己最喜欢的社交网络应用中。<a data-featureid="web-share">Web分享API</a>规范允许 Web 应用将文本、链接和其他内容分享到用户选择的任意目的地。该 API 是<a href="https://plus.google.com/116171619992010691739">Web Intents</a>提案的一个更有针对性的版本，Web Intents在2012年停止开发，部分原因是它的一般性引发了用户体验问题。</p>
+          <p><a data-featureid="web-share-target">Web分享目标API</a>建议允许Web应用在其应用清单中声明其可接收来自其他应用的内容。这允许用户选择安装的Web应用在分享菜单中被其他本地应用列出。</p>
         </div>
 
         <div data-feature="地理围栏">
@@ -50,15 +52,10 @@
 
         <div data-feature="打包">
           <p><a data-featureid="packaging">Web 打包</a>文档描述了用于网站和应用的新包格式的用例，并概述了这种格式。</p>
-          <p>除了<a href="https://www.w3.org/TR/notifications/">Web通知</a>以外，<a data-featureid="badging">标记 API</a>定义了另一种通知机制，允许已经安装在设备上的 Web 应用（例如通过清单文件）设置一个标记，通常显示在主屏幕上应用程序的图标旁边，在应用程序的状态发生变化时通知用户可能需要注意的信息（如新消息）。</p>
         </div>
 
         <div data-feature="状态转换">
           <p>在移动设备上运行的应用可以通过不同的状态，从运行到空闲、暂停、停止、丢弃或终止。这些状态之间的转换由底层操作系统触发，并从 Web 应用中隐藏。<a data-featureid="page-lifecycle">页面生命周期</a>方案旨在向应用公开状态转换，以便这些应用能够保持/恢复状态、启用/禁用网络等。</p>
-        </div>
-
-        <div data-feature="内容分享">
-            <p><a data-featureid="web-share-target">Web分享目标API</a>建议允许Web应用在其应用清单中声明其可接收来自其他应用的内容。这允许用户选择安装的Web应用在分享菜单中被其他本地应用列出。</p>
         </div>
 
         <div data-feature="无缝切换">
