@@ -35,7 +35,7 @@
         </div>
         <div data-feature="Graphics API">
           <p>In complement to the declarative approach provided by SVG, the <strong><code>&lt;canvas&gt;</code></strong> element added in HTML5 enables a <a data-featureid="html/2dcontext">2D programmatic API</a> that is well-suited for processing graphics in a less memory intensive way.</p>
-          <p>Similarly, <a data-featureid="webgl">WebGL</a>, developed outside of W3C as part of the <a href="https://www.khronos.org/">Khronos Group</a>, provides a low-level 3D graphics API for the Web. This API has been built to be compatible with <a href="https://www.khronos.org/opengles/">OpenGL ES</a>, i.e. for embedded systems, and is intended to work on mobile devices. In practice, WebGL v1.0, based on OpenGL ES 2.0, is well supported across devices. Support for WebGL v2.0, based on OpenGL ES 3.0, is less pervasive. Work on a newer WebGPU API is ongoing, see the <a href="#exploratory-work">Exploratory work</a> section below.</p>
+          <p>Similarly, <a data-featureid="webgl">WebGL</a>, developed outside of W3C as part of the <a href="https://www.khronos.org/">Khronos Group</a>, provides a low-level 3D graphics API for the Web. This API has been built to be compatible with <a href="https://www.khronos.org/opengles/">OpenGL ES</a>, i.e. for embedded systems, and is intended to work on mobile devices. In practice, WebGL v1.0, based on OpenGL ES 2.0, is well supported across devices. Support for WebGL v2.0, based on OpenGL ES 3.0, is less pervasive. Work on a newer WebGPU API is ongoing, see the <a href="#technologies-in-progress">Technologies in progress</a> section below.</p>
         </div>
         <p>Another important aspect in graphics-intensive applications (e.g. games) is the possibility to use the entire screen to display the said graphics; the work on a <a data-featureid="fullscreen">Fullscreen API</a> to request and detect full screen display, now done in the <a href="https://whatwg.org/">WHATWG</a>.</p>
       </section>
@@ -45,8 +45,10 @@
           <p>Animations can also be managed via scripting through the API exposed in <a data-featureid="web-animations">Web Animations</a>.</p>
         </div>
 
-        <div data-feature="2D Programmatic API">
+        <div data-feature="Graphics API">
           <p><a data-featureid="css-paint-api">CSS Painting API</a> allows web developers to generate a 2D image for CSS that can respond to style and size changes, without having to create DOM elements and without blocking the main thread during repaint, thus preserving memory, CPU, and responsiveness.</p>
+
+          <p>The <a data-featureid="webgpu">WebGPU</a> API exposes modern 3D graphics and computation capabilities in a performant, powerful and safe manner, with a goal to be agnostic of and compatible with existing native system platforms (such as Direct3D, Metal, or Vulkan). The companion <a data-featureid="wgsl">WebGPU Shading Language</a> specification defines a text-based shading language for WebGPU based on <a href="https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html">SPIR-V</a> semantics.</p>
         </div>
 
         <div data-feature="Downloadable fonts">
@@ -59,10 +61,6 @@
         <h2>Exploratory work</h2>
         <div data-feature="Animations">
           <p>Content rarely fits on screen on mobile devices, requiring users to scroll down. Applications may want to adjust their user interface based on the current scroll position, for example to shrink the top navigation menu as the user starts scrolling or to display a progress bar. This requires scripting for now. The <a data-featureid="scroll-animations">Scroll-linked Animations</a> specification proposes a declarative mechanism based on CSS properties.</p>
-        </div>
-
-        <div data-feature="Graphics API">
-          <p>The GPU for the Web Community Group has started to design the <a data-featureid="webgpu">WebGPU</a> API, a new Web API to expose modern 3D graphics and computation capabilities in a performant, powerful and safe manner, with a goal to be agnostic of and compatible with existing native system platforms (such as Direct3D, Metal, or Vulkan).</p>
         </div>
       </section>
     </main>

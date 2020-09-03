@@ -35,7 +35,7 @@
         </div>
         <div data-feature="图形 API">
           <p>作为 SVG 提供的声明性方法的补充，HTML5 中添加的 <strong><code>&lt;canvas&gt;</code></strong> 元素使<a data-featureid="html/2dcontext">2D编程API</a>非常适合以较少内存占用的方式处理图形。</p>
-          <p>作为 Khronos Group 的一部分在 W3C 之外开发的 <a data-featureid="webgl">WebGL</a> 为 Web 提供了底层3D图形API。该 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，适用于嵌入式系统，并可在移动设备上运行。基于 OpenGL ES 2.0 的 WebGL v1.0 有很好的跨设备支持，而基于 OpenGL ES 3.0 的 WebGL v2.0 的支持则较少。W3C 正在进行更新的 WebGPU API 的工作，请参阅下面的<a href="#exploratory-work">探索性工作</a>部分。</p>
+          <p>作为 Khronos Group 的一部分在 W3C 之外开发的 <a data-featureid="webgl">WebGL</a> 为 Web 提供了底层3D图形API。该 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，适用于嵌入式系统，并可在移动设备上运行。基于 OpenGL ES 2.0 的 WebGL v1.0 有很好的跨设备支持，而基于 OpenGL ES 3.0 的 WebGL v2.0 的支持则较少。W3C 正在进行更新的 WebGPU API 的工作，请参阅下面的探索性工作部分。</p>
         </div>
         <p>图形密集型应用（例如游戏）中的另一个重要的特性是使用整个屏幕来显示图形；在<a data-featureid="fullscreen">全屏API</a>上的工作可以请求和检测全屏显示，现在在 <a href="https://whatwg.org/">Web 超文本应用技术工作小组</a>中完成。</p>
       </section>
@@ -45,8 +45,9 @@
           <p>动画也可以通过脚本通过<a data-featureid="web-animations">Web动画</a>中的API进行管理。</p>
         </div>
 
-        <div data-feature="2D 可编程 API">
+        <div data-feature="图形 API">
           <p><a data-featureid="css-paint-api">CSS 绘图 API</a> 允许 Web 开发者为 CSS 生成可以响应样式和大小更改的 2D 图像，而且无需创建 DOM 元素，也不必在重绘期间阻塞主线程，从而能够减少内存和 CPU 的使用，提高性能。</p>
+          <p><a data-featureid="webgpu">WebGPU</a> API 以高性能、强大和安全的方式使用现代3D图形和计算功能，并与设备的系统平台（例如 Direct3D、Metal或Vulkan）无关。The companion <a data-featureid="wgsl">WebGPU Shading Language</a> specification defines a text-based shading language for WebGPU based on <a href="https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html">SPIR-V</a> semantics.</p>
         </div>
 
         <div data-feature="可下载字体">
@@ -59,10 +60,6 @@
         <h2>探索性工作</h2>
         <div data-feature="动画">
           <p>网页内容很少能够完整显示在移动设备的首屏，所以需要用户向下滚动。Web应用可能希望根据当前滚动位置调整其用户界面，比如在用户滚动时缩小顶部导航菜单或显示进度条。这项功能需要现在编写脚本，而<a data-featureid="scroll-animations">滚动关联动画</a>规范提出了一种基于CSS属性的声明性机制。</p>
-        </div>
-
-        <div data-feature="图形 API">
-          <p>GPU for the Web 社区组已开始设计 <a data-featureid="webgpu">WebGPU</a> API，这是一个新的Web API，以高性能、强大和安全的方式使用现代3D图形和计算功能，并与设备的系统平台（例如 Direct3D、Metal或Vulkan）无关。</p>
         </div>
       </section>
     </main>
