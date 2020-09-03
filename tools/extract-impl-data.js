@@ -191,6 +191,7 @@ let sources = {
         switch (status) {
           case 'Enabled by default':
           case 'Shipped':
+          case 'Shipped/Shipping':
             res.status = 'shipped';
             break;
           case 'Behind a flag':
@@ -202,16 +203,20 @@ let sources = {
             break;
           case 'Proposed':
           case 'Public support':
+          case 'Positive':
             res.status = 'consideration';
             break;
+          case 'No signal':
           case 'No public signals':
           case 'Mixed public signals':
           case 'No active development':
           case 'No longer pursuing':
           case 'Public skepticism':
+          case 'Negative':
           case 'Opposed':
           case 'Removed':
           case 'Deprecated':
+          case 'Defer':
             res.status = '';
             break;
           default:
