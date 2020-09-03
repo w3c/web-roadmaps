@@ -16,10 +16,10 @@
     "generate-pages": "node tools/generate-roadmaps.js",
     "create-missing-data": "node tools/create-missing-data.js",
     "detect-missing-data": "node tools/create-missing-data.js --detect",
-    "validate-data": "ajv -s tools/spec.jsons -d data/\\*.json --errors=text",
+    "validate-data": "ajv -s tools/schema-spec.json -d data/\\*.json --errors=text",
     "validate-info": "npm run validate-specinfo && npm run validate-implinfo",
-    "validate-specinfo": "ajv -s tools/tr.jsons -d .out/data/tr.json --errors=text",
-    "validate-implinfo": "ajv -s tools/impl.jsons -d .out/data/impl.json --errors=text",
+    "validate-specinfo": "ajv -s tools/schema-tr.json -d .out/data/tr.json --errors=text",
+    "validate-implinfo": "ajv -s tools/schema-impl.json -d .out/data/impl.json --errors=text",
     "validate-html": "node tools/validate-html.js media mobile publishing security web5g"
   }
 }
