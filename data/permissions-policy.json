@@ -1,0 +1,7 @@
+{
+  "url": "https://www.w3.org/TR/permissions-policy-1/",
+  "impl": {
+    "caniuse": "permissions-policy",
+    "chromestatus": 5745992911552512
+  }
+}
