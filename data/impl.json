@@ -485,12 +485,6 @@
         "selected": true
       },
       {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps"
-      },
-      {
         "ua": "safari",
         "status": "shipped",
         "source": "caniuse",
@@ -611,7 +605,8 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
+          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported.",
+          "Safari on iOS does not support A2HS in WebViews like Chrome and Firefox"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
@@ -646,9 +641,6 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
-        "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -716,7 +708,7 @@
       },
       {
         "ua": "webkit",
-        "status": "indevelopment",
+        "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#specification-web-app-manifest"
       },
@@ -898,7 +890,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#specification-web-app-manifest",
             "guess": true
@@ -1055,7 +1047,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#specification-web-app-manifest",
             "guess": true
@@ -1200,7 +1192,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#specification-web-app-manifest",
             "guess": true
@@ -1352,7 +1344,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#specification-web-app-manifest",
             "guess": true
@@ -1509,7 +1501,7 @@
           },
           {
             "ua": "webkit",
-            "status": "indevelopment",
+            "status": "shipped",
             "source": "webkitstatus",
             "href": "https://webkit.org/status/#specification-web-app-manifest",
             "guess": true
@@ -3119,7 +3111,8 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5691190548627456"
+        "href": "https://www.chromestatus.com/feature/5691190548627456",
+        "selected": true
       },
       {
         "ua": "safari",
@@ -3130,47 +3123,65 @@
       },
       {
         "ua": "chrome",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
       },
       {
         "ua": "chrome_android",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
+      },
+      {
+        "ua": "ie",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
       },
       {
         "ua": "opera",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
       },
       {
         "ua": "opera_android",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/BudgetService"
+      },
+      {
         "ua": "samsunginternet_android",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/BudgetService",
         "selected": true
@@ -3580,6 +3591,27 @@
         "partial": false
       },
       {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
@@ -3643,6 +3675,20 @@
           },
           {
             "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Credential",
@@ -3724,8 +3770,7 @@
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5026422640869376",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "edge",
@@ -3771,10 +3816,24 @@
             "guess": true
           },
           {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "firefox_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "webview_android",
@@ -3951,10 +4010,25 @@
             "guess": true
           },
           {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "firefox_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
           },
           {
             "ua": "webview_android",
@@ -8977,11 +9051,7 @@
       },
       {
         "ua": "firefox_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Partially supported in Firefox by enabling \"layout.css.contain.enabled\" in about:config"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-containment",
         "selected": true
@@ -9216,8 +9286,7 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "",
         "notes": [
           "See Chromium <a href='https://crbug.com/235457'>bug 235457</a>."
         ],
@@ -9226,7 +9295,10 @@
       },
       {
         "ua": "chrome_android",
-        "status": "shipped",
+        "status": "",
+        "notes": [
+          "See Chromium <a href='https://crbug.com/235457'>bug 235457</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport"
       },
@@ -9307,7 +9379,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@viewport",
         "selected": true
@@ -12062,12 +12134,18 @@
       {
         "ua": "safari",
         "status": "",
+        "notes": [
+          "See <a href='https://webkit.org/b/176454'>bug 176454</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
       },
       {
         "ua": "safari_ios",
         "status": "",
+        "notes": [
+          "See <a href='https://webkit.org/b/176454'>bug 176454</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
         "selected": true
@@ -13066,9 +13144,6 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
-        "notes": [
-          "Supports properties from an [older version](https://www.w3.org/TR/2015/WD-css-snappoints-1-20150326/) of the spec."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints",
         "selected": true
@@ -15317,16 +15392,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4613920211861504",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4613920211861504",
         "selected": true
@@ -16544,14 +16617,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5167290693713920",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5167290693713920",
         "selected": true
@@ -16694,121 +16767,6 @@
         "source": "edgestatus",
         "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/serversenteventseventsource/",
         "selected": true
-      }
-    ]
-  },
-  "feature-policy": {
-    "implementations": [
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "shipped",
-        "notes": [
-          "Only supports the `allow` attribute on iframes"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy"
-      },
-      {
-        "ua": "safari",
-        "status": "shipped",
-        "notes": [
-          "Only supports the `allow` attribute on iframes",
-          "Doesn't support [list of origins](https://bugs.webkit.org/show_bug.cgi?id=189901) or a [wildcard](https://bugs.webkit.org/show_bug.cgi?id=187816)."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "opera",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy"
-      },
-      {
-        "ua": "samsunginternet_android",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "qq_android",
-        "status": "shipped",
-        "notes": [
-          "Supported through the `Feature-Policy` header and `allow` attribute on iframes. JS API support is available in Chrome 64+ by enabling the \"Experimental Web Platform features\" feature flag in under about:flags."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=feature-policy",
-        "selected": true
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "consideration",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584"
-      },
-      {
-        "ua": "edge",
-        "status": "consideration",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584"
-      },
-      {
-        "ua": "safari",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5694225681219584"
       }
     ]
   },
@@ -17837,7 +17795,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Does not work in standalone running (\"installed\") PWAs, `getUserMedia` returns no video input devices in `UIWebView` or `WKWebView`, but only directly in Safari."
+          "`getUserMedia` returns no video input devices in `UIWebView` or `WKWebView`, but only directly in Safari."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=stream",
@@ -23111,8 +23069,15 @@
         "selected": true
       },
       {
-        "ua": "opera",
+        "ua": "ie",
         "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
         "selected": true
@@ -23364,6 +23329,13 @@
       },
       {
         "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=mediasource",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediasource",
@@ -24997,9 +24969,6 @@
       {
         "ua": "samsunginternet_android",
         "status": "shipped",
-        "notes": [
-          "Missing support for PaymentResponse.prototype.retry() method"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=payment-request",
         "selected": true
@@ -25228,6 +25197,78 @@
         ]
       }
     }
+  },
+  "permissions-policy": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Chromium browsers with the `enable-experimental-web-platform-features` flag.",
+          "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-policy"
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Chromium browsers with the `enable-experimental-web-platform-features` flag.",
+          "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-policy"
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Chromium browsers with the `enable-experimental-web-platform-features` flag.",
+          "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-policy"
+      },
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "selected": true
+      }
+    ]
   },
   "permissions-request": {
     "implementations": [
@@ -26367,7 +26408,11 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled using the Develop > Experimental Features menu."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder",
         "selected": true
@@ -26538,6 +26583,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -26552,6 +26600,9 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "notes": [
+          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy"
       },
@@ -26579,6 +26630,9 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
+        "notes": [
+          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy"
       },
@@ -26705,8 +26759,30 @@
         "href": "https://caniuse.com/#feat=requestidlecallback"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Experimental (WebKit) Features"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=requestidlecallback",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=requestidlecallback",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Experimental (WebKit) Features"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=requestidlecallback",
         "selected": true
@@ -26782,8 +26858,7 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5572795866021888",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5572795866021888"
       },
       {
         "ua": "edge",
@@ -26864,8 +26939,7 @@
         "ua": "safari_ios",
         "status": "",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback"
       },
       {
         "ua": "samsunginternet_android",
@@ -26929,6 +27003,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=resizeobserver"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
       },
       {
         "ua": "samsunginternet_android",
@@ -31375,7 +31456,27 @@
   "trusted-types": {
     "implementations": [
       {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types",
+        "selected": true
+      },
+      {
         "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types"
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=trusted-types"
@@ -31405,8 +31506,7 @@
         "ua": "edge",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5650088592408576",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5650088592408576"
       },
       {
         "ua": "safari",
@@ -31833,16 +31933,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6335927192387584",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6335927192387584",
         "selected": true
@@ -32637,14 +32735,16 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669293909868544",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669293909868544",
         "selected": true
@@ -32792,6 +32892,15 @@
   "web-share": {
     "implementations": [
       {
+        "ua": "edge",
+        "status": "shipped",
+        "notes": [
+          "Only supported on Windows"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-share"
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "caniuse",
@@ -32812,6 +32921,20 @@
         "href": "https://caniuse.com/#feat=web-share"
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-share",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-share",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
         "source": "chromestatus",
@@ -32820,14 +32943,14 @@
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736"
       },
@@ -33077,7 +33200,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
@@ -33178,7 +33301,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
             "selected": true
@@ -33198,6 +33321,13 @@
             "selected": true
           },
           {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -33207,6 +33337,19 @@
           {
             "ua": "opera_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
             "selected": true
@@ -33267,8 +33410,7 @@
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=audio-api",
             "guess": true,
-            "prefix": true,
-            "selected": true
+            "prefix": true
           },
           {
             "ua": "chrome_android",
@@ -33368,7 +33510,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -33464,6 +33606,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "Partial support refers to FIDO2 devices not working if a PIN is set."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
@@ -33473,13 +33618,6 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn"
-      },
-      {
-        "ua": "firefox_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webauthn",
-        "selected": true
       },
       {
         "ua": "chrome",
@@ -34842,6 +34980,17 @@
         "href": "https://caniuse.com/#feat=webxr"
       },
       {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Firefox behind the `dom.vr.webxr.enabled` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webxr",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "notes": [
@@ -34870,6 +35019,27 @@
         "href": "https://caniuse.com/#feat=webxr"
       },
       {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Firefox behind the `dom.vr.webxr.enabled` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webxr",
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "notes": [
+          "This API is very extensive. Many of its features are still in development and/or don't have finalised specs yet."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webxr",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -34887,8 +35057,7 @@
         "ua": "firefox",
         "status": "consideration",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5680169905815552",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/5680169905815552"
       },
       {
         "ua": "edge",

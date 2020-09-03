@@ -7,7 +7,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       },
       {
@@ -214,7 +214,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -262,7 +262,7 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2020-06-30"
+      "PR": "2020-09-30"
     }
   },
   "autocomplete": {
@@ -329,6 +329,7 @@
   },
   "badging": {
     "url": "https://w3c.github.io/badging/",
+    "repository": "https://github.com/w3c/badging",
     "title": "Badging API",
     "status": "ED",
     "deliveredBy": [
@@ -367,9 +368,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "beacon": {
     "url": "https://www.w3.org/TR/beacon/",
@@ -928,7 +927,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {},
+    "milestones": {
+      "WR/LC": "2020-09-30"
+    },
     "feature": "font-display"
   },
   "css-font-loading": {
@@ -971,7 +972,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {},
+    "milestones": {
+      "WR/LC": "2020-09-30"
+    },
     "features": {
       "variable": {
         "title": "Variable fonts",
@@ -1519,7 +1522,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -1722,22 +1725,6 @@
     "informative": false,
     "milestones": {}
   },
-  "feature-policy": {
-    "url": "https://w3.org/TR/feature-policy-1/",
-    "edDraft": "https://w3c.github.io/webappsec-feature-policy/",
-    "repository": "https://github.com/w3c/webappsec-feature-policy",
-    "title": "Feature Policy",
-    "status": "WD",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/2011/webappsec/",
-        "label": "Web Application Security Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {}
-  },
   "fetch": {
     "url": "https://fetch.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/fetch",
@@ -1927,7 +1914,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -2161,7 +2148,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -2760,7 +2747,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -2926,7 +2913,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -3108,6 +3095,22 @@
         "title": "Available in Workers"
       }
     }
+  },
+  "permissions-policy": {
+    "url": "https://www.w3.org/TR/permissions-policy-1/",
+    "edDraft": "https://w3c.github.io/webappsec-permissions-policy/",
+    "repository": "https://github.com/w3c/webappsec-permissions-policy",
+    "title": "Permissions Policy",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webappsec/",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
   },
   "permissions-request": {
     "url": "https://wicg.github.io/permissions-request/",
@@ -3297,7 +3300,7 @@
     "informative": false,
     "milestones": {
       "CR": "2020-06-30",
-      "PR": "2020-06-30"
+      "PR": "2020-09-30"
     }
   },
   "publishing-linking": {
@@ -3374,7 +3377,7 @@
         "label": "Devices and Sensors Working Group"
       },
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -3539,7 +3542,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4082,7 +4085,9 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2020-09-30"
+    }
   },
   "ttml1": {
     "url": "https://www.w3.org/TR/ttml1/",
@@ -4193,7 +4198,7 @@
     "milestones": {}
   },
   "vcard-rdf": {
-    "url": "http://www.w3.org/TR/vcard-rdf/",
+    "url": "https://www.w3.org/TR/vcard-rdf/",
     "title": "vCard Ontology - for describing People and Organizations",
     "status": "NOTE",
     "deliveredBy": [
@@ -4297,9 +4302,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2020-06-30"
-    },
+    "milestones": {},
     "feature": "viewport-percentage lengths"
   },
   "viewportapi": {
@@ -4330,7 +4333,7 @@
     "milestones": {}
   },
   "vocab-data-cube": {
-    "url": "http://www.w3.org/TR/vocab-data-cube/",
+    "url": "https://www.w3.org/TR/vocab-data-cube/",
     "title": "The RDF Data Cube Vocabulary",
     "status": "REC",
     "deliveredBy": [
@@ -4739,7 +4742,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4759,7 +4762,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4779,7 +4782,7 @@
     "status": "CR",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4795,7 +4798,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/2011/04/webrtc/",
+        "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
       }
     ],
@@ -4934,7 +4937,9 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2020-09-30"
+      "WR/LC": "2020-09-30",
+      "CR": "2020-12-30",
+      "PR": "2021-12-30"
     }
   },
   "webxr-gamepads-module": {
@@ -4968,7 +4973,9 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "PR": "2020-09-30"
+      "WR/LC": "2020-09-30",
+      "CR": "2020-12-30",
+      "PR": "2021-06-30"
     }
   },
   "wfs3": {
