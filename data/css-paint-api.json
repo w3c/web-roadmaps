@@ -1,5 +1,4 @@
 {
-    "url": "https://www.w3.org/TR/css-paint-api-1/",
     "impl": {
       "caniuse": "css-paint-api",
       "chromestatus": 5685444318593024,

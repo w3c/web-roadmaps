@@ -1,6 +1,4 @@
 {
-  "url": "https://fetch.spec.whatwg.org/",
-  "title": "Fetch",
   "impl": {
     "caniuse": "fetch",
     "chromestatus": 6730533392351232,

@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/ambient-light/",
   "impl": {
     "caniuse": "ambient-light",
     "edgestatus": "Ambient Light Sensor API",

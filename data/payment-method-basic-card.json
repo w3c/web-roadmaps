@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/payment-method-basic-card/",
   "impl": {
     "chromestatus": 5408502604365824,
     "mdn": "api.BasicCardRequest"

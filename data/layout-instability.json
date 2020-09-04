@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/layout-instability/",
-  "title": "Layout Instability API",
   "impl" : {
     "chromestatus": 5110682739539968
   }

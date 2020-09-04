@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/css-font-loading-3/",
   "impl": {
     "caniuse": "font-loading",
     "chromestatus": 6244676289953792,

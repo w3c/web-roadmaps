@@ -5,7 +5,6 @@
     "edgestatus": "Audio Output Devices API",
     "webkitstatus": null
   },
-  "url": "https://www.w3.org/TR/audio-output/",
   "features": {
     "sinkId": {
       "title": "ID of the audio device",

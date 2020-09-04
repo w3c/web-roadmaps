@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/CSP3/",
   "impl": {
     "webkitstatus": "specification-content-security-policy-level-3"
   },

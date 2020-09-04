@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/video-rvfc/",
-  "title": "HTMLVideoElement.requestVideoFrameCallback()",
   "impl": {
     "chromestatus": 6335927192387584
   }

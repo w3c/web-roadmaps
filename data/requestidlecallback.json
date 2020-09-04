@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/requestidlecallback/",
   "impl": {
     "caniuse": "requestidlecallback",
     "chromestatus": 5572795866021888,

@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/event-timing/",
-  "title": "Event Timing API",
   "impl": {
     "chromestatus": 5167290693713920
   }

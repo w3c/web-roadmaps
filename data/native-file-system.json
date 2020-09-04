@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/native-file-system/",
-  "title": "Native File System",
   "impl": {
     "chromestatus": 6284708426022912
   }

@@ -1,6 +1,7 @@
 /*******************************************************************************
 Helper script that parses data files and fetches additional information from
-the W3C API for TR specs and from Specref for other specs.
+browser-specs (title, ED, repository), the W3C API (WG, status, etc.) and from
+Specref for specs that are neither in browser-specs nor in the W3C API.
 
 To parse files:
 node tools/extract-spec-data.js data/3dcamera.json data/webvtt.json
@@ -10,6 +11,7 @@ const fetch = require('fetch-filecache-for-crawling');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
+const browserSpecs = require('browser-specs');
 
 
 /**
@@ -73,6 +75,13 @@ const publishers = {
     parentPublisher: 'W3C',
     isGroup: true
   },
+  'CSSWG': {
+    label: 'Cascading Style Sheets (CSS) Working Group',
+    url: 'https://www.w3.org/Style/CSS/',
+    urlPattern: /drafts\.(csswg|fxtf|css-houdini)\.org/i,
+    isGroup: true,
+    parentPublisher: 'W3C'
+  },
   'OGC': {
     label: 'Open Geospatial Consortium',
     url: 'http://www.opengeospatial.org/',
@@ -121,6 +130,44 @@ const publisherMapping = {
  */
 function requireFromWorkingDirectory(filename) {
     return require(path.resolve(filename));
+}
+
+
+/**
+ * Return the entry in browser-specs that matches the given spec, or null if the
+ * given spec does not exist in browser-specs
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {Object} The entry in browser-specs that matches spec, or null
+ */
+function getBrowserSpec(spec) {
+  let data = spec.data || {};
+  let specUrl = data.url || data.TR || data.edDraft || data.editors || data.ls;
+  return browserSpecs.find(s => {
+    if (specUrl) {
+      return (s.url === specUrl) ||
+        (s.nightly.url === specUrl) ||
+        (s.release && s.release.url === specUrl);
+    }
+    else {
+      return (s.shortname === spec.id) ||
+        ((s.series.shortname === spec.id) &&
+          (s.series.currentSpecification === s.shortname));
+    }
+  });
+}
+
+
+/**
+ * Return true if given spec is in browser-specs
+ *
+ * @function
+ * @param {Object} spec The spec object to parse
+ * @return {Boolean} True if spec should be considered to be a TR spec
+ */
+function isBrowserSpec(spec) {
+  return !!getBrowserSpec(spec);
 }
 
 
@@ -323,7 +370,21 @@ async function extractSpecData(files, config) {
     }
   }
 
-  // Fetch spec info from Specref when spec is not a TR spec.
+  // Complete spec info with info from browser-specs
+  specs = specs.map(spec => {
+    const browserSpec = getBrowserSpec(spec);
+    if (!browserSpec) {
+      return spec;
+    }
+    const data = spec.data;
+    data.url = data.url || browserSpec.url;
+    data.edDraft = data.edDraft || browserSpec.nightly.url;
+    data.repository = data.repository || browserSpec.nightly.repository;
+    data.title = data.title || browserSpec.title;
+    return spec;
+  });
+
+  // Fetch spec info from Specref when spec is not a TR spec
   // (Proceed in chunks not to end up with a URL that is thousands of bytes
   // long, and only fetch a given lookup URL once)
   let lookupUrls = specs

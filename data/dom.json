@@ -1,6 +1,4 @@
 {
-  "url": "https://dom.spec.whatwg.org/",
-  "title": "DOM",
   "features": {
     "shadow": {
       "url": "#shadow-trees",

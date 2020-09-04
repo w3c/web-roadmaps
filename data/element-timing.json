@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/element-timing/",
-  "title": "Element Timing API",
   "features": {
     "img": {
       "title": "Support for images",
