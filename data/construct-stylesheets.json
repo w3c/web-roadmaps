@@ -1,0 +1,7 @@
+{
+    "url": "https://wicg.github.io/construct-stylesheets/",
+    "title": "Constructable Stylesheet Objects",
+    "impl": {
+      "chromestatus": 5394843094220800
+    }
+}
