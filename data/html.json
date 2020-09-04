@@ -39,6 +39,14 @@
         "mdn": "api.CanvasRenderingContext2D",
         "webkitstatus": null
       }
+    },
+
+    "ruby": {
+      "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element",
+      "title": "The ruby element",
+      "impl": {
+        "caniuse": "ruby"
+      }
     }
   }
 }

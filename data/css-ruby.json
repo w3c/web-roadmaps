@@ -1,0 +1,21 @@
+{
+  "url": "https://www.w3.org/TR/css-ruby-1/",
+  "title": "CSS Ruby Layout Module Level 1",
+  "features": {
+    "ruby-align": {
+      "url": "https://www.w3.org/TR/css-ruby-1/#ruby-align-property",
+      "title": "The ruby-align property",
+      "impl": {
+        "mdn": "css.properties.ruby-align"
+      }
+    },
+
+    "ruby-position": {
+      "url": "https://www.w3.org/TR/css-ruby-1/#rubypos",
+      "title": "The ruby-position property",
+      "impl": {
+        "mdn": "css.properties.ruby-position"
+      }
+    }
+  }
+}
