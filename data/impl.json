@@ -12496,6 +12496,252 @@
       }
     }
   },
+  "css-ruby": {
+    "implementations": [
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "ruby-align",
+          "ruby-position"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "ruby-align",
+          "ruby-position"
+        ],
+        "partial": true,
+        "selected": true
+      }
+    ],
+    "features": {
+      "ruby-align": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "notes": [
+              "Internet Explorer 9 and later supports an earlier draft of CSS Ruby with non-standard values for this property: <code>auto</code>, <code>left</code>, <code>center</code>, <code>right</code>, <code>distribute-letter</code>, <code>distribute-space</code>, and <code>line-edge</code>."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-align",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          }
+        ]
+      },
+      "ruby-position": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "notes": [
+              "Internet Explorer 9 and later support an old draft values: <code>inline</code> (equivalent of having <code>display: inline</code> on the ruby), and <code>above</code> (synonym of the modern <code>over</code>)."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "notes": [
+              "Safari implements a non-standard, prefixed, version of <code>ruby-position</code>, <code>-webkit-ruby-position</code>: it has two properties: <code>before</code> and <code>after</code> (both equivalent, for ltr and rtl scripts to the standard <code>over</code> value used with <code>ruby-align: start</code>)."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "",
+            "notes": [
+              "Safari implements a non-standard, prefixed, version of <code>ruby-position</code>, <code>-webkit-ruby-position</code>: it has two properties: <code>before</code> and <code>after</code> (both equivalent, for ltr and rtl scripts to the standard <code>over</code> value used with <code>ruby-align: start</code>)."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/ruby-position",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          }
+        ]
+      }
+    }
+  },
   "css-scoping": {
     "implementations": [
       {
@@ -18742,7 +18988,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18755,7 +19002,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18768,7 +19016,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18781,7 +19030,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18794,7 +19044,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18807,7 +19058,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18820,7 +19072,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18833,7 +19086,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18846,7 +19100,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18859,7 +19114,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18872,7 +19128,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -18885,7 +19142,8 @@
         "features": [
           "template",
           "custom-elements",
-          "2dcontext"
+          "2dcontext",
+          "ruby"
         ],
         "partial": true,
         "selected": true
@@ -20403,6 +20661,292 @@
             "source": "mdn",
             "guess": true,
             "partial": true
+          }
+        ]
+      },
+      "ruby": {
+        "implementations": [
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=ruby",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "consideration",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true,
+            "selected": true
           }
         ]
       }

@@ -1145,6 +1145,32 @@
       }
     }
   },
+  "css-ruby": {
+    "url": "https://www.w3.org/TR/css-ruby-1/",
+    "edDraft": "https://drafts.csswg.org/css-ruby-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Ruby Layout Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "ruby-align": {
+        "title": "The ruby-align property",
+        "url": "https://www.w3.org/TR/css-ruby-1/#ruby-align-property"
+      },
+      "ruby-position": {
+        "title": "The ruby-position property",
+        "url": "https://www.w3.org/TR/css-ruby-1/#rubypos"
+      }
+    }
+  },
   "css-scoping": {
     "url": "https://www.w3.org/TR/css-scoping-1/",
     "edDraft": "https://drafts.csswg.org/css-scoping/",
@@ -2065,6 +2091,10 @@
       "2dcontext": {
         "title": "The 2D rendering context",
         "url": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+      },
+      "ruby": {
+        "title": "The ruby element",
+        "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element"
       }
     }
   },
