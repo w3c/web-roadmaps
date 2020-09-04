@@ -1,0 +1,10 @@
+{
+  "url": "https://gpuweb.github.io/gpuweb/wgsl.html",
+  "title": "WebGPU Shading Language",
+  "wgs": [
+    {
+      "url": "https://www.w3.org/2020/gpu/",
+      "label": "GPU for the Web Working Group"
+    }
+  ]
+}
