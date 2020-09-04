@@ -12,7 +12,7 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
+        <h2 id="well-deployed-technologies">广泛部署的技术</h2>
 
         <div data-feature="HTTP 网络 API">
           <p><a data-featureid="xhr">XMLHttpRequest</a>（Ajax开发的基础）是一个广泛部署的API，用于使用 HTTP 和 HTTPs 协议从Web服务器加载内容：W3C 规范（以前称为XMLHttpRequest Level 2）旨在记录现有的已部署的 API（能够在不同域中的服务器上提出请求，对网络操作进度进行程序化反馈，以及更有效地处理二进制内容），这项工作现在已经在<a href="https://whatwg.org/">WHATWG</a>中完成了。WHATWG 的 <a data-featureid="fetch">Fetch API</a>还提供了一个更强大的基于 Promise 的替代方案。</p>
@@ -40,7 +40,7 @@
       </section>
 
       <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
+        <h2 id="technologies-in-progress">开发中的技术</h2>
         <div data-feature="底层I/O">
           <p><a data-featureid="streams">Streams</a>规范提供了用于高效地创建和接收数据流的API。移动网络的网络状况可能会出现波动，带宽可能受到限制；对低级别I/O原语的访问使 Web 应用内的流量控制能够将网络传输调整为某个读取器（如媒体播放器）的速度，还能改进感知性能，例如在 Service Worker 从先前缓存的内容中组装流并且在线获取内容以加速第一组页面的渲染操作时。在任何时候取消流以停止下载的能力也有助于在需要时立即为其他任务回收网络带宽。</p>
         </div>
@@ -57,7 +57,7 @@
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
+        <h2 id="exploratory-work">探索性工作</h2>
         <div data-feature="后台执行">
           <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
 

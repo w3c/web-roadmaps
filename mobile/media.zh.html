@@ -12,7 +12,7 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
+        <h2 id="well-deployed-technologies">广泛部署的技术</h2>
         <div data-feature="音频/视频播放">
           <p>HTML5 新增的 <code><strong><a data-featureid="video">&lt;video&gt;</a></strong></code> 和 <code><strong><a data-featureid="audio">&lt;audio&gt;</a></strong></code> 标签极大地改善了 Web 对多媒体内容的集成能力。它们允许将音频和视频内容无插件的嵌入到 Web 上，并允许开发者与音视频内容进行更加自由地交互。这些标签使得音频和视频内容成为 Web 上的一等公民，就像 Web 上已经存在了二十多年的图片一样。</p>
         </div>
@@ -26,7 +26,7 @@
         <p data-feature="图像和视频的分析和修改"><a data-featureid="html/2dcontext">画布2D上下文</a> API 允许修改图像，这也为<strong>编辑视频</strong>开启了可能，并为 Web 平台带来了多媒体处理的能力。</p>
       </section>
       <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
+        <h2 id="technologies-in-progress">开发中的技术</h2>
 
         <p data-feature="音频播放">在 <code>&lt;audio&gt;</code> 元素启用的声明性方法之外，<a data-featureid="webaudio">Web 音频 API</a> 提供了一个成熟的音频处理API，包括对音频内容低延迟播放的支持。</p>
 
@@ -69,7 +69,7 @@
         </div>
       </section>
       <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
+        <h2 id="exploratory-work">探索性工作</h2>
 
         <div data-feature="分布式渲染">
           <p>多设备时计社区组目前正在探索多设备媒体渲染的另一方面：<a data-featureid="timing">时计对象</a>规范允许在跨设备并独立于网络拓扑的同时，保持视频、音频和其他数据流的同步性。这项努力需要更多有关方面的支持来取得进展。</p>
@@ -90,7 +90,7 @@
         </div>
       </section>
       <section>
-        <h2>目前尚未覆盖的工作</h2>
+        <h2 id="features-not-covered-by-ongoing-work">目前尚未覆盖的工作</h2>
         <dl>
           <dt>色彩管理</dt>
           <dd>为了确保正确呈现高动态范围（HDR）和宽色域的视频，内容提供商需要确定底层设备和浏览器是否有适当的支持。类似地，内容提供者需要一种机制来匹配颜色以混合 HDR 内容和标准动态范围（SDR）内容。<a href="https://www.w3.org/community/colorweb/">Web色彩社区组</a>聚集了来自不同行业的色彩专家，以改善 Web 上的色彩管理的状态。</dd>
@@ -102,7 +102,7 @@
         </dl>
       </section>
       <section>
-        <h2>不再进行的工作</h2>
+        <h2 id="discontinued-features">不再进行的工作</h2>
         <dl>
           <dt>网络服务发现</dt>
           <dd><a data-featureid="discovery">网络服务发现API</a>通过提供与本地基于网络的媒体渲染器的集成，如 DLN 及 UPnP 等，为建立多设备操作提供较底层的方法。出于对隐私保护的顾虑及缺乏实现，这项工作没有继续下去。目前的解决方案是用户用代理来处理底层的网络发现，就像在<a data-featureid="secondscreen">呈现 API</a> 和<a data-featureid="remote-playback">远程回放 API</a> 中处理的那样。</dd>
