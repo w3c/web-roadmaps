@@ -16,7 +16,7 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
+        <h2 id="well-deployed-technologies">广泛部署的技术</h2>
 
         <div data-feature="安全加强">
           <p>用户的第一道防线以及 Web 应用的隔离单元是同源策略，它大致限制了 Web 应用可以访问同一来源的内容和数据，这里的来源是指协议、域名和端口的组合。</p>
@@ -41,7 +41,7 @@
       </section>
 
       <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
+        <h2 id="technologies-in-progress">开发中的技术</h2>
 
         <div data-feature="安全加强">
           <p>跨站脚本（XSS）是Web上的主要攻击方式之一。<a data-featureid="trusted-types">可信任类型</a>允许应用锁定基于 DOM 的 XSS 注入接收器（例如，<code>Element.innerHTML</code> 或 <code>Location.href</code> 设置器），以仅接受不可欺骗的、含有类型的值来代替字符串。</p>
@@ -69,14 +69,14 @@
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
+        <h2 id="exploratory-work">探索性工作</h2>
         <div data-feature="权限">
             <p>不同的API使用不同的机制来授予使用或访问潜在强大功能的权限。为了简化与权限相关的代码的设计，<a data-featureid="permissions-request">请求权限</a>和<a data-featureid="permissions-revoke">放弃权限</a>两个标准提议扩展<a href="https://www.w3.org/TR/permissions/">权限API</a>，以提供一个统一的方法请求和撤销权限。</p>
         </div>
       </section>
 
       <section>
-        <h2>不再进行的工作</h2>
+        <h2 id="discontinued-features">不再进行的工作</h2>
         <dl>
           <dt>HTTP请求过滤</dt>
           <dd><a data-featureid="epr">入口监管</a>规范提供了另一个加强安全的层面。它定义了一种机制来过滤可以从外部站点发起的 HTTP 请求的类型，降低了跨站点脚本和跨站点请求伪造的风险。这个规范的工作暂时停止了。</dd>

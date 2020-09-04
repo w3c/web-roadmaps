@@ -12,7 +12,7 @@
     </header>
     <main>
       <section class="featureset well-deployed">
-        <h2>广泛部署的技术</h2>
+        <h2 id="well-deployed-technologies">广泛部署的技术</h2>
         <div data-feature="基于触控的交互">
           <p>越来越多的移动设备依赖于触控。尽管在Web平台中公认的传统交互方式（键盘、鼠标输入）仍然可以在这种情况下应用，但更具针对性地处理触控输入是创建适应性良好的用户体验的关键因素，<a data-featureid="touchevent">文档对象模型中的触摸事件</a>可以解决这个问题。</p>
           <p><a data-featureid="pointer-events">指针事件</a>规范定义了一个鼠标、触摸和笔事件的统一模型。它为触摸事件提供了一种互补且更加统一的方法。指针事件包括允许过滤元素上的手势事件的 CSS 属性 <a data-featureid="css-touch-action"><code>touch-action</code></a>，并在浏览器中广泛实现。</p>
@@ -32,7 +32,7 @@
       </section>
 
       <section class="featureset in-progress">
-        <h2>开发中的技术</h2>
+        <h2 id="technologies-in-progress">开发中的技术</h2>
 
         <div data-feature="游戏控制器">
           <p><a data-featureid="gamepad">游戏手柄</a>规范定义了一个与连接到设备的游戏手柄（例如通过蓝牙与智能手机配对的游戏手柄设备）交互的底层接口。</p>
@@ -53,7 +53,7 @@
       </section>
 
       <section class="featureset exploratory-work">
-        <h2>探索性工作</h2>
+        <h2 id="exploratory-work">探索性工作</h2>
 
         <p data-feature="基于语音的交互">移动设备，特别是手机，在很多情况下也非常适合语音交互；<a href="https://www.w3.org/community/speech-api/">语音 API 社区组</a>开发了一个JavaScript API 来支持通过口头命令与网页进行交互。<a data-featureid="speech-api/synthesis">语音合成</a>在浏览器中有很好的支持。对<a data-featureid="speech-api/recognition">语音识别</a>的支持仍在进行中。</p>
 
@@ -78,7 +78,7 @@
       </section>
 
       <section>
-          <h2>目前尚未覆盖的工作</h2>
+          <h2 id="features-not-covered-by-ongoing-work">目前尚未覆盖的工作</h2>
           <dl>
             <dt>手势事件</dt>
             <dd>如上所述，基于触摸的交互在移动设备上很常见，并且可通过<a data-featureid="touchevent">触摸事件</a>提供给 Web 应用。<strong>基于手势的交互</strong>（包括捏合、旋转和滑动等）也是移动设备上的常见交互范例。Web开发者可在某种程度上从触摸事件中获取手势事件，但可能需要为不同的浏览器开发多个版本。对这些交互的原生支持将降低碎片化程度并提高性能。早期关于定义<a href="https://github.com/JuntaoPeng/GestureEvents/blob/master/GestureEvents.md#gesture-events">手势事件</a>的讨论已经在<a href="https://www.w3.org/community/mwma/">合并 Web 和移动应用社区组</a>中开始了讨论。</dd>
@@ -86,7 +86,7 @@
       </section>
 
       <section>
-        <h2>不再进行的工作</h2>
+        <h2 id="discontinued-features">不再进行的工作</h2>
         <dl>
           <dt>基于意图的事件</dt>
           <dd>随着 Web 来到新的设备上，并且随着设备获得新的用户交互机制，允许 Web 开发者对更抽象的用户交互集合作出响应似乎是有用的：Web 应用无需再对“点击”、“按键”或“触摸事件“进行响应，而转为对“撤消“或“下一页”的作出响应（无论用户如何给设备发出这些指令）。<a data-featureid="indie-ui-events">IndieUI Events</a> 规范就是为了解决这个需求。由于缺乏实现，目前这项工作已经停止。</dd>
