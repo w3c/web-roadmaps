@@ -33968,6 +33968,59 @@
   "webgpu": {
     "implementations": [
       {
+        "ua": "edge",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in some Chromium browsers on Windows and MacOS with the `enable-unsafe-webgpu` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgpu"
+      },
+      {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Firefox with the `dom.webgpu.enabled` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgpu",
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in some Chromium browsers on Windows and MacOS with the `enable-unsafe-webgpu` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgpu"
+      },
+      {
+        "ua": "safari",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Safari on MacOS with the `WebGPU` experimental feature."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgpu",
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Can be enabled in Firefox with the `dom.webgpu.enabled` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webgpu",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "indevelopment",
         "source": "chromestatus",
@@ -33985,8 +34038,7 @@
         "ua": "firefox",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6213121689518080",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6213121689518080"
       },
       {
         "ua": "edge",
@@ -33998,8 +34050,7 @@
         "ua": "safari",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6213121689518080",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6213121689518080"
       },
       {
         "ua": "edge",
@@ -35088,6 +35139,9 @@
     ]
   },
   "wfs3": {
+    "implementations": []
+  },
+  "wgsl": {
     "implementations": []
   },
   "wikidata": {

@@ -4661,8 +4661,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/gpu/",
-        "label": "GPU for the Web Community Group"
+        "url": "https://www.w3.org/2020/gpu/",
+        "label": "GPU for the Web Working Group"
       }
     ],
     "publisher": "W3C",
@@ -4984,6 +4984,19 @@
     "status": "WD",
     "deliveredBy": [],
     "publisher": "OGC",
+    "milestones": {}
+  },
+  "wgsl": {
+    "url": "https://gpuweb.github.io/gpuweb/wgsl.html",
+    "title": "WebGPU Shading Language",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2020/gpu/",
+        "label": "GPU for the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "wikidata": {
