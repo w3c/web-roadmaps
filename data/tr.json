@@ -479,6 +479,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "construct-stylesheets": {
+    "url": "https://wicg.github.io/construct-stylesheets/",
+    "title": "Constructable Stylesheet Objects",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "contacts-sys": {
     "url": "https://www.w3.org/TR/contacts-manager-api/",
     "edDraft": "https://www.w3.org/2012/sysapps/contacts-manager-api/",

@@ -3393,6 +3393,45 @@
   "colorweb": {
     "implementations": []
   },
+  "construct-stylesheets": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5394843094220800",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5394843094220800",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5394843094220800",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5394843094220800",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5394843094220800",
+        "selected": true
+      }
+    ]
+  },
   "contacts-sys": {
     "implementations": []
   },
