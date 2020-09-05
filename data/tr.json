@@ -58,7 +58,7 @@
     "publisher": "W3C",
     "milestones": {}
   },
-  "ambientlight": {
+  "ambient-light": {
     "url": "https://www.w3.org/TR/ambient-light/",
     "edDraft": "https://w3c.github.io/ambient-light/",
     "repository": "https://github.com/w3c/ambient-light",
@@ -301,7 +301,8 @@
   },
   "background-fetch": {
     "url": "https://wicg.github.io/background-fetch/",
-    "repository": "https://github.com/wicg/background-fetch",
+    "edDraft": "https://wicg.github.io/background-fetch/",
+    "repository": "https://github.com/WICG/background-fetch",
     "title": "Background Fetch",
     "status": "ED",
     "deliveredBy": [
@@ -315,7 +316,8 @@
   },
   "background-sync": {
     "url": "https://wicg.github.io/background-sync/spec/",
-    "repository": "https://github.com/wicg/background-sync",
+    "edDraft": "https://wicg.github.io/background-sync/spec/",
+    "repository": "https://github.com/WICG/background-sync",
     "title": "Web Background Synchronization",
     "status": "ED",
     "deliveredBy": [
@@ -329,6 +331,7 @@
   },
   "badging": {
     "url": "https://w3c.github.io/badging/",
+    "edDraft": "https://w3c.github.io/badging/",
     "repository": "https://github.com/w3c/badging",
     "title": "Badging API",
     "status": "ED",
@@ -481,6 +484,8 @@
   },
   "construct-stylesheets": {
     "url": "https://wicg.github.io/construct-stylesheets/",
+    "edDraft": "https://wicg.github.io/construct-stylesheets/",
+    "repository": "https://github.com/WICG/construct-stylesheets",
     "title": "Constructable Stylesheet Objects",
     "status": "ED",
     "deliveredBy": [
@@ -509,7 +514,8 @@
   },
   "cookie-store": {
     "url": "https://wicg.github.io/cookie-store/",
-    "repository": "https://github.com/wicg/cookie-store",
+    "edDraft": "https://wicg.github.io/cookie-store/",
+    "repository": "https://github.com/WICG/cookie-store",
     "title": "Cookie Store API",
     "status": "ED",
     "deliveredBy": [
@@ -1163,11 +1169,11 @@
     "features": {
       "ruby-align": {
         "title": "The ruby-align property",
-        "url": "https://www.w3.org/TR/css-ruby-1/#ruby-align-property"
+        "url": "#ruby-align-property"
       },
       "ruby-position": {
         "title": "The ruby-position property",
-        "url": "https://www.w3.org/TR/css-ruby-1/#rubypos"
+        "url": "#rubypos"
       }
     }
   },
@@ -1238,7 +1244,9 @@
     "milestones": {}
   },
   "css-size-adjust": {
-    "url": "https://drafts.csswg.org/css-size-adjust/",
+    "url": "https://drafts.csswg.org/css-size-adjust-1/",
+    "edDraft": "https://drafts.csswg.org/css-size-adjust-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Mobile Text Size Adjustment Module Level 1",
     "status": "ED",
     "deliveredBy": [
@@ -1430,18 +1438,19 @@
     "milestones": {}
   },
   "device-memory": {
-    "url": "https://w3c.github.io/device-memory/",
+    "url": "https://www.w3.org/TR/device-memory-1/",
     "edDraft": "https://w3c.github.io/device-memory/",
     "repository": "https://github.com/w3c/device-memory",
-    "title": "Device Memory 1",
+    "title": "Device Memory",
     "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
-        "label": "W3C"
+        "label": "Web Performance Working Group"
       }
     ],
     "publisher": "W3C",
+    "informative": false,
     "milestones": {},
     "features": {
       "header": {
@@ -1531,8 +1540,9 @@
   },
   "dom": {
     "url": "https://dom.spec.whatwg.org/",
+    "edDraft": "https://dom.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/dom",
-    "title": "DOM",
+    "title": "DOM Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -1619,7 +1629,8 @@
   },
   "element-timing": {
     "url": "https://wicg.github.io/element-timing/",
-    "repository": "https://github.com/wicg/element-timing",
+    "edDraft": "https://wicg.github.io/element-timing/",
+    "repository": "https://github.com/WICG/element-timing",
     "title": "Element Timing API",
     "status": "ED",
     "deliveredBy": [
@@ -1737,7 +1748,8 @@
   },
   "event-timing": {
     "url": "https://wicg.github.io/event-timing/",
-    "repository": "https://github.com/wicg/event-timing",
+    "edDraft": "https://wicg.github.io/event-timing/",
+    "repository": "https://github.com/WICG/event-timing",
     "title": "Event Timing API",
     "status": "ED",
     "deliveredBy": [
@@ -1766,8 +1778,9 @@
   },
   "fetch": {
     "url": "https://fetch.spec.whatwg.org/",
+    "edDraft": "https://fetch.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/fetch",
-    "title": "Fetch",
+    "title": "Fetch Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -1802,7 +1815,8 @@
   },
   "frame-timing": {
     "url": "https://wicg.github.io/frame-timing/",
-    "repository": "https://github.com/wicg/frame-timing",
+    "edDraft": "https://wicg.github.io/frame-timing/",
+    "repository": "https://github.com/WICG/frame-timing",
     "title": "Frame Timing",
     "status": "ED",
     "deliveredBy": [
@@ -1816,8 +1830,9 @@
   },
   "fullscreen": {
     "url": "https://fullscreen.spec.whatwg.org/",
+    "edDraft": "https://fullscreen.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/fullscreen",
-    "title": "Fullscreen API",
+    "title": "Fullscreen API Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -2047,7 +2062,7 @@
     "milestones": {}
   },
   "html-media-capture": {
-    "url": "https://www.w3.org/TR/html-media-capture",
+    "url": "https://www.w3.org/TR/html-media-capture/",
     "edDraft": "https://w3c.github.io/html-media-capture/",
     "repository": "https://github.com/w3c/html-media-capture",
     "title": "HTML Media Capture",
@@ -2064,8 +2079,9 @@
   },
   "html": {
     "url": "https://html.spec.whatwg.org/multipage/",
+    "edDraft": "https://html.spec.whatwg.org/multipage/",
     "repository": "https://github.com/whatwg/html",
-    "title": "HTML",
+    "title": "HTML Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -2290,7 +2306,8 @@
   },
   "inputdevice": {
     "url": "https://wicg.github.io/input-device-capabilities/",
-    "repository": "https://github.com/wicg/input-device-capabilities",
+    "edDraft": "https://wicg.github.io/input-device-capabilities/",
+    "repository": "https://github.com/WICG/input-device-capabilities",
     "title": "Input Device Capabilities",
     "status": "ED",
     "deliveredBy": [
@@ -2381,7 +2398,9 @@
   },
   "is-input-pending": {
     "url": "https://wicg.github.io/is-input-pending/",
-    "title": "Early detection of input events",
+    "edDraft": "https://wicg.github.io/is-input-pending/",
+    "repository": "https://github.com/WICG/is-input-pending",
+    "title": "isInputPending",
     "status": "ED",
     "deliveredBy": [
       {
@@ -2402,7 +2421,8 @@
   },
   "js-self-profiling": {
     "url": "https://wicg.github.io/js-self-profiling/",
-    "repository": "https://github.com/wicg/js-self-profiling",
+    "edDraft": "https://wicg.github.io/js-self-profiling/",
+    "repository": "https://github.com/WICG/js-self-profiling",
     "title": "JS Self-Profiling API",
     "status": "ED",
     "deliveredBy": [
@@ -2438,8 +2458,9 @@
   },
   "layout-instability": {
     "url": "https://wicg.github.io/layout-instability/",
-    "repository": "https://github.com/wicg/layout-instability",
-    "title": "Layout Instability API",
+    "edDraft": "https://wicg.github.io/layout-instability/",
+    "repository": "https://github.com/WICG/layout-instability",
+    "title": "Layout Instability",
     "status": "ED",
     "deliveredBy": [
       {
@@ -2519,7 +2540,7 @@
     "milestones": {}
   },
   "me-media-timed-events": {
-    "url": "https://w3c.github.io/me-media-timed-events/",
+    "url": "https://www.w3.org/TR/media-timed-events/",
     "edDraft": "https://w3c.github.io/me-media-timed-events/",
     "repository": "https://github.com/w3c/me-media-timed-events",
     "title": "Media Timed Events",
@@ -2531,6 +2552,7 @@
       }
     ],
     "publisher": "W3C",
+    "informative": true,
     "milestones": {}
   },
   "media-capabilities": {
@@ -2579,6 +2601,7 @@
   },
   "media-playback-quality": {
     "url": "https://w3c.github.io/media-playback-quality/",
+    "edDraft": "https://w3c.github.io/media-playback-quality/",
     "repository": "https://github.com/w3c/media-playback-quality",
     "title": "Media Playback Quality",
     "status": "ED",
@@ -2814,7 +2837,8 @@
   },
   "native-file-system": {
     "url": "https://wicg.github.io/native-file-system/",
-    "repository": "https://github.com/wicg/native-file-system",
+    "edDraft": "https://wicg.github.io/native-file-system/",
+    "repository": "https://github.com/WICG/native-file-system",
     "title": "Native File System",
     "status": "ED",
     "deliveredBy": [
@@ -2827,9 +2851,11 @@
     "milestones": {}
   },
   "navigation-timing": {
-    "url": "https://www.w3.org/TR/navigation-timing/",
-    "title": "Navigation Timing",
-    "status": "REC",
+    "url": "https://www.w3.org/TR/navigation-timing-2/",
+    "edDraft": "https://w3c.github.io/navigation-timing/",
+    "repository": "https://github.com/w3c/navigation-timing",
+    "title": "Navigation Timing Level 2",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -2838,11 +2864,14 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2020-03-30"
+    }
   },
   "netinfo": {
     "url": "https://wicg.github.io/netinfo/",
-    "repository": "https://github.com/wicg/netinfo",
+    "edDraft": "https://wicg.github.io/netinfo/",
+    "repository": "https://github.com/WICG/netinfo",
     "title": "Network Information API",
     "status": "ED",
     "deliveredBy": [
@@ -2856,8 +2885,9 @@
   },
   "notifications": {
     "url": "https://notifications.spec.whatwg.org/",
+    "edDraft": "https://notifications.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/notifications",
-    "title": "Notifications API",
+    "title": "Notifications API Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -2988,7 +3018,8 @@
   },
   "page-lifecycle": {
     "url": "https://wicg.github.io/page-lifecycle/",
-    "repository": "https://github.com/wicg/page-lifecycle",
+    "edDraft": "https://wicg.github.io/page-lifecycle/",
+    "repository": "https://github.com/WICG/page-lifecycle",
     "title": "Page Lifecycle",
     "status": "ED",
     "deliveredBy": [
@@ -3001,9 +3032,11 @@
     "milestones": {}
   },
   "page-visibility": {
-    "url": "https://www.w3.org/TR/page-visibility/",
-    "title": "Page Visibility (Second Edition)",
-    "status": "REC",
+    "url": "https://www.w3.org/TR/page-visibility-2/",
+    "edDraft": "https://w3c.github.io/page-visibility/",
+    "repository": "https://github.com/w3c/page-visibility",
+    "title": "Page Visibility Level 2",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -3012,7 +3045,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "PR": "2019-12-30",
+      "REC": "2020-03-30"
+    }
   },
   "paint-timing": {
     "url": "https://www.w3.org/TR/paint-timing/",
@@ -3117,9 +3153,11 @@
     }
   },
   "performance-timeline": {
-    "url": "https://www.w3.org/TR/performance-timeline/",
-    "title": "Performance Timeline",
-    "status": "REC",
+    "url": "https://www.w3.org/TR/performance-timeline-2/",
+    "edDraft": "https://w3c.github.io/performance-timeline/",
+    "repository": "https://github.com/w3c/performance-timeline",
+    "title": "Performance Timeline Level 2",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -3128,7 +3166,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {},
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2020-06-30"
+    },
     "features": {
       "observer": {
         "title": "PerformanceObserver interface",
@@ -3157,7 +3198,8 @@
   },
   "permissions-request": {
     "url": "https://wicg.github.io/permissions-request/",
-    "repository": "https://github.com/wicg/permissions-request",
+    "edDraft": "https://wicg.github.io/permissions-request/",
+    "repository": "https://github.com/WICG/permissions-request",
     "title": "Requesting Permissions",
     "status": "ED",
     "deliveredBy": [
@@ -3171,7 +3213,8 @@
   },
   "permissions-revoke": {
     "url": "https://wicg.github.io/permissions-revoke/",
-    "repository": "https://github.com/wicg/permissions-revoke",
+    "edDraft": "https://wicg.github.io/permissions-revoke/",
+    "repository": "https://github.com/WICG/permissions-revoke",
     "title": "Relinquishing Permissions",
     "status": "ED",
     "deliveredBy": [
@@ -3251,15 +3294,15 @@
     "milestones": {}
   },
   "pointerlock": {
-    "url": "https://www.w3.org/TR/pointerlock",
+    "url": "https://www.w3.org/TR/pointerlock-2/",
     "edDraft": "https://w3c.github.io/pointerlock/",
     "repository": "https://github.com/w3c/pointerlock",
-    "title": "Pointer Lock",
-    "status": "REC",
+    "title": "Pointer Lock 2.0",
+    "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/WebPlatform/WG/",
-        "label": "Web Platform Working Group"
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3267,7 +3310,9 @@
     "milestones": {}
   },
   "portals": {
-    "url": "https://github.com/WICG/portals/blob/master/explainer.md",
+    "url": "https://wicg.github.io/portals/",
+    "edDraft": "https://wicg.github.io/portals/",
+    "repository": "https://github.com/WICG/portals",
     "title": "Portals",
     "status": "ED",
     "deliveredBy": [
@@ -3299,7 +3344,8 @@
   },
   "priority-hints": {
     "url": "https://wicg.github.io/priority-hints/",
-    "repository": "https://github.com/wicg/priority-hints",
+    "edDraft": "https://wicg.github.io/priority-hints/",
+    "repository": "https://github.com/WICG/priority-hints",
     "title": "Priority Hints",
     "status": "ED",
     "deliveredBy": [
@@ -3529,11 +3575,11 @@
     }
   },
   "resource-timing": {
-    "url": "https://www.w3.org/TR/resource-timing-1/",
+    "url": "https://www.w3.org/TR/resource-timing-2/",
     "edDraft": "https://w3c.github.io/resource-timing/",
     "repository": "https://github.com/w3c/resource-timing",
-    "title": "Resource Timing Level 1",
-    "status": "CR",
+    "title": "Resource Timing Level 2",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -3542,7 +3588,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2020-06-30"
+    }
   },
   "rfc7946": {
     "url": "https://tools.ietf.org/html/rfc7946",
@@ -3594,14 +3643,15 @@
     "milestones": {}
   },
   "scroll-animations": {
-    "url": "https://wicg.github.io/scroll-animations/",
-    "repository": "https://github.com/wicg/scroll-animations",
+    "url": "https://drafts.csswg.org/scroll-animations-1/",
+    "edDraft": "https://drafts.csswg.org/scroll-animations-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Scroll-linked Animations",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3687,7 +3737,7 @@
     "milestones": {}
   },
   "server-timing": {
-    "url": "https://www.w3.org/TR/server-timing",
+    "url": "https://www.w3.org/TR/server-timing/",
     "edDraft": "https://w3c.github.io/server-timing/",
     "repository": "https://github.com/w3c/server-timing",
     "title": "Server Timing",
@@ -3704,7 +3754,7 @@
   },
   "serviceworkers": {
     "url": "https://www.w3.org/TR/service-workers-1/",
-    "edDraft": "https://w3c.github.io/ServiceWorker/v1/",
+    "edDraft": "https://w3c.github.io/ServiceWorker/",
     "repository": "https://github.com/w3c/ServiceWorker",
     "title": "Service Workers 1",
     "status": "CR",
@@ -3793,13 +3843,15 @@
     "feature": "Speech synthesis"
   },
   "speech-api": {
-    "url": "https://w3c.github.io/speech-api/",
+    "url": "https://wicg.github.io/speech-api/",
+    "edDraft": "https://wicg.github.io/speech-api/",
+    "repository": "https://github.com/WICG/speech-api",
     "title": "Web Speech API",
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/speech-api/",
-        "label": "Speech API Community Group"
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
       }
     ],
     "publisher": "W3C",
@@ -3869,8 +3921,9 @@
   },
   "storage": {
     "url": "https://storage.spec.whatwg.org/",
+    "edDraft": "https://storage.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/storage",
-    "title": "Storage",
+    "title": "Storage Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -3892,8 +3945,9 @@
   },
   "streams": {
     "url": "https://streams.spec.whatwg.org/",
+    "edDraft": "https://streams.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/streams",
-    "title": "Streams",
+    "title": "Streams Standard",
     "status": "LS",
     "deliveredBy": [
       {
@@ -3935,6 +3989,7 @@
   "svg2": {
     "url": "https://www.w3.org/TR/SVG2/",
     "edDraft": "https://svgwg.org/svg2-draft/",
+    "repository": "https://github.com/w3c/svgwg",
     "title": "Scalable Vector Graphics (SVG) 2",
     "status": "CR",
     "deliveredBy": [
@@ -4059,7 +4114,8 @@
   },
   "trusted-types": {
     "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-    "repository": "https://github.com/w3c/webappsec-trusted-types/",
+    "edDraft": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+    "repository": "https://github.com/w3c/webappsec-trusted-types",
     "title": "Trusted Types",
     "status": "ED",
     "deliveredBy": [],
@@ -4288,6 +4344,8 @@
   },
   "video-rvfc": {
     "url": "https://wicg.github.io/video-rvfc/",
+    "edDraft": "https://wicg.github.io/video-rvfc/",
+    "repository": "https://github.com/WICG/video-rvfc",
     "title": "HTMLVideoElement.requestVideoFrameCallback()",
     "status": "ED",
     "deliveredBy": [
@@ -4350,7 +4408,8 @@
   },
   "viewportapi": {
     "url": "https://wicg.github.io/visual-viewport/",
-    "repository": "https://github.com/wicg/visual-viewport",
+    "edDraft": "https://wicg.github.io/visual-viewport/",
+    "repository": "https://github.com/WICG/visual-viewport",
     "title": "Visual Viewport API",
     "status": "ED",
     "deliveredBy": [
@@ -4482,7 +4541,7 @@
   "wasm-core": {
     "url": "https://www.w3.org/TR/wasm-core-1/",
     "edDraft": "https://webassembly.github.io/spec/core/bikeshed/",
-    "repository": "https://github.com/webassembly/spec",
+    "repository": "https://github.com/WebAssembly/spec",
     "title": "WebAssembly Core Specification",
     "status": "REC",
     "deliveredBy": [
@@ -4554,7 +4613,8 @@
   },
   "web-locks": {
     "url": "https://wicg.github.io/web-locks/",
-    "repository": "https://github.com/wicg/web-locks",
+    "edDraft": "https://wicg.github.io/web-locks/",
+    "repository": "https://github.com/WICG/web-locks",
     "title": "Web Locks API",
     "status": "ED",
     "deliveredBy": [
@@ -4568,6 +4628,7 @@
   },
   "web-share-target": {
     "url": "https://w3c.github.io/web-share-target/",
+    "edDraft": "https://w3c.github.io/web-share-target/",
     "repository": "https://github.com/w3c/web-share-target",
     "title": "Web Share Target API",
     "status": "ED",
@@ -4598,6 +4659,8 @@
   },
   "web-transport": {
     "url": "https://wicg.github.io/web-transport/",
+    "edDraft": "https://wicg.github.io/web-transport/",
+    "repository": "https://github.com/WICG/web-transport",
     "title": "WebTransport",
     "status": "ED",
     "deliveredBy": [
@@ -4612,7 +4675,7 @@
   "webaudio": {
     "url": "https://www.w3.org/TR/webaudio/",
     "edDraft": "https://webaudio.github.io/web-audio-api/",
-    "repository": "https://github.com/webaudio/web-audio-api",
+    "repository": "https://github.com/WebAudio/web-audio-api",
     "title": "Web Audio API",
     "status": "CR",
     "deliveredBy": [
@@ -4632,11 +4695,11 @@
     }
   },
   "webauthn": {
-    "url": "https://www.w3.org/TR/webauthn-1/",
+    "url": "https://www.w3.org/TR/webauthn-2/",
     "edDraft": "https://w3c.github.io/webauthn/",
     "repository": "https://github.com/w3c/webauthn",
-    "title": "Web Authentication:An API for accessing Public Key Credentials Level 1",
-    "status": "REC",
+    "title": "Web Authentication:An API for accessing Public Key Credentials Level 2",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webauthn/",
@@ -4645,12 +4708,16 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "WR/LC": "2019-12-30",
+      "CR": "2020-09-30",
+      "PR": "2020-12-30"
+    }
   },
   "webbluetooth": {
     "url": "https://webbluetoothcg.github.io/web-bluetooth/",
     "edDraft": "https://webbluetoothcg.github.io/web-bluetooth/",
-    "repository": "https://github.com/webbluetoothcg/web-bluetooth",
+    "repository": "https://github.com/WebBluetoothCG/web-bluetooth",
     "title": "Web Bluetooth",
     "status": "ED",
     "deliveredBy": [
@@ -4686,8 +4753,9 @@
   },
   "webgl": {
     "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+    "edDraft": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
     "repository": "https://github.com/KhronosGroup/WebGL",
-    "title": "WebGL Specification, Version 1.0",
+    "title": "WebGL Specification",
     "status": "REC",
     "deliveredBy": [
       {
@@ -4700,6 +4768,8 @@
   },
   "webgpu": {
     "url": "https://gpuweb.github.io/gpuweb/",
+    "edDraft": "https://gpuweb.github.io/gpuweb/",
+    "repository": "https://github.com/gpuweb/gpuweb",
     "title": "WebGPU",
     "status": "ED",
     "deliveredBy": [
@@ -4713,6 +4783,8 @@
   },
   "webhid": {
     "url": "https://wicg.github.io/webhid/",
+    "edDraft": "https://wicg.github.io/webhid/",
+    "repository": "https://github.com/WICG/webhid",
     "title": "WebHID API",
     "status": "ED",
     "deliveredBy": [
@@ -4752,6 +4824,7 @@
   },
   "webnfc": {
     "url": "https://w3c.github.io/web-nfc/",
+    "edDraft": "https://w3c.github.io/web-nfc/",
     "repository": "https://github.com/w3c/web-nfc",
     "title": "Web NFC API",
     "status": "ED",
@@ -4895,7 +4968,8 @@
   },
   "webusb": {
     "url": "https://wicg.github.io/webusb/",
-    "repository": "https://github.com/wicg/webusb",
+    "edDraft": "https://wicg.github.io/webusb/",
+    "repository": "https://github.com/WICG/webusb",
     "title": "WebUSB API",
     "status": "ED",
     "deliveredBy": [
@@ -4966,7 +5040,7 @@
     "feature": "Web workers"
   },
   "webxr-ar-module": {
-    "url": "https://www.w3.org/TR/webxr-ar-module/",
+    "url": "https://www.w3.org/TR/webxr-ar-module-1/",
     "edDraft": "https://immersive-web.github.io/webxr-ar-module/",
     "repository": "https://github.com/immersive-web/webxr-ar-module",
     "title": "WebXR Augmented Reality Module - Level 1",
@@ -4986,7 +5060,7 @@
     }
   },
   "webxr-gamepads-module": {
-    "url": "https://www.w3.org/TR/webxr-gamepads-module/",
+    "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
     "edDraft": "https://immersive-web.github.io/webxr-gamepads-module/",
     "repository": "https://github.com/immersive-web/webxr-gamepads-module",
     "title": "WebXR Gamepads Module - Level 1",
@@ -5175,8 +5249,9 @@
   },
   "xhr": {
     "url": "https://xhr.spec.whatwg.org/",
+    "edDraft": "https://xhr.spec.whatwg.org/",
     "repository": "https://github.com/whatwg/xhr",
-    "title": "XMLHttpRequest",
+    "title": "XMLHttpRequest Standard",
     "status": "LS",
     "deliveredBy": [
       {

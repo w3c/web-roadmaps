@@ -120,7 +120,7 @@
   "adpt": {
     "implementations": []
   },
-  "ambientlight": {
+  "ambient-light": {
     "implementations": [
       {
         "ua": "edge",
