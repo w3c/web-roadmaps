@@ -25,6 +25,9 @@
           <p>默认情况下，CSS的盒模型规定元素的任何内边距和边框都要在指定的宽度和高度之外设置和绘制。因此，一个方框的有效外部大小会随着填充和边框的使用而变化，这使得响应式布局的设计变得复杂，开发者希望根据屏幕的大小改变框（box）的大小。<a data-featureid="css-ui-box-sizing"><code>box-sizing</code></a>属性的 <code>border-box</code> 值告诉用户代理在指定的宽度和高度内设置内边距和边框，简化了响应式布局的设计。</p>
           <p><a data-featureid="css-flexbox">CSS 弹性盒式布局</a>和<a data-featureid="css-grid-1">CSS 网格布局</a>引入了两种新的布局模式，用于布局更复杂的应用程序。值得注意的是，通过允许在屏幕上重新排列元素的顺序，这两类新的布局模式可以保持内容本身（HTML 和 SVG）与其布局之间的清晰分离，而不必更改底层HTML。这对于需要调整用户界面和用户体验以适应屏幕和可用交互机制的移动设备尤为重要（另请参阅<a href="adaptation.zh.html">设备适配</a>）。</p>
           <p>弹性盒式布局专注于轴内排版，并采用更简单的自下而上的方式进行布局，而网格布局采用二维的排版方式，并使用自顶向下的方式进行布局。这两种布局方式互相补充，都将成为对 Web 开发者有用的工具。</p>
+          <p>
+            行间注（ruby）是标注在字词旁侧的小字号补充文本，常见于东亚文字的排版中，主要用于标音与释义。HTML 的 <a data-featureid="html/ruby">ruby</a> 元素可以为文本添加行间注。<a href="https://www.w3.org/TR/css-ruby-1/">CSS Ruby</a> 中定义的<a data-featureid="css-ruby/ruby-align">ruby-align</a>、<a data-featureid="css-ruby/ruby-position">ruby-position</a>和其他属性提供了一种控制 HTML <a data-featureid="html/ruby">ruby</a> 元素的渲染的方法。
+          </p>
         </div>
         <div data-feature="可下载字体">
           <p>字体在构建引人入胜的图形界面中扮演着重要的角色，但移动设备通常只包含有限的字体。<a data-featureid="woff2">WOFF</a>（Web 开放字体格式）通过使字体能够通过样式表很方便地自动下载来解决该限制，同时将下载字体的大小限制为呈现用户界面实际所需的大小。WOFF对移动设备友好，这归功于字体数据预处理和优化步骤，可减少字体数据结构的冗余，以及专门的熵压缩编码方案，即使在使用低端移动设备时也不需要使用过多的CPU或内存资源来解码。</p>

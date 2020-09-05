@@ -78,6 +78,7 @@
 
         <div data-feature="不同色彩空间的渲染">
           <p>新的移动屏幕可以通过使用比传统的sRGB色彩空间更广泛的色彩空间提供高分辨率的内容。为了适应宽色域显示，Web的所有图形系统都需要适应这些更广泛的色彩空间。<a data-featureid="css-color-space/icc-colors">CSS 色彩第四版</a> 提议定义在经典sRGB色彩空间之外的CSS色彩。同样，关于 <a data-featureid="color-canvas">canvas 的色彩管理</a>的工作将加强对 HTML <code>canvas</code> 的多色彩支持。</p>
+          <p>由<a href="https://www.w3.org/community/colorweb/">Web上的色彩社区组</a>开发的文档——<a data-featureid="colorweb">Web上的高动态范围和宽色域</a>分析了差距和可能的下一步计划，以在Web上支持高动态范围（HDR）和宽色域（WCG），例如允许网页中的 HDR 视频内容与周围或覆盖的图形和文本内容之间的色彩和亮度匹配的机制。</p>
         </div>
 
         <div data-feature="视频处理">
@@ -92,9 +93,6 @@
       <section>
         <h2 id="features-not-covered-by-ongoing-work">目前尚未覆盖的工作</h2>
         <dl>
-          <dt>色彩管理</dt>
-          <dd>为了确保正确呈现高动态范围（HDR）和宽色域的视频，内容提供商需要确定底层设备和浏览器是否有适当的支持。类似地，内容提供者需要一种机制来匹配颜色以混合 HDR 内容和标准动态范围（SDR）内容。<a href="https://www.w3.org/community/colorweb/">Web色彩社区组</a>聚集了来自不同行业的色彩专家，以改善 Web 上的色彩管理的状态。</dd>
-
           <dt>360°视频渲染的原生支持</dt>
           <dd>虽然已经有可能在 <code>&lt;video&gt;</code> 元素中呈现360°视频，但是对360°视频渲染的集成支持将允许隐藏底层自适应流媒体逻辑到应用的复杂性，让浏览器本身能够优化流媒体和渲染。</dd>
 
