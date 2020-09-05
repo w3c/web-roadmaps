@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/web-animations-1/",
   "impl": {
     "caniuse": "web-animation",
     "chromestatus": 5650817352728576,

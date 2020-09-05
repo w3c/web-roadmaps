@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/is-input-pending/",
-  "title": "Early detection of input events",
   "impl": {
     "chromestatus": 5719830432841728
   }

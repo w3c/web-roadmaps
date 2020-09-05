@@ -1,5 +1,4 @@
 {
-    "url": "https://www.w3.org/TR/accelerometer/",
     "impl": {
         "caniuse": "accelerometer",
         "chromestatus": 5698781827825664

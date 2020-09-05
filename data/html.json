@@ -1,6 +1,4 @@
 {
-  "url": "https://html.spec.whatwg.org/multipage/",
-  "title": "HTML",
   "features": {
     "template": {
       "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",

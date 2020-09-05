@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/magnetometer/",
   "impl": {
     "caniuse": "magnetometer",
     "chromestatus": 5698781827825664

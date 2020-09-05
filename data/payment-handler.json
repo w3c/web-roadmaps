@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/payment-handler/",
   "impl": {
     "chromestatus": 5160285237149696,
     "mdn": "api.PaymentManager"

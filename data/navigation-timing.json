@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/navigation-timing/",
   "impl": {
     "caniuse": "nav-timing",
     "chromestatus": 5584144679567360,

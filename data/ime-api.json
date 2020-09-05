@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/ime-api/",
   "impl": {
     "caniuse": "ime",
     "chromestatus": 6366722080636928

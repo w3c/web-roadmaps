@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/picture-in-picture/",
   "impl": {
     "caniuse": "picture-in-picture",
     "chromestatus": 5729206566649856,

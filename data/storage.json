@@ -1,6 +1,4 @@
 {
-  "url": "https://storage.spec.whatwg.org/",
-  "title": "Storage",
   "impl": {
     "mdn": "api.StorageManager"
   },

@@ -1,6 +1,4 @@
 {
-  "url": "https://xhr.spec.whatwg.org/",
-  "title": "XMLHttpRequest",
   "impl": {
     "caniuse": "xhr2"
   }

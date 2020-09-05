@@ -1,6 +1,4 @@
 {
-  "url": "https://wicg.github.io/background-fetch/",
-  "title": "Background Fetch",
   "impl": {
     "chromestatus": 5712608971718656
   }

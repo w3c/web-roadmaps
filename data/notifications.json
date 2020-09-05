@@ -1,6 +1,4 @@
 {
-  "url": "https://notifications.spec.whatwg.org/",
-  "title": "Notifications API",
   "impl": {
     "caniuse": "notifications",
     "chromestatus": 5064350557536256,

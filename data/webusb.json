@@ -1,5 +1,4 @@
 {
-  "url": "https://wicg.github.io/webusb/",
   "impl": {
     "caniuse": "webusb",
     "chromestatus": 5651917954875392,

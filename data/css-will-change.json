@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/css-will-change-1/",
   "impl": {
     "caniuse": "will-change",
     "chromestatus": 5954199330226176,

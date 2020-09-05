@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/longtasks-1/",
   "impl": {
     "chromestatus": 5738471184400384,
     "mdn": "api.PerformanceLongTaskTiming"

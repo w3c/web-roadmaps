@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/proximity/",
   "impl": {
     "caniuse": "proximity",
     "other": [

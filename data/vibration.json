@@ -1,5 +1,4 @@
 {
-  "url": "https://www.w3.org/TR/vibration/",
   "impl": {
     "caniuse": "vibration",
     "chromestatus": 5698768766763008,

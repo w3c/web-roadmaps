@@ -1,6 +1,4 @@
 {
-  "url" : "https://www.w3.org/TR/FileAPI/",
-  "title" : "File API",
   "impl": {
     "caniuse": "fileapi"
   }
