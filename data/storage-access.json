@@ -1,0 +1,29 @@
+{
+  "wgs": [
+    {
+      "url": "https://www.w3.org/community/privacycg/",
+      "label": "Privacy Community Group"
+    }
+  ],
+  "publisher": "W3C",
+  "impl": {
+    "chromestatus": 5612590694662144    
+  },
+  "features": {
+    "hasStorageAccess": {
+      "url": "#dom-document-hasstorageaccess",
+      "title": "hasStorageAccess method",
+      "impl": {
+        "mdn": "api.Document.hasStorageAccess"
+      }
+    },
+    "requestStorageAccess": {
+      "url": "#dom-document-requeststorageaccess",
+      "title": "requestStorageAccess method",
+      "impl": {
+        "mdn": "api.Document.requestStorageAccess"
+      }
+    }
+  },
+  "featuresCoverage": "full"
+}
