@@ -8,11 +8,45 @@
     }
   ],
   "features": {
+    "pointer": {
+      "title": "pointer feature",
+      "url": "#pointer",
+      "impl": {
+        "caniuse": "css-media-interaction",
+        "mdn": "css.at-rules.media.pointer"
+      }
+    },
+    "hover": {
+      "title": "hover feature",
+      "url": "#hover",
+      "impl": {
+        "caniuse": "css-media-interaction",
+        "mdn": "css.at-rules.media.hover"
+      }
+    },
     "prefers-reduced-motion": {
       "title": "prefers-reduced-motion feature",
       "url": "#prefers-reduced-motion",
       "impl": {
-        "edgestatus": "Media Queries: prefers-reduced-motion"
+        "chromestatus": 5597964353404928,
+        "edgestatus": "Media Queries: prefers-reduced-motion",
+        "mdn": "css.at-rules.media.prefers-reduced-motion"
+      }
+    },
+    "prefers-color-scheme": {
+      "title": "prefers-color-scheme feature",
+      "url": "#prefers-color-scheme",
+      "impl": {
+        "caniuse": "prefers-color-scheme",
+        "chromestatus": 5109758977638400,
+        "mdn": "css.at-rules.media.prefers-color-scheme"
+      }
+    },
+    "prefers-contrast": {
+      "title": "prefers-contrast",
+      "url": "#prefers-contrast",
+      "impl": {
+        "mdn": "css.at-rules.media.prefers-contrast"
       }
     }
   }

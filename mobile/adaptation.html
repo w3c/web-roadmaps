@@ -21,6 +21,16 @@
         <p>As a complementary approach, the <a data-featureid="srcset"><code>srcset</code> attribute</a>, specified by the <a href="https://whatwg.org/">WHATWG</a> and also published as an extension to HTML, let Web developers define the various device pixel ratios of an image, letting the browser pick the best choice for the pixel density of the screen.</p>
         <p><a data-featureid="svg11">SVG</a>, which lets define images that can be scaled up and down without any loss of quality, is another critical tool to the development of Web applications that adapt to the resolution of the underlying device.</p>
         </div>
+
+        <div data-feature="JS-based adaptation">
+          <p><dfn id="web-components">Web components</dfn> are a set of features that together allow applications to encapsulate their logic in re-usable components. Primary technologies used to create Web components:</p>
+          <ul>
+            <li>The <a data-featureid="html/template"><code>&lt;template&gt;</code> element</a> allows to declare fragments of HTML that can be cloned and inserted in the document by script.</li>
+            <li><a data-featureid="html/custom-elements">Custom elements</a> provides a way for authors to build their own fully-featured DOM elements.</li>
+            <li><a data-featureid="html/js-module">Integration with the JavaScript module system</a> lets authors leverage JavaScript modules in components.</li>
+            <li>The <a data-featureid="dom/shadow">shadow DOM</a> allows the web browser to render DOM elements without putting them into the main DOM document tree.</li>
+          </ul>
+        </div>
       </section>
 
       <section class="featureset in-progress">
@@ -28,22 +38,25 @@
         <div data-feature="CSS-based adaptation">
           <p><a data-featureid="css-device-adapt">CSS Device Adaptation</a> defines a set of CSS directives to define the size on which this layout should be based, relatively to the size of the underlying device — specifying what has been implemented using the <code>&lt;meta name="viewport"&gt;</code> element so far.</p>
           <p><a data-featureid="css-size-adjust">CSS Mobile Text Size Adjustment</a> lets text adapt to zoomed parts of a page.</p>
-          <p><a data-featureid="mediaqueries4">Media Queries Level 4</a> adds the availability and type of a pointing device, as well as the ability to hover over elements, to the list of capabilities that may be used to adapt the layout and behavior of a Web page. Moreover, <a data-featureid="mediaqueries5">Media Queries Level 5</a> lets developers specify media queries that react to the ambient luminosity and to <a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">script-defined variables</a>, making it easier to cater for more complex adaptation rules in the overall logic of the application.</p>
+          <p>CSS Media Queries Level 4 and 5 add several relevant hooks to adapt the user interface in mobile contexts, including:</p>
+          <ul>
+            <li>The availability and type of a pointing device through the <a data-featureid="mediaqueries5/pointer"><code>pointer</code></a> feature (and its companion <code>any-pointer</code> feature).</li>
+            <li>The ability to <em>hover</em> elements through the <a data-featureid="mediaqueries5/hover"><code>hover</code></a> feature.</li>
+            <li>The ability to react to ambient luminosity changes or to follow users' preferences for a light or dark theme through the <a data-featureid="mediaqueries5/prefers-contrast"><code>prefers-contrast</code></a> and <a data-featureid="mediaqueries5/prefers-color-scheme"><code>prefers-color-scheme</code></a> features.</li>
+            <li>The need to reduce the amount of animations in the page, e.g. to save battery, through the <a data-featureid="mediaqueries5/prefers-reduced-motion"><code>prefers-reduced-motion</code> feature.</a>
+            <li>The ability to react to <a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">script-defined variables</a>, making it easier to cater for more complex adaptation rules in the overall logic of the application.</li>
+          </ul>
         </div>
 
         <div data-feature="JS-based adaptation">
-          <p><strong>Web components</strong> are a set of features that together allow applications to encapsulate their logic in re-usable components. Primary technologies used to create Web components:</p>
+          <p>Specific CSS technologies can target and style <a href="#web-components">Web components</a>:</p>
           <ul>
-            <li>The <a data-featureid="html/template"><code>&lt;template&gt;</code> element</a> allows to declare fragments of HTML that can be cloned and inserted in the document by script.</li>
-            <li><a data-featureid="html/custom-elements">Custom elements</a> provides a way for authors to build their own fully-featured DOM elements.</li>
-            <li><a data-featureid="html/js-module">Integration with the JavaScript module system</a> lets authors leverage JavaScript modules in components.</li>
-            <li>The <a data-featureid="dom/shadow">shadow DOM</a> allows the web browser to render DOM elements without putting them into the main DOM document tree.</li>
             <li><a data-featureid="css-scoping">CSS Scoping</a> lets authors define default styles for custom elements.</li>
             <li><a data-featureid="css-shadow-parts">CSS Shadow Parts</a> enables flagging elements in a shadow tree and styling them in the outside page, thus providing an easy-to-use mechanism to customize styles of custom elements as needed.</li>
             <li><a data-featureid="construct-stylesheets">Constructable Stylesheet Objects</a> provides an API for creating stylesheet objects from script without needing style elements, making adding styles to web components more convenient and performant.</li>
           </ul>
 
-          <p>As described in <a href="https://wicg.github.io/cq-usecases/">Use Cases and Requirements for Element Queries</a>, developers need to control the layout of an individual element relative to the size of its container to create complex responsive applications that adapt to a wide variety of devices and contexts. Media queries and the <code>resize</code> event on the <code>window</code> element only allow developers to adjust the layout of a component relative to the viewport size. <a data-featureid="resize-observer">Resize Observer</a> defines an interface for observing changes to an element's size and responding to these changes, allowing to design responsive Web components that can be used across applications and devices.</p>
+          <p>As described in <a href="https://wicg.github.io/cq-usecases/">Use Cases and Requirements for Element Queries</a>, developers need to control the layout of an individual element relative to the size of its container to create complex responsive applications that adapt to a wide variety of devices and contexts. Media queries and the <code>resize</code> event on the <code>window</code> element only allow developers to adjust the layout of a component relative to the viewport size. <a data-featureid="resize-observer">Resize Observer</a> defines an interface for observing changes to an element's size and responding to these changes, allowing to design responsive <a href="#web-components">Web components</a> that can be used across applications and devices.</p>
         </div>
 
         <div data-feature="Server-side adaptation">
@@ -57,6 +70,10 @@
         <h2>Exploratory work</h2>
         <div data-feature="JS-based adaptation">
           <p>Most mobile devices feature on-screen keyboards for user input. They also commonly let the user pinch-zoom into a page. Both of these features preserve the <em>layout viewport</em> (what the web page uses when laying out its user interface), so as not to clutter the screen with <code>position: fixed</code> elements. The <a data-featureid="viewportapi">Visual Viewport API</a> provides developers with a way to query and interact with the properties of the <em>visual viewport</em> (the box on the page that the user can currently see), and to be notified when these properties change.</p>
+        </div>
+
+        <div data-feature="Server-side adaptation">
+          <p>The <a data-featureid="ua-client-hints">User-Agent Client Hints</a> proposal defines a set of client hints that provide developers with the ability to perform agent-based content negotiation when necessary, while avoiding the historical baggage and passive fingerprinting surface exposed by the <code>User-Agent</code> header, which was at the basis of <a href="#server-side-adaptation">server-side adaptation</a>.</p>
         </div>
       </section>
     </main>
