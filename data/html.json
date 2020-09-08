@@ -23,7 +23,8 @@
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system",
       "title": "Integration with the JavaScript module system",
       "impl": {
-        "mdn": "html.elements.script.module"
+        "caniuse": "es6-module",
+        "mdn": "html.elements.script.type.module"
       }
     },
 
