@@ -22912,6 +22912,23 @@
       }
     ]
   },
+  "manifest-app-info": {
+    "implementations": [],
+    "features": {
+      "categories": {
+        "implementations": []
+      },
+      "description": {
+        "implementations": []
+      },
+      "iarc_rating_id": {
+        "implementations": []
+      },
+      "screenshots": {
+        "implementations": []
+      }
+    }
+  },
   "mapbox-vector-tiles": {
     "implementations": []
   },

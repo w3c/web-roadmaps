@@ -2518,6 +2518,40 @@
       "CR": "2019-12-30"
     }
   },
+  "manifest-app-info": {
+    "url": "https://www.w3.org/TR/manifest-app-info/",
+    "edDraft": "https://w3c.github.io/manifest-app-info/",
+    "repository": "https://github.com/w3c/manifest-app-info",
+    "title": "Web App Manifest - Application Information",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {},
+    "features": {
+      "categories": {
+        "title": "categories member",
+        "url": "#categories-member"
+      },
+      "description": {
+        "title": "description member",
+        "url": "#description-member"
+      },
+      "iarc_rating_id": {
+        "title": "iarc_rating_id member",
+        "url": "#iarc_rating_id-member"
+      },
+      "screenshots": {
+        "title": "screenshots member",
+        "url": "#screenshots-member"
+      }
+    }
+  },
   "mapbox-vector-tiles": {
     "url": "https://docs.mapbox.com/vector-tiles/specification/",
     "title": "Mapbox Vector Tiles",
