@@ -3935,6 +3935,44 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "storage-access": {
+    "url": "https://privacycg.github.io/storage-access/",
+    "edDraft": "https://privacycg.github.io/storage-access/",
+    "repository": "https://github.com/privacycg/storage-access",
+    "title": "The Storage Access API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/privacycg/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "hasStorageAccess": {
+        "title": "hasStorageAccess method",
+        "url": "#dom-document-hasstorageaccess"
+      },
+      "requestStorageAccess": {
+        "title": "requestStorageAccess method",
+        "url": "#dom-document-requeststorageaccess"
+      }
+    }
+  },
+  "storage-buckets": {
+    "url": "https://github.com/WICG/storage-buckets/blob/gh-pages/explainer.md",
+    "title": "Storage Buckets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "storage": {
     "url": "https://storage.spec.whatwg.org/",
     "edDraft": "https://storage.spec.whatwg.org/",

@@ -32128,6 +32128,423 @@
   "stats-bp": {
     "implementations": []
   },
+  "storage-access": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5612590694662144",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5612590694662144",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5612590694662144",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5612590694662144"
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5612590694662144",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "edgestatus",
+        "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/storageaccessapi/",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "firefox_android",
+        "status": "experimental",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "flag": true,
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false,
+        "selected": true
+      }
+    ],
+    "features": {
+      "hasStorageAccess": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "edge",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          }
+        ]
+      },
+      "requestStorageAccess": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "edge",
+            "status": "indevelopment",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5612590694662144",
+            "guess": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          }
+        ]
+      }
+    }
+  },
+  "storage-buckets": {
+    "implementations": [
+      {
+        "ua": "firefox",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5739224579964928",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5739224579964928",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5739224579964928",
+        "selected": true
+      }
+    ]
+  },
   "storage": {
     "implementations": [
       {
