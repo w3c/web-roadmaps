@@ -57,6 +57,8 @@
 
         <div data-feature="State transition">
           <p>Applications running on mobile devices can go through different application states, from running to being idle, paused, stopped, discarded, or terminated. Transitions between these states are triggered by the underlying operating system, and hidden from web applications. The <a data-featureid="page-lifecycle">Page Lifecycle</a> proposal seeks to expose application state transitions to applications so that these applications can persist/restore state, enable/disable use of network, etc.</p>
+
+          <p>The <a data-featureid="idle-detection">User Idle Detection</a> document proposes an API for Applications to detect when a user becomes idle or when the screen is locked. Applications may use that information to notify other users that the current user is unreachable (e.g. in chat applications), show timely alerts or pause media to save bandwidth when the user is not present.</p>
         </div>
 
         <div data-feature="Seamless navigation">
@@ -67,6 +69,10 @@
           <p>The <a data-featureid="background-sync">Web Background Synchronization</a> specification builds on top of Service Workers to enable Web applications to keep their user data up to date seamlessly, by running network operations in the background, adjusting to possibly unreliable connections that users often experience on mobile devices.</p>
 
           <p><a data-featureid="background-fetch">Background Fetch</a> defines a similar service worker based download and upload mechanism in the background, but allows the background operation to continue, with user visibility, even if the user closes all windows and workers. The specification is specifically tailored to enable downloads/uploads of large assets (podcasts, movies, textures).</p>
+        </div>
+
+        <div data-feature="MiniApps">
+          <p><dfn>MiniApps</dfn> are applications that run in a hosting application with hybrid native/web capabilities. MiniApps use Web technologies (CSS, JavaScript) although a few common Web technologies are not available for performance or security reasons (e.g. MiniApps usually cannot access the DOM). The runtime also features additional APIs that are more traditionally found in native applications (e.g. contacts API, maps) or application frameworks (e.g. views, router). The trust model of MiniApps also differs from regular Web applications as MiniApps usually need to be reviewed and approved by the hosting platform before users can access them. The <a data-featureid="mini-app-white-paper">MiniApp Standardization White Paper</a> reviews potential standardization areas for MiniApps. The MiniApp Community Group incubates more specific proposals (<a href="https://w3c.github.io/miniapp/specs/uri/">URI Scheme</a>, <a href="https://w3c.github.io/miniapp/specs/lifecycle/">Lifecycle</a>, <a href="https://w3c.github.io/miniapp/specs/manifest/">Manifest</a>, <a href="https://w3c.github.io/miniapp/specs/packaging/">Packaging</a>).</p>
         </div>
       </section>
 
