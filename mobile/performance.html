@@ -130,6 +130,8 @@
 
         <div data-feature="DOM Updates">
           <p>Web applications are dynamic in essence and need to manipulate the DOM significantly to present rich content. Problem is updates to the DOM can cause <em>jank</em> (noticeable delay in visual updates) because the rendering phase is updated synchronously with user interactions and <code>requestAnimationFrame</code> scripts. The <a data-featureid="display-locking">Display Locking</a> proposal introduces a new concept whereby developers can lock a DOM element and its subtree, preventing visual updates while the DOM gets updated. The developer will then be able to unlock the element, asynchronously, triggering the visual updates of the modified subtree without causing the rest of the page to jank.</p>
+
+          <p>Similarly, an early proposal to add <a data-featureid="request-post-animation-frame"><code>requestPostAnimationFrame</code></a> would give applications a hook into the earliest possible time <em>after</em> last frame has been rendered, and thus allow them to prepare for the next rendering update. The proposal could also be useful to run code at a time when the page layout is guaranteed to be clean, e.g. to avoid synchronous layouts when modifying a CSS property through code and then querying the size or position of the underlying element.</p>
         </div>
 
         <div data-feature="JS performance">
@@ -138,6 +140,10 @@
 
         <div data-feature="Responsiveness">
           <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending">Early detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yielding to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
+
+          <p>Applications that need to run long tasks may also want to regain control after yielding to the event loop <em>before</em> any other same or lower priority tasks are allowed to run. The <a data-featureid="main-thread-scheduling/yield"><code>scheduler.yield()</code></a> function is being proposed to solve that issue.</p>
+
+          <p>Generically speaking, applications have little control over task piorities when they schedule them. The <a data-featureid="main-thread-scheduling/postTask"><code>scheduler.postTask()</code></a> proposal would created a unified API to schedule prioritized work.</p>
         </div>
 
         <div data-feature="Infinite scrolling">
