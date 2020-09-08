@@ -1,0 +1,7 @@
+{
+    "url": "https://github.com/WICG/performance-measure-memory",
+    "title": "performance.measureMemory API",
+    "impl": {
+      "chromestatus": 5685965186138112
+    }
+}
