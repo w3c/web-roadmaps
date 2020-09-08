@@ -18988,6 +18988,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19002,6 +19003,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19016,6 +19018,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19030,6 +19033,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19044,6 +19048,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19058,6 +19063,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19072,6 +19078,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19086,6 +19093,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19114,6 +19122,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19128,6 +19137,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -19215,6 +19225,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19226,6 +19237,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19237,6 +19249,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19248,6 +19261,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19259,6 +19273,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19270,6 +19285,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19281,6 +19297,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19292,6 +19309,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19303,6 +19321,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true
@@ -19314,6 +19333,7 @@
         "guess": true,
         "features": [
           "template",
+          "js-module",
           "2dcontext"
         ],
         "partial": true,
@@ -19325,6 +19345,7 @@
         "source": "mdn",
         "guess": true,
         "features": [
+          "js-module",
           "2dcontext"
         ],
         "partial": true,
@@ -20061,65 +20082,190 @@
             "ua": "edge",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "firefox",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "safari",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "opera",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "chrome_android",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
           },
           {
             "ua": "firefox_android",
             "status": "shipped",
             "source": "caniuse",
-            "guess": true,
-            "partial": true,
+            "href": "https://caniuse.com/#feat=es6-module",
             "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=es6-module",
+            "selected": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=es6-module",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
           },
           {
             "ua": "uc_android",
@@ -20134,16 +20280,14 @@
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "qq_android",
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "baidu_android",
@@ -20256,16 +20400,14 @@
             "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "opera_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           }
         ]
       },
@@ -23561,16 +23703,1544 @@
     }
   },
   "mediaqueries5": {
-    "implementations": [],
+    "implementations": [
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-color-scheme"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "qq_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "baidu_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "prefers-reduced-motion",
+          "prefers-color-scheme"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "prefers-reduced-motion",
+          "prefers-color-scheme"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "prefers-reduced-motion",
+          "prefers-color-scheme"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "prefers-reduced-motion",
+          "prefers-color-scheme"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "firefox",
+        "status": "experimental",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "pointer",
+          "hover",
+          "prefers-reduced-motion",
+          "prefers-color-scheme",
+          "prefers-contrast"
+        ],
+        "flag": true,
+        "partial": true
+      }
+    ],
     "features": {
+      "pointer": {
+        "implementations": [
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
+      "hover": {
+        "implementations": [
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-media-interaction",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "notes": [
+              "Before Chrome 41, the implementation was buggy and reported <code>(hover: none)</code> on non-touch-based computers with a mouse/trackpad. See <a href='https://crbug.com/441613'>bug 441613</a>."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "notes": [
+              "Before Chrome 41, the implementation was buggy and reported <code>(hover: none)</code> on non-touch-based computers with a mouse/trackpad. See <a href='https://crbug.com/441613'>bug 441613</a>."
+            ],
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/hover",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
       "prefers-reduced-motion": {
         "implementations": [
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5597964353404928",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5597964353404928",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5597964353404928",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5597964353404928"
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5597964353404928",
+            "selected": true
+          },
           {
             "ua": "edge",
             "status": "",
             "source": "edgestatus",
             "href": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediaqueriesprefersreducedmotion/",
             "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
+      "prefers-color-scheme": {
+        "implementations": [
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme"
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5109758977638400",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5109758977638400",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5109758977638400"
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5109758977638400"
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5109758977638400"
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "firefox_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
+          },
+          {
+            "ua": "webview_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          }
+        ]
+      },
+      "prefers-contrast": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "flag": true,
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "opera",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "webview_android",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "qq_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "baidu_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "mdn",
+            "guess": true,
+            "flag": true,
+            "partial": true
           }
         ]
       }
@@ -32132,6 +33802,47 @@
   },
   "tvtuner": {
     "implementations": []
+  },
+  "ua-client-hints": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "flag": true,
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5995832180473856",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "flag": true,
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5995832180473856",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5995832180473856",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5995832180473856",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5995832180473856",
+        "selected": true
+      }
+    ]
   },
   "uaag20-reference": {
     "implementations": []

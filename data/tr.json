@@ -7,12 +7,12 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/groups/wg/webrtc",
-        "label": "Web Real-Time Communications Working Group"
-      },
-      {
         "url": "https://www.w3.org/das/",
         "label": "Devices and Sensors Working Group"
+      },
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
       }
     ],
     "publisher": "W3C",
@@ -2699,9 +2699,25 @@
     "publisher": "W3C",
     "milestones": {},
     "features": {
+      "pointer": {
+        "title": "pointer feature",
+        "url": "#pointer"
+      },
+      "hover": {
+        "title": "hover feature",
+        "url": "#hover"
+      },
       "prefers-reduced-motion": {
         "title": "prefers-reduced-motion feature",
         "url": "#prefers-reduced-motion"
+      },
+      "prefers-color-scheme": {
+        "title": "prefers-color-scheme feature",
+        "url": "#prefers-color-scheme"
+      },
+      "prefers-contrast": {
+        "title": "prefers-contrast",
+        "url": "#prefers-contrast"
       }
     }
   },
@@ -4219,6 +4235,21 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "ua-client-hints": {
+    "url": "https://wicg.github.io/ua-client-hints/",
+    "edDraft": "https://wicg.github.io/ua-client-hints/",
+    "repository": "https://github.com/WICG/ua-client-hints",
+    "title": "User-Agent Client Hints",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "uaag20-reference": {
     "url": "https://www.w3.org/TR/UAAG20-Reference/",
     "title": "UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0",
@@ -4586,12 +4617,12 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/Style/CSS/",
-        "label": "Cascading Style Sheets (CSS) Working Group"
-      },
-      {
         "url": "https://www.w3.org/Graphics/SVG/WG/",
         "label": "SVG Working Group"
+      },
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
       }
     ],
     "publisher": "W3C",
