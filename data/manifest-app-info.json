@@ -1,0 +1,33 @@
+{
+  "features": {
+    "categories": {
+      "url": "#categories-member",
+      "title": "categories member",
+      "impl": {
+        "mdn": "html.manifest.categories"
+      }
+    },
+    "description": {
+      "url": "#description-member",
+      "title": "description member",
+      "impl": {
+        "mdn": "html.manifest.description"
+      }
+    },
+    "iarc_rating_id": {
+      "url": "#iarc_rating_id-member",
+      "title": "iarc_rating_id member",
+      "impl": {
+        "mdn": "html.manifest.iarc_rating_id"
+      }
+    },
+    "screenshots": {
+      "url": "#screenshots-member",
+      "title": "screenshots member",
+      "impl": {
+        "mdn": "html.manifest.screenshots"
+      }
+    }
+  },
+  "featuresCoverage": "full"
+}
