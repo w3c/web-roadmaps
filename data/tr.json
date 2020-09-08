@@ -3703,7 +3703,7 @@
     "milestones": {}
   },
   "secondscreen-openscreen": {
-    "url": "https://github.com/webscreens/openscreenprotocol",
+    "url": "https://w3c.github.io/openscreenprotocol/",
     "title": "Open Screen Protocol",
     "status": "ED",
     "deliveredBy": [
