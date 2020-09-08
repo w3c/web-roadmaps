@@ -3168,6 +3168,19 @@
       "REC": "2020-06-30"
     }
   },
+  "performance-measure-memory": {
+    "url": "https://github.com/WICG/performance-measure-memory",
+    "title": "performance.measureMemory API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "performance-timeline": {
     "url": "https://www.w3.org/TR/performance-timeline-2/",
     "edDraft": "https://w3c.github.io/performance-timeline/",
