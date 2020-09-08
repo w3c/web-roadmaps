@@ -71,6 +71,10 @@
           <p><a data-featureid="background-fetch">Background Fetch</a> defines a similar service worker based download and upload mechanism in the background, but allows the background operation to continue, with user visibility, even if the user closes all windows and workers. The specification is specifically tailored to enable downloads/uploads of large assets (podcasts, movies, textures).</p>
         </div>
 
+        <div data-feature="Shared resources">
+          <p>An application may run multiple workers at once, and multiple instances of an application may be running concurrently in separate windows. The <a data-featureid="web-locks">Web Locks API</a> allows such an application to acquire locks and coordinate usage of shared resources, such as storage, across instances.</p>
+        </div>
+
         <div data-feature="MiniApps">
           <p><dfn>MiniApps</dfn> are applications that run in a hosting application with hybrid native/web capabilities. MiniApps use Web technologies (CSS, JavaScript) although a few common Web technologies are not available for performance or security reasons (e.g. MiniApps usually cannot access the DOM). The runtime also features additional APIs that are more traditionally found in native applications (e.g. contacts API, maps) or application frameworks (e.g. views, router). The trust model of MiniApps also differs from regular Web applications as MiniApps usually need to be reviewed and approved by the hosting platform before users can access them. The <a data-featureid="mini-app-white-paper">MiniApp Standardization White Paper</a> reviews potential standardization areas for MiniApps. The MiniApp Community Group incubates more specific proposals (<a href="https://w3c.github.io/miniapp/specs/uri/">URI Scheme</a>, <a href="https://w3c.github.io/miniapp/specs/lifecycle/">Lifecycle</a>, <a href="https://w3c.github.io/miniapp/specs/manifest/">Manifest</a>, <a href="https://w3c.github.io/miniapp/specs/packaging/">Packaging</a>).</p>
         </div>
