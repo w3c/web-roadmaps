@@ -1,0 +1,17 @@
+{
+  "url": "https://github.com/WICG/main-thread-scheduling",
+  "title": "Main-thread Scheduling API",
+  "features": {
+    "yield": {
+      "url": "https://github.com/WICG/main-thread-scheduling/blob/master/YieldAndContinuation.md",
+      "title": "scheduler.yield()"
+    },
+    "postTask": {
+      "url": "https://github.com/WICG/main-thread-scheduling/blob/master/PrioritizedPostTask.md",
+      "title": "scheduler.postTask()",
+      "impl": {
+        "chromestatus": 6031161734201344
+      }
+    }
+  }
+}
