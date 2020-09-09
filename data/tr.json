@@ -2518,6 +2518,29 @@
       "CR": "2019-12-30"
     }
   },
+  "main-thread-scheduling": {
+    "url": "https://github.com/WICG/main-thread-scheduling",
+    "title": "Main-thread Scheduling API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "yield": {
+        "title": "scheduler.yield()",
+        "url": "https://github.com/WICG/main-thread-scheduling/blob/master/YieldAndContinuation.md"
+      },
+      "postTask": {
+        "title": "scheduler.postTask()",
+        "url": "https://github.com/WICG/main-thread-scheduling/blob/master/PrioritizedPostTask.md"
+      }
+    }
+  },
   "manifest-app-info": {
     "url": "https://www.w3.org/TR/manifest-app-info/",
     "edDraft": "https://w3c.github.io/manifest-app-info/",
@@ -3570,6 +3593,19 @@
     "milestones": {
       "PR": "2020-12-30"
     }
+  },
+  "request-post-animation-frame": {
+    "url": "https://github.com/WICG/request-post-animation-frame/blob/master/explainer.md",
+    "title": "requestPostAnimationFrame",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
   },
   "requestidlecallback": {
     "url": "https://www.w3.org/TR/requestidlecallback/",

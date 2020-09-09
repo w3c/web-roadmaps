@@ -22912,6 +22912,107 @@
       }
     ]
   },
+  "main-thread-scheduling": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "postTask"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "postTask"
+        ],
+        "partial": true,
+        "selected": true
+      }
+    ],
+    "features": {
+      "yield": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          }
+        ]
+      },
+      "postTask": {
+        "implementations": [
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6031161734201344",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6031161734201344",
+            "selected": true
+          },
+          {
+            "ua": "firefox",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6031161734201344",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6031161734201344",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6031161734201344",
+            "selected": true
+          },
+          {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "partial": true
+          }
+        ]
+      }
+    }
+  },
   "manifest-app-info": {
     "implementations": [],
     "features": {
@@ -29045,6 +29146,9 @@
         "selected": true
       }
     ]
+  },
+  "request-post-animation-frame": {
+    "implementations": []
   },
   "requestidlecallback": {
     "implementations": [
