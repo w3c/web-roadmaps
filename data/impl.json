@@ -21657,6 +21657,45 @@
   "i3s": {
     "implementations": []
   },
+  "idle-detection": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4590256452009984",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4590256452009984",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4590256452009984",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4590256452009984",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/4590256452009984",
+        "selected": true
+      }
+    ]
+  },
   "imagecapture": {
     "implementations": [
       {
@@ -25475,6 +25514,9 @@
         "selected": true
       }
     ]
+  },
+  "mini-app-white-paper": {
+    "implementations": []
   },
   "mixedcontent": {
     "implementations": [

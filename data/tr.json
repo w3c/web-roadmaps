@@ -2195,6 +2195,19 @@
     "publisher": "OGC",
     "milestones": {}
   },
+  "idle-detection": {
+    "url": "https://github.com/WICG/idle-detection#user-idle-detection",
+    "title": "User Idle Detection",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "imagecapture": {
     "url": "https://www.w3.org/TR/image-capture/",
     "edDraft": "https://w3c.github.io/mediacapture-image/",
@@ -2797,6 +2810,22 @@
       "CR": "2020-12-30",
       "PR": "2021-06-30"
     }
+  },
+  "mini-app-white-paper": {
+    "url": "https://www.w3.org/TR/mini-app-white-paper/",
+    "edDraft": "https://w3c.github.io/mini-app-white-paper/",
+    "repository": "https://github.com/w3c/mini-app-white-paper",
+    "title": "MiniApp Standardization White Paper",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2018/chinese-web-ig/",
+        "label": "Chinese Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
   },
   "mixedcontent": {
     "url": "https://www.w3.org/TR/mixed-content/",
