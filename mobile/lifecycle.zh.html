@@ -24,7 +24,8 @@
       <section class="featureset in-progress">
         <h2 id="technologies-in-progress">开发中的技术</h2>
         <div data-feature="打包">
-          <p>无论是否打包，用户都依靠各种元数据（名称、图标）在常用应用列表中来识别他们想要使用的应用。<a data-featureid="appmanifest">Web应用清单</a>规范允许开发人员将所有这些元数据放在一个 JSON 文件中。</p>
+          <p><a data-featureid="appmanifest">Web 应用清单</a>允许开发者在单个 JSON 文件中将有关 Web 应用的核心元数据（例如其名称、图标、首选启动 URL 和显示模式）分组。浏览器可以利用此信息来建议将应用安装在移动设备的主屏幕上（类似于原生应用），并创建更丰富的用户体验。</p>
+          <p><a data-featureid="manifest-app-info">Web 应用清单——应用信息</a>文档添加了一些新的属性，扩展了清单的格式，这些属性不会影响浏览器对已安装的 Web 应用的显示方式，但会为搜索引擎、应用程序目录和商店提供有用的元数据，例如应用类别、年龄等级和屏幕截图等。</p>
           <p>除了<a href="https://www.w3.org/TR/notifications/">Web通知</a>以外，<a data-featureid="badging">标记 API</a>定义了另一种通知机制，允许已经安装在设备上的 Web 应用（例如通过清单文件）设置一个标记，通常显示在主屏幕上应用程序的图标旁边，在应用程序的状态发生变化时通知用户可能需要注意的信息（如新消息）。</p>
         </div>
 
@@ -56,6 +57,8 @@
 
         <div data-feature="状态转换">
           <p>在移动设备上运行的应用可以通过不同的状态，从运行到空闲、暂停、停止、丢弃或终止。这些状态之间的转换由底层操作系统触发，并从 Web 应用中隐藏。<a data-featureid="page-lifecycle">页面生命周期</a>方案旨在向应用公开状态转换，以便这些应用能够保持/恢复状态、启用/禁用网络等。</p>
+
+          <p><a data-featureid="idle-detection">用户空闲检测</a>文档提出了一个 API 以检测用户何时变为空闲或何时锁定屏幕。应用可以使用该信息来通知其他用户当前用户不可访问（比如在聊天软件中），及时显示警告或暂停媒体以节省用户不在时的带宽。</p>
         </div>
 
         <div data-feature="无缝切换">
@@ -66,6 +69,14 @@
           <p><a data-featureid="background-sync">Web 后台同步</a>规范建立在 Service Workers 之上，通过在后台运行网络操作，使 Web 应用能够无缝地保持用户数据的最新状态，从而适应用户在移动设备上可能经常遇到的不可靠的连接。</p>
 
           <p><a data-featureid="background-fetch">Background Fetch</a> 定义了一个类似的基于 Service Workers 的后台下载和上传机制，但允许以用户可见的方式让操作在后台继续进行，即使是在用户关闭了所有浏览器窗口和 worker 的情况下。该规范专门用于支持下载和上传大型资源（如播客、电影、纹理）。</p>
+
+          <div data-feature="共享资源">
+            <p>一个应用可以一次运行多个 worker，并且一个应用的多个实例可以在单独的窗口中同时运行。<a data-featureid="web-locks">Web 锁 API</a> 允许此类应用获取锁并协调实例之间共享资源（例如存储）的使用。</p>
+          </div>
+        </div>
+
+        <div data-feature="MiniApps">
+          <p><dfn>MiniApps</dfn> 是在具有混合原生和 Web 功能的宿主应用或操作系统中运行的一类应用形态。MiniApp 使用了 Web 技术（如 CSS 和 JavaScript）。出于性能或安全原因，一些通用 Web 技术在 MiniApp 上不可用（如 MiniApp 通常无法访问 DOM）。MiniApp 通常包含一些在原生应用（例如联系人 API 和地图）或开发框架（例如视图和页面路由）中更常见的特性。MiniApp 的信任模型与常规 Web 应用不同，因为 MiniApp 通常需要在宿主平台上进行审核和批准，然后用户才能访问它们。<a data-featureid="mini-app-white-paper">MiniApp 标准化白皮书</a>回顾了 MiniApp 的潜在标准化领域。MiniApp 社区组负责培养更具体的建议（<a href="https://w3c.github.io/miniapp/specs/uri/">URI Scheme</a>、<a href="https://w3c.github.io/miniapp/specs/lifecycle/">Lifecycle</a>、<a href="https://w3c.github.io/miniapp/specs/manifest/">Manifest</a>、<a href="https://w3c.github.io/miniapp/specs/packaging/">Packaging</a>）。</p>
         </div>
       </section>
 

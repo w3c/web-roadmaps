@@ -23,6 +23,8 @@
       <section class="featureset in-progress">
         <h2 id="technologies-in-progress">开发中的技术</h2>
 
+        <p data-feature="存储管理">随着越来越多的数据需要被浏览器存储（例如用于离线使用），对于开发者来说获得可靠的存储空间变得至关重要。<a data-featureid="storage">存储</a>规范将允许 Web 应用程序获取配额估计的存储空间，并要求将其存储的数据视为持久性数据。在未经用户明确同意的情况下，这些数据不能被抢占。</p>
+
         <div data-feature="文件操作">
           <p>尽管移动设备通常没有明显的文件系统，但通常至少存在某种文件系统的概念。<a data-featureid="fileapi">文件API</a>提供了一个用于表示Web应用中的文件对象的API，还可用以可编程方式选择文件并访问文件中的数据。该API目前是只读的，关于读写API的讨论现已恢复，请参阅下面的<a href="#native-file-system">本地文件系统</a>标准。</p>
         </div>
@@ -30,8 +32,6 @@
 
       <section class="featureset exploratory-work">
         <h2 id="exploratory-work">探索性工作</h2>
-
-        <p data-feature="存储配额">随着越来越多的数据需要被浏览器存储（例如用于离线使用），对于开发者来说获得可靠的存储空间变得至关重要。<a data-featureid="storage">存储</a>规范将允许 Web 应用程序获取配额估计的存储空间，并要求将其存储的数据视为持久性数据。在未经用户明确同意的情况下，这些数据不能被抢占。</p>
 
         <div data-feature="文件操作">
           <p><a data-featureid="native-file-system">本地文件系统</a>规范是一个早期的API提议，建立在<a href="#fileapi">文件API</a>之上，允许网站获得对文件系统的写访问权。</p>
@@ -43,6 +43,16 @@
 
         <div data-feature="状态管理">
           <p>HTTP cookies 为 Web 提供了有效的状态管理机制，然而 <code>document.cookie</code> 接口的同步性一直是性能问题的来源之一，尤其是在浏览器使用多个进程和线程来尽可能地改善感知性能和响应度的情况下，这也包括处理能力通常比较有限的移动平台上。Worker因为无法访问DOM，也无法使用cookies。<a data-featureid="cookie-store">Cookie 存储 API</a> 为文档和 Worker 定义了一个异步的 Cookie API。</p>
+        </div>
+
+        <div data-feature="存储管理">
+          <p>Web应用需要在本地存储不同类型的数据，并在存储空间不足时使用不同的收回策略。例如，应用可能希望先移除图片，因为图片可以通过网络获取，但可能希望尽可能保留应用状态。<a data-featureid="storage-buckets">存储桶</a>提议使应用能够创建多个存储桶，其中用户代理可以选择删除单个桶里的内容而独立于其他桶。</p>
+
+          <p>如果用户同意，<a data-featureid="storage-access">存储访问 API</a> 允许 <code>&lt;iframe&gt;</code> 元素内的内容请求并获得对其客户端存储的访问权限，以便依赖于对客户端存储的访问权限的嵌入式内容可以在保护用户的隐私的同时访问客户端存储的内容。</p>
+        </div>
+
+        <div data-feature="共享资源">
+          <p><a data-featureid="web-locks">Web 锁 API</a> 允许应用获取存储锁，以协调可能在不同选项卡中同时运行的应用实例之间的读写操作。</p>
         </div>
       </section>
 
