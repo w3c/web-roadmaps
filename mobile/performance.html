@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -158,7 +158,7 @@
 
           <p>Applications that need to run long tasks may also want to regain control after yielding to the event loop <em>before</em> any other same or lower priority tasks are allowed to run. The <a data-featureid="main-thread-scheduling/yield" id="main-thread-scheduling-yield" href="https://github.com/WICG/main-thread-scheduling/blob/master/YieldAndContinuation.md"><code>scheduler.yield()</code></a> function is being proposed to solve that issue.</p>
 
-          <p>Generically speaking, applications have little control over task piorities when they schedule them. The <a data-featureid="main-thread-scheduling/postTask" id="main-thread-scheduling-posttask" href="https://github.com/WICG/main-thread-scheduling/blob/master/PrioritizedPostTask.md"><code>scheduler.postTask()</code></a> proposal would created a unified API to schedule prioritized work.</p>
+          <p>Generally speaking, applications have little control over task priorities when they schedule them. The <a data-featureid="main-thread-scheduling/postTask" id="main-thread-scheduling-posttask" href="https://github.com/WICG/main-thread-scheduling/blob/master/PrioritizedPostTask.md"><code>scheduler.postTask()</code></a> proposal would create a unified API to schedule prioritized work.</p>
         </div></section>
 
         <section data-feature="Infinite scrolling"><h3 id="infinite-scrolling-0">Infinite scrolling</h3><div>
@@ -181,7 +181,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>

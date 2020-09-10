@@ -12,7 +12,7 @@
 
     <header>
       <div class="container">
-        <button id="side-nav-btn" type="button" name="sidenav-opener">
+        <button id="side-nav-btn" type="button" name="sidenav-opener" hidden="">
             <img src="../assets/img/menu.svg" height="15" alt="Open menu" data-altclose="Close menu">
         </button>
         <div class="brand">
@@ -62,7 +62,7 @@
         </div></section>
 
         <section data-feature="Storage management"><h3 id="storage-management-0">Storage management</h3><div>
-          <p>Web applications need to store different types of data locally, with different eviction strategies when running out of storage. For instance, application may want to evict images first as they can be retrieved from the network, but may want to preserve application state as much as possible. The <a data-featureid="storage-buckets" id="storage-buckets" href="https://github.com/WICG/storage-buckets/blob/gh-pages/explainer.md">Storage buckets</a> proposal grants applications the ability to create multiple storage buckets, where the user agent may choose to delete each bucket independently of other buckets.</p>
+          <p>Web applications need to store different types of data locally, with different eviction strategies when running out of storage. For instance, an application may want to evict images first as they can be retrieved from the network, but may want to preserve application state as much as possible. The <a data-featureid="storage-buckets" id="storage-buckets" href="https://github.com/WICG/storage-buckets/blob/gh-pages/explainer.md">Storage buckets</a> proposal grants applications the ability to create multiple storage buckets, where the user agent may choose to delete each bucket independently of other buckets.</p>
 
           <p>The <a data-featureid="storage-access" id="storage-access" href="https://privacycg.github.io/storage-access/">Storage Access API</a> enables content inside <code>&lt;iframe&gt;</code> elements to request and be granted access to their client-side storage, provided user agrees to it, so that embedded content which relies on having access to client-side storage can work in browsers that would otherwise prevent this behavior, e.g. to preserve the user's privacy.</p>
         </div></section>
@@ -99,7 +99,7 @@
       </div>
     </main>
 
-    <aside id="side-nav" data-js="true">
+    <aside id="side-nav">
       <h2 id="roadmap-pages">Roadmap pages</h2>
       <nav>
         <ul>

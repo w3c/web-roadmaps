@@ -596,6 +596,16 @@
         "href": "https://caniuse.com/#feat=web-app-manifest"
       },
       {
+        "ua": "firefox",
+        "status": "experimental",
+        "flag": true,
+        "notes": [
+          "Firefox is experimenting with desktop support behind the `browser.ssb.enabled` flag."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-app-manifest"
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "caniuse",
@@ -605,8 +615,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported.",
-          "Safari on iOS does not support A2HS in WebViews like Chrome and Firefox"
+          "Safari on iOS does not support A2HS in WebViews like Chrome and Firefox."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
@@ -621,9 +630,6 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
-        "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -631,9 +637,6 @@
       {
         "ua": "uc_android",
         "status": "shipped",
-        "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -648,9 +651,6 @@
       {
         "ua": "qq_android",
         "status": "shipped",
-        "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -658,9 +658,6 @@
       {
         "ua": "baidu_android",
         "status": "shipped",
-        "notes": [
-          "The installation events, `appinstalled` and `beforeinstallprompt`, are not supported."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-app-manifest",
         "selected": true
@@ -785,6 +782,14 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=web-app-manifest",
+            "guess": true,
+            "flag": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -854,6 +859,13 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -862,13 +874,6 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6488656873259008",
-            "guess": true
-          },
-          {
-            "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
@@ -942,6 +947,14 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=web-app-manifest",
+            "guess": true,
+            "flag": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -1011,6 +1024,13 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -1019,13 +1039,6 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6488656873259008",
-            "guess": true
-          },
-          {
-            "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
@@ -1085,6 +1098,14 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=web-app-manifest",
+            "guess": true,
+            "flag": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -1156,6 +1177,13 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -1164,13 +1192,6 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6488656873259008",
-            "guess": true
-          },
-          {
-            "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
@@ -1238,6 +1259,14 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=web-app-manifest",
+            "guess": true,
+            "flag": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -1308,6 +1337,13 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -1316,13 +1352,6 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6488656873259008",
-            "guess": true
-          },
-          {
-            "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
@@ -1396,6 +1425,14 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "experimental",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=web-app-manifest",
+            "guess": true,
+            "flag": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -1465,6 +1502,13 @@
             "guess": true
           },
           {
+            "ua": "firefox",
+            "status": "shipped",
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/6488656873259008",
+            "guess": true
+          },
+          {
             "ua": "chrome",
             "status": "shipped",
             "source": "chromestatus",
@@ -1473,13 +1517,6 @@
           },
           {
             "ua": "chrome_android",
-            "status": "shipped",
-            "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/6488656873259008",
-            "guess": true
-          },
-          {
-            "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6488656873259008",
