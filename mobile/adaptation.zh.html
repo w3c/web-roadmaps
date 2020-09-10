@@ -38,12 +38,12 @@
         <div data-feature="基于 CSS 的适配">
           <p><a data-featureid="css-device-adapt">CSS设备适配</a>定义了一组CSS指令来定义该布局应该基于的尺寸，相对于底层设备的大小——指定<code>&lt;meta name="viewport"&gt;</code>元素实现的内容。</p>
           <p><a data-featureid="css-size-adjust">CSS 移动文本大小调整</a>让文本适应页面的缩放部分。</p>
-          <p>媒体查询第四版和第五版添加了几个相关的特性，以适应移动环境中的用户界面，包括：</p>
+          <p>媒体查询第四版和第五版添加了一些适应移动环境中的用户界面的相关的特性，包括：</p>
           <ul>
             <li>通过 <a data-featureid="mediaqueries5/pointer"><code>pointer</code></a>（及其配套的 <code>any-pointer</code>）的查询指针设备的存在与否及其类型。</li>
             <li>通过 <a data-featureid="mediaqueries5/hover"><code>hover</code></a> 查询设备是否支持<em>悬停</em>功能。</li>
             <li>通过 <a data-featureid="mediaqueries5/prefers-contrast"><code>prefers-contrast</code></a> 和 <a data-featureid="mediaqueries5/prefers-color-scheme"><code>prefers-color-scheme</code></a> 对环境亮度变化做出反应或遵循用户对亮或暗主题的偏好的能力。</li>
-            <li>通过 <a data-featureid="mediaqueries5/prefers-reduced-motion"><code>prefers-reduced-motion</code> 来减少页面中的动画数量，节省电池。</a>
+            <li>通过 <a data-featureid="mediaqueries5/prefers-reduced-motion"><code>prefers-reduced-motion</code></a> 来减少页面中的动画数量，节省电池。</li>
             <li>对<a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">脚本定义的变量</a>做出反应，从而更容易满足应用整体逻辑中更复杂的适配规则。</li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
         </div>
 
         <div data-feature="服务器端适配">
-          <p>User-Agent Client Hints 提案定义了一组客户端提示，这些提示为开发者提供了在必要时执行基于用户代理的内容协商（content negotiation）的能力，同时避免了 <code>User-Agent</code> HTTP头的历史包袱并减少了网站追踪用户的可能性，这也是<a href="#server-side-adaptation">服务器端适配</a>的基础。</p>
+          <p><a data-featureid="ua-client-hints">User-Agent Client Hints</a> 提案定义了一组客户端提示，这些提示为开发者提供了在必要时执行基于用户代理的内容协商（content negotiation）的能力，同时避免了 <code>User-Agent</code> HTTP头的历史包袱并减少了网站追踪用户的可能性，这也是<a href="#server-side-adaptation">服务器端适配</a>的基础。</p>
         </div>
       </section>
     </main>
