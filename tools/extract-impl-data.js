@@ -224,14 +224,17 @@ let sources = {
             console.warn(`- Unknown chrome status ${status}`);
             break;
         }
-        if (chromestatus.prefixed) {
-          res.prefix = true;
-        }
-        if (chromestatus.flag || (status === 'Behind a flag')) {
-          res.flag = true;
-        }
-        if ((res.status === 'shipped') && (res.prefix || res.flag)) {
-          res.status = 'experimental';
+
+        // The "prefixed" and "flag" properties are no longer maintained once a
+        // feature has shipped, see discussion in :
+        // https://github.com/GoogleChrome/chromium-dashboard/issues/1006
+        if (res.status !== 'shipped') {
+          if (chromestatus.prefixed) {
+            res.prefix = true;
+          }
+          if (chromestatus.flag || (status === 'Behind a flag')) {
+            res.flag = true;
+          }
         }
         res.source = source;
         res.href = `https://www.chromestatus.com/feature/${key}`;
