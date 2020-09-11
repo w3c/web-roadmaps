@@ -54,6 +54,10 @@
         <div data-feature="点对点数据连接">
           <p><a data-featureid="p2p">Web 实时通讯</a>方面的工作还提供了具有实时特性的浏览器之间的直接<strong>点对点数据连接</strong>，为协作式多设备的 Web 应用开辟了道路。</p>
         </div>
+
+        <div data-feature="双向连接">
+          <p><a data-featureid="web-transport">WebTransport</a> 提案将允许在浏览器和服务器之间发送和接收数据，并在顶部使用常见 API 来实现其下的可插拔协议（尤其是基于QUIC）。该 API 与 WebSocket 相似，也是客户端和服务器的双向连接，但允许进一步减少客户端和服务器之间的网络通信延迟，并且还支持多个流、单向流、乱序和不可靠传输。使用场景包括使用不可靠且乱序的消息向服务器重复发送低延迟的游戏状态、从服务器到客户端的媒体片段的低延迟传输以及大多数逻辑在服务器上运行的云场景。</p>
+        </div>
       </section>
 
       <section class="featureset exploratory-work">
@@ -67,10 +71,6 @@
         <div data-feature="网络特性">
           <p>Web 平台孵化社区组重新恢复了之前停止的可以解决网络特性的发现问题的<a data-featureid="netinfo">网络信息 API</a> 的工作。</p>
         </div>
-
-        <div data-feature="双向连接">
-            <p><a data-featureid="web-transport">WebTransport</a> 提案将允许在浏览器和服务器之间发送和接收数据，并在顶部使用常见 API 来实现其下的可插拔协议（尤其是基于QUIC）。该 API 与 WebSocket 相似，也是客户端和服务器的双向连接，但允许进一步减少客户端和服务器之间的网络通信延迟，并且还支持多个流、单向流、乱序和不可靠传输。使用场景包括使用不可靠且乱序的消息向服务器重复发送低延迟的游戏状态、从服务器到客户端的媒体片段的低延迟传输以及大多数逻辑在服务器上运行的云场景。</p>
-          </div>
       </section>
     </main>
     <script src="../js/generate.js"></script>
