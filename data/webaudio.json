@@ -18,6 +18,13 @@
         "source": "feedback",
         "date": "2019-12-02",
         "comment": "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "feedback",
+        "date": "2020-09-10",
+        "comment": "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
       }
     ]
   },

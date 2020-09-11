@@ -148,7 +148,7 @@ let sources = {
   },
   chromestatus: {
     url: "https://www.chromestatus.com/features.json",
-    coreua: ["chrome", "chrome_android"],
+    coreua: ["chrome", "chrome_android", "edge"],
     getImplStatus: function (key) {
       let source = 'chromestatus';
       let sourcedata = sources[source].data;
@@ -177,7 +177,8 @@ let sources = {
       // Opera's version is a priori consistently Chrome's version - 13 as
       // explained in:
       // https://github.com/w3c/web-roadmaps/issues/13#issuecomment-351468443
-      let chromeVersion = sources.caniuse.data.agents['chrome'].versions.slice(-4, -3);
+      let chromeVersion = sources.caniuse.data.agents.chrome.versions.slice(-4, -3)[0];
+      let edgeVersion = sources.caniuse.data.agents.edge.versions.slice(-4, -3)[0];
       let operaVersion = chromeVersion - 13;
 
       function parseStatus(chromestatus) {
@@ -237,7 +238,9 @@ let sources = {
         return res;
       }
 
-      for (let ua of ['chrome', 'ff', 'edge', 'safari']) {
+      // 2020-09-09: Voluntarily ignore information about "edge", which does not
+      // seem to be current for the version of Edge based on Chromium
+      for (let ua of ['chrome', 'ff', 'safari']) {
         let info = parseStatus(impldata[ua]);
         ua = (ua === 'ff' ? 'firefox' : ua);
         if (info) {
@@ -267,6 +270,20 @@ let sources = {
             else if (impldata.chrome.android || enabledOnAllPlatforms) {
               impl.push(Object.assign({ ua: 'chrome_android' }, info));
             }
+
+            // 2020-09-09: consider that implementation status for Edge is the
+            // same as implementation status for Chrome (Chrome Platform Status
+            // data include implementation data about Edge but that info seems
+            // to be for the previous version of Edge)
+            if (impldata.chrome.desktop &&
+                (impldata.chrome.desktop > edgeVersion) &&
+                (info.status === 'shipped')) {
+              impl.push(Object.assign({ ua: 'edge' }, info,
+                { status: 'experimental' }));
+            }
+            else if (impldata.chrome.desktop || enabledOnAllPlatforms) {
+              impl.push(Object.assign({ ua: 'edge' }, info));
+            }
           }
           else {
             impl.push(Object.assign({ ua }, info));
@@ -294,7 +311,7 @@ let sources = {
   },
   edgestatus: {
     url: "https://raw.githubusercontent.com/MicrosoftEdge/Status/production/status.json",
-    coreua: ["edge"],
+    coreua: [],
     getImplStatus: function (key) {
       let property = (typeof key === 'string') ? 'name' : 'id';
       let source = 'edgestatus';
@@ -612,6 +629,14 @@ function getImplInfoForFeature(feature) {
   }
 
   Object.keys(sources).forEach(source => {
+    // 2020-09-09: Temporarily disable Edge status platform. Implementation
+    // status seems to change once in a while but additions merely point at
+    // Chrome Platform Status. The file only contains acutal implementation info
+    // about the previous version of Edge, not about the one based on Chromium.
+    if (source === 'edgestatus') {
+      return;
+    }
+
     // Assemble the implementation info that we expect
     if (feature.impl[source]) {
       implementations = implementations.concat(
