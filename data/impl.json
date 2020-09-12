@@ -17596,16 +17596,14 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5259513871466496",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5259513871466496",
         "selected": true
@@ -25641,24 +25639,24 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/4563797888991232"
+        "href": "https://www.chromestatus.com/feature/4563797888991232",
+        "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/4563797888991232"
+        "href": "https://www.chromestatus.com/feature/4563797888991232",
+        "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/4563797888991232"
+        "href": "https://www.chromestatus.com/feature/4563797888991232",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -25671,36 +25669,6 @@
         "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4563797888991232"
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-        ],
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-        ],
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-        ],
-        "selected": true
       }
     ]
   },
@@ -30973,24 +30941,21 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5908775487668224",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5908775487668224",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5908775487668224",
         "selected": true
@@ -31270,38 +31235,35 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
           "recognition",
           "synthesis"
         ],
-        "prefix": true,
         "partial": false
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
           "recognition",
           "synthesis"
         ],
-        "prefix": true,
         "partial": false
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
           "recognition",
           "synthesis"
         ],
-        "prefix": true,
         "partial": false
       }
     ],
@@ -31374,24 +31336,21 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5908775487668224",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5908775487668224",
             "selected": true
           },
           {
             "ua": "edge",
-            "status": "experimental",
-            "prefix": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5908775487668224",
             "selected": true
@@ -31498,24 +31457,21 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           }
         ]
       },
@@ -31717,24 +31673,21 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
-            "guess": true,
-            "prefix": true
+            "guess": true
           }
         ]
       }
@@ -35537,24 +35490,24 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261718720184320"
+        "href": "https://www.chromestatus.com/feature/6261718720184320",
+        "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261718720184320"
+        "href": "https://www.chromestatus.com/feature/6261718720184320",
+        "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "prefix": true,
+        "status": "shipped",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6261718720184320"
+        "href": "https://www.chromestatus.com/feature/6261718720184320",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -35574,36 +35527,6 @@
         "status": "shipped",
         "source": "webkitstatus",
         "href": "https://webkit.org/status/#feature-web-audio"
-      },
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2019-12-02",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-        ],
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2019-12-02",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-        ],
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "notes": [
-          "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-        ],
-        "selected": true
       },
       {
         "ua": "chrome",
@@ -35936,11 +35859,10 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6261718720184320",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "firefox",
@@ -35951,11 +35873,10 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6261718720184320",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "safari",
@@ -35966,11 +35887,10 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6261718720184320",
-            "guess": true,
-            "prefix": true
+            "guess": true
           },
           {
             "ua": "webkit",
