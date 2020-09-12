@@ -4846,8 +4846,8 @@
     "status": "ED",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
+        "url": "https://www.w3.org/groups/wg/webtransport",
+        "label": "WebTransport Working Group"
       }
     ],
     "publisher": "W3C",
