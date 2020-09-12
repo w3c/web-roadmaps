@@ -3,30 +3,7 @@
     "caniuse": "audio-api",
     "chromestatus": 6261718720184320,
     "edgestatus": "Web Audio API",
-    "webkitstatus": "feature-web-audio",
-    "other": [
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2019-12-02",
-        "comment": "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2019-12-02",
-        "comment": "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "comment": "The JSON export of Chrome status incorrectly flags the Web Audio API as prefixed, see https://github.com/w3c/web-roadmaps/issues/427"
-      }
-    ]
+    "webkitstatus": "feature-web-audio"
   },
   "features": {
     "worklet": {

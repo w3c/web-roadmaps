@@ -9,29 +9,6 @@
   "impl": {
     "caniuse": "mediasource",
     "chromestatus": 4563797888991232,
-    "edgestatus": "Media Source Extensions",
-    "other": [
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "comment": "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-      },
-      {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "comment": "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "feedback",
-        "date": "2020-09-10",
-        "comment": "The JSON export of Chrome status incorrectly flags MSE as prefixed, see https://github.com/GoogleChrome/chromium-dashboard/issues/1006"
-      }
-    ]
+    "edgestatus": "Media Source Extensions"
   }
 }
