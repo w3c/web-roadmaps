@@ -218,6 +218,7 @@ let sources = {
           case 'Removed':
           case 'Deprecated':
           case 'Defer':
+          case 'Harmful':
             res.status = '';
             break;
           default:

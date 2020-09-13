@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/privacycg/first-party-sets",
+  "title": "First-Party Sets",
+  "wgs": [
+    {
+      "label": "Privacy Community Group",
+      "url": "https://privacycg.github.io/"
+    }
+  ],
+  "impl": {
+    "chromestatus": 5640066519007232
+  }
+}
