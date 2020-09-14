@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/WICG/trust-token-api",
+  "title": "Trust Token API",
+  "impl": {
+    "chromestatus": 5078049450098688
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/privacycg/js-membranes",
+  "title": "JS Isolation via Origin Labels and Membranes",
+  "wgs": [
+    {
+      "label": "Privacy Community Group",
+      "url": "https://privacycg.github.io/"
+    }
+  ]
+}
