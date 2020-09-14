@@ -1813,6 +1813,18 @@
     "informative": false,
     "milestones": {}
   },
+  "first-party-sets": {
+    "url": "https://github.com/privacycg/first-party-sets",
+    "title": "First-Party Sets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
   "frame-timing": {
     "url": "https://wicg.github.io/frame-timing/",
     "edDraft": "https://wicg.github.io/frame-timing/",
@@ -2424,12 +2436,36 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "is-logged-in": {
+    "url": "https://github.com/privacycg/is-logged-in",
+    "title": "IsLoggedIn",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
   "iso-19156-2011": {
     "url": "https://www.iso.org/standard/32574.html",
     "title": "Geographic information -- Observations and measurements",
     "status": "REC",
     "deliveredBy": [],
     "publisher": "ISO",
+    "milestones": {}
+  },
+  "js-membranes": {
+    "url": "https://github.com/privacycg/js-membranes",
+    "title": "JS Isolation via Origin Labels and Membranes",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
     "milestones": {}
   },
   "js-self-profiling": {
@@ -3472,6 +3508,20 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "private-click-measurement": {
+    "url": "https://privacycg.github.io/private-click-measurement/",
+    "edDraft": "https://privacycg.github.io/private-click-measurement/",
+    "repository": "https://github.com/privacycg/private-click-measurement",
+    "title": "Private Click Measurement",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
   "proximity": {
     "url": "https://www.w3.org/TR/proximity/",
     "edDraft": "https://w3c.github.io/proximity/",
@@ -3926,6 +3976,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "sparrow": {
+    "url": "https://github.com/WICG/sparrow",
+    "title": "SPARROW",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "spatial-navigation": {
     "url": "https://www.w3.org/TR/css-nav-1/",
     "edDraft": "https://drafts.csswg.org/css-nav-1/",
@@ -4278,6 +4341,19 @@
     "publisher": "W3C",
     "milestones": {}
   },
+  "trust-token-api": {
+    "url": "https://github.com/WICG/trust-token-api",
+    "title": "Trust Token API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
   "trusted-types": {
     "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
     "edDraft": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -4368,6 +4444,19 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "turtledove": {
+    "url": "https://github.com/WICG/turtledove",
+    "title": "TURTLEDOVE",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "tvtuner": {

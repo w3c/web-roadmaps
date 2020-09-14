@@ -480,12 +480,6 @@
         "selected": true
       },
       {
-        "ua": "chrome_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps"
-      },
-      {
         "ua": "firefox_android",
         "status": "shipped",
         "source": "caniuse",
@@ -17347,6 +17341,45 @@
       }
     ]
   },
+  "first-party-sets": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5640066519007232",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5640066519007232",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5640066519007232",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5640066519007232",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5640066519007232",
+        "selected": true
+      }
+    ]
+  },
   "frame-timing": {
     "implementations": [
       {
@@ -22501,7 +22534,13 @@
       }
     ]
   },
+  "is-logged-in": {
+    "implementations": []
+  },
   "iso-19156-2011": {
+    "implementations": []
+  },
+  "js-membranes": {
     "implementations": []
   },
   "js-self-profiling": {
@@ -28383,6 +28422,9 @@
       }
     ]
   },
+  "private-click-measurement": {
+    "implementations": []
+  },
   "proximity": {
     "implementations": [
       {
@@ -30863,6 +30905,9 @@
         "selected": true
       }
     ]
+  },
+  "sparrow": {
+    "implementations": []
   },
   "spatial-navigation": {
     "implementations": [],
@@ -33904,6 +33949,45 @@
   "transcript": {
     "implementations": []
   },
+  "trust-token-api": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5078049450098688",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5078049450098688",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "indevelopment",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5078049450098688",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5078049450098688",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "consideration",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5078049450098688",
+        "selected": true
+      }
+    ]
+  },
   "trusted-types": {
     "implementations": [
       {
@@ -33996,6 +34080,9 @@
     "implementations": []
   },
   "ttml1": {
+    "implementations": []
+  },
+  "turtledove": {
     "implementations": []
   },
   "tvtuner": {
