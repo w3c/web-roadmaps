@@ -35389,6 +35389,9 @@
       }
     ]
   },
+  "web-monetization": {
+    "implementations": []
+  },
   "web-share-target": {
     "implementations": [
       {
