@@ -212,6 +212,7 @@
     "Input Device Capabilities": "输入设备能力",
     "Input Method Editor API": "输入法 API",
     "Intersection Observer": "交叉观察器",
+    "JS Isolation via Origin Labels and Membranes": "通过域标签和膜进行 JS 隔离",
     "KV Storage": "KV存储",
     "Layout Instability API": "排版不稳定性 API",
     "Long Tasks API 1": "长任务 API 第一版",
