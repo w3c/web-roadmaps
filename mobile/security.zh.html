@@ -73,6 +73,20 @@
         <div data-feature="权限">
             <p>不同的API使用不同的机制来授予使用或访问潜在强大功能的权限。为了简化与权限相关的代码的设计，<a data-featureid="permissions-request">请求权限</a>和<a data-featureid="permissions-revoke">放弃权限</a>两个标准提议扩展<a href="https://www.w3.org/TR/permissions/">权限API</a>，以提供一个统一的方法请求和撤销权限。</p>
         </div>
+
+        <div data-feature="隐私保护">
+          <p>主要的浏览器厂商逐渐引入了更为严格的技术规则来限制未经用户同意的情况下跟踪用户的行为，其中一个例子是第三方 cookie，这些 cookie 已从主要的浏览器中逐步淘汰，而目前正在讨论一些取代这些技术的提案，使用户可以控制网站是否可以跟踪它们：</p>
+          <ul>
+            <li><a data-featureid="is-logged-in">isLoggedIn</a> 让网站通知浏览器用户的登录状态，并允许浏览器将诸如长期存储和 cookie 之类的功能限制到用户登录的场景。</li>
+            <li><a data-featureid="trust-token-api">Trust Token API</a> 使用 <a href="https://privacypass.github.io/">Privacy Pass</a> 协议作为基础原语，在站点之间传播信任链。</li>
+            <li><a data-featureid="first-party-sets">First-Party Sets</a> 用于将一系列相关域名的集合声明为第一方集合。</li>
+            <li><a data-featureid="private-click-measurement">Private Click Measurement</a> 可以以保护隐私的方式将转化（例如购买或注册）归功于先前的广告点击。</li>
+            <li><a data-featureid="js-membranes">通过域标签和膜进行 JS 隔离</a>提案允许应用包含远程代码，但无需让该代码访问包含域的所有功能，如 document、navigator 以及其他相关的 Web API 和 DOM 接口。</li>
+            <li>如果用户同意，<a data-featureid="storage-access">存储访问 API</a> 允许 <code>&lt;iframe&gt;</code> 元素内的内容请求并获得对其客户端存储的访问权限，以便依赖于对客户端存储的访问权限的嵌入式内容可以在保护用户的隐私的同时访问客户端存储的内容。</li>
+            <li><a data-featureid="turtledove">TURTLEDOVE</a> 提案使浏览器而不是广告商控制哪些使广告商认为某人可能感兴趣的信息。</li>
+            <li><a data-featureid="sparrow">SPARROW</a> 建立在 TURTLEDOVE 之上，可让广告主更好地控制用户体验，同时保持隐私权。</li>
+          </ul>
+        </div>
       </section>
 
       <section>
