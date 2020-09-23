@@ -496,9 +496,11 @@ const createMentionCell = function (column, refId, featureName, specInfo, implIn
     cell.innerHTML = featureName;
   }
   pages.forEach((page, pos) => {
+    const localizedUrl = ((lang === 'en') ? page.url :
+      page.url.replace(/\.([^\.]+)$/, '.' + lang + '.$1'));
     cell.innerHTML += ((pos > 0 || featureName) ? '<br/>' : '') +
       seeLabel.replace('%page',
-        '<a href="' + page.url + '">' + page.title + '</a>');
+        '<a href="' + localizedUrl + '">' + page.title + '</a>');
   });
   cell.classList.add('mention');
   return cell;
