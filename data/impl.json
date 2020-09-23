@@ -446,12 +446,6 @@
   "appcache": {
     "implementations": [
       {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps"
-      },
-      {
         "ua": "firefox",
         "status": "shipped",
         "source": "caniuse",
@@ -1593,6 +1587,13 @@
           {
             "ua": "edge",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId",
             "selected": true
@@ -3649,6 +3650,13 @@
             "selected": true
           },
           {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -3851,6 +3859,13 @@
           {
             "ua": "firefox_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
             "selected": true
@@ -7477,7 +7492,6 @@
       {
         "ua": "webview_android",
         "status": "experimental",
-        "prefix": true,
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/border-radius",
         "selected": true
@@ -9914,6 +9928,13 @@
             "selected": true
           },
           {
+            "ua": "ie",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFace",
+            "selected": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -10189,6 +10210,13 @@
           {
             "ua": "firefox_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
             "selected": true
@@ -15230,6 +15258,9 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
+        "notes": [
+          "Since Firefox for Android 79, the dropdown menu containing available options does not appear. See <a href='https://bugzil.la/1535985'>bug 1535985</a>."
+        ],
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist"
       },
@@ -15579,7 +15610,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/4613920211861504",
         "selected": true
@@ -16852,7 +16883,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5167290693713920",
         "selected": true
@@ -21124,6 +21155,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download"
       },
       {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -22499,21 +22537,24 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
@@ -22679,6 +22720,13 @@
         "notes": [
           "See <a href='https://bugzil.la/1348405'>bug 1348405</a>."
         ],
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
+        "ua": "ie",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
         "selected": true
@@ -25391,6 +25439,19 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/MediaSession",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
@@ -26891,6 +26952,13 @@
         "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming"
       },
       {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -26999,6 +27067,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
+        "selected": true
+      },
+      {
+        "ua": "ie",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
@@ -27711,9 +27786,6 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
-        "notes": [
-          "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=picture-in-picture"
       },
@@ -32438,6 +32510,13 @@
         "selected": true
       },
       {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -32665,6 +32744,13 @@
           {
             "ua": "firefox_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "ie",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
             "selected": true
@@ -35267,7 +35353,6 @@
       {
         "ua": "chrome",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669293909868544",
         "selected": true
@@ -35275,7 +35360,6 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669293909868544",
         "selected": true
@@ -35283,7 +35367,6 @@
       {
         "ua": "edge",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5669293909868544",
         "selected": true
@@ -35358,6 +35441,13 @@
         "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "ie",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
       },
       {
         "ua": "opera",
@@ -36087,9 +36177,6 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to FIDO2 devices not working if a PIN is set."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true

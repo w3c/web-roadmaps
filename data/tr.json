@@ -579,7 +579,7 @@
   },
   "crypto": {
     "url": "https://www.w3.org/TR/WebCryptoAPI/",
-    "edDraft": "https://w3c.github.io/webcrypto/Overview.html",
+    "edDraft": "https://w3c.github.io/webcrypto/",
     "repository": "https://github.com/w3c/webcrypto",
     "title": "Web Cryptography API",
     "status": "REC",
