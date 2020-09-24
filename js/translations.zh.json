@@ -35,20 +35,21 @@
     "consideration": "考虑实现"
   },
   "labels": {
-    "N/A": "无",
     "%feature in %spec": "%spec中的%feature",
-    "Polyfills": "Polyfills",
-    "Home": "首页",
-    "Feature requires using a prefix and is behind a flag.": "特性需要使用浏览器引擎前缀并需要开启实验性功能。",
-    "Feature requires using a prefix.": "特性需要使用浏览器引擎前缀。",
-    "Feature is behind a flag.": "特性需要开启浏览器实验性功能。",
-    "Support may be partial.": "特性支持可能不完整。",
-    "Source: %source.": "来源：%source",
-    "Select browsers…": "选择浏览器…",
     "%status in %ua (%versions).": "在 %ua（%versions）中%status。",
     "About this document": "关于此文档",
     "desktop": "桌面",
-    "mobile": "移动"
+    "Feature is behind a flag.": "特性需要开启浏览器实验性功能。",
+    "Feature requires using a prefix and is behind a flag.": "特性需要使用浏览器引擎前缀并需要开启实验性功能。",
+    "Feature requires using a prefix.": "特性需要使用浏览器引擎前缀。",
+    "Home": "首页",
+    "List of relevant groups": "相关小组列表",
+    "mobile": "移动",
+    "N/A": "无",
+    "Polyfills": "Polyfills",
+    "Select browsers…": "选择浏览器…",
+    "Source: %source.": "来源：%source",
+    "Support may be partial.": "特性支持可能不完整。"
   },
   "metadata": {
     "Document Metadata": "文档元数据",
