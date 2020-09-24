@@ -84,6 +84,9 @@
   "about": {
     "url": "about.html"
   },
+  "groups": {
+    "url": "groups.html"
+  },
   "translations": [
     {
       "title": "English",
