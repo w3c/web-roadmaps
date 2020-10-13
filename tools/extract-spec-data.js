@@ -36,6 +36,8 @@ const maturities = [
 const maturityMapping = {
   'Working Draft': 'WD',
   'Candidate Recommendation': 'CR',
+  'Candidate Recommendation Draft': 'CR',
+  'Candidate Recommendation Snapshot': 'CR',
   'Proposed Recommendation': 'PR',
   'Recommendation': 'REC',
   'LastCall': 'WD',
