@@ -195,6 +195,7 @@ let sources = {
           case 'Shipped/Shipping':
             res.status = 'shipped';
             break;
+          case 'In developer trial (Behind a flag)':
           case 'Behind a flag':
           case 'Origin trial':
             res.status = 'experimental';
