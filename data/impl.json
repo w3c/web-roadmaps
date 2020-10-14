@@ -9519,6 +9519,13 @@
         "href": "https://caniuse.com/#feat=css-font-rendering-controls"
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-font-rendering-controls",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -9599,8 +9606,7 @@
         "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display"
       },
       {
         "ua": "ie",
@@ -22839,6 +22845,7 @@
         "features": [
           "postTask"
         ],
+        "flag": true,
         "partial": true,
         "selected": true
       },
@@ -22850,6 +22857,7 @@
         "features": [
           "postTask"
         ],
+        "flag": true,
         "partial": true,
         "selected": true
       },
@@ -22861,6 +22869,7 @@
         "features": [
           "postTask"
         ],
+        "flag": true,
         "partial": true,
         "selected": true
       }
@@ -22873,6 +22882,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true,
             "selected": true
           },
@@ -22881,6 +22891,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true,
             "selected": true
           },
@@ -22889,6 +22900,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true,
             "selected": true
           }
@@ -22899,6 +22911,7 @@
           {
             "ua": "chrome",
             "status": "experimental",
+            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22906,6 +22919,7 @@
           {
             "ua": "chrome_android",
             "status": "experimental",
+            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22913,6 +22927,7 @@
           {
             "ua": "edge",
             "status": "experimental",
+            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22936,6 +22951,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -22943,6 +22959,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -22950,6 +22967,7 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
+            "flag": true,
             "partial": true
           }
         ]
@@ -25821,14 +25839,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6284708426022912",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6284708426022912",
         "selected": true
@@ -27354,27 +27372,6 @@
   "performance-measure-memory": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5685965186138112",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5685965186138112",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5685965186138112",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "",
         "source": "chromestatus",
@@ -27563,49 +27560,7 @@
           "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=permissions-policy"
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in Chromium browsers with the `enable-experimental-web-platform-features` flag.",
-          "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=permissions-policy"
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in Chromium browsers with the `enable-experimental-web-platform-features` flag.",
-          "At least partially supports [Feature Policy](#feat=feature-policy), the predecessor to this spec."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=permissions-policy"
-      },
-      {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5745992911552512",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5745992911552512",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5745992911552512",
+        "href": "https://caniuse.com/#feat=permissions-policy",
         "selected": true
       },
       {
@@ -30570,6 +30525,9 @@
         "selected": true
       }
     ]
+  },
+  "screen-wake-lock": {
+    "implementations": []
   },
   "screencapture": {
     "implementations": [
@@ -34990,9 +34948,6 @@
       }
     ]
   },
-  "wake-lock": {
-    "implementations": []
-  },
   "wasm-core": {
     "implementations": [
       {
@@ -35516,8 +35471,7 @@
           "Only supported on Windows"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=web-share",
-        "selected": true
+        "href": "https://caniuse.com/#feat=web-share"
       },
       {
         "ua": "safari",
@@ -35554,8 +35508,22 @@
         "selected": true
       },
       {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5668769141620736",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5668769141620736",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5668769141620736",
         "selected": true

@@ -252,7 +252,7 @@
     "edDraft": "https://w3c.github.io/audiobooks/",
     "repository": "https://github.com/w3c/audiobooks",
     "title": "Audiobooks",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/publishing/groups/publ-wg/",
@@ -947,7 +947,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "WR/LC": "2020-09-30"
+      "WR/LC": "2020-09-30",
+      "CR": "2021-03-30"
     },
     "feature": "font-display"
   },
@@ -992,7 +993,8 @@
     "publisher": "W3C",
     "informative": false,
     "milestones": {
-      "WR/LC": "2020-09-30"
+      "WR/LC": "2020-09-30",
+      "CR": "2021-03-30"
     },
     "features": {
       "variable": {
@@ -1293,7 +1295,7 @@
   },
   "css-ui-box-sizing": {
     "url": "https://www.w3.org/TR/css-ui-3/#box-sizing",
-    "edDraft": "https://drafts.csswg.org/css-ui/",
+    "edDraft": "https://drafts.csswg.org/css-ui-3/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
     "status": "REC",
@@ -3543,7 +3545,7 @@
     "edDraft": "https://w3c.github.io/pub-manifest/",
     "repository": "https://github.com/w3c/pub-manifest",
     "title": "Publication Manifest",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/publishing/groups/publ-wg/",
@@ -3798,6 +3800,22 @@
       {
         "url": "https://www.w3.org/2019/webapps/",
         "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "screen-wake-lock": {
+    "url": "https://www.w3.org/TR/screen-wake-lock/",
+    "edDraft": "https://w3c.github.io/screen-wake-lock/",
+    "repository": "https://github.com/w3c/screen-wake-lock",
+    "title": "Screen Wake Lock API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
       }
     ],
     "publisher": "W3C",
@@ -4790,24 +4808,6 @@
     "informative": false,
     "milestones": {}
   },
-  "wake-lock": {
-    "url": "https://www.w3.org/TR/wake-lock/",
-    "edDraft": "https://w3c.github.io/screen-wake-lock/",
-    "repository": "https://github.com/w3c/screen-wake-lock",
-    "title": "Wake Lock API",
-    "status": "CR",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/das/",
-        "label": "Devices and Sensors Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "informative": false,
-    "milestones": {
-      "CR": "2019-12-30"
-    }
-  },
   "wasm-core": {
     "url": "https://www.w3.org/TR/wasm-core-1/",
     "edDraft": "https://webassembly.github.io/spec/core/bikeshed/",
@@ -5137,7 +5137,7 @@
     "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
-    "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
     "status": "CR",
     "deliveredBy": [
       {
@@ -5157,7 +5157,7 @@
     "url": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-getdefaulticeservers",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
-    "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
     "status": "CR",
     "deliveredBy": [
       {
