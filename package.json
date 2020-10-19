@@ -2,10 +2,10 @@
   "name": "web-roadmaps",
   "dependencies": {
     "ajv-cli": "^3.0.0",
-    "browser-specs": "^1.14.0",
+    "browser-specs": "^1.19.1",
     "fetch-filecache-for-crawling": "^3.0.2",
     "jsdom": "^16.2.2",
-    "mdn-browser-compat-data": "^1.0.0",
+    "mdn-browser-compat-data": "^1.1.1",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0"
   },
