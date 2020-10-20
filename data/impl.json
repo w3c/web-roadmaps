@@ -3567,14 +3567,27 @@
         "partial": false
       },
       {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "Credential",
+          "credentials"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
         "ua": "safari",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
-          "Credential"
+          "Credential",
+          "credentials"
         ],
-        "partial": true
+        "partial": false
       },
       {
         "ua": "safari_ios",
@@ -3582,9 +3595,10 @@
         "source": "mdn",
         "guess": true,
         "features": [
-          "Credential"
+          "Credential",
+          "credentials"
         ],
-        "partial": true,
+        "partial": false,
         "selected": true
       },
       {
@@ -3664,6 +3678,13 @@
             "selected": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Credential",
+            "selected": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "mdn",
@@ -3802,8 +3823,7 @@
             "ua": "safari",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
           },
           {
             "ua": "firefox_android",
@@ -3812,11 +3832,16 @@
             "guess": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
           },
           {
             "ua": "webview_android",
@@ -3878,6 +3903,27 @@
             "selected": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
+            "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/Navigator/credentials",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "mdn",
@@ -3960,8 +4006,7 @@
             "status": "indevelopment",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5026422640869376",
-            "guess": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "edge",
@@ -4003,8 +4048,7 @@
             "ua": "safari",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true
+            "guess": true
           },
           {
             "ua": "firefox_android",
@@ -4013,12 +4057,16 @@
             "guess": true
           },
           {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
-            "guess": true,
-            "partial": true,
-            "selected": true
+            "guess": true
           },
           {
             "ua": "webview_android",
@@ -9642,7 +9690,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display"
       },
@@ -13544,7 +13592,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/CSS/::part",
         "selected": true
@@ -14548,6 +14596,26 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true
+      },
+      {
         "ua": "webview_android",
         "status": "shipped",
         "source": "mdn",
@@ -14692,14 +14760,14 @@
           },
           {
             "ua": "safari",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
             "selected": true
           },
           {
             "ua": "safari_ios",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior",
             "selected": true
@@ -14846,6 +14914,20 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -15081,6 +15163,20 @@
           },
           {
             "ua": "samsunginternet_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "safari_ios",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -17289,6 +17385,38 @@
         ]
       }
     }
+  },
+  "file-system-access": {
+    "implementations": [
+      {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/6284708426022912",
+        "selected": true
+      }
+    ]
   },
   "fileapi": {
     "implementations": [
@@ -22544,7 +22672,6 @@
       {
         "ua": "chrome",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
@@ -22552,7 +22679,6 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
@@ -22560,7 +22686,6 @@
       {
         "ua": "edge",
         "status": "experimental",
-        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
@@ -22845,7 +22970,6 @@
         "features": [
           "postTask"
         ],
-        "flag": true,
         "partial": true,
         "selected": true
       },
@@ -22857,7 +22981,6 @@
         "features": [
           "postTask"
         ],
-        "flag": true,
         "partial": true,
         "selected": true
       },
@@ -22869,7 +22992,6 @@
         "features": [
           "postTask"
         ],
-        "flag": true,
         "partial": true,
         "selected": true
       }
@@ -22882,7 +23004,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true,
             "selected": true
           },
@@ -22891,7 +23012,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true,
             "selected": true
           },
@@ -22900,7 +23020,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true,
             "selected": true
           }
@@ -22911,7 +23030,6 @@
           {
             "ua": "chrome",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22919,7 +23037,6 @@
           {
             "ua": "chrome_android",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22927,7 +23044,6 @@
           {
             "ua": "edge",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/6031161734201344",
             "selected": true
@@ -22951,7 +23067,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -22959,7 +23074,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -22967,7 +23081,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           }
         ]
@@ -24699,7 +24812,7 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
             "selected": true
@@ -25002,7 +25115,7 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme"
           },
@@ -25834,38 +25947,6 @@
   },
   "mwabp": {
     "implementations": []
-  },
-  "native-file-system": {
-    "implementations": [
-      {
-        "ua": "chrome",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "shipped",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "firefox",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6284708426022912",
-        "selected": true
-      }
-    ]
   },
   "navigation-timing": {
     "implementations": [
@@ -27058,22 +27139,19 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
       },
       {
         "ua": "edge",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
       },
@@ -27099,13 +27177,26 @@
       },
       {
         "ua": "opera",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
         "selected": true
       },
       {
         "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager"
+      },
+      {
+        "ua": "safari_ios",
         "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
@@ -27113,7 +27204,7 @@
       },
       {
         "ua": "samsunginternet_android",
-        "status": "",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PaymentManager",
         "selected": true
@@ -29321,7 +29412,6 @@
         "guess": true,
         "features": [
           "dns-prefetch",
-          "preconnect",
           "prefetch"
         ],
         "partial": true,
@@ -29702,13 +29792,6 @@
             "href": "https://caniuse.com/#feat=link-rel-preconnect"
           },
           {
-            "ua": "firefox",
-            "status": "shipped",
-            "source": "caniuse",
-            "href": "https://caniuse.com/#feat=link-rel-preconnect",
-            "selected": true
-          },
-          {
             "ua": "chrome",
             "status": "shipped",
             "source": "caniuse",
@@ -29787,7 +29870,8 @@
             "ua": "firefox",
             "status": "indevelopment",
             "source": "chromestatus",
-            "href": "https://www.chromestatus.com/feature/5560623895150592"
+            "href": "https://www.chromestatus.com/feature/5560623895150592",
+            "selected": true
           },
           {
             "ua": "safari",
@@ -32060,6 +32144,39 @@
         "selected": true
       },
       {
+        "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "chrome_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false
+      },
+      {
+        "ua": "edge",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false
+      },
+      {
         "ua": "firefox",
         "status": "shipped",
         "source": "mdn",
@@ -32080,6 +32197,30 @@
           "requestStorageAccess"
         ],
         "flag": true,
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "opera",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
+        "ua": "opera_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
         "partial": false,
         "selected": true
       },
@@ -32105,6 +32246,18 @@
         ],
         "partial": false,
         "selected": true
+      },
+      {
+        "ua": "webview_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "hasStorageAccess",
+          "requestStorageAccess"
+        ],
+        "partial": false,
+        "selected": true
       }
     ],
     "features": {
@@ -32112,21 +32265,21 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
           },
           {
             "ua": "edge",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
@@ -32155,14 +32308,14 @@
           },
           {
             "ua": "opera",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
           },
           {
             "ua": "opera_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
@@ -32190,7 +32343,7 @@
           },
           {
             "ua": "webview_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess",
             "selected": true
@@ -32231,6 +32384,24 @@
             "guess": true
           },
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "mdn",
@@ -32250,7 +32421,25 @@
             "flag": true
           },
           {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true
@@ -32261,21 +32450,21 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
           },
           {
             "ua": "edge",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
@@ -32304,14 +32493,14 @@
           },
           {
             "ua": "opera",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
           },
           {
             "ua": "opera_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
@@ -32339,7 +32528,7 @@
           },
           {
             "ua": "webview_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess",
             "selected": true
@@ -32380,6 +32569,24 @@
             "guess": true
           },
           {
+            "ua": "chrome",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "edge",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "mdn",
@@ -32399,7 +32606,25 @@
             "flag": true
           },
           {
+            "ua": "opera",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "opera_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
             "ua": "safari_ios",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true
+          },
+          {
+            "ua": "webview_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true
@@ -35393,9 +35618,22 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "firefox",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
       },
       {
         "ua": "ie",
@@ -35414,6 +35652,19 @@
       {
         "ua": "opera_android",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/Navigator/locks",
         "selected": true
@@ -35548,9 +35799,6 @@
         "href": "https://webkit.org/status/#feature-web-share"
       }
     ]
-  },
-  "web-transport": {
-    "implementations": []
   },
   "webaudio": {
     "implementations": [
@@ -35757,6 +36005,16 @@
         "partial": true
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "worklet"
+        ],
+        "partial": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "mdn",
@@ -35863,7 +36121,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/AudioWorklet",
             "selected": true
@@ -36077,6 +36335,13 @@
           },
           {
             "ua": "chrome_android",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "firefox_android",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -36626,6 +36891,7 @@
       {
         "ua": "chrome_android",
         "status": "experimental",
+        "flag": true,
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/6261030015467520",
         "selected": true
@@ -37123,6 +37389,9 @@
         "selected": true
       }
     ]
+  },
+  "webtransport": {
+    "implementations": []
   },
   "webusb": {
     "implementations": [

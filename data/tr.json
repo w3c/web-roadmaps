@@ -870,7 +870,7 @@
   },
   "css-contain": {
     "url": "https://www.w3.org/TR/css-contain-1/",
-    "edDraft": "https://drafts.csswg.org/css-contain/",
+    "edDraft": "https://drafts.csswg.org/css-contain-1/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "CSS Containment Module Level 1",
     "status": "REC",
@@ -1798,6 +1798,21 @@
         "url": "#http-cors-protocol"
       }
     }
+  },
+  "file-system-access": {
+    "url": "https://wicg.github.io/file-system-access/",
+    "edDraft": "https://wicg.github.io/file-system-access/",
+    "repository": "https://github.com/WICG/file-system-access",
+    "title": "File System Access",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
   },
   "fileapi": {
     "url": "https://www.w3.org/TR/FileAPI/",
@@ -2973,21 +2988,6 @@
     ],
     "publisher": "W3C",
     "informative": true,
-    "milestones": {}
-  },
-  "native-file-system": {
-    "url": "https://wicg.github.io/native-file-system/",
-    "edDraft": "https://wicg.github.io/native-file-system/",
-    "repository": "https://github.com/WICG/native-file-system",
-    "title": "Native File System",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/community/wicg/",
-        "label": "Web Platform Incubator Community Group"
-      }
-    ],
-    "publisher": "W3C",
     "milestones": {}
   },
   "navigation-timing": {
@@ -4940,21 +4940,6 @@
     "informative": false,
     "milestones": {}
   },
-  "web-transport": {
-    "url": "https://wicg.github.io/web-transport/",
-    "edDraft": "https://wicg.github.io/web-transport/",
-    "repository": "https://github.com/WICG/web-transport",
-    "title": "WebTransport",
-    "status": "ED",
-    "deliveredBy": [
-      {
-        "url": "https://www.w3.org/groups/wg/webtransport",
-        "label": "WebTransport Working Group"
-      }
-    ],
-    "publisher": "W3C",
-    "milestones": {}
-  },
   "webaudio": {
     "url": "https://www.w3.org/TR/webaudio/",
     "edDraft": "https://webaudio.github.io/web-audio-api/",
@@ -5247,6 +5232,21 @@
     ],
     "publisher": "W3C",
     "informative": false,
+    "milestones": {}
+  },
+  "webtransport": {
+    "url": "https://w3c.github.io/webtransport/",
+    "edDraft": "https://w3c.github.io/webtransport/",
+    "repository": "https://github.com/w3c/webtransport",
+    "title": "WebTransport",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webtransport",
+        "label": "WebTransport Working Group"
+      }
+    ],
+    "publisher": "W3C",
     "milestones": {}
   },
   "webusb": {
