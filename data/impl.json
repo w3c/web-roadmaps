@@ -446,13 +446,6 @@
   "appcache": {
     "implementations": [
       {
-        "ua": "firefox",
-        "status": "shipped",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=offline-apps",
-        "selected": true
-      },
-      {
         "ua": "safari",
         "status": "shipped",
         "source": "caniuse",
@@ -533,7 +526,8 @@
         "ua": "firefox",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6192449487634432"
+        "href": "https://www.chromestatus.com/feature/6192449487634432",
+        "selected": true
       },
       {
         "ua": "safari",
@@ -3382,21 +3376,21 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5658847691669504",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5658847691669504",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5658847691669504",
         "selected": true
@@ -12048,6 +12042,13 @@
         "href": "https://caniuse.com/#feat=css-overscroll-behavior"
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -12127,8 +12128,7 @@
         "ua": "firefox_android",
         "status": "shipped",
         "source": "mdn",
-        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
-        "selected": true
+        "href": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior"
       },
       {
         "ua": "ie",
@@ -14410,6 +14410,19 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "scroll-behavior",
+          "getBoundingClientRect"
+        ],
+        "flag": true,
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -14482,17 +14495,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "caniuse",
-        "guess": true,
-        "features": [
-          "getBoundingClientRect"
-        ],
-        "partial": true,
-        "selected": true
-      },
-      {
         "ua": "safari_ios",
         "status": "shipped",
         "source": "caniuse",
@@ -14536,6 +14538,16 @@
       },
       {
         "ua": "chrome",
+        "status": "shipped",
+        "source": "mdn",
+        "guess": true,
+        "features": [
+          "scroll-behavior"
+        ],
+        "partial": true
+      },
+      {
+        "ua": "safari",
         "status": "shipped",
         "source": "mdn",
         "guess": true,
@@ -14596,16 +14608,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "shipped",
-        "source": "mdn",
-        "guess": true,
-        "features": [
-          "scroll-behavior"
-        ],
-        "partial": true
-      },
-      {
         "ua": "safari_ios",
         "status": "shipped",
         "source": "mdn",
@@ -14656,6 +14658,16 @@
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=css-scroll-behavior",
             "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "experimental",
+            "flag": true,
+            "notes": [
+              "Supported in Safari via the \"CSSOM View Smooth Scrolling\" Experimental Features flag."
+            ],
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=css-scroll-behavior"
           },
           {
             "ua": "opera",
@@ -14807,6 +14819,14 @@
             "partial": true
           },
           {
+            "ua": "safari",
+            "status": "experimental",
+            "source": "caniuse",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "caniuse",
@@ -14849,13 +14869,6 @@
             "partial": true
           },
           {
-            "ua": "safari",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "caniuse",
@@ -14892,6 +14905,13 @@
             "partial": true
           },
           {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -14914,13 +14934,6 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "safari",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -15057,6 +15070,14 @@
             "partial": true
           },
           {
+            "ua": "safari",
+            "status": "experimental",
+            "source": "caniuse",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "caniuse",
@@ -15099,13 +15120,6 @@
             "partial": true
           },
           {
-            "ua": "safari",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
-            "partial": true
-          },
-          {
             "ua": "safari_ios",
             "status": "shipped",
             "source": "caniuse",
@@ -15141,6 +15155,13 @@
             "partial": true
           },
           {
+            "ua": "safari",
+            "status": "shipped",
+            "source": "mdn",
+            "guess": true,
+            "partial": true
+          },
+          {
             "ua": "opera",
             "status": "shipped",
             "source": "mdn",
@@ -15163,13 +15184,6 @@
           },
           {
             "ua": "samsunginternet_android",
-            "status": "shipped",
-            "source": "mdn",
-            "guess": true,
-            "partial": true
-          },
-          {
-            "ua": "safari",
             "status": "shipped",
             "source": "mdn",
             "guess": true,
@@ -21322,7 +21336,7 @@
       },
       {
         "ua": "webview_android",
-        "status": "shipped",
+        "status": "experimental",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/download",
         "selected": true
@@ -21515,7 +21529,7 @@
         "ua": "webview_android",
         "status": "shipped",
         "notes": [
-          "Before Chrome 50, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
+          "Before WebView 50, this property returned the deprecated child <code>DOMSettableTokenList</code> instead of <code>DOMTokenList</code>."
         ],
         "source": "mdn",
         "selected": true
@@ -21958,6 +21972,16 @@
         "href": "https://caniuse.com/#feat=input-datetime"
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "notes": [
+          "Partial support in macOS Safari refers to not supporting the `week` and `month` input type"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=input-datetime",
+        "selected": true
+      },
+      {
         "ua": "opera",
         "status": "shipped",
         "source": "caniuse",
@@ -22046,8 +22070,7 @@
         "ua": "safari",
         "status": "",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6640933999214592",
-        "selected": true
+        "href": "https://www.chromestatus.com/feature/6640933999214592"
       }
     ]
   },
@@ -22225,11 +22248,7 @@
       },
       {
         "ua": "firefox_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Support can be enabled via the `dom.forms.inputmode` flag"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-inputmode",
         "selected": true
@@ -22671,21 +22690,21 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5719830432841728",
         "selected": true
@@ -22872,6 +22891,19 @@
       {
         "ua": "opera_android",
         "status": "shipped",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
+        "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming"
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
         "source": "mdn",
         "href": "https://developer.mozilla.org/docs/Web/API/PerformanceLongTaskTiming",
         "selected": true
@@ -27463,6 +27495,20 @@
   "performance-measure-memory": {
     "implementations": [
       {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685965186138112",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5685965186138112",
+        "selected": true
+      },
+      {
         "ua": "firefox",
         "status": "",
         "source": "chromestatus",
@@ -28923,7 +28969,7 @@
         "ua": "edge",
         "status": "shipped",
         "notes": [
-          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+          "The default policy has been changed from `no-referrer-when-downgrade` to `strict-origin-when-cross-origin.` See [the revised spec.](https://github.com/w3c/webappsec-referrer-policy/pull/142)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy"
@@ -28939,7 +28985,7 @@
         "ua": "chrome",
         "status": "shipped",
         "notes": [
-          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+          "The default policy has been changed from `no-referrer-when-downgrade` to `strict-origin-when-cross-origin.` See [the revised spec.](https://github.com/w3c/webappsec-referrer-policy/pull/142)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy"
@@ -28947,6 +28993,9 @@
       {
         "ua": "safari",
         "status": "shipped",
+        "notes": [
+          "[Safari's ITP](https://webkit.org/blog/9661/preventing-tracking-prevention-tracking/) (on by default) downgrades _all_ cross-site subresource request (not page navigation) referrer headers to the page's origin, ignoring the `unsafe-url` referrer policy."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -28961,6 +29010,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "[Safari's ITP](https://webkit.org/blog/9661/preventing-tracking-prevention-tracking/) (on by default) downgrades _all_ cross-site subresource request (not page navigation) referrer headers to the page's origin, ignoring the `unsafe-url` referrer policy."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -28969,7 +29021,7 @@
         "ua": "chrome_android",
         "status": "shipped",
         "notes": [
-          "Chrome is now defaulting to `strict-origin-when-cross-origin` which is the recommended setting for most use-cases."
+          "The default policy has been changed from `no-referrer-when-downgrade` to `strict-origin-when-cross-origin.` See [the revised spec.](https://github.com/w3c/webappsec-referrer-policy/pull/142)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy"
@@ -32714,6 +32766,20 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "",
+        "source": "mdn",
+        "href": "https://developer.mozilla.org/docs/Web/API/StorageManager",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "mdn",
@@ -32948,6 +33014,19 @@
           {
             "ua": "opera_android",
             "status": "shipped",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
+            "selected": true
+          },
+          {
+            "ua": "safari",
+            "status": "",
+            "source": "mdn",
+            "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate"
+          },
+          {
+            "ua": "safari_ios",
+            "status": "",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/API/StorageManager/estimate",
             "selected": true
@@ -34222,21 +34301,21 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5078049450098688",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5078049450098688",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5078049450098688",
         "selected": true
@@ -34283,6 +34362,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=trusted-types"
+      },
+      {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=trusted-types",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -35376,18 +35462,12 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation"
       },
       {
         "ua": "firefox",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -35395,9 +35475,6 @@
       {
         "ua": "chrome",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation"
       },
@@ -35414,9 +35491,6 @@
       {
         "ua": "opera",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation",
         "selected": true
@@ -35434,9 +35508,6 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
-        "notes": [
-          "Partial support refers to basic support of `element.animate()` and [playback control of AnimationPlayer](https://www.chromestatus.com/features/5633748733263872)"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-animation"
       },
@@ -35691,8 +35762,22 @@
   "web-share-target": {
     "implementations": [
       {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5662315307335680",
+        "selected": true
+      },
+      {
         "ua": "chrome_android",
         "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5662315307335680",
+        "selected": true
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5662315307335680",
         "selected": true
@@ -36410,6 +36495,9 @@
       {
         "ua": "safari_ios",
         "status": "shipped",
+        "notes": [
+          "Experimental feature not yet enabled in WKWebView-based browsers including Chrome for iOS."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
@@ -36845,21 +36933,14 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5172464636133376",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5172464636133376",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "indevelopment",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5172464636133376",
         "selected": true

@@ -252,11 +252,11 @@
     "edDraft": "https://w3c.github.io/audiobooks/",
     "repository": "https://github.com/w3c/audiobooks",
     "title": "Audiobooks",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/publishing/groups/publ-wg/",
-        "label": "Publishing Working Group"
+        "label": "Audiobooks Working Group"
       }
     ],
     "publisher": "W3C",
@@ -1327,7 +1327,7 @@
     "milestones": {}
   },
   "css2": {
-    "url": "https://www.w3.org/TR/CSS2/",
+    "url": "https://www.w3.org/TR/CSS21/",
     "edDraft": "https://drafts.csswg.org/css2/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
@@ -1568,10 +1568,6 @@
     "title": "Media Capture from DOM Elements",
     "status": "WD",
     "deliveredBy": [
-      {
-        "url": "https://www.w3.org/das/",
-        "label": "Devices and Sensors Working Group"
-      },
       {
         "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
@@ -3122,8 +3118,8 @@
     "url": "https://www.w3.org/TR/webrtc/",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
-    "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-    "status": "CR",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/groups/wg/webrtc",
@@ -3545,11 +3541,11 @@
     "edDraft": "https://w3c.github.io/pub-manifest/",
     "repository": "https://github.com/w3c/pub-manifest",
     "title": "Publication Manifest",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/publishing/groups/publ-wg/",
-        "label": "Publishing Working Group"
+        "label": "Audiobooks Working Group"
       }
     ],
     "publisher": "W3C",
@@ -3628,10 +3624,6 @@
     "title": "MediaStream Recording",
     "status": "WD",
     "deliveredBy": [
-      {
-        "url": "https://www.w3.org/das/",
-        "label": "Devices and Sensors Working Group"
-      },
       {
         "url": "https://www.w3.org/groups/wg/webrtc",
         "label": "Web Real-Time Communications Working Group"
@@ -4966,8 +4958,8 @@
     "url": "https://www.w3.org/TR/webauthn-2/",
     "edDraft": "https://w3c.github.io/webauthn/",
     "repository": "https://github.com/w3c/webauthn",
-    "title": "Web Authentication:An API for accessing Public Key Credentials Level 2",
-    "status": "WD",
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webauthn/",
@@ -5123,7 +5115,7 @@
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
     "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/groups/wg/webrtc",
@@ -5143,7 +5135,7 @@
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
     "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/groups/wg/webrtc",
@@ -5457,7 +5449,7 @@
     "edDraft": "https://w3c.github.io/wot-scripting-api/",
     "repository": "https://github.com/w3c/wot-scripting-api",
     "title": "Web of Things (WoT) Scripting API",
-    "status": "WD",
+    "status": "NOTE",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/WoT/WG/",
@@ -5465,7 +5457,7 @@
       }
     ],
     "publisher": "W3C",
-    "informative": false,
+    "informative": true,
     "milestones": {}
   },
   "wot-architecture": {
@@ -5482,9 +5474,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2020-03-30"
-    }
+    "milestones": {}
   },
   "wot-description": {
     "url": "https://www.w3.org/TR/wot-thing-description/",
@@ -5500,12 +5490,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "wot-thing-description": {
-    "url": "https://www.w3.org/TR/wot-thing-description/",
+    "url": "https://www.w3.org/TR/wot-thing-description10/",
     "edDraft": "https://w3c.github.io/wot-thing-description/",
     "repository": "https://github.com/w3c/wot-thing-description",
     "title": "Web of Things (WoT) Thing Description",
@@ -5518,9 +5506,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "wps": {
     "url": "http://www.opengeospatial.org/standards/wms",
