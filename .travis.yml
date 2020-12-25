@@ -1,7 +1,8 @@
-sudo: false
 language: node_js
 node_js:
 - node
+cache:
+  npm: false
 script:
 - bash "./deploy.sh"
 env:
