@@ -380,7 +380,7 @@ With these definitions, the `reference` table will be generated at the end of se
 
 ## Repository branches
 
-The source of the roadmaps is in the `master` branch. This is the default branch of the repository, and the branch against which you should be sending pull requests. Whenever content is pushed onto the `master` branch, a Travis script will run, fetch information and implementation data for all features listed in `data`, and eventually update the `gh-pages` branch accordingly.
+The source of the roadmaps is in the `main` branch. This is the default branch of the repository, and the branch against which you should be sending pull requests. Whenever content is pushed onto the `main` branch, a Travis script will run, fetch information and implementation data for all features listed in `data`, and eventually update the `gh-pages` branch accordingly.
 
 The `gh-pages` branch is the branch published on [`https://w3c.github.io/web-roadmaps/`](https://w3c.github.io/web-roadmaps/).
 
