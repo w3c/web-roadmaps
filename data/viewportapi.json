@@ -2,6 +2,6 @@
   "url": "https://wicg.github.io/visual-viewport/",
   "impl": {
     "chromestatus": 5737866978131968,
-    "webkitstatus": "feature-visual-viewport-api"
+    "webkitstatus": "specification-visual-viewport-api"
   }
 }

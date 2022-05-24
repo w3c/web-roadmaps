@@ -9,7 +9,7 @@ node tools/extract-impl-data.js data/3dcamera.json data/webvtt.json
 const fetch = require('fetch-filecache-for-crawling');
 const fs = require('fs');
 const path = require('path');
-const bcd = require('mdn-browser-compat-data');
+const bcd = require('@mdn/browser-compat-data');
 
 
 /**
@@ -206,6 +206,8 @@ let sources = {
           case 'Proposed':
           case 'Public support':
           case 'Positive':
+          case 'Under consideration':
+          case 'Worth prototyping':
             res.status = 'consideration';
             break;
           case 'No signal':
@@ -220,6 +222,7 @@ let sources = {
           case 'Deprecated':
           case 'Defer':
           case 'Harmful':
+          case 'Non-harmful':
             res.status = '';
             break;
           default:

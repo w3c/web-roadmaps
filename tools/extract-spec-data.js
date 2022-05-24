@@ -11,7 +11,7 @@ const fetch = require('fetch-filecache-for-crawling');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
-const browserSpecs = require('browser-specs');
+const browserSpecs = require('web-specs');
 
 
 /**
@@ -27,6 +27,7 @@ const maturities = [
   'PR',
   'REC',
   'Retired',
+  'DNOTE',
   'NOTE'
 ];
 
@@ -34,6 +35,7 @@ const maturities = [
  * Mapping for some maturity status values
  */
 const maturityMapping = {
+  'First Public Working Draft': 'WD',
   'Working Draft': 'WD',
   'Candidate Recommendation': 'CR',
   'Candidate Recommendation Draft': 'CR',
@@ -46,6 +48,8 @@ const maturityMapping = {
   'cg-draft': 'ED',
   'Living Standard': 'LS',
   'Group Note': 'NOTE',
+  'Note': 'NOTE',
+  'Draft Note': 'DNOTE',
   'Proposed Standard': 'CR',
   'International Standard': 'REC'
 };

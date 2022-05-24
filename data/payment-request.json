@@ -3,6 +3,6 @@
     "caniuse": "payment-request",
     "chromestatus": 5639348045217792,
     "edgestatus": "Payment Request API",
-    "webkitstatus": "feature-payment-request"
+    "webkitstatus": "specification-payment-request"
   }
 }
