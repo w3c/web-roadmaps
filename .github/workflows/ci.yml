@@ -1,0 +1,44 @@
+name: Test data, generate pages, and publish (when not in a PR)
+
+# Run once per week on Monday morning, when a PR is merged to main branch,
+# when a new PR is created against the main branch, or manually
+on:
+  schedule:
+    - cron: '20 8 * * 1'
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Setup environment
+      run: npm ci
+
+    - name: Validate data and generate pages
+      run: npm run all
+      env:
+        W3C_API_KEY: pnvbbs930w0wkkckowww0sk0wocow0k
+
+    - name: Copy README file
+      if: ${{ github.ref == 'refs/heads/main' }}
+      run: cp README.md .out/README.md
+
+    - name: Deploy generated files to gh-pages branch
+      if: ${{ github.ref == 'refs/heads/main' }}
+      uses: peaceiris/actions-gh-pages@v3.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
+        publish_branch: gh-pages
