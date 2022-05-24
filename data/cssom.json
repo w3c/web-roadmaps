@@ -1,0 +1,11 @@
+{
+  "features": {
+    "construct-stylesheets": {
+      "url": "https://www.w3.org/TR/cssom-1/#create-a-constructed-cssstylesheet",
+      "title": "Constructable stylesheets",
+      "impl": {
+        "chromestatus": 5394843094220800
+      }
+    }
+  }
+}

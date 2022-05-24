@@ -8,7 +8,6 @@
     "properties": {
       "implementations": {
         "type": "array",
-        "additionalItems": false,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -55,7 +54,6 @@
             },
             "features": {
               "type": "array",
-              "additionalItems": false,
               "items": {
                 "type": "string",
                 "minLength": 1
@@ -63,7 +61,6 @@
             },
             "notes": {
               "type": "array",
-              "additionalItems": false,
               "items": {
                 "type": "string",
                 "minLength": 1
@@ -83,7 +80,6 @@
           "properties": {
             "implementations": {
               "type": "array",
-              "additionalItems": false,
               "items": {
                 "type": "object",
                 "additionalProperties": false,
@@ -130,7 +126,6 @@
                   },
                   "notes": {
                     "type": "array",
-                    "additionalItems": false,
                     "items": {
                       "type": "string",
                       "minLength": 1
@@ -146,7 +141,6 @@
         "title": "Polyfills",
         "description": "Polyfills available for the feature",
         "type": "array",
-        "additionalItems": false,
         "items": {
           "type": "object",
           "additionalProperties": false,

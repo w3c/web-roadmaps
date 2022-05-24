@@ -1,13 +1,14 @@
 {
   "name": "web-roadmaps",
   "dependencies": {
-    "ajv-cli": "^3.0.0",
-    "browser-specs": "^1.19.1",
+    "@mdn/browser-compat-data": "^4.2.1",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^2.1.1",
     "fetch-filecache-for-crawling": "^3.0.2",
-    "jsdom": "^16.2.2",
-    "mdn-browser-compat-data": "^1.1.1",
-    "mkdirp": "^0.5.1",
-    "ncp": "^2.0.0"
+    "jsdom": "^19.0.0",
+    "mkdirp": "^1.0.4",
+    "ncp": "^2.0.0",
+    "web-specs": "^2.12.1"
   },
   "scripts": {
     "all": "npm run create-missing-data && npm run validate-data && npm run generate-info && npm run validate-html && npm run validate-info && npm run generate-pages",
@@ -17,10 +18,10 @@
     "generate-pages": "node tools/generate-roadmaps.js",
     "create-missing-data": "node tools/create-missing-data.js",
     "detect-missing-data": "node tools/create-missing-data.js --detect",
-    "validate-data": "ajv -s tools/schema-spec.json -d data/\\*.json --errors=text",
+    "validate-data": "ajv -s tools/schema-spec.json -c ajv-formats -d data/\\*.json --errors=text",
     "validate-info": "npm run validate-specinfo && npm run validate-implinfo",
-    "validate-specinfo": "ajv -s tools/schema-tr.json -d .out/data/tr.json --errors=text",
-    "validate-implinfo": "ajv -s tools/schema-impl.json -d .out/data/impl.json --errors=text",
+    "validate-specinfo": "ajv -s tools/schema-tr.json -c ajv-formats -d .out/data/tr.json --errors=text",
+    "validate-implinfo": "ajv -s tools/schema-impl.json -c ajv-formats -d .out/data/impl.json --errors=text",
     "validate-html": "node tools/validate-html.js media mobile publishing security web5g"
   }
 }

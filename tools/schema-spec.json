@@ -36,7 +36,6 @@
         "mdn": { "type": ["string", "null"] },
         "other": {
           "type": "array",
-          "additionalItems": false,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -77,7 +76,6 @@
       "title": "Polyfills",
       "description": "For specifications for which there are polyfills available that would be worth reporting, the polyfills property lists these polyfills.",
       "type": "array",
-      "additionalItems": false,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -110,13 +108,12 @@
       "title": "Maturity status",
       "description": "The maturity level of the specification",
       "type": "string",
-      "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE"]
+      "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE", "DNOTE"]
     },
     "wgs": {
       "title": "Group(s)",
       "description": "When the specification is unknown to the W3C API and to Specref, the wgs property should list the group(s) responsible for the specification.",
       "type": "array",
-      "additionalItems": false,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -167,7 +164,6 @@
       "title": "See also",
       "description": "Other resources worth looking at in relation to this spec",
       "type": "array",
-      "additionalItems": false,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -224,7 +220,6 @@
               "mdn": { "type": ["string", "null"] },
               "other": {
                 "type": "array",
-                "additionalItems": false,
                 "items": {
                   "type": "object",
                   "additionalProperties": false,

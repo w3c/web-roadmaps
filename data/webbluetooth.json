@@ -4,6 +4,6 @@
     "caniuse": "web-bluetooth",
     "chromestatus": 5264933985976320,
     "edgestatus": "Web Bluetooth",
-    "webkitstatus": "feature-web-bluetooth"
+    "webkitstatus": "specification-web-bluetooth"
   }
 }

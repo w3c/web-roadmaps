@@ -41,13 +41,12 @@
         "title": "Maturity status",
         "description": "The maturity level of the specification",
         "type": "string",
-        "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE"]
+        "enum": ["ED", "WD", "LS", "CR", "PR", "REC", "Retired", "NOTE", "DNOTE"]
       },
       "deliveredBy": {
         "title": "Group(s)",
         "description": "Group(s) responsible for the specification.",
         "type": "array",
-        "additionalItems": false,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -82,7 +81,6 @@
         "title": "See also",
         "description": "Other resources worth looking at in relation to this spec",
         "type": "array",
-        "additionalItems": false,
         "items": {
           "type": "object",
           "additionalProperties": false,

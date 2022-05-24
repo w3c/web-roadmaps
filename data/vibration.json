@@ -3,6 +3,6 @@
     "caniuse": "vibration",
     "chromestatus": 5698768766763008,
     "edgestatus": "Vibration API",
-    "webkitstatus": "feature-vibration-api"
+    "webkitstatus": "specification-vibration-api"
   }
 }
