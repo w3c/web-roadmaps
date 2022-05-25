@@ -45,7 +45,7 @@ async function generatePage(file, outputFolder) {
       doc.querySelectorAll('head script').forEach(
         script => script.parentNode.removeChild(script));
       let outputFile = path.join(outputFolder, file);
-      mkdirp(path.dirname(outputFile));
+      mkdirp.sync(path.dirname(outputFile));
       fs.writeFile(outputFile, dom.serialize(), 'utf-8', err => {        
         if (err) {
           console.error(`- generate ${file}... an error occurred`);
