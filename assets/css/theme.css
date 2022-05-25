@@ -1,0 +1,445 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  font-family: Open Sans, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #47525d;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0070cc;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #333;
+}
+
+h3::before {
+  content: "– ";
+}
+h3::after {
+  content: " –";
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 800;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+li {
+  color: #333;
+}
+
+p.highlight {
+  color: #00C853;
+}
+
+a {
+  color: #0062af;
+  text-decoration: none;
+  border-bottom: 1px solid #767676;
+}
+
+a:hover {
+  border-bottom: #0062af 2px solid;
+}
+
+a:visited {
+  color: #004881;
+}
+
+strong {
+  font-weight: 800;
+}
+
+
+.btn-reverse {
+    background-color: transparent;
+    border: 1px solid #036;
+    border-radius: 2px;
+    padding: 7px 15px 7px 15px;
+}
+
+.btn-negative {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: #036;
+    padding: 7px 15px 7px 15px;
+}
+
+.btn-reverse-negative {
+background-color: transparent;
+border: 1px solid white;
+border-radius: 3px;
+color: white;
+padding: 7px 15px 7px 15px;
+}
+
+.container-fluid {
+    width: 100%;
+
+}
+
+.sr-only {
+    display: none;
+}
+
+
+footer {
+    background-color: white;
+    border-top: 0px;
+}
+
+
+section.featureset {
+  margin-bottom: 2em;
+}
+
+section[data-feature] {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  section[data-feature]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(100% - 0.3em);
+    width: 0.5em;
+    border-left: thin dashed #333;
+  }
+
+  section[data-feature] > h3 {
+    position: absolute;
+    right: 100%;
+    width: 120px;
+    transform-origin: top right;
+    transform: rotate(-15deg);
+    color: #333;
+    padding-right: 1.5em;
+    margin-right: 0.2em;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 0;
+    border-top: thin dashed #333;
+  }
+
+  section[data-feature] > h3::before {
+    content: none;
+  }
+  section[data-feature] > h3::after {
+    content: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  section[data-feature] > h3 {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section[data-feature] > h3 {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1380px) {
+  section[data-feature] > h3 {
+    width: 270px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-bottom: 5px solid #0070cc;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+th { font-weight: 800; }
+tbody th { text-align:left; }
+thead th {
+    background-color: #0070cc;
+    color: #f3f3f3;
+    padding: 0.5em 0;
+    vertical-align: top;
+}
+th, td {
+    border-bottom: thin solid #0070cc;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+tbody th, tbody td { padding-left: 0.5em;}
+th.feature {
+  max-width: 150px;
+}
+th[rowspan], td[rowspan] {
+  vertical-align: top;
+  padding-top: 1.5em;
+}
+td.maturity { text-align: center; }
+td.maturity img { vertical-align: middle; }
+td.impl { min-width: 220px; }
+td.seeAlso {
+  min-width: 200px;
+  font-size: 90%;
+}
+td img + img { margin-left: 0.25em; }
+td ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -8px;
+}
+td.milestones {
+  font-size: 90%;
+  min-width: 150px;
+}
+[data-col=spec] {
+  max-width: 250px;
+}
+
+
+
+/************************************************************
+Remove link underlines in table and menu
+************************************************************/
+.brand a, #side-nav a, table a {
+  border-bottom: none;
+}
+
+
+
+/************************************************************
+Styles for the "spec title" column
+************************************************************/
+.group {
+    font-size: smaller;
+    color: #777;
+}
+
+.group a {
+    color: #777;
+}
+.group a:visited {
+    color: #777;
+}
+.group a:hover {
+    border-bottom: #777 2px solid;
+}
+
+
+
+/************************************************************
+Styles for the "current implementations" column
+************************************************************/
+.ua {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+}
+
+.ua:hover {
+    border-bottom: none;
+}
+
+.ua abbr {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide text visually but not to accessible tools */
+.ua span {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.ua i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Stack badges on the right on top of one another */
+.ua i:nth-child(n+3) {
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.ua i:nth-child(3) {
+    bottom: -5px;
+    z-index: 4;
+}
+
+.ua i:nth-child(4) {
+    bottom: 10px;
+    z-index: 3;
+}
+
+.ua i:nth-child(5) {
+    bottom: 25px;
+    z-index: 2;
+}
+
+/* Browser icons */
+.ua .baidu { background-image: url('../impl/baidu.png'); }
+.ua .chrome { background-image: url('../impl/chrome.png'); }
+.ua .edge { background-image: url('../impl/edge.png'); }
+.ua .firefox { background-image: url('../impl/firefox.png'); }
+.ua .opera { background-image: url('../impl/opera.png'); }
+.ua .qq { background-image: url('../impl/qq.png'); }
+.ua .safari { background-image: url('../impl/safari.png'); }
+.ua .samsunginternet { background-image: url('../impl/samsunginternet.png'); }
+.ua .uc { background-image: url('../impl/uc.png'); }
+.ua .webkit { background-image: url('../impl/webkit.png'); }
+
+/* Desktop/Mobile badges */
+.ua .desktop { background-image: url('../impl/desktop.svg'); }
+.ua .mobile { background-image: url('../impl/mobile.svg'); }
+.ua .desktop.mobile { background-image: url('../impl/desktop-mobile.svg'); }
+
+/* Prefix required and behind a flag badges */
+.ua .prefix { background-image: url('../impl/prefix.svg'); }
+.ua .flag { background-image: url('../impl/flag.svg'); }
+
+/* Implementation may be partial */
+.ua .partial {
+  background-image: url('../impl/partial.svg');
+  background-size: 31px 20px !important;
+  bottom: -5px !important;
+  width: 31px !important;
+  right: 9px !important;
+  z-index: 1 !important;
+}
+
+/* UA filtering menu */
+th[data-col|=impl] details {
+  display: none;
+  position: relative;
+  padding: 0 0.1em;
+  text-align: left;
+  font-weight: 400;
+}
+
+th[data-col|=impl] details.active {
+  display: block;
+}
+
+th[data-col|=impl] summary {
+  font-size: smaller;
+  padding-left: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+th[data-col|=impl] div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #0070cc;
+  font-size: smaller;
+  z-index: 10;
+}
+
+th[data-col|=impl] ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em;
+}
+
+th[data-col|=impl] li {
+  color: inherit;
+}
+
+dl dt {
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+dl dd {
+  margin-bottom: 1em;
+}
+
+
+/************************************************************
+Styles for the "about" page
+************************************************************/
+#legend table {
+  margin: 2em auto;
+}
+#legend table td:nth-child(1) {
+  width: 80px;
+}
+#legend img {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        z-index: 3;
+        background-color: rgba(255,255,255,0.9);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    footer {
+        background-color: white;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+}

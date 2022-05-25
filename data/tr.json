@@ -1,0 +1,5507 @@
+{
+  "3dcamera": {
+    "url": "https://www.w3.org/TR/mediacapture-depth/",
+    "edDraft": "https://w3c.github.io/mediacapture-depth/",
+    "repository": "https://github.com/w3c/mediacapture-depth",
+    "title": "Media Capture Depth Stream Extensions",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "3dtiles": {
+    "url": "https://github.com/AnalyticalGraphicsInc/3d-tiles",
+    "title": "3D Tiles",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "accelerometer": {
+    "url": "https://www.w3.org/TR/accelerometer/",
+    "edDraft": "https://w3c.github.io/accelerometer/",
+    "repository": "https://github.com/w3c/accelerometer",
+    "title": "Accelerometer",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
+  },
+  "adpt": {
+    "url": "https://w3c.github.io/adpt/",
+    "title": "Proposal for an Exchange Format to support Audio Description",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "ambient-light": {
+    "url": "https://www.w3.org/TR/ambient-light/",
+    "edDraft": "https://w3c.github.io/ambient-light/",
+    "repository": "https://github.com/w3c/ambient-light",
+    "title": "Ambient Light Sensor",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
+  },
+  "animation-frames": {
+    "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "requestAnimationFrame"
+  },
+  "animation-worklet": {
+    "url": "https://www.w3.org/TR/css-animation-worklet-1/",
+    "edDraft": "https://drafts.css-houdini.org/css-animationworklet-1/",
+    "repository": "https://github.com/w3c/css-houdini-drafts",
+    "title": "CSS Animation Worklet API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "annotation-model": {
+    "url": "https://www.w3.org/TR/annotation-model/",
+    "edDraft": "https://w3c.github.io/web-annotation/",
+    "repository": "https://github.com/w3c/web-annotation",
+    "title": "Web Annotation Data Model",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/annotation/",
+        "label": "Web Annotation Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "REC": "2017-03-30"
+    }
+  },
+  "appcache": {
+    "url": "https://www.w3.org/TR/html51/obsolete.html#application-caches",
+    "edDraft": "https://rawgit.com/w3c/html/html5.1-2/single-page.html",
+    "title": "HTML 5.1 2nd Edition",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/htmlwg",
+        "label": "HTML Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "ApplicationCache"
+  },
+  "appmanifest": {
+    "url": "https://www.w3.org/TR/appmanifest/",
+    "edDraft": "https://w3c.github.io/manifest/",
+    "repository": "https://github.com/w3c/manifest",
+    "title": "Web Application Manifest",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2022-03-30"
+    },
+    "features": {
+      "background_color": {
+        "title": "background_color member",
+        "url": "#background_color-member"
+      },
+      "install": {
+        "title": "Installation events",
+        "url": "#installation-events"
+      },
+      "purpose": {
+        "title": "purpose member",
+        "url": "#purpose-member"
+      },
+      "related_applications": {
+        "title": "related_applications member",
+        "url": "#related_applications-member"
+      },
+      "theme_color": {
+        "title": "theme_color member",
+        "url": "#theme_color-member"
+      }
+    }
+  },
+  "atag20": {
+    "url": "https://www.w3.org/TR/ATAG20/",
+    "title": "Authoring Tool Accessibility Guidelines (ATAG) 2.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/AU/",
+        "label": "Authoring Tool Accessibility Guidelines Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "audio-device-client": {
+    "url": "https://github.com/WebAudio/web-audio-cg/blob/master/audio-device-client/explainer.md",
+    "title": "Audio Device Client",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/audio-comgp/",
+        "label": "Audio Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "audio-output": {
+    "url": "https://www.w3.org/TR/audio-output/",
+    "edDraft": "https://w3c.github.io/mediacapture-output/",
+    "repository": "https://github.com/w3c/mediacapture-output",
+    "title": "Audio Output Devices API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "sinkId": {
+        "title": "ID of the audio device",
+        "url": "#dom-htmlmediaelement-sinkid"
+      },
+      "setSinkId": {
+        "title": "Method to set the ID of the audio device",
+        "url": "#dom-htmlmediaelement-setsinkid"
+      }
+    }
+  },
+  "audio": {
+    "url": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "audio element"
+  },
+  "audiobooks": {
+    "url": "https://www.w3.org/TR/audiobooks/",
+    "edDraft": "https://w3c.github.io/audiobooks/",
+    "repository": "https://github.com/w3c/audiobooks",
+    "title": "Audiobooks",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/publishing/groups/publ-wg/",
+        "label": "Audiobooks Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2020-09-30"
+    }
+  },
+  "autocomplete": {
+    "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "autocomplete attribute",
+    "features": {
+      "on-off": {
+        "title": "On and Off values",
+        "url": "#autofilling-form-controls-the-autocomplete-attribute"
+      }
+    }
+  },
+  "autoplay": {
+    "url": "https://github.com/w3c/autoplay",
+    "title": "Autoplay Policy Detection",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "background-fetch": {
+    "url": "https://wicg.github.io/background-fetch/",
+    "edDraft": "https://wicg.github.io/background-fetch/",
+    "repository": "https://github.com/WICG/background-fetch",
+    "title": "Background Fetch",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "background-sync": {
+    "url": "https://wicg.github.io/background-sync/spec/",
+    "edDraft": "https://wicg.github.io/background-sync/spec/",
+    "repository": "https://github.com/WICG/background-sync",
+    "title": "Web Background Synchronization",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "badging": {
+    "url": "https://w3c.github.io/badging/",
+    "edDraft": "https://w3c.github.io/badging/",
+    "repository": "https://github.com/w3c/badging",
+    "title": "Badging API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "barometer": {
+    "url": "https://kenchris.github.io/barometer/",
+    "title": "Ambient Atmospheric Pressure (Barometric) Sensor",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "battery": {
+    "url": "https://www.w3.org/TR/battery-status",
+    "edDraft": "https://w3c.github.io/battery/",
+    "repository": "https://github.com/w3c/battery",
+    "title": "Battery Status API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "beacon": {
+    "url": "https://www.w3.org/TR/beacon/",
+    "edDraft": "https://w3c.github.io/beacon/",
+    "repository": "https://github.com/w3c/beacon",
+    "title": "Beacon",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2020-06-30"
+    }
+  },
+  "budget-api": {
+    "url": "https://wicg.github.io/budget-api/",
+    "repository": "https://github.com/wicg/budget-api",
+    "title": "Web Budget API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "cityjson": {
+    "url": "http://www.cityjson.org/",
+    "title": "CityJSON",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "3D geoinformation group at TU Delft",
+    "milestones": {}
+  },
+  "clipboard-apis": {
+    "url": "https://www.w3.org/TR/clipboard-apis/",
+    "edDraft": "https://w3c.github.io/clipboard-apis/",
+    "repository": "https://github.com/w3c/clipboard-apis",
+    "title": "Clipboard API and events",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "cloud-browser-arch": {
+    "url": "https://www.w3.org/TR/cloud-browser-arch/",
+    "edDraft": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
+    "repository": "https://github.com/w3c/Web-and-TV-IG",
+    "title": "Cloud Browser Architecture",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webtv/",
+        "label": "Media and Entertainment Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "color-canvas": {
+    "url": "https://github.com/junov/CanvasColorSpace/blob/master/CanvasColorSpaceProposal.md",
+    "title": "Color managing canvas contents",
+    "status": "ED",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "color-gamut": {
+    "url": "https://www.w3.org/TR/mediaqueries-4/#color-gamut",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-4/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Media Queries Level 4",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "color-gamut media query"
+  },
+  "colorweb": {
+    "url": "https://w3c.github.io/ColorWeb-CG/",
+    "title": "High Dynamic Range and Wide Gamut Color on the Web",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/colorweb/",
+        "label": "Color on the Web Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "contacts-sys": {
+    "url": "https://www.w3.org/TR/contacts-manager-api/",
+    "edDraft": "https://www.w3.org/2012/sysapps/contacts-manager-api/",
+    "title": "Contacts Manager API",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2012/sysapps/",
+        "label": "System Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "cookie-store": {
+    "url": "https://wicg.github.io/cookie-store/",
+    "edDraft": "https://wicg.github.io/cookie-store/",
+    "repository": "https://github.com/WICG/cookie-store",
+    "title": "Cookie Store API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "core-aam11": {
+    "url": "https://www.w3.org/TR/core-aam-1.1/",
+    "edDraft": "https://w3c.github.io/core-aam/",
+    "repository": "https://github.com/w3c/core-aam",
+    "title": "Core Accessibility API Mappings 1.1",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/ARIA/",
+        "label": "Accessible Rich Internet Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "covjson": {
+    "url": "https://covjson.org/spec/",
+    "title": "The CoverageJSON Format",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "University of Reading",
+    "milestones": {}
+  },
+  "credential-management": {
+    "url": "https://www.w3.org/TR/credential-management-1/",
+    "edDraft": "https://w3c.github.io/webappsec-credential-management/",
+    "repository": "https://github.com/w3c/webappsec-credential-management",
+    "title": "Credential Management Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "Credential": {
+        "title": "The Credential interface",
+        "url": "#the-credential-interface"
+      },
+      "credentials": {
+        "title": "navigator.credentials",
+        "url": "#framework-credential-management"
+      }
+    }
+  },
+  "crypto": {
+    "url": "https://www.w3.org/TR/WebCryptoAPI/",
+    "edDraft": "https://w3c.github.io/webcrypto/",
+    "repository": "https://github.com/w3c/webcrypto",
+    "title": "Web Cryptography API",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2012/webcrypto/",
+        "label": "Web Cryptography Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "REC": "2017-01-30"
+    }
+  },
+  "cryptokey": {
+    "url": "https://www.w3.org/TR/webcrypto-key-discovery/",
+    "edDraft": "https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
+    "title": "WebCrypto Key Discovery",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2012/webcrypto/",
+        "label": "Web Cryptography Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "csp": {
+    "url": "https://www.w3.org/TR/CSP2/",
+    "edDraft": "https://w3c.github.io/webappsec-csp/",
+    "repository": "https://github.com/w3c/webappsec-csp",
+    "title": "Content Security Policy Level 2",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "securityPolicyViolation": {
+        "title": "SecurityPolicyViolation event",
+        "url": "#securitypolicyviolationevent-interface"
+      }
+    }
+  },
+  "csp3": {
+    "url": "https://www.w3.org/TR/CSP3/",
+    "edDraft": "https://w3c.github.io/webappsec-csp/",
+    "repository": "https://github.com/w3c/webappsec-csp",
+    "title": "Content Security Policy Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "report-to": {
+        "title": "report-to directive",
+        "url": "#directive-report-to"
+      },
+      "manifest-src": {
+        "title": "manifest-src directive",
+        "url": "#directive-manifest-src"
+      },
+      "navigate-to": {
+        "title": "navigate-to directive",
+        "url": "#directive-navigate-to"
+      },
+      "strict-dynamic": {
+        "title": "strict-dynamic source expression",
+        "url": "#strict-dynamic-usage"
+      },
+      "unsafe-hashed-attributes": {
+        "title": "unsafe-hashed-attributes source expression",
+        "url": "#unsafe-hashed-attributes-usage"
+      },
+      "worker-src": {
+        "title": "worker-src directive",
+        "url": "#worker-src"
+      }
+    }
+  },
+  "css-2d": {
+    "url": "https://www.w3.org/TR/css-transforms-1/",
+    "edDraft": "https://drafts.csswg.org/css-transforms/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Transforms Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "2D effects"
+  },
+  "css-3d": {
+    "url": "https://drafts.csswg.org/css-transforms-2/",
+    "edDraft": "https://drafts.csswg.org/css-transforms-2/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Transform Module Level 2",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "feature": "3D effects",
+    "features": {
+      "backface-visibility": {
+        "title": "backface-visibility property",
+        "url": "#propdef-backface-visibility"
+      },
+      "perspective": {
+        "title": "perspective property",
+        "url": "#propdef-perspective"
+      },
+      "perspective-origin": {
+        "title": "perspective-origin property",
+        "url": "#propdef-perspective-origin"
+      },
+      "rotate": {
+        "title": "rotate property",
+        "url": "#propdef-rotate"
+      },
+      "scale": {
+        "title": "scale property",
+        "url": "#propdef-scale"
+      },
+      "transform-style": {
+        "title": "transform-style property",
+        "url": "#transform-style-property"
+      },
+      "translate": {
+        "title": "translate property",
+        "url": "#propdef-translate"
+      }
+    }
+  },
+  "css-animations": {
+    "url": "https://www.w3.org/TR/css-animations-1/",
+    "edDraft": "https://drafts.csswg.org/css-animations/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Animations Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-border-background": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Backgrounds and Borders Module Level 3",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Complex backgrounds"
+  },
+  "css-border-radius": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/#the-border-radius",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Backgrounds and Borders Module Level 3",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Rounded corners"
+  },
+  "css-box-shadow": {
+    "url": "https://www.w3.org/TR/css-backgrounds-3/#the-box-shadow",
+    "edDraft": "https://drafts.csswg.org/css-backgrounds/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Backgrounds and Borders Module Level 3",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Box shadow effects"
+  },
+  "css-break-3": {
+    "url": "https://www.w3.org/TR/css-break-3/",
+    "edDraft": "https://drafts.csswg.org/css-break/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Fragmentation Module Level 3",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "box-decoration-break": {
+        "title": "box-decoration-break property",
+        "url": "#break-decoration"
+      },
+      "page-break": {
+        "title": "Page break properties",
+        "url": "#break-between"
+      },
+      "widows-orphans": {
+        "title": "Widows and orphans",
+        "url": "#widows-orphans"
+      }
+    }
+  },
+  "css-color-space": {
+    "url": "https://www.w3.org/TR/css-color-4/",
+    "edDraft": "https://drafts.csswg.org/css-color/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Color Module Level 4",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "icc-colors": {
+        "title": "profiled device-dependent colors",
+        "url": "#icc-colors"
+      },
+      "hsla": {
+        "title": "hsl/hsla syntax",
+        "url": "#the-hsl-notation"
+      },
+      "rgba": {
+        "title": "rgb/rgba syntax",
+        "url": "#rgb-functions"
+      },
+      "rgba-hex": {
+        "title": "RGBA hexadecimal notation",
+        "url": "#hex-notation"
+      }
+    }
+  },
+  "css-contain": {
+    "url": "https://www.w3.org/TR/css-contain-1/",
+    "edDraft": "https://drafts.csswg.org/css-contain-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Containment Module Level 1",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-content-3": {
+    "url": "https://www.w3.org/TR/css-content-3/",
+    "edDraft": "https://drafts.csswg.org/css-content-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Generated Content Module Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-device-adapt": {
+    "url": "https://www.w3.org/TR/css-device-adapt-1/",
+    "edDraft": "https://drafts.csswg.org/css-device-adapt/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Device Adaptation Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-flexbox": {
+    "url": "https://www.w3.org/TR/css-flexbox-1/",
+    "edDraft": "https://drafts.csswg.org/css-flexbox-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Flexible Box Layout Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-font-display": {
+    "url": "https://www.w3.org/TR/css-fonts-4/#font-display-desc",
+    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Fonts Module Level 4",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "WR/LC": "2020-09-30",
+      "CR": "2021-03-30"
+    },
+    "feature": "font-display"
+  },
+  "css-font-loading": {
+    "url": "https://www.w3.org/TR/css-font-loading-3/",
+    "edDraft": "https://drafts.csswg.org/css-font-loading/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Font Loading Module Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "FontFace": {
+        "title": "FontFace interface",
+        "url": "#fontface-interface"
+      },
+      "FontFaceSet": {
+        "title": "FontFaceSet interface",
+        "url": "#FontFaceSet-interface"
+      }
+    }
+  },
+  "css-fonts-4": {
+    "url": "https://www.w3.org/TR/css-fonts-4/",
+    "edDraft": "https://drafts.csswg.org/css-fonts-4/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Fonts Module Level 4",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "WR/LC": "2020-09-30",
+      "CR": "2021-03-30"
+    },
+    "features": {
+      "variable": {
+        "title": "Variable fonts",
+        "url": "#font-variation-props"
+      },
+      "font-variant-caps": {
+        "title": "font-variant-caps property",
+        "url": "#font-variant-caps-prop"
+      },
+      "font-variant-numeric": {
+        "title": "font-variant-numeric property",
+        "url": "#font-variant-numeric-prop"
+      },
+      "font-stretch": {
+        "title": "font-stretch property",
+        "url": "#font-stretch-prop"
+      },
+      "font-synthesis": {
+        "title": "font-synthesis property",
+        "url": "#font-synthesis-prop"
+      }
+    }
+  },
+  "css-gcpm-3": {
+    "url": "https://www.w3.org/TR/css-gcpm-3/",
+    "edDraft": "https://drafts.csswg.org/css-gcpm/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Generated Content for Paged Media Module",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-grid-1": {
+    "url": "https://www.w3.org/TR/css-grid-1/",
+    "edDraft": "https://drafts.csswg.org/css-grid/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Grid Layout Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-line-grid-1": {
+    "url": "https://www.w3.org/TR/css-line-grid-1/",
+    "edDraft": "https://drafts.csswg.org/css-line-grid/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Line Grid Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-overscroll": {
+    "url": "https://www.w3.org/TR/css-overscroll-1/",
+    "edDraft": "https://drafts.csswg.org/css-overscroll-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Overscroll Behavior Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-page-3": {
+    "url": "https://www.w3.org/TR/css-page-3/",
+    "edDraft": "https://drafts.csswg.org/css-page-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Paged Media Module Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-page-floats-3": {
+    "url": "https://www.w3.org/TR/css-page-floats-3/",
+    "edDraft": "https://drafts.csswg.org/css-page-floats/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Page Floats",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-paint-api": {
+    "url": "https://www.w3.org/TR/css-paint-api-1/",
+    "edDraft": "https://drafts.css-houdini.org/css-paint-api-1/",
+    "repository": "https://github.com/w3c/css-houdini-drafts",
+    "title": "CSS Painting API Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-rhythm-1": {
+    "url": "https://www.w3.org/TR/css-rhythm-1/",
+    "edDraft": "https://drafts.csswg.org/css-rhythm/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Rhythmic Sizing",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "line-height-step": {
+        "title": "line-height-step property",
+        "url": "#line-height-step"
+      }
+    }
+  },
+  "css-ruby": {
+    "url": "https://www.w3.org/TR/css-ruby-1/",
+    "edDraft": "https://drafts.csswg.org/css-ruby-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Ruby Annotation Layout Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "ruby-align": {
+        "title": "The ruby-align property",
+        "url": "#ruby-align-property"
+      },
+      "ruby-position": {
+        "title": "The ruby-position property",
+        "url": "#rubypos"
+      }
+    }
+  },
+  "css-scoping": {
+    "url": "https://www.w3.org/TR/css-scoping-1/",
+    "edDraft": "https://drafts.csswg.org/css-scoping/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Scoping Module Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "host": {
+        "title": "The :host pseudo-class",
+        "url": "#selectordef-host"
+      },
+      "hostfunction": {
+        "title": "The :host() pseudo-class",
+        "url": "#selectordef-host-function"
+      },
+      "host-context": {
+        "title": "The :host-context pseudo-class",
+        "url": "#selectordef-host-context"
+      },
+      "slotted": {
+        "title": "The ::slotted() pseudo-element",
+        "url": "#selectordef-slotted"
+      }
+    }
+  },
+  "css-scroll-snap": {
+    "url": "https://www.w3.org/TR/css-scroll-snap-1/",
+    "edDraft": "https://drafts.csswg.org/css-scroll-snap-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Scroll Snap Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-shadow-parts": {
+    "url": "https://www.w3.org/TR/css-shadow-parts-1/",
+    "edDraft": "https://drafts.csswg.org/css-shadow-parts/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Shadow Parts",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-size-adjust": {
+    "url": "https://drafts.csswg.org/css-size-adjust-1/",
+    "edDraft": "https://drafts.csswg.org/css-size-adjust-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Mobile Text Size Adjustment Module Level 1",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/members",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "css-touch-action": {
+    "url": "https://www.w3.org/TR/pointerevents2/",
+    "edDraft": "https://w3c.github.io/pointerevents/",
+    "repository": "https://github.com/w3c/pointerevents",
+    "title": "Pointer Events",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/pointer-events",
+        "label": "Pointer Events Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "touch-action"
+  },
+  "css-transitions": {
+    "url": "https://www.w3.org/TR/css-transitions-1/",
+    "edDraft": "https://drafts.csswg.org/css-transitions/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Transitions",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css-ui-box-sizing": {
+    "url": "https://www.w3.org/TR/css-ui-3/#box-sizing",
+    "edDraft": "https://drafts.csswg.org/css-ui-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "box-sizing property"
+  },
+  "css-will-change": {
+    "url": "https://www.w3.org/TR/css-will-change-1/",
+    "edDraft": "https://drafts.csswg.org/css-will-change/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Will Change Module Level 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "css2": {
+    "url": "https://www.w3.org/TR/CSS21/",
+    "edDraft": "https://drafts.csswg.org/css2/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "cssom-view": {
+    "url": "https://www.w3.org/TR/cssom-view-1/",
+    "edDraft": "https://drafts.csswg.org/cssom-view/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSSOM View Module",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "scroll-behavior": {
+        "title": "scroll-behavior property",
+        "url": "#smooth-scrolling"
+      },
+      "getBoundingClientRect": {
+        "title": "getBoundingClientRect() method",
+        "url": "#dom-element-getboundingclientrect"
+      }
+    }
+  },
+  "cssom": {
+    "url": "https://www.w3.org/TR/cssom-1/",
+    "edDraft": "https://drafts.csswg.org/cssom/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Object Model (CSSOM)",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "construct-stylesheets": {
+        "title": "Constructable stylesheets",
+        "url": "https://www.w3.org/TR/cssom-1/#create-a-constructed-cssstylesheet"
+      }
+    }
+  },
+  "csw": {
+    "url": "http://www.opengeospatial.org/standards/cat",
+    "title": "OGC® Catalogue Services 3.0 - General Model",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "danmaku": {
+    "url": "https://w3c.github.io/danmaku/",
+    "title": "Bullet Chatting Proposal",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webtv/",
+        "label": "Media and Entertainment Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "datacue": {
+    "url": "https://github.com/WICG/datacue/blob/master/explainer.md",
+    "title": "DataCue",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "datalist": {
+    "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "datalist element"
+  },
+  "dbpedia": {
+    "url": "https://wiki.dbpedia.org/",
+    "title": "DBpedia",
+    "status": "LS",
+    "deliveredBy": [],
+    "publisher": "DBpedia",
+    "milestones": {}
+  },
+  "ddr": {
+    "url": "https://www.w3.org/TR/DDR-Simple-API/",
+    "title": "Device Description Repository Simple API",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2005/MWI/DDWG/",
+        "label": "Mobile Web Initiative Device Description Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "device-memory": {
+    "url": "https://www.w3.org/TR/device-memory-1/",
+    "edDraft": "https://w3c.github.io/device-memory/",
+    "repository": "https://github.com/w3c/device-memory",
+    "title": "Device Memory",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "header": {
+        "title": "Header field",
+        "url": "#sec-device-memory-client-hint-header"
+      },
+      "jsapi": {
+        "title": "JS API",
+        "url": "#sec-device-memory-js-api"
+      }
+    }
+  },
+  "deviceorientation": {
+    "url": "https://www.w3.org/TR/orientation-event/",
+    "edDraft": "https://w3c.github.io/deviceorientation/",
+    "repository": "https://github.com/w3c/deviceorientation",
+    "title": "DeviceOrientation Event Specification",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "discovery": {
+    "url": "https://www.w3.org/TR/discovery-api/",
+    "edDraft": "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
+    "title": "Network Service Discovery",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "display-locking": {
+    "url": "https://github.com/WICG/display-locking/blob/master/explainer.md",
+    "title": "Display Locking",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "dnt": {
+    "url": "https://www.w3.org/TR/tracking-dnt",
+    "edDraft": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
+    "repository": "https://github.com/w3c/dnt",
+    "title": "Tracking Preference Expression (DNT)",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/tracking-protection/",
+        "label": "Tracking Protection Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "dom-addeventlistener-passive": {
+    "url": "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
+    "repository": "https://github.com/whatwg/dom",
+    "title": "DOM Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "Passive event listeners"
+  },
+  "dom": {
+    "url": "https://dom.spec.whatwg.org/",
+    "edDraft": "https://dom.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/dom",
+    "title": "DOM Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "shadow": {
+        "title": "Shadow tree",
+        "url": "#shadow-trees"
+      }
+    }
+  },
+  "domcapture": {
+    "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+    "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
+    "repository": "https://github.com/w3c/mediacapture-fromelement",
+    "title": "Media Capture from DOM Elements",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "dpub-aam10": {
+    "url": "https://www.w3.org/TR/dpub-aam-1.0/",
+    "edDraft": "https://w3c.github.io/dpub-aam/",
+    "repository": "https://github.com/w3c/dpub-aam",
+    "title": "Digital Publishing Accessibility API Mappings",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/ARIA/",
+        "label": "Accessible Rich Internet Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "dpub-aria10": {
+    "url": "https://www.w3.org/TR/dpub-aria-1.0/",
+    "edDraft": "https://w3c.github.io/dpub-aria/",
+    "repository": "https://github.com/w3c/dpub-aria",
+    "title": "Digital Publishing WAI-ARIA Module 1.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/ARIA/",
+        "label": "Accessible Rich Internet Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "dwbp": {
+    "url": "https://www.w3.org/TR/dwbp/",
+    "edDraft": "https://w3c.github.io/dwbp/bp.html",
+    "repository": "https://github.com/w3c/dwbp",
+    "title": "Data on the Web Best Practices",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2013/dwbp/",
+        "label": "Data on the Web Best Practices Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "element-timing": {
+    "url": "https://wicg.github.io/element-timing/",
+    "edDraft": "https://wicg.github.io/element-timing/",
+    "repository": "https://github.com/WICG/element-timing",
+    "title": "Element Timing API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "img": {
+        "title": "Support for images",
+        "url": "#sec-report-image-element"
+      },
+      "text": {
+        "title": "Support for text",
+        "url": "#sec-report-text"
+      }
+    }
+  },
+  "eme-v2": {
+    "url": "https://w3c.github.io/encrypted-media/",
+    "edDraft": "https://w3c.github.io/encrypted-media/",
+    "repository": "https://github.com/w3c/encrypted-media",
+    "title": "Encrypted Media Extensions",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "persistent-usage-record": {
+        "title": "Persistent usage record session",
+        "url": "#dom-mediakeysessiontype-persistent-usage-record"
+      },
+      "hdcp-detection": {
+        "title": "HDCP detection",
+        "url": "https://github.com/WICG/hdcp-detection/blob/master/explainer.md"
+      },
+      "encryption-scheme": {
+        "title": "Encryption scheme detection",
+        "url": "https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md"
+      },
+      "find-existing-sessions": {
+        "title": "API to find existing sessions",
+        "url": "https://github.com/joeyparrish/encrypted-media-find-session"
+      }
+    }
+  },
+  "eme": {
+    "url": "https://www.w3.org/TR/encrypted-media/",
+    "edDraft": "https://w3c.github.io/encrypted-media/",
+    "repository": "https://github.com/w3c/encrypted-media",
+    "title": "Encrypted Media Extensions",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "eo-qb": {
+    "url": "https://www.w3.org/TR/eo-qb/",
+    "edDraft": "https://w3c.github.io/sdw/eo-qb/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/sdw",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "epr": {
+    "url": "https://www.w3.org/TR/epr/",
+    "edDraft": "https://w3c.github.io/webappsec-epr/",
+    "repository": "https://github.com/w3c/webappsec-epr",
+    "title": "Entry Point Regulation",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "epub": {
+    "url": "https://www.w3.org/publishing/epub3/",
+    "title": "EPUB 3.2",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/epub3/",
+        "label": "EPUB 3 Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "event-timing": {
+    "url": "https://w3c.github.io/event-timing/",
+    "edDraft": "https://w3c.github.io/event-timing/",
+    "repository": "https://github.com/w3c/event-timing",
+    "title": "Event Timing API",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "eventsource": {
+    "url": "https://www.w3.org/TR/eventsource",
+    "edDraft": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
+    "title": "Server-Sent Events",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/htmlwg",
+        "label": "HTML Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "fetch": {
+    "url": "https://fetch.spec.whatwg.org/",
+    "edDraft": "https://fetch.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/fetch",
+    "title": "Fetch Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "cors": {
+        "title": "CORS protocol",
+        "url": "#http-cors-protocol"
+      }
+    }
+  },
+  "file-system-access": {
+    "url": "https://wicg.github.io/file-system-access/",
+    "edDraft": "https://wicg.github.io/file-system-access/",
+    "repository": "https://github.com/WICG/file-system-access",
+    "title": "File System Access",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "fileapi": {
+    "url": "https://www.w3.org/TR/FileAPI/",
+    "edDraft": "https://w3c.github.io/FileAPI/",
+    "repository": "https://github.com/w3c/FileAPI",
+    "title": "File API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "first-party-sets": {
+    "url": "https://github.com/privacycg/first-party-sets",
+    "title": "First-Party Sets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
+  "frame-timing": {
+    "url": "https://www.w3.org/TR/frame-timing/",
+    "edDraft": "https://wicg.github.io/frame-timing/",
+    "repository": "https://github.com/wicg/frame-timing",
+    "title": "Frame Timing",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "fullscreen": {
+    "url": "https://fullscreen.spec.whatwg.org/",
+    "edDraft": "https://fullscreen.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/fullscreen",
+    "title": "Fullscreen API Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {}
+  },
+  "gamepad": {
+    "url": "https://www.w3.org/TR/gamepad/",
+    "edDraft": "https://w3c.github.io/gamepad/",
+    "repository": "https://github.com/w3c/gamepad",
+    "title": "Gamepad",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "generic-sensor": {
+    "url": "https://www.w3.org/TR/generic-sensor/",
+    "edDraft": "https://w3c.github.io/sensors/",
+    "repository": "https://github.com/w3c/sensors",
+    "title": "Generic Sensor API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
+  },
+  "geodcat-ap": {
+    "url": "https://semiceu.github.io/GeoDCAT-AP/releases/",
+    "repository": "https://github.com/semiceu/GeoDCAT-AP",
+    "title": "GeoDCAT-AP: A geospatial extension for the DCAT application profile for data portals in Europe",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe",
+        "label": "European Commission"
+      }
+    ],
+    "publisher": "EC",
+    "milestones": {}
+  },
+  "geofencing": {
+    "url": "https://www.w3.org/TR/geofencing/",
+    "edDraft": "https://w3c.github.io/geofencing-api/",
+    "repository": "https://github.com/w3c/geofencing-api",
+    "title": "Geofencing API",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2008/geolocation/",
+        "label": "Geolocation Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "geohash": {
+    "url": "http://geohash.org/",
+    "title": "Geohash",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "geolocation-sensor": {
+    "url": "https://www.w3.org/TR/geolocation-sensor/",
+    "edDraft": "https://w3c.github.io/geolocation-sensor/",
+    "repository": "https://github.com/w3c/geolocation-sensor",
+    "title": "Geolocation Sensor",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "geolocation": {
+    "url": "https://www.w3.org/TR/geolocation-API/",
+    "edDraft": "https://w3c.github.io/geolocation-api/",
+    "repository": "https://github.com/w3c/geolocation-api",
+    "title": "Geolocation API Specification 2nd Edition",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2008/geolocation/",
+        "label": "Geolocation Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "geonames": {
+    "url": "http://www.geonames.org/",
+    "title": "GeoNames",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "geosparql": {
+    "url": "http://www.opengeospatial.org/standards/geosparql",
+    "title": "GeoSPARQL - A Geographic Query Language for RDF Data",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "getusermedia": {
+    "url": "https://www.w3.org/TR/mediacapture-streams/",
+    "edDraft": "https://w3c.github.io/mediacapture-main/",
+    "repository": "https://github.com/w3c/mediacapture-main",
+    "title": "Media Capture and Streams",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "capabilities": {
+        "title": "Source capabilities"
+      }
+    }
+  },
+  "gml-sf": {
+    "url": "http://portal.opengeospatial.org/files/?artifact_id=42729",
+    "title": "Geography Markup Language (GML) simple features profile (2.0)",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "gml": {
+    "url": "http://www.opengeospatial.org/standards/gml",
+    "title": "Geography Markup Language (GML) Encoding Standard",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "http://www.opengeospatial.org",
+        "label": "Open Geospatial Consortium Inc."
+      }
+    ],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "gyroscope": {
+    "url": "https://www.w3.org/TR/gyroscope/",
+    "edDraft": "https://w3c.github.io/gyroscope/",
+    "repository": "https://github.com/w3c/gyroscope",
+    "title": "Gyroscope",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "hbss": {
+    "url": "https://rawgit.com/w3c/websec/gh-pages/hbss.html",
+    "title": "Hardware Based Secure Services features",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/hb-secure-services/",
+        "label": "Hardware Based Secure Services Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "hr-time": {
+    "url": "https://www.w3.org/TR/hr-time-2",
+    "edDraft": "https://w3c.github.io/hr-time/",
+    "repository": "https://github.com/w3c/hr-time",
+    "title": "High Resolution Time Level 2",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "html-extensions": {
+    "url": "https://w3c.github.io/html-extensions/",
+    "repository": "https://github.com/w3c/html-extensions",
+    "title": "HTML Extension Specifications",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "html-media-capture": {
+    "url": "https://www.w3.org/TR/html-media-capture/",
+    "edDraft": "https://w3c.github.io/html-media-capture/",
+    "repository": "https://github.com/w3c/html-media-capture",
+    "title": "HTML Media Capture",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "html": {
+    "url": "https://html.spec.whatwg.org/multipage/",
+    "edDraft": "https://html.spec.whatwg.org/multipage/",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "template": {
+        "title": "The template element",
+        "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+      },
+      "custom-elements": {
+        "title": "Custom elements",
+        "url": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements"
+      },
+      "js-module": {
+        "title": "Integration with the JavaScript module system",
+        "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system"
+      },
+      "2dcontext": {
+        "title": "The 2D rendering context",
+        "url": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+      },
+      "ruby": {
+        "title": "The ruby element",
+        "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element"
+      }
+    }
+  },
+  "html5-browsing-context": {
+    "url": "https://html.spec.whatwg.org/multipage/browsers.html#windows",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "browsing context"
+  },
+  "html5-download": {
+    "url": "https://html.spec.whatwg.org/multipage/links.html#downloading-resources",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "download attribute"
+  },
+  "html5-sandbox": {
+    "url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "sandbox iframe attribute"
+  },
+  "htmlmediaelement": {
+    "url": "https://html.spec.whatwg.org/multipage/media.html#media-elements",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "HTMLMediaElement interface"
+  },
+  "humidity": {
+    "url": "https://dvcs.w3.org/hg/dap/raw-file/tip/humidity/Overview.html",
+    "title": "Ambient Humidity Events",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "i3s": {
+    "url": "http://www.opengeospatial.org/standards/i3s",
+    "title": "Indexed 3D Scene Layers",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "idle-detection": {
+    "url": "https://github.com/WICG/idle-detection#user-idle-detection",
+    "title": "User Idle Detection",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "imagecapture": {
+    "url": "https://www.w3.org/TR/image-capture/",
+    "edDraft": "https://w3c.github.io/mediacapture-image/",
+    "repository": "https://github.com/w3c/mediacapture-image",
+    "title": "MediaStream Image Capture",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "ime-api": {
+    "url": "https://www.w3.org/TR/ime-api/",
+    "edDraft": "https://w3c.github.io/ime-api/",
+    "repository": "https://github.com/w3c/ime-api",
+    "title": "Input Method Editor API",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "inband": {
+    "url": "https://dev.w3.org/html5/html-sourcing-inband-tracks/",
+    "title": "Sourcing In-band Media Resource Tracks from Media Containers into HTML",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/inbandtracks/",
+        "label": "Media Resource In-band Tracks Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "indexeddb": {
+    "url": "https://www.w3.org/TR/IndexedDB-2/",
+    "edDraft": "https://w3c.github.io/IndexedDB/",
+    "repository": "https://github.com/w3c/IndexedDB",
+    "title": "Indexed Database API 2.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "indie-ui-events": {
+    "url": "https://www.w3.org/TR/indie-ui-events/",
+    "edDraft": "https://w3c.github.io/indie-ui/indie-ui-events.html",
+    "repository": "https://github.com/w3c/indie-ui",
+    "title": "IndieUI: Events 1.0",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/IndieUI/",
+        "label": "Independent User Interface (Indie UI) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "input-for-workers": {
+    "url": "https://wicg.github.io/input-for-workers/",
+    "title": "Input for Workers and Worklets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "inputdate": {
+    "url": "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "Date and time input types"
+  },
+  "inputdevice": {
+    "url": "https://wicg.github.io/input-device-capabilities/",
+    "edDraft": "https://wicg.github.io/input-device-capabilities/",
+    "repository": "https://github.com/WICG/input-device-capabilities",
+    "title": "Input Device Capabilities",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "inputhint": {
+    "url": "https://html.spec.whatwg.org/multipage/input.html#the-placeholder-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "input placeholder attribute"
+  },
+  "inputmode": {
+    "url": "https://www.w3.org/TR/html51/sec-forms.html#input-modalities-the-inputmode-attribute",
+    "edDraft": "https://rawgit.com/w3c/html/html5.1-2/single-page.html",
+    "title": "HTML 5.1 2nd Edition",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/htmlwg",
+        "label": "HTML Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "inputmode attribute"
+  },
+  "inputpattern": {
+    "url": "https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "pattern attribute for input fields"
+  },
+  "inputtext": {
+    "url": "https://html.spec.whatwg.org/multipage/input.html#e-mail-state-(type=email)",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "tel, email, url input types"
+  },
+  "intersectionobserver": {
+    "url": "https://www.w3.org/TR/intersection-observer/",
+    "edDraft": "https://w3c.github.io/IntersectionObserver/",
+    "repository": "https://github.com/w3c/IntersectionObserver",
+    "title": "Intersection Observer",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "is-input-pending": {
+    "url": "https://wicg.github.io/is-input-pending/",
+    "edDraft": "https://wicg.github.io/is-input-pending/",
+    "repository": "https://github.com/WICG/is-input-pending",
+    "title": "isInputPending",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "is-logged-in": {
+    "url": "https://github.com/privacycg/is-logged-in",
+    "title": "IsLoggedIn",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
+  "iso-19156-2011": {
+    "url": "https://www.iso.org/standard/32574.html",
+    "title": "Geographic information -- Observations and measurements",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "ISO",
+    "milestones": {}
+  },
+  "js-membranes": {
+    "url": "https://github.com/privacycg/js-membranes",
+    "title": "JS Isolation via Origin Labels and Membranes",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
+  "js-self-profiling": {
+    "url": "https://wicg.github.io/js-self-profiling/",
+    "edDraft": "https://wicg.github.io/js-self-profiling/",
+    "repository": "https://github.com/WICG/js-self-profiling",
+    "title": "JS Self-Profiling API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "kml": {
+    "url": "http://docs.opengeospatial.org/is/12-007r2/12-007r2.html",
+    "title": "OGC KML 2.3",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "kv-storage": {
+    "url": "https://wicg.github.io/kv-storage/",
+    "repository": "https://github.com/wicg/kv-storage",
+    "title": "KV Storage",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "layout-instability": {
+    "url": "https://wicg.github.io/layout-instability/",
+    "edDraft": "https://wicg.github.io/layout-instability/",
+    "repository": "https://github.com/WICG/layout-instability",
+    "title": "Layout Instability",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "locn": {
+    "url": "http://www.w3.org/ns/locn",
+    "title": "ISA Programme Location Core Vocabulary",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://joinup.ec.europa.eu/asset/core_location",
+        "label": "European Commission"
+      }
+    ],
+    "publisher": "EC",
+    "milestones": {}
+  },
+  "longtasks": {
+    "url": "https://www.w3.org/TR/longtasks-1/",
+    "edDraft": "https://w3c.github.io/longtasks/",
+    "repository": "https://github.com/w3c/longtasks",
+    "title": "Long Tasks API 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "magnetometer": {
+    "url": "https://www.w3.org/TR/magnetometer/",
+    "edDraft": "https://w3c.github.io/magnetometer/",
+    "repository": "https://github.com/w3c/magnetometer",
+    "title": "Magnetometer",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
+  },
+  "main-thread-scheduling": {
+    "url": "https://github.com/WICG/main-thread-scheduling",
+    "title": "Main-thread Scheduling API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "yield": {
+        "title": "scheduler.yield()",
+        "url": "https://github.com/WICG/main-thread-scheduling/blob/master/YieldAndContinuation.md"
+      },
+      "postTask": {
+        "title": "scheduler.postTask()",
+        "url": "https://github.com/WICG/main-thread-scheduling/blob/master/PrioritizedPostTask.md"
+      }
+    }
+  },
+  "manifest-app-info": {
+    "url": "https://www.w3.org/TR/manifest-app-info/",
+    "edDraft": "https://w3c.github.io/manifest-app-info/",
+    "repository": "https://github.com/w3c/manifest-app-info",
+    "title": "Web App Manifest - Application Information",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {},
+    "features": {
+      "categories": {
+        "title": "categories member",
+        "url": "#categories-member"
+      },
+      "description": {
+        "title": "description member",
+        "url": "#description-member"
+      },
+      "iarc_rating_id": {
+        "title": "iarc_rating_id member",
+        "url": "#iarc_rating_id-member"
+      },
+      "screenshots": {
+        "title": "screenshots member",
+        "url": "#screenshots-member"
+      }
+    }
+  },
+  "mapbox-vector-tiles": {
+    "url": "https://docs.mapbox.com/vector-tiles/specification/",
+    "title": "Mapbox Vector Tiles",
+    "status": "LS",
+    "deliveredBy": [],
+    "publisher": "Mapbox",
+    "milestones": {}
+  },
+  "mapml": {
+    "url": "https://maps4html.github.io/MapML/spec/",
+    "title": "Map Markup Language",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/maps4html/",
+        "label": "Maps for HTML Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "me-media-timed-events": {
+    "url": "https://www.w3.org/TR/media-timed-events/",
+    "edDraft": "https://w3c.github.io/me-media-timed-events/",
+    "repository": "https://github.com/w3c/me-media-timed-events",
+    "title": "Media Timed Events",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/webtv/",
+        "label": "Media and Entertainment Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "media-capabilities": {
+    "url": "https://www.w3.org/TR/media-capabilities/",
+    "edDraft": "https://w3c.github.io/media-capabilities/",
+    "repository": "https://github.com/w3c/media-capabilities",
+    "title": "Media Capabilities",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "FPWD": "2020-03-30",
+      "CR": "2020-06-30",
+      "PR": "2021-03-30"
+    },
+    "features": {
+      "encoding": {
+        "title": "Encoding capabilities",
+        "url": "#decoding-encoding-capabilities"
+      },
+      "decoding": {
+        "title": "Decoding capabilities",
+        "url": "#decoding-encoding-capabilities"
+      }
+    }
+  },
+  "media-frags": {
+    "url": "https://www.w3.org/TR/media-frags/",
+    "title": "Media Fragments URI 1.0 (basic)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2008/WebVideo/Fragments/",
+        "label": "Media Fragments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "media-playback-quality": {
+    "url": "https://w3c.github.io/media-playback-quality/",
+    "edDraft": "https://w3c.github.io/media-playback-quality/",
+    "repository": "https://github.com/w3c/media-playback-quality",
+    "title": "Media Playback Quality",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "mediacontroller": {
+    "url": "https://www.w3.org/TR/html5/embedded-content-0.html#mediacontroller",
+    "title": "HTML5",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/html/wg/",
+        "label": "HTML Media Extensions Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "MediaController interface"
+  },
+  "mediakeys": {
+    "url": "https://www.w3.org/TR/uievents-key/#keys-multimedia",
+    "edDraft": "https://w3c.github.io/uievents-key/",
+    "repository": "https://github.com/w3c/uievents-key",
+    "title": "UI Events KeyboardEvent key Values",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Media keys"
+  },
+  "mediaqueries": {
+    "url": "https://www.w3.org/TR/css3-mediaqueries/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Media Queries Level 3",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "mediaqueries4": {
+    "url": "https://www.w3.org/TR/mediaqueries-4/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-4/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Media Queries Level 4",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "mf-interaction": {
+        "title": "Interaction media features",
+        "url": "#mf-interaction"
+      }
+    }
+  },
+  "mediaqueries5": {
+    "url": "https://drafts.csswg.org/mediaqueries-5/",
+    "edDraft": "https://drafts.csswg.org/mediaqueries-5/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Media Queries Level 5",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "pointer": {
+        "title": "pointer feature",
+        "url": "#pointer"
+      },
+      "hover": {
+        "title": "hover feature",
+        "url": "#hover"
+      },
+      "prefers-reduced-motion": {
+        "title": "prefers-reduced-motion feature",
+        "url": "#prefers-reduced-motion"
+      },
+      "prefers-color-scheme": {
+        "title": "prefers-color-scheme feature",
+        "url": "#prefers-color-scheme"
+      },
+      "prefers-contrast": {
+        "title": "prefers-contrast",
+        "url": "#prefers-contrast"
+      }
+    }
+  },
+  "mediasession": {
+    "url": "https://www.w3.org/TR/mediasession/",
+    "edDraft": "https://w3c.github.io/mediasession/",
+    "repository": "https://github.com/w3c/mediasession",
+    "title": "Media Session Standard",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "FPWD": "2020-03-30",
+      "CR": "2020-12-30",
+      "PR": "2021-06-30"
+    }
+  },
+  "mini-app-white-paper": {
+    "url": "https://www.w3.org/TR/mini-app-white-paper/",
+    "edDraft": "https://w3c.github.io/miniapp/white-paper/",
+    "repository": "https://github.com/w3c/miniapp",
+    "title": "MiniApp Standardization White Paper version 2",
+    "status": "DNOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/miniapps/",
+        "label": "MiniApps Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "mixedcontent": {
+    "url": "https://www.w3.org/TR/mixed-content/",
+    "edDraft": "https://w3c.github.io/webappsec-mixed-content/",
+    "repository": "https://github.com/w3c/webappsec-mixed-content",
+    "title": "Mixed Content",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "mobile-accessibility-mapping": {
+    "url": "https://www.w3.org/TR/mobile-accessibility-mapping/",
+    "edDraft": "https://w3c.github.io/Mobile-A11y-TF-Note/",
+    "repository": "https://github.com/w3c/Mobile-A11y-TF-Note",
+    "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/GL/",
+        "label": "Accessibility Guidelines Working Group"
+      },
+      {
+        "url": "https://www.w3.org/WAI/UA/",
+        "label": "User Agent Accessibility Guidelines Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "movingfeatures": {
+    "url": "http://docs.opengeospatial.org/is/14-083r2/14-083r2.html",
+    "title": "OGC® Moving Features Encoding Part I: XML Core",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "mse-v2": {
+    "url": "https://w3c.github.io/media-source/",
+    "edDraft": "https://w3c.github.io/media-source/",
+    "repository": "https://github.com/w3c/media-source",
+    "title": "Media Source Extensions™",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "codec-switching": {
+        "title": "Codec switching"
+      }
+    }
+  },
+  "mse": {
+    "url": "https://www.w3.org/TR/media-source/",
+    "edDraft": "https://w3c.github.io/media-source/",
+    "repository": "https://github.com/w3c/media-source",
+    "title": "Media Source Extensions™",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "FPWD": "2020-03-30",
+      "CR": "2020-06-30",
+      "PR": "2021-06-30"
+    }
+  },
+  "mst-content-hint": {
+    "url": "https://www.w3.org/TR/mst-content-hint/",
+    "edDraft": "https://w3c.github.io/mst-content-hint/",
+    "repository": "https://github.com/w3c/mst-content-hint",
+    "title": "MediaStreamTrack Content Hints",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "mwabp": {
+    "url": "https://www.w3.org/TR/mwabp/",
+    "title": "Mobile Web Application Best Practices",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2005/MWI/BPWG/",
+        "label": "Mobile Web Best Practices Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "navigation-timing": {
+    "url": "https://www.w3.org/TR/navigation-timing-2/",
+    "edDraft": "https://w3c.github.io/navigation-timing/",
+    "repository": "https://github.com/w3c/navigation-timing",
+    "title": "Navigation Timing Level 2",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2020-03-30"
+    }
+  },
+  "netinfo": {
+    "url": "https://wicg.github.io/netinfo/",
+    "edDraft": "https://wicg.github.io/netinfo/",
+    "repository": "https://github.com/WICG/netinfo",
+    "title": "Network Information API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "notifications": {
+    "url": "https://notifications.spec.whatwg.org/",
+    "edDraft": "https://notifications.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/notifications",
+    "title": "Notifications API Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {}
+  },
+  "offscreencanvas": {
+    "url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "OffscreenCanvas"
+  },
+  "ogc-georss": {
+    "url": "http://docs.opengeospatial.org/cs/17-002r1/17-002r1.html",
+    "title": "OGC GeoRSS Encoding Standard",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "online": {
+    "url": "https://html.spec.whatwg.org/multipage/offline.html#navigator.online",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "onLine DOM flag"
+  },
+  "opensearchgeo": {
+    "url": "http://www.opengeospatial.org/standards/opensearchgeo",
+    "title": "OpenSearch Geo and Time Extensions",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "orientation": {
+    "url": "https://www.w3.org/TR/orientation-sensor/",
+    "edDraft": "https://w3c.github.io/orientation-sensor/",
+    "repository": "https://github.com/w3c/orientation-sensor",
+    "title": "Orientation Sensor",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30"
+    }
+  },
+  "owl-time": {
+    "url": "https://www.w3.org/TR/owl-time/",
+    "edDraft": "https://w3c.github.io/sdw/time/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Time Ontology in OWL",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/sdw",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "p2p": {
+    "url": "https://www.w3.org/TR/webrtc/",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
+    "repository": "https://github.com/w3c/webrtc-pc",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "rtcdatachannel": {
+        "title": "RTC data channels",
+        "url": "#peer-to-peer-data-api"
+      }
+    }
+  },
+  "packaging": {
+    "url": "https://github.com/WICG/webpackage",
+    "title": "Web Packaging",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "page-lifecycle": {
+    "url": "https://wicg.github.io/page-lifecycle/",
+    "edDraft": "https://wicg.github.io/page-lifecycle/",
+    "repository": "https://github.com/WICG/page-lifecycle",
+    "title": "Page Lifecycle",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "page-visibility": {
+    "url": "https://www.w3.org/TR/page-visibility/",
+    "title": "Page Visibility (Second Edition)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "paint-timing": {
+    "url": "https://www.w3.org/TR/paint-timing/",
+    "edDraft": "https://w3c.github.io/paint-timing/",
+    "repository": "https://github.com/w3c/paint-timing",
+    "title": "Paint Timing 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "payment-handler": {
+    "url": "https://www.w3.org/TR/payment-handler/",
+    "edDraft": "https://w3c.github.io/payment-handler/",
+    "repository": "https://github.com/w3c/payment-handler",
+    "title": "Payment Handler API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Payments/WG/",
+        "label": "Web Payments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "payment-method-basic-card": {
+    "url": "https://www.w3.org/TR/payment-method-basic-card/",
+    "edDraft": "https://w3c.github.io/payment-method-basic-card/",
+    "repository": "https://github.com/w3c/payment-method-basic-card",
+    "title": "Payment Method: Basic Card",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Payments/WG/",
+        "label": "Web Payments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "payment-method-id": {
+    "url": "https://www.w3.org/TR/payment-method-id/",
+    "edDraft": "https://w3c.github.io/payment-method-id/",
+    "repository": "https://github.com/w3c/payment-method-id",
+    "title": "Payment Method Identifiers",
+    "status": "PR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Payments/WG/",
+        "label": "Web Payments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "payment-method-manifest": {
+    "url": "https://www.w3.org/TR/payment-method-manifest/",
+    "edDraft": "https://w3c.github.io/payment-method-manifest/",
+    "repository": "https://github.com/w3c/payment-method-manifest",
+    "title": "Payment Method Manifest",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Payments/WG/",
+        "label": "Web Payments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "payment-request": {
+    "url": "https://www.w3.org/TR/payment-request/",
+    "edDraft": "https://w3c.github.io/payment-request/",
+    "repository": "https://github.com/w3c/payment-request",
+    "title": "Payment Request API",
+    "status": "PR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Payments/WG/",
+        "label": "Web Payments Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2021-09-30",
+      "REC": "2021-09-30"
+    }
+  },
+  "performance-measure-memory": {
+    "url": "https://github.com/WICG/performance-measure-memory",
+    "title": "performance.measureMemory API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "performance-timeline": {
+    "url": "https://www.w3.org/TR/performance-timeline/",
+    "edDraft": "https://w3c.github.io/performance-timeline/",
+    "repository": "https://github.com/w3c/performance-timeline",
+    "title": "Performance Timeline",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "observer": {
+        "title": "PerformanceObserver interface",
+        "url": "#the-performanceobserver-interface"
+      },
+      "worker": {
+        "title": "Available in Workers"
+      }
+    }
+  },
+  "permissions-policy": {
+    "url": "https://www.w3.org/TR/permissions-policy-1/",
+    "edDraft": "https://w3c.github.io/webappsec-permissions-policy/",
+    "repository": "https://github.com/w3c/webappsec-permissions-policy",
+    "title": "Permissions Policy",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "permissions-request": {
+    "url": "https://wicg.github.io/permissions-request/",
+    "edDraft": "https://wicg.github.io/permissions-request/",
+    "repository": "https://github.com/WICG/permissions-request",
+    "title": "Requesting Permissions",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "permissions-revoke": {
+    "url": "https://wicg.github.io/permissions-revoke/",
+    "edDraft": "https://wicg.github.io/permissions-revoke/",
+    "repository": "https://github.com/WICG/permissions-revoke",
+    "title": "Relinquishing Permissions",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "permissions": {
+    "url": "https://www.w3.org/TR/permissions/",
+    "edDraft": "https://w3c.github.io/permissions/",
+    "repository": "https://github.com/w3c/permissions",
+    "title": "Permissions",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "picture-in-picture": {
+    "url": "https://www.w3.org/TR/picture-in-picture/",
+    "edDraft": "https://w3c.github.io/picture-in-picture/",
+    "repository": "https://github.com/w3c/picture-in-picture",
+    "title": "Picture-in-Picture",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/media-wg/",
+        "label": "Media Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "FPWD": "2020-03-30",
+      "CR": "2020-12-30",
+      "PR": "2021-06-30"
+    }
+  },
+  "picture": {
+    "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "picture element"
+  },
+  "pointer-events": {
+    "url": "https://www.w3.org/TR/pointerevents2/",
+    "edDraft": "https://w3c.github.io/pointerevents/",
+    "repository": "https://github.com/w3c/pointerevents",
+    "title": "Pointer Events",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/pointer-events",
+        "label": "Pointer Events Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "pointerlock": {
+    "url": "https://www.w3.org/TR/pointerlock-2/",
+    "edDraft": "https://w3c.github.io/pointerlock/",
+    "repository": "https://github.com/w3c/pointerlock",
+    "title": "Pointer Lock 2.0",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "portals": {
+    "url": "https://wicg.github.io/portals/",
+    "edDraft": "https://wicg.github.io/portals/",
+    "repository": "https://github.com/WICG/portals",
+    "title": "Portals",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "preload": {
+    "url": "https://www.w3.org/TR/preload/",
+    "edDraft": "https://w3c.github.io/preload/",
+    "repository": "https://github.com/w3c/preload",
+    "title": "Preload",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2020-06-30"
+    }
+  },
+  "priority-hints": {
+    "url": "https://wicg.github.io/priority-hints/",
+    "edDraft": "https://wicg.github.io/priority-hints/",
+    "repository": "https://github.com/WICG/priority-hints",
+    "title": "Priority Hints",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "private-click-measurement": {
+    "url": "https://privacycg.github.io/private-click-measurement/",
+    "edDraft": "https://privacycg.github.io/private-click-measurement/",
+    "repository": "https://github.com/privacycg/private-click-measurement",
+    "title": "Private Click Measurement",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://privacycg.github.io/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "milestones": {}
+  },
+  "proximity": {
+    "url": "https://www.w3.org/TR/proximity/",
+    "edDraft": "https://w3c.github.io/proximity/",
+    "repository": "https://github.com/w3c/proximity",
+    "title": "Proximity Sensor",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "pub-manifest": {
+    "url": "https://www.w3.org/TR/pub-manifest/",
+    "edDraft": "https://w3c.github.io/pub-manifest/",
+    "repository": "https://github.com/w3c/pub-manifest",
+    "title": "Publication Manifest",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/publishing/groups/publ-wg/",
+        "label": "Audiobooks Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2020-06-30",
+      "PR": "2020-09-30"
+    }
+  },
+  "publishing-linking": {
+    "url": "https://www.w3.org/TR/publishing-linking/",
+    "title": "Publishing and Linking",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/2001/tag/",
+        "label": "Technical Architecture Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "push": {
+    "url": "https://www.w3.org/TR/push-api/",
+    "edDraft": "https://w3c.github.io/push-api/",
+    "repository": "https://github.com/w3c/push-api",
+    "title": "Push API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "qb4st": {
+    "url": "https://www.w3.org/TR/qb4st/",
+    "edDraft": "https://w3c.github.io/sdw/qb4st/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/sdw",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "quota": {
+    "url": "https://www.w3.org/TR/quota-api/",
+    "edDraft": "https://w3c.github.io/quota-api/",
+    "repository": "https://github.com/w3c/quota-api",
+    "title": "Quota Management API",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WebPlatform/WG/",
+        "label": "Web Platform Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "recording": {
+    "url": "https://www.w3.org/TR/mediastream-recording/",
+    "edDraft": "https://w3c.github.io/mediacapture-record/",
+    "repository": "https://github.com/w3c/mediacapture-record",
+    "title": "MediaStream Recording",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "referrer-policy": {
+    "url": "https://www.w3.org/TR/referrer-policy/",
+    "edDraft": "https://w3c.github.io/webappsec-referrer-policy/",
+    "repository": "https://github.com/w3c/webappsec-referrer-policy",
+    "title": "Referrer Policy",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "remote-playback": {
+    "url": "https://www.w3.org/TR/remote-playback/",
+    "edDraft": "https://w3c.github.io/remote-playback/",
+    "repository": "https://github.com/w3c/remote-playback",
+    "title": "Remote Playback API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2014/secondscreen/",
+        "label": "Second Screen Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2020-12-30"
+    }
+  },
+  "request-post-animation-frame": {
+    "url": "https://github.com/WICG/request-post-animation-frame/blob/master/explainer.md",
+    "title": "requestPostAnimationFrame",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "requestidlecallback": {
+    "url": "https://www.w3.org/TR/requestidlecallback/",
+    "edDraft": "https://w3c.github.io/requestidlecallback/",
+    "repository": "https://github.com/w3c/requestidlecallback",
+    "title": "Cooperative Scheduling of Background Tasks",
+    "status": "PR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "resize-observer": {
+    "url": "https://www.w3.org/TR/resize-observer-1/",
+    "edDraft": "https://drafts.csswg.org/resize-observer/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Resize Observer",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "resource-hints": {
+    "url": "https://www.w3.org/TR/resource-hints/",
+    "edDraft": "https://w3c.github.io/resource-hints/",
+    "repository": "https://github.com/w3c/resource-hints",
+    "title": "Resource Hints",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "dns-prefetch": {
+        "title": "DNS prefetch",
+        "url": "#dns-prefetch"
+      },
+      "preconnect": {
+        "title": "Preconnect",
+        "url": "#preconnect"
+      },
+      "prefetch": {
+        "title": "Prefetch",
+        "url": "#prefetch"
+      },
+      "prerender": {
+        "title": "Prerender",
+        "url": "#prerender"
+      }
+    }
+  },
+  "resource-timing": {
+    "url": "https://www.w3.org/TR/resource-timing-2/",
+    "edDraft": "https://w3c.github.io/resource-timing/",
+    "repository": "https://github.com/w3c/resource-timing",
+    "title": "Resource Timing Level 2",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2020-06-30"
+    }
+  },
+  "rfc7946": {
+    "url": "https://www.rfc-editor.org/rfc/rfc7946",
+    "title": "The GeoJSON Format",
+    "status": "CR",
+    "deliveredBy": [],
+    "publisher": "IETF",
+    "milestones": {}
+  },
+  "schema.org": {
+    "url": "https://schema.org/",
+    "repository": "https://github.com/schemaorg/schemaorg",
+    "title": "Schema.org",
+    "status": "LS",
+    "deliveredBy": [],
+    "publisher": "Schema.org Community Group",
+    "milestones": {}
+  },
+  "screen-orientation": {
+    "url": "https://www.w3.org/TR/screen-orientation/",
+    "edDraft": "https://w3c.github.io/screen-orientation/",
+    "repository": "https://github.com/w3c/screen-orientation",
+    "title": "The Screen Orientation API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "screen-wake-lock": {
+    "url": "https://www.w3.org/TR/screen-wake-lock/",
+    "edDraft": "https://w3c.github.io/screen-wake-lock/",
+    "repository": "https://github.com/w3c/screen-wake-lock",
+    "title": "Screen Wake Lock API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "screencapture": {
+    "url": "https://www.w3.org/TR/screen-capture/",
+    "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
+    "repository": "https://github.com/w3c/mediacapture-screen-share",
+    "title": "Screen Capture",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "scroll-animations": {
+    "url": "https://drafts.csswg.org/scroll-animations-1/",
+    "edDraft": "https://drafts.csswg.org/scroll-animations-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Scroll-linked Animations",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "sdw-bp": {
+    "url": "https://www.w3.org/TR/sdw-bp/",
+    "edDraft": "https://w3c.github.io/sdw/bp/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Spatial Data on the Web Best Practices",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/sdw",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "secondscreen-openscreen": {
+    "url": "https://w3c.github.io/openscreenprotocol/",
+    "edDraft": "https://w3c.github.io/openscreenprotocol/",
+    "repository": "https://github.com/w3c/openscreenprotocol",
+    "title": "Open Screen Protocol",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2014/secondscreen/",
+        "label": "Second Screen Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "secondscreen": {
+    "url": "https://www.w3.org/TR/presentation-api/",
+    "edDraft": "https://w3c.github.io/presentation-api/",
+    "repository": "https://github.com/w3c/presentation-api",
+    "title": "Presentation API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2014/secondscreen/",
+        "label": "Second Screen Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2021-12-30"
+    }
+  },
+  "securecontexts": {
+    "url": "https://www.w3.org/TR/secure-contexts/",
+    "edDraft": "https://w3c.github.io/webappsec-secure-contexts/",
+    "repository": "https://github.com/w3c/webappsec-secure-contexts",
+    "title": "Secure Contexts",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "selectors-states": {
+    "url": "https://www.w3.org/TR/selectors-states/",
+    "edDraft": "https://w3c.github.io/web-annotation/selector-note/",
+    "repository": "https://github.com/w3c/web-annotation",
+    "title": "Selectors and States",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/annotation/",
+        "label": "Web Annotation Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "server-timing": {
+    "url": "https://www.w3.org/TR/server-timing/",
+    "edDraft": "https://w3c.github.io/server-timing/",
+    "repository": "https://github.com/w3c/server-timing",
+    "title": "Server Timing",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "serviceworkers": {
+    "url": "https://www.w3.org/TR/service-workers-1/",
+    "edDraft": "https://w3c.github.io/ServiceWorker/",
+    "repository": "https://github.com/w3c/ServiceWorker",
+    "title": "Service Workers 1",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/sw/",
+        "label": "Service Workers Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "CR": "2019-12-30",
+      "PR": "2019-12-30"
+    }
+  },
+  "sfa": {
+    "url": "http://www.opengeospatial.org/standards/sfa",
+    "title": "OpenGIS Implementation Specification for Geographic information - Simple Feature Access",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {},
+    "features": {
+      "wkt": {
+        "title": "Well-known Text Representation for Geometry"
+      }
+    }
+  },
+  "shape-detection": {
+    "url": "https://wicg.github.io/shape-detection-api",
+    "repository": "https://github.com/wicg/shape-detection-api",
+    "title": "Accelerated Shape Detection in Images",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "sparrow": {
+    "url": "https://github.com/WICG/sparrow",
+    "title": "SPARROW",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "spatial-navigation": {
+    "url": "https://www.w3.org/TR/css-nav-1/",
+    "edDraft": "https://drafts.csswg.org/css-nav-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Spatial Navigation Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "speech-api-recognition": {
+    "url": "https://w3c.github.io/speech-api/",
+    "title": "Web Speech API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/speech-api/",
+        "label": "Speech API Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "feature": "Speech recognition"
+  },
+  "speech-api-synthesis": {
+    "url": "https://w3c.github.io/speech-api/",
+    "title": "Web Speech API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/speech-api/",
+        "label": "Speech API Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "feature": "Speech synthesis"
+  },
+  "speech-api": {
+    "url": "https://wicg.github.io/speech-api/",
+    "edDraft": "https://wicg.github.io/speech-api/",
+    "repository": "https://github.com/WICG/speech-api",
+    "title": "Web Speech API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "recognition": {
+        "title": "Speech recognition",
+        "url": "#speechreco-section"
+      },
+      "synthesis": {
+        "title": "Speech synthesis",
+        "url": "#tts-section"
+      }
+    }
+  },
+  "srcset": {
+    "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "srcset attribute"
+  },
+  "sri": {
+    "url": "https://www.w3.org/TR/SRI/",
+    "edDraft": "https://w3c.github.io/webappsec-subresource-integrity/",
+    "repository": "https://github.com/w3c/webappsec-subresource-integrity",
+    "title": "Subresource Integrity",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "sta-sensing": {
+    "url": "http://docs.opengeospatial.org/is/15-078r6/15-078r6.html",
+    "title": "OGC SensorThings API Part 1: Sensing",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "stats-bp": {
+    "url": "https://github.com/w3c/sdw/tree/gh-pages/stats-bp",
+    "title": "Statistical Data on the Web Best Practices",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/sdwig",
+        "label": "Spatial Data on the Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "storage-access": {
+    "url": "https://privacycg.github.io/storage-access/",
+    "edDraft": "https://privacycg.github.io/storage-access/",
+    "repository": "https://github.com/privacycg/storage-access",
+    "title": "The Storage Access API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/privacycg/",
+        "label": "Privacy Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {},
+    "features": {
+      "hasStorageAccess": {
+        "title": "hasStorageAccess method",
+        "url": "#dom-document-hasstorageaccess"
+      },
+      "requestStorageAccess": {
+        "title": "requestStorageAccess method",
+        "url": "#dom-document-requeststorageaccess"
+      }
+    }
+  },
+  "storage-buckets": {
+    "url": "https://github.com/WICG/storage-buckets/blob/gh-pages/explainer.md",
+    "title": "Storage Buckets",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "storage": {
+    "url": "https://storage.spec.whatwg.org/",
+    "edDraft": "https://storage.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/storage",
+    "title": "Storage Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "estimate": {
+        "title": "estimate() API",
+        "url": "#dom-storagemanager-estimate"
+      },
+      "persist": {
+        "title": "Persistent storage permission"
+      }
+    }
+  },
+  "streams": {
+    "url": "https://streams.spec.whatwg.org/",
+    "edDraft": "https://streams.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/streams",
+    "title": "Streams Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "features": {
+      "ReadableStream": {
+        "title": "ReadableStream interface",
+        "url": "#rs"
+      },
+      "WritableStream": {
+        "title": "WritableStream interface",
+        "url": "#ws"
+      },
+      "TransformStream": {
+        "title": "TransformStream interface",
+        "url": "#ts"
+      }
+    }
+  },
+  "svg11": {
+    "url": "https://www.w3.org/TR/SVG11/",
+    "edDraft": "https://www.w3.org/TR/SVG11/",
+    "repository": "https://github.com/w3c/svgwg",
+    "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Graphics/SVG/WG/",
+        "label": "SVG Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "svg2": {
+    "url": "https://www.w3.org/TR/SVG2/",
+    "edDraft": "https://svgwg.org/svg2-draft/",
+    "repository": "https://github.com/w3c/svgwg",
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Graphics/SVG/WG/",
+        "label": "SVG Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "task-scheduler": {
+    "url": "https://www.w3.org/TR/task-scheduler/",
+    "edDraft": "https://www.w3.org/2012/sysapps/web-alarms/",
+    "title": "Task Scheduler API Specification",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2012/sysapps/",
+        "label": "System Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "thermometer": {
+    "url": "https://kenchris.github.io/thermometer/",
+    "title": "Ambient Temperature (Thermometer) sensor",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "timeupdate": {
+    "url": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "timeupdate event"
+  },
+  "timing-entrytypes-registry": {
+    "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+    "edDraft": "https://w3c.github.io/timing-entrytypes-registry/",
+    "repository": "https://github.com/w3c/timing-entrytypes-registry",
+    "title": "Timing Entry Names Registry",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "timing": {
+    "url": "http://webtiming.github.io/timingobject/",
+    "title": "Timing Object",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/community/webtiming/",
+        "label": "Multi-Device Timing Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "topojson": {
+    "url": "https://github.com/topojson/topojson#topojson",
+    "title": "TopoJSON",
+    "status": "ED",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "touchevent": {
+    "url": "https://www.w3.org/TR/touch-events/",
+    "edDraft": "https://w3c.github.io/touch-events/",
+    "repository": "https://github.com/w3c/touch-events",
+    "title": "Touch Events",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2010/webevents/",
+        "label": "Web Events Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "transcript": {
+    "url": "http://w3c.github.io/html-transcript/html-transcript-src.html",
+    "edDraft": "https://w3c.github.io/html-transcript/html-transcript-src.html",
+    "repository": "https://github.com/w3c/html-transcript",
+    "title": "A transcript extension for HTML",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "http://www.w3.org/WAI/PF/html-accessibility-tf",
+        "label": "HTML Working Group Accessibility Task Force"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "trust-token-api": {
+    "url": "https://github.com/WICG/trust-token-api",
+    "title": "Trust Token API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "trusted-types": {
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+    "edDraft": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+    "repository": "https://github.com/w3c/webappsec-trusted-types",
+    "title": "Trusted Types",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "tsml": {
+    "url": "http://docs.opengeospatial.org/is/15-042r3/15-042r3.html",
+    "title": "TimeseriesML 1.0 – XML Encoding of the Timeseries Profile of Observations and Measurements",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "tsprofile": {
+    "url": "http://docs.opengeospatial.org/is/15-043r3/15-043r3.html",
+    "title": "Timeseries Profile of Observations and Measurements",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "ttml-imsc1": {
+    "url": "https://www.w3.org/TR/ttml-imsc1.0.1/",
+    "edDraft": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+    "repository": "https://github.com/w3c/imsc",
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "ttml-imsc11": {
+    "url": "https://www.w3.org/TR/ttml-imsc1.1/",
+    "edDraft": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
+    "repository": "https://github.com/w3c/imsc",
+    "title": "TTML Profiles for Internet Media Subtitles and Captions 1.1",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "ttml": {
+    "url": "https://www.w3.org/TR/ttml2/",
+    "edDraft": "https://w3c.github.io/ttml2/index.html",
+    "repository": "https://github.com/w3c/ttml2",
+    "title": "Timed Text Markup Language 2 (TTML2) (2nd Edition)",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "PR": "2021-06-30"
+    }
+  },
+  "ttml1": {
+    "url": "https://www.w3.org/TR/ttml1/",
+    "edDraft": "https://w3c.github.io/ttml1/index.html",
+    "repository": "https://github.com/w3c/ttml1",
+    "title": "Timed Text Markup Language 1 (TTML1) (Third Edition)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "turtledove": {
+    "url": "https://github.com/WICG/turtledove",
+    "title": "TURTLEDOVE",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "tvtuner": {
+    "url": "https://w3c.github.io/tvcontrol-api/",
+    "edDraft": "https://w3c.github.io/tvcontrol-api/",
+    "repository": "https://github.com/w3c/tvcontrol-api",
+    "title": "TV Control API",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2016/tvcontrol/",
+        "label": "TV Control Working Group "
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "ua-client-hints": {
+    "url": "https://wicg.github.io/ua-client-hints/",
+    "edDraft": "https://wicg.github.io/ua-client-hints/",
+    "repository": "https://github.com/WICG/ua-client-hints",
+    "title": "User-Agent Client Hints",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "uaag20-reference": {
+    "url": "https://www.w3.org/TR/UAAG20-Reference/",
+    "title": "UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/UA/",
+        "label": "User Agent Accessibility Guidelines Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "uaag20": {
+    "url": "https://www.w3.org/TR/UAAG20/",
+    "edDraft": "https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/",
+    "title": "User Agent Accessibility Guidelines (UAAG) 2.0",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/UA/",
+        "label": "User Agent Accessibility Guidelines Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "uir": {
+    "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+    "edDraft": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+    "repository": "https://github.com/w3c/webappsec-upgrade-insecure-requests",
+    "title": "Upgrade Insecure Requests",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "uisecurity": {
+    "url": "https://www.w3.org/TR/UISecurity/",
+    "edDraft": "https://w3c.github.io/webappsec-uisecurity/index.html",
+    "repository": "https://github.com/w3c/webappsec-uisecurity",
+    "title": "User Interface Security and the Visibility API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webappsec",
+        "label": "Web Application Security Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "user-timing": {
+    "url": "https://www.w3.org/TR/user-timing-2/",
+    "edDraft": "https://w3c.github.io/user-timing/",
+    "repository": "https://github.com/w3c/user-timing",
+    "title": "User Timing Level 2",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "Web Performance Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vcard-rdf": {
+    "url": "https://www.w3.org/TR/vcard-rdf/",
+    "title": "vCard Ontology - for describing People and Organizations",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2001/sw/interest/",
+        "label": "Semantic Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "vehicle-info": {
+    "url": "https://www.w3.org/TR/vehicle-information-api",
+    "edDraft": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
+    "repository": "https://github.com/w3c/automotive",
+    "title": "Vehicle Information API Specification",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/auto",
+        "label": "Automotive Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "vibration": {
+    "url": "https://www.w3.org/TR/vibration/",
+    "edDraft": "https://w3c.github.io/vibration/",
+    "repository": "https://github.com/w3c/vibration",
+    "title": "Vibration API (Second Edition)",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "video-rvfc": {
+    "url": "https://wicg.github.io/video-rvfc/",
+    "edDraft": "https://wicg.github.io/video-rvfc/",
+    "repository": "https://github.com/WICG/video-rvfc",
+    "title": "HTMLVideoElement.requestVideoFrameCallback()",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "video": {
+    "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "video element"
+  },
+  "videoworker": {
+    "url": "https://w3c.github.io/mediacapture-worker/",
+    "title": "Media Capture Stream with Worker",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/das/",
+        "label": "Devices and Sensors Working Group"
+      },
+      {
+        "url": "https://www.w3.org/2011/04/webrtc/",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "viewport-units": {
+    "url": "https://www.w3.org/TR/css-values-3/#viewport-relative-lengths",
+    "edDraft": "https://drafts.csswg.org/css-values-3/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "CSS Values and Units Module Level 3",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "viewport-percentage lengths"
+  },
+  "viewportapi": {
+    "url": "https://wicg.github.io/visual-viewport/",
+    "edDraft": "https://wicg.github.io/visual-viewport/",
+    "repository": "https://github.com/WICG/visual-viewport",
+    "title": "Visual Viewport API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "virtual-scroller": {
+    "url": "https://github.com/WICG/virtual-scroller#a-built-in-virtual-scroller-for-the-web-platform",
+    "title": "A built-in virtual scroller for the web platform",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "vocab-data-cube": {
+    "url": "https://www.w3.org/TR/vocab-data-cube/",
+    "title": "The RDF Data Cube Vocabulary",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/gld/",
+        "label": "Government Linked Data Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vocab-dcat-2": {
+    "url": "https://www.w3.org/TR/vocab-dcat-2/",
+    "edDraft": "https://w3c.github.io/dxwg/dcat/",
+    "repository": "https://github.com/w3c/dxwg",
+    "title": "Data Catalog Vocabulary (DCAT) - Version 2",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/dxwg/",
+        "label": "Dataset Exchange Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vocab-dcat": {
+    "url": "https://www.w3.org/TR/vocab-dcat-1/",
+    "title": "Data Catalog Vocabulary (DCAT)",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/gld/",
+        "label": "Government Linked Data Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "vocab-ssn": {
+    "url": "https://www.w3.org/TR/vocab-ssn/",
+    "edDraft": "https://w3c.github.io/sdw/ssn/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "Semantic Sensor Network Ontology",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2021/sdw",
+        "label": "Spatial Data on the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "w3c-basic-geo": {
+    "url": "https://www.w3.org/2003/01/geo/",
+    "title": "Basic Geo (WGS84 lat/long) Vocabulary",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "wai-aria11": {
+    "url": "https://www.w3.org/TR/wai-aria-1.1/",
+    "edDraft": "https://w3c.github.io/aria/",
+    "repository": "https://github.com/w3c/aria",
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/ARIA/",
+        "label": "Accessible Rich Internet Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wasm-core": {
+    "url": "https://www.w3.org/TR/wasm-core-1/",
+    "edDraft": "https://webassembly.github.io/spec/core/bikeshed/",
+    "repository": "https://github.com/WebAssembly/spec",
+    "title": "WebAssembly Core Specification",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/wasm",
+        "label": "WebAssembly Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wcag21": {
+    "url": "https://www.w3.org/TR/WCAG21/",
+    "edDraft": "https://w3c.github.io/wcag/21/guidelines/",
+    "repository": "https://github.com/w3c/wcag",
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.1",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WAI/GL/",
+        "label": "Accessibility Guidelines Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wcs": {
+    "url": "http://www.opengeospatial.org/standards/wcs",
+    "title": "Web Coverage Service",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "web-animations": {
+    "url": "https://www.w3.org/TR/web-animations-1/",
+    "edDraft": "https://drafts.csswg.org/web-animations-1/",
+    "repository": "https://github.com/w3c/csswg-drafts",
+    "title": "Web Animations",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Style/CSS/",
+        "label": "Cascading Style Sheets (CSS) Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "web-codecs": {
+    "url": "https://github.com/WICG/web-codecs/blob/master/explainer.md",
+    "title": "WebCodecs",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "web-locks": {
+    "url": "https://w3c.github.io/web-locks/",
+    "edDraft": "https://w3c.github.io/web-locks/",
+    "repository": "https://github.com/w3c/web-locks",
+    "title": "Web Locks API",
+    "status": "ED",
+    "deliveredBy": [],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "web-monetization": {
+    "url": "https://webmonetization.org/specification.html",
+    "title": "Web Monetization",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "web-share-target": {
+    "url": "https://w3c.github.io/web-share-target/",
+    "edDraft": "https://w3c.github.io/web-share-target/",
+    "repository": "https://github.com/w3c/web-share-target",
+    "title": "Web Share Target API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2019/webapps/",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "web-share": {
+    "url": "https://www.w3.org/TR/web-share/",
+    "edDraft": "https://w3c.github.io/web-share/",
+    "repository": "https://github.com/w3c/web-share",
+    "title": "Web Share API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webaudio": {
+    "url": "https://www.w3.org/TR/webaudio/",
+    "edDraft": "https://webaudio.github.io/web-audio-api/",
+    "repository": "https://github.com/WebAudio/web-audio-api",
+    "title": "Web Audio API",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2011/audio/",
+        "label": "Audio Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "worklet": {
+        "title": "The AudioWorklet interface",
+        "url": "#audioworklet"
+      }
+    }
+  },
+  "webauthn": {
+    "url": "https://www.w3.org/TR/webauthn-3/",
+    "edDraft": "https://w3c.github.io/webauthn/",
+    "repository": "https://github.com/w3c/webauthn",
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webauthn/",
+        "label": "Web Authentication Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webbluetooth": {
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "edDraft": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "repository": "https://github.com/WebBluetoothCG/web-bluetooth",
+    "title": "Web Bluetooth",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/web-bluetooth/",
+        "label": "Web Bluetooth Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webdriver": {
+    "url": "https://www.w3.org/TR/webdriver1/",
+    "edDraft": "https://w3c.github.io/webdriver/",
+    "repository": "https://github.com/w3c/webdriver",
+    "title": "WebDriver",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/testing/browser/",
+        "label": "Browser Testing and Tools Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "features": {
+      "navigator_webdriver": {
+        "title": "navigator.webdriver",
+        "url": "#interface"
+      }
+    }
+  },
+  "webgl": {
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+    "edDraft": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+    "repository": "https://github.com/KhronosGroup/WebGL",
+    "title": "WebGL Specification",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.khronos.org/",
+        "label": "Khronos Group"
+      }
+    ],
+    "publisher": "Khronos",
+    "milestones": {}
+  },
+  "webgpu": {
+    "url": "https://gpuweb.github.io/gpuweb/",
+    "edDraft": "https://gpuweb.github.io/gpuweb/",
+    "repository": "https://github.com/gpuweb/gpuweb",
+    "title": "WebGPU",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2020/gpu/",
+        "label": "GPU for the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webhid": {
+    "url": "https://wicg.github.io/webhid/",
+    "edDraft": "https://wicg.github.io/webhid/",
+    "repository": "https://github.com/WICG/webhid",
+    "title": "WebHID API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webmediaapi": {
+    "url": "https://w3c.github.io/webmediaapi/",
+    "title": "Web Media API Snapshot 2019",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/webmediaapi/",
+        "label": "Web Media API Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webmediaguidelines": {
+    "url": "https://w3c.github.io/webmediaguidelines/",
+    "title": "Web Media Application Developer Guidelines",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/webmediaapi/",
+        "label": "Web Media API Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webnfc": {
+    "url": "https://w3c.github.io/web-nfc/",
+    "edDraft": "https://w3c.github.io/web-nfc/",
+    "repository": "https://github.com/w3c/web-nfc",
+    "title": "Web NFC API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/web-nfc/",
+        "label": "Web NFC Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webnn": {
+    "url": "https://webmachinelearning.github.io/webnn/",
+    "edDraft": "https://webmachinelearning.github.io/webnn/",
+    "repository": "https://github.com/webmachinelearning/webnn",
+    "title": "Web Neural Network API",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/webmachinelearning/",
+        "label": "Machine Learning for the Web Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webrtc-qos": {
+    "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
+    "repository": "https://github.com/w3c/webrtc-pc",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Priority and QoS Model"
+  },
+  "webrtc-relay": {
+    "url": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-getdefaulticeservers",
+    "edDraft": "https://w3c.github.io/webrtc-pc/",
+    "repository": "https://github.com/w3c/webrtc-pc",
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {},
+    "feature": "Browser default ICE servers"
+  },
+  "webrtc-stats": {
+    "url": "https://www.w3.org/TR/webrtc-stats/",
+    "edDraft": "https://w3c.github.io/webrtc-stats/",
+    "repository": "https://github.com/w3c/webrtc-stats",
+    "title": "Identifiers for WebRTC's Statistics API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webrtc-svc": {
+    "url": "https://www.w3.org/TR/webrtc-svc/",
+    "edDraft": "https://w3c.github.io/webrtc-svc/",
+    "repository": "https://github.com/w3c/webrtc-svc",
+    "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webrtc",
+        "label": "Web Real-Time Communications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "websockets": {
+    "url": "https://websockets.spec.whatwg.org/",
+    "edDraft": "https://websockets.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/websockets",
+    "title": "WebSockets Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {}
+  },
+  "websql": {
+    "url": "https://www.w3.org/TR/webdatabase/",
+    "title": "Web SQL Database",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2008/webapps/",
+        "label": "(historical) Web Applications Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "webstorage": {
+    "url": "https://www.w3.org/TR/webstorage/",
+    "edDraft": "https://w3c.github.io/webstorage/",
+    "repository": "https://github.com/w3c/webstorage",
+    "title": "Web Storage (Second Edition)",
+    "status": "Retired",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/htmlwg",
+        "label": "HTML Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webtransport": {
+    "url": "https://www.w3.org/TR/webtransport/",
+    "edDraft": "https://w3c.github.io/webtransport/",
+    "repository": "https://github.com/w3c/webtransport",
+    "title": "WebTransport",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webtransport",
+        "label": "WebTransport Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webusb": {
+    "url": "https://wicg.github.io/webusb/",
+    "edDraft": "https://wicg.github.io/webusb/",
+    "repository": "https://github.com/WICG/webusb",
+    "title": "WebUSB API",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/wicg/",
+        "label": "Web Platform Incubator Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webvmt": {
+    "url": "https://w3c.github.io/sdw/proposals/geotagging/webvmt/",
+    "repository": "https://github.com/w3c/sdw",
+    "title": "WebVMT: The Web Video Map Tracks Format",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2017/sdwig/",
+        "label": "Spatial Data on the Web Interest Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webvr": {
+    "url": "https://w3c.github.io/webvr/",
+    "title": "WebVR",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/community/webvr/",
+        "label": "Immersive Web Community Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "webvtt": {
+    "url": "https://www.w3.org/TR/webvtt1/",
+    "edDraft": "https://w3c.github.io/webvtt/",
+    "repository": "https://github.com/w3c/webvtt",
+    "title": "WebVTT: The Web Video Text Tracks Format",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/AudioVideo/TT/",
+        "label": "Timed Text Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webworkers": {
+    "url": "https://html.spec.whatwg.org/multipage/workers.html",
+    "repository": "https://github.com/whatwg/html",
+    "title": "HTML Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {},
+    "feature": "Web workers"
+  },
+  "webxr-ar-module": {
+    "url": "https://www.w3.org/TR/webxr-ar-module-1/",
+    "edDraft": "https://immersive-web.github.io/webxr-ar-module/",
+    "repository": "https://github.com/immersive-web/webxr-ar-module",
+    "title": "WebXR Augmented Reality Module - Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "WR/LC": "2021-12-30",
+      "CR": "2021-12-30"
+    }
+  },
+  "webxr-gamepads-module": {
+    "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
+    "edDraft": "https://immersive-web.github.io/webxr-gamepads-module/",
+    "repository": "https://github.com/immersive-web/webxr-gamepads-module",
+    "title": "WebXR Gamepads Module - Level 1",
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "webxr": {
+    "url": "https://www.w3.org/TR/webxr/",
+    "edDraft": "https://immersive-web.github.io/webxr/",
+    "repository": "https://github.com/immersive-web/webxr",
+    "title": "WebXR Device API",
+    "status": "CR",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/immersive-web/",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {
+      "WR/LC": "2021-12-30",
+      "CR": "2021-12-30"
+    }
+  },
+  "wfs3": {
+    "url": "https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html",
+    "title": "OGC Web Feature Service 3.0",
+    "status": "WD",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "wgsl": {
+    "url": "https://gpuweb.github.io/gpuweb/wgsl.html",
+    "title": "WebGPU Shading Language",
+    "status": "ED",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/2020/gpu/",
+        "label": "GPU for the Web Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "milestones": {}
+  },
+  "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+    "title": "Wikidata",
+    "status": "LS",
+    "deliveredBy": [],
+    "milestones": {}
+  },
+  "wms": {
+    "url": "http://www.opengeospatial.org/standards/wms",
+    "title": "Web Map Service",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "wmts": {
+    "url": "http://www.opengeospatial.org/standards/wmts",
+    "title": "OpenGIS Web Map Tile Service Implementation Standard",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "woff": {
+    "url": "https://www.w3.org/TR/WOFF/",
+    "title": "WOFF File Format 1.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Fonts/WG/",
+        "label": "Web Fonts Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "woff2": {
+    "url": "https://www.w3.org/TR/WOFF2/",
+    "edDraft": "https://w3c.github.io/woff/woff2/",
+    "repository": "https://github.com/w3c/woff",
+    "title": "WOFF File Format 2.0",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/Fonts/WG/",
+        "label": "Web Fonts Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wot-api": {
+    "url": "https://www.w3.org/TR/wot-scripting-api/",
+    "edDraft": "https://w3c.github.io/wot-scripting-api/",
+    "repository": "https://github.com/w3c/wot-scripting-api",
+    "title": "Web of Things (WoT) Scripting API",
+    "status": "NOTE",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": true,
+    "milestones": {}
+  },
+  "wot-architecture": {
+    "url": "https://www.w3.org/TR/wot-architecture/",
+    "edDraft": "https://w3c.github.io/wot-architecture/",
+    "repository": "https://github.com/w3c/wot-architecture",
+    "title": "Web of Things (WoT) Architecture",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wot-description": {
+    "url": "https://www.w3.org/TR/wot-thing-description/",
+    "edDraft": "https://w3c.github.io/wot-thing-description/",
+    "repository": "https://github.com/w3c/wot-thing-description",
+    "title": "Web of Things (WoT) Thing Description",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wot-thing-description": {
+    "url": "https://www.w3.org/TR/wot-thing-description10/",
+    "edDraft": "https://w3c.github.io/wot-thing-description/",
+    "repository": "https://github.com/w3c/wot-thing-description",
+    "title": "Web of Things (WoT) Thing Description",
+    "status": "REC",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/WoT/WG/",
+        "label": "Web of Things Working Group"
+      }
+    ],
+    "publisher": "W3C",
+    "informative": false,
+    "milestones": {}
+  },
+  "wps": {
+    "url": "http://www.opengeospatial.org/standards/wms",
+    "title": "Web Processing Service",
+    "status": "REC",
+    "deliveredBy": [],
+    "publisher": "OGC",
+    "milestones": {}
+  },
+  "xhr": {
+    "url": "https://xhr.spec.whatwg.org/",
+    "edDraft": "https://xhr.spec.whatwg.org/",
+    "repository": "https://github.com/whatwg/xhr",
+    "title": "XMLHttpRequest Standard",
+    "status": "LS",
+    "deliveredBy": [
+      {
+        "url": "https://whatwg.org",
+        "label": "WHATWG"
+      }
+    ],
+    "publisher": "WHATWG",
+    "milestones": {}
+  }
+}

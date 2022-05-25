@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang="zh" data-generated=""><head>
+    <title>关于此文档 - 移动 Web 应用路线图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button id="side-nav-btn" type="button" name="sidenav-opener">
+          <img src="../assets/img/menu.svg" height="15" alt="打开菜单" data-altclose="关闭菜单">
+        </button>
+        <div class="brand">
+          <a href="https://www.w3.org/"><img src="../assets/img/w3c.svg" height="30" alt="W3C"></a>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container"><div data-beforemetadata="true"><h2 id="web"><a href="./index.zh.html" data-breadcrumb="">移动 Web 应用路线图</a> &gt;</h2><div class="title"><img src="../assets/img/about.svg" alt="" data-icon=""><div><h1 data-title="">关于此文档</h1></div></div></div><p>本文档由 W3C 团队发布和维护。基于 W3C 和其他地方标准化讨论的进展以及在 <a href="https://github.com/w3c/web-roadmaps">GitHub</a> 收到的反馈，本文档的<a href="https://w3c.github.io/web-roadmaps/mobile/">编辑草案</a>将不断更新，并会定期发布新的版本。本页总结了每个版本所包含的更改。</p></div>
+        </section>
+        
+        <section class="main-content" data-pagetype="page">
+            <div class="container"><section id="goals">
+  <h2 id="generatedID">目标</h2>
+  <p>
+    本文档总结了在W3C和其他地方开发的技术，可用于构建特定类型的应用（例如媒体应用、游戏等）或促进应用开发（例如安全性）的特定方面。该文档按页面进行组织，为每个部署状态提供特定功能并解释其与基础主题的相关性。部分末尾的表格总结了定义文本中介绍的特征的规范的标准化和实施状态。
+  </p>
+  <p>
+    不同特性的描述相互之间通常没有关联，这样做的目的是在标准化方面取得进展并在实现中部署时能够轻松地移动特性描述文本的位置。
+  </p>
+</section>
+<section id="audience">
+  <h2 id="generatedID-0">受众</h2>
+  <p>
+    本文档主要面向愿意了解Web平台针对特定垂直需求（例如出版）或特定设备（例如移动设备）的状态的Web应用开发人员。设备制造商也可能会找到有关其产品应支持的功能的重要信息。
+  </p>
+  <p>
+    本文档回答了如下的问题：
+  </p>
+  <ul>
+    <li>目前哪些技术可以跨浏览器使用？</li>
+    <li>哪些技术在将来可以使用？</li>
+    <li>有哪些功能正在探索之中，并可能在将来成为新的技术？</li>
+    <li>在某个特定领域中是否存在技术缺口，目前还没有积极的标准化工作？</li>
+  </ul>
+</section>
+<section id="legend">
+  <h2 id="generatedID-1">了解表格</h2>
+  <p>
+    末尾的表格汇总了有关各个特性的信息。不同表格显示的列可能不同。特性包含一个名称、一个或多个支持该特性的规范（或规范内的个别特性）以及每个规范的详细信息。
+  </p>
+  <section id="maturity">
+    <h3 id="maturity-levels">成熟度</h3>
+    <p>
+      特性的成熟度指其标准化状态。
+    </p>
+    <table>
+      <thead>
+        <tr><th>成熟度</th>
+        <th>含义</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ed.svg" alt="编辑草案"></td>
+          <td>在编辑草案中定义，尚未在任何地方正式发布。该特性不应该被认为是稳定的，并且在特性稳定之前，可能的实现仍然可以有重要的改动。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/wd.svg" alt="工作草案"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsWD">W3C工作草案</a>中定义。该特性不应该被认为是稳定的，并且在特性稳定之前，可能的实现仍然可以有重要的改动。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/cr.svg" alt="候选推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsCR">W3C候选推荐标准</a>中定义。该特性可能被认为是稳定的，但仍可以根据实现的经验进行改动，并且现有的实现可能不具有完全的互操作性。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/pr.svg" alt="提案推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsPR">W3C提案推荐标准</a>中定义。特性已稳定，并开始由W3C会员进行最终审查，现有的实现应该大部分是可互操作的。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/rec.svg" alt="正式推荐标准"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#RecsW3C">W3C正式推荐标准</a>中定义。特性是稳定的，实现通常是可互操作的。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/ls.svg" alt="持续更新标准"></td>
+          <td>在<a href="https://whatwg.org/working-mode">WHATWG持续更新标准</a>中定义。不同的特性的稳定性和互操作性不同，通常在规范中注明。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/note.svg" alt="Note"></td>
+          <td>在<a href="https://www.w3.org/Consortium/Process/#WGNote">W3C工作组备忘</a>中定义。作为备忘发布的文档通常是信息性的（例如指导原则、技术、最佳实践等），或者由于某些原因对该特性的工作已停止。</td>
+        </tr>
+        <tr>
+          <td><img src="https://www.w3.org/2013/09/wpd-rectrack-icons/retired.svg" alt="Retired"></td>
+          <td>该特性曾是Web标准的一部分，但由于某些原因（例如隐私问题、安全问题、新的机制等）不再推荐实现和使用。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="implementation">
+    <h3 id="generatedID-2">实现信息</h3>
+    <p>
+      对于面向浏览器的特性，“现有实现”和“实现意向”列显示了已知的主流浏览器的实现状态。该信息按照实现情况进行组织，其中实现情况包括：
+    </p>
+    <ul>
+      <li><strong>已有稳定实现：</strong>该特性在浏览器中受支持，并且可以立即使用。</li>
+      <li><strong>已有实验性实现：</strong>该特性计划用于即将推出的浏览器版本，并且可以在浏览器每日版本中试用。该特性也可能需要开启实验性功能，或者需要使用浏览器引擎前缀。</li>
+      <li><strong>开发中：</strong>该特性还在开发，尚不能使用。</li>
+      <li><strong>考虑实现：</strong>该功能尚未开发，但已纳入考虑范围。</li>
+    </ul>
+    <p>
+      这些表格可能包含有关以下浏览器的实现信息：
+    </p>
+    <table>
+      <thead>
+        <tr><th>图标</th>
+        <th>浏览器名称</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <th colspan="2">主要浏览器引擎</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/chrome.png" alt="Chrome"></td>
+          <td>Chrome</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/firefox.png" alt="Firefox"></td>
+          <td>Firefox</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/safari.png" alt="Safari"></td>
+          <td>Safari</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th colspan="2">基于主要的浏览器引擎</th>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/baidu.png" alt="百度浏览器"></td>
+          <td>百度浏览器</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/edge.png" alt="Edge"></td>
+          <td>Microsoft Edge</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/opera.png" alt="Opera"></td>
+          <td>Opera</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/qq.png" alt="QQ浏览器"></td>
+          <td>QQ浏览器</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/samsunginternet.png" alt="三星浏览器"></td>
+          <td>三星浏览器</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/uc.png" alt="UC浏览器"></td>
+          <td>UC浏览器</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      叠加在浏览器图标上的徽章传达了其他实现信息：
+    </p>
+    <table>
+      <thead>
+        <tr><th>徽章</th>
+        <th>含义</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><img src="../assets/impl/desktop.svg" alt="仅限桌面"></td>
+          <td>实现信息适用于桌面版本的浏览器。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/mobile.svg" alt="仅限移动"></td>
+          <td>实现信息适用于浏览器的移动版本。<br>请注意，实现信息仅适用于浏览器使用<em>自己的排版引擎</em>（例如“Firefox for Android”或“Safari for iOS”）的移动版本，而不适用于浏览器使用<em>其他排版引擎</em>的移动版本（例如“Firefox for iOS“）。换句话说，根据目前的信息，移动徽章对Safari意味着“iOS”，所有其他浏览器意味着“Android”。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/desktop-mobile.svg" alt="桌面和移动"></td>
+          <td>实现信息适用于浏览器的桌面版和移动版。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/flag.svg" alt="需要开启浏览器实验性功能"></td>
+          <td>需要开启浏览器实验性功能才能使用该功能。实验性功能可以在用户的偏好设置中、编译浏览器之前或者在启动浏览器之前开启。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/prefix.svg" alt="需要使用浏览器引擎前缀"></td>
+          <td>需要使用浏览器引擎前缀才能使用该功能。例如，在Firefox中，这通常意味着为CSS属性添加类似<code>-moz-</code>的前缀，并为API函数添加<code>moz</code>前缀。</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/impl/partial.svg" alt="Partial implementation"></td>
+          <td>实现信息不完整，支持可能不完整。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      在支持悬停的设备上，当用户把光标移到浏览器图标上时，会显示实现信息。
+    </p>
+    <p>
+      实现信息收集自以下来源：
+    </p>
+    <ul>
+      <li><a href="http://caniuse.com/">Can I Use?</a></li>
+      <li><a href="https://www.chromestatus.com/features">Chrome Platform Status</a></li>
+      <li><a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a></li>
+      <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a></li>
+      <li><a href="https://webkit.org/status/">WebKit Feature Status</a></li>
+    </ul>
+    <p>
+      单击实现中的浏览器图标，页面会跳转到提供实现信息的网站的相关页面。
+    </p>
+    <p>
+      浏览器缺少实现信息通常意味着该特性完全不受支持且尚未开始开发，但这也可能意味着我们目前暂时没有实现信息。如果您发现了错误的实现信息，请<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+    </p>
+  </section>
+</section><section>
+        <h2 id="change-history">更改历史</h2>
+        <section>
+          <h3 id="x2020-9">2020年9月</h3>
+          <p>
+            <a href="https://www.w3.org/2020/09/web-roadmaps/mobile/">2020年9月版</a>添加了新的W3C社区组提案、新的W3C工作组可交付成果，并刷新了其他规范的状态。该版本还添加了一个新的小组页面，该页面汇总了整个路线图中出现的小组和规范的列表。自2019年11月版以来对各页面所做的更改包括：
+          </p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及 Web 上的高动态范围和宽色域</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及 User-Agent Client Hints</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中提及存储桶</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>和<a data-page="security" href="security.zh.html">安全和隐私</a>中提及存储访问 API</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 performance.measureMemory API</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 main thread scheduling APIs</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 requestPostAnimationFrame</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>和<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及 Web 锁 API</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及用户空闲检测</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及 MiniApps</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 isLoggedIn</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 Trust Token API</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 First-Party Sets</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 Private Click Measurement</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及通过域标签和膜进行 JS 隔离</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 TURTLEDOVE</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 SPARROW</li>
+              <li>在<a data-page="payment" href="payment.zh.html">支付与服务</a>中提及 Web Monetization</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及可构造样式表对象</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及新的 CSS 媒体特性</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及 Web 应用清单——应用信息</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>和<a data-page="userinput" href="userinput.zh.html">用户交互</a>中将标记 API 标为开发中的技术</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中将 Web 分享目标 API 标为开发中的技术</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中将 WebGPU 标为开发中的技术</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中将存储规范标为开发中的技术</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中将开放屏幕协议标为开发中的技术</li>
+              <li>在<a data-page="network" href="network.zh.html">网络和通信</a>中将 WebTransport 标为开发中的技术</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中将特性策略改名为权限策略</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及行间注（ruby）</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中将 Web 组件标为广泛部署的技术</li>
+            </ul></dd>
+          </dl>
+          <p>实现信息也进行了更新，以反映2020年9月的已知实现状态，其中一些更新是由平台状态站点的更新触发的。主要更新如下：</p>
+          <ul>
+            <li>Edge 的实现信息现在针对基于 Chromium 的 Edge 的最新版本。</li>
+            <li>所有主流浏览器都实现了 Web 组件，请参阅<a data-page="adaptation" href="adaptation.zh.html">设备适配</a></li>
+            <li>所有主流浏览器都实现了 Web 动画，请参阅<a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="x2019-11">2019年11月</h3>
+          <p><a href="https://www.w3.org/2019/11/web-roadmaps/mobile/">2019年11月版</a>添加了一些正在 Web 平台孵化社区组中孵化的新提案和来自各个 W3C 工作组的新标准，并更新了了其他标准的状态。自2019年4月版以来所做的更改包括：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 WebGPU</li>
+              <li>在<a data-page="network" href="network.zh.html">网络和通信</a>中提及 WebTransport</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及 WebCodecs</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>和<a data-page="userinput" href="userinput.zh.html">用户交互</a>中提及 <code>isInputPending</code></li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 <code>&lt;virtual-scroller&gt;</code> 提案</li>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中提及 Input for workers and worklets</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及音频设备客户端</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及几个新的性能指标接口</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及 Web 组件</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及 WebRTC 可伸缩视频编码（SVC）扩展</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及两个新的 WebXR 模块</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中将 CSS Animation Worklet API 标为开发中的技术</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中将媒体工作组的标准标为开发中的技术</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中将 CSS Containment Module Level 1 标为广泛部署的技术</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中将 WebAssembly 标为广泛部署的技术</li>
+            </ul></dd>
+          </dl>
+          <p>实现信息也进行了更新，以反映2019年11月的已知实现状态，其中一些更新是由平台状态站点的更新触发的。主要更新如下：</p>
+          <ul>
+            <li>Firefox 和 Safari 实现了元素大小变化观察器，请参阅<a data-page="adaptation" href="adaptation.zh.html">设备适配</a></li>
+            <li>所有主流浏览器都实现了 HTML 中的 datalist 元素，请参阅<a data-page="forms" href="forms.zh.html">表单</a></li>
+            <li>Firefox 桌面版实现了 <code>StorageManager</code>，请参阅<a data-page="storage" href="storage.zh.html">数据存储</a></li>
+            <li>Safari 桌面版实现了流媒体录制，请参阅<a data-page="media" href="media.zh.html">媒体</a></li>
+            <li>Firefox 桌面版实现了画中画，请参阅<a data-page="media" href="media.zh.html">媒体</a></li>
+            <li>Chrome 实现了 Background Fetch，请参阅<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a></li>
+            <li>Safari 桌面版实现了 Web 认证，请参阅<a data-page="security" href="security.zh.html">安全和隐私</a></li>
+            <li>Firefox 移动版实现了信任证管理，请参阅<a data-page="security" href="security.zh.html">安全和隐私</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="x2019-4">2019年4月</h3>
+          <p><a href="https://www.w3.org/2019/04/web-roadmaps/mobile/">2019年4月版</a>介绍了在 Web 平台孵化社区组中开展的新孵化工作，并且更新了其他规范的状态。自2018年12月版以来所做的更改包括：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中提及 Cookie 存储 API</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中提及 KV 存储</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 JS Self-Profiling API</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及可信任类型</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中将 Writable Files 改名为 Natife File System</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="forms" href="forms.zh.html">表单</a>中提及剪贴板API和事件</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及元素大小变化观察器</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中将 CSS 移动文本大小调整模块标为开发中的技术</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中将 CSS 过度滚动行为模块标为开发中的技术</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中将特性策略标为开发中的技术</li>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中将设备方向事件规范标为开发中的技术，并更新说明</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中将媒体捕捉与媒体流标为广泛部署的技术</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中将Web认证标为广泛部署的技术</li>
+            </ul></dd>
+
+            <dt>不再进行的工作</dt>
+            <dd><ul>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中将基于硬件的安全服务标为不再进行的工作</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中将追踪偏好表达（Tracking Preference Expression，也被称为Do No Track）标为不再进行的工作</li>
+            </ul></dd>
+
+          </dl>
+          <p>实现信息也进行了更新，以反映2019年4月的已知实现状态，其中一些更新是由平台状态站点的更新触发的。主要更新如下：</p>
+          <ul>
+            <li>Chrome 实现了可访问富互联应用 (WAI-ARIA) 1.1，请参阅<a data-page="userinput" href="userinput.zh.html">用户交互</a></li>
+            <li>Chrome 实现了媒体捕捉与媒体流中的源功能，请参阅<a data-page="adaptation" href="adaptation.zh.html">设备适配</a></li>
+            <li>Firefox 桌面版实现了 Streams 规范，请参阅<a data-page="network" href="network.zh.html">网络和通信</a></li>
+            <li>所有主流浏览器都实现了子资源完整性，请参阅<a data-page="security" href="security.zh.html">安全和隐私</a></li>
+            <li>Safari 桌面版实现了 Web 动画，请参阅<a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="x2018-12">2018年12月</h3>
+          <p><a href="https://www.w3.org/2018/12/web-roadmaps/mobile/">2018年12月版</a>重点介绍了最近在 Web 平台孵化社区组（WICG）开展的新孵化工作，以缩小与原生平台的差距。自2018年7月版以来所做的更改包括：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及自动播放政策</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>和<a data-page="network" href="network.zh.html">网络和通信</a>中提及 Background Fetch</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>和<a data-page="userinput" href="userinput.zh.html">用户交互</a>中提及标记 API</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 绘图 API</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及显示锁</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及 Portals</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 Scroll-linked Animations</li>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中提及 WebHID</li>
+              <li>在<a data-page="storage" href="storage.zh.html">数据存储</a>中提及 Writable Files</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>和<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中将地理位置传感器标为开发中的技术，并提及后台操作</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中将 WebXR 设备 API 标为开发中的技术</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中更新 Web 认证的描述</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中将指针事件标为广泛部署的技术</li>
+            </ul></dd>
+
+            <dt>不再进行的工作</dt>
+            <dd><ul>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>将 Web 预算 API 标为不再进行的工作</li>
+            </ul></dd>
+          </dl>
+          <p>实现信息也已更新，以反映2018年12月的已知实现状态，其中一些更新可能是由提供实现信息的网站更新触发的。主要更新如下：</p>
+          <ul>
+            <li>所有主流浏览器都实现了 CSS 字体模块第四版中的可变字体，请参阅<a data-page="graphics" href="graphics.zh.html">图形和布局</a></li>
+            <li>所有主流浏览器都实现了媒体查询第四版，请参阅<a data-page="adaptation" href="adaptation.zh.html">设备适配</a></li>
+            <li>Firefox 移动版实现了画中画，Safari 也提供了实验性支持，请参阅<a data-page="media" href="media.zh.html">媒体</a></li>
+            <li>所有主流浏览器都实现了游戏手柄支持，请参阅<a data-page="userinput" href="userinput.zh.html">用户交互</a></li>
+            <li>Safari 桌面版实现了 Web 分享 API，请参阅<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a></li>
+          </ul>
+          </section>
+          <section>
+          <h3 id="x2018-7">2018年7月</h3>
+          <p>性能是过去几个月标准化工作的主要焦点，新的探索性工作是优化性能或调整浏览器行为以满足 Web 应用需求的机制。<a href="https://www.w3.org/2018/07/web-roadmaps/mobile/">2018年7月</a>快照中的大多数更新都会影响<a data-page="performance" href="performance.zh.html">性能和调优</a>：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 CSS Animation Worklet API</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 CSS Overscroll Behavior Module Level 1</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及事件计时 API</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及优先级提示</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及 Web 预算 API</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 CSS Containment Module Level 1</li>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中提及游戏手柄</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及WebRTC统计信息API标识</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中提及 MediaStreamTrack 内容提示</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及 Referrer Policy</li>
+              <li>将屏幕方向 API 从<a data-page="graphics" href="graphics.zh.html">图形和布局</a>移动到<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a></li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及 WebDriver</li>
+            </ul></dd>
+
+            <dt>目前尚未覆盖的工作</dt>
+            <dd><ul>
+              <li>添加手势事件到<a data-page="userinput" href="userinput.zh.html">用户交互</a></li>
+              <li>删除<a data-page="performance" href="performance.zh.html">性能和调优</a>中的“更加精细的网络优化”，因为<a href="https://wicg.github.io/priority-hints/">优先级提示</a>解决了该问题</li>
+            </ul></dd>
+          </dl>
+
+          <p>表中呈现的实现信息现在加入了来自<a href="https://github.com/mdn/browser-compat-data">MDN浏览器兼容性数据</a>项目的信息。如果没有足够的实现数据来评估给定实现是否支持规范中的所有功能时，路线图会呈现“部分”徽章。</p>
+
+          <p>成熟度图标的颜色已更新为用绿色表示常绿或持续更新标准、灰色表示不包含规范性（normative）内容的文档（例如工作组备忘和指南）。</p>
+
+          <p>对基础框架进行了一些其他增强，例如允许作者链接到编辑草案、设置规范的成熟度状态、在汇总表中创建“另见”和“里程碑”列（路线图目前没有使用这些功能）等。有关详细信息，请参阅<a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">文档</a>。</p>
+        </section>
+        <section>
+          <h3 id="x2018-4">2018年4月</h3>
+          <p><a href="https://www.w3.org/2018/04/web-roadmaps/mobile/">2018年4月版</a>添加了在<a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">2018年1月版</a>中缺少的一些功能。在内容方面，进行了以下更改：</p>
+          <dl>
+            <dt>探索性工作</dt>
+            <dd><ul>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中提及Web分享API和Web分享目标API</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及请求和放弃权限标准</li>
+              <li>在<a data-page="security" href="security.zh.html">安全和隐私</a>中提及特性策略</li>
+              <li>在<a data-page="adaptation" href="adaptation.zh.html">设备适配</a>中提及元素查询</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中用WebXR代替WebVR，并提及polyfill</li>
+            </ul></dd>
+
+            <dt>开发中的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中修复接近度传感器的实现状态</li>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中修复 Firefox 和 Edge 对环境光线传感器 API 的实现状态</li>
+              <li>在<a data-page="media" href="media.zh.html">媒体</a>中修复 WebKit 对呈现 API 的实现状态</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 的 <code>font-display</code> 属性</li>
+              <li>在<a data-page="network" href="network.zh.html">网络和通信</a>中提及 Streams 标准</li>
+              <li>在<a data-page="payment" href="payment.zh.html">支付与服务</a>中提及支付方式标识符和支付方式清单</li>
+            </ul></dd>
+
+            <dt>广泛部署的技术</dt>
+            <dd><ul>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 网格布局</li>
+              <li>在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提及 CSS 的 <code>box-sizing</code> 属性</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中把 <code>requestIdleCallback</code> 改为广泛部署的技术</li>
+              <li>更新 WOFF 标准的描述（WOFF 2.0 近期发布了正式推荐标准），同时在<a data-page="graphics" href="graphics.zh.html">图形和布局</a>中提到可变字体</li>
+              <li>在<a data-page="userinput" href="userinput.zh.html">用户交互</a>中细化信息无障碍的内容并重命名该部分</li>
+              <li>在<a data-page="performance" href="performance.zh.html">性能和调优</a>中提及事件监听器的 <code>passive</code> 选项</li>
+            </ul></dd>
+
+            <dt>不再进行的工作</dt>
+            <dd><ul>
+              <li>在<a data-page="sensors" href="sensors.zh.html">传感器和用户本地交互</a>中将环境湿度、温度传感器和气压传感器标为不再进行的工作</li>
+              <li>在<a data-page="lifecycle" href="lifecycle.zh.html">应用生命周期</a>中将应用缓存标为不再进行的工作</li>
+            </ul></dd>
+          </dl>
+
+          <p>在每个部分末尾的表格中呈现的实现信息现在嵌入了有关移动浏览器的信息，并在需要浏览器引擎前缀或必须开启浏览器实验性功能以使用某个特性时发出警告。这些特性现在在表格中会被标记为“实验”。现在可以从下拉菜单中显示有关其他浏览器（百度、Opera、QQ、三星、UC）的实现信息。默认情况下，表格只会显示有关主要浏览器（Chrome、Microsoft Edge、Firefox 和 Safari）的信息，因为此信息更新且更可靠（某些情况下其他浏览器的信息可能会过时或不正确）。</p>
+
+          <p>此版本还具有一系列用户界面的改进，以提高页面的可读性和可访问性。</p>
+
+          <p>在这些标准之下，路线图框架几乎完全重新编写，以便简化路线图创作以及发布未来的快照。例如，在大多数情况下，提取关于W3C、WHATWG和IETF规范的信息现在应该是自动的。更多详细信息，请参阅<a href="https://github.com/w3c/web-roadmaps#framework-for-web-technology-roadmaps">文档</a>。</p>
+        </section>
+
+        <section>
+          <h3 id="x2018-1">2018年1月</h3>
+          <p><a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">2018年1月</a>的快照是对<a href="https://www.w3.org/2015/08/mobile-web-app-state/">2015年8月</a>以前发布的移动路线图进行的重大修改。路线图的分类没有变化，但新版本包含了新的设计和内容的大幅更新。</p>
+          <p>路线图以<a href="https://www.w3.org/Mobile/roadmap/index.html">英文</a>和<a href="https://www.w3.org/Mobile/roadmap/index.zh.html">中文</a>发布。</p>
+          <p>有些内容可能仍然缺失或不完整。除此之外，实现信息仅针对桌面浏览器，且并不保证完全正确。</p>
+        </section>
+      </section></div>
+        </section>
+        <section class="contribute">
+            <div class="container">
+            <h2 id="generatedID-3">发现了缺少的东西？</h2>
+                <p>如果您知道使用 Web 技术无法实现的用例，请让我们知道！</p>
+                 <p>为此，您可以在<a class="discourse discoursecat" href="https://discourse.wicg.io/">W3C 的 discourse 论坛</a>中开一个新的主题, 或者<a href="https://github.com/w3c/web-roadmaps/issues/new">在本文档的 GitHub 库中发一个新 issue</a>。
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/w3c/web-roadmaps/">GitHub</a>
+                  <a class="btn reverse discourse" href="https://discourse.wicg.io/">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <aside id="side-nav">
+      <nav>
+        <ul>
+        <li><a href="./index.zh.html" data-nav=""><div class="icon"><img src="../assets/img/home.svg" alt=""></div><div class="description">首页</div></a></li><li><a href="graphics.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-graphics.svg" alt=""></div><div class="description">图形和布局</div></a></li><li><a href="adaptation.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-adaptation.svg" alt=""></div><div class="description">设备适配</div></a></li><li><a href="forms.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-forms.svg" alt=""></div><div class="description">表单</div></a></li><li><a href="storage.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-storage.svg" alt=""></div><div class="description">数据存储</div></a></li><li><a href="media.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-media.svg" alt=""></div><div class="description">媒体</div></a></li><li><a href="userinput.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-userinput.svg" alt=""></div><div class="description">用户交互</div></a></li><li><a href="sensors.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-sensors.svg" alt=""></div><div class="description">传感器和用户本地交互</div></a></li><li><a href="network.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-network.svg" alt=""></div><div class="description">网络和通信</div></a></li><li><a href="lifecycle.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-lifecycle.svg" alt=""></div><div class="description">应用生命周期</div></a></li><li><a href="payment.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-payment.svg" alt=""></div><div class="description">支付与服务</div></a></li><li><a href="performance.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-performance.svg" alt=""></div><div class="description">性能和调优</div></a></li><li><a href="security.zh.html" data-nav=""><div class="icon"><img src="../assets/img/mobile-security.svg" alt=""></div><div class="description">安全和隐私</div></a></li><li><a href="groups.zh.html" data-nav=""><div class="icon"><img src="../assets/img/groups.svg" alt=""></div><div class="description">相关小组列表</div></a></li><li><a href="about.zh.html" data-nav=""><div class="icon"><img src="../assets/img/about.svg" alt=""></div><div class="description">关于此文档</div></a></li></ul>
+      </nav>
+    </aside>
+    <div id="mask"></div>
+        
+        <footer>
+            <div class="container">
+                <p>
+                    <span class="translations-wrapper">语言: <span class="translations"><a href="about.html" data-nav="">English</a> | <span>中文</span></span><br></span>
+                    内容最后更新于 <span data-content-lastmodified="">2022年5月</span><br>
+                    © <a href="https://www.w3.org/">W3C</a> (<a href="https://www.csail.mit.edu/">MIT</a> · <a href="https://www.ercim.eu/">ERCIM</a> · <a href="https://www.keio.ac.jp/">Keio</a> · <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+                    <br>
+                    Usage policies apply
+                </p>
+                <p>
+                  感谢蒋坤、李安琪、屈曦明、肖俊青和薛富侨提供中文翻译
+                  <br>
+                  有关特性的成熟度和实现信息在<span data-impl-lastmodified="">2022年5月</span>收集自 <a href="https://w3c.github.io/w3c-api/">W3C API</a>, <a href="https://www.specref.org/">Specref</a>, <a href="http://caniuse.com/">Can I use?</a>, <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>, <a href="https://github.com/mdn/browser-compat-data">MDN Browser Compatibility Data</a>, <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Microsoft Edge web platform features status and roadmap</a>, <a href="https://webkit.org/status/">WebKit Feature Status</a>
+                </p>
+            </div>
+        </footer>
+    
+
+<script src="../js/sidenav.js"></script><script src="../js/filter-implstatus.js"></script></body></html>
