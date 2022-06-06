@@ -24595,7 +24595,7 @@
       },
       {
         "ua": "firefox",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
@@ -24679,7 +24679,7 @@
       },
       {
         "ua": "firefox_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "mdn",
         "guess": true,
         "features": [
@@ -25011,7 +25011,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -25053,7 +25053,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -25369,7 +25369,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -25411,7 +25411,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -25679,7 +25679,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -25721,7 +25721,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -26043,7 +26043,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -26085,7 +26085,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -26131,14 +26131,14 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
             "selected": true
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "href": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
             "selected": true
@@ -26323,7 +26323,7 @@
           },
           {
             "ua": "firefox",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
@@ -26365,7 +26365,7 @@
           },
           {
             "ua": "firefox_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "mdn",
             "guess": true,
             "partial": true
