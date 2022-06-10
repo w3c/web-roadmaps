@@ -9,14 +9,13 @@
  * List of implementation sources
  */
 const sources = {
+  'bcd': 'MDN\'s Browser Compatibility Data',
   'caniuse': 'Can I use',
-  'chromestatus': 'Chrome Platform Status',
-  'edgestatus': 'Microsoft Edge Platform Status',
-  'webkitstatus': 'WebKit Feature Status',
-  'mdn': 'MDN Browser Compatibility Data',
+  'chrome': 'Chrome Platform Status',
+  'webkit': 'WebKit Feature Status',
   'feedback': 'User feedback',
   'other': 'Other'
-}
+};
 
 /**
  * Wraps querySelectorAll to return an Array across browsers
@@ -1419,7 +1418,7 @@ const formatImplInfo = function (data, translate) {
   // Arrange the implementation info per implementation status
   let info = {};
   implementationStatuses.forEach(status => {
-    let implementations = data.implementations.filter(impl =>
+    let implementations = (data.support ?? []).filter(impl =>
       impl.selected && (impl.status === status) &&
       allBrowsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
     ).filter((impl, index, arr) => {

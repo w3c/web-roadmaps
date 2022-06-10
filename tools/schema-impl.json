@@ -1,145 +1,105 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "JSON Schema that the generated specs/tr.json file needs to follow.",
+
+  "definitions": {
+    "support": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ua": {
+            "type": "string",
+            "enum": [
+              "baidu_android",
+              "chrome",
+              "chrome_android",
+              "edge",
+              "firefox",
+              "firefox_android",
+              "opera",
+              "qq_android",
+              "safari",
+              "safari_ios",
+              "samsunginternet_android",
+              "uc_android",
+              "webkit"
+            ]
+          },
+
+          "status": {
+            "type": "string",
+            "enum": ["notsupported", "consideration", "indevelopment", "experimental", "shipped"]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "enum": ["bcd", "caniuse", "chrome", "edge", "webkit", "feedback", "other"]
+          },
+          "href": {
+            "type": "string",
+            "format": "url"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "prefix": {
+            "type": "boolean"
+          },
+          "flag": {
+            "type": "boolean"
+          },
+          "selected": {
+            "type": "boolean"
+          },
+          "guess": {
+            "type": "boolean"
+          },
+          "partial": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "details": {
+            "$ref": "#/definitions/support"
+          }
+        }
+      }
+    }
+  },
+
   "type": "object",
   "additionalProperties": {
     "type": "object",
     "additionalProperties": false,
     "properties": {
-      "implementations": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["ua", "status"],
-          "properties": {
-            "ua": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "type": "string",
-              "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
-            },
-            "source": {
-              "type": "string",
-              "minLength": 1
-            },
-            "href": {
-              "type": "string",
-              "format": "uri"
-            },
-            "date": {
-              "type": "string",
-              "format": "date"
-            },
-            "comment": {
-              "type": "string",
-              "minLength": 1
-            },
-            "prefix": {
-              "type": "boolean"
-            },
-            "flag": {
-              "type": "boolean"
-            },
-            "selected": {
-              "type": "boolean"
-            },
-            "guess": {
-              "type": "boolean"
-            },
-            "partial": {
-              "type": "boolean"
-            },
-            "features": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "notes": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            }
-          }
-        }
+      "support": {
+        "$ref": "#/definitions/support"
       },
       "features": {
-        "title": "Features in the specification",
         "type": "object",
-        "description": "In case the reference to the specification would benefit from being more specific than the specification as a whole, the feature property allows to add the name of the specific feature",
+        "propertyNames": {
+          "type": "string",
+          "minLength": 1
+        },
         "additionalProperties": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["implementations"],
           "properties": {
-            "implementations": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": ["ua", "status"],
-                "properties": {
-                  "ua": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "status": {
-                    "type": "string",
-                    "enum": ["", "consideration", "indevelopment", "experimental", "shipped"]
-                  },
-                  "source": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "href": {
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "date": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "comment": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "prefix": {
-                    "type": "boolean"
-                  },
-                  "flag": {
-                    "type": "boolean"
-                  },
-                  "selected": {
-                    "type": "boolean"
-                  },
-                  "guess": {
-                    "type": "boolean"
-                  },
-                  "partial": {
-                    "type": "boolean"
-                  },
-                  "notes": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  }
-                }
-              }
+            "support": {
+              "$ref": "#/definitions/support"
             }
           }
         }
       },
+
       "polyfills": {
-        "title": "Polyfills",
-        "description": "Polyfills available for the feature",
         "type": "array",
         "items": {
           "type": "object",
@@ -148,7 +108,7 @@
           "properties": {
             "url": {
               "type": "string",
-              "format": "uri"
+              "format": "url"
             },
             "label": {
               "type": "string",

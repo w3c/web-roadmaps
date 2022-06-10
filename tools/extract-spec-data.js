@@ -4,7 +4,7 @@ browser-specs (title, ED, repository), the W3C API (WG, status, etc.) and from
 Specref for specs that are neither in browser-specs nor in the W3C API.
 
 To parse files:
-node tools/extract-spec-data.js data/3dcamera.json data/webvtt.json
+node tools/extract-spec-data.js [list.json]
 *******************************************************************************/
 
 const fetch = require('fetch-filecache-for-crawling');
@@ -12,6 +12,7 @@ const path = require('path');
 const fs = require('fs');
 const https = require('https');
 const browserSpecs = require('web-specs');
+const browserStatuses = require('browser-statuses');
 
 
 /**
@@ -339,11 +340,22 @@ async function fetchJson(url, options) {
  * @return {Promise<Object>} Promise to get an object that contains additional
  *   information about specs referenced by the data files
  */
-async function extractSpecData(files, config) {
-  let specs = (files || []).map(file => Object.assign({
-    file,
-    id: file.split(/\/|\\/).pop().split('.').slice(0, -1).join('.'),
-    data: requireFromWorkingDirectory(file)
+async function extractSpecData(list, config) {
+  function loadDataFile(id) {
+    try {
+      return JSON.parse(
+        fs.readFileSync(
+          path.join(__dirname, '..', 'data', `${id}.json`), 'utf8'));
+    }
+    catch {
+      return {};
+    }
+  }
+
+  let specs = Object.entries(list).map(([shortname, features]) => Object.assign({
+    id: shortname,
+    data: loadDataFile(shortname),
+    features: features
   }));
 
   // Create a dedicated HTTP agent with socket pooling enabled for requests to
@@ -416,7 +428,7 @@ async function extractSpecData(files, config) {
         `https://w3c.github.io/spec-dashboard/pergroup/${deliverer.id}-milestones.json`,
         githubHttpOptions
       ).catch(err => {
-        console.warn(`- ${deliverer.name} (id: ${deliverer.id}): Could not retrieve milestones file`);
+        console.warn(`[warn] ${deliverer.name} (id: ${deliverer.id}): Could not retrieve milestones file`);
         return null;
       });
     }
@@ -508,7 +520,7 @@ async function extractSpecData(files, config) {
           label = label.slice(4);
         }
         if (!label) {
-          console.warn(`- ${spec.id}: No group label found (home page: ${group.url})`);
+          console.warn(`[warn] ${spec.id}: No group label found (home page: ${group.url})`);
         }
         return { url: group.url, label };
       });
@@ -526,7 +538,7 @@ async function extractSpecData(files, config) {
         info.publisher = 'W3C';
       }
       if (!(info.publisher in publishers)) {
-        console.warn(`- ${spec.id}: Unknown publisher "${info.publisher}"`);
+        console.warn(`[warn] ${spec.id}: Unknown publisher "${info.publisher}"`);
       }
     }
     if (!info.publisher) {
@@ -540,7 +552,7 @@ async function extractSpecData(files, config) {
           .find(id => !!info.url.match(publishers[id].urlPattern));
       }
       if (!info.publisher) {
-        console.warn(`- ${spec.id}: No publisher found`);
+        console.warn(`[warn] ${spec.id}: No publisher found`);
       }
     }
 
@@ -559,7 +571,7 @@ async function extractSpecData(files, config) {
       info.publisher = publishers[info.publisher].parentPublisher;
     }
 
-    return { id: spec.id, data: spec.data, info };
+    return { id: spec.id, data: spec.data, info, features: spec.features };
   }
 
 
@@ -583,17 +595,20 @@ async function extractSpecData(files, config) {
       }
       results[result.id][key] = result.data[key];
     });
-    if (result.data.features) {
+
+    if (result.features && Object.keys(result.features).length > 0) {
       results[result.id].features = {};
-      Object.keys(result.data.features).forEach(key => {
-        let feature = result.data.features[key];
-        results[result.id].features[key] = {
-          title: feature.title
-        };
-        if (feature.url) {
-          results[result.id].features[key].url = feature.url;
+      for (const feature of result.features) {
+        // Look for feature info in browser-statuses
+        const implinfo = browserStatuses.find(spec => spec.shortname === result.id);
+        let featureinfo = implinfo?.features?.[feature] ?? result.data.features?.[feature];
+        if (featureinfo) {
+          results[result.id].features[feature] = {
+            title: featureinfo.title,
+            url: featureinfo.url
+          }
         }
-      });
+      }
     }
   }
   return results;
@@ -639,18 +654,10 @@ if (require.main === module) {
     process.exit(1);
   }
 
-  const files = process.argv.slice(2).map(file => {
-    let stat = fs.statSync(file);
-    if (stat.isDirectory()) {
-      let contents = fs.readdirSync(file);
-      return contents.filter(f => f.endsWith('.json'))
-        .map(f => path.join(file, f));
-    }
-    else {
-      return file;
-    }
-  }).reduce((res, files) => res.concat(files), []);
-  extractSpecData(files, config)
+  const file = process.argv[2] ?? '.out/data/list.json';
+  const list = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+  extractSpecData(list, config)
     .then(data => console.log(JSON.stringify(data, null, 2)))
     .catch(err => console.error(err));
 }
