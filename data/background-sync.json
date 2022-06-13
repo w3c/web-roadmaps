@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "background-sync",
-    "chromestatus": 6170807885627392,
-    "edgestatus": "Background Sync API",
-    "mdn": "api.SyncManager"
-  }
-}

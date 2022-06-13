@@ -14,8 +14,8 @@
       <section class="featureset well-deployed">
         <h2 id="well-deployed-technologies">广泛部署的技术</h2>
         <div data-feature="基于触控的交互">
-          <p>越来越多的移动设备依赖于触控。尽管在Web平台中公认的传统交互方式（键盘、鼠标输入）仍然可以在这种情况下应用，但更具针对性地处理触控输入是创建适应性良好的用户体验的关键因素，<a data-featureid="touchevent">文档对象模型中的触摸事件</a>可以解决这个问题。</p>
-          <p><a data-featureid="pointer-events">指针事件</a>规范定义了一个鼠标、触摸和笔事件的统一模型。它为触摸事件提供了一种互补且更加统一的方法。指针事件包括允许过滤元素上的手势事件的 CSS 属性 <a data-featureid="css-touch-action"><code>touch-action</code></a>，并在浏览器中广泛实现。</p>
+          <p>越来越多的移动设备依赖于触控。尽管在Web平台中公认的传统交互方式（键盘、鼠标输入）仍然可以在这种情况下应用，但更具针对性地处理触控输入是创建适应性良好的用户体验的关键因素，<a data-featureid="touch-events">文档对象模型中的触摸事件</a>可以解决这个问题。</p>
+          <p><a data-featureid="pointerevents">指针事件</a>规范定义了一个鼠标、触摸和笔事件的统一模型。它为触摸事件提供了一种互补且更加统一的方法。指针事件包括允许过滤元素上的手势事件的 CSS 属性 <a data-featureid="pointerevents/touch-action"><code>touch-action</code></a>，并在浏览器中广泛实现。</p>
         </div>
 
         <p data-feature="振动"><a data-featureid="vibration">振动 API</a> 让移动开发者利用触觉反馈来创建新的交互形式（例如在游戏中）。</p>
@@ -23,11 +23,11 @@
         <p data-feature="通知">移动设备被用户随身携带，许多移动用户依赖它们去提醒和通知自己事件，如消息。<a data-featureid="notifications">Web通知</a>规范使这种特性在 Web 环境中可用。</p>
 
         <div data-feature="信息无障碍">
-          <p><a data-featureid="uaag20">用户代理无障碍指南（UAAG）2.0</a>文档包含了用户代理设计接口时与辅助技术交互的原则。支持性文档<a data-featureid="uaag20-reference">UAAG 2.0参考</a>介绍了UAAG 2.0的目的和成功标准的最佳实践，并举了很多例子。针对移动设备的举例在<a href="https://www.w3.org/TR/UAAG20-Reference/mobile.html">UAAG 2.0参考中的移动信息无障碍实例</a>中有总结。</p>
-          <p>遵从<a data-featureid="wcag21">Web内容无障碍指南（WCAG）2.1</a>将使内容能够让更多的残疾人访问。相比2.0版本，2.1版本增加了新的成功标准和指导方针，包括在移动环境中特有的<a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">指针手势</a>、<a href="https://www.w3.org/TR/WCAG21/#target-size">目标大小</a>和<a href="https://www.w3.org/TR/WCAG21/#orientation">方向</a>等。</p>
+          <p><a data-featureid="UAAG20">用户代理无障碍指南（UAAG）2.0</a>文档包含了用户代理设计接口时与辅助技术交互的原则。支持性文档<a data-featureid="UAAG20-Reference">UAAG 2.0参考</a>介绍了UAAG 2.0的目的和成功标准的最佳实践，并举了很多例子。针对移动设备的举例在<a href="https://www.w3.org/TR/UAAG20-Reference/mobile.html">UAAG 2.0参考中的移动信息无障碍实例</a>中有总结。</p>
+          <p>遵从<a data-featureid="WCAG21">Web内容无障碍指南（WCAG）2.1</a>将使内容能够让更多的残疾人访问。相比2.0版本，2.1版本增加了新的成功标准和指导方针，包括在移动环境中特有的<a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">指针手势</a>、<a href="https://www.w3.org/TR/WCAG21/#target-size">目标大小</a>和<a href="https://www.w3.org/TR/WCAG21/#orientation">方向</a>等。</p>
           <p>Web开发者可从遵从<a data-featureid="atag20">编辑工具可访问性指南（ATAG）2.0</a>的编辑工具中获益，ATAG提供了改善编辑工具本身的可访问性的指南和帮助编辑工具生成的内容符合WCAG标准的指南。</p>
           <p><a data-featureid="mobile-accessibility-mapping">移动信息无障碍</a>文档解释了将WCAG和其他无障碍指南应用于移动Web应用、原生应用和在原生应用中包含Web应用组件的混合应用的方法。</p>
-          <p><a data-featureid="wai-aria11">可访问富互联应用（WAI-ARIA）1.1</a>标准提供了一个角色、状态和属性的本体，这个本体定义了可访问的用户界面元素，并可用于改进Web内容和应用的可访问性和互操作性。<a data-featureid="core-aam11">核心可访问API映射1.1</a>标准描述了用户代理如何将这些语义映射到无障碍API中。但是，移动平台还没有全面的可访问性API映射，这些映射目前只在桌面平台上才可使用。</p>
+          <p><a data-featureid="wai-aria">可访问富互联应用（WAI-ARIA）1.1</a>标准提供了一个角色、状态和属性的本体，这个本体定义了可访问的用户界面元素，并可用于改进Web内容和应用的可访问性和互操作性。<a data-featureid="core-aam11">核心可访问API映射1.1</a>标准描述了用户代理如何将这些语义映射到无障碍API中。但是，移动平台还没有全面的可访问性API映射，这些映射目前只在桌面平台上才可使用。</p>
         </div>
       </section>
 
@@ -45,7 +45,7 @@
         </div>
 
         <div data-feature="通知">
-          <p><a data-featureid="push">推送API</a>使服务器端的通知可以提醒用户，即使是在浏览器没有运行的情况下。</p>
+          <p><a data-featureid="push-api">推送API</a>使服务器端的通知可以提醒用户，即使是在浏览器没有运行的情况下。</p>
           <p>除了<a href="https://www.w3.org/TR/notifications/">Web通知</a>以外，<a data-featureid="badging">标记 API</a>定义了另一种通知机制，允许已经安装在设备上的 Web 应用（例如通过清单文件）设置一个标记，通常显示在主屏幕上应用程序的图标旁边，在应用程序的状态发生变化时通知用户可能需要注意的信息（如新消息）。</p>
         </div>
 
@@ -60,7 +60,7 @@
         <p data-feature="输入法"><a data-featureid="ime-api">输入法 API</a> 允许脚本通过用户代理访问输入法。该规范目前需要更多的编辑工作。</p>
 
         <div data-feature="基于触控的交互">
-          <p><a data-featureid="inputdevice">输入设备能力API</a>提供了“鼠标”事件是否来自触摸设备的信息。</p>
+          <p><a data-featureid="input-device-capabilities">输入设备能力API</a>提供了“鼠标”事件是否来自触摸设备的信息。</p>
         </div>
 
         <div data-feature="游戏控制器">
@@ -73,7 +73,7 @@
         </div>
 
         <div data-feature="输入延迟">
-            <p>目前，所有的 DOM 事件都需要通过主线程，因为主线程是唯一可以访问 DOM 元素的线程。<a data-featureid="input-for-workers">Input for Workers and Worklets</a> 规范为 worker 提供了一个没有 DOM 访问权限的 event delegation scheme。这种机制将启用对延迟敏感的事件逻辑，该逻辑将不被主线程阻止。这个特性的用例包括在 <a data-featureid="offscreencanvas" data-linkonly><code>OffscreenCanvas</code></a> 上绘制、需要将输入事件转发到服务器以最小延迟进行处理的云场景（如云游戏）、与 <a data-featureid="animation-worklet" data-linkonly>CSS Animation Worklet</a> 结合的交互式动画（其中动画由用户输入驱动）和与 <a data-featureid="webaudio/worklet" data-linkonly><code>AudioWorklet</code></a> 结合使用的交互式音频。</p>
+            <p>目前，所有的 DOM 事件都需要通过主线程，因为主线程是唯一可以访问 DOM 元素的线程。<a data-featureid="input-for-workers">Input for Workers and Worklets</a> 规范为 worker 提供了一个没有 DOM 访问权限的 event delegation scheme。这种机制将启用对延迟敏感的事件逻辑，该逻辑将不被主线程阻止。这个特性的用例包括在 <a data-featureid="html/offscreencanvas" data-linkonly><code>OffscreenCanvas</code></a> 上绘制、需要将输入事件转发到服务器以最小延迟进行处理的云场景（如云游戏）、与 <a data-featureid="css-animation-worklet" data-linkonly>CSS Animation Worklet</a> 结合的交互式动画（其中动画由用户输入驱动）和与 <a data-featureid="webaudio/worklet" data-linkonly><code>AudioWorklet</code></a> 结合使用的交互式音频。</p>
           </div>
       </section>
 
@@ -81,7 +81,7 @@
           <h2 id="features-not-covered-by-ongoing-work">目前尚未覆盖的工作</h2>
           <dl>
             <dt>手势事件</dt>
-            <dd>如上所述，基于触摸的交互在移动设备上很常见，并且可通过<a data-featureid="touchevent">触摸事件</a>提供给 Web 应用。<strong>基于手势的交互</strong>（包括捏合、旋转和滑动等）也是移动设备上的常见交互范例。Web开发者可在某种程度上从触摸事件中获取手势事件，但可能需要为不同的浏览器开发多个版本。对这些交互的原生支持将降低碎片化程度并提高性能。早期关于定义<a href="https://github.com/JuntaoPeng/GestureEvents/blob/master/GestureEvents.md#gesture-events">手势事件</a>的讨论已经在<a href="https://www.w3.org/community/mwma/">合并 Web 和移动应用社区组</a>中开始了讨论。</dd>
+            <dd>如上所述，基于触摸的交互在移动设备上很常见，并且可通过<a data-featureid="touch-events">触摸事件</a>提供给 Web 应用。<strong>基于手势的交互</strong>（包括捏合、旋转和滑动等）也是移动设备上的常见交互范例。Web开发者可在某种程度上从触摸事件中获取手势事件，但可能需要为不同的浏览器开发多个版本。对这些交互的原生支持将降低碎片化程度并提高性能。早期关于定义<a href="https://github.com/JuntaoPeng/GestureEvents/blob/master/GestureEvents.md#gesture-events">手势事件</a>的讨论已经在<a href="https://www.w3.org/community/mwma/">合并 Web 和移动应用社区组</a>中开始了讨论。</dd>
           </dl>
       </section>
 

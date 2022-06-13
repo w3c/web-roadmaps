@@ -1,9 +1,0 @@
-{
-  "impl": {
-    "caniuse": "beacon",
-    "chromestatus": 5517433905348608,
-    "edgestatus": "Beacon",
-    "mdn": "api.Navigator.sendBeacon",
-    "webkitstatus": "specification-beacon-api"
-  }
-}

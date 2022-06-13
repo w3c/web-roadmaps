@@ -1,9 +1,0 @@
-{
-    "url": "https://www.w3.org/TR/geolocation-API/",
-    "impl": {
-      "caniuse": "geolocation",
-      "chromestatus": 6348855016685568,
-      "edgestatus": "Geolocation",
-      "webkitstatus": "specification-geolocation-api"
-    }
-}

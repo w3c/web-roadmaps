@@ -1,9 +1,0 @@
-{
-  "url": "https://webbluetoothcg.github.io/web-bluetooth/",
-  "impl": {
-    "caniuse": "web-bluetooth",
-    "chromestatus": 5264933985976320,
-    "edgestatus": "Web Bluetooth",
-    "webkitstatus": "specification-web-bluetooth"
-  }
-}

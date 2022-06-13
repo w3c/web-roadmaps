@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/css-nav-1/",
-  "polyfills": [
-    {
-      "label": "Spatial Navigation Polyfill",
-      "url": "https://github.com/WICG/spatial-navigation/tree/master/polyfill"
-    }
-]
-}

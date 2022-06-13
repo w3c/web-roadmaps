@@ -28,6 +28,10 @@ async function extractImplData(list) {
       data = {};
     }
 
+    if (spec && data.impl) {
+      console.warn(`[warn] data/${shortname}.json matches entry in browser-statuses. Is it really needed?`);
+    }
+
     impldata[shortname] = { support: spec?.support ?? [], features: {} };
     if (spec?.polyfills) {
       impldata[shortname].polyfills = spec.polyfills;

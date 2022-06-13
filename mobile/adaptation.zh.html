@@ -14,11 +14,11 @@
         <h2 id="well-deployed-technologies">广泛部署的技术</h2>
         <div data-feature="基于 CSS 的适配">
           <p><a data-featureid="mediaqueries">CSS 媒体查询</a>定义了一种机制，允许根据设备的一些特性（尤其是屏幕分辨率）调整网页的布局和行为。</p>
-          <p><a data-featureid="viewport-units">与视口（viewport）相关的CSS单位 <code>vw</code>、<code>vh</code>、<code>vmin</code> 和 <code>vmax</code></a> 表示当前视口尺寸的百分比，并允许开发者设计自动适应视口尺寸变化的布局。</p>
+          <p><a data-featureid="css-values/viewport-relative-lengths">与视口（viewport）相关的CSS单位 <code>vw</code>、<code>vh</code>、<code>vmin</code> 和 <code>vmax</code></a> 表示当前视口尺寸的百分比，并允许开发者设计自动适应视口尺寸变化的布局。</p>
         </div>
         <div data-feature="响应式图像">
-        <p><a href="https://www.w3.org/community/respimg/">响应式图像社区组（RICG）</a>开发了对HTML的扩展（<a data-featureid="picture"><code>picture元素</code></a>），允许作者根据设备功能和/或其他媒体特性定义要加载的图像。</p>
-        <p>作为补充，<a href="https://whatwg.org/">WHATWG</a>指定的<a data-featureid="srcset"><code>srcset属性</code></a>也可作为HTML的扩展，让Web开发者定义图像的设备像素比，让浏览器选择最适合屏幕像素密度的图片。</p>
+        <p><a href="https://www.w3.org/community/respimg/">响应式图像社区组（RICG）</a>开发了对HTML的扩展（<a data-featureid="html/picture"><code>picture元素</code></a>），允许作者根据设备功能和/或其他媒体特性定义要加载的图像。</p>
+        <p>作为补充，<a href="https://whatwg.org/">WHATWG</a>指定的<a data-featureid="html/srcset"><code>srcset属性</code></a>也可作为HTML的扩展，让Web开发者定义图像的设备像素比，让浏览器选择最适合屏幕像素密度的图片。</p>
         <p><a data-featureid="svg11">SVG</a>可以定义可缩放的图像，而不会造成任何质量损失，这是开发适应多种设备分辨率的Web应用的另一个重要工具。</p>
         </div>
 
@@ -40,10 +40,10 @@
           <p><a data-featureid="css-size-adjust">CSS 移动文本大小调整</a>让文本适应页面的缩放部分。</p>
           <p>媒体查询第四版和第五版添加了一些适应移动环境中的用户界面的相关的特性，包括：</p>
           <ul>
-            <li>通过 <a data-featureid="mediaqueries5/pointer"><code>pointer</code></a>（及其配套的 <code>any-pointer</code>）的查询指针设备的存在与否及其类型。</li>
-            <li>通过 <a data-featureid="mediaqueries5/hover"><code>hover</code></a> 查询设备是否支持<em>悬停</em>功能。</li>
-            <li>通过 <a data-featureid="mediaqueries5/prefers-contrast"><code>prefers-contrast</code></a> 和 <a data-featureid="mediaqueries5/prefers-color-scheme"><code>prefers-color-scheme</code></a> 对环境亮度变化做出反应或遵循用户对亮或暗主题的偏好的能力。</li>
-            <li>通过 <a data-featureid="mediaqueries5/prefers-reduced-motion"><code>prefers-reduced-motion</code></a> 来减少页面中的动画数量，节省电池。</li>
+            <li>通过 <a data-featureid="mediaqueries/pointer"><code>pointer</code></a>（及其配套的 <code>any-pointer</code>）的查询指针设备的存在与否及其类型。</li>
+            <li>通过 <a data-featureid="mediaqueries/hover"><code>hover</code></a> 查询设备是否支持<em>悬停</em>功能。</li>
+            <li>通过 <a data-featureid="mediaqueries/prefers-contrast"><code>prefers-contrast</code></a> 和 <a data-featureid="mediaqueries/prefers-color-scheme"><code>prefers-color-scheme</code></a> 对环境亮度变化做出反应或遵循用户对亮或暗主题的偏好的能力。</li>
+            <li>通过 <a data-featureid="mediaqueries/prefers-reduced-motion"><code>prefers-reduced-motion</code></a> 来减少页面中的动画数量，节省电池。</li>
             <li>对<a href="https://drafts.csswg.org/mediaqueries-5/#script-custom-mq">脚本定义的变量</a>做出反应，从而更容易满足应用整体逻辑中更复杂的适配规则。</li>
           </ul>
         </div>
@@ -63,13 +63,13 @@
           <p>在移动设备上进行内容适配的常用方法是让服务器提供适合用户设备的内容。这种方法避免了向客户端发送客户端不需要的内容，节约了网络带宽，避免了在客户端上运行适配逻辑，保留了CPU和内存。<strong>服务器端适配</strong>用于依赖<em>嗅探</em> <code>User-Agent</code> 字符串并将其映射到设备数据库以适配相关功能。这种机制很容易出错，需要对设备数据库进行持续维护。通过由IETF HTTP工作组开发的<a href="http://httpwg.org/http-extensions/client-hints.html">HTTP客户端提示</a>机制，客户端和服务器现在可以选择交换相关功能以实现高效的内容自适应。<a href="https://www.w3.org/webperf/">Web性能工作组</a>已经开始使用<a data-featureid="device-memory">设备内存</a>规范来扩展这些提示，以表示设备上可用的内存。该规范还定义了一个API来将该信息显示给运行在客户端上的Web应用。</p>
         </div>
 
-        <p data-feature="媒体捕获功能"><a data-featureid="getusermedia/capabilities">媒体捕捉与媒体流</a> API 开放了一些有关摄像头和麦克风功能的信息，以便利用手机上提供的各种媒体捕获设备。</p>
+        <p data-feature="媒体捕获功能"><a data-featureid="mediacapture-streams/capabilities">媒体捕捉与媒体流</a> API 开放了一些有关摄像头和麦克风功能的信息，以便利用手机上提供的各种媒体捕获设备。</p>
       </section>
 
       <section class="featureset exploratory-work">
         <h2 id="exploratory-work">探索性工作</h2>
         <div data-feature="基于 JS 的适配">
-          <p>大多数移动设备都具有屏幕键盘，也通常让用户能够缩放页面。这两个功能都保留了<em>布局视口</em>（网页在布局其用户界面使用的视口），以免被 <code>position: fixed</code> 的元素弄乱屏幕。<a data-featureid="viewportapi">Visual Viewport API</a> 为开发人员提供了一种查看<em>可视视口</em>属性（用户当前可见的内容）并与之交互的方法，并在这些属性发生变化时得到通知。</p>
+          <p>大多数移动设备都具有屏幕键盘，也通常让用户能够缩放页面。这两个功能都保留了<em>布局视口</em>（网页在布局其用户界面使用的视口），以免被 <code>position: fixed</code> 的元素弄乱屏幕。<a data-featureid="visual-viewport">Visual Viewport API</a> 为开发人员提供了一种查看<em>可视视口</em>属性（用户当前可见的内容）并与之交互的方法，并在这些属性发生变化时得到通知。</p>
         </div>
 
         <div data-feature="服务器端适配">

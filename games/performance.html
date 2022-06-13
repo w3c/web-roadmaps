@@ -14,7 +14,7 @@
         <h2>Well-deployed technologies</h2>
 
         <div data-feature="Multithreading">
-          <p>To guarantee a smooth experience no matter what and take advantage of available processing power, games typically split the work across multiple threads. <a data-featureid="webworkers">Web Workers</a> allow to run JavaScript code in the background. This is particularly useful to keep the user interface responsive by offloading the most resource-intensive operations into a background process.
+          <p>To guarantee a smooth experience no matter what and take advantage of available processing power, games typically split the work across multiple threads. <a data-featureid="html/webworkers">Web Workers</a> allow to run JavaScript code in the background. This is particularly useful to keep the user interface responsive by offloading the most resource-intensive operations into a background process.
           </p>
           <p><strong>Note:</strong> Due to <a href="https://meltdownattack.com/">Spectre</a>, support for the <code>SharedArrayBuffer</code> object, which allows to share memory between threads, has been temporarily removed from most Web browsers. As such communications between workers is mostly limited to message passing for the time being.</p>
         </div>
@@ -34,7 +34,7 @@
         </div>
 
         <div data-feature="Animation optimization">
-          <p>The <a data-featureid="animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
+          <p>The <a data-featureid="html/animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
         </div>
       </section>
 
@@ -46,11 +46,11 @@
         </div>
 
         <div data-feature="Network prioritization">
-          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
+          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="html/preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
         </div>
 
         <div data-feature="Caching">
-          <p>The <a data-featureid="serviceworkers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
+          <p>The <a data-featureid="service-workers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
         </div>
 
         <div data-feature="Timing hooks">
@@ -73,7 +73,7 @@
         <h2>Exploratory work</h2>
 
         <div data-feature="GPU computation">
-          <p>On top of for rendering, some games may also wish to take advantage of the GPU to run heavy computations. To some extent, this is already doable through <a data-featureid="webgl">WebGL</a>. The <a href="https://www.w3.org/community/gpu">GPU for the Web Community Group</a> is designing a new Web API to expose modern 3D graphics (first) and computation capabilities (afterwards) in a performant, powerful and safe manner, with a view to being agnostic of and compatible with existing native system platforms such as Direct3D, Metal, or Vulkan.</p>
+          <p>On top of for rendering, some games may also wish to take advantage of the GPU to run heavy computations. To some extent, this is already doable through <a data-featureid="webgl1">WebGL</a>. The <a href="https://www.w3.org/community/gpu">GPU for the Web Community Group</a> is designing a new Web API to expose modern 3D graphics (first) and computation capabilities (afterwards) in a performant, powerful and safe manner, with a view to being agnostic of and compatible with existing native system platforms such as Direct3D, Metal, or Vulkan.</p>
         </div>
 
         <div data-feature="Multithreading">
@@ -91,7 +91,7 @@
         </div>
 
         <div data-feature="Animation optimization">
-          <p>The <a data-featureid="animation-worklet">CSS Animation Worklet API</a> provides a method to create scripted animations that control a set of animation effects. The API is designed to make it possible for user agents to run such animations in their own dedicated thread to provide a degree of performance isolation from main thread.</p>
+          <p>The <a data-featureid="css-animation-worklet">CSS Animation Worklet API</a> provides a method to create scripted animations that control a set of animation effects. The API is designed to make it possible for user agents to run such animations in their own dedicated thread to provide a degree of performance isolation from main thread.</p>
         </div>
 
         <div data-feature="Scrolling optimization">
@@ -103,7 +103,7 @@
         <h2>Features not covered by ongoing work</h2>
         <dl>
           <dt>Artificial Intelligence (AI)</dt>
-          <dd>Many games implement a so-called game AI to generate intelligent behaviors for game characters that are not under the control of a real player. While the concept of AI in games is different from the notion of AI in other fields, a game AI may reuse similar techniques, e.g. based on machine learning, neural networks and other data mining algorithms. A sub-ideal solution to implement such algorithms in Web browsers is to use <a data-featureid="wasm-core">WebAssembly</a> and <a data-featureid="webgl">WebGL</a>. An early proposal for a <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> was made in October 2017 to expose more suitable primitives to Web applications, but has not yet led to standardization work in that field at W3C.</dd>
+          <dd>Many games implement a so-called game AI to generate intelligent behaviors for game characters that are not under the control of a real player. While the concept of AI in games is different from the notion of AI in other fields, a game AI may reuse similar techniques, e.g. based on machine learning, neural networks and other data mining algorithms. A sub-ideal solution to implement such algorithms in Web browsers is to use <a data-featureid="wasm-core">WebAssembly</a> and <a data-featureid="webgl1">WebGL</a>. An early proposal for a <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> was made in October 2017 to expose more suitable primitives to Web applications, but has not yet led to standardization work in that field at W3C.</dd>
         </dl>
       </section>
     </main>

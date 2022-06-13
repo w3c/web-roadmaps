@@ -1,7 +1,0 @@
-{
-  "url": "https://html.spec.whatwg.org/multipage/input.html#e-mail-state-(type=email)",
-  "feature": "tel, email, url input types",
-  "impl": {
-    "caniuse": "input-email-tel-url"
-  }
-}

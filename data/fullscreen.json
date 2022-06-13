@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "fullscreen",
-    "chromestatus": 5259513871466496,
-    "edgestatus": "Fullscreen API"
-  }
-}

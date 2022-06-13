@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/mediastream-recording/",
-  "impl": {
-    "caniuse": "mediarecorder",
-    "chromestatus": 5929649028726784,
-    "edgestatus": "MediaRecorder",
-    "mdn": "api.MediaRecorder"
-  }
-}

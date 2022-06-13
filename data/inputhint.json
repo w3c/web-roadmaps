@@ -1,7 +1,0 @@
-{
-  "url": "https://html.spec.whatwg.org/multipage/input.html#the-placeholder-attribute",
-  "feature": "input placeholder attribute",
-  "impl": {
-    "caniuse": "input-placeholder"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "css-deviceadaptation",
-    "chromestatus": 4737164243894272,
-    "edgestatus": "CSS Device Adaptation",
-    "mdn": "css.at-rules.viewport"
-  }
-}

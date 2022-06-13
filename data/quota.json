@@ -1,7 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/quota-api/",
-  "impl": {
-    "chromestatus": 6218562888794112,
-    "edgestatus": "Quota Management API"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "url": "https://html.spec.whatwg.org/multipage/media.html#media-elements",
-  "feature": "HTMLMediaElement interface",
-  "impl": {
-    "caniuse": "video",
-    "mdn": "api.HTMLMediaElement"
-  }
-}

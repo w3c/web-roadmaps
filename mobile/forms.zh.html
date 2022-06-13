@@ -13,16 +13,16 @@
       <section class="featureset well-deployed">
         <h2 id="well-deployed-technologies">广泛部署的技术</h2>
         <div data-feature="定制文本条目">
-          <p>可以通过使用 <code><a data-featureid="inputtext">&lt;input type="<strong>email</strong>"&gt;</a></code>、<code><a href="https://html.spec.whatwg.org/multipage/input.html#telephone-state-(type=tel)">&lt;input type="<strong>tel</strong>"&gt;</a></code> 和 <code><a href="https://html.spec.whatwg.org/multipage/input.html#url-state-(type=url)">&lt;input type="<strong>url</strong>"&gt;</a></code> 优化那些通常并不容易的用户数据键入方法，例如专用的虚拟键盘，或访问设备记录的如地址簿或书签等数据。</p>
+          <p>可以通过使用 <code><a data-featureid="html/inputtext">&lt;input type="<strong>email</strong>"&gt;</a></code>、<code><a href="https://html.spec.whatwg.org/multipage/input.html#telephone-state-(type=tel)">&lt;input type="<strong>tel</strong>"&gt;</a></code> 和 <code><a href="https://html.spec.whatwg.org/multipage/input.html#url-state-(type=url)">&lt;input type="<strong>url</strong>"&gt;</a></code> 优化那些通常并不容易的用户数据键入方法，例如专用的虚拟键盘，或访问设备记录的如地址簿或书签等数据。</p>
 
-          <p><a data-featureid="inputdate">HTML中的时间和日期类型</a>可以利用很多特定的表单控件（例如 <code>&lt;input type="date"&gt;</code>）来触发本地日历控件的使用，避免创建不易于针对市面上诸多移动设备而定制的自定义基于 JavaScript 的控件。注意：特定的浏览器可能只支持这些控件的一个子集，如果不支持该 <code>input</code> 类型，则会回退到常规的文本控件。</p>
+          <p><a data-featureid="html/inputdate">HTML中的时间和日期类型</a>可以利用很多特定的表单控件（例如 <code>&lt;input type="date"&gt;</code>）来触发本地日历控件的使用，避免创建不易于针对市面上诸多移动设备而定制的自定义基于 JavaScript 的控件。注意：特定的浏览器可能只支持这些控件的一个子集，如果不支持该 <code>input</code> 类型，则会回退到常规的文本控件。</p>
         </div>
 
-        <p data-feature="输入校验"><code><a data-featureid="inputpattern">pattern</a></code> 属性既可以指导用户输入，也可以避免需要网络往返的服务器端验证或需要增多资源的基于 JavaScript 的验证，这些对于条件受限的移动设备来说都是有用的优化。</p>
+        <p data-feature="输入校验"><code><a data-featureid="html/inputpattern">pattern</a></code> 属性既可以指导用户输入，也可以避免需要网络往返的服务器端验证或需要增多资源的基于 JavaScript 的验证，这些对于条件受限的移动设备来说都是有用的优化。</p>
 
-        <p data-feature="输入提示"><code><a data-featureid="inputhint">placeholder</a></code> 属性通过描述一个文本输入控件所预期的输入内容类型来指导用户输入。</p>
+        <p data-feature="输入提示"><code><a data-featureid="html/inputhint">placeholder</a></code> 属性通过描述一个文本输入控件所预期的输入内容类型来指导用户输入。</p>
 
-        <p data-feature="表单自动完成"><code><a data-featureid="datalist">&lt;datalist&gt;</a></code> 元素允许创建带有<strong>预定义值</strong>的自由文本输入控件；<a data-featureid="autocomplete"><code>autocomplete</code> 属性</a>是一种基于用户<strong>已知数据</strong>而实现自动填充输入字段的机制，这就解决了移动设备上常见的长页及多页表单带来的问题，例如移动购物应用场景。</p>
+        <p data-feature="表单自动完成"><code><a data-featureid="html/datalist">&lt;datalist&gt;</a></code> 元素允许创建带有<strong>预定义值</strong>的自由文本输入控件；<a data-featureid="html/autocomplete"><code>autocomplete</code> 属性</a>是一种基于用户<strong>已知数据</strong>而实现自动填充输入字段的机制，这就解决了移动设备上常见的长页及多页表单带来的问题，例如移动购物应用场景。</p>
       </section>
 
       <section class="featureset in-progress">
@@ -36,7 +36,7 @@
         <h2 id="discontinued-features">不再进行的工作</h2>
         <dl>
           <dt>输入模式</dt>
-          <dd><code><a data-featureid="inputmode">inputmode</a></code> 属性定义了文本输入所预期的文本输入类型。移动浏览器可以使用这些提示来渲染正确的屏幕键盘类型，例如当用户希望输入信用卡号码是展示一个数字键盘。这个属性已经不再被当前的大多数浏览器版本所支持，且这个属性已经被移出HTML规范。开发者应使用<code>tel</code>、<code>email</code> 和 <code>url</code>等更为具体的输入类型。</dd>
+          <dd><code><a data-featureid="html/inputmode">inputmode</a></code> 属性定义了文本输入所预期的文本输入类型。移动浏览器可以使用这些提示来渲染正确的屏幕键盘类型，例如当用户希望输入信用卡号码是展示一个数字键盘。这个属性已经不再被当前的大多数浏览器版本所支持，且这个属性已经被移出HTML规范。开发者应使用<code>tel</code>、<code>email</code> 和 <code>url</code>等更为具体的输入类型。</dd>
         </dl>
       </section>
     </main>

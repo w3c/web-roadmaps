@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "css-snappoints",
-    "chromestatus": 5721832506261504,
-    "edgestatus": "CSS Scroll Snap Points",
-    "webkitstatus": "specification-css-scroll-snap-points-module-level-1"
-  }
-}

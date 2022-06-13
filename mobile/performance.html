@@ -26,7 +26,7 @@
         </div>
 
         <div data-feature="Page Visibility Detection">
-          <p>The <a data-featureid="page-visibility">API to determine whether a Web page is being displayed</a> (Page Visibility API) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized.</p>
+          <p>The <a data-featureid="html/page-visibility">API to determine whether a Web page is being displayed</a> (Page Visibility API) can also be used to adapt the usage of resources to the need of the Web application, for instance by reducing network activity when the page is minimized.</p>
         </div>
 
         <div data-feature="Priority Handling">
@@ -42,15 +42,15 @@
         </div>
 
         <div data-feature="Animation Optimization">
-          <p>The <a data-featureid="animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
+          <p>The <a data-featureid="html/animation-frames">Timing control for script-based animations API</a> can help reduce the usage of resources needed for playing animations.</p>
         </div>
 
         <div data-feature="Scrolling Optimization">
-          <p>Smooth scrolling performance is essential for a good user experience on the web, especially on touch-based devices. Through the <a data-featureid="dom-addeventlistener-passive"><code>passive</code> event listener option</a>, developers can declare up-front that an event listener will not call <code>preventDefault()</code> on the event, allowing the browser not to wait for the event listener to have run before it performs the default action associated with the event. This is particularly recommended on touch and wheel events to guarantee smooth scrolling. Note: some browsers automatically set the <code>passive</code> flag on <code>touchstart</code> and <code>touchmove</code> by default.</p>
+          <p>Smooth scrolling performance is essential for a good user experience on the web, especially on touch-based devices. Through the <a data-featureid="dom/addeventlistener-passive"><code>passive</code> event listener option</a>, developers can declare up-front that an event listener will not call <code>preventDefault()</code> on the event, allowing the browser not to wait for the event listener to have run before it performs the default action associated with the event. This is particularly recommended on touch and wheel events to guarantee smooth scrolling. Note: some browsers automatically set the <code>passive</code> flag on <code>touchstart</code> and <code>touchmove</code> by default.</p>
         </div>
 
         <div data-feature="Threading">
-          <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="webworkers">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
+          <p>Beyond optimization of resources, the perceived reactivity of an application is also a critical aspect of the mobile user experience. The <strong>thread-like mechanism</strong> made possible via <a data-featureid="html/webworkers">Web Workers</a> allows keeping the user interface responsive by offloading the most resource-intensive operations into a background process.</p>
         </div>
 
         <div data-feature="Automation">
@@ -67,15 +67,15 @@
       <section class="featureset in-progress">
         <h2>Technologies in progress</h2>
         <div data-feature="Network Prioritization">
-          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
+          <p>The <a data-featureid="resource-hints">Resource Hints</a> and <a data-featureid="html/preload">Preload</a> specifications let developers optimize the download of resources by enabling to delay either the download or the execution of the downloaded resource.</p>
         </div>
 
         <div data-feature="Caching">
-          <p>The <a data-featureid="serviceworkers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
+          <p>The <a data-featureid="service-workers">Service Workers</a> specification defines a mechanism that allows applications to intercept outgoing network requests and respond to them directly. Applications can take advantage of this mechanism to implement a flexible cache logic directly and thus avoid lengthy requests to the server.</p>
         </div>
 
         <div data-feature="Battery Status">
-          <p>The <a data-featureid="battery">Battery status API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device. However, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API.</p>
+          <p>The <a data-featureid="battery-status">Battery status API</a> allows adjusting the use of resources to the current level of power available in the battery of a mobile device. However, note the future of this last specification is uncertain due to identified <a href="https://github.com/w3c/battery/issues/5">potential privacy-invasive usage</a> of the API.</p>
         </div>
 
         <div data-feature="Timing Hooks">
@@ -89,11 +89,11 @@
         </div>
 
         <div data-feature="Animation Optimization">
-          <p>The <a data-featureid="animation-worklet">CSS Animation Worklet API</a> provides a method to create scripted animations that control a set of animation effects. The API is designed to make it possible for user agents to run such animations in their own dedicated thread to provide a degree of performance isolation from main thread.</p>
+          <p>The <a data-featureid="css-animation-worklet">CSS Animation Worklet API</a> provides a method to create scripted animations that control a set of animation effects. The API is designed to make it possible for user agents to run such animations in their own dedicated thread to provide a degree of performance isolation from main thread.</p>
         </div>
 
         <div data-feature="Infinite scrolling">
-          <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersectionobserver">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
+          <p>The use of <b>infinite scrolling</b> lists, where more and more content is loaded and rendered as the user scrolls, is very common on mobile devices. Such lists provide a better user experience than pagination on touch screens. Applications unfortunately need to continuously poll layout information of DOM elements <em>synchronously</em> to implement this pattern, which is a source of significant performance overhead. The <a data-featureid="intersection-observer">Intersection Observer</a> specification defines an API to <em>asynchronously</em> observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport, providing an efficient mechanism to retrieve the information needed to implement infinite scrolling.</p>
         </div>
 
         <div data-feature="Scrolling Optimization">
@@ -141,9 +141,9 @@
         <div data-feature="Responsiveness">
           <p>Applications that need to run long tasks (e.g. when pages are loaded) need to make a tradeoff between loading pages quickly (or reducing task execution duration) and responding to input quickly. The <a data-featureid="is-input-pending">Early detection of input events</a> specification proposes an <code>isInputPending</code> method that long running scripts can call synchronously, without losing time yielding to other scripts and events processing, to detect whether there are pending input events that their execution might delay from firing.</p>
 
-          <p>Applications that need to run long tasks may also want to regain control after yielding to the event loop <em>before</em> any other same or lower priority tasks are allowed to run. The <a data-featureid="main-thread-scheduling/yield"><code>scheduler.yield()</code></a> function is being proposed to solve that issue.</p>
+          <p>Applications that need to run long tasks may also want to regain control after yielding to the event loop <em>before</em> any other same or lower priority tasks are allowed to run. The <a data-featureid="scheduling-apis/yield"><code>scheduler.yield()</code></a> function is being proposed to solve that issue.</p>
 
-          <p>Generally speaking, applications have little control over task priorities when they schedule them. The <a data-featureid="main-thread-scheduling/postTask"><code>scheduler.postTask()</code></a> proposal would create a unified API to schedule prioritized work.</p>
+          <p>Generally speaking, applications have little control over task priorities when they schedule them. The <a data-featureid="scheduling-apis/postTask"><code>scheduler.postTask()</code></a> proposal would create a unified API to schedule prioritized work.</p>
         </div>
 
         <div data-feature="Infinite scrolling">

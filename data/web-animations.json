@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "web-animation",
-    "chromestatus": 5650817352728576,
-    "edgestatus": "Web Animations JavaScript API",
-    "webkitstatus": "specification-web-animations"
-  }
-}

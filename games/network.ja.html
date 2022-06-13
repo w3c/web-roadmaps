@@ -22,7 +22,7 @@
         </div>
             
         <div data-feature="Server-pushed requests">
-          <p>XMLHttpRequest はクライアントからのネットワーク通信では有用でしたが、モバイルデバイスでのネットワーク利用の制約やネットワークアクセスによるバッテリ (や時にはユーザへの課金) への負荷を考慮するとサーバから始めるリクエストを利用した方がよい場合があります。<a data-featureid="eventsource">Server-Sent Events API</a> を利用すると (HTTP もしくはほかのプロトコル経由での) プッシュ通知から DOM イベントを発火させることができます。</p>
+          <p>XMLHttpRequest はクライアントからのネットワーク通信では有用でしたが、モバイルデバイスでのネットワーク利用の制約やネットワークアクセスによるバッテリ (や時にはユーザへの課金) への負荷を考慮するとサーバから始めるリクエストを利用した方がよい場合があります。<a data-featureid="html/eventsource">Server-Sent Events API</a> を利用すると (HTTP もしくはほかのプロトコル経由での) プッシュ通知から DOM イベントを発火させることができます。</p>
         </div>
             
         <div data-feature="Bidirectional connections">
@@ -30,7 +30,7 @@
         </div>
 
         <div data-feature="Offline detection">
-          <p>もちろん、ネットワーク接続を利用するうえで重要な点は、接続性が確保されているかと利用可能なネットワークの種類に依存しているという点です。<a data-featureid="online">HTML5 <code>onLine</code> DOM flag</a> とその状態変更による <code>online</code> イベントは、ウェブ環境にとってネットワーク接続が利用不能な場合 (注: フラグはウェブ環境がオンラインになっているかどうかを判定するには信頼性に欠けます) に通知します。</p>
+          <p>もちろん、ネットワーク接続を利用するうえで重要な点は、接続性が確保されているかと利用可能なネットワークの種類に依存しているという点です。<a data-featureid="html/online">HTML5 <code>onLine</code> DOM flag</a> とその状態変更による <code>online</code> イベントは、ウェブ環境にとってネットワーク接続が利用不能な場合 (注: フラグはウェブ環境がオンラインになっているかどうかを判定するには信頼性に欠けます) に通知します。</p>
         </div>
 
         <div data-feature="Network characteristics">
@@ -41,7 +41,7 @@
       <section class="featureset in-progress">
         <h2>仕様化が進行中の仕様</h2>
         <div data-feature="Peer-to-peer communications">
-          <p><a data-featureid="p2p">ウェブにおけるリアルタイム通信 (WebRTC)</a> によりブラウザ間でリアルタイム性を持った直接の P2P 通信が実現されており、複数プレイヤーのゲームでのゲーム内通信を実現するのに最適です。送信されるのはデータ、音声、ビデオトラックなどです。WebRTC はゲームサーバとの通信においても WebSocket API の効率的な代替となりえます。</p>
+          <p><a data-featureid="webrtc">ウェブにおけるリアルタイム通信 (WebRTC)</a> によりブラウザ間でリアルタイム性を持った直接の P2P 通信が実現されており、複数プレイヤーのゲームでのゲーム内通信を実現するのに最適です。送信されるのはデータ、音声、ビデオトラックなどです。WebRTC はゲームサーバとの通信においても WebSocket API の効率的な代替となりえます。</p>
         </div>
 
         <div data-feature="Low-level I/O">
@@ -51,7 +51,7 @@
         <p data-feature="HTTP network API"><a data-featureid="beacon">Beacon API</a> は未管理の HTTP リクエストのキューを作成可能にすることを目的とし、必お湯な時にブラウザが実行することでよりよいネットワーク最適化を実現可能にするためのものです。</p>
 
         <div data-feature="Server-pushed requests">
-          <p><a data-featureid="push">プッシュ通知 (Push API)</a> によりウェブアプリケーションはブラウザウィンドウの中で動作中かどうかによらずサーバからの通信を受信可能になります。<a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF のウェブベースプッシュ通知 WG (Web-Based Push Notifications Working Group)</a> はユーザエージェントにプッシュ通知を配信依頼する、新規プッシュ通知受信登録する、新規プッシュ通知を監視する (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>) ためのプロトコルを開発しています。</p>
+          <p><a data-featureid="push-api">プッシュ通知 (Push API)</a> によりウェブアプリケーションはブラウザウィンドウの中で動作中かどうかによらずサーバからの通信を受信可能になります。<a href="https://datatracker.ietf.org/wg/webpush/documents/">IETF のウェブベースプッシュ通知 WG (Web-Based Push Notifications Working Group)</a> はユーザエージェントにプッシュ通知を配信依頼する、新規プッシュ通知受信登録する、新規プッシュ通知を監視する (<a href="https://tools.ietf.org/html/rfc8030">RFC 8030</a>) ためのプロトコルを開発しています。</p>
         </div>
       </section>
 

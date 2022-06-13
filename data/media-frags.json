@@ -1,7 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/media-frags/",
-  "impl": {
-    "caniuse": "media-fragments",
-    "edgestatus": "Media Fragments"
-  }
-}

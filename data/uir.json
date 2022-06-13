@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
-  "impl": {
-    "caniuse": "upgradeinsecurerequests",
-    "chromestatus": 6534575509471232,
-    "edgestatus": "CSP upgrade-insecure-requests directive",
-    "webkitstatus": "feature-upgrade-insecure-requests"
-  }
-}

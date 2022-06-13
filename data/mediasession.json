@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": null,
-    "chromestatus": 5639924124483584,
-    "edgestatus": "Media Session",
-    "mdn": "api.MediaSession"
-  }
-}

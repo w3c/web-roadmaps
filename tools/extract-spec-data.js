@@ -391,10 +391,16 @@ async function extractSpecData(list, config) {
   // Complete spec info with info from browser-specs
   specs = specs.map(spec => {
     const browserSpec = getBrowserSpec(spec);
+    if (browserSpec && browserSpec.series.shortname !== spec.id) {
+      console.warn(`[warn] ${spec.id} matches ${browserSpec.series.shortname} spec series in browser-specs. Update reference?`);
+    }
     if (!browserSpec) {
       return spec;
     }
     const data = spec.data;
+    if (browserSpec.series.shortname === spec.id && Object.entries(data).length > 0) {
+      console.warn(`[warn] ${spec.id} is in browser-specs. Is the local data file needed?`);
+    }
     data.url = data.url || browserSpec.url;
     data.edDraft = data.edDraft || browserSpec.nightly.url;
     data.repository = data.repository || browserSpec.nightly.repository;

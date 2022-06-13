@@ -1,8 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/webdatabase/",
-  "impl": {
-    "caniuse": "sql-storage",
-    "chromestatus": 6330987952734208,
-    "edgestatus": "Web SQL Database"
-  }
-}

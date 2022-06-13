@@ -1,8 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/mediaqueries-4/#color-gamut",
-  "feature": "color-gamut media query",
-  "impl": {
-    "chromestatus": 5354410980933632,
-    "mdn": "css.at-rules.media.color-gamut"
-  }
-}

@@ -29,7 +29,7 @@
 
           "status": {
             "type": "string",
-            "enum": ["notsupported", "consideration", "indevelopment", "experimental", "shipped"]
+            "enum": ["", "notsupported", "consideration", "indevelopment", "experimental", "shipped"]
           },
           "source": {
             "type": "string",

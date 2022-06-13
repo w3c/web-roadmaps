@@ -45,7 +45,7 @@ function validateInfo(listFile, trFile) {
   const dataFolder = path.join(__dirname, '..', 'data');
   const dataFiles = fs.readdirSync(dataFolder)
     .filter(f => f.endsWith('.json'))
-    .map(f => f.split('.')[0]);
+    .map(f => f.slice(0, 0 - '.json'.length));
   for (const shortname of dataFiles) {
     const features = list[shortname];
     if (!features) {

@@ -1,7 +1,0 @@
-{
-    "impl": {
-      "caniuse": "css-paint-api",
-      "chromestatus": 5685444318593024,
-      "webkitstatus": "specification-css-painting-api-level-1"
-    }
-}

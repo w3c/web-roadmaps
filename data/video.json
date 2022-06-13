@@ -1,7 +1,0 @@
-{
-  "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
-  "feature": "video element",
-  "impl": {
-    "caniuse": "video"
-  }
-}

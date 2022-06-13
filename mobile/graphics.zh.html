@@ -15,22 +15,22 @@
         <h2 id="well-deployed-technologies">广泛部署的技术</h2>
 
         <div data-feature="图形效果">
-          <p>CSS 3及更高版本定义了定义了简单而强大的特性来创建图形效果，例如<a data-featureid="css-border-radius">圆角</a>、<a data-featureid="css-box-shadow">阴影效果</a>和<a data-featureid="css-2d">旋转内容</a>等。</p>
+          <p>CSS 3及更高版本定义了定义了简单而强大的特性来创建图形效果，例如<a data-featureid="css-backgrounds/border-radius">圆角</a>、<a data-featureid="css-backgrounds/box-shadow">阴影效果</a>和<a data-featureid="css-transforms">旋转内容</a>等。</p>
         </div>
         <div data-feature="动画">
           <p>动画可以通过<a data-featureid="css-animations">CSS动画</a>和<a data-featureid="css-transitions">CSS过渡</a>声明性地描述。</p>
-          <p>使用脚本控制的动画可能需要很多计算资源，特别是在受限制的移动设备上。<a data-featureid="animation-frames">动画帧</a>提供了管理动画更新速率的可能性。</p>
+          <p>使用脚本控制的动画可能需要很多计算资源，特别是在受限制的移动设备上。<a data-featureid="html/animation-frames">动画帧</a>提供了管理动画更新速率的可能性。</p>
         </div>
         <div data-feature="复杂排版">
-          <p>默认情况下，CSS的盒模型规定元素的任何内边距和边框都要在指定的宽度和高度之外设置和绘制。因此，一个方框的有效外部大小会随着填充和边框的使用而变化，这使得响应式布局的设计变得复杂，开发者希望根据屏幕的大小改变框（box）的大小。<a data-featureid="css-ui-box-sizing"><code>box-sizing</code></a>属性的 <code>border-box</code> 值告诉用户代理在指定的宽度和高度内设置内边距和边框，简化了响应式布局的设计。</p>
-          <p><a data-featureid="css-flexbox">CSS 弹性盒式布局</a>和<a data-featureid="css-grid-1">CSS 网格布局</a>引入了两种新的布局模式，用于布局更复杂的应用程序。值得注意的是，通过允许在屏幕上重新排列元素的顺序，这两类新的布局模式可以保持内容本身（HTML 和 SVG）与其布局之间的清晰分离，而不必更改底层HTML。这对于需要调整用户界面和用户体验以适应屏幕和可用交互机制的移动设备尤为重要（另请参阅<a href="adaptation.zh.html">设备适配</a>）。</p>
+          <p>默认情况下，CSS的盒模型规定元素的任何内边距和边框都要在指定的宽度和高度之外设置和绘制。因此，一个方框的有效外部大小会随着填充和边框的使用而变化，这使得响应式布局的设计变得复杂，开发者希望根据屏幕的大小改变框（box）的大小。<a data-featureid="css-sizing/box-sizing"><code>box-sizing</code></a>属性的 <code>border-box</code> 值告诉用户代理在指定的宽度和高度内设置内边距和边框，简化了响应式布局的设计。</p>
+          <p><a data-featureid="css-flexbox">CSS 弹性盒式布局</a>和<a data-featureid="css-grid">CSS 网格布局</a>引入了两种新的布局模式，用于布局更复杂的应用程序。值得注意的是，通过允许在屏幕上重新排列元素的顺序，这两类新的布局模式可以保持内容本身（HTML 和 SVG）与其布局之间的清晰分离，而不必更改底层HTML。这对于需要调整用户界面和用户体验以适应屏幕和可用交互机制的移动设备尤为重要（另请参阅<a href="adaptation.zh.html">设备适配</a>）。</p>
           <p>弹性盒式布局专注于轴内排版，并采用更简单的自下而上的方式进行布局，而网格布局采用二维的排版方式，并使用自顶向下的方式进行布局。这两种布局方式互相补充，都将成为对 Web 开发者有用的工具。</p>
           <p>
             行间注（ruby）是标注在字词旁侧的小字号补充文本，常见于东亚文字的排版中，主要用于标音与释义。HTML 的 <a data-featureid="html/ruby">ruby</a> 元素可以为文本添加行间注。<a href="https://www.w3.org/TR/css-ruby-1/">CSS Ruby</a> 中定义的 <a data-featureid="css-ruby/ruby-align">ruby-align</a>、<a data-featureid="css-ruby/ruby-position">ruby-position</a> 和其他属性提供了一种控制 <a data-featureid="html/ruby">ruby</a> 元素的渲染的方法。
           </p>
         </div>
         <div data-feature="可下载字体">
-          <p>字体在构建引人入胜的图形界面中扮演着重要的角色，但移动设备通常只包含有限的字体。<a data-featureid="woff2">WOFF</a>（Web 开放字体格式）通过使字体能够通过样式表很方便地自动下载来解决该限制，同时将下载字体的大小限制为呈现用户界面实际所需的大小。WOFF对移动设备友好，这归功于字体数据预处理和优化步骤，可减少字体数据结构的冗余，以及专门的熵压缩编码方案，即使在使用低端移动设备时也不需要使用过多的CPU或内存资源来解码。</p>
+          <p>字体在构建引人入胜的图形界面中扮演着重要的角色，但移动设备通常只包含有限的字体。<a data-featureid="WOFF">WOFF</a>（Web 开放字体格式）通过使字体能够通过样式表很方便地自动下载来解决该限制，同时将下载字体的大小限制为呈现用户界面实际所需的大小。WOFF对移动设备友好，这归功于字体数据预处理和优化步骤，可减少字体数据结构的冗余，以及专门的熵压缩编码方案，即使在使用低端移动设备时也不需要使用过多的CPU或内存资源来解码。</p>
         </div>
         <div data-feature="2D矢量图形">
           <p><a data-featureid="svg11">SVG</a>（可扩展矢量图形）提供了一种基于 XML 的标记语言来描述二维矢量图形。由于这些图形被描述为一组几何形状，因此可以根据用户的请求进行缩放，这使得 SVG 非常适合在屏幕空间有限的移动设备上创建图形。SVG也很容易制作动画，以及复杂和平滑的用户界面。</p>
@@ -38,7 +38,7 @@
         </div>
         <div data-feature="图形 API">
           <p>作为 SVG 提供的声明性方法的补充，HTML5 中添加的 <strong><code>&lt;canvas&gt;</code></strong> 元素使<a data-featureid="html/2dcontext">2D编程API</a>非常适合以较少内存占用的方式处理图形。</p>
-          <p>作为 Khronos Group 的一部分在 W3C 之外开发的 <a data-featureid="webgl">WebGL</a> 为 Web 提供了底层3D图形API。该 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，适用于嵌入式系统，并可在移动设备上运行。基于 OpenGL ES 2.0 的 WebGL v1.0 有很好的跨设备支持，而基于 OpenGL ES 3.0 的 WebGL v2.0 的支持则较少。W3C 正在进行更新的 WebGPU API 的工作，请参阅下面的<a href="#technologies-in-progress">开发中的技术</a>部分。</p>
+          <p>作为 Khronos Group 的一部分在 W3C 之外开发的 <a data-featureid="webgl1">WebGL</a> 为 Web 提供了底层3D图形API。该 API 与 <a href="https://www.khronos.org/opengles/">OpenGL ES</a> 兼容，适用于嵌入式系统，并可在移动设备上运行。基于 OpenGL ES 2.0 的 WebGL v1.0 有很好的跨设备支持，而基于 OpenGL ES 3.0 的 WebGL v2.0 的支持则较少。W3C 正在进行更新的 WebGPU API 的工作，请参阅下面的<a href="#technologies-in-progress">开发中的技术</a>部分。</p>
         </div>
         <p>图形密集型应用（例如游戏）中的另一个重要的特性是使用整个屏幕来显示图形；在<a data-featureid="fullscreen">全屏API</a>上的工作可以请求和检测全屏显示，现在在 <a href="https://whatwg.org/">Web 超文本应用技术工作小组</a>中完成。</p>
       </section>
@@ -50,12 +50,12 @@
 
         <div data-feature="图形 API">
           <p><a data-featureid="css-paint-api">CSS 绘图 API</a> 允许 Web 开发者为 CSS 生成可以响应样式和大小更改的 2D 图像，而且无需创建 DOM 元素，也不必在重绘期间阻塞主线程，从而能够减少内存和 CPU 的使用，提高性能。</p>
-          <p><a data-featureid="webgpu">WebGPU</a> API 以高性能、强大和安全的方式使用现代3D图形和计算功能，并与设备的系统平台（例如 Direct3D、Metal或Vulkan）无关。随附的 <a data-featureid="wgsl">WebGPU 着色语言</a>规范基于 <a href="https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html">SPIR-V</a> 语义为 WebGPU 定义了基于文本的着色语言。</p>
+          <p><a data-featureid="webgpu">WebGPU</a> API 以高性能、强大和安全的方式使用现代3D图形和计算功能，并与设备的系统平台（例如 Direct3D、Metal或Vulkan）无关。随附的 <a data-featureid="WGSL">WebGPU 着色语言</a>规范基于 <a href="https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html">SPIR-V</a> 语义为 WebGPU 定义了基于文本的着色语言。</p>
         </div>
 
         <div data-feature="可下载字体">
-          <p>考虑到通过移动网络下载字体所需的时间，Web 开发者需要调整其内容以适应字体的渐进可用性。<a data-featureid="css-font-loading">CSS 字体加载</a>为开发者提供必要的事件和接口来实现这种适应性。<code>@font-face</code> 和 <code>@font-feature-values</code> 的 <a data-featureid="css-font-display"><code>font-display</code></a> 描述符（descriptor）也可用于控制可下载字体在完全加载之前的呈现方式。</p>
-          <p>沿着不同轴（width, weight, optical size）的字体变化可以被编码在单个字体文件中。CSS中的<a data-featureid="css-fonts-4/variable">可变字体属性</a>允许更好地控制可变字体的使用，并且帮助开发人员避免不必要的网络请求来获取字体的其他变体。</p>
+          <p>考虑到通过移动网络下载字体所需的时间，Web 开发者需要调整其内容以适应字体的渐进可用性。<a data-featureid="css-font-loading">CSS 字体加载</a>为开发者提供必要的事件和接口来实现这种适应性。<code>@font-face</code> 和 <code>@font-feature-values</code> 的 <a data-featureid="css-fonts/font-display"><code>font-display</code></a> 描述符（descriptor）也可用于控制可下载字体在完全加载之前的呈现方式。</p>
+          <p>沿着不同轴（width, weight, optical size）的字体变化可以被编码在单个字体文件中。CSS中的<a data-featureid="css-fonts/variable">可变字体属性</a>允许更好地控制可变字体的使用，并且帮助开发人员避免不必要的网络请求来获取字体的其他变体。</p>
         </div>
       </section>
 

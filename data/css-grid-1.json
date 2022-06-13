@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "css-grid",
-    "chromestatus": 4589636412243968,
-    "edgestatus": "CSS Grid Layout",
-    "webkitstatus": "specification-css-grid-layout-level-1"
-  }
-}

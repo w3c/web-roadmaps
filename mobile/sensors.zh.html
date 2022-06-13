@@ -18,7 +18,7 @@
         </div>
 
         <div data-feature="相机和麦克风流">
-          <p>正如本文档的<a href="media.zh.html">媒体</a>部分所详述的那样，<a data-featureid="getusermedia">开放相机和麦克风流的API</a>目前正在开发。</p>
+          <p>正如本文档的<a href="media.zh.html">媒体</a>部分所详述的那样，<a data-featureid="mediacapture-streams">开放相机和麦克风流的API</a>目前正在开发。</p>
         </div>
       </section>
 
@@ -33,7 +33,7 @@
 
         <p data-feature="环境光线传感器"><a data-featureid="ambient-light">环境光线传感器</a>规范定义了一个API来监控环境光照水平。</p>
 
-        <p data-feature="电池状态"><a data-featureid="battery">电池状态API</a>公开了有关设备的电池状态信息（但是，请注意，最后一个规范的未来由于其<a href="https://github.com/w3c/battery/issues/5">隐私侵入性</a>还不明朗）。</p>
+        <p data-feature="电池状态"><a data-featureid="battery-status">电池状态API</a>公开了有关设备的电池状态信息（但是，请注意，最后一个规范的未来由于其<a href="https://github.com/w3c/battery/issues/5">隐私侵入性</a>还不明朗）。</p>
 
 
         <div data-feature="运动传感器">
@@ -43,12 +43,12 @@
             <li><a data-featureid="accelerometer">加速度传感器</a>获得有关设备本地三个主轴的加速度信息；</li>
             <li><a data-featureid="gyroscope">陀螺仪</a>监测设备本地三个主轴周围的旋转速率；</li>
             <li><a data-featureid="magnetometer">磁强计</a>用于测量设备本地三个主轴周围的磁场；</li>
-            <li><a data-featureid="orientation">方向传感器</a>监测物理设备在一个静态三维笛卡尔坐标系统中的方向（朝向）。</li>
+            <li><a data-featureid="orientation-sensor">方向传感器</a>监测物理设备在一个静态三维笛卡尔坐标系统中的方向（朝向）。</li>
           </ul>
 
           <p><a href="https://www.w3.org/TR/motion-sensors/">运动传感器说明</a>文档介绍了不同级别的运动传感器及其关系、内部工作原理和常见用例。</p>
 
-          <p><a data-featureid="deviceorientation">设备方向事件规范</a>定义了几个DOM事件，提供关于设备的物理方向和运动的信息。大多数浏览器都支持此规范，但有很多互操作性问题（本页面的实现信息中没有很好地反映这些问题），并且该规范的工作曾经停止过。现在，<a href="https://www.w3.org/das/">设备与传感器工作组</a>已恢复对该标准的工作，以减少各实现之间的不一致性并最终确定规范，同时该小组也在开发更强大的<a href="https://w3c.github.io/orientation-sensor/">方向传感器</a>规范。</p>
+          <p><a data-featureid="orientation-event">设备方向事件规范</a>定义了几个DOM事件，提供关于设备的物理方向和运动的信息。大多数浏览器都支持此规范，但有很多互操作性问题（本页面的实现信息中没有很好地反映这些问题），并且该规范的工作曾经停止过。现在，<a href="https://www.w3.org/das/">设备与传感器工作组</a>已恢复对该标准的工作，以减少各实现之间的不一致性并最终确定规范，同时该小组也在开发更强大的<a href="https://w3c.github.io/orientation-sensor/">方向传感器</a>规范。</p>
         </div>
 
         <p data-feature="地理位置"><a data-featureid="geolocation-sensor">地理位置传感器</a>是用于从设备获取地理位置的API。地理位置传感器的特性集与<a href="https://www.w3.org/TR/geolocation-API/">地理位置应用编程接口</a>类似，但基于通用传感器API，允许在后台持续进行地理跟踪和地理围栏（当用户穿过特定区域时的一次性警报）操作，提高了安全性和隐私性，并且具有更好的可扩展性。</p>
@@ -59,9 +59,9 @@
       <section class="featureset exploratory-work">
         <h2 id="exploratory-work">探索性工作</h2>
 
-        <p data-feature="近场通讯"><a href="http://w3c.github.io/web-nfc/" data-featureid="webnfc">Web 近场通讯（NFC）API</a>已经开始在<a href="https://www.w3.org/community/web-nfc/">Web NFC社区组</a>中开始开发，能够在两个紧邻的设备之间进行无线通信。</p>
+        <p data-feature="近场通讯"><a href="http://w3c.github.io/web-nfc/" data-featureid="web-nfc">Web 近场通讯（NFC）API</a>已经开始在<a href="https://www.w3.org/community/web-nfc/">Web NFC社区组</a>中开始开发，能够在两个紧邻的设备之间进行无线通信。</p>
 
-        <p data-feature="蓝牙">同样，由<a href="https://www.w3.org/community/web-bluetooth">Web蓝牙社区组</a>开发的<a data-featureid="webbluetooth">Web蓝牙</a>规范描述了一个API，用于通过蓝牙低功耗（BLE）模式发现并与设备进行通信。</p>
+        <p data-feature="蓝牙">同样，由<a href="https://www.w3.org/community/web-bluetooth">Web蓝牙社区组</a>开发的<a data-featureid="web-bluetooth">Web蓝牙</a>规范描述了一个API，用于通过蓝牙低功耗（BLE）模式发现并与设备进行通信。</p>
       </section>
 
       <section>

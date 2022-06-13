@@ -26,7 +26,7 @@
         </div>
 
         <div data-feature="页面可见性检测">
-          <p>用于确定是否正在显示网页的<a data-featureid="page-visibility">页面可见性API</a>也可用于使资源的使用适应 Web 应用的需要，例如通过在页面最小化时减少网络活动。</p>
+          <p>用于确定是否正在显示网页的<a data-featureid="html/page-visibility">页面可见性API</a>也可用于使资源的使用适应 Web 应用的需要，例如通过在页面最小化时减少网络活动。</p>
         </div>
 
         <div data-feature="本地优先级处理">
@@ -42,15 +42,15 @@
         </div>
 
         <div data-feature="动画优化">
-          <p><a data-featureid="animation-frames">基于脚本的动画时间控制 API</a> 可以帮助减少播放动画时的资源使用量。</p>
+          <p><a data-featureid="html/animation-frames">基于脚本的动画时间控制 API</a> 可以帮助减少播放动画时的资源使用量。</p>
         </div>
 
         <div data-feature="滚动优化">
-          <p>平滑的滚动性能对于 Web 上出色的用户体验至关重要，尤其是在触屏设备上。通过事件监听器的 <a data-featureid="dom-addeventlistener-passive"><code>passive</code></a> 选项，开发人员可以预先声明事件监听器不会在事件上调用<code>preventDefault()</code>，从而允许浏览器在执行与事件相关的默认操作之前不同步等待。在触摸和滚轮事件中，这能够保证滚动的平滑性。注意：默认情况下，某些浏览器会自动在 <code>touchstart</code> 和 <code>touchmove</code> 上设置 <code>passive</code> 标志。</p>
+          <p>平滑的滚动性能对于 Web 上出色的用户体验至关重要，尤其是在触屏设备上。通过事件监听器的 <a data-featureid="dom/addeventlistener-passive"><code>passive</code></a> 选项，开发人员可以预先声明事件监听器不会在事件上调用<code>preventDefault()</code>，从而允许浏览器在执行与事件相关的默认操作之前不同步等待。在触摸和滚轮事件中，这能够保证滚动的平滑性。注意：默认情况下，某些浏览器会自动在 <code>touchstart</code> 和 <code>touchmove</code> 上设置 <code>passive</code> 标志。</p>
         </div>
 
         <div data-feature="线程">
-          <p>除了优化资源之外，应用程序的感知反应性也是移动用户体验的一个关键方面。通过 <a data-featureid="webworkers">Web Workers</a> 实现的<strong>类似于线程的机制</strong>允许通过将最耗费资源的操作卸载到后台进程来保持用户界面的响应。</p>
+          <p>除了优化资源之外，应用程序的感知反应性也是移动用户体验的一个关键方面。通过 <a data-featureid="html/webworkers">Web Workers</a> 实现的<strong>类似于线程的机制</strong>允许通过将最耗费资源的操作卸载到后台进程来保持用户界面的响应。</p>
         </div>
 
         <div data-feature="自动化">
@@ -65,15 +65,15 @@
       <section class="featureset in-progress">
         <h2 id="technologies-in-progress">开发中的技术</h2>
         <div data-feature="网络优先级">
-          <p><a data-featureid="resource-hints">资源提示</a>和<a data-featureid="preload">预加载</a>规范使开发人员能够通过延迟下载或执行下载的资源来优化资源的下载。</p>
+          <p><a data-featureid="resource-hints">资源提示</a>和<a data-featureid="html/preload">预加载</a>规范使开发人员能够通过延迟下载或执行下载的资源来优化资源的下载。</p>
         </div>
 
         <div data-feature="缓存">
-          <p><a data-featureid="serviceworkers">Service Workers</a> 规范定义了一种机制，允许应用拦截传出的网络请求并直接对其进行响应。应用可以利用这种机制直接实现灵活的缓存逻辑，从而避免了对服务器的冗长请求。</p>
+          <p><a data-featureid="service-workers">Service Workers</a> 规范定义了一种机制，允许应用拦截传出的网络请求并直接对其进行响应。应用可以利用这种机制直接实现灵活的缓存逻辑，从而避免了对服务器的冗长请求。</p>
         </div>
 
         <div data-feature="电池状态">
-          <p><a data-featureid="battery">电池状态 API</a> 允许根据移动设备电池中当前可用的电力水平调整资源的使用。请注意，此规范的未来还不确定，因为它有<a href="https://github.com/w3c/battery/issues/5">潜在的隐私侵犯用途</a>。</p>
+          <p><a data-featureid="battery-status">电池状态 API</a> 允许根据移动设备电池中当前可用的电力水平调整资源的使用。请注意，此规范的未来还不确定，因为它有<a href="https://github.com/w3c/battery/issues/5">潜在的隐私侵犯用途</a>。</p>
         </div>
 
         <div data-feature="计时 API">
@@ -88,11 +88,11 @@
         </div>
 
         <div data-feature="动画优化">
-          <p><a data-featureid="animation-worklet">CSS Animation Worklet API</a>提供了一种使用 JavaScript 创建动画的方法。该API使用户代理可以在专用的线程中运行动画，降低主线程的压力。</p>
+          <p><a data-featureid="css-animation-worklet">CSS Animation Worklet API</a>提供了一种使用 JavaScript 创建动画的方法。该API使用户代理可以在专用的线程中运行动画，降低主线程的压力。</p>
         </div>
 
         <div data-feature="无限滚动">
-          <p>在移动设备上使用<b>无限滚动</b>列表（在用户滚动时加载和呈现越来越多的内容）非常常见。这样的列表提供比触摸屏上的分页更好的用户体验。不幸的是，应用程序需要不断地<em>同步</em>轮询 DOM 元素的布局信息来实现这个模式，这是一个性能开销的重要来源。<a data-featureid="intersectionobserver">交叉观察器</a>规范定义了一个 API，用于<em>异步</em>观察目标元素与祖先元素或顶层文档视图的交集中的变化，从而提供一种有效的机制来检索实现无限滚动所需的信息。</p>
+          <p>在移动设备上使用<b>无限滚动</b>列表（在用户滚动时加载和呈现越来越多的内容）非常常见。这样的列表提供比触摸屏上的分页更好的用户体验。不幸的是，应用程序需要不断地<em>同步</em>轮询 DOM 元素的布局信息来实现这个模式，这是一个性能开销的重要来源。<a data-featureid="intersection-observer">交叉观察器</a>规范定义了一个 API，用于<em>异步</em>观察目标元素与祖先元素或顶层文档视图的交集中的变化，从而提供一种有效的机制来检索实现无限滚动所需的信息。</p>
         </div>
 
         <div data-feature="滚动优化">
@@ -141,9 +141,9 @@
           <p>需要运行长任务的应用（例如在加载页面时）需要在快速加载页面（或减少任务执行时间）与快速响应输入之间进行权衡。<a data-featureid="is-input-pending">输入事件的早期检测</a>规范提出了 <code>isInputPending</code> 方法，长时间运行的脚本可以同步调用，而不会浪费时间在其他脚本和事件处理上，以检测是否有未处理的输入事件，这些事件的执行可能会延迟触发。
           </p>
 
-          <p>需要运行长任务的应用可能还希望在事件循环之后重新获得控制，并且在其他相同或优先级较低的任务<em>之前</em>运行，<a data-featureid="main-thread-scheduling/yield"><code>scheduler.yield()</code></a> 函数可以解决该问题。</p>
+          <p>需要运行长任务的应用可能还希望在事件循环之后重新获得控制，并且在其他相同或优先级较低的任务<em>之前</em>运行，<a data-featureid="scheduling-apis/yield"><code>scheduler.yield()</code></a> 函数可以解决该问题。</p>
 
-          <p>一般而言，应用在计划任务优先级时几乎没有控制权。<a data-featureid="main-thread-scheduling/postTask"><code>scheduler.postTask()</code></a> 提案将创建一个统一的 API 来安排任务的优先级。</p>
+          <p>一般而言，应用在计划任务优先级时几乎没有控制权。<a data-featureid="scheduling-apis/postTask"><code>scheduler.postTask()</code></a> 提案将创建一个统一的 API 来安排任务的优先级。</p>
         </div>
 
         <div data-feature="无限滚动">

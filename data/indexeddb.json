@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/IndexedDB-2/",
-  "impl": {
-    "caniuse": "indexeddb2",
-    "chromestatus": 5812621622116352,
-    "edgestatus": "IndexedDB",
-    "webkitstatus": "specification-indexed-database-2.0"
-  }
-}

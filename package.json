@@ -4,7 +4,7 @@
     "@mdn/browser-compat-data": "^4.2.1",
     "ajv-cli": "^5.0.0",
     "ajv-formats": "^2.1.1",
-    "browser-statuses": "^2.1.0",
+    "browser-statuses": "^2.2.0",
     "fetch-filecache-for-crawling": "^3.0.2",
     "jsdom": "^19.0.0",
     "mkdirp": "^1.0.4",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "all": "npm run validate-data && npm run generate-info && npm run validate-all-info && npm run validate-html && npm run generate-pages",
-    "generate-info": "npm run generate-specinfo && npm run generate-implinfo",
+    "generate-info": "npm run list-features && npm run generate-specinfo && npm run generate-implinfo",
     "generate-specinfo": "mkdirp .out/data && node tools/extract-spec-data.js .out/data/list.json > .out/data/tr.json",
     "generate-implinfo": "mkdirp .out/data && node tools/extract-impl-data.js .out/data/list.json > .out/data/impl.json",
     "generate-pages": "node tools/generate-roadmaps.js",

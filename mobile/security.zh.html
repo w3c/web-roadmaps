@@ -21,18 +21,18 @@
         <div data-feature="安全加强">
           <p>用户的第一道防线以及 Web 应用的隔离单元是同源策略，它大致限制了 Web 应用可以访问同一来源的内容和数据，这里的来源是指协议、域名和端口的组合。</p>
 
-          <p>由于这个策略提出较早，它在 Web 平台的某些部分并不严格，因此会通过跨站脚本或跨站请求伪造，将用户暴露给更大的攻击面。为了使 Web 应用编写者能够减少攻击面从而超出以往要求的效果，<a data-featureid="csp">内容安全策略</a>（Content Security Policy，CSP）提供了一些钩子，它们可以严重限制攻击者希望实现的损害。一个通过启用了 CSP 的通过安全隧道传输的应用可以确保用户能够接收的数据是其期望得到的数据。</p>
+          <p>由于这个策略提出较早，它在 Web 平台的某些部分并不严格，因此会通过跨站脚本或跨站请求伪造，将用户暴露给更大的攻击面。为了使 Web 应用编写者能够减少攻击面从而超出以往要求的效果，<a data-featureid="CSP">内容安全策略</a>（Content Security Policy，CSP）提供了一些钩子，它们可以严重限制攻击者希望实现的损害。一个通过启用了 CSP 的通过安全隧道传输的应用可以确保用户能够接收的数据是其期望得到的数据。</p>
 
-          <p>为了进一步加强应用的完整性，Web 开发着可以利用的<a data-featureid="sri"></a>子资源完整性的机制，从而阻止中间人攻击或被攻击的第三方供应商。</p>
+          <p>为了进一步加强应用的完整性，Web 开发着可以利用的<a data-featureid="SRI"></a>子资源完整性的机制，从而阻止中间人攻击或被攻击的第三方供应商。</p>
 
-          <p><a data-featureid="mixedcontent">混合内容</a>规范有助于将 Web 默认迁移到安全状态，方法是设置明确的规则，以确定那些 HTTPs 不提供的内容在何时可以或不可以从 HTTPs 页面上加载。
+          <p><a data-featureid="mixed-content">混合内容</a>规范有助于将 Web 默认迁移到安全状态，方法是设置明确的规则，以确定那些 HTTPs 不提供的内容在何时可以或不可以从 HTTPs 页面上加载。
           </p>
 
-          <p>在聚合来自多个（可能不受信任的）源的内容的应用中，<a data-featureid="html5-sandbox">HTML5 <code>iframe</code> 的 <code>sandbox</code> 属性</a>可以限制第三方嵌入内容可以使用的交互类型。</p>
+          <p>在聚合来自多个（可能不受信任的）源的内容的应用中，<a data-featureid="html/html5-sandbox">HTML5 <code>iframe</code> 的 <code>sandbox</code> 属性</a>可以限制第三方嵌入内容可以使用的交互类型。</p>
         </div>
 
         <div data-feature="加密">
-          <p>通过<a data-featureid="cryptokey">WebCrypto密钥发现</a>API访问预先配置的密钥，<a data-featureid="crypto">Web密码学API</a>提供必要的工具来加密数据，以便在Web应用中进行存储和传输。</p>
+          <p>通过<a data-featureid="webcrypto-key-discovery">WebCrypto密钥发现</a>API访问预先配置的密钥，<a data-featureid="WebCryptoAPI">Web密码学API</a>提供必要的工具来加密数据，以便在Web应用中进行存储和传输。</p>
         </div>
         
         <div data-feature="认证">
@@ -55,13 +55,13 @@
           <p>为了方便用户对在线服务的认证，Web应用安全工作组提出了<a data-featureid="credential-management">信任证管理 API</a>，使开发人员能够与用户代理管理的凭证更加无缝地交互。</p>
         </div>
 
-        <p data-feature="安全上下文"><a data-featureid="securecontexts">安全上下文</a>建议 Web 平台的强大特性（包括访问敏感数据或私有数据的应用程序代码）只能在安全上下文中通过经过身份验证和加密的渠道传输，以此保证数据的完整性。草案指出：“安全地交付代码不能确保应用程序总是能够满足用户的安全和隐私要求，但这是一个必要的先决条件。”</p>
+        <p data-feature="安全上下文"><a data-featureid="secure-contexts">安全上下文</a>建议 Web 平台的强大特性（包括访问敏感数据或私有数据的应用程序代码）只能在安全上下文中通过经过身份验证和加密的渠道传输，以此保证数据的完整性。草案指出：“安全地交付代码不能确保应用程序总是能够满足用户的安全和隐私要求，但这是一个必要的先决条件。”</p>
 
-        <p data-feature="采用 HTTPs">已经具有大量内容的网站在将这些内容从 HTTP 迁移到 HTTPs 是一个很艰巨的任务。<a data-featureid="uir">升级不安全请求规范</a>指示浏览器通过 HTTPs 加载这些资源来帮助迁移。</p>
+        <p data-feature="采用 HTTPs">已经具有大量内容的网站在将这些内容从 HTTP 迁移到 HTTPs 是一个很艰巨的任务。<a data-featureid="upgrade-insecure-requests">升级不安全请求规范</a>指示浏览器通过 HTTPs 加载这些资源来帮助迁移。</p>
 
         <p data-feature="Referrer Policy"><a data-featureid="referrer-policy">Referrer Policy</a> 可帮助 Web 开发者控制 <code>Referer</code> HTTP header 中包含的信息，或者是否发送该 header。</p>
 
-        <p data-feature="沙盒"><a data-featureid="uisecurity">用户界面安全性和可见性 API</a> 文档建议通过确保图形渲染级别的元素可见性来消除点击劫持。例如，一个开发者部署它可以确保用户点击他们的网站的“支付”按钮不被欺骗，而不会把他们的银行余额转移给冒名顶替者。</p>
+        <p data-feature="沙盒"><a data-featureid="UISecurity">用户界面安全性和可见性 API</a> 文档建议通过确保图形渲染级别的元素可见性来消除点击劫持。例如，一个开发者部署它可以确保用户点击他们的网站的“支付”按钮不被欺骗，而不会把他们的银行余额转移给冒名顶替者。</p>
 
         <div data-feature="权限策略">
             <p>随着更强大的特性不断地暴露在应用中，网站需要更精细地控制应用中启用/禁用的特性，以及应用可以嵌入（在 iframe 中）的自己的或来自第三方的内容，以增强安全性。<a data-featureid="permissions-policy">权限策略</a>定义了一种选择性地启用和禁用各种浏览器特性和 API 的机制（<code>Permissions-Policy</code> HTTP头和 <code>iframe</code> 元素的 <code>allow</code> 属性）。开发者还可以使用该策略对客户端或嵌入者的某些特性和 API 的使用（或缺乏）作出承诺。</p>
@@ -96,7 +96,7 @@
           <dd><a data-featureid="epr">入口监管</a>规范提供了另一个加强安全的层面。它定义了一种机制来过滤可以从外部站点发起的 HTTP 请求的类型，降低了跨站点脚本和跨站点请求伪造的风险。这个规范的工作暂时停止了。</dd>
 
           <dt>追踪偏好表达</dt>
-          <dd>对于希望表明其偏好不被跨 Web 应用和站点追踪的用户，<a data-featureid="dnt">追踪偏好表达（Tracking Preference Expression，也被称为Do No Track）</a>使浏览器能够明确地向内容提供者传达用户的愿望，并使服务器能够传达他们自己的跟踪行为 ，请求同意并存储用户授予的例外。并非所有内容提供商都尊重用户的偏好，并且缺乏这些扩展的部署导致了追踪保护工作组停止对该规范的工作。</dd>
+          <dd>对于希望表明其偏好不被跨 Web 应用和站点追踪的用户，<a data-featureid="tracking-dnt">追踪偏好表达（Tracking Preference Expression，也被称为Do No Track）</a>使浏览器能够明确地向内容提供者传达用户的愿望，并使服务器能够传达他们自己的跟踪行为 ，请求同意并存储用户授予的例外。并非所有内容提供商都尊重用户的偏好，并且缺乏这些扩展的部署导致了追踪保护工作组停止对该规范的工作。</dd>
 
           <dt>访问基于硬件的安全服务</dt>
           <dd><a data-featureid="hbss">基于硬件的安全服务</a>旨在通过为Web提供硬件安全服务来提高用户和应用程序提供商能够保护其在线帐户和通信的保证级别。成立一个工作组的提议由于缺乏实现支持而被放弃。</dd>

@@ -14,7 +14,7 @@
         <h2>実装されている仕様</h2>
 
         <div data-feature="Multithreading">
-          <p>たとえどんな手を使ってもスムースな体験を保証し、また利用可能な計算資源を活用しきるために、ゲームは通常複数のスレッドで動作しています。<a data-featureid="webworkers">Web Workers</a> を利用することで JavaScript のコードをバックグラウンドで動作させられます。これはリソースを大きく利用する操作をバックグラウンドに回すことでユーザインターフェースの応答性を確保するために有用です。
+          <p>たとえどんな手を使ってもスムースな体験を保証し、また利用可能な計算資源を活用しきるために、ゲームは通常複数のスレッドで動作しています。<a data-featureid="html/webworkers">Web Workers</a> を利用することで JavaScript のコードをバックグラウンドで動作させられます。これはリソースを大きく利用する操作をバックグラウンドに回すことでユーザインターフェースの応答性を確保するために有用です。
           </p>
           <p><strong>注:</strong> <a href="https://meltdownattack.com/">Spectre</a> の影響により、メモリをスレッド間で共有するための <code>SharedArrayBuffer</code> オブジェクトはほとんどのウェブブラウザから一時的に削除されています。ワーカー同士の通信についてもさしあたりメッセージだけに制限されています。</p>
         </div>
@@ -34,7 +34,7 @@
         </div>
 
         <div data-feature="Animation optimization">
-          <p><a data-featureid="animation-frames">スクリプトベースアニメーションの時系列制御 API (Timing control for script-based animations API)</a> はアニメーション動作に必要なリソース利用量の削減につながるものです。</p>
+          <p><a data-featureid="html/animation-frames">スクリプトベースアニメーションの時系列制御 API (Timing control for script-based animations API)</a> はアニメーション動作に必要なリソース利用量の削減につながるものです。</p>
         </div>
       </section>
 
@@ -46,11 +46,11 @@
         </div>
 
         <div data-feature="Network prioritization">
-          <p><a data-featureid="resource-hints">Resource Hints</a> および <a data-featureid="preload">Preload</a> 仕様は開発者がリソースのダウンロードの最適化を、ダウンロード自体やダウンロードしたリソースの実行を遅らせる操作を実現することにより可能にしています。</p>
+          <p><a data-featureid="resource-hints">Resource Hints</a> および <a data-featureid="html/preload">Preload</a> 仕様は開発者がリソースのダウンロードの最適化を、ダウンロード自体やダウンロードしたリソースの実行を遅らせる操作を実現することにより可能にしています。</p>
         </div>
 
         <div data-feature="Caching">
-          <p><a data-featureid="serviceworkers">Service Workers</a> 仕様により外部へのネットワーク要求に介入したり要求に直接応答するような機構を実現します。アプリケーションはこれにより弾力的なキャッシュ制御を実装可能になり、サーバへの無駄なリクエストを防ぐことができます。</p>
+          <p><a data-featureid="service-workers">Service Workers</a> 仕様により外部へのネットワーク要求に介入したり要求に直接応答するような機構を実現します。アプリケーションはこれにより弾力的なキャッシュ制御を実装可能になり、サーバへの無駄なリクエストを防ぐことができます。</p>
         </div>
 
         <div data-feature="Timing hooks">
@@ -73,7 +73,7 @@
         <h2>調査中の項目</h2>
 
         <div data-feature="GPU computation">
-          <p>画面表示のために、負荷の高い計算を行うために GPU を活用したいと思うゲームもあるでしょう。一部分ですがこれは <a data-featureid="webgl">WebGL</a> により実現されています。<a href="https://www.w3.org/community/gpu">ウェブのための GPU CG (GPU for the Web Community Group)</a> では現代的な 3D グラフィックス (一番初めに) や計算能力 (次に) を効率的、効果的、かつ安全に利用可能なウェブ向け API を Direct3D、Metal、Vulkan といった既存のネイティブの機構にとらわれずかつ互換性のある形で検討中です。</p>
+          <p>画面表示のために、負荷の高い計算を行うために GPU を活用したいと思うゲームもあるでしょう。一部分ですがこれは <a data-featureid="webgl1">WebGL</a> により実現されています。<a href="https://www.w3.org/community/gpu">ウェブのための GPU CG (GPU for the Web Community Group)</a> では現代的な 3D グラフィックス (一番初めに) や計算能力 (次に) を効率的、効果的、かつ安全に利用可能なウェブ向け API を Direct3D、Metal、Vulkan といった既存のネイティブの機構にとらわれずかつ互換性のある形で検討中です。</p>
         </div>
 
         <div data-feature="Multithreading">
@@ -91,7 +91,7 @@
         </div>
 
         <div data-feature="Animation optimization">
-          <p><a data-featureid="animation-worklet">CSS Animation Worklet API</a> は複数のアニメーション効果をまとめて制御しスクリプトによるアニメーションを実現するための機構を提供します。この API はユーザエージェントがアニメーションをメインスレッドから分離したスレッドで実行できるようにすることでパフォーマンス確保の自由度を持たせるためのものです。</p>
+          <p><a data-featureid="css-animation-worklet">CSS Animation Worklet API</a> は複数のアニメーション効果をまとめて制御しスクリプトによるアニメーションを実現するための機構を提供します。この API はユーザエージェントがアニメーションをメインスレッドから分離したスレッドで実行できるようにすることでパフォーマンス確保の自由度を持たせるためのものです。</p>
         </div>
 
         <div data-feature="Scrolling optimization">
@@ -103,7 +103,7 @@
         <h2>進行中の項目で対応していない項目</h2>
         <dl>
           <dt>人工知能 (AI)</dt>
-          <dd>いくつものゲームではゲーム AI という名前で現実のプレイヤーが操作していないゲームキャラクターに高度な振る舞いをさせる機能を実装しています。ゲームにおける AI のコンセプトは他の分野での概念とは異なりますが、ゲーム AI は機械学習、ニューラルネットワークやその他のデータマイニングのアルゴリズムを元とした似たような技術を活用可能です。ウェブブラウザにおけるそのようなアルゴリズムの実装の次善最適解は <a data-featureid="wasm-core">WebAssembly</a> と <a data-featureid="webgl">WebGL</a> を利用するものです。2017年10月に公表された <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> 提言はウェブアプリケーションに適した機構を公開するためのものですが、W3C における標準化活動までは至っていません。</dd>
+          <dd>いくつものゲームではゲーム AI という名前で現実のプレイヤーが操作していないゲームキャラクターに高度な振る舞いをさせる機能を実装しています。ゲームにおける AI のコンセプトは他の分野での概念とは異なりますが、ゲーム AI は機械学習、ニューラルネットワークやその他のデータマイニングのアルゴリズムを元とした似たような技術を活用可能です。ウェブブラウザにおけるそのようなアルゴリズムの実装の次善最適解は <a data-featureid="wasm-core">WebAssembly</a> と <a data-featureid="webgl1">WebGL</a> を利用するものです。2017年10月に公表された <a href="https://angelokai.github.io/WebML/">Base Machine Learning API</a> 提言はウェブアプリケーションに適した機構を公開するためのものですが、W3C における標準化活動までは至っていません。</dd>
         </dl>
       </section>
     </main>

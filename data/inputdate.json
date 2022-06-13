@@ -1,8 +1,0 @@
-{
-  "url": "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)",
-  "feature": "Date and time input types",
-  "impl": {
-    "caniuse": "input-datetime",
-    "chromestatus": 6640933999214592
-  }
-}

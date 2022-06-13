@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/service-workers-1/",
-  "impl": {
-    "caniuse": "serviceworkers",
-    "chromestatus": 6561526227927040,
-    "edgestatus": "Service Worker",
-    "webkitstatus": "specification-service-workers"
-  }
-}

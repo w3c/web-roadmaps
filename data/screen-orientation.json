@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "screen-orientation",
-    "chromestatus": 6191285283061760,
-    "edgestatus": "Screen Orientation API"
-  }
-}

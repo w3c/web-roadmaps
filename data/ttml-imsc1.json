@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/ttml-imsc1.0.1/",
-  "polyfills": [
-    {
-      "label": "imscJS",
-      "url": "https://github.com/sandflow/imscJS"
-    }
-  ]
-}

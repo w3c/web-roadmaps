@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "vibration",
-    "chromestatus": 5698768766763008,
-    "edgestatus": "Vibration API",
-    "webkitstatus": "specification-vibration-api"
-  }
-}

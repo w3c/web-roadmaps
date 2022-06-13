@@ -1,9 +1,0 @@
-{
-  "impl": {
-    "caniuse": "requestidlecallback",
-    "chromestatus": 5572795866021888,
-    "edgestatus": "requestIdleCallback",
-    "mdn": "api.Window.requestIdleCallback",
-    "webkitstatus": "feature-requestidlecallback"
-  }
-}

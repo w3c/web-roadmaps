@@ -18,26 +18,26 @@
         </div>
 
         <div data-feature="Touch-based interactions">
-          <p>モバイルデバイスの流行はタッチベースの操作によるものです。キーボード・マウスといったウェブプラットフォームで古くから利用可能な入力方法もこの文脈で利用可能ではあるものの、より適したユーザ体験のためにはタッチベースの入力方法に特化した処理が必須となり、<a data-featureid="touchevent">Touch Events in the DOM</a> (Document Object Model) により実現されています。</p>
+          <p>モバイルデバイスの流行はタッチベースの操作によるものです。キーボード・マウスといったウェブプラットフォームで古くから利用可能な入力方法もこの文脈で利用可能ではあるものの、より適したユーザ体験のためにはタッチベースの入力方法に特化した処理が必須となり、<a data-featureid="touch-events">Touch Events in the DOM</a> (Document Object Model) により実現されています。</p>
         </div>
 
         <div data-feature="Media capture">
-          <p><a data-featureid="getusermedia">Media Capture and Streams API</a> はゲームで様々な目的で利用されるカメラ・マイクへの接続を実現し、制御入力 (ゲームアクションの制御のために特定の音声を利用する)、連携機構 (特定の物体・バーコードをカメラに向ける)、文脈情報 (拡張現実においてユーザの背景を描画する)、や単純にプレイヤー間の交信目的などに利用可能です。</p>
+          <p><a data-featureid="mediacapture-streams">Media Capture and Streams API</a> はゲームで様々な目的で利用されるカメラ・マイクへの接続を実現し、制御入力 (ゲームアクションの制御のために特定の音声を利用する)、連携機構 (特定の物体・バーコードをカメラに向ける)、文脈情報 (拡張現実においてユーザの背景を描画する)、や単純にプレイヤー間の交信目的などに利用可能です。</p>
         </div>
 
         <div data-feature="Sensors">
           <p><a data-featureid="geolocation">Geolocation API</a> は利用される技術 (GPS、WiFi 接続情報、携帯通信による三角測量など) によらないデバイスの位置情報への共通インターフェースを定義します。</p>
 
-          <p><a data-featureid="deviceorientation">DeviceOrientation Event 仕様</a> は動作デバイスの物理的向きや動きに関連するいくつかの DOM イベントを提供します。ほとんどのブラウザがこの仕様を実装していますが、様々な相互運用性の問題が発見されています。Geolocation WG が閉じた際にこの仕様自体の開発は終了しました。<a href="https://www.w3.org/das/">デバイスとセンサー WG (Devices and Sensors Working Group)</a> が新たに設置され、実装間の相違を減らし仕様策定を完了させ、またより強力な <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> 仕様を並行して開発するために活動しています。</p>
+          <p><a data-featureid="orientation-event">DeviceOrientation Event 仕様</a> は動作デバイスの物理的向きや動きに関連するいくつかの DOM イベントを提供します。ほとんどのブラウザがこの仕様を実装していますが、様々な相互運用性の問題が発見されています。Geolocation WG が閉じた際にこの仕様自体の開発は終了しました。<a href="https://www.w3.org/das/">デバイスとセンサー WG (Devices and Sensors Working Group)</a> が新たに設置され、実装間の相違を減らし仕様策定を完了させ、またより強力な <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> 仕様を並行して開発するために活動しています。</p>
         </div>
 
         <p data-feature="Vibration"><a data-featureid="vibration">Vibration API</a> はゲーム開発者に新しい形の触覚に訴える出力を提供します。</p>
 
         <div data-feature="Accessibility">
-          <p><a data-featureid="uaag20">ユーザエージェントアクセシビリティーガイドライン (UAAG) 2.0</a> 技術ノートはユーザエージェントがアクセシブルなインターフェースを実装することや支援技術を利用するための原則とガイドラインを定義しています。補助文書の <a data-featureid="uaag20-reference">UAAG 2.0 リファレンス</a> は UAAG 2.0 の成功基準のための意図と最良実施例について述べ、それらの様々な例を挙げています。</p>
-          <p><a data-featureid="wcag21">Web Content Accessibility Guidelines (WCAG) 2.1</a> に準拠することにより、より広い領域の障害を持つ人々向けにコンテンツをアクセシブルにできます。2.1 版では 2.0 に加えて新しい達成基準とガイドラインを追加し、 <a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">Pointer Gestures</a> や <a href="https://www.w3.org/TR/WCAG21/#target-size">Target Size</a> といったゲーム特有のユーザ入力に関連した基準が含まれます。</p>
+          <p><a data-featureid="UAAG20">ユーザエージェントアクセシビリティーガイドライン (UAAG) 2.0</a> 技術ノートはユーザエージェントがアクセシブルなインターフェースを実装することや支援技術を利用するための原則とガイドラインを定義しています。補助文書の <a data-featureid="UAAG20-Reference">UAAG 2.0 リファレンス</a> は UAAG 2.0 の成功基準のための意図と最良実施例について述べ、それらの様々な例を挙げています。</p>
+          <p><a data-featureid="WCAG21">Web Content Accessibility Guidelines (WCAG) 2.1</a> に準拠することにより、より広い領域の障害を持つ人々向けにコンテンツをアクセシブルにできます。2.1 版では 2.0 に加えて新しい達成基準とガイドラインを追加し、 <a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">Pointer Gestures</a> や <a href="https://www.w3.org/TR/WCAG21/#target-size">Target Size</a> といったゲーム特有のユーザ入力に関連した基準が含まれます。</p>
           <p>ウェブコンテンツ開発者は、ウェブ編集支援ソフトを障害を持つ作成者にアクセシブルにしコンテンツを WCAG 準拠で記述する手助けをするためのガイドラインである <a data-featureid="atag20">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a> に従う編集支援ソフトを活用することが可能です。</p>
-          <p><a data-featureid="wai-aria11">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a> 標準は、ユーザインターフェースのエレメントのセマンティクスの定義やウェブコンテンツやアプリケーションのアクセシビリティー・相互運用性を改善するための分類・状態・属性の概念を定義します。<a data-featureid="core-aam11">Core Accessibility API Mappings 1.1</a> 標準ではユーザエージェントがそれらのセマンティクスをアクセシビリティー API にどのように公開すべきかについて述べています。</p>
+          <p><a data-featureid="wai-aria">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a> 標準は、ユーザインターフェースのエレメントのセマンティクスの定義やウェブコンテンツやアプリケーションのアクセシビリティー・相互運用性を改善するための分類・状態・属性の概念を定義します。<a data-featureid="core-aam11">Core Accessibility API Mappings 1.1</a> 標準ではユーザエージェントがそれらのセマンティクスをアクセシビリティー API にどのように公開すべきかについて述べています。</p>
         </div>
       </section>
 
@@ -50,9 +50,9 @@
         </div>
 
         <div data-feature="Touch-based interactions">
-          <p><a href="https://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> はユーザ入力を扱う別な手法である <a data-featureid="pointer-events">Pointer Events</a> について大きな進展を見せ、マウス・タッチ・ペンといった入力イベントを一つのモデルで扱えるようにしました。これにより、現在広く利用されている Touch Events と同等でより統一された手法が利用可能になります。</p>
-          <p>特に、<a data-featureid="css-touch-action"><code>touch-action</code> CSS プロパティー</a>によりエレメントにおいてジェスチャーイベントをフィルター可能となり、Pointer Events の実装以上の操作が行えます。</p>
-          <p><a data-featureid="inputdevice">Input Device capabilities API</a> の初期段階の提案では、"マウス"イベントがタッチ可能デバイスからのものかどうかについての情報を提供することを目標としています。</p>
+          <p><a href="https://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> はユーザ入力を扱う別な手法である <a data-featureid="pointerevents">Pointer Events</a> について大きな進展を見せ、マウス・タッチ・ペンといった入力イベントを一つのモデルで扱えるようにしました。これにより、現在広く利用されている Touch Events と同等でより統一された手法が利用可能になります。</p>
+          <p>特に、<a data-featureid="pointerevents/touch-action"><code>touch-action</code> CSS プロパティー</a>によりエレメントにおいてジェスチャーイベントをフィルター可能となり、Pointer Events の実装以上の操作が行えます。</p>
+          <p><a data-featureid="input-device-capabilities">Input Device capabilities API</a> の初期段階の提案では、"マウス"イベントがタッチ可能デバイスからのものかどうかについての情報を提供することを目標としています。</p>
         </div>
 
         <div data-feature="Sensors">
@@ -66,7 +66,7 @@
             <li><a data-featureid="accelerometer">Accelerometer</a> はデバイスに加わっている３直交軸の加速度情報を取得するためのものです。</li>
             <li><a data-featureid="gyroscope">Gyroscope</a> はデバイスの３直交軸周りの回転量を取得するためのものです。</li>
             <li><a data-featureid="magnetometer">Magnetometer</a> はデバイスの３直交軸周りの磁場状態を取得するためのものです。</li>
-            <li><a data-featureid="orientation">Orientation Sensor</a> はデバイスの鉛直 3D 直交座標系に対するデバイスの物理的傾きを取得するためのものです。</li>
+            <li><a data-featureid="orientation-sensor">Orientation Sensor</a> はデバイスの鉛直 3D 直交座標系に対するデバイスの物理的傾きを取得するためのものです。</li>
           </ul>
 
           <p><a href="https://www.w3.org/TR/motion-sensors/">Motion Sensors Explainer</a> 文書は低レベル・高レベルのモーションセンサーについて関係性、内部動作や一般的な利用方法についての導入となります。</p>
@@ -75,10 +75,10 @@
         </div>
 
         <div data-feature="Media capture">
-          <p>深度情報付きカメラが市場に出回ってきており、<a data-featureid="3dcamera">Media Capture Depth Stream Extensions</a> によりそれらが出力する追加情報も取得できるようになります。</p>
-          <p>ゲームプレイヤーはそのプレイを記録しソーシャルネットワークで共有して楽しんでいます。<a data-featureid="domcapture">Media Capture from DOM elements</a> API によりアプリケーション内で描画されたコンテンツを録画や転送のためのメディアストリームに変換することが可能になります。より一般的には、他のアプリケーション (もしくは画面全体) による描画内容も <a data-featureid="screencapture">Screen Capture API</a> によりストリームに変換可能です。</p>
-          <p>ストリームとしてキャプチャー・生成・受信されたメディア情報は <a data-featureid="recording">Media Recorder API</a> を利用することで録画することが可能です。</p>
-          <p><a data-featureid="imagecapture">Mediastream Image Capture</a> 仕様はズームやホワイトバランスの制御などの静止画の設定といったカメラのより高度な利用を提供します。</p>
+          <p>深度情報付きカメラが市場に出回ってきており、<a data-featureid="mediacapture-depth">Media Capture Depth Stream Extensions</a> によりそれらが出力する追加情報も取得できるようになります。</p>
+          <p>ゲームプレイヤーはそのプレイを記録しソーシャルネットワークで共有して楽しんでいます。<a data-featureid="mediacapture-fromelement">Media Capture from DOM elements</a> API によりアプリケーション内で描画されたコンテンツを録画や転送のためのメディアストリームに変換することが可能になります。より一般的には、他のアプリケーション (もしくは画面全体) による描画内容も <a data-featureid="screen-capture">Screen Capture API</a> によりストリームに変換可能です。</p>
+          <p>ストリームとしてキャプチャー・生成・受信されたメディア情報は <a data-featureid="mediastream-recording">Media Recorder API</a> を利用することで録画することが可能です。</p>
+          <p><a data-featureid="image-capture">Mediastream Image Capture</a> 仕様はズームやホワイトバランスの制御などの静止画の設定といったカメラのより高度な利用を提供します。</p>
         </div>
 
         <div data-feature="Screen wake lock">
@@ -90,11 +90,11 @@
         <h2>調査中の項目</h2>
 
         <div data-feature="Interactions with physical objects">
-          <p>ゲームによっては体験の改善のためにユーザに物理オブジェクトとの連携を行わせたい場合があります。<a href="http://w3c.github.io/web-nfc/" data-featureid="webnfc">Web Near-Field Communications (NFC) API</a> は近接した２つのデバイス間の無線通信を実現します。同様に <a data-featureid="webbluetooth">Web Bluetooth</a> 仕様により Bluetooth Low Energy (BLE) 経由でのデバイスの検出と通信が実現されます。</p>
+          <p>ゲームによっては体験の改善のためにユーザに物理オブジェクトとの連携を行わせたい場合があります。<a href="http://w3c.github.io/web-nfc/" data-featureid="web-nfc">Web Near-Field Communications (NFC) API</a> は近接した２つのデバイス間の無線通信を実現します。同様に <a data-featureid="web-bluetooth">Web Bluetooth</a> 仕様により Bluetooth Low Energy (BLE) 経由でのデバイスの検出と通信が実現されます。</p>
         </div>
 
         <div data-feature="Object recognition">
-          <p>ビデオストリーム中で特定の物体を検出することは難しく、また CPU 消費も大きいです。古典的ビデオ処理の手法に加えて、現代の GPU では拡張現実アプリケーションで利用可能な顔や物体認識などの高度な画像処理機能を提供していることが多いです。<a data-featureid="shape-detection">Shape Detection API</a> がこの領域を扱っています。</p>
+          <p>ビデオストリーム中で特定の物体を検出することは難しく、また CPU 消費も大きいです。古典的ビデオ処理の手法に加えて、現代の GPU では拡張現実アプリケーションで利用可能な顔や物体認識などの高度な画像処理機能を提供していることが多いです。<a data-featureid="shape-detection-api">Shape Detection API</a> がこの領域を扱っています。</p>
         </div>
 
         <p data-feature="Speech-based interactions">多くの場合モバイルデバイスは音声入力で利用可能な機能を備えています。<a href="https://www.w3.org/community/speech-api/">Speech API Community Group</a> ではウェブページを音声コマンドで制御可能にする JavaScript API を開発しています。<a data-featureid="speech-api/synthesis">Speech synthesis</a> はいくつものブラウザで実装されています。<a data-featureid="speech-api/recognition">speech recognition</a> の実装はまだ途上です。</p>
@@ -106,7 +106,7 @@
         <h2>進行中の項目で対応していない項目</h2>
         <dl>
           <dt>ジェスチャーイベント (Gesture events)</dt>
-          <dd>上述で触れられているように、モバイルデバイスではタッチベースの操作が一般的でウェブアプリケーションでは <a data-featureid="touchevent">Touch events</a> 経由で利用可能です。ピンチ、回転、スワイプを含む<strong>ジェスチャーベースの操作</strong>もモバイルデバイスでは一般的になっています。ウェブ開発者は何らかの方法により touch events からジェスチャーイベントを抽出可能かもしれませんが、異なるブラウザ向けに複数のバージョンを開発しなければならないでしょう。それらの操作をネイティブサポートすることは実装間分断を防ぎパフォーマンス改善につながると思われます。<a href="https://www.w3.org/community/mwma/">Merging of Web and Mobile APP Community Group</a> において <a href="https://github.com/JuntaoPeng/GestureEvents/blob/master/GestureEvents.md#gesture-events">Gesture events</a> の定義に向けた初期の議論が進んでいます。</dd>
+          <dd>上述で触れられているように、モバイルデバイスではタッチベースの操作が一般的でウェブアプリケーションでは <a data-featureid="touch-events">Touch events</a> 経由で利用可能です。ピンチ、回転、スワイプを含む<strong>ジェスチャーベースの操作</strong>もモバイルデバイスでは一般的になっています。ウェブ開発者は何らかの方法により touch events からジェスチャーイベントを抽出可能かもしれませんが、異なるブラウザ向けに複数のバージョンを開発しなければならないでしょう。それらの操作をネイティブサポートすることは実装間分断を防ぎパフォーマンス改善につながると思われます。<a href="https://www.w3.org/community/mwma/">Merging of Web and Mobile APP Community Group</a> において <a href="https://github.com/JuntaoPeng/GestureEvents/blob/master/GestureEvents.md#gesture-events">Gesture events</a> の定義に向けた初期の議論が進んでいます。</dd>
         </dl>
       </section>
 

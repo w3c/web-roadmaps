@@ -1,7 +1,0 @@
-{
-  "impl": {
-    "caniuse": "wasm",
-    "chromestatus": 5453022515691520,
-    "mdn": "javascript.builtins.WebAssembly"
-  }
-}

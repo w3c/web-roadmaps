@@ -1,7 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/mixed-content/",
-  "impl": {
-    "chromestatus": 6263395770695680,
-    "webkitstatus": "feature-strict-mixed-content-checking"
-  }
-}

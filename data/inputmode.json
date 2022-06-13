@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/html51/sec-forms.html#input-modalities-the-inputmode-attribute",
-  "feature": "inputmode attribute",
-  "impl": {
-    "caniuse": "input-inputmode",
-    "chromestatus": 6225984592281600,
-    "edgestatus": "inputmode"
-  }
-}

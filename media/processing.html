@@ -12,11 +12,11 @@
     <main>
       <section class="featureset well-deployed">
         <h2>Well-deployed technologies</h2>
-        <p data-feature="Adaptive streaming">The <a data-featureid="mse">Media Source Extensions API</a> (MSE) allows applications to insert chunks of media (e.g. a video clip) into an existing media stream, and implement adaptive streaming algorithms at the application level.</p>
-        <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="eme">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
+        <p data-feature="Adaptive streaming">The <a data-featureid="media-source">Media Source Extensions API</a> (MSE) allows applications to insert chunks of media (e.g. a video clip) into an existing media stream, and implement adaptive streaming algorithms at the application level.</p>
+        <p data-feature="Protected Media">For the distribution of media whose content needs specific protection from being copied, the <a data-featureid="encrypted-media">Encrypted Media Extensions</a> specification enables the decryption and rendering of encrypted media streams based on Content Decryption Modules (CDM).</p>
         <p data-feature="Audio Processing">The <a data-featureid="webaudio">Web Audio API</a> provides a full-fledged audio processing and synthesis API with low-latency guarantees and hardware-accelerated operations when possible.</p>
         <div data-feature="Image and Video Processing">
-          <p>The <a data-featureid="html/2dcontext">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames when coupled with <a data-featureid="animation-frames"><code>requestAnimationFrame</code></a> method. However, <code>requestAnimationFrame</code> was not designed to signal when a video frame has been presented for composition and this approach essentially restricts Web applications to processing code that runs on the CPU and in the main thread.</p>
+          <p>The <a data-featureid="html/2dcontext">Canvas API</a> enables pixel-level manipulation of images and, by extension, video frames when coupled with <a data-featureid="html/animation-frames"><code>requestAnimationFrame</code></a> method. However, <code>requestAnimationFrame</code> was not designed to signal when a video frame has been presented for composition and this approach essentially restricts Web applications to processing code that runs on the CPU and in the main thread.</p>
           <p>Within these constraints, <a data-featureid="wasm-core">WebAssembly</a>, a safe, portable, and low-level code format can be used to improve the performance of the processing code.</p>
           <p>Beyond the canvas approach, a number of directions are being explored to enable and optimize media processing, including means to process media streams on the GPU, hardware APIs to run shape detection algorithms or neural network inferences, hooks on media streams that get the user agent the ability to further optimize processing workflows, etc.</p>
         </div>
@@ -24,23 +24,23 @@
       <section class="featureset in-progress">
         <h2>Specifications in progress</h2>
         <div data-feature="Adaptive streaming">
-          <p>Some scenarios require the ability to switch to a different codec during media playback. For instance, this need may arise on program boundaries when watching linear content. Also, typical ads are of a very different nature than the media stream that they need to be inserted into. The first version of the Media Source Extensions (MSE) specification does not address such heterogeneous scenarios, forcing content providers to use complex workarounds, e.g. using two <code>&lt;video&gt;</code> elements overlaid one top of the other with no guarantees that transition between streams will be smooth, or transcoding and re-packaging the ad content to be consistent with the program content. The Media Working Group is integrating a <a data-featureid="mse-v2/codec-switching">codec switching feature</a> in a second version of MSE.</p>
+          <p>Some scenarios require the ability to switch to a different codec during media playback. For instance, this need may arise on program boundaries when watching linear content. Also, typical ads are of a very different nature than the media stream that they need to be inserted into. The first version of the Media Source Extensions (MSE) specification does not address such heterogeneous scenarios, forcing content providers to use complex workarounds, e.g. using two <code>&lt;video&gt;</code> elements overlaid one top of the other with no guarantees that transition between streams will be smooth, or transcoding and re-packaging the ad content to be consistent with the program content. The Media Working Group is integrating a <a data-featureid="media-source/codec-switching">codec switching feature</a> in a second version of MSE.</p>
         </div>
       </section>
       <section class="featureset exploratory-work">
         <h2>Exploratory work</h2>
         <div data-feature="Video processing">
-          <p>A number of directions are being explored to go beyond simple video processing through the <a data-featureid="html/2dcontext" data-linkonly>Canvas API</a> and <a data-featureid="animation-frames" data-linkonly><code>requestAnimationFrame</code></a>:</p>
+          <p>A number of directions are being explored to go beyond simple video processing through the <a data-featureid="html/2dcontext" data-linkonly>Canvas API</a> and <a data-featureid="html/animation-frames" data-linkonly><code>requestAnimationFrame</code></a>:</p>
           <ul>
             <li><a data-featureid="webgpu">WebGPU</a> allows Web applications to perform operations such as rendering and computation on a Graphics Processing Unit (GPU).</li>
             <li>The <a data-featureid="webnn">Web Neural Network API</a> describes a dedicated low-level API for neural network inference hardware acceleration.</li>
-            <li>The <a data-featureid="shape-detection">Shape Detection API</a> provides access to accelerated shape detectors (e.g. to recognize human faces and postures, or objects) on devices that embed relevant hardware such as most modern smartphones and laptops.</li>
+            <li>The <a data-featureid="shape-detection-api">Shape Detection API</a> provides access to accelerated shape detectors (e.g. to recognize human faces and postures, or objects) on devices that embed relevant hardware such as most modern smartphones and laptops.</li>
             <li><a data-featureid="video-rvfc">HTMLVideoElement.requestVideoFrameCallback()</a> proposes a mechanism to signal when a video frame has been presented for composition and to provide metadata about that frame. This would allow drawing video frames onto a canvas at the video rate (instead of the browser's animation rate).</li>
             <li>An <a href="https://discourse.wicg.io/t/proposal-offscreenvideo/3952">early proposal to create an <code>OffscreenVideo</code> interface</a> inspired by <code>OffscreenCanvas</code> to allow processing of video in a worker.</li>
           </ul>
         </div>
         <div data-feature="Media Encoding/Decoding">
-          <p>To further help with media processing and media workflows, <a data-featureid="web-codecs">WebCodecs</a> defines an API that let Web applications access and tweak built-in (software and hardware) media encoders and decoders. The API could become a core component of media processing workflows in the future.</p>
+          <p>To further help with media processing and media workflows, <a data-featureid="webcodecs">WebCodecs</a> defines an API that let Web applications access and tweak built-in (software and hardware) media encoders and decoders. The API could become a core component of media processing workflows in the future.</p>
         </div>
       </section>
       <section>
@@ -60,7 +60,7 @@
         <h2>Discontinued features</h2>
         <dl>
           <dt>Media Capture Stream with Worker</dt>
-          <dd>Video processing using the Canvas API is very CPU intensive, and as such, can benefit from executing separately from the rest of a Web application. The <a data-featureid="videoworker">Media Capture Stream with Worker</a> specification was an early approach to process video streams in a dedicated worker thread. That processing would still be done on the CPU though, and work on this document has been discontinued. Work on <a data-featureid="webgpu">WebGPU</a>, a <a data-featureid="webnn">Web Neural Network API</a> and <a data-featureid="web-codecs">WebCodecs</a> may create the right building blocks to create high performance video processing applications in the future.</dd>
+          <dd>Video processing using the Canvas API is very CPU intensive, and as such, can benefit from executing separately from the rest of a Web application. The <a data-featureid="videoworker">Media Capture Stream with Worker</a> specification was an early approach to process video streams in a dedicated worker thread. That processing would still be done on the CPU though, and work on this document has been discontinued. Work on <a data-featureid="webgpu">WebGPU</a>, a <a data-featureid="webnn">Web Neural Network API</a> and <a data-featureid="webcodecs">WebCodecs</a> may create the right building blocks to create high performance video processing applications in the future.</dd>
         </dl>
       </section>
     </main>

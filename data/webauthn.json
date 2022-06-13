@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "webauthn",
-    "chromestatus": 5669923372138496,
-    "edgestatus": "Web Authentication API",
-    "webkitstatus": "specification-web-authentication"
-  }
-}

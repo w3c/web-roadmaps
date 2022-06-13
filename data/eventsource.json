@@ -1,8 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/eventsource",
-  "impl": {
-    "caniuse": "eventsource",
-    "chromestatus": 5311740673785856,
-    "edgestatus": "Server-Sent Events (EventSource)"
-  }
-}

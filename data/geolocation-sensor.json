@@ -1,8 +1,0 @@
-{
-  "polyfills": [
-      {
-        "label": "sensor-polyfills",
-        "url": "https://github.com/kenchris/sensor-polyfills"
-      }
-  ]
-}

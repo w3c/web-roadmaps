@@ -14,7 +14,7 @@
         <h2>実装されている仕様</h2>
 
         <div data-feature="2D/3D graphics">
-          <p>HTML <strong><code>&lt;canvas&gt;</code></strong> エレメントはスクリプトから画像を描画するために利用できます。<a data-featureid="html/2dcontext">2D 描画 API</a> により 2D 画像を、W3C でなく <a href="https://www.khronos.org/">Khronos Group</a> により開発されている <a data-featureid="webgl">WebGL</a> により 3D 画像を描画できます。</p>
+          <p>HTML <strong><code>&lt;canvas&gt;</code></strong> エレメントはスクリプトから画像を描画するために利用できます。<a data-featureid="html/2dcontext">2D 描画 API</a> により 2D 画像を、W3C でなく <a href="https://www.khronos.org/">Khronos Group</a> により開発されている <a data-featureid="webgl1">WebGL</a> により 3D 画像を描画できます。</p>
 
           <p>ベクタ方式も XML 形式の 2D ベクタ画像を記述するための  <a data-featureid="svg11">SVG</a> (Scalable Vector Graphics) により利用できます。この形式では画像は幾何学形状の集合で記述されるため、ズームイン・アウト可能なインターフェースを作成するのに向いています。 SVG オブジェクトは簡単にアニメーション化でき、高度かつ滑らかなユーザインターフェースを作成可能です。</p>
         </div>
@@ -29,16 +29,16 @@
 
         <div data-feature="Animations">
           <p>アニメーションを <a data-featureid="css-animations">CSS Animations</a> と <a data-featureid="css-transitions">CSS Transitions</a> により宣言的に記述することができます。</p>
-          <p>スクリプトによるアニメーションは制約のあるデバイスではリソースを食う場合があります。<a data-featureid="animation-frames">Animation Frames</a> によりアニメーションの更新頻度を操作でき、リソース消費を制御できます。</p>
+          <p>スクリプトによるアニメーションは制約のあるデバイスではリソースを食う場合があります。<a data-featureid="html/animation-frames">Animation Frames</a> によりアニメーションの更新頻度を操作でき、リソース消費を制御できます。</p>
         </div>
 
         <div data-feature="Graphical effects">
-          <p>CSS 3 とそれ以降では <a data-featureid="css-border-radius">rounded corners</a>、<a data-featureid="css-box-shadow">shadow effects</a> や、<a data-featureid="css-2d">rotated content</a> といった簡単ながら高機能な画像エフェクトを実現する機能が実装されています。</p>
-          <p><a data-featureid="css-flexbox">CSS Flexbox</a> や <a data-featureid="css-grid-1">CSS Grid</a> などのいくつかのレイアウトモードを利用することでユーザのデバイスに合わせたインターフェースを作成することが可能になり、中に含まれる HTML コードを変更することなくコンテンツそのもの (HTML, SVG) と画面上の要素の並べ替えを可能にするレイアウトの間に明確な区別をつけることが可能になります。</p>
+          <p>CSS 3 とそれ以降では <a data-featureid="css-backgrounds/border-radius">rounded corners</a>、<a data-featureid="css-backgrounds/box-shadow">shadow effects</a> や、<a data-featureid="css-transforms">rotated content</a> といった簡単ながら高機能な画像エフェクトを実現する機能が実装されています。</p>
+          <p><a data-featureid="css-flexbox">CSS Flexbox</a> や <a data-featureid="css-grid">CSS Grid</a> などのいくつかのレイアウトモードを利用することでユーザのデバイスに合わせたインターフェースを作成することが可能になり、中に含まれる HTML コードを変更することなくコンテンツそのもの (HTML, SVG) と画面上の要素の並べ替えを可能にするレイアウトの間に明確な区別をつけることが可能になります。</p>
         </div>
 
         <div data-feature="Downloadable fonts">
-          <p>効果的な画面表示を考えるうえでフォントも重要な要素となります。<a data-featureid="woff2">WOFF</a> (Web Open Font Format) により、ゲームが実際に必要とする部分に限定したサイズの小さなフォントセットをスタイルシート経由で自動ダウンロードされるフォントとして簡単に利用できるようになります。</p>
+          <p>効果的な画面表示を考えるうえでフォントも重要な要素となります。<a data-featureid="WOFF">WOFF</a> (Web Open Font Format) により、ゲームが実際に必要とする部分に限定したサイズの小さなフォントセットをスタイルシート経由で自動ダウンロードされるフォントとして簡単に利用できるようになります。</p>
         </div>
       </section>
 
@@ -66,7 +66,7 @@
         </div>
 
         <div data-feature="Rendering in workers">
-          <p>Web workers は DOM へのアクセスができず、直接画面表示ができません。HTML の <a data-featureid="offscreencanvas"><code>OffscreenCanvas</code> インターフェース</a> は特にワーカー内でDOM と独立して画面表示要素を作成できるようにするものです。</p>
+          <p>Web workers は DOM へのアクセスができず、直接画面表示ができません。HTML の <a data-featureid="html/offscreencanvas"><code>OffscreenCanvas</code> インターフェース</a> は特にワーカー内でDOM と独立して画面表示要素を作成できるようにするものです。</p>
         </div>
       </section>
     </main>

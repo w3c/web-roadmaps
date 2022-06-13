@@ -1,8 +1,0 @@
-{
-  "impl": {
-    "caniuse": "nav-timing",
-    "chromestatus": 5584144679567360,
-    "edgestatus": "Navigation Timing API",
-    "webkitstatus": "specification-navigation-timing-level-1"
-  }
-}

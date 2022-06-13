@@ -1,9 +1,0 @@
-{
-  "url": "https://www.w3.org/TR/user-timing-2/",
-  "impl": {
-    "caniuse": "user-timing",
-    "chromestatus": 5066549580791808,
-    "edgestatus": "User Timing API",
-    "webkitstatus": "specification-user-timing-level-2"
-  }
-}
