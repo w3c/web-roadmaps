@@ -1754,8 +1754,13 @@
     "edDraft": "https://w3c.github.io/event-timing/",
     "repository": "https://github.com/w3c/event-timing",
     "title": "Event Timing API",
-    "status": "ED",
-    "deliveredBy": [],
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/webperf/",
+        "label": "W3C"
+      }
+    ],
     "publisher": "W3C",
     "milestones": {}
   },
@@ -5214,7 +5219,10 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {}
+    "milestones": {
+      "WR/LC": "2022-09-30",
+      "CR": "2022-12-30"
+    }
   },
   "webusb": {
     "url": "https://wicg.github.io/webusb/",

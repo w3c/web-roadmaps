@@ -5151,6 +5151,45 @@
         "selected": true
       },
       {
+        "ua": "chrome",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "rotate",
+          "scale",
+          "translate"
+        ],
+        "flag": true,
+        "partial": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "rotate",
+          "scale",
+          "translate"
+        ],
+        "flag": true,
+        "partial": true
+      },
+      {
+        "ua": "edge",
+        "status": "experimental",
+        "source": "chromestatus",
+        "guess": true,
+        "features": [
+          "rotate",
+          "scale",
+          "translate"
+        ],
+        "flag": true,
+        "partial": true
+      },
+      {
         "ua": "firefox",
         "status": "shipped",
         "source": "chromestatus",
@@ -5418,6 +5457,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -5425,10 +5472,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -5639,6 +5702,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -5646,10 +5717,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -5860,6 +5947,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -5867,10 +5962,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -5908,6 +6019,30 @@
       "rotate": {
         "implementations": [
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -5928,8 +6063,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
           },
           {
             "ua": "chrome_android",
@@ -5938,8 +6072,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
           },
           {
             "ua": "edge",
@@ -5948,8 +6081,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/rotate"
           },
           {
             "ua": "firefox",
@@ -6112,6 +6244,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6119,10 +6259,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -6160,6 +6316,30 @@
       "scale": {
         "implementations": [
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6180,8 +6360,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
           },
           {
             "ua": "chrome_android",
@@ -6190,8 +6369,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
           },
           {
             "ua": "edge",
@@ -6200,8 +6378,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/scale",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/scale"
           },
           {
             "ua": "firefox",
@@ -6364,6 +6541,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6371,10 +6556,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -6585,6 +6786,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6592,10 +6801,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -6633,6 +6858,30 @@
       "translate": {
         "implementations": [
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
+            "ua": "edge",
+            "status": "experimental",
+            "flag": true,
+            "source": "chromestatus",
+            "href": "https://www.chromestatus.com/feature/5705698193178624",
+            "selected": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6653,8 +6902,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
           },
           {
             "ua": "chrome_android",
@@ -6663,8 +6911,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
           },
           {
             "ua": "edge",
@@ -6673,8 +6920,7 @@
               "See <a href='https://crbug.com/496550'>bug 496550</a>."
             ],
             "source": "mdn",
-            "href": "https://developer.mozilla.org/docs/Web/CSS/translate",
-            "selected": true
+            "href": "https://developer.mozilla.org/docs/Web/CSS/translate"
           },
           {
             "ua": "firefox",
@@ -6837,6 +7083,14 @@
             "selected": true
           },
           {
+            "ua": "edge",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "firefox",
             "status": "shipped",
             "source": "chromestatus",
@@ -6844,10 +7098,26 @@
             "partial": true
           },
           {
+            "ua": "chrome",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
+            "partial": true
+          },
+          {
             "ua": "safari",
             "status": "shipped",
             "source": "chromestatus",
             "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "chrome_android",
+            "status": "experimental",
+            "source": "chromestatus",
+            "guess": true,
+            "flag": true,
             "partial": true
           },
           {
@@ -29481,13 +29751,21 @@
       {
         "ua": "safari",
         "status": "experimental",
-        "flag": true,
         "notes": [
-          "Partial implementation can be enabled via \"Push API\" in the Experimental Features menu"
+          "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api",
         "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "experimental",
+        "notes": [
+          "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=push-api"
       },
       {
         "ua": "opera",
@@ -37405,6 +37683,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn"
+      },
+      {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
       },
       {
         "ua": "chrome",
