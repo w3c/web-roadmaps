@@ -1418,29 +1418,40 @@ const formatImplInfo = function (data, translate) {
   // Arrange the implementation info per implementation status
   let info = {};
   implementationStatuses.forEach(status => {
-    let implementations = (data.support ?? []).filter(impl =>
-      impl.selected && (impl.status === status) &&
-      allBrowsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
-    ).filter((impl, index, arr) => {
-      // Group mobile info with desktop info when it exists and add flags
-      let tokens = impl.ua.split('_');
-      if (tokens[1]) {
-        let desktop = arr.find(i => i.ua === tokens[0]);
-        if (desktop) {
-          desktop.mobile = true;
-          return false;
+    let implementations = (data.support ?? [])
+      .filter((impl, index, arr) => {
+        // Drop webkit info if we have similar info for Safari
+        return (impl.ua !== 'webkit') ||
+          !arr.find(i => i !== impl && i.ua === 'safari' &&
+            (i.representative || i.status === impl.status));
+      })
+      .filter(impl =>
+        impl.selected && !impl.guess && (impl.status === status) &&
+        allBrowsers.find(ua => (impl.ua === ua) || impl.ua.startsWith(ua + '_'))
+      )
+      .filter((impl, index, arr) => {
+        // Group mobile info with desktop info when it exists and add flags
+        let tokens = impl.ua.split('_');
+        if (tokens[1]) {
+          let desktop = arr.find(i => i.ua === tokens[0] &&
+            i.status === impl.status &&
+            i.partial === impl.partial &&
+            i.representative === impl.representative);
+          if (desktop) {
+            desktop.mobile = true;
+            return false;
+          }
+          else {
+            impl.mobile = true;
+            impl.ua = tokens[0];
+            return true;
+          }
         }
         else {
-          impl.mobile = true;
-          impl.ua = tokens[0];
+          impl.desktop = true;
           return true;
         }
-      }
-      else {
-        impl.desktop = true;
-        return true;
-      }
-    });
+      });
 
     if (implementations.length > 0) {
       info[status] = implementations.sort((i1, i2) => {
@@ -1493,8 +1504,8 @@ const formatImplInfo = function (data, translate) {
       let link = document.createElement('a');
       link.setAttribute('class', 'ua');
       link.setAttribute('data-ua', impl.ua);
-      if (impl.href) {
-        link.setAttribute('href', impl.href);
+      if (impl.details?.length === 1 && impl.details[0].href) {
+        link.setAttribute('href', impl.details[0].href);
       }
       let abbr = document.createElement('abbr');
       abbr.setAttribute('title', title);
