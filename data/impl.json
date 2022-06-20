@@ -10894,8 +10894,8 @@
             "ua": "firefox",
             "status": "shipped",
             "notes": [
-              "Requires MacOS 10.13+",
-              "OpenType-CFF2 support requires MacOS 10.15+"
+              "Requires macOS 10.13 High Sierra or later or [Windows 10 1709 \"Fall Creators Update\" or later](https://bugzilla.mozilla.org/show_bug.cgi?id=1742970#c2)",
+              "OpenType-CFF2 support requires macOS 10.15 Catalina or later"
             ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=variable-fonts",
@@ -29016,8 +29016,7 @@
           "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=picture-in-picture",
-        "selected": true
+        "href": "https://caniuse.com/#feat=picture-in-picture"
       },
       {
         "ua": "firefox_android",
@@ -29031,6 +29030,13 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "source": "chromestatus",
+        "href": "https://www.chromestatus.com/feature/5729206566649856",
+        "selected": true
+      },
+      {
+        "ua": "chrome_android",
+        "status": "experimental",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -37692,6 +37698,13 @@
         "selected": true
       },
       {
+        "ua": "samsunginternet_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -38802,7 +38815,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Firefox currently lacks support for the `::cue` pseudo-element. [See bug #865395.](https://bugzilla.mozilla.org/show_bug.cgi?id=865395)"
+          "Firefox 55+ implements `::cue` but still lacks support for the `::cue(<selector>)` pseudo-element with selector. [See bug #1321489.](https://bugzilla.mozilla.org/show_bug.cgi?id=1321489)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvtt",
