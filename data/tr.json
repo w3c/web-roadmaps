@@ -3678,7 +3678,7 @@
     "edDraft": "https://w3c.github.io/requestidlecallback/",
     "repository": "https://github.com/w3c/requestidlecallback",
     "title": "Cooperative Scheduling of Background Tasks",
-    "status": "PR",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
