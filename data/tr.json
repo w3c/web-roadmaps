@@ -3949,10 +3949,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-12-30",
-      "PR": "2019-12-30"
-    }
+    "milestones": {}
   },
   "sfa": {
     "url": "http://www.opengeospatial.org/standards/sfa",

@@ -124,7 +124,8 @@
           "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=ambient-light"
+        "href": "https://caniuse.com/#feat=ambient-light",
+        "selected": true
       },
       {
         "ua": "firefox",
@@ -144,7 +145,8 @@
           "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
         ],
         "source": "caniuse",
-        "href": "https://caniuse.com/#feat=ambient-light"
+        "href": "https://caniuse.com/#feat=ambient-light",
+        "selected": true
       },
       {
         "ua": "opera",
@@ -162,30 +164,6 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=ambient-light"
-      },
-      {
-        "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5298357018820608",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "experimental",
-        "flag": true,
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5298357018820608",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "experimental",
-        "flag": true,
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5298357018820608",
-        "selected": true
       },
       {
         "ua": "firefox",
@@ -28906,8 +28884,21 @@
         "selected": true
       },
       {
+        "ua": "safari",
+        "status": "experimental",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-api"
+      },
+      {
         "ua": "opera",
         "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-api",
+        "selected": true
+      },
+      {
+        "ua": "safari_ios",
+        "status": "experimental",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=permissions-api",
         "selected": true
