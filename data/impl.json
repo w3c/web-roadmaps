@@ -26981,7 +26981,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Fully supported only in iPadOS 13 and later."
+          "Fully supported only in iPadOS, 13 and later"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediasource",
@@ -34434,10 +34434,6 @@
       {
         "ua": "firefox",
         "status": "shipped",
-        "notes": [
-          "No support for BYOB (\"bring your own buffer\") stream readers.",
-          "No support for the `pipeTo` or `pipeThrough` methods"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=streams",
         "selected": true
