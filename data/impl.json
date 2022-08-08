@@ -5130,7 +5130,7 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -5138,12 +5138,11 @@
           "scale",
           "translate"
         ],
-        "flag": true,
         "partial": true
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -5151,7 +5150,6 @@
           "scale",
           "translate"
         ],
-        "flag": true,
         "partial": true
       },
       {
@@ -5164,7 +5162,6 @@
           "scale",
           "translate"
         ],
-        "flag": true,
         "partial": true
       },
       {
@@ -5439,7 +5436,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5451,10 +5447,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5466,10 +5461,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5684,7 +5678,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5696,10 +5689,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5711,10 +5703,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5929,7 +5920,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5941,10 +5931,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5956,10 +5945,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -5998,16 +5986,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6015,7 +6001,6 @@
           {
             "ua": "edge",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6226,7 +6211,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6238,10 +6222,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6253,10 +6236,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6295,16 +6277,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6312,7 +6292,6 @@
           {
             "ua": "edge",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6523,7 +6502,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6535,10 +6513,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6550,10 +6527,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6768,7 +6744,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6780,10 +6755,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6795,10 +6769,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -6837,16 +6810,14 @@
         "implementations": [
           {
             "ua": "chrome",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
-            "flag": true,
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6854,7 +6825,6 @@
           {
             "ua": "edge",
             "status": "experimental",
-            "flag": true,
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -7065,7 +7035,6 @@
             "status": "experimental",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -7077,10 +7046,9 @@
           },
           {
             "ua": "chrome",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -7092,10 +7060,9 @@
           },
           {
             "ua": "chrome_android",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
-            "flag": true,
             "partial": true
           },
           {
@@ -15761,8 +15728,7 @@
         "ua": "firefox",
         "status": "shipped",
         "notes": [
-          "Partial support refers to no support for datalists on non-text fields (e.g. number, [range](https://bugzilla.mozilla.org/show_bug.cgi?id=841942), [color](https://bugzilla.mozilla.org/show_bug.cgi?id=960984)).",
-          "In Firefox, autocomplete must be set to off to make dynamic datalist work due to [a bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1474137)"
+          "Partial support refers to no support for datalists on non-text fields (e.g. number, [range](https://bugzilla.mozilla.org/show_bug.cgi?id=841942), [color](https://bugzilla.mozilla.org/show_bug.cgi?id=960984))."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=datalist",
@@ -36926,9 +36892,6 @@
       {
         "ua": "edge",
         "status": "shipped",
-        "notes": [
-          "Only supported on Windows"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-share"
       },
