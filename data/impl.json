@@ -167,7 +167,7 @@
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5298357018820608"
       },
@@ -5154,7 +5154,7 @@
       },
       {
         "ua": "edge",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "guess": true,
         "features": [
@@ -5433,7 +5433,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -5675,7 +5675,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -5917,7 +5917,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -6000,7 +6000,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6208,7 +6208,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -6291,7 +6291,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -6499,7 +6499,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -6741,7 +6741,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -6824,7 +6824,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "href": "https://www.chromestatus.com/feature/5705698193178624",
             "selected": true
@@ -7032,7 +7032,7 @@
           },
           {
             "ua": "edge",
-            "status": "experimental",
+            "status": "shipped",
             "source": "chromestatus",
             "guess": true,
             "partial": true
@@ -37701,7 +37701,7 @@
         "ua": "edge",
         "status": "shipped",
         "notes": [
-          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
+          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/master/implementation-status.md#chrome)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-bluetooth"
@@ -37710,7 +37710,7 @@
         "ua": "chrome",
         "status": "shipped",
         "notes": [
-          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
+          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/master/implementation-status.md#chrome)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-bluetooth"
@@ -37719,7 +37719,7 @@
         "ua": "opera",
         "status": "shipped",
         "notes": [
-          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
+          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/master/implementation-status.md#chrome)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-bluetooth",
@@ -37729,7 +37729,7 @@
         "ua": "chrome_android",
         "status": "shipped",
         "notes": [
-          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)"
+          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/master/implementation-status.md#chrome)"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-bluetooth"
