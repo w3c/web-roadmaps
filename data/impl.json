@@ -28993,7 +28993,7 @@
       },
       {
         "ua": "chrome_android",
-        "status": "experimental",
+        "status": "shipped",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5729206566649856",
         "selected": true
@@ -38321,6 +38321,9 @@
       {
         "ua": "chrome",
         "status": "shipped",
+        "notes": [
+          "Requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage"
       },
