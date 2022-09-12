@@ -8299,7 +8299,6 @@
             "ua": "firefox_android",
             "status": "shipped",
             "notes": [
-              "Supports the `page-break-*` alias from the CSS 2.1 specification, but not the `break-*` properties from the latest spec.",
               "Does not support `avoid` for `page-break-before` & `page-break-after` (only `page-break-inside`).",
               "Treats the `left` and `right` values like `always`."
             ],
@@ -19399,6 +19398,13 @@
         "selected": true
       },
       {
+        "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=html-media-capture",
+        "selected": true
+      },
+      {
         "ua": "uc_android",
         "status": "shipped",
         "notes": [
@@ -22415,6 +22421,9 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
+        "notes": [
+          "Partial support refers to not supporting the `week` and `month` input type"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=input-datetime",
         "selected": true
@@ -30095,6 +30104,9 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
+        "notes": [
+          "The default policy has been changed from `no-referrer-when-downgrade` to `strict-origin-when-cross-origin.` See [the revised spec.](https://github.com/w3c/webappsec-referrer-policy/pull/142)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=referrer-policy",
         "selected": true
@@ -34446,10 +34458,6 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
-        "notes": [
-          "No support for BYOB (\"bring your own buffer\") stream readers.",
-          "No support for the `pipeTo` or `pipeThrough` methods"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=streams",
         "selected": true
@@ -38315,6 +38323,9 @@
       {
         "ua": "edge",
         "status": "shipped",
+        "notes": [
+          "Requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage"
       },
@@ -38337,6 +38348,9 @@
       {
         "ua": "chrome_android",
         "status": "shipped",
+        "notes": [
+          "Requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage",
         "selected": true

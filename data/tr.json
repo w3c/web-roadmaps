@@ -3238,7 +3238,7 @@
     "edDraft": "https://w3c.github.io/payment-method-id/",
     "repository": "https://github.com/w3c/payment-method-id",
     "title": "Payment Method Identifiers",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Payments/WG/",
@@ -3270,7 +3270,7 @@
     "edDraft": "https://w3c.github.io/payment-request/",
     "repository": "https://github.com/w3c/payment-request",
     "title": "Payment Request API",
-    "status": "PR",
+    "status": "REC",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Payments/WG/",
