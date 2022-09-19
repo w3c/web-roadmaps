@@ -69,6 +69,13 @@
         "href": "https://caniuse.com/#feat=accelerometer"
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=accelerometer",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -4052,6 +4059,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=contentsecuritypolicy2",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -4366,6 +4380,14 @@
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=contentsecuritypolicy2",
             "guess": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=contentsecuritypolicy2",
+            "guess": true,
+            "selected": true
           },
           {
             "ua": "samsunginternet_android",
@@ -7856,7 +7878,7 @@
       },
       {
         "ua": "uc_android",
-        "status": "shipped",
+        "status": "experimental",
         "source": "caniuse",
         "guess": true,
         "features": [
@@ -7864,6 +7886,7 @@
           "page-break",
           "widows-orphans"
         ],
+        "prefix": true,
         "partial": true,
         "selected": true
       },
@@ -8045,7 +8068,11 @@
           },
           {
             "ua": "uc_android",
-            "status": "shipped",
+            "status": "experimental",
+            "prefix": true,
+            "notes": [
+              "Partial support refers to working for inline elements but not across column or page breaks."
+            ],
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=css-boxdecorationbreak",
             "selected": true
@@ -8147,9 +8174,10 @@
           },
           {
             "ua": "uc_android",
-            "status": "shipped",
+            "status": "experimental",
             "source": "caniuse",
             "guess": true,
+            "prefix": true,
             "partial": true
           },
           {
@@ -8451,9 +8479,10 @@
           },
           {
             "ua": "uc_android",
-            "status": "shipped",
+            "status": "experimental",
             "source": "caniuse",
             "guess": true,
+            "prefix": true,
             "partial": true
           },
           {
@@ -8655,9 +8684,10 @@
           },
           {
             "ua": "uc_android",
-            "status": "shipped",
+            "status": "experimental",
             "source": "caniuse",
             "guess": true,
+            "prefix": true,
             "partial": true
           },
           {
@@ -9584,6 +9614,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-font-rendering-controls",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-font-rendering-controls",
@@ -10627,6 +10664,17 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "variable"
+        ],
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -10889,6 +10937,13 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=variable-fonts",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "notes": [
@@ -10998,6 +11053,13 @@
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true
+          },
+          {
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
@@ -11291,6 +11353,14 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -11578,6 +11648,14 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -11853,6 +11931,14 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -12108,6 +12194,14 @@
             "source": "caniuse",
             "guess": true,
             "partial": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true,
+            "partial": true,
+            "selected": true
           },
           {
             "ua": "samsunginternet_android",
@@ -12387,11 +12481,7 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in the \"Experimental Features\" developer menu"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-overscroll-behavior",
         "selected": true
@@ -12405,11 +12495,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in the \"Experimental Features\" developer menu"
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-overscroll-behavior",
         "selected": true
@@ -12422,6 +12508,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-overscroll-behavior",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-overscroll-behavior",
@@ -12612,6 +12705,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paged-media",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -12674,6 +12774,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-paint-api"
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-paint-api",
+        "selected": true
       },
       {
         "ua": "chrome",
@@ -13808,6 +13915,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=css-snappoints",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=css-snappoints",
@@ -15780,6 +15894,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=datalist",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -16894,9 +17015,6 @@
       {
         "ua": "uc_android",
         "status": "shipped",
-        "notes": [
-          "Does not support capture from `<video>`/`<audio>`"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediacapture-fromelement",
         "selected": true
@@ -18127,12 +18245,7 @@
       },
       {
         "ua": "uc_android",
-        "status": "experimental",
-        "prefix": true,
-        "notes": [
-          "Partial support refers to not supporting `::backdrop`, and supporting the old `:full-screen` syntax rather than the standard `:fullscreen`.",
-          "Partial support refers to not returning a Promise, as specified in the latest version of the spec."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=fullscreen",
         "selected": true
@@ -18431,6 +18544,9 @@
       {
         "ua": "uc_android",
         "status": "shipped",
+        "notes": [
+          "Only works on secure (https) servers"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=geolocation",
         "selected": true
@@ -19119,6 +19235,13 @@
         "href": "https://caniuse.com/#feat=gyroscope"
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=gyroscope",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -19384,7 +19507,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "iOS6-10 do not support the capture attribute used to force capture straight from the device's camera or microphone. Also note that default video dimensions are 480x320 (4:3)."
+          "Does not support the capture attribute used to force capture straight from the device's camera or microphone. Also note that default video dimensions are 480x320 (4:3)."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=html-media-capture",
@@ -19560,6 +19683,7 @@
         "features": [
           "template",
           "custom-elements",
+          "js-module",
           "2dcontext",
           "ruby"
         ],
@@ -20575,6 +20699,13 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=es6-module",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -20739,8 +20870,7 @@
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "samsunginternet_android",
@@ -22301,6 +22431,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=indexeddb2",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -22667,6 +22804,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=input-inputmode",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -22959,9 +23103,6 @@
       {
         "ua": "uc_android",
         "status": "shipped",
-        "notes": [
-          "`isIntersecting` property of `IntersectionObserverEntry` was not implemented, returning `undefined`"
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=intersectionobserver",
         "selected": true
@@ -24093,6 +24234,16 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "notes": [
+          "Only appears to support the `#t=n,n` control for selecting a range of video, and possibly `track=(name)` & `id=(name)` (not yet tested)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=media-fragments",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "notes": [
@@ -24705,7 +24856,8 @@
         "guess": true,
         "features": [
           "pointer",
-          "hover"
+          "hover",
+          "prefers-color-scheme"
         ],
         "partial": true,
         "selected": true
@@ -26021,6 +26173,13 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=prefers-color-scheme",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -26196,8 +26355,7 @@
             "status": "shipped",
             "source": "caniuse",
             "guess": true,
-            "partial": true,
-            "selected": true
+            "partial": true
           },
           {
             "ua": "samsunginternet_android",
@@ -27238,6 +27396,13 @@
         "href": "https://caniuse.com/#feat=netinfo"
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=netinfo",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -27351,6 +27516,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=notifications",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -27423,6 +27595,13 @@
         "notes": [
           "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
         ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=offscreencanvas",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=offscreencanvas",
         "selected": true
@@ -27673,6 +27852,13 @@
         "href": "https://caniuse.com/#feat=orientation-sensor"
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=orientation-sensor",
+        "selected": true
+      },
+      {
         "ua": "chrome",
         "status": "shipped",
         "source": "chromestatus",
@@ -27769,6 +27955,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=rtcpeerconnection",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=rtcpeerconnection",
@@ -27892,6 +28085,14 @@
           },
           {
             "ua": "firefox_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=rtcpeerconnection",
+            "guess": true,
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=rtcpeerconnection",
@@ -28853,16 +29054,10 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=permissions-api",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=permissions-api"
       },
       {
         "ua": "opera",
@@ -28873,7 +29068,7 @@
       },
       {
         "ua": "safari_ios",
-        "status": "experimental",
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=permissions-api",
         "selected": true
@@ -28886,6 +29081,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=permissions-api",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=permissions-api",
@@ -29323,6 +29525,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointer",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -29415,6 +29624,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=pointerlock",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=pointerlock",
@@ -29553,6 +29769,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=link-rel-preload",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=link-rel-preload",
@@ -29722,22 +29945,13 @@
       },
       {
         "ua": "safari",
-        "status": "experimental",
+        "status": "shipped",
         "notes": [
           "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api",
         "selected": true
-      },
-      {
-        "ua": "safari",
-        "status": "experimental",
-        "notes": [
-          "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=push-api"
       },
       {
         "ua": "opera",
@@ -29900,6 +30114,13 @@
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=mediarecorder"
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=mediarecorder",
+        "selected": true
       },
       {
         "ua": "samsunginternet_android",
@@ -30465,6 +30686,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=resizeobserver",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -30610,6 +30838,20 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "dns-prefetch",
+          "preconnect",
+          "prefetch",
+          "prerender"
+        ],
+        "partial": false,
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -30660,17 +30902,6 @@
           "prefetch"
         ],
         "flag": true,
-        "partial": true,
-        "selected": true
-      },
-      {
-        "ua": "uc_android",
-        "status": "shipped",
-        "source": "caniuse",
-        "guess": true,
-        "features": [
-          "prefetch"
-        ],
         "partial": true,
         "selected": true
       },
@@ -30775,6 +31006,13 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=link-rel-dns-prefetch",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -30842,6 +31080,12 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -30866,14 +31110,6 @@
             "source": "caniuse",
             "guess": true,
             "flag": true,
-            "partial": true,
-            "selected": true
-          },
-          {
-            "ua": "uc_android",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
             "partial": true,
             "selected": true
           },
@@ -30947,6 +31183,13 @@
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=link-rel-preconnect"
+          },
+          {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=link-rel-preconnect",
+            "selected": true
           },
           {
             "ua": "samsunginternet_android",
@@ -31051,6 +31294,12 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -31076,14 +31325,6 @@
             "guess": true,
             "flag": true,
             "partial": true
-          },
-          {
-            "ua": "uc_android",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
-            "partial": true,
-            "selected": true
           },
           {
             "ua": "edge",
@@ -31286,6 +31527,12 @@
             "partial": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -31310,13 +31557,6 @@
             "source": "caniuse",
             "guess": true,
             "flag": true,
-            "partial": true
-          },
-          {
-            "ua": "uc_android",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
             "partial": true
           },
           {
@@ -31374,6 +31614,13 @@
           },
           {
             "ua": "chrome_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=link-rel-prerender",
+            "selected": true
+          },
+          {
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=link-rel-prerender",
@@ -31443,6 +31690,12 @@
             "selected": true
           },
           {
+            "ua": "uc_android",
+            "status": "shipped",
+            "source": "caniuse",
+            "guess": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
@@ -31468,14 +31721,6 @@
             "source": "caniuse",
             "guess": true,
             "flag": true,
-            "partial": true,
-            "selected": true
-          },
-          {
-            "ua": "uc_android",
-            "status": "shipped",
-            "source": "caniuse",
-            "guess": true,
             "partial": true,
             "selected": true
           },
@@ -32225,6 +32470,17 @@
         "href": "https://caniuse.com/#feat=speech-recognition"
       },
       {
+        "ua": "uc_android",
+        "status": "experimental",
+        "prefix": true,
+        "notes": [
+          "Partial support refers to some attributes missing."
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=speech-recognition",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "experimental",
         "prefix": true,
@@ -32473,6 +32729,18 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "experimental",
+        "source": "caniuse",
+        "guess": true,
+        "features": [
+          "recognition"
+        ],
+        "prefix": true,
+        "partial": true,
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "experimental",
         "source": "caniuse",
@@ -32645,6 +32913,17 @@
             "href": "https://caniuse.com/#feat=speech-recognition"
           },
           {
+            "ua": "uc_android",
+            "status": "experimental",
+            "prefix": true,
+            "notes": [
+              "Partial support refers to some attributes missing."
+            ],
+            "source": "caniuse",
+            "href": "https://caniuse.com/#feat=speech-recognition",
+            "selected": true
+          },
+          {
             "ua": "samsunginternet_android",
             "status": "experimental",
             "prefix": true,
@@ -32744,6 +33023,14 @@
             "source": "caniuse",
             "guess": true,
             "prefix": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "experimental",
+            "source": "caniuse",
+            "guess": true,
+            "prefix": true,
+            "partial": true
           },
           {
             "ua": "samsunginternet_android",
@@ -32961,6 +33248,15 @@
             "source": "caniuse",
             "guess": true,
             "prefix": true
+          },
+          {
+            "ua": "uc_android",
+            "status": "experimental",
+            "source": "caniuse",
+            "guess": true,
+            "prefix": true,
+            "partial": true,
+            "selected": true
           },
           {
             "ua": "samsunginternet_android",
@@ -34463,18 +34759,18 @@
         "selected": true
       },
       {
-        "ua": "samsunginternet_android",
+        "ua": "uc_android",
         "status": "shipped",
+        "notes": [
+          "No support for BYOB (\"bring your own buffer\") stream readers."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=streams",
         "selected": true
       },
       {
-        "ua": "qq_android",
+        "ua": "samsunginternet_android",
         "status": "shipped",
-        "notes": [
-          "No support for BYOB (\"bring your own buffer\") stream readers."
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=streams",
         "selected": true
@@ -34675,7 +34971,7 @@
             "selected": true
           },
           {
-            "ua": "samsunginternet_android",
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -34683,7 +34979,7 @@
             "selected": true
           },
           {
-            "ua": "qq_android",
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -34831,7 +35127,7 @@
             "selected": true
           },
           {
-            "ua": "samsunginternet_android",
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -34839,7 +35135,7 @@
             "selected": true
           },
           {
-            "ua": "qq_android",
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -34987,7 +35283,7 @@
             "selected": true
           },
           {
-            "ua": "samsunginternet_android",
+            "ua": "uc_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -34995,7 +35291,7 @@
             "selected": true
           },
           {
-            "ua": "qq_android",
+            "ua": "samsunginternet_android",
             "status": "shipped",
             "source": "caniuse",
             "href": "https://caniuse.com/#feat=streams",
@@ -35634,6 +35930,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=upgradeinsecurerequests",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=upgradeinsecurerequests",
@@ -36297,6 +36600,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wai-aria",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -36402,6 +36712,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=wasm",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=wasm",
@@ -37656,6 +37973,13 @@
         "selected": true
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webauthn",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -37741,6 +38065,16 @@
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=web-bluetooth"
+      },
+      {
+        "ua": "uc_android",
+        "status": "shipped",
+        "notes": [
+          "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/master/implementation-status.md#chrome)"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=web-bluetooth",
+        "selected": true
       },
       {
         "ua": "samsunginternet_android",
@@ -37924,9 +38258,6 @@
       {
         "ua": "uc_android",
         "status": "shipped",
-        "notes": [
-          "WebGL context is accessed from \"experimental-webgl\" rather than \"webgl\""
-        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webgl",
         "selected": true
@@ -38341,6 +38672,9 @@
       {
         "ua": "opera",
         "status": "shipped",
+        "notes": [
+          "Requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)"
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=sql-storage",
         "selected": true
@@ -38644,6 +38978,13 @@
         "href": "https://caniuse.com/#feat=webusb"
       },
       {
+        "ua": "uc_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webusb",
+        "selected": true
+      },
+      {
         "ua": "samsunginternet_android",
         "status": "shipped",
         "source": "caniuse",
@@ -38825,6 +39166,13 @@
       },
       {
         "ua": "firefox_android",
+        "status": "shipped",
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=webvtt",
+        "selected": true
+      },
+      {
+        "ua": "uc_android",
         "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webvtt",
