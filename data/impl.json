@@ -30316,13 +30316,24 @@
       },
       {
         "ua": "safari",
-        "status": "shipped",
+        "status": "experimental",
         "notes": [
+          "Safari 9.1 - 16.0 supported a custom implementation which remains available in later versions, see [Safari Push Notifications](https://developer.apple.com/notifications/safari-push-notifications/) and [WWDC video](https://web.archive.org/web/20210419000205/https://developer.apple.com/videos/play/wwdc2013/614/)",
           "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api",
         "selected": true
+      },
+      {
+        "ua": "safari",
+        "status": "experimental",
+        "notes": [
+          "Safari 9.1 - 16.0 supported a custom implementation which remains available in later versions, see [Safari Push Notifications](https://developer.apple.com/notifications/safari-push-notifications/) and [WWDC video](https://web.archive.org/web/20210419000205/https://developer.apple.com/videos/play/wwdc2013/614/)",
+          "Only available on macOS 13 Ventura or later and only in Safari itself, not WKWebView nor SFSafariViewController"
+        ],
+        "source": "caniuse",
+        "href": "https://caniuse.com/#feat=push-api"
       },
       {
         "ua": "opera",
