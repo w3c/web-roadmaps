@@ -27884,11 +27884,7 @@
       },
       {
         "ua": "firefox_android",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled via the `gfx.offscreencanvas.enabled` flag. Currently only supports WebGL contexts, not 2D."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=offscreencanvas",
         "selected": true

@@ -3744,7 +3744,7 @@
     "edDraft": "https://w3c.github.io/resource-timing/",
     "repository": "https://github.com/w3c/resource-timing",
     "title": "Resource Timing Level 2",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -3753,10 +3753,7 @@
     ],
     "publisher": "W3C",
     "informative": false,
-    "milestones": {
-      "CR": "2019-12-30",
-      "PR": "2020-06-30"
-    }
+    "milestones": {}
   },
   "rfc7946": {
     "url": "https://www.rfc-editor.org/rfc/rfc7946",
