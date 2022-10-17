@@ -38402,6 +38402,10 @@
       {
         "ua": "firefox",
         "status": "shipped",
+        "notes": [
+          "Partial support refers to FIDO2 devices not working in all operating systems if a PIN is set.",
+          "Partial support refers to TouchID not being supported."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
@@ -38442,6 +38446,9 @@
       {
         "ua": "firefox_android",
         "status": "shipped",
+        "notes": [
+          "Partial support refers to FIDO2 devices not working in all operating systems if a PIN is set."
+        ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webauthn",
         "selected": true
