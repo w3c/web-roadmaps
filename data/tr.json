@@ -332,7 +332,7 @@
     "edDraft": "https://w3c.github.io/badging/",
     "repository": "https://github.com/w3c/badging",
     "title": "Badging API",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/2019/webapps/",
@@ -3710,7 +3710,7 @@
     "edDraft": "https://w3c.github.io/resource-hints/",
     "repository": "https://github.com/w3c/resource-hints",
     "title": "Resource Hints",
-    "status": "WD",
+    "status": "Retired",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/webperf/",
@@ -3825,11 +3825,11 @@
     "edDraft": "https://drafts.csswg.org/scroll-animations-1/",
     "repository": "https://github.com/w3c/csswg-drafts",
     "title": "Scroll-linked Animations",
-    "status": "ED",
+    "status": "WD",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/Style/CSS/",
-        "label": "Cascading Style Sheets (CSS) Working Group"
+        "label": "W3C"
       }
     ],
     "publisher": "W3C",
@@ -4863,8 +4863,13 @@
     "edDraft": "https://w3c.github.io/web-locks/",
     "repository": "https://github.com/w3c/web-locks",
     "title": "Web Locks API",
-    "status": "ED",
-    "deliveredBy": [],
+    "status": "WD",
+    "deliveredBy": [
+      {
+        "url": "https://www.w3.org/groups/wg/webapps",
+        "label": "W3C"
+      }
+    ],
     "publisher": "W3C",
     "milestones": {}
   },
@@ -4901,7 +4906,7 @@
     "edDraft": "https://w3c.github.io/web-share/",
     "repository": "https://github.com/w3c/web-share",
     "title": "Web Share API",
-    "status": "CR",
+    "status": "PR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/groups/wg/webapps",
@@ -4942,7 +4947,7 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/webauthn/",
+        "url": "https://www.w3.org/groups/wg/webauthn/",
         "label": "Web Authentication Working Group"
       }
     ],
@@ -5078,7 +5083,7 @@
     "edDraft": "https://webmachinelearning.github.io/webnn/",
     "repository": "https://github.com/webmachinelearning/webnn",
     "title": "Web Neural Network API",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/community/webmachinelearning/",
@@ -5092,7 +5097,7 @@
     "url": "https://www.w3.org/TR/webrtc/#priority-and-qos-model",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
-    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "title": "WebRTC: Real-Time Communication in Browsers",
     "status": "REC",
     "deliveredBy": [
       {
@@ -5109,7 +5114,7 @@
     "url": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-getdefaulticeservers",
     "edDraft": "https://w3c.github.io/webrtc-pc/",
     "repository": "https://github.com/w3c/webrtc-pc",
-    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "title": "WebRTC: Real-Time Communication in Browsers",
     "status": "REC",
     "deliveredBy": [
       {
@@ -5296,7 +5301,7 @@
     "edDraft": "https://immersive-web.github.io/webxr-ar-module/",
     "repository": "https://github.com/immersive-web/webxr-ar-module",
     "title": "WebXR Augmented Reality Module - Level 1",
-    "status": "WD",
+    "status": "CR",
     "deliveredBy": [
       {
         "url": "https://www.w3.org/immersive-web/",
