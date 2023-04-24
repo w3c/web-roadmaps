@@ -26159,7 +26159,7 @@
         "ua": "safari_ios",
         "status": "shipped",
         "notes": [
-          "Requires website to first be [added to the Home Screen](/web-app-manifest)"
+          "Requires website to first be [added to the Home Screen](/web-app-manifest). Delivered silently, meaning no sound, vibration, haptics or screen wake."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=push-api",
