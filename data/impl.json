@@ -29740,28 +29740,28 @@
     "implementations": [
       {
         "ua": "chrome",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5739224579964928",
         "selected": true
       },
       {
         "ua": "chrome_android",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5739224579964928",
         "selected": true
       },
       {
         "ua": "edge",
-        "status": "consideration",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5739224579964928",
         "selected": true
       },
       {
         "ua": "firefox",
-        "status": "consideration",
+        "status": "",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5739224579964928",
         "selected": true
@@ -33342,12 +33342,7 @@
     "implementations": [
       {
         "ua": "edge",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in some Chromium browsers (on Windows, MacOS, Linux) with the `enable-unsafe-webgpu` flag.",
-          "Part of an origin trial."
-        ],
+        "status": "shipped",
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webgpu",
         "selected": true
@@ -33365,11 +33360,9 @@
       },
       {
         "ua": "chrome",
-        "status": "experimental",
-        "flag": true,
+        "status": "shipped",
         "notes": [
-          "Can be enabled in some Chromium browsers (on Windows, MacOS, Linux) with the `enable-unsafe-webgpu` flag.",
-          "Part of an origin trial."
+          "Not enabled on Linux by default."
         ],
         "source": "caniuse",
         "href": "https://caniuse.com/#feat=webgpu",

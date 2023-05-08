@@ -931,7 +931,7 @@
     "informative": false,
     "milestones": {
       "WR/LC": "2020-09-30",
-      "CR": "2021-03-30"
+      "CR": "2023-12-30"
     },
     "feature": "font-display"
   },
@@ -977,7 +977,7 @@
     "informative": false,
     "milestones": {
       "WR/LC": "2020-09-30",
-      "CR": "2021-03-30"
+      "CR": "2023-12-30"
     },
     "features": {
       "variable": {
