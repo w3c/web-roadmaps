@@ -26050,7 +26050,7 @@
       },
       {
         "ua": "safari",
-        "status": "",
+        "status": "indevelopment",
         "source": "chromestatus",
         "href": "https://www.chromestatus.com/feature/5273474901737472",
         "selected": true
@@ -29739,27 +29739,6 @@
   "storage-buckets": {
     "implementations": [
       {
-        "ua": "chrome",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5739224579964928",
-        "selected": true
-      },
-      {
-        "ua": "chrome_android",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5739224579964928",
-        "selected": true
-      },
-      {
-        "ua": "edge",
-        "status": "indevelopment",
-        "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/5739224579964928",
-        "selected": true
-      },
-      {
         "ua": "firefox",
         "status": "",
         "source": "chromestatus",
@@ -33369,17 +33348,6 @@
         "selected": true
       },
       {
-        "ua": "safari",
-        "status": "experimental",
-        "flag": true,
-        "notes": [
-          "Can be enabled in Safari on MacOS with the `WebGPU` experimental feature."
-        ],
-        "source": "caniuse",
-        "href": "https://caniuse.com/#feat=webgpu",
-        "selected": true
-      },
-      {
         "ua": "opera",
         "status": "experimental",
         "flag": true,
@@ -33411,7 +33379,8 @@
         "ua": "safari",
         "status": "indevelopment",
         "source": "chromestatus",
-        "href": "https://www.chromestatus.com/feature/6213121689518080"
+        "href": "https://www.chromestatus.com/feature/6213121689518080",
+        "selected": true
       }
     ]
   },
