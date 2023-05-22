@@ -419,8 +419,8 @@
     "status": "WD",
     "deliveredBy": [
       {
-        "url": "https://www.w3.org/groups/wg/webapps",
-        "label": "Web Applications Working Group"
+        "url": "https://www.w3.org/groups/wg/webediting",
+        "label": "Web Editing Working Group"
       }
     ],
     "publisher": "W3C",
